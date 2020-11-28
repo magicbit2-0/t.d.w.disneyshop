@@ -1,0 +1,39 @@
+ANIMAZIONE SLIDER FILM: 
+https://www.free-css.com/free-css-templates/page2/touch-of-purple
+mettere il nome del film sotto al riquadro che scorre, aprire pagine del film quando si clicka
+
+PAGINA INFO PERSONAGGIO:
+https://www.free-css.com/free-css-templates/page250/patsy-doherty
+prendere spunto dalla parte inferiore
+
+TRANSIZIONI MENU:
+https://www.free-css.com/free-css-templates/page250/jimmy
+prendere spunto da portfolio per le sottocategorie, aprire pagina sottocategoria se clickato. aprire come immagine l'elenco delle sottocategorie quando ci si sposta col mouse sopra.
+
+TRANSIZIONI IN GENERALE:
+https://www.free-css.com/free-css-templates/page251/simple-studio
+animazione quadrati che si muovono col mouse
+
+https://www.free-css.com/free-css-templates/page256/multipurpose
+
+IMMAGINI A CERCHIO PER PAGINE DEI GIOCHI E DEI PERSONAGGI:
+https://www.free-css.com/free-css-templates/page252/itsy
+
+EVENTI IN ORDINE CRONOLOGICO:
+https://www.free-css.com/free-css-templates/page252/smartedu
+prendere spunto da sezione "our history"
+
+HOME:
+https://www.free-css.com/free-css-templates/page253/estateagency
+
+BARRA SUPERIORE MENU SHOP:
+https://www.free-css.com/free-css-templates/page251/eventon-christmas
+
+RIQUADRO PRODOTTO SHOP CON IMMAGINE E PREZZO SOTTO:
+https://www.free-css.com/free-css-templates/page260/greeno
+
+PER FARE LOCANDINE:
+https://www.pinterest.it/pin/540572761524452526/
+
+PAGINA GENERALE SHOP:
+https://www.free-css.com/free-css-templates/page260/e-store
