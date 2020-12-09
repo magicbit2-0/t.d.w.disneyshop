@@ -9,15 +9,24 @@
 <html lang="en" class="no-js">
 <head>
 	<!-- Basic need -->
-	<title>Open Pediatrics</title>
+	<title>Dinsey & Pixar</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<link rel="profile" href="#">
 
+	<!-- Logo Topolino parte alta -->
+	<link href="images/img/LogoPiccolo.jpg">
+
     <!--Google Font-->
-    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+    <!-- <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />-->
+	<style>
+		body{
+			font-family:'Comic Neue',cursive;
+		}
+	</style>
+
 	<!-- Mobile specific meta -->
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone-no">
@@ -28,15 +37,17 @@
 
 </head>
 <body>
+
 <!--preloading-->
 <div id="preloader">
-    <img class="logo" src="images/logo1.png" alt="" width="119" height="58">
+    <img class="logo" src="images/logo1.png" alt="" width="300" height="200">
     <div id="status">
         <span></span>
         <span></span>
     </div>
 </div>
 <!--end of preloading-->
+
 <!--login form popup-->
 <div class="login-wrapper" id="login-content">
     <div class="login-content">
@@ -46,16 +57,17 @@
         	<div class="row">
         		 <label for="username">
                     Username:
-                    <input type="text" name="username" id="username" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                    <input type="text" name="username" id="username" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
                 </label>
         	</div>
            
             <div class="row">
             	<label for="password">
                     Password:
-                    <input type="password" name="password" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                    <input type="password" name="password" id="password" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
                 </label>
             </div>
+
             <div class="row">
             	<div class="remember">
 					<div>
@@ -64,11 +76,14 @@
             		<a href="#">Forget password ?</a>
             	</div>
             </div>
-           <div class="row">
+
+			<div class="row">
            	 <button type="submit">Login</button>
            </div>
         </form>
-        <div class="row">
+
+		<!-- Ci serve????? -->
+		<div class="row">
         	<p>Or via social</p>
             <div class="social-btn-2">
             	<a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
@@ -78,16 +93,17 @@
     </div>
 </div>
 <!--end of login form popup-->
+
 <!--signup form popup-->
 <div class="login-wrapper"  id="signup-content">
     <div class="login-content">
         <a href="#" class="close">x</a>
-        <h3>sign up</h3>
+        <h3>Sign up</h3>
         <form method="post" action="signup.php">
             <div class="row">
                  <label for="username-2">
                     Username:
-                    <input type="text" name="username" id="username-2" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                    <input type="text" name="username" id="username-2" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
                 </label>
             </div>
            
@@ -97,20 +113,23 @@
                     <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
                 </label>
             </div>
-             <div class="row">
+
+			<div class="row">
                 <label for="password-2">
                     Password:
                     <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
                 </label>
             </div>
-             <div class="row">
+
+			<div class="row">
                 <label for="repassword-2">
                     re-type Password:
                     <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
                 </label>
             </div>
-           <div class="row">
-             <button type="submit">sign up</button>
+
+			<div class="row">
+             <button type="submit">Sign up</button>
            </div>
         </form>
     </div>
@@ -243,13 +262,13 @@
 	    	<div  class="slick-multiItemSlider">
 	    		<div class="movie-item">
 	    			<div class="mv-img">
-	    				<a href="#"><img src="images/uploads/slider1.jpg" alt="" width="285" height="437"></a>
+						<a href="#"><img src="images/uploads/Aladdin.jpg" alt="" width="285" height="437"></a>
 	    			</div>
 	    			<div class="title-in">
 	    				<div class="cate">
-	    					<span class="blue"><a href="#">Sci-fi</a></span>
+	    					<span class="blue"><a href="#">Film Disney</a></span>
 	    				</div>
-	    				<h6><a href="#">Interstellar</a></h6>
+	    				<h6><a href="#">Aladdin</a></h6>
 	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 	    			</div>
 	    		</div>
@@ -259,7 +278,7 @@
 	    			</div>
 	    			<div class="title-in">
 	    				<div class="cate">
-	    					<span class="yell"><a href="#">action</a></span>
+	    					<span class="yell"><a href="#">Cartoni Disney</a></span>
 	    				</div>
 	    				<h6><a href="#">The revenant</a></h6>
 	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
@@ -271,7 +290,7 @@
 	    			</div>
 	    			<div class="title-in">
 	    				<div class="cate">
-	    					<span class="green"><a href="#">comedy</a></span>
+	    					<span class="green"><a href="#">Cartoni Pixar</a></span>
 	    				</div>
 	    				<h6><a href="#">Die hard</a></h6>
 	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
@@ -283,7 +302,7 @@
 	    			</div>
 	    			<div class="title-in">
 	    				<div class="cate">
-	    					<span class="blue"><a href="#">Sci-fi</a></span> <span class="orange"><a href="#">advanture</a></span>
+	    					<span class="blue"><a href="#">Cortometraggi Pixar</a></span> <span class="orange"><a href="#">advanture</a></span>
 	    				</div>
 	    				<h6><a href="#">The walk</a></h6>
 	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
@@ -295,7 +314,7 @@
 	    			</div>
 	    			<div class="title-in">
 	    				<div class="cate">
-	    					<span class="blue"><a href="#">Sci-fi</a></span>
+	    					<span class="blue"><a href="#">Film Disney</a></span>
 	    				</div>
 	    				<h6><a href="#">Interstellar</a></h6>
 	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
@@ -307,7 +326,7 @@
 	    			</div>
 	    			<div class="title-in">
 	    				<div class="cate">
-	    					<span class="yell"><a href="#">action</a></span>
+	    					<span class="yell"><a href="#">Cartoni Disney</a></span>
 	    				</div>
 	    				<h6><a href="#">The revenant</a></h6>
 	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
@@ -319,7 +338,7 @@
 	    			</div>
 	    			<div class="title-in">
 	    				<div class="cate">
-	    					<span class="green"><a href="#">comedy</a></span>
+	    					<span class="green"><a href="#">Cartoni Pixar</a></span>
 	    				</div>
 	    				<h6><a href="#">Die hard</a></h6>
 	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
@@ -331,7 +350,7 @@
 	    			</div>
 	    			<div class="title-in">
 	    				<div class="cate">
-	    					<span class="blue"><a href="#">Sci-fi</a></span> <span class="orange"><a href="#">advanture</a></span>
+	    					<span class="blue"><a href="#">Cortometraggi Pixar</a></span> <span class="orange"><a href="#">advanture</a></span>
 	    				</div>
 	    				<h6><a href="#">The walk</a></h6>
 	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
