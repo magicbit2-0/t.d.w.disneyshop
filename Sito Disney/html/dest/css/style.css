@@ -5672,7 +5672,7 @@ ul {
 }
 .common-hero {
   height: 385px;
-  background: url('../images/Personaggi/castello_disney.jpg') no-repeat;
+  background: url('../images/Personaggi/sfondo_personaggi.jpg') no-repeat;
 }
 .common-hero:before {
   background-color: rgba(0, 0, 0, 0.4);
