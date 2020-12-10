@@ -7848,7 +7848,7 @@ header .navbar-default .navbar-nav {
 header .navbar-default .navbar-nav li a {
   font-family: 'Dosis', sans-serif;
   font-size: 14px;
-  color: #abb7c4;
+  color: #D5DBE0; /* #abb7c4; */
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
@@ -8140,7 +8140,8 @@ header#headerv3-light {
   }
 }
 footer {
-  background: url('../images/uploads/ft-bg.jpg') no-repeat;
+  /* background: url('../images/uploads/ft-bg.jpg') no-repeat; */
+  background: #0D243B;
   background-position: center;
   background-size: cover;
 }
