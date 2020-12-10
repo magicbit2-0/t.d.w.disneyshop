@@ -7864,9 +7864,11 @@ header .navbar-default .navbar-nav li a i {
 header .navbar-default .navbar-nav li.btn a {
   background-color: #dd003f;
   color: #ffffff;
-  padding: 11px 25px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
+  padding: 11px 18px;
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 20px;
 }
 header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 {
