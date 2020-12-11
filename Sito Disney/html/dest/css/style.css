@@ -4488,7 +4488,7 @@ ul {
 }
 .movie-items .slick-multiItem .slick-list,
 .movie-items .slick-multiItem2 .slick-list {
-  order: 2;
+  order: 1;
 }
 .movie-items .slick-multiItem .slick-dots,
 .movie-items .slick-multiItem2 .slick-dots {
