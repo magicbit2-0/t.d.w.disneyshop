@@ -2066,7 +2066,7 @@
 
 	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
 		background-image: url(../images/fancybox_sprite@2x.png);
-		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
+		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image */
 	}
 
 	#fancybox-loading div {
