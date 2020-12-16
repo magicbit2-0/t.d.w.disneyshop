@@ -5856,8 +5856,8 @@ ul {
   color: #dcf836;
 }
 .user-information .user-fav {
-  border-top: 1px solid #0f2133;
-  padding: 25px 0;
+  border-top: 3px solid #0f2133;
+  padding: 20px 0 0 0;
 }
 .user-information .user-fav p {
   padding-left: 25px;
@@ -8302,4 +8302,17 @@ footer.full-width-ft .ft-copyright {
   color: #8c9296;
   font-family: 'Dosis', sans-serif;
   font-weight: 700;
+}
+
+#EsciAccount {
+  text-align: center;
+}
+
+label#ordinaLabel {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+a.redbtn.recensioneBtn{
+margin-right: 20px;
 }

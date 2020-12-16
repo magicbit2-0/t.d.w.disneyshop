@@ -70,7 +70,7 @@
 			<div class="row">
 				<div class="remember">
 					<div>
-						<input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
+						<input type="checkbox" name="remember" value="Remember me"><span>Ricordami</span>
 					</div>
 					<a href="#">Hai dimenticato la password ?</a>
 				</div>
@@ -246,28 +246,27 @@
 						<p>Dettagli Account</p>
 						<ul>
 							<li><a href="userprofile.html">Profilo</a></li>
-							<li class="active"><a href="userfavoritegrid.html">Film Preferiti</a></li>
-							<li><a href="userrate.html">Votazioni Film</a></li>
+							<li ><a href="userfavoritegrid.html">Film Preferiti</a></li>
+							<li class="active"><a href="userrate.html">Votazioni Film</a></li>
 						</ul>
 					</div>
 					<div class="user-fav">
-						<p>Altro</p>
 						<ul>
-							<li><a href="#">Cambia password</a></li>
-							<li><a href="#">Esci</a></li>
+							<li id="EsciAccount"><a href="#">Esci</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-9 col-sm-12 col-xs-12">
-				<div class="topbar-filter">
+				<div class="topbar-filter user">
 					<p> Trovati <span> 10 film </span> in totale </p>
-					<label>Ordina per:</label>
+					<label id="ordinaLabel">Ordina per:</label>
 					<!-- Da vedere-->
 					<select>
-						<option value="range">-- Scegli l'opzione --</option>
-						<option value="saab">-- Più Popolari --</option>
-						<option value="saab">-- Più Recensiti --</option>
+						<option value="range">Scegli l'opzione </option>
+						<option value="saab"> Più Popolari </option>
+						<option value="saab"> Più Recensiti </option>
+						<option value="saab"> Più Recenti </option>
 					</select>
 				</div>
 				<div class="movie-item-style-2 userrate">
