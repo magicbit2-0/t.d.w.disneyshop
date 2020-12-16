@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!--[if IE 7]>
-<html class="ie ie7 no-js" lang="en-US">
+<html class="ie ie7 no-js" lang="it-IT">
 <![endif]-->
 <!--[if IE 8]>
-<html class="ie ie8 no-js" lang="en-US">
+<html class="ie ie8 no-js" lang="it-IT">
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html lang="en" class="no-js">
+<html lang="it" class="no-js" xmlns="http://www.w3.org/1999/html">
 <head>
 	<!-- Basic need -->
 	<title>Disney & Pixar</title>
@@ -17,10 +17,9 @@
 	<link rel="profile" href="#">
 
 	<!-- Logo Topolino parte alta -->
-	<link href="images/img/LogoPiccolo.jpg">
+	<link rel="shortcut icon" href="images/img/LogoPiccolo.png">
 
-	<!--Google Font-->
-	<!-- <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />-->
+	<!--Font-->
 	<style>
 		body{
 			font-family:'Comic Neue',cursive;
@@ -40,90 +39,90 @@
 
 <!--preloading-->
 <div id="preloader">
-    <img class="logo" src="images/logo1.png" alt="" width="119" height="58">
-    <div id="status">
-        <span></span>
-        <span></span>
-    </div>
+	<img class="logo" src="images/img/logo1.png" alt="" width="300" height="200">
+	<div id="status">
+		<span></span>
+		<span></span>
+	</div>
 </div>
 <!--end of preloading-->
+
 <!--login form popup-->
 <div class="login-wrapper" id="login-content">
-    <div class="login-content">
-        <a href="#" class="close">x</a>
-        <h3>Login</h3>
-        <form method="post" action="login.php">
-        	<div class="row">
-        		 <label for="username">
-                    Username:
-                    <input type="text" name="username" id="username" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
-                </label>
-        	</div>
-           
-            <div class="row">
-            	<label for="password">
-                    Password:
-                    <input type="password" name="password" id="password" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                </label>
-            </div>
-            <div class="row">
-            	<div class="remember">
+	<div class="login-content">
+		<a href="#" class="close">x</a>
+		<h3>Accedi</h3>
+		<form method="post" action="login.php">
+			<div class="row">
+				<label for="username">
+					Username:
+					<input type="text" name="username" id="username" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+				</label>
+			</div>
+
+			<div class="row">
+				<label for="password">
+					Password:
+					<input type="password" name="password" id="password" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+				</label>
+			</div>
+
+			<div class="row">
+				<div class="remember">
 					<div>
 						<input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
 					</div>
-            		<a href="#">Forget password ?</a>
-            	</div>
-            </div>
-           <div class="row">
-           	 <button type="submit">Login</button>
-           </div>
-        </form>
-        <div class="row">
-        	<p>Or via social</p>
-            <div class="social-btn-2">
-            	<a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
-            	<a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
-            </div>
-        </div>
-    </div>
+					<a href="#">Hai dimenticato la password ?</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<button type="submit">Accedi</button>
+			</div>
+		</form>
+	</div>
 </div>
 <!--end of login form popup-->
+
 <!--signup form popup-->
 <div class="login-wrapper"  id="signup-content">
-    <div class="login-content">
-        <a href="#" class="close">x</a>
-        <h3>sign up</h3>
-        <form method="post" action="signup.php">
-            <div class="row">
-                 <label for="username-2">
-                    Username:
-                    <input type="text" name="username" id="username-2" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
-                </label>
-            </div>
-           
-            <div class="row">
-                <label for="email-2">
-                    your email:
-                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                </label>
-            </div>
-             <div class="row">
-                <label for="password-2">
-                    Password:
-                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                </label>
-            </div>
-             <div class="row">
-                <label for="repassword-2">
-                    re-type Password:
-                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                </label>
-            </div>
-           <div class="row">
-             <button type="submit">sign up</button>
-           </div>
-        </form>
-    </div>
+	<div class="login-content">
+		<a href="#" class="close">x</a>
+		<h3>Registrati</h3>
+		<form method="post" action="signup.php">
+			<div class="row">
+				<label for="username-2">
+					Username:
+					<input type="text" name="username" id="username-2" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+				</label>
+			</div>
+
+			<div class="row">
+				<label for="email-2">
+					Email:
+					<input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+				</label>
+			</div>
+
+			<div class="row">
+				<label for="password-2">
+					Password:
+					<input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+				</label>
+			</div>
+
+			<div class="row">
+				<label for="repassword-2">
+					Re-inserisci Password:
+					<input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+				</label>
+			</div>
+
+			<div class="row">
+				<button type="submit">Registrati</button>
+			</div>
+		</form>
+	</div>
 </div>
 <!--end of signup form popup-->
 
@@ -131,111 +130,89 @@
 <header class="ht-header">
 	<div class="container">
 		<nav class="navbar navbar-default navbar-custom">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header logo">
-				    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					    <span class="sr-only">Toggle navigation</span>
-					    <div id="nav-icon1">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-				    </div>
-				    <a href="index.html"><img class="logo" src="images/logo1.png" alt="" width="119" height="58"></a>
-			    </div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav flex-child-menu menu-left">
-						<li class="hidden">
-							<a href="#page-top"></a>
-						</li>
-						<li class="dropdown first">
-							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown">
-							Home <i class="fa fa-angle-down" aria-hidden="true"></i>
-							</a>
-							<ul class="dropdown-menu level1">
-								<li><a href="index.html">Home 01</a></li>
-								<li><a href="homev2.html">Home 02</a></li>
-								<li><a href="homev3.html">Home 03</a></li>
-							</ul>
-						</li>
-						<li class="dropdown first">
-							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-							movies<i class="fa fa-angle-down" aria-hidden="true"></i>
-							</a>
-							<ul class="dropdown-menu level1">
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" >Movie grid<i class="ion-ios-arrow-forward"></i></a>
-									<ul class="dropdown-menu level2">
-										<li><a href="moviegrid.html">Movie grid</a></li>
-										<li><a href="moviegridfw.html">movie grid full width</a></li>
-									</ul>
-								</li>			
-								<li><a href="movielist.html">Movie list</a></li>
-								<li><a href="moviesingle.html">Movie single</a></li>
-								<li class="it-last"><a href="seriessingle.html">Series single</a></li>
-							</ul>
-						</li>
-						<li class="dropdown first">
-							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-							celebrities <i class="fa fa-angle-down" aria-hidden="true"></i>
-							</a>
-							<ul class="dropdown-menu level1">
-								<li><a href="celebritygrid01.html">celebrity grid 01</a></li>
-								<li><a href="celebritygrid02.html">celebrity grid 02 </a></li>
-								<li><a href="celebritylist.html">celebrity list</a></li>
-								<li class="it-last"><a href="celebritysingle.html">celebrity single</a></li>
-							</ul>
-						</li>
-						<li class="dropdown first">
-							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-							news <i class="fa fa-angle-down" aria-hidden="true"></i>
-							</a>
-							<ul class="dropdown-menu level1">
-								<li><a href="bloglist.html">blog List</a></li>
-								<li><a href="bloggrid.html">blog Grid</a></li>
-								<li class="it-last"><a href="blogdetail.html">blog Detail</a></li>
-							</ul>
-						</li>
-						<li class="dropdown first">
-							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-							community <i class="fa fa-angle-down" aria-hidden="true"></i>
-							</a>
-							<ul class="dropdown-menu level1">
-								<li><a href="userfavoritegrid.html">user favorite grid</a></li>
-								<li><a href="userfavoritelist.html">user favorite list</a></li>
-								<li><a href="userprofile.html">user profile</a></li>
-								<li class="it-last"><a href="userrate.html">user rate</a></li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav flex-child-menu menu-right">
-						<li class="dropdown first">
-							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-							pages <i class="fa fa-angle-down" aria-hidden="true"></i>
-							</a>
-							<ul class="dropdown-menu level1">
-								<li><a href="landing.html">Landing</a></li>
-								<li><a href="404.html">404 Page</a></li>
-								<li class="it-last"><a href="comingsoon.html">Coming soon</a></li>
-							</ul>
-						</li>                
-						<li><a href="#">Help</a></li>
-						<li class="loginLink"><a href="#">LOG In</a></li>
-						<li class="btn signupLink"><a href="#">sign up</a></li>
-					</ul>
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header logo">
+				<div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<div id="nav-icon1">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 				</div>
+				<a href="index.html"><img class="logo" src="images/img/logo1.png" alt="" width="119" height="58"></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav flex-child-menu menu-left">
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li class="dropdown first">
+						<a class="btn btn-default lv1" href="index.html">HOME</a>
+					</li>
+					<li class="dropdown first">
+						<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+							FILM<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul class="dropdown-menu level1">
+							<li><a href="moviegrid.html">TUTTI I FILM</a></li>
+							<li><a href="moviegrid.html">CARTONI DISNEY</a></li>
+							<li><a href="moviegrid.html">CARTONI PIXAR</a></li>
+							<li><a href="moviegrid.html">FILM DISNEY</a></li>
+							<li><a href="moviegrid.html">CORTOMETRAGGI</a></li>
+						</ul>
+					</li>
+					<li class="dropdown first">
+						<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+							CELEBRITA'<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul class="dropdown-menu level1">
+							<li><a href="celebritygrid01.html">TUTTE LE CELEBRITA'</a></li>
+							<li><a href="celebritygrid01.html">PERSONAGGI</a></li>
+							<li><a href="celebritygrid01.html">CAST</a></li>
+						</ul>
+					</li>
+					<li class="dropdown first">
+						<a class="btn btn-default lv1" href="bloggrid.html">NOTIZIE</a>
+					</li>
+					<li class="dropdown first">
+						<a class="btn btn-default lv1" href="comingsoon.html">PROSSIMAMENTE</a>
+					</li>
+				</ul>
+
+				<!--Parte destra barra superiore-->
+				<ul class="nav navbar-nav flex-child-menu menu-right">
+					<li class="dropdown first">
+
+						<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+							AREA PERSONALE<i class="fa fa-angle-down" aria-hidden="true"></i>
+						</a>
+						<ul class="dropdown-menu level1">
+							<li><a href="userfavoritegrid.html">PREFERITI</a></li>
+							<li><a href="userrate.html">RECENSIONI</a></li>
+							<li><a href="userprofile.html">PROFILO</a></li>
+						</ul>
+					</li>
+
+					<li class="btn loginLink"><a href="#">Accedi</a></li>
+					<li class="btn signupLink"><a href="#">Registrati</a></li>
+				</ul>
+			</div>
 			<!-- /.navbar-collapse -->
-	    </nav>
-	    
-	    <!-- top search form -->
-	    <div class="top-search">
-	    	<select>
-				<option value="united">TV show</option>
-				<option value="saab">Others</option>
+		</nav>
+
+		<!-- top search form -->
+		<div class="top-search">
+			<select>
+				<option value="saab">Tutto</option>
+				<option value="united">Cartoni Disney</option>
+				<option value="saab">Cartoni Pixar</option>
+				<option value="saab">Film Disney</option>
+				<option value="saab">Cortometraggi</option>
+				<option value="saab">Personaggi</option>
+				<option value="saab">CAST</option>
 			</select>
-			<input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
-	    </div>
+			<input type="text" placeholder="Cerca per cartone, film, personaggio o cast">
+		</div>
 	</div>
 </header>
 <!-- END | Header -->
@@ -244,11 +221,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<!-- <h1> movie listing - list</h1>
-				<ul class="breadcumb">
-					<li class="active"><a href="#">Home</a></li>
-					<li> <span class="ion-ios-arrow-right"></span> movie listing</li>
-				</ul> -->
 			</div>
 		</div>
 	</div>
@@ -260,26 +232,20 @@
 		<div class="row ipad-width">
 			<div class="col-md-4 col-sm-12 col-xs-12">
 				<div class="mv-ceb">
-					<img src="images/Personaggi/Aladdin.jpg" alt="">
+					<img src="images/Personaggi/Aladdin2.png" alt="">
 				</div>
 			</div>
 			<div class="col-md-8 col-sm-12 col-xs-12">
 				<div class="movie-single-ct">
 					<h1 class="bd-hd">Aladdin</h1>
-					<p class="ceb-single">Character</p>
-					<div class="social-link cebsingle-socail">
-						<a href="#"><i class="ion-social-facebook"></i></a>
-						<a href="#"><i class="ion-social-twitter"></i></a>
-						<a href="#"><i class="ion-social-googleplus"></i></a>
-						<a href="#"><i class="ion-social-linkedin"></i></a>
-					</div>
+					<p class="ceb-single">Personaggio</p>
 					<div class="movie-tabs">
 						<div class="tabs">
 							<ul class="tab-links tabs-mv">
-								<li class="active"><a href="#overviewceb">Overview</a></li>
-								<li><a href="#biography"> Biography</a></li>
+								<li class="active"><a href="#overviewceb"> Generale</a></li>
+								<li><a href="#biography"> Biografia</a></li>
 								<li><a href="#mediaceb"> Media</a></li> 
-								<li><a href="#filmography">filmography</a></li>                        
+								<li><a href="#filmography">Filmografia</a></li>
 							</ul>
 						    <div class="tab-content">
 						        <div id="overviewceb" class="tab active">
@@ -288,10 +254,10 @@
 						            		<p>Ladruncolo per le strade di Agrabah, Aladdin si vede spesso minacciato dalle guardie, capeggiate da Razoul, che tentano invano di catturarlo. Per Agrabah, incontra anche una ragazza, che non era altro che la principessa Jasmine, fuggita da palazzo, per vedere il mondo esterno. La scintilla tra i due scatta all'istante. Imprigionato dalle guardie, per ordine del malvagio gran visir Jafar, viene usato da questi, travestito da umile vecchio, per entrare nella Caverna delle Meraviglie. Infatti, con uno strano macchinario, Jafar aveva scoperto che era proprio lui il predestinato, il diamante allo stato grezzo, unico a poter accedere alla caverna. Una volta entrato, Aladdin ha il solo compito di recuperare una vecchia lampada ad olio, da consegnare al finto vecchietto, ma Abu, la sua scimmia, sottrae un rubino e la caverna sprofonda nella sabbia, lasciando Jafar fuori e Aladdin dentro. Grazie all'inaspettato aiuto di un tappeto volante, Aladdin riesce a mettersi in salvo dalla lava bollente, che c'era a protezione della lampada, ma rimane comunque intrappolato nel sottosuolo. Sarà la lampada a salvarlo. Una volta sfregata, ne esce un Genio, che lo trae in salvo e gli dà tre desideri. Aladdin esprime il primo: trasformarsi in principe, per entrare alla corte del Sultano e chiedere la mano della principessa. Detto fatto, Al, così soprannominato dal Genio, diviene il principe Ali Ababua.
 												Una volta a corte, non saranno gli enormi sfarzi, o l'elefante Abu, a conquistare Jasmine. Sarà, invece, il suo animo nobile e gentile a far sì che lei accetti di sposarlo. Ma, durante l'annuncio del Sultano al popolo, Jafar fa rubare, dal suo pappagallo Iago, la lampada e diviene il nuovo padrone del Genio. Primo desiderio: divenire Sultano; secondo desiderio: potenziare al massimo i suoi poteri di stregone. Il vecchio sovrano e la principessa vengono ridotti in schiavitù, Aladdin viene smascherato dalla sua identità di principe e viene spedito lontano, sulla neve. Ma, grazie al tappeto volante, egli ha la possibilità di tornare ad Agrabah e affrontare nuovamente Jafar. Stanco del ragazzo, che lo deride, perché lui non sarà mai potente quanto il Genio, chiede come terzo desiderio di essere trasformato lui stesso in Genio.
 												Così, Aladdin ha la meglio, poiché lo rinchiude nella lampada e la getta via nella Caverna delle Meraviglie. Sconfitto Jafar, col suo terzo desiderio, Aladdin libera il Genio. Il Sultano premia la sua generosità e il suo coraggio, nominandolo gran visir e gli concede la mano di Jasmine.</p>
-											<p class="time"><a href="#">See full bio <i class="ion-ios-arrow-right"></i></a></p>
+											<p class="time"><a href="#">Leggi tutta la bio<i class="ion-ios-arrow-right"></i></a></p>
 						            		<div class="title-hd-sm">
-												<h4>Videos & Photos</h4>
-												<a href="#" class="time">All 5 Videos & 245 Photos <i class="ion-ios-arrow-right"></i></a>
+												<h4>Video e Foto</h4>
+												<a href="#" class="time">Vedi tutti<i class="ion-ios-arrow-right"></i></a>
 											</div>
 											<div class="mvsingle-item ov-item">
 												<a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image11.jpg" ><img src="images/uploads/image1.jpg" alt=""></a>
@@ -303,123 +269,129 @@
 												</div>
 											</div>
 											<div class="title-hd-sm">
-												<h4>Filmography</h4>
-												<a href="#" class="time">Full Filmography<i class="ion-ios-arrow-right"></i></a>
+												<h4>Filmografia</h4>
+												<a href="#" class="time">Vedi tutta<i class="ion-ios-arrow-right"></i></a>
 											</div>
 											<!-- movie cast -->
 											<div class="mvcast-item">											
 												<div class="cast-it">
 													<div class="cast-left cebleb-film">
-														<img src="images/Immagini Locandine Film/Immagini Cartoni Disney/Aladdin.jpg" alt="">
+														<img src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
 														<div>
-															<a href="#">Aladdin</a>
-															<p class="time">Aladdin</p>
+															<a href="moviesingle.html">Nome film</a>
+															<p class="time">Personaggio principale</p>
 														</div>
 														
 													</div>
-													<p>1992</p>
+													<p>Data uscita film</p>
 												</div>
 												<div class="cast-it">
 													<div class="cast-left cebleb-film">
-														<img src="images/uploads/film2.jpg" alt="">
+														<img src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
 														<div>
-															<a href="#">Eddie the Eagle </a>
-															<p class="time">Bronson Peary</p>
+															<a href="moviesingle.html">Nome film</a>
+															<p class="time">Personaggio principale</p>
 														</div>
+
 													</div>
-													<p>...  2015</p>
+													<p>Data uscita film</p>
 												</div>
 												<div class="cast-it">
 													<div class="cast-left cebleb-film">
-														<img src="images/uploads/film3.jpg" alt="">
+														<img src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
 														<div>
-															<a href="#">Me and Earl and the Dying Girl </a>
-															<p class="time">Hugh Jackman</p>
+															<a href="moviesingle.html">Nome film</a>
+															<p class="time">Personaggio principale</p>
 														</div>
+
 													</div>
-													<p>...  2015</p>
+													<p>Data uscita film</p>
 												</div>
 												<div class="cast-it">
 													<div class="cast-left cebleb-film">
-														<img src="images/uploads/film4.jpg" alt="">
+														<img src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
 														<div>
-															<a href="#">Night at the Museum 3 </a>
-															<p class="time">Blackbeard</p>
+															<a href="moviesingle.html">Nome film</a>
+															<p class="time">Personaggio principale</p>
 														</div>
+
 													</div>
-													<p>...  2014</p>
+													<p>Data uscita film</p>
 												</div>
 												<div class="cast-it">
 													<div class="cast-left cebleb-film">
-														<img src="images/uploads/film5.jpg" alt="">
+														<img src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
 														<div>
-															<a href="#">X-Men: Days of Future Past </a>
-															<p class="time">Wolverine</p>
+															<a href="moviesingle.html">Nome film</a>
+															<p class="time">Personaggio principale</p>
 														</div>
+
 													</div>
-													<p>...  2012</p>
+													<p>Data uscita film</p>
 												</div>
 												<div class="cast-it">
 													<div class="cast-left cebleb-film">
-														<img src="images/uploads/film6.jpg" alt="">
+														<img src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
 														<div>
-															<a href="#">The Wolverine </a>
-															<p class="time">Logan</p>
+															<a href="moviesingle.html">Nome film</a>
+															<p class="time">Personaggio principale</p>
 														</div>
+
 													</div>
-													<p>...  2011</p>
+													<p>Data uscita film</p>
 												</div>
 												<div class="cast-it">
 													<div class="cast-left cebleb-film">
-														<img src="images/uploads/film7.jpg" alt="">
+														<img src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
 														<div>
-															<a href="#">Rise of the Guardians </a>
-															<p class="time">Bunny</p>
+															<a href="moviesingle.html">Nome film</a>
+															<p class="time">Personaggio principale</p>
 														</div>
+
 													</div>
-													<p>...  2011</p>
+													<p>Data uscita film</p>
 												</div>
 												<div class="cast-it">
 													<div class="cast-left cebleb-film">
-														<img src="images/uploads/film8.jpg" alt="">
+														<img src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
 														<div>
-															<a href="#">The Prestige </a>
-															<p class="time">Robert Angier</p>
+															<a href="moviesingle.html">Nome film</a>
+															<p class="time">Personaggio principale</p>
 														</div>
+
 													</div>
-													<p>...  2010</p>
+													<p>Data uscita film</p>
 												</div>
 											</div>
 						            	</div>
 						            	<div class="col-md-4 col-xs-12 col-sm-12">
 						            		<div class="sb-it">
-						            			<h6>Fullname:  </h6>
-						            			<p><a href="#">Aladdin</a></p>
+						            			<h6>Nome e Cognome: </h6>
+						            			<p><a href="celebritysingle.html">Aladdin</a></p>
 						            		</div>
 						            		<div class="sb-it">
-						            			<h6>Date of Birth: </h6>
-						            			<p>1992</p>
+						            			<h6>Data di nascita: </h6>
+						            			<p>data/nascita</p>
 						            		</div>
 						            		<div class="sb-it">
-						            			<h6>Country:  </h6>
-						            			<p>United States of America</p>
+						            			<h6>Paese di nascita:  </h6>
+						            			<p>SOLO PER ATTORI E REGISTI</p>
 						            		</div>
 						            		<div class="sb-it">
-						            			<h6>Keywords:</h6>
+						            			<h6>Parole chiave:</h6>
+												<!-- stesso fatto del singolo film-->
 						            			<p class="tags">
-						            				<span class="time"><a href="#">film</a></span>
-													<span class="time"><a href="#">aladdin</a></span>
-													<span class="time"><a href="#">jasmine</a></span>
-													<span class="time"><a href="#">cartoni</a></span>
-													<span class="time"><a href="#">cartoni disney</a></span>
-													<span class="time"><a href="#">cartoni animati</a></span>
-													<span class="time"><a href="#">cartone</a></span>
-													<span class="time"><a href="#">cartone animato</a></span>
+						            				<span class="time"><a href="moviesingle.html">aladdin</a></span>
+													<span class="time"><a href="celebritysingle.html">aladdin</a></span>
+													<span class="time"><a href="celebritysingle.html">jasmine</a></span>
+													<span class="time"><a href="moviesingle.html">cartoni</a></span>
+													<span class="time"><a href="moviesingle.html">cartoni disney</a></span>
+													<span class="time"><a href="moviesingle.html">cartoni animati</a></span>
+													<span class="time"><a href="moviesingle.html">cartone</a></span>
+													<span class="time"><a href="moviesingle.html">cartone disney</a></span>
+													<span class="time"><a href="moviesingle.html">cartone animato</a></span>
 						            			</p>
 						            		</div>
-						            		<div class="ads">
-												<img src="images/uploads/ads1.png" alt="">
-											</div>
 						            	</div>
 						            </div>
 						        </div>
@@ -427,28 +399,23 @@
 						           <div class="row">
 						            	<div class="rv-hd">
 											<div>
-												<h3>Biography of</h3>
-						       	 				<h2>Hugh Jackman</h2>
+												<h3>Biografia di</h3>
+						       	 				<h2>Nome celebrità</h2>
 											</div>							            						
 						            	</div>
-						            	<p>Hugh Michael Jackman is an Australian actor, singer, multi-instrumentalist, dancer and producer. Jackman has won international recognition for his roles in major films, notably as superhero, period, and romance characters. He is best known for his long-running role as Wolverine in the X-Men film series, as well as for his lead roles in the romantic-comedy fantasy Kate & Leopold (2001), the action-horror film Van Helsing (2004), the drama The Prestige and The Fountain (2006), the epic historical romantic drama Australia (2008), the film version of Les Misérables (2012), and the thriller Prisoners (2013). His work in Les Misérables earned him his first Academy Award nomination for Best Actor and his first Golden Globe Award for Best Actor - Motion Picture Musical or Comedy in 2013. In Broadway theatre, Jackman won a Tony Award for his role in The Boy from Oz. A four-time host of the Tony Awards themselves, he won an Emmy Award for one of these appearances. Jackman also hosted the 81st Academy Awards on 22 February 2009.</p>
-
-										<p>Jackman was born in Sydney, New South Wales, to Grace McNeil (Greenwood) and Christopher John Jackman, an accountant. He is the youngest of five children. His parents, both English, moved to Australia shortly before his birth. He also has Greek (from a great-grandfather) and Scottish (from a grandmother) ancestry.</p>
-										<p>Jackman has a communications degree with a journalism major from the University of Technology Sydney. After graduating, he pursued drama at the Western Australian Academy of Performing Arts, immediately after which he was offered a starring role in the ABC-TV prison drama Correlli (1995), opposite his future wife Deborra-Lee Furness. Several TV guest roles followed, as an actor and variety compere. An accomplished singer, Jackman has starred as Gaston in the Australian production of "Beauty and the Beast." He appeared as Joe Gillis in the Australian production of "Sunset Boulevard." In 1998, he was cast as Curly in the Royal National Theatre's production of Trevor Nunn's Oklahoma. Jackman has made two feature films, the second of which, Erskineville Kings (1999), garnered him an Australian Film Institute nomination for Best Actor in 1999. Recently, he won the part of Logan/Wolverine in the Bryan Singer- directed comic-book movie X-Men (2000). In his spare time, Jackman plays piano, golf, and guitar, and likes to windsurf.</p>
-										<p>On turning down the chance to play Richard Gere's character in the Harvey Weinstein-produced film Chicago (2002): I thought I was too young for the role. You have some 34-year-old guy up against Catherine Zeta-Jones and Renée Zellweger and it becomes a different movie. At one point, Harvey was telling me they were thinking of Kevin Spacey, and Ivtold him, 'That's exactly right. You should hire him.' Then I was in New York when the movie opened and the queue was around the block. I sat down and thought that I had probably made the biggest mistake. But I still honestly think that it was the right thing to do. I still think I was too young for that part.
-										</p>
+						            	<p> Biografia .......</p>
 						            </div>
 						        </div>
 						        <div id="mediaceb" class="tab">
 						        	<div class="row">
 						        		<div class="rv-hd">
 						            		<div>
-						            			<h3>Biography of</h3>
-					       	 					<h2>Hugh Jackman</h2>
+						            			<h3>Video e Foto di</h3>
+					       	 					<h2> Nome Celebrità </h2>
 						            		</div>
 						            	</div>
 						            	<div class="title-hd-sm">
-											<h4>Videos <span>(1)</span></h4>
+											<h4>Video <span>(3)</span></h4>
 										</div>
 										<div class="mvsingle-item media-item">
 											<div class="vd-item">
@@ -457,83 +424,83 @@
 													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="images/uploads/play-vd.png" alt=""></a>
 												</div>
 												<div class="vd-infor">
-													<h6> <a href="#">Trailer: Aladdin</a></h6>
-													<p class="time"> 1:22 </p>
+													<h6> <a href="#">Video Film </a></h6>
+													<p class="time">Durata Video </p>
 												</div>
 											</div>
 											<div class="vd-item">
 												<div class="vd-it">
-													<img class="vd-img" src="images/uploads/vd-item2.jpg" alt="">
-													<a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+													<img class="vd-img" src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
+													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="images/uploads/play-vd.png" alt=""></a>
 												</div>
 												<div class="vd-infor">
-													<h6> <a href="#">Featurette: “Avengers Re-Assembled</a></h6>
-													<p class="time"> 1: 03</p>
+													<h6> <a href="#">Video Film </a></h6>
+													<p class="time">Durata Video </p>
 												</div>
 											</div>
 											<div class="vd-item">
 												<div class="vd-it">
-													<img class="vd-img" src="images/uploads/vd-item3.jpg" alt="">
-													<a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+													<img class="vd-img" src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
+													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="images/uploads/play-vd.png" alt=""></a>
 												</div>
 												<div class="vd-infor">
-													<h6> <a href="#">Interview: Robert Downey Jr</a></h6>
-													<p class="time"> 3:27</p>
+													<h6> <a href="#">Video Film </a></h6>
+													<p class="time">Durata Video </p>
 												</div>
 											</div>
 											<div class="vd-item">
 												<div class="vd-it">
-													<img class="vd-img" src="images/uploads/vd-item4.jpg" alt="">
-													<a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+													<img class="vd-img" src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
+													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="images/uploads/play-vd.png" alt=""></a>
 												</div>
 												<div class="vd-infor">
-													<h6> <a href="#">Interview: Scarlett Johansson</a></h6>
-													<p class="time"> 3:27</p>
+													<h6> <a href="#">Video Film </a></h6>
+													<p class="time">Durata Video </p>
 												</div>
 											</div>
 											<div class="vd-item">
 												<div class="vd-it">
-													<img class="vd-img" src="images/uploads/vd-item1.jpg" alt="">
-													<a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+													<img class="vd-img" src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
+													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="images/uploads/play-vd.png" alt=""></a>
 												</div>
 												<div class="vd-infor">
-													<h6> <a href="#">Featurette: Meet Quicksilver & The Scarlet Witch</a></h6>
-													<p class="time"> 1: 31</p>
+													<h6> <a href="#">Video Film </a></h6>
+													<p class="time">Durata Video </p>
 												</div>
 											</div>
 											<div class="vd-item">
 												<div class="vd-it">
-													<img class="vd-img" src="images/uploads/vd-item2.jpg" alt="">
-													<a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+													<img class="vd-img" src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
+													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="images/uploads/play-vd.png" alt=""></a>
 												</div>
 												<div class="vd-infor">
-													<h6> <a href="#">Interview: Director Joss Whedon</a></h6>
-													<p class="time"> 1: 03</p>
+													<h6> <a href="#">Video Film </a></h6>
+													<p class="time">Durata Video </p>
 												</div>
 											</div>
 											<div class="vd-item">
 												<div class="vd-it">
-													<img class="vd-img" src="images/uploads/vd-item3.jpg" alt="">
-													<a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+													<img class="vd-img" src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
+													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="images/uploads/play-vd.png" alt=""></a>
 												</div>
 												<div class="vd-infor">
-													<h6> <a href="#">Interview: Mark Ruffalo</a></h6>
-													<p class="time"> 3:27</p>
+													<h6> <a href="#">Video Film </a></h6>
+													<p class="time">Durata Video </p>
 												</div>
 											</div>
 											<div class="vd-item">
 												<div class="vd-it">
-													<img class="vd-img" src="images/uploads/vd-item4.jpg" alt="">
-													<a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
+													<img class="vd-img" src="images/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
+													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="images/uploads/play-vd.png" alt=""></a>
 												</div>
 												<div class="vd-infor">
-													<h6> <a href="#">Official Trailer #2</a></h6>
-													<p class="time"> 3:27</p>
+													<h6> <a href="#">Video Film </a></h6>
+													<p class="time">Durata Video </p>
 												</div>
 											</div>
 										</div>
 										<div class="title-hd-sm">
-											<h4>Photos <span> (21)</span></h4>
+											<h4>Foto <span>(20)</span></h4>
 										</div>
 										<div class="mvsingle-item">
 											<a class="img-lightbox"  data-fancybox-group="gallery" href="images/foto/aladdin1.jpg" ><img src="images/foto/aladdin1.jpg" alt=""></a>
@@ -549,21 +516,20 @@
 						        	<div class="row">
 						            	<div class="rv-hd">
 						            		<div>
-						            			<h3>Biography of</h3>
-					       	 					<h2>Hugh Jackman</h2>
+						            			<h3>Film correlati di</h3>
+					       	 					<h2>Nome Celebrità</h2>
 						            		</div>
-										
 						            	</div>
 						            	<div class="topbar-filter">
-											<p>Found <span>14 movies</span> in total</p>
-											<label>Filter by:</label>
+											<p>Trovati <span>12 film</span> in totale</p>
+											<label>Ordina per:</label>
 											<select>
-												<option value="popularity">Popularity Descending</option>
-												<option value="popularity">Popularity Ascending</option>
-												<option value="rating">Rating Descending</option>
-												<option value="rating">Rating Ascending</option>
-												<option value="date">Release date Descending</option>
-												<option value="date">Release date Ascending</option>
+												<option value="popularity">Più popolari</option>
+												<option value="popularity">Meno popolari</option>
+												<option value="rating">Più votati</option>
+												<option value="rating">Meno votati</option>
+												<option value="date">Ultime uscite</option>
+												<option value="date">Prime uscite</option>
 											</select>
 										</div>
 										<!-- movie cast -->
@@ -572,82 +538,89 @@
 												<div class="cast-left cebleb-film">
 													<img src="images/uploads/film1.jpg" alt="">
 													<div>
-														<a href="#">X-Men: Apocalypse </a>
-														<p class="time">Logan</p>
+														<a href="moviesingle.html">Nome Film </a>
+														<p class="time">Protagonista</p>
 													</div>
 													
 												</div>
-												<p>...  2016</p>
+												<p>Data uscita Film</p>
 											</div>
 											<div class="cast-it">
 												<div class="cast-left cebleb-film">
-													<img src="images/uploads/film2.jpg" alt="">
+													<img src="images/uploads/film1.jpg" alt="">
 													<div>
-														<a href="#">Eddie the Eagle </a>
-														<p class="time">Bronson Peary</p>
+														<a href="moviesingle.html">Nome Film </a>
+														<p class="time">Protagonista</p>
 													</div>
+
 												</div>
-												<p>...  2015</p>
+												<p>Data uscita Film</p>
 											</div>
 											<div class="cast-it">
 												<div class="cast-left cebleb-film">
-													<img src="images/uploads/film3.jpg" alt="">
+													<img src="images/uploads/film1.jpg" alt="">
 													<div>
-														<a href="#">Me and Earl and the Dying Girl </a>
-														<p class="time">Hugh Jackman</p>
+														<a href="moviesingle.html">Nome Film </a>
+														<p class="time">Protagonista</p>
 													</div>
+
 												</div>
-												<p>...  2015</p>
+												<p>Data uscita Film</p>
 											</div>
 											<div class="cast-it">
 												<div class="cast-left cebleb-film">
-													<img src="images/uploads/film4.jpg" alt="">
+													<img src="images/uploads/film1.jpg" alt="">
 													<div>
-														<a href="#">Night at the Museum 3 </a>
-														<p class="time">Blackbeard</p>
+														<a href="moviesingle.html">Nome Film </a>
+														<p class="time">Protagonista</p>
 													</div>
+
 												</div>
-												<p>...  2014</p>
+												<p>Data uscita Film</p>
 											</div>
 											<div class="cast-it">
 												<div class="cast-left cebleb-film">
-													<img src="images/uploads/film5.jpg" alt="">
+													<img src="images/uploads/film1.jpg" alt="">
 													<div>
-														<a href="#">X-Men: Days of Future Past </a>
-														<p class="time">Wolverine</p>
+														<a href="moviesingle.html">Nome Film </a>
+														<p class="time">Protagonista</p>
 													</div>
+
 												</div>
-												<p>...  2012</p>
+												<p>Data uscita Film</p>
 											</div>
 											<div class="cast-it">
 												<div class="cast-left cebleb-film">
-													<img src="images/uploads/film6.jpg" alt="">
+													<img src="images/uploads/film1.jpg" alt="">
 													<div>
-														<a href="#">The Wolverine </a>
-														<p class="time">Logan</p>
+														<a href="moviesingle.html">Nome Film </a>
+														<p class="time">Protagonista</p>
 													</div>
+
 												</div>
-												<p>...  2011</p>
+												<p>Data uscita Film</p>
 											</div>
 											<div class="cast-it">
 												<div class="cast-left cebleb-film">
-													<img src="images/uploads/film7.jpg" alt="">
+													<img src="images/uploads/film1.jpg" alt="">
 													<div>
-														<a href="#">Rise of the Guardians </a>
-														<p class="time">Bunny</p>
+														<a href="moviesingle.html">Nome Film </a>
+														<p class="time">Protagonista</p>
 													</div>
+
 												</div>
-												<p>...  2011</p>
+												<p>Data uscita Film</p>
 											</div>
 											<div class="cast-it">
 												<div class="cast-left cebleb-film">
-													<img src="images/uploads/film8.jpg" alt="">
+													<img src="images/uploads/film1.jpg" alt="">
 													<div>
-														<a href="#">The Prestige </a>
-														<p class="time">Robert Angier</p>
+														<a href="moviesingle.html">Nome Film </a>
+														<p class="time">Protagonista</p>
 													</div>
+
 												</div>
-												<p>...  2010</p>
+												<p>Data uscita Film</p>
 											</div>
 										</div>
 						            </div>
@@ -668,55 +641,45 @@
 	<div class="container">
 		<div class="flex-parent-ft">
 			<div class="flex-child-ft item1">
-				 <a href="index.html"><img class="logo" src="images/logo1.png" alt=""></a>
-				 <p>5th Avenue st, manhattan<br>
-				New York, NY 10001</p>
-				<p>Call us: <a href="#">(+01) 202 342 6789</a></p>
+				<a href="index.html"><img class="logo" src="images/img/logo1.png" alt="" height="300" width="500"></a>
+				<p> Burbank, California <br> Stati Uniti D'America, USA</p>
+				<p>Chiamaci: (+39) 0554646038202 </p>
 			</div>
 			<div class="flex-child-ft item2">
-				<h4>Resources</h4>
+				<h4>Risorse</h4>
 				<ul>
-					<li><a href="#">About</a></li> 
-					<li><a href="#">Blockbuster</a></li>
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">Forums</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Help Center</a></li>
+					<li><a href="https://disney.it/chi-siamo">Chi siamo</a></li>
+					<li><a href="https://support.disney.com/hc/it">Aiuto</a></li>
+					<li><a href="index.html">Registrati</a></li>
+					<li><a href="index.html">Accedi</a></li>
+
+					<li><a href="bloggrid.html">Notizie</a></li>
 				</ul>
 			</div>
 			<div class="flex-child-ft item3">
-				<h4>Legal</h4>
+				<h4>Legale</h4>
 				<ul>
-					<li><a href="#">Terms of Use</a></li> 
-					<li><a href="#">Privacy Policy</a></li>	
-					<li><a href="#">Security</a></li>
+					<li><a href="https://disneytermsofuse.com/italian-italy/">Condizioni d'uso</a></li>
+					<li><a href="https://privacy.thewaltdisneycompany.com/it/informativa-sulla-privacy/">Informativa sulla Privacy</a></li>
+					<li><a href="https://privacy.thewaltdisneycompany.com/it/informativa-sulla-privacy/informativa-sulla-privacy-2/">Sicurezza</a></li>
 				</ul>
 			</div>
 			<div class="flex-child-ft item4">
 				<h4>Account</h4>
 				<ul>
-					<li><a href="#">My Account</a></li> 
-					<li><a href="#">Watchlist</a></li>	
-					<li><a href="#">Collections</a></li>
-					<li><a href="#">User Guide</a></li>
+					<li><a href="userprofile.html">Profilo</a></li>
+					<li><a href="userfavoritegrid.html">Preferiti</a></li>
+					<li><a href="userrate.html">Recensioni</a></li>
 				</ul>
-			</div>
-			<div class="flex-child-ft item5">
-				<h4>Newsletter</h4>
-				<p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
-				<form action="#">
-					<input type="text" placeholder="Enter your email...">
-				</form>
-				<a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
 			</div>
 		</div>
 	</div>
 	<div class="ft-copyright">
 		<div class="ft-left">
-			<p>© 2017 Blockbuster. All Rights Reserved. Designed by leehari.</p>
+			<p>© Disney © Disney•Pixar © & ™ © 2021 Dinsey&Pixar - Tutti i diritti riservati</p>
 		</div>
 		<div class="backtotop">
-			<p><a href="#" id="back-to-top">Back to top  <i class="ion-ios-arrow-thin-up"></i></a></p>
+			<p><a href="#" id="back-to-top">Torna all'inizio<i class="ion-ios-arrow-thin-up"></i></a></p>
 		</div>
 	</div>
 </footer>
