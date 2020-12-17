@@ -5026,7 +5026,6 @@ ul {
 }
 .ads {
   margin-bottom: 60px;
-  margin-left: 100px;
 }
 .ads img {
   width: 100%;
@@ -6593,7 +6592,9 @@ ul {
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -6604,6 +6605,7 @@ ul {
 }
 .celebrity-items .ceb-item img {
   margin-bottom: 15px;
+  height: 250px;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -7887,10 +7889,11 @@ header .navbar-default .navbar-nav li.btn a {
   border-radius: 20px;
 }
 header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 {
+  background-color: #233a50;
   position: absolute;
   min-width: 180px;
-  padding-top: 20px ;
-  padding-bottom: 20px ;
+  padding-top: 5px ;
+  padding-bottom: 5px ;
   left: -15px;
 }
 header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 .dropdown-toggle {
@@ -7899,7 +7902,7 @@ header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 .dropdown-tog
 }
 header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 li a {
   padding: 10px 30px;
-  color: #020d18;
+  color: #c6d2db;
 }
 header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 li a i {
   margin-top: 0;
@@ -7961,7 +7964,7 @@ header .top-search select {
   /* -moz-appearance: none; */
   /* Firefox */
   /* background: url('../images/uploads/drop-icon.png') no-repeat right 20px center; */
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #ffffff;
 }
 header .top-search input::-webkit-input-placeholder {
@@ -8315,4 +8318,13 @@ label#ordinaLabel {
 
 a.redbtn.recensioneBtn{
 margin-right: 20px;
+}
+
+#celebrity_items_2{
+  margin-top: 30px;
+  grid-template-columns: auto auto auto auto;
+}
+
+#pixarGif{
+  margin-left: 100px;
 }
