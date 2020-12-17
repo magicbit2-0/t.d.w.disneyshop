@@ -8328,3 +8328,10 @@ margin-right: 20px;
 #pixarGif{
   margin-left: 100px;
 }
+
+.describe2 {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #405266;
+  margin-bottom: 25px;
+  font-size: 1.1em;
+}

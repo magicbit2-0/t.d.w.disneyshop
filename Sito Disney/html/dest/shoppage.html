@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 no-js" lang="it-IT">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 no-js" lang="it-IT">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="it" class="no-js" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Basic need -->
+    <title>Disney & Pixar</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="profile" href="#">
+
+    <!-- Logo Topolino parte alta -->
+    <link rel="shortcut icon" href="images/img/LogoPiccolo.png">
+
+    <!--Font-->
+    <style>
+        body{
+            font-family:'Comic Neue',cursive;
+        }
+    </style>
+
+    <!-- Mobile specific meta -->
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone-no">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!--preloading-->
+<div id="preloader">
+    <img class="logo" src="images/img/logo1.png" alt="" width="300" height="200">
+    <div id="status">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!--end of preloading-->
+
+<!--login form popup-->
+<div class="login-wrapper" id="login-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>Accedi</h3>
+        <form method="post" action="login.php">
+            <div class="row">
+                <label for="username">
+                    Username:
+                    <input type="text" name="username" id="username" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <label for="password">
+                    Password:
+                    <input type="password" name="password" id="password" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <div class="remember">
+                    <div>
+                        <input type="checkbox" name="remember" value="Remember me"><span>Ricordami</span>
+                    </div>
+                    <a href="#">Hai dimenticato la password ?</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <button type="submit">Accedi</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--end of login form popup-->
+
+<!--signup form popup-->
+<div class="login-wrapper"  id="signup-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>Registrati</h3>
+        <form method="post" action="signup.php">
+            <div class="row">
+                <label for="username-2">
+                    Username:
+                    <input type="text" name="username" id="username-2" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <label for="email-2">
+                    Email:
+                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <label for="password-2">
+                    Password:
+                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <label for="repassword-2">
+                    Re-inserisci Password:
+                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <button type="submit">Registrati</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--end of signup form popup-->
+
+<!-- BEGIN | Header -->
+<header class="ht-header">
+    <div class="container">
+        <nav class="navbar navbar-default navbar-custom">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header logo">
+                <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <div id="nav-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <a href="index.html"><img class="logo" src="images/img/logo1.png" alt="" width="119" height="58"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav flex-child-menu menu-left">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default lv1" href="index.html">HOME</a>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            FILM<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu level1">
+                            <li><a href="moviegrid.html">TUTTI I FILM</a></li>
+                            <li><a href="moviegrid.html">CARTONI DISNEY</a></li>
+                            <li><a href="moviegrid.html">CARTONI PIXAR</a></li>
+                            <li><a href="moviegrid.html">FILM DISNEY</a></li>
+                            <li><a href="moviegrid.html">CORTOMETRAGGI</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            CELEBRITA'<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu level1">
+                            <li><a href="celebritygrid01.html">TUTTE LE CELEBRITA'</a></li>
+                            <li><a href="celebritygrid01.html">PERSONAGGI</a></li>
+                            <li><a href="celebritygrid01.html">CAST</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default lv1" href="bloggrid.html">NOTIZIE</a>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default lv1" href="comingsoon.html">PROSSIMAMENTE</a>
+                    </li>
+                </ul>
+
+                <!--Parte destra barra superiore-->
+                <ul class="nav navbar-nav flex-child-menu menu-right">
+                    <li class="dropdown first">
+
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            AREA PERSONALE<i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu level1">
+                            <li><a href="userfavoritegrid.html">PREFERITI</a></li>
+                            <li><a href="userrate.html">RECENSIONI</a></li>
+                            <li><a href="userprofile.html">PROFILO</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="btn loginLink"><a href="#">Accedi</a></li>
+                    <li class="btn signupLink"><a href="#">Registrati</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+    </div>
+</header>
+<!-- END | Header -->
+
+<!-- Pagina carrello -->
+<div class="hero common-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-ct">
+                    <h1> Carrello</h1>
+                    <ul class="breadcumb">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li> <span class="ion-ios-arrow-right"></span>Carrello</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-single movie_list">
+    <div class="container">
+        <div class="row ipad-width2">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <div class="movie-item-style-2">
+                    <img src="images/locandine/Immagini%20Cartoni%20Disney/Aladdin.jpg" alt="">
+                    <div class="mv-item-infor">
+                        <h6><a href="moviesingle.html">Titolo Film <span>(Data pubblicazione)</span></a></h6>
+                        <p class="describe2">Prezzo</p>
+                        <p class="run-time"> Durata: 2h21'       <span>Data Rilascio: 1 Maggio 2015</span></p>
+                    </div>
+                </div>
+                <div class="movie-item-style-2">
+                    <img src="images/locandine/Immagini%20Cartoni%20Disney/Aladdin.jpg" alt="">
+                    <div class="mv-item-infor">
+                        <h6><a href="moviesingle.html">Titolo Film <span>(Data pubblicazione)</span></a></h6>
+                        <p class="describe2">Prezzo</p>
+                        <p class="run-time"> Durata: 2h21'       <span>Data Rilascio: 1 Maggio 2015</span></p>
+                    </div>
+                </div>
+                <div class="movie-item-style-2">
+                    <img src="images/locandine/Immagini%20Cartoni%20Disney/Aladdin.jpg" alt="">
+                    <div class="mv-item-infor">
+                        <h6><a href="moviesingle.html">Titolo Film <span>(Data pubblicazione)</span></a></h6>
+                        <p class="describe2">Prezzo</p>
+                        <p class="run-time"> Durata: 2h21'       <span>Data Rilascio: 1 Maggio 2015</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="sidebar">
+                    <div class="searh-form">
+                        <h4 class="sb-title">Acquista</h4>
+                        <form class="form-style-1" action="#">
+                            <div class="row">
+                                <div class="col-md-12 form-it">
+                                    <p><strong>Totale parziale: </strong></p>
+                                    <p align="right">€xx.xx</p>
+                                </div>
+                                <div class="col-md-12 form-it">
+                                    <p><strong>Spese di Spedizione:</strong></p>
+                                    <p align="right">€xx.xx</p>
+                                </div>
+                                <div class="col-md-12 form-it">
+                                    <p><strong>Totale(Iva inclusa):</strong></p>
+                                    <p align="right">€xx.xx</p>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <input class="submit" type="submit" value="Acquista Ora">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <!-- DA FARE QUI ARTICOLI CORRELATI -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer section-->
+<footer class="ht-footer">
+    <div class="container">
+        <div class="flex-parent-ft">
+            <div class="flex-child-ft item1">
+                <a href="index.html"><img class="logo" src="images/img/logo1.png" alt="" height="300" width="500"></a>
+                <p> Burbank, California <br> Stati Uniti D'America, USA</p>
+                <p>Chiamaci: (+39) 0554646038202 </p>
+            </div>
+            <div class="flex-child-ft item2">
+                <h4>Risorse</h4>
+                <ul>
+                    <li><a href="https://disney.it/chi-siamo">Chi siamo</a></li>
+                    <li><a href="https://support.disney.com/hc/it">Aiuto</a></li>
+                    <li><a href="index.html">Registrati</a></li>
+                    <li><a href="index.html">Accedi</a></li>
+                    <li><a href="bloggrid.html">Notizie</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item3">
+                <h4>Legale</h4>
+                <ul>
+                    <li><a href="https://disneytermsofuse.com/italian-italy/">Condizioni d'uso</a></li>
+                    <li><a href="https://privacy.thewaltdisneycompany.com/it/informativa-sulla-privacy/">Informativa sulla Privacy</a></li>
+                    <li><a href="https://privacy.thewaltdisneycompany.com/it/informativa-sulla-privacy/informativa-sulla-privacy-2/">Sicurezza</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item4">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="userprofile.html">Profilo</a></li>
+                    <li><a href="userfavoritegrid.html">Preferiti</a></li>
+                    <li><a href="userrate.html">Recensioni</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ft-copyright">
+        <div class="ft-left">
+            <p>© Disney © Disney•Pixar © & ™ © 2021 Dinsey&Pixar - Tutti i diritti riservati</p>
+        </div>
+        <div class="backtotop">
+            <p><a href="#" id="back-to-top">Torna all'inizio<i class="ion-ios-arrow-thin-up"></i></a></p>
+        </div>
+    </div>
+</footer>
+<!-- end of footer section-->
+
+<script src="js/jquery.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/plugins2.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
