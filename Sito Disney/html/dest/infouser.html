@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 no-js" lang="it-IT">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 no-js" lang="it-IT">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="it" class="no-js" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Basic need -->
+    <title>Disney & Pixar</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="profile" href="#">
+
+    <!-- Logo Topolino parte alta -->
+    <link rel="shortcut icon" href="images/img/LogoPiccolo.png">
+
+    <!--Font-->
+    <style>
+        body{
+            font-family:'Comic Neue',cursive;
+        }
+    </style>
+
+    <!-- Mobile specific meta -->
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone-no">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!--preloading-->
+<div id="preloader">
+    <img class="logo" src="images/img/logo1.png" alt="" width="300" height="200">
+    <div id="status">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!--end of preloading-->
+
+<!--login form popup-->
+<div class="login-wrapper" id="login-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>Accedi</h3>
+        <form method="post" action="login.php">
+            <div class="row">
+                <label for="username">
+                    Username:
+                    <input type="text" name="username" id="username" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <label for="password">
+                    Password:
+                    <input type="password" name="password" id="password" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <div class="remember">
+                    <div>
+                        <input type="checkbox" name="remember" value="Remember me"><span>Ricordami</span>
+                    </div>
+                    <a href="#">Hai dimenticato la password ?</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <button type="submit">Accedi</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--end of login form popup-->
+
+<!--signup form popup-->
+<div class="login-wrapper"  id="signup-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>Registrati</h3>
+        <form method="post" action="signup.php">
+            <div class="row">
+                <label for="username-2">
+                    Username:
+                    <input type="text" name="username" id="username-2" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <label for="email-2">
+                    Email:
+                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <label for="password-2">
+                    Password:
+                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <label for="repassword-2">
+                    Re-inserisci Password:
+                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <button type="submit">Registrati</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--end of signup form popup-->
+
+<!-- BEGIN | Header -->
+<header class="ht-header">
+    <div class="container">
+        <nav class="navbar navbar-default navbar-custom">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header logo">
+                <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <div id="nav-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <a href="index.html"><img class="logo" src="images/img/logo1.png" alt="" width="119" height="58"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav flex-child-menu menu-left">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default lv1" href="index.html">HOME</a>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            FILM<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu level1">
+                            <li><a href="moviegrid.html">TUTTI I FILM</a></li>
+                            <li><a href="moviegrid.html">CARTONI DISNEY</a></li>
+                            <li><a href="moviegrid.html">CARTONI PIXAR</a></li>
+                            <li><a href="moviegrid.html">FILM DISNEY</a></li>
+                            <li><a href="moviegrid.html">CORTOMETRAGGI</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            CELEBRITA'<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu level1">
+                            <li><a href="celebritygrid01.html">TUTTE LE CELEBRITA'</a></li>
+                            <li><a href="celebritygrid01.html">PERSONAGGI</a></li>
+                            <li><a href="celebritygrid01.html">CAST</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default lv1" href="bloggrid.html">NOTIZIE</a>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default lv1" href="comingsoon.html">PROSSIMAMENTE</a>
+                    </li>
+                </ul>
+
+                <!--Parte destra barra superiore-->
+                <ul class="nav navbar-nav flex-child-menu menu-right">
+                    <li class="dropdown first">
+
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            AREA PERSONALE<i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu level1">
+                            <li><a href="userfavoritegrid.html">PREFERITI</a></li>
+                            <li><a href="userrate.html">RECENSIONI</a></li>
+                            <li><a href="userprofile.html">PROFILO</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="btn loginLink"><a href="#">Accedi</a></li>
+                    <li class="btn signupLink"><a href="#">Registrati</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+    </div>
+</header>
+<!-- END | Header -->
+
+<!-- Pagina carrello -->
+<div class="hero common-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-ct">
+                    <h1> Carrello</h1>
+                    <ul class="breadcumb">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li> <span class="ion-ios-arrow-right"></span>Carrello</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="Common__Title-sc-1xdep3b-2 kKWHBZ">Spedizione</div>
+    <div height="570" class="Common__Wrapper-sc-1xdep3b-20 UYWIu">
+        <div>
+            <div class="Common__MultipleShippingWrapper-sc-1xdep3b-56 gBRSqm">
+                <div class="FormElement__FormContent-sc-1j8zvtr-10 gLuca">
+                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 bnrIwe">Nuovo indirizzo</div>
+                    <div class="FormElement__FormBody-sc-1j8zvtr-21 bftZOW">
+                        <div class="FormElement__FormRow-sc-1j8zvtr-22 eGSwri">
+                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
+                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
+                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Nome</div>
+                                    <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
+                                        <input type="text" maxlength="99" placeholder="" autocomplete="given-name" data-id="firstName" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
+                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
+                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Cognome</div>
+                                    <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
+                                        <input type="text" maxlength="99" placeholder="" autocomplete="family-name" data-id="lastName" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="FormElement__FormRow-sc-1j8zvtr-22 eGSwri">
+                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
+                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
+                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Indirizzo n. 1</div>
+                                    <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
+                                        <input type="text" maxlength="199" placeholder="" autocomplete="address-line1" data-id="addressLineOne" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="FormElement__FormRow-sc-1j8zvtr-22 eGSwri">
+                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
+                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
+                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Indirizzo n. 2</div>
+                                    <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
+                                        <input type="text" maxlength="199" placeholder="Facoltativo" autocomplete="address-line2" data-id="addressLineTwo" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="FormElement__FormRow-sc-1j8zvtr-22 eGSwri">
+                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
+                                <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Paese / regione</div>
+                                <div width="100%" class="WishSelectInput__SelectBox-sc-1hxkg4o-0 dcNKzp">
+                                    <div class="WishSelectInput__SelectBoxText-sc-1hxkg4o-1 jGdnXG">Italia</div>
+                                    <div class="WishSelectInput__DropdownArrow-sc-1hxkg4o-2 gwoJra">
+                                        <svg width="8px" height="5px" viewBox="0 0 8 5" style="transform: rotate(0deg); transition: all 0.25s ease 0s;">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path d="M-4-6h16v16H-4z"></path>
+                                                <path d="M1 0a1.003 1.003 0 0 0-.71 1.71l3 3c.18.18.43.29.71.29.28 0 .53-.11.71-.29l3-3A1.003 1.003 0 0 0 7 0H1z" fill="#48636f">
+
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="WishSelectInput__SelectBoxDropdown-sc-1hxkg4o-3 bEgPPI">
+                                        <div data-index="0" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Albania</div>
+                                        <div data-index="1" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Algeria</div>
+                                        <div data-index="2" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Andorra</div>
+                                        <div data-index="3" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Anguilla</div>
+                                        <div data-index="4" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Antigua e Barbuda</div>
+                                        <div data-index="5" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Arabia Saudita</div>
+                                        <div data-index="6" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Argentina</div>
+                                        <div data-index="7" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Armenia</div>
+                                        <div data-index="8" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Aruba</div>
+                                        <div data-index="9" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Australia</div>
+                                        <div data-index="10" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Austria</div>
+                                        <div data-index="11" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Azerbaijan</div>
+                                        <div data-index="12" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bahamas</div>
+                                        <div data-index="13" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bahrein</div>
+                                        <div data-index="14" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bangladesh</div>
+                                        <div data-index="15" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Barbados</div>
+                                        <div data-index="16" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Belgio</div>
+                                        <div data-index="17" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Belize</div>
+                                        <div data-index="18" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bermuda</div>
+                                        <div data-index="19" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bhutan</div>
+                                        <div data-index="20" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Birmania</div>
+                                        <div data-index="21" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bolivia</div>
+                                        <div data-index="22" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bosnia ed Erzegovina</div>
+                                        <div data-index="23" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Botswana</div>
+                                        <div data-index="24" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Brasile</div>
+                                        <div data-index="25" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bulgaria</div>
+                                        <div data-index="26" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Cambogia</div>
+                                        <div data-index="27" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Canada</div>
+                                        <div data-index="28" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Cile</div>
+                                        <div data-index="29" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Cipro</div>
+                                        <div data-index="30" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Colombia</div>
+                                        <div data-index="31" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Corea del Sud</div>
+                                        <div data-index="32" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Costa Rica</div>
+                                        <div data-index="33" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Croazia</div>
+                                        <div data-index="34" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Danimarca</div>
+                                        <div data-index="35" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Dominica</div>
+                                        <div data-index="36" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Ecuador</div>
+                                        <div data-index="37" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Egitto</div>
+                                        <div data-index="38" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">El Salvador</div>
+                                        <div data-index="39" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Emirati Arabi Uniti</div>
+                                        <div data-index="40" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Estonia</div>
+                                        <div data-index="41" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Figi</div>
+                                        <div data-index="42" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Filippine</div>
+                                        <div data-index="43" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Finlandia</div>
+                                        <div data-index="44" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Francia</div>
+                                        <div data-index="45" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Gabon</div>
+                                        <div data-index="46" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Georgia</div>
+                                        <div data-index="47" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Germania</div>
+                                        <div data-index="48" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Ghana</div>
+                                        <div data-index="49" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Giamaica</div>
+                                        <div data-index="50" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Giappone</div>
+                                        <div data-index="51" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Gibilterra</div>
+                                        <div data-index="52" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Giordania</div>
+                                        <div data-index="53" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Grecia</div>
+                                        <div data-index="54" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Grenada</div>
+                                        <div data-index="55" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Guatemala</div>
+                                        <div data-index="56" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Guyana</div>
+                                        <div data-index="57" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Honduras</div>
+                                        <div data-index="58" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">India</div>
+                                        <div data-index="59" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Indonesia</div>
+                                        <div data-index="60" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Irlanda</div>
+                                        <div data-index="61" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Islanda</div>
+                                        <div data-index="62" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Isole Cayman</div>
+                                        <div data-index="63" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Isole Vergini Americane</div>
+                                        <div data-index="64" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Isole Vergini Britanniche</div>
+                                        <div data-index="65" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Israele</div>
+                                        <div data-index="66" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Italia</div>
+                                        <div data-index="67" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Jersey</div>
+                                        <div data-index="68" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Kazakistan</div>
+                                        <div data-index="69" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Kenia</div>
+                                        <div data-index="70" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Kuwait</div>
+                                        <div data-index="71" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Kyrgyzstan</div>
+                                        <div data-index="72" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Lettonia</div>
+                                        <div data-index="73" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Liechtenstein</div>
+                                        <div data-index="74" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Lituania</div>
+                                        <div data-index="75" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Lussemburgo</div>
+                                        <div data-index="76" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Macedonia del Nord</div>
+                                        <div data-index="77" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Maldive</div>
+                                        <div data-index="78" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Malesia</div>
+                                        <div data-index="79" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Malta</div>
+                                        <div data-index="80" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Marocco</div>
+                                        <div data-index="81" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Mauritius</div>
+                                        <div data-index="82" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Messico</div>
+                                        <div data-index="83" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Moldavia</div>
+                                        <div data-index="84" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Monaco</div>
+                                        <div data-index="85" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Mongolia</div>
+                                        <div data-index="86" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Montenegro</div>
+                                        <div data-index="87" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Montserrat</div>
+                                        <div data-index="88" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Namibia</div>
+                                        <div data-index="89" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Nepal</div>
+                                        <div data-index="90" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Nicaragua</div>
+                                        <div data-index="91" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Nigeria</div>
+                                        <div data-index="92" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Niue</div>
+                                        <div data-index="93" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Norvegia</div>
+                                        <div data-index="94" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Nuova Zelanda</div>
+                                        <div data-index="95" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Oman</div>
+                                        <div data-index="96" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Paesi Bassi</div>
+                                        <div data-index="97" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Pakistan</div>
+                                        <div data-index="98" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Panama</div>
+                                        <div data-index="99" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Paraguay</div>
+                                        <div data-index="100" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Perù</div>
+                                        <div data-index="101" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Polonia</div>
+                                        <div data-index="102" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Porto Rico</div>
+                                        <div data-index="103" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Portogallo</div>
+                                        <div data-index="104" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Qatar</div>
+                                        <div data-index="105" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Regno Unito (Gran Bretagna)</div>
+                                        <div data-index="106" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Repubblica Ceca</div>
+                                        <div data-index="107" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Repubblica Dominicana</div>
+                                        <div data-index="108" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Reunion</div>
+                                        <div data-index="109" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Romania</div>
+                                        <div data-index="110" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Russia</div>
+                                        <div data-index="111" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Saint Helena</div>
+                                        <div data-index="112" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">San Marino</div>
+                                        <div data-index="113" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Santa Lucia</div>
+                                        <div data-index="114" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Serbia</div>
+                                        <div data-index="115" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Seychelles</div>
+                                        <div data-index="116" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Singapore</div>
+                                        <div data-index="117" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Slovacchia</div>
+                                        <div data-index="118" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Slovenia</div>
+                                        <div data-index="119" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Spagna</div>
+                                        <div data-index="120" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Sri Lanka</div>
+                                        <div data-index="121" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Stati Uniti d'America</div>
+                                        <div data-index="122" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Sud Africa</div>
+                                        <div data-index="123" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Suriname</div>
+                                        <div data-index="124" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Svezia</div>
+                                        <div data-index="125" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Svizzera</div>
+                                        <div data-index="126" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Swaziland</div>
+                                        <div data-index="127" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Tailandia</div>
+                                        <div data-index="128" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Taiwan, Cina</div>
+                                        <div data-index="129" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Tonga</div>
+                                        <div data-index="130" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Trinidad e Tobago</div>
+                                        <div data-index="131" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Tunisia</div>
+                                        <div data-index="132" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Turchia</div>
+                                        <div data-index="133" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Ucraina</div>
+                                        <div data-index="134" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Ungheria</div>
+                                        <div data-index="135" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Uruguay</div>
+                                        <div data-index="136" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Uzbekistan</div>
+                                        <div data-index="137" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Venezuela</div>
+                                        <div data-index="138" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Vietnam</div>
+                                        <div data-index="139" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Zambia</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
+                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
+                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Stato/Provincia/Regione</div>
+                                    <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
+                                        <input type="text" maxlength="99" placeholder="Facoltativo" autocomplete="address-level1" data-id="state" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="FormElement__FormRow-sc-1j8zvtr-22 eGSwri">
+                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
+                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
+                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Città</div>
+                                        <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
+                                            <input type="text" maxlength="99" placeholder="" autocomplete="address-level2" data-id="city" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
+                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
+                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">CAP</div>
+                                        <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
+                                            <input type="text" maxlength="49" placeholder="" autocomplete="postal-code" data-id="zipcode" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="FormElement__FormRow-sc-1j8zvtr-22 eGSwri">
+                                <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
+                                    <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
+                                        <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Numero di telefono</div>
+                                        <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
+                                            <input type="text" maxlength="49" placeholder="" autocomplete="tel" data-id="phoneNumber" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="Common__MultipleShippingFormButtonGroup-sc-1xdep3b-57 cCxdJx">
+                    <div class="Common__MultipleShippingFormButtonWrapper-sc-1xdep3b-58 crNcHm">
+                        <div size="2" color="1" rel="noopener noreferrer" class="Button-sc-1rnmncq-0 kBHyPC Button___StyledStyledWishButtonWithKeyboard-s129vo-0 cpvpKL" tabindex="0">Annulla</div>
+                    </div>
+                    <div class="Common__MultipleShippingFormButtonWrapper-sc-1xdep3b-58 crNcHm">
+                        <div size="2" color="1" rel="noopener noreferrer" class="Button-sc-1rnmncq-0 kBHyPC Button___StyledStyledWishButtonWithKeyboard-s129vo-0 JykKq" tabindex="0">Usa questo indirizzo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer section-->
+<footer class="ht-footer">
+    <div class="container">
+        <div class="flex-parent-ft">
+            <div class="flex-child-ft item1">
+                <a href="index.html"><img class="logo" src="images/img/logo1.png" alt="" height="300" width="500"></a>
+                <p> Burbank, California <br> Stati Uniti D'America, USA</p>
+                <p>Chiamaci: (+39) 0554646038202 </p>
+            </div>
+            <div class="flex-child-ft item2">
+                <h4>Risorse</h4>
+                <ul>
+                    <li><a href="https://disney.it/chi-siamo">Chi siamo</a></li>
+                    <li><a href="https://support.disney.com/hc/it">Aiuto</a></li>
+                    <li><a href="index.html">Registrati</a></li>
+                    <li><a href="index.html">Accedi</a></li>
+                    <li><a href="bloggrid.html">Notizie</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item3">
+                <h4>Legale</h4>
+                <ul>
+                    <li><a href="https://disneytermsofuse.com/italian-italy/">Condizioni d'uso</a></li>
+                    <li><a href="https://privacy.thewaltdisneycompany.com/it/informativa-sulla-privacy/">Informativa sulla Privacy</a></li>
+                    <li><a href="https://privacy.thewaltdisneycompany.com/it/informativa-sulla-privacy/informativa-sulla-privacy-2/">Sicurezza</a></li>
+                </ul>
+            </div>
+            <div class="flex-child-ft item4">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="userprofile.html">Profilo</a></li>
+                    <li><a href="userfavoritegrid.html">Preferiti</a></li>
+                    <li><a href="userrate.html">Recensioni</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ft-copyright">
+        <div class="ft-left">
+            <p>© Disney © Disney•Pixar © & ™ © 2021 Dinsey&Pixar - Tutti i diritti riservati</p>
+        </div>
+        <div class="backtotop">
+            <p><a href="#" id="back-to-top">Torna all'inizio<i class="ion-ios-arrow-thin-up"></i></a></p>
+        </div>
+    </div>
+</footer>
+<!-- end of footer section-->
+
+<script src="js/jquery.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/plugins2.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

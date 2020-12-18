@@ -8335,3 +8335,44 @@ margin-right: 20px;
   margin-bottom: 25px;
   font-size: 1.1em;
 }
+
+#PriceContainer{
+  width: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  margin-bottom: 10px;
+  grid-row-gap: 10px;
+}
+
+.cartprice{
+  color: #ABB7C4;
+  font-size: 1.1em;
+  font-weight: bold;
+  grid-column: 1;
+}
+
+.cartprice.value{
+  grid-column: 2;
+  color: #ABB7C4;
+  text-align: end;
+  margin-left: 10px;
+}
+
+input.buybtn{
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: #abb7c4;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #dd003f;
+  color: #ffffff;
+  padding: 13px 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#provaid{
+  text-align: center;
+}
