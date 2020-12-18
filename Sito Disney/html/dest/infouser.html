@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body style="background-color: #023a50;overflow: visible;">
 
 <!--preloading-->
 <div id="preloader">
@@ -205,49 +205,35 @@
 <!-- END | Header -->
 
 <!-- Pagina carrello -->
-<div class="hero common-hero">
+<div class="hero common-hero" id="bckimgshop">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="hero-ct">
-                    <h1> Carrello</h1>
-                    <ul class="breadcumb">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li> <span class="ion-ios-arrow-right"></span>Carrello</li>
-                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="Common__Title-sc-1xdep3b-2 kKWHBZ">Spedizione</div>
-    <div height="570" class="Common__Wrapper-sc-1xdep3b-20 UYWIu">
+<div class="container" id="infocontainer">
+    <div class="title2-hd">Spedizione</div>
+    <div height="570" class="container infocontainer2">
         <div>
-            <div class="Common__MultipleShippingWrapper-sc-1xdep3b-56 gBRSqm">
-                <div class="FormElement__FormContent-sc-1j8zvtr-10 gLuca">
-                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 bnrIwe">Nuovo indirizzo</div>
-                    <div class="FormElement__FormBody-sc-1j8zvtr-21 bftZOW">
-                        <div class="FormElement__FormRow-sc-1j8zvtr-22 eGSwri">
-                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
-                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
-                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Nome</div>
-                                    <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
-                                        <input type="text" maxlength="99" placeholder="" autocomplete="given-name" data-id="firstName" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
-                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
-                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Cognome</div>
-                                    <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
-                                        <input type="text" maxlength="99" placeholder="" autocomplete="family-name" data-id="lastName" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-sm-12" width="800px" margin-right="24px" margin-left="24px">
+                    <h3 class="title-hd" font-weight="bold" >Nuovo indirizzo</h3>
+                    <div class="container infocontainer2" id="noBorderContainer">
+                        <div class="inforow">
+                            <label class="label2" for="name">
+                                Nome:
+                                <input type="text" name="name" id="name" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" maxlength="99" autocomplete="given-name" data-id="firstName" value="">
+                            </label>
+                            <label class="label2" for="surname">
+                                Cognome:
+                                <input type="text" name="surname" id="surname" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" maxlength="99" autocomplete="given-name" data-id="firstName" value="">
+                            </label>
                         </div>
-                        <div class="FormElement__FormRow-sc-1j8zvtr-22 eGSwri">
+                        <div class="inforow">
                             <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
                                 <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
                                     <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Indirizzo n. 1</div>
@@ -475,7 +461,7 @@
                 </div>
             </div>
         </div>
-    </div>
+
 </div>
 
 <!-- footer section-->

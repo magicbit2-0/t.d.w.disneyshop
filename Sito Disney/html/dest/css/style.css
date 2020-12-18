@@ -8376,3 +8376,54 @@ input.buybtn{
 #provaid{
   text-align: center;
 }
+
+.title2-hd{
+  background-color: #233a50;
+  padding: 12px 24px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #abb7c4;
+  border: 1px solid #abb7c4;
+}
+
+#bckimgshop{
+  height: 120px;
+  background: none;
+}
+
+#infocontainer{
+  background-color: aliceblue;
+  border: yellow solid 2px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.infocontainer2{
+  background-color: #f0fffe;
+  border: #767676 2px solid;
+  width: auto;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+#noBorderContainer{
+  border: none;
+}
+
+.inforow{
+  display: flex;
+  flex-flow: row;
+}
+
+.label2 input{
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  color: #222222;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 10px;
+  height: 42px;
+  width: 400px;
+  border: 1px solid #404040;
+  margin: 0px 5px 0px 0px;
+}
