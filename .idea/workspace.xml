@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25e8f8b5-484b-4db3-9da0-1865b7f1ea86" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/infouser.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/infouser.html" afterDir="false" />
@@ -48,6 +49,7 @@
       <updated>1608223868802</updated>
       <workItem from="1608223872483" duration="5811000" />
       <workItem from="1608300113376" duration="14306000" />
+      <workItem from="1608315919353" duration="1517000" />
     </task>
     <servers />
   </component>
@@ -65,5 +67,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1608317216340">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608317216340" />
   </component>
 </project>
