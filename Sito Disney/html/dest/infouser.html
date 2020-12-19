@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body style="background-color: #023a50;overflow: visible;">
+<div style="background-color: #023a50;overflow: visible;">
 
 <!--preloading-->
 <div id="preloader">
@@ -220,7 +220,7 @@
     <div class="title2-hd">Spedizione</div>
         <div height="570" class="container infocontainer2">
             <div class="col-sm-12" width="800px" margin-right="24px" margin-left="24px">
-                <h3 class="title-hd" font-weight="bold">Nuovo indirizzo</h3>
+                <h3 class="title-hd" font-weight="bold">Indirizzo</h3>
                     <div class="container infocontainer2" id="noBorderContainer">
                         <div class="inforow">
                             <label class="label2" for="name">
@@ -249,6 +249,7 @@
                                 Paese/Regione:
                             <select name="paese/regione" >
                                     <option value="text">Seleziona il paese</option>
+                                    <option value="saab" class="active">Italia</option>
                                     <option value="saab">Albania</option>
                                     <option value="saab">Algeria</option>
                                     <option value="saab">Andorra</option>
@@ -314,7 +315,6 @@
                                     <option value="saab">Isole Vergini Americane</option>
                                     <option value="saab">Isole Vergini Britanniche</option>
                                     <option value="saab">Israele</option>
-                                    <option value="saab" class="active">Italia</option>
                                     <option value="saab">Jersey</option>
                                     <option value="saab">Kazakistan</option>
                                     <option value="saab">Kenia</option>
@@ -413,218 +413,51 @@
                         </div>
 
                         <div class="inforow" id="annullarow">
-                            <input class="annullabtn" type="button" onclick="location.href='infouser.html';" value="Annulla">
+                            <input class="annullabtn" type="button" onclick="location.href='';" value="Annulla">
                             <label class="indirizzocheck" for="indirizzo"> Usa questo indirizzo </label>
                             <input class="indirizzocheck1" type="checkbox" name="indirizzo" id="indirizzo" value="Usa questo indirizzo">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <div class="title2-hd">Metodo di Pagamento</div>
+    <div class="title2-hd">Pagamento</div>
         <div height="570" class="container infocontainer2">
             <div class="col-sm-12" width="800px" margin-right="24px" margin-left="24px">
-                <h3 class="title-hd" font-weight="bold">.......</h3>
-                    <div class="container infocontainer2" id="noBorderContainer">
+                <h3 class="title-hd" font-weight="bold">Metodo di Pagamento</h3>
+                    <div class="container infocontainer2" id="noBorderContainer2">
                         <div class="inforow">
                             <label class="label2" for="name">
-                                Nome:
-                                <input type="text" name="name" id="name" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-name" data-id="nome" value="">
+                                Numero di Carta
+                                <input type="text" name="name" id="cardnumber" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-name" data-id="nome" value="">
                             </label>
                             <label class="label2" for="surname">
-                            Cognome:
-                            <input type="text" name="surname" id="surname" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-surname" data-id="cognome" value="">
+                            CVV
+                            <input type="text" name="surname" id="cvv" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-surname" data-id="cognome" value="">
                             </label>
                         </div>
                         <div class="inforow">
                             <label class="label2" for="indirizzo1">
-                                Indirizzo n. 1:
-                                <input type="text" name="indirizzo1" id="indirizzo1" maxlength="99" placeholder="" autocomplete="address-line1" data-id="indirizzo1" value="">
-                                </label>
-                        </div>
-                        <div class="inforow">
-                            <label class="label2" for="indirizzo2">
-                                Indirizzo n. 2:
-                                <input type="text" name="indirizzo2" id="indirizzo2" maxlength="99" placeholder="Facoltativo" autocomplete="address-line2" data-id="indirizzo2" value="">
+                                Data Scadenza
+                                <input type="text" name="indirizzo1" id="scadenza" maxlength="99" placeholder="" autocomplete="address-line1" data-id="indirizzo1" value="">
+                            </label>
+                            <label class="label2" for="cap">
+                                CAP
+                                <input type="text" name="cap" id="cap_pagamento" maxlength="5" placeholder="" required="required" autocomplete="postal-code" data-id="zipcode" value="">
                             </label>
                         </div>
-                        <div class="inforow">
-                            <label class="label2" >
-                                Paese/Regione:
-                            <select name="paese/regione" >
-                            <option value="text">Seleziona il paese</option>
-                            <option value="saab">Albania</option>
-                            <option value="saab">Algeria</option>
-                            <option value="saab">Andorra</option>
-                            <option value="saab">Anguilla</option>
-                            <option value="saab">Arabia Saudita</option>
-                            <option value="saab">Argentina</option>
-                            <option value="saab">Armenia</option>
-                            <option value="saab">Aruba</option>
-                            <option value="saab">Australia</option>
-                            <option value="saab">Austria</option>
-                            <option value="saab">Azerbaijan</option>
-                            <option value="saab">Bahamas</option>
-                            <option value="saab">Bahrein</option>
-                            <option value="saab">Bangladesh</option>
-                            <option value="saab">Barbados</option>
-                            <option value="saab">Belgio</option>
-                            <option value="saab">Belize</option>
-                            <option value="saab">Bermuda</option>
-                            <option value="saab">Bhutan</option>
-                            <option value="saab">Birmania</option>
-                            <option value="saab">Bolivia</option>
-                            <option value="saab">Bosnia ed Erzegovina</option>
-                            <option value="saab">Botswana</option>
-                            <option value="saab">Brasile</option>
-                            <option value="saab">Bulgaria</option>
-                            <option value="saab">Cambogia</option>
-                            <option value="saab">Canada</option>
-                            <option value="saab">Cile</option>
-                            <option value="saab">Cipro</option>
-                            <option value="saab">Colombia</option>
-                            <option value="saab">Corea del Sud</option>
-                            <option value="saab">Costa Rica</option>
-                            <option value="saab">Croazia</option>
-                            <option value="saab">Danimarca</option>
-                            <option value="saab">Dominica</option>
-                            <option value="saab">Ecuador</option>
-                            <option value="saab">Egitto</option>
-                            <option value="saab">El Salvador</option>
-                            <option value="saab">Emirati Arabi Uniti</option>
-                            <option value="saab">Estonia</option>
-                            <option value="saab">Figi</option>
-                            <option value="saab">Filippine</option>
-                            <option value="saab">Finlandia</option>
-                            <option value="saab">Francia</option>
-                            <option value="saab">Gabon</option>
-                            <option value="saab">Georgia</option>
-                            <option value="saab">Germania</option>
-                            <option value="saab">Ghana</option>
-                            <option value="saab">Giamaica</option>
-                            <option value="saab">Giappone</option>
-                            <option value="saab">Gibilterra</option>
-                            <option value="saab">Giordania</option>
-                            <option value="saab">Grecia</option>
-                            <option value="saab">Grenada</option>
-                            <option value="saab">Guatemala</option>
-                            <option value="saab">Guyana</option>
-                            <option value="saab">Honduras</option>
-                            <option value="saab">India</option>
-                            <option value="saab">Indonesia</option>
-                            <option value="saab">Irlanda</option>
-                            <option value="saab">Islanda</option>
-                            <option value="saab">Isole Cayman</option>
-                            <option value="saab">Isole Vergini Americane</option>
-                            <option value="saab">Isole Vergini Britanniche</option>
-                            <option value="saab">Israele</option>
-                            <option value="saab" class="active">Italia</option>
-                            <option value="saab">Jersey</option>
-                            <option value="saab">Kazakistan</option>
-                            <option value="saab">Kenia</option>
-                            <option value="saab">Kuwait</option>
-                            <option value="saab">Kyrgyzstan</option>
-                            <option value="saab">Lettonia</option>
-                            <option value="saab">Liechtenstein</option>
-                            <option value="saab">Lituania</option>
-                            <option value="saab">Lussemburgo</option>
-                            <option value="saab">Macedonia Del Nord</option>
-                            <option value="saab">Maldive</option>
-                            <option value="saab">Malesia</option>
-                            <option value="saab">Malta</option>
-                            <option value="saab">Marocco</option>
-                            <option value="saab">Mauritius</option>
-                            <option value="saab">Messico</option>
-                            <option value="saab">Moldavia</option>
-                            <option value="saab">Monaco</option>
-                            <option value="saab">Mongolia</option>
-                            <option value="saab">Montenegro</option>
-                            <option value="saab">Montserrat</option>
-                            <option value="saab">Namibia</option>
-                            <option value="saab">Nepal</option>
-                            <option value="saab">Nicaragua</option>
-                            <option value="saab">Nigeria</option>
-                            <option value="saab">Nigue</option>
-                            <option value="saab">Norvegia</option>
-                            <option value="saab">Nuova Zelanda</option>
-                            <option value="saab">Oman</option>
-                            <option value="saab">Paesi Bassi</option>
-                            <option value="saab">Pakistan</option>
-                            <option value="saab">Panama</option>
-                            <option value="saab">Paraguay</option>
-                            <option value="saab">Perù</option>
-                            <option value="saab">Polonia</option>
-                            <option value="saab">Porto Rico</option>
-                            <option value="saab">Portogallo</option>
-                            <option value="saab">Qatar</option>
-                            <option value="saab">Regno Unito (Gran Bretagna)</option>
-                            <option value="saab">Repubblica Ceca</option>
-                            <option value="saab">Repubblica Domenicana</option>
-                            <option value="saab">Reunion</option>
-                            <option value="saab">Romania</option>
-                            <option value="saab">Russia</option>
-                            <option value="saab">Saint Helena</option>
-                            <option value="saab">San Marino</option>
-                            <option value="saab">Santa Lucia</option>
-                            <option value="saab">Serbia</option>
-                            <option value="saab">Seychelles</option>
-                            <option value="saab">Singapore</option>
-                            <option value="saab">Slovacchia</option>
-                            <option value="saab">Slovenia</option>
-                            <option value="saab">Spagna</option>
-                            <option value="saab">Sri Lanka</option>
-                            <option value="saab">Stati Uniti D'America</option>
-                            <option value="saab">Sud Africa</option>
-                            <option value="saab">Suriname</option>
-                            <option value="saab">Svezia</option>
-                            <option value="saab">Svizzera</option>
-                            <option value="saab">Swaziland</option>
-                            <option value="saab">Tailandia</option>
-                            <option value="saab">Taiwan, Cina</option>
-                            <option value="saab">Tonga</option>
-                            <option value="saab">Trinidad e Tobago</option>
-                            <option value="saab">Tunisia</option>
-                            <option value="saab">Turchia</option>
-                            <option value="saab">Ucraina</option>
-                            <option value="saab">Ungheria</option>
-                            <option value="saab">Uruguay</option>
-                            <option value="saab">Uzbekistan</option>
-                            <option value="saab">Venezuela</option>
-                            <option value="saab">Vietnam</option>
-                            <option value="saab">Zambia</option>
-                            </select>
-                            </label>
-                            <label class="label2" for="stato">
-                            Stato/Provincia/Regione:
-                            <input type="text" name="stato" id="stato" maxlength="99" placeholder="Facoltativo" autocomplete="address-level1" data-id="stato" value="">
-                        </label>
-                    </div>
-                    <div class="inforow">
-                        <label class="label2" for="città">
-                            Città
-                            <input type="text" name="città" id="città" maxlength="99" placeholder="" required="required" autocomplete="address-level2" data-id="city" value="">
-                        </label>
-                        <label class="label2" for="cap">
-                            CAP
-                            <input type="text" name="cap" id="cap" maxlength="5" placeholder="" required="required" autocomplete="postal-code" data-id="zipcode" value="">
-                        </label>
-                    </div>
-                    <div class="inforow">
-                        <label class="label2" for="numero">
-                            Numero di telefono
-                            <input type="text" name="numero" id="numero" maxlength="10" placeholder="" autocomplete="tel" data-id="phoneNumber" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
-                        </label>
-                    </div>
-
-                    <div class="inforow" id="annullarow">
-                        <input class="annullabtn" type="button" onclick="location.href='infouser.html';" value="Annulla">
-                        <label class="indirizzocheck" for="indirizzo"> Usa questo indirizzo </label>
-                        <input class="indirizzocheck1" type="checkbox" name="indirizzo" id="indirizzo" value="Usa questo indirizzo">
+                    <div class="inforow" id="annullarow1">
+                        <input class="annullabtn" type="button" onclick="location.href='';" value="Annulla">
+                        <label class="indirizzocheck" for="metodo"> Usa questo metodo di pagamento </label>
+                        <input class="indirizzocheck1" type="checkbox" name="metodo" id="metodo" value="usa questo metodo">
                     </div>
                 </div>
             </div>
         </div>
+        <input class="comprabtn" type="button" onclick="location.href='shoppage.html';" value="Compra Ora">
+        <input class="comprabtn" type="button" onclick="location.href='infouser.html';" value="Annulla">
     </div>
+
+</div>
 </div>
 
 <!-- footer section-->
