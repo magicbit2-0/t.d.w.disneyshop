@@ -8402,11 +8402,16 @@ input.buybtn{
   background-color: #f0fffe;
   border: #767676 2px solid;
   width: auto;
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
   padding: 5px;
 }
 
 #noBorderContainer{
+  border: none;
+}
+
+#noBorderContainer2{
   border: none;
 }
 
@@ -8441,13 +8446,33 @@ input.annullabtn{
 }
 #annullarow{
   direction: rtl;
+  margin-top: 10px;
 }
+
+#annullarow1{
+  direction: rtl;
+  margin-top: 10px;
+}
+
 .indirizzocheck{
   margin-top: 8px;
   margin-left: 3px;
 }
 input.indirizzocheck1{
   margin-top: 13px;
+}
+
+.comprabtn {
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #dd003f;
+  color: #ffffff;
+  padding: 13px 25px;
+  border-radius: 30px;
+  margin: 0px 5px;
+  float:right;
 }
   /*border: 1px solid rgb(212, 227, 235);
   border-radius: 2px;
