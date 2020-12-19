@@ -8414,20 +8414,41 @@ input.buybtn{
   display: flex;
   flex-flow: row;
 }
-
-.label2 input{
-  font-family: 'Dosis', sans-serif;
+.label2 {
+  flex: 1 1 0%;
+  font-weight: 400;
   font-size: 14px;
-  color: #222222;
-  font-weight: bold;
-  text-transform: capitalize;
-  margin-top: 10px;
-  height: 42px;
-  width: 400px;
-  border: 1px solid #404040;
-  margin: 0px 5px 0px 0px;
+  text-align: left;
+  color: rgb(25, 42, 50);
+  cursor: auto;
+  width: 50% !important;
+  margin: 5px;
 }
 
+input.annullabtn{
+  font-family: 'Dosis', sans-serif;
+  font-size: 10px;
+  color: #abb7c4;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #abb7c4;
+  color: #ffffff;
+  padding: 8px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+#annullarow{
+  direction: rtl;
+}
+.indirizzocheck{
+  margin-top: 8px;
+  margin-left: 3px;
+}
+input.indirizzocheck1{
+  margin-top: 13px;
+}
   /*border: 1px solid rgb(212, 227, 235);
   border-radius: 2px;
   font-weight: 400;

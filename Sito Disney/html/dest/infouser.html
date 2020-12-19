@@ -218,250 +218,413 @@
 
 <div class="container" id="infocontainer">
     <div class="title2-hd">Spedizione</div>
-    <div height="570" class="container infocontainer2">
-        <div>
-                <div class="col-sm-12" width="800px" margin-right="24px" margin-left="24px">
-                    <h3 class="title-hd" font-weight="bold" >Nuovo indirizzo</h3>
+        <div height="570" class="container infocontainer2">
+            <div class="col-sm-12" width="800px" margin-right="24px" margin-left="24px">
+                <h3 class="title-hd" font-weight="bold">Nuovo indirizzo</h3>
                     <div class="container infocontainer2" id="noBorderContainer">
                         <div class="inforow">
                             <label class="label2" for="name">
                                 Nome:
-                                <input type="text" name="name" id="name" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-name" data-id="firstName" value="">
+                                <input type="text" name="name" id="name" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-name" data-id="nome" value="">
                             </label>
                             <label class="label2" for="surname">
                                 Cognome:
-                                <input type="text" name="surname" id="surname" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-name" data-id="firstName" value="">
+                                <input type="text" name="surname" id="surname" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-surname" data-id="cognome" value="">
                             </label>
                         </div>
                         <div class="inforow">
-                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
-                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
-                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Indirizzo n. 1</div>
-                                    <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
-                                        <input type="text" maxlength="199" placeholder="" autocomplete="address-line1" data-id="addressLineOne" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
-                                    </div>
-                                </div>
-                            </div>
+                            <label class="label2" for="indirizzo1">
+                                Indirizzo n. 1:
+                                    <input type="text" name="indirizzo1" id="indirizzo1" maxlength="99" placeholder="" autocomplete="address-line1" data-id="indirizzo1" value="">
+                            </label>
                         </div>
-                        <div class="FormElement__FormRow-sc-1j8zvtr-22 eGSwri">
-                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
-                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
-                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Indirizzo n. 2</div>
-                                    <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
-                                        <input type="text" maxlength="199" placeholder="Facoltativo" autocomplete="address-line2" data-id="addressLineTwo" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="inforow">
+                            <label class="label2" for="indirizzo2">
+                                Indirizzo n. 2:
+                                <input type="text" name="indirizzo2" id="indirizzo2" maxlength="99" placeholder="Facoltativo" autocomplete="address-line2" data-id="indirizzo2" value="">
+                            </label>
                         </div>
-                        <div class="FormElement__FormRow-sc-1j8zvtr-22 eGSwri">
-                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
-                                <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Paese / regione</div>
-                                <div width="100%" class="WishSelectInput__SelectBox-sc-1hxkg4o-0 dcNKzp">
-                                    <div class="WishSelectInput__SelectBoxText-sc-1hxkg4o-1 jGdnXG">Italia</div>
-                                    <div class="WishSelectInput__DropdownArrow-sc-1hxkg4o-2 gwoJra">
-                                        <svg width="8px" height="5px" viewBox="0 0 8 5" style="transform: rotate(0deg); transition: all 0.25s ease 0s;">
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path d="M-4-6h16v16H-4z"></path>
-                                                <path d="M1 0a1.003 1.003 0 0 0-.71 1.71l3 3c.18.18.43.29.71.29.28 0 .53-.11.71-.29l3-3A1.003 1.003 0 0 0 7 0H1z" fill="#48636f">
+                        <div class="inforow">
+                            <label class="label2" >
+                                Paese/Regione:
+                            <select name="paese/regione" >
+                                    <option value="text">Seleziona il paese</option>
+                                    <option value="saab">Albania</option>
+                                    <option value="saab">Algeria</option>
+                                    <option value="saab">Andorra</option>
+                                    <option value="saab">Anguilla</option>
+                                    <option value="saab">Arabia Saudita</option>
+                                    <option value="saab">Argentina</option>
+                                    <option value="saab">Armenia</option>
+                                    <option value="saab">Aruba</option>
+                                    <option value="saab">Australia</option>
+                                    <option value="saab">Austria</option>
+                                    <option value="saab">Azerbaijan</option>
+                                    <option value="saab">Bahamas</option>
+                                    <option value="saab">Bahrein</option>
+                                    <option value="saab">Bangladesh</option>
+                                    <option value="saab">Barbados</option>
+                                    <option value="saab">Belgio</option>
+                                    <option value="saab">Belize</option>
+                                    <option value="saab">Bermuda</option>
+                                    <option value="saab">Bhutan</option>
+                                    <option value="saab">Birmania</option>
+                                    <option value="saab">Bolivia</option>
+                                    <option value="saab">Bosnia ed Erzegovina</option>
+                                    <option value="saab">Botswana</option>
+                                    <option value="saab">Brasile</option>
+                                    <option value="saab">Bulgaria</option>
+                                    <option value="saab">Cambogia</option>
+                                    <option value="saab">Canada</option>
+                                    <option value="saab">Cile</option>
+                                    <option value="saab">Cipro</option>
+                                    <option value="saab">Colombia</option>
+                                    <option value="saab">Corea del Sud</option>
+                                    <option value="saab">Costa Rica</option>
+                                    <option value="saab">Croazia</option>
+                                    <option value="saab">Danimarca</option>
+                                    <option value="saab">Dominica</option>
+                                    <option value="saab">Ecuador</option>
+                                    <option value="saab">Egitto</option>
+                                    <option value="saab">El Salvador</option>
+                                    <option value="saab">Emirati Arabi Uniti</option>
+                                    <option value="saab">Estonia</option>
+                                    <option value="saab">Figi</option>
+                                    <option value="saab">Filippine</option>
+                                    <option value="saab">Finlandia</option>
+                                    <option value="saab">Francia</option>
+                                    <option value="saab">Gabon</option>
+                                    <option value="saab">Georgia</option>
+                                    <option value="saab">Germania</option>
+                                    <option value="saab">Ghana</option>
+                                    <option value="saab">Giamaica</option>
+                                    <option value="saab">Giappone</option>
+                                    <option value="saab">Gibilterra</option>
+                                    <option value="saab">Giordania</option>
+                                    <option value="saab">Grecia</option>
+                                    <option value="saab">Grenada</option>
+                                    <option value="saab">Guatemala</option>
+                                    <option value="saab">Guyana</option>
+                                    <option value="saab">Honduras</option>
+                                    <option value="saab">India</option>
+                                    <option value="saab">Indonesia</option>
+                                    <option value="saab">Irlanda</option>
+                                    <option value="saab">Islanda</option>
+                                    <option value="saab">Isole Cayman</option>
+                                    <option value="saab">Isole Vergini Americane</option>
+                                    <option value="saab">Isole Vergini Britanniche</option>
+                                    <option value="saab">Israele</option>
+                                    <option value="saab" class="active">Italia</option>
+                                    <option value="saab">Jersey</option>
+                                    <option value="saab">Kazakistan</option>
+                                    <option value="saab">Kenia</option>
+                                    <option value="saab">Kuwait</option>
+                                    <option value="saab">Kyrgyzstan</option>
+                                    <option value="saab">Lettonia</option>
+                                    <option value="saab">Liechtenstein</option>
+                                    <option value="saab">Lituania</option>
+                                    <option value="saab">Lussemburgo</option>
+                                    <option value="saab">Macedonia Del Nord</option>
+                                    <option value="saab">Maldive</option>
+                                    <option value="saab">Malesia</option>
+                                    <option value="saab">Malta</option>
+                                    <option value="saab">Marocco</option>
+                                    <option value="saab">Mauritius</option>
+                                    <option value="saab">Messico</option>
+                                    <option value="saab">Moldavia</option>
+                                    <option value="saab">Monaco</option>
+                                    <option value="saab">Mongolia</option>
+                                    <option value="saab">Montenegro</option>
+                                    <option value="saab">Montserrat</option>
+                                    <option value="saab">Namibia</option>
+                                    <option value="saab">Nepal</option>
+                                    <option value="saab">Nicaragua</option>
+                                    <option value="saab">Nigeria</option>
+                                    <option value="saab">Nigue</option>
+                                    <option value="saab">Norvegia</option>
+                                    <option value="saab">Nuova Zelanda</option>
+                                    <option value="saab">Oman</option>
+                                    <option value="saab">Paesi Bassi</option>
+                                    <option value="saab">Pakistan</option>
+                                    <option value="saab">Panama</option>
+                                    <option value="saab">Paraguay</option>
+                                    <option value="saab">Perù</option>
+                                    <option value="saab">Polonia</option>
+                                    <option value="saab">Porto Rico</option>
+                                    <option value="saab">Portogallo</option>
+                                    <option value="saab">Qatar</option>
+                                    <option value="saab">Regno Unito (Gran Bretagna)</option>
+                                    <option value="saab">Repubblica Ceca</option>
+                                    <option value="saab">Repubblica Domenicana</option>
+                                    <option value="saab">Reunion</option>
+                                    <option value="saab">Romania</option>
+                                    <option value="saab">Russia</option>
+                                    <option value="saab">Saint Helena</option>
+                                    <option value="saab">San Marino</option>
+                                    <option value="saab">Santa Lucia</option>
+                                    <option value="saab">Serbia</option>
+                                    <option value="saab">Seychelles</option>
+                                    <option value="saab">Singapore</option>
+                                    <option value="saab">Slovacchia</option>
+                                    <option value="saab">Slovenia</option>
+                                    <option value="saab">Spagna</option>
+                                    <option value="saab">Sri Lanka</option>
+                                    <option value="saab">Stati Uniti D'America</option>
+                                    <option value="saab">Sud Africa</option>
+                                    <option value="saab">Suriname</option>
+                                    <option value="saab">Svezia</option>
+                                    <option value="saab">Svizzera</option>
+                                    <option value="saab">Swaziland</option>
+                                    <option value="saab">Tailandia</option>
+                                    <option value="saab">Taiwan, Cina</option>
+                                    <option value="saab">Tonga</option>
+                                    <option value="saab">Trinidad e Tobago</option>
+                                    <option value="saab">Tunisia</option>
+                                    <option value="saab">Turchia</option>
+                                    <option value="saab">Ucraina</option>
+                                    <option value="saab">Ungheria</option>
+                                    <option value="saab">Uruguay</option>
+                                    <option value="saab">Uzbekistan</option>
+                                    <option value="saab">Venezuela</option>
+                                    <option value="saab">Vietnam</option>
+                                    <option value="saab">Zambia</option>
+                            </select>
+                            </label>
+                            <label class="label2" for="stato">
+                                Stato/Provincia/Regione:
+                                <input type="text" name="stato" id="stato" maxlength="99" placeholder="Facoltativo" autocomplete="address-level1" data-id="stato" value="">
+                            </label>
+                        </div>
+                        <div class="inforow">
+                            <label class="label2" for="città">
+                                Città
+                                <input type="text" name="città" id="città" maxlength="99" placeholder="" required="required" autocomplete="address-level2" data-id="city" value="">
+                            </label>
+                            <label class="label2" for="cap">
+                                CAP
+                                <input type="text" name="cap" id="cap" maxlength="5" placeholder="" required="required" autocomplete="postal-code" data-id="zipcode" value="">
+                            </label>
+                        </div>
+                        <div class="inforow">
+                            <label class="label2" for="numero">
+                                Numero di telefono
+                                <input type="text" name="numero" id="numero" maxlength="10" placeholder="" autocomplete="tel" data-id="phoneNumber" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
+                            </label>
+                        </div>
 
-                                                </path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <div class="WishSelectInput__SelectBoxDropdown-sc-1hxkg4o-3 bEgPPI">
-                                        <div data-index="0" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Albania</div>
-                                        <div data-index="1" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Algeria</div>
-                                        <div data-index="2" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Andorra</div>
-                                        <div data-index="3" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Anguilla</div>
-                                        <div data-index="4" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Antigua e Barbuda</div>
-                                        <div data-index="5" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Arabia Saudita</div>
-                                        <div data-index="6" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Argentina</div>
-                                        <div data-index="7" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Armenia</div>
-                                        <div data-index="8" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Aruba</div>
-                                        <div data-index="9" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Australia</div>
-                                        <div data-index="10" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Austria</div>
-                                        <div data-index="11" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Azerbaijan</div>
-                                        <div data-index="12" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bahamas</div>
-                                        <div data-index="13" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bahrein</div>
-                                        <div data-index="14" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bangladesh</div>
-                                        <div data-index="15" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Barbados</div>
-                                        <div data-index="16" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Belgio</div>
-                                        <div data-index="17" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Belize</div>
-                                        <div data-index="18" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bermuda</div>
-                                        <div data-index="19" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bhutan</div>
-                                        <div data-index="20" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Birmania</div>
-                                        <div data-index="21" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bolivia</div>
-                                        <div data-index="22" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bosnia ed Erzegovina</div>
-                                        <div data-index="23" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Botswana</div>
-                                        <div data-index="24" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Brasile</div>
-                                        <div data-index="25" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Bulgaria</div>
-                                        <div data-index="26" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Cambogia</div>
-                                        <div data-index="27" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Canada</div>
-                                        <div data-index="28" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Cile</div>
-                                        <div data-index="29" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Cipro</div>
-                                        <div data-index="30" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Colombia</div>
-                                        <div data-index="31" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Corea del Sud</div>
-                                        <div data-index="32" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Costa Rica</div>
-                                        <div data-index="33" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Croazia</div>
-                                        <div data-index="34" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Danimarca</div>
-                                        <div data-index="35" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Dominica</div>
-                                        <div data-index="36" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Ecuador</div>
-                                        <div data-index="37" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Egitto</div>
-                                        <div data-index="38" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">El Salvador</div>
-                                        <div data-index="39" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Emirati Arabi Uniti</div>
-                                        <div data-index="40" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Estonia</div>
-                                        <div data-index="41" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Figi</div>
-                                        <div data-index="42" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Filippine</div>
-                                        <div data-index="43" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Finlandia</div>
-                                        <div data-index="44" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Francia</div>
-                                        <div data-index="45" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Gabon</div>
-                                        <div data-index="46" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Georgia</div>
-                                        <div data-index="47" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Germania</div>
-                                        <div data-index="48" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Ghana</div>
-                                        <div data-index="49" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Giamaica</div>
-                                        <div data-index="50" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Giappone</div>
-                                        <div data-index="51" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Gibilterra</div>
-                                        <div data-index="52" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Giordania</div>
-                                        <div data-index="53" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Grecia</div>
-                                        <div data-index="54" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Grenada</div>
-                                        <div data-index="55" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Guatemala</div>
-                                        <div data-index="56" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Guyana</div>
-                                        <div data-index="57" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Honduras</div>
-                                        <div data-index="58" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">India</div>
-                                        <div data-index="59" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Indonesia</div>
-                                        <div data-index="60" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Irlanda</div>
-                                        <div data-index="61" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Islanda</div>
-                                        <div data-index="62" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Isole Cayman</div>
-                                        <div data-index="63" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Isole Vergini Americane</div>
-                                        <div data-index="64" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Isole Vergini Britanniche</div>
-                                        <div data-index="65" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Israele</div>
-                                        <div data-index="66" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Italia</div>
-                                        <div data-index="67" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Jersey</div>
-                                        <div data-index="68" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Kazakistan</div>
-                                        <div data-index="69" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Kenia</div>
-                                        <div data-index="70" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Kuwait</div>
-                                        <div data-index="71" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Kyrgyzstan</div>
-                                        <div data-index="72" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Lettonia</div>
-                                        <div data-index="73" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Liechtenstein</div>
-                                        <div data-index="74" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Lituania</div>
-                                        <div data-index="75" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Lussemburgo</div>
-                                        <div data-index="76" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Macedonia del Nord</div>
-                                        <div data-index="77" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Maldive</div>
-                                        <div data-index="78" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Malesia</div>
-                                        <div data-index="79" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Malta</div>
-                                        <div data-index="80" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Marocco</div>
-                                        <div data-index="81" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Mauritius</div>
-                                        <div data-index="82" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Messico</div>
-                                        <div data-index="83" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Moldavia</div>
-                                        <div data-index="84" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Monaco</div>
-                                        <div data-index="85" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Mongolia</div>
-                                        <div data-index="86" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Montenegro</div>
-                                        <div data-index="87" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Montserrat</div>
-                                        <div data-index="88" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Namibia</div>
-                                        <div data-index="89" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Nepal</div>
-                                        <div data-index="90" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Nicaragua</div>
-                                        <div data-index="91" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Nigeria</div>
-                                        <div data-index="92" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Niue</div>
-                                        <div data-index="93" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Norvegia</div>
-                                        <div data-index="94" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Nuova Zelanda</div>
-                                        <div data-index="95" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Oman</div>
-                                        <div data-index="96" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Paesi Bassi</div>
-                                        <div data-index="97" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Pakistan</div>
-                                        <div data-index="98" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Panama</div>
-                                        <div data-index="99" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Paraguay</div>
-                                        <div data-index="100" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Perù</div>
-                                        <div data-index="101" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Polonia</div>
-                                        <div data-index="102" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Porto Rico</div>
-                                        <div data-index="103" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Portogallo</div>
-                                        <div data-index="104" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Qatar</div>
-                                        <div data-index="105" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Regno Unito (Gran Bretagna)</div>
-                                        <div data-index="106" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Repubblica Ceca</div>
-                                        <div data-index="107" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Repubblica Dominicana</div>
-                                        <div data-index="108" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Reunion</div>
-                                        <div data-index="109" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Romania</div>
-                                        <div data-index="110" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Russia</div>
-                                        <div data-index="111" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Saint Helena</div>
-                                        <div data-index="112" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">San Marino</div>
-                                        <div data-index="113" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Santa Lucia</div>
-                                        <div data-index="114" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Serbia</div>
-                                        <div data-index="115" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Seychelles</div>
-                                        <div data-index="116" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Singapore</div>
-                                        <div data-index="117" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Slovacchia</div>
-                                        <div data-index="118" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Slovenia</div>
-                                        <div data-index="119" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Spagna</div>
-                                        <div data-index="120" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Sri Lanka</div>
-                                        <div data-index="121" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Stati Uniti d'America</div>
-                                        <div data-index="122" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Sud Africa</div>
-                                        <div data-index="123" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Suriname</div>
-                                        <div data-index="124" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Svezia</div>
-                                        <div data-index="125" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Svizzera</div>
-                                        <div data-index="126" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Swaziland</div>
-                                        <div data-index="127" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Tailandia</div>
-                                        <div data-index="128" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Taiwan, Cina</div>
-                                        <div data-index="129" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Tonga</div>
-                                        <div data-index="130" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Trinidad e Tobago</div>
-                                        <div data-index="131" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Tunisia</div>
-                                        <div data-index="132" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Turchia</div>
-                                        <div data-index="133" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Ucraina</div>
-                                        <div data-index="134" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Ungheria</div>
-                                        <div data-index="135" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Uruguay</div>
-                                        <div data-index="136" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Uzbekistan</div>
-                                        <div data-index="137" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Venezuela</div>
-                                        <div data-index="138" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Vietnam</div>
-                                        <div data-index="139" class="WishSelectInput__SelectBoxDropdownItem-sc-1hxkg4o-4 kimEGG">Zambia</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
-                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
-                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Stato/Provincia/Regione</div>
-                                    <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
-                                        <input type="text" maxlength="99" placeholder="Facoltativo" autocomplete="address-level1" data-id="state" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="inforow" id="annullarow">
+                            <input class="annullabtn" type="button" onclick="location.href='infouser.html';" value="Annulla">
+                            <label class="indirizzocheck" for="indirizzo"> Usa questo indirizzo </label>
+                            <input class="indirizzocheck1" type="checkbox" name="indirizzo" id="indirizzo" value="Usa questo indirizzo">
                         </div>
-                        <div class="FormElement__FormRow-sc-1j8zvtr-22 eGSwri">
-                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
-                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
-                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Città</div>
-                                        <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
-                                            <input type="text" maxlength="99" placeholder="" autocomplete="address-level2" data-id="city" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
-                                <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
-                                    <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">CAP</div>
-                                        <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
-                                            <input type="text" maxlength="49" placeholder="" autocomplete="postal-code" data-id="zipcode" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="FormElement__FormRow-sc-1j8zvtr-22 eGSwri">
-                                <div class="FormElement__FormRowEntry-sc-1j8zvtr-24 gGoJti">
-                                    <div class="WishTextInput__Wrapper-sc-1k4jzwj-0 cpgyde">
-                                        <div class="FormElement__FormElementTitle-sc-1j8zvtr-1 ixKTGN">Numero di telefono</div>
-                                        <div class="WishTextInput__InputWrapper-sc-1k4jzwj-2 cObMgB">
-                                            <input type="text" maxlength="49" placeholder="" autocomplete="tel" data-id="phoneNumber" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="Common__MultipleShippingFormButtonGroup-sc-1xdep3b-57 cCxdJx">
-                    <div class="Common__MultipleShippingFormButtonWrapper-sc-1xdep3b-58 crNcHm">
-                        <div size="2" color="1" rel="noopener noreferrer" class="Button-sc-1rnmncq-0 kBHyPC Button___StyledStyledWishButtonWithKeyboard-s129vo-0 cpvpKL" tabindex="0">Annulla</div>
-                    </div>
-                    <div class="Common__MultipleShippingFormButtonWrapper-sc-1xdep3b-58 crNcHm">
-                        <div size="2" color="1" rel="noopener noreferrer" class="Button-sc-1rnmncq-0 kBHyPC Button___StyledStyledWishButtonWithKeyboard-s129vo-0 JykKq" tabindex="0">Usa questo indirizzo</div>
                     </div>
                 </div>
             </div>
         </div>
+    <div class="title2-hd">Metodo di Pagamento</div>
+        <div height="570" class="container infocontainer2">
+            <div class="col-sm-12" width="800px" margin-right="24px" margin-left="24px">
+                <h3 class="title-hd" font-weight="bold">.......</h3>
+                    <div class="container infocontainer2" id="noBorderContainer">
+                        <div class="inforow">
+                            <label class="label2" for="name">
+                                Nome:
+                                <input type="text" name="name" id="name" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-name" data-id="nome" value="">
+                            </label>
+                            <label class="label2" for="surname">
+                            Cognome:
+                            <input type="text" name="surname" id="surname" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-surname" data-id="cognome" value="">
+                            </label>
+                        </div>
+                        <div class="inforow">
+                            <label class="label2" for="indirizzo1">
+                                Indirizzo n. 1:
+                                <input type="text" name="indirizzo1" id="indirizzo1" maxlength="99" placeholder="" autocomplete="address-line1" data-id="indirizzo1" value="">
+                                </label>
+                        </div>
+                        <div class="inforow">
+                            <label class="label2" for="indirizzo2">
+                                Indirizzo n. 2:
+                                <input type="text" name="indirizzo2" id="indirizzo2" maxlength="99" placeholder="Facoltativo" autocomplete="address-line2" data-id="indirizzo2" value="">
+                            </label>
+                        </div>
+                        <div class="inforow">
+                            <label class="label2" >
+                                Paese/Regione:
+                            <select name="paese/regione" >
+                            <option value="text">Seleziona il paese</option>
+                            <option value="saab">Albania</option>
+                            <option value="saab">Algeria</option>
+                            <option value="saab">Andorra</option>
+                            <option value="saab">Anguilla</option>
+                            <option value="saab">Arabia Saudita</option>
+                            <option value="saab">Argentina</option>
+                            <option value="saab">Armenia</option>
+                            <option value="saab">Aruba</option>
+                            <option value="saab">Australia</option>
+                            <option value="saab">Austria</option>
+                            <option value="saab">Azerbaijan</option>
+                            <option value="saab">Bahamas</option>
+                            <option value="saab">Bahrein</option>
+                            <option value="saab">Bangladesh</option>
+                            <option value="saab">Barbados</option>
+                            <option value="saab">Belgio</option>
+                            <option value="saab">Belize</option>
+                            <option value="saab">Bermuda</option>
+                            <option value="saab">Bhutan</option>
+                            <option value="saab">Birmania</option>
+                            <option value="saab">Bolivia</option>
+                            <option value="saab">Bosnia ed Erzegovina</option>
+                            <option value="saab">Botswana</option>
+                            <option value="saab">Brasile</option>
+                            <option value="saab">Bulgaria</option>
+                            <option value="saab">Cambogia</option>
+                            <option value="saab">Canada</option>
+                            <option value="saab">Cile</option>
+                            <option value="saab">Cipro</option>
+                            <option value="saab">Colombia</option>
+                            <option value="saab">Corea del Sud</option>
+                            <option value="saab">Costa Rica</option>
+                            <option value="saab">Croazia</option>
+                            <option value="saab">Danimarca</option>
+                            <option value="saab">Dominica</option>
+                            <option value="saab">Ecuador</option>
+                            <option value="saab">Egitto</option>
+                            <option value="saab">El Salvador</option>
+                            <option value="saab">Emirati Arabi Uniti</option>
+                            <option value="saab">Estonia</option>
+                            <option value="saab">Figi</option>
+                            <option value="saab">Filippine</option>
+                            <option value="saab">Finlandia</option>
+                            <option value="saab">Francia</option>
+                            <option value="saab">Gabon</option>
+                            <option value="saab">Georgia</option>
+                            <option value="saab">Germania</option>
+                            <option value="saab">Ghana</option>
+                            <option value="saab">Giamaica</option>
+                            <option value="saab">Giappone</option>
+                            <option value="saab">Gibilterra</option>
+                            <option value="saab">Giordania</option>
+                            <option value="saab">Grecia</option>
+                            <option value="saab">Grenada</option>
+                            <option value="saab">Guatemala</option>
+                            <option value="saab">Guyana</option>
+                            <option value="saab">Honduras</option>
+                            <option value="saab">India</option>
+                            <option value="saab">Indonesia</option>
+                            <option value="saab">Irlanda</option>
+                            <option value="saab">Islanda</option>
+                            <option value="saab">Isole Cayman</option>
+                            <option value="saab">Isole Vergini Americane</option>
+                            <option value="saab">Isole Vergini Britanniche</option>
+                            <option value="saab">Israele</option>
+                            <option value="saab" class="active">Italia</option>
+                            <option value="saab">Jersey</option>
+                            <option value="saab">Kazakistan</option>
+                            <option value="saab">Kenia</option>
+                            <option value="saab">Kuwait</option>
+                            <option value="saab">Kyrgyzstan</option>
+                            <option value="saab">Lettonia</option>
+                            <option value="saab">Liechtenstein</option>
+                            <option value="saab">Lituania</option>
+                            <option value="saab">Lussemburgo</option>
+                            <option value="saab">Macedonia Del Nord</option>
+                            <option value="saab">Maldive</option>
+                            <option value="saab">Malesia</option>
+                            <option value="saab">Malta</option>
+                            <option value="saab">Marocco</option>
+                            <option value="saab">Mauritius</option>
+                            <option value="saab">Messico</option>
+                            <option value="saab">Moldavia</option>
+                            <option value="saab">Monaco</option>
+                            <option value="saab">Mongolia</option>
+                            <option value="saab">Montenegro</option>
+                            <option value="saab">Montserrat</option>
+                            <option value="saab">Namibia</option>
+                            <option value="saab">Nepal</option>
+                            <option value="saab">Nicaragua</option>
+                            <option value="saab">Nigeria</option>
+                            <option value="saab">Nigue</option>
+                            <option value="saab">Norvegia</option>
+                            <option value="saab">Nuova Zelanda</option>
+                            <option value="saab">Oman</option>
+                            <option value="saab">Paesi Bassi</option>
+                            <option value="saab">Pakistan</option>
+                            <option value="saab">Panama</option>
+                            <option value="saab">Paraguay</option>
+                            <option value="saab">Perù</option>
+                            <option value="saab">Polonia</option>
+                            <option value="saab">Porto Rico</option>
+                            <option value="saab">Portogallo</option>
+                            <option value="saab">Qatar</option>
+                            <option value="saab">Regno Unito (Gran Bretagna)</option>
+                            <option value="saab">Repubblica Ceca</option>
+                            <option value="saab">Repubblica Domenicana</option>
+                            <option value="saab">Reunion</option>
+                            <option value="saab">Romania</option>
+                            <option value="saab">Russia</option>
+                            <option value="saab">Saint Helena</option>
+                            <option value="saab">San Marino</option>
+                            <option value="saab">Santa Lucia</option>
+                            <option value="saab">Serbia</option>
+                            <option value="saab">Seychelles</option>
+                            <option value="saab">Singapore</option>
+                            <option value="saab">Slovacchia</option>
+                            <option value="saab">Slovenia</option>
+                            <option value="saab">Spagna</option>
+                            <option value="saab">Sri Lanka</option>
+                            <option value="saab">Stati Uniti D'America</option>
+                            <option value="saab">Sud Africa</option>
+                            <option value="saab">Suriname</option>
+                            <option value="saab">Svezia</option>
+                            <option value="saab">Svizzera</option>
+                            <option value="saab">Swaziland</option>
+                            <option value="saab">Tailandia</option>
+                            <option value="saab">Taiwan, Cina</option>
+                            <option value="saab">Tonga</option>
+                            <option value="saab">Trinidad e Tobago</option>
+                            <option value="saab">Tunisia</option>
+                            <option value="saab">Turchia</option>
+                            <option value="saab">Ucraina</option>
+                            <option value="saab">Ungheria</option>
+                            <option value="saab">Uruguay</option>
+                            <option value="saab">Uzbekistan</option>
+                            <option value="saab">Venezuela</option>
+                            <option value="saab">Vietnam</option>
+                            <option value="saab">Zambia</option>
+                            </select>
+                            </label>
+                            <label class="label2" for="stato">
+                            Stato/Provincia/Regione:
+                            <input type="text" name="stato" id="stato" maxlength="99" placeholder="Facoltativo" autocomplete="address-level1" data-id="stato" value="">
+                        </label>
+                    </div>
+                    <div class="inforow">
+                        <label class="label2" for="città">
+                            Città
+                            <input type="text" name="città" id="città" maxlength="99" placeholder="" required="required" autocomplete="address-level2" data-id="city" value="">
+                        </label>
+                        <label class="label2" for="cap">
+                            CAP
+                            <input type="text" name="cap" id="cap" maxlength="5" placeholder="" required="required" autocomplete="postal-code" data-id="zipcode" value="">
+                        </label>
+                    </div>
+                    <div class="inforow">
+                        <label class="label2" for="numero">
+                            Numero di telefono
+                            <input type="text" name="numero" id="numero" maxlength="10" placeholder="" autocomplete="tel" data-id="phoneNumber" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
+                        </label>
+                    </div>
 
+                    <div class="inforow" id="annullarow">
+                        <input class="annullabtn" type="button" onclick="location.href='infouser.html';" value="Annulla">
+                        <label class="indirizzocheck" for="indirizzo"> Usa questo indirizzo </label>
+                        <input class="indirizzocheck1" type="checkbox" name="indirizzo" id="indirizzo" value="Usa questo indirizzo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- footer section-->
