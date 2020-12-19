@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25e8f8b5-484b-4db3-9da0-1865b7f1ea86" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/infouser.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/infouser.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +47,7 @@
       <workItem from="1608223872483" duration="5811000" />
       <workItem from="1608300113376" duration="14306000" />
       <workItem from="1608315919353" duration="1517000" />
-      <workItem from="1608386362034" duration="11679000" />
+      <workItem from="1608386362034" duration="12279000" />
     </task>
     <servers />
   </component>
