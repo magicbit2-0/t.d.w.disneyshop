@@ -50,7 +50,7 @@
 <!--login form popup-->
 <div class="login-wrapper" id="login-content">
 	<div class="login-content">
-		<a href="#" class="close">x</a>
+		<img src="images/img/x.png" onclick="location.href='index.html';" align="right">
 		<h3>Accedi</h3>
 		<form method="post" action="login.php">
 			<div class="row">
@@ -87,7 +87,7 @@
 <!--signup form popup-->
 <div class="login-wrapper"  id="signup-content">
 	<div class="login-content">
-		<a href="#" class="close">x</a>
+		<img src="images/img/x.png" onclick="location.href='index.html';" align="right">
 		<h3>Registrati</h3>
 		<form method="post" action="signup.php">
 			<div class="row">
@@ -198,19 +198,6 @@
 			<!-- /.navbar-collapse -->
 		</nav>
 
-		<!-- top search form -->
-		<div class="top-search">
-			<select>
-				<option value="saab">Tutto</option>
-				<option value="united">Cartoni Disney</option>
-				<option value="saab">Cartoni Pixar</option>
-				<option value="saab">Film Disney</option>
-				<option value="saab">Cortometraggi</option>
-				<option value="saab">Personaggi</option>
-				<option value="saab">Cast</option>
-			</select>
-			<input type="text" placeholder="Cerca per cartone, film, personaggio o cast">
-		</div>
 	</div>
 </header>
 <!-- END | Header -->
@@ -250,7 +237,7 @@
 					</div>
 					<div class="user-fav">
 						<ul>
-							<li id="EsciAccount"><a href="#">Esci</a></li>
+							<li id="EsciAccount"><a href="index.html">Esci</a></li>
 						</ul>
 					</div>
 				</div>
@@ -260,10 +247,10 @@
 					<p> Trovati <span> 10 film </span> in totale </p>
 					<label id="ordinaLabel">Ordina per:</label>
 					<select>
-						<option value="range">Scegli l'opzione </option>
-						<option value="saab"> Più Popolari </option>
-						<option value="saab"> Più Recensiti </option>
-						<option value="saab"> Più Recenti </option>
+						<option value="popularity">Più popolari</option>
+						<option value="rating">Più votati</option>
+						<option value="date">Più Recenti</option>
+						<option value="date">Meno Recenti</option>
 					</select>
 				</div>
 				<div class="movie-item-style-2 userrate">

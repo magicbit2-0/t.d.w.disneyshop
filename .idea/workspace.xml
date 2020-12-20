@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="8422e1cf-c7fa-4f10-9f7c-e317be5a095a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/COSE DA FARE TEMPLATE_TDW.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/COSE DA FARE TEMPLATE_TDW.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/blogdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/blogdetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/bloggrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/bloggrid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/celebritygrid01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/celebritygrid01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/celebritylist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/celebritylist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/celebritysingle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/celebritysingle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/celebritysingle2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/celebritysingle2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/comingsoon.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/comingsoon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/infouser.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/infouser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/moviegrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/moviegrid.html" afterDir="false" />
@@ -13,6 +22,7 @@
       <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/userfavoritegrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/userfavoritegrid.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/userfavoritelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/userfavoritelist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/userprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/userprofile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/userrate.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/userrate.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +41,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -44,16 +57,12 @@
       <option name="presentableId" value="Default" />
       <updated>1608460248548</updated>
       <workItem from="1608460250115" duration="10170000" />
+      <workItem from="1608476567140" duration="47000" />
+      <workItem from="1608476615863" duration="8604000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="434" y="187" key="#Notifications" timestamp="1608465299908">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="434" y="187" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1608465299908" />
   </component>
 </project>
