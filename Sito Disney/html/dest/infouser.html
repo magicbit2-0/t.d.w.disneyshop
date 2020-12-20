@@ -155,20 +155,20 @@
                         <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
                             FILM<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu level1">
-                            <li><a href="moviegrid.html">TUTTI I FILM</a></li>
-                            <li><a href="moviegrid.html">CARTONI DISNEY</a></li>
-                            <li><a href="moviegrid.html">CARTONI PIXAR</a></li>
-                            <li><a href="moviegrid.html">FILM DISNEY</a></li>
-                            <li><a href="moviegrid.html">CORTOMETRAGGI</a></li>
+                            <li><a href="moviegrid.html">Tutti i Film</a></li>
+                            <li><a href="moviegrid.html">Cartoni Disney</a></li>
+                            <li><a href="moviegrid.html">Cartoni Pixar</a></li>
+                            <li><a href="moviegrid.html">Film Disney</a></li>
+                            <li><a href="moviegrid.html">Cortometraggi</a></li>
                         </ul>
                     </li>
                     <li class="dropdown first">
                         <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
                             CELEBRITA'<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu level1">
-                            <li><a href="celebritygrid01.html">TUTTE LE CELEBRITA'</a></li>
-                            <li><a href="celebritygrid01.html">PERSONAGGI</a></li>
-                            <li><a href="celebritygrid01.html">CAST</a></li>
+                            <li><a href="celebritygrid01.html">Tutte le Celebrità</a></li>
+                            <li><a href="celebritygrid01.html">Personaggi</a></li>
+                            <li><a href="celebritygrid01.html">Cast</a></li>
                         </ul>
                     </li>
                     <li class="dropdown first">
@@ -182,24 +182,21 @@
                 <!--Parte destra barra superiore-->
                 <ul class="nav navbar-nav flex-child-menu menu-right">
                     <li class="dropdown first">
-
                         <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
                             AREA PERSONALE<i class="fa fa-angle-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-menu level1">
-                            <li><a href="userfavoritegrid.html">PREFERITI</a></li>
-                            <li><a href="userrate.html">RECENSIONI</a></li>
-                            <li><a href="userprofile.html">PROFILO</a></li>
+                            <li><a href="userfavoritegrid.html">Preferiti</a></li>
+                            <li><a href="userrate.html">Recensioni</a></li>
+                            <li><a href="userprofile.html">Profilo</a></li>
                         </ul>
                     </li>
-
                     <li class="btn loginLink"><a href="#">Accedi</a></li>
                     <li class="btn signupLink"><a href="#">Registrati</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </nav>
-
     </div>
 </header>
 <!-- END | Header -->
@@ -235,7 +232,7 @@
                         <div class="inforow">
                             <label class="label2" for="indirizzo1">
                                 Indirizzo n. 1:
-                                    <input type="text" name="indirizzo1" id="indirizzo1" maxlength="99" placeholder="" autocomplete="address-line1" data-id="indirizzo1" value="">
+                                    <input type="text" name="indirizzo1" id="indirizzo1" maxlength="99" placeholder="" required="required" autocomplete="address-line1" data-id="indirizzo1" value="">
                             </label>
                         </div>
                         <div class="inforow">
@@ -248,8 +245,7 @@
                             <label class="label2" >
                                 Paese/Regione:
                             <select name="paese/regione" >
-                                    <option value="text">Seleziona il paese</option>
-                                    <option value="saab" class="active">Italia</option>
+                                    <option value="text">Italia</option>
                                     <option value="saab">Albania</option>
                                     <option value="saab">Algeria</option>
                                     <option value="saab">Andorra</option>
@@ -408,10 +404,9 @@
                         <div class="inforow">
                             <label class="label2" for="numero">
                                 Numero di telefono
-                                <input type="text" name="numero" id="numero" maxlength="10" placeholder="" autocomplete="tel" data-id="phoneNumber" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
+                                <input type="text" name="numero" id="numero" maxlength="10" placeholder="" required="required" autocomplete="tel" data-id="phoneNumber" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="">
                             </label>
                         </div>
-
                         <div class="inforow" id="annullarow">
                             <input class="annullabtn" type="button" onclick="location.href='';" value="Annulla">
                             <label class="indirizzocheck" for="indirizzo"> Usa questo indirizzo </label>
@@ -426,23 +421,23 @@
                 <h3 class="title-hd" font-weight="bold">Metodo di Pagamento</h3>
                     <div class="container infocontainer2" id="noBorderContainer2">
                         <div class="inforow">
-                            <label class="label2" for="name">
+                            <label class="label2" for="cardnumber">
                                 Numero di Carta
-                                <input type="text" name="name" id="cardnumber" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-name" data-id="nome" value="">
+                                <input type="text" name="cardnumber" id="cardnumber" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-cardnumber" data-id="cardnumber" value="">
                             </label>
-                            <label class="label2" for="surname">
-                            CVV
-                            <input type="text" name="surname" id="cvv" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-surname" data-id="cognome" value="">
+                            <label class="label2" for="cvv">
+                                CVV
+                                <input type="text" name="cvv" id="cvv" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-cvv" data-id="cvv" value="">
                             </label>
                         </div>
                         <div class="inforow">
-                            <label class="label2" for="indirizzo1">
+                            <label class="label2" for="scadenza">
                                 Data Scadenza
-                                <input type="text" name="indirizzo1" id="scadenza" maxlength="99" placeholder="" autocomplete="address-line1" data-id="indirizzo1" value="">
+                                <input type="text" name="scadenza" id="scadenza" maxlength="99" placeholder="" required="required" autocomplete="given-scadenza" data-id="scadenza" value="">
                             </label>
-                            <label class="label2" for="cap">
+                            <label class="label2" for="cap_pagamento">
                                 CAP
-                                <input type="text" name="cap" id="cap_pagamento" maxlength="5" placeholder="" required="required" autocomplete="postal-code" data-id="zipcode" value="">
+                                <input type="text" name="cap_pagamento" id="cap_pagamento" maxlength="5" placeholder="" required="required" autocomplete="given-cap_pagamento" data-id="cap_pagamento" value="">
                             </label>
                         </div>
                     <div class="inforow" id="annullarow1">
@@ -454,9 +449,8 @@
             </div>
         </div>
         <input class="comprabtn" type="button" onclick="location.href='shoppage.html';" value="Compra Ora">
-        <input class="comprabtn" type="button" onclick="location.href='infouser.html';" value="Annulla">
+        <input class="comprabtn" type="button" onclick="location.href='';" value="Annulla">
     </div>
-
 </div>
 </div>
 
