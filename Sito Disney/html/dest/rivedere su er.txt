@@ -1,10 +1,4 @@
-1) che minchia è la tabella servizi del prof?
-2) scomporre articolo in film e cartone oppure inglobare film e cartone in articolo? propongo scomporre per avere più tabelle
-3) cardinalità relazione film /cartoni correllati?
-4) gestire associazione n-m tra film e attore/regista/direttore (cast)
-5) in personaggio togliere la colonna cartone_regia_id?
-6) scomporre preferiti in film preferiti e cartoni preferiti?
-7) immagine e video li mettiamo come blob?
-8) rivedere colonne associazione personaggio parola_chiave
-9) relazione utente spedizione 1-1 o 1-n?
-10) relazione utente spedizione 1-1 o 1-n?
+7) immagine e video li mettiamo come attributi o tabelle?
+
+
+mettere immagine di default all'avatar
