@@ -8,22 +8,22 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema disneydb
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `mydb` ;
+DROP SCHEMA IF EXISTS `disneydb` ;
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema disneydb
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `disneydb` DEFAULT CHARACTER SET utf8 ;
+USE `disneydb` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`film`
+-- Table `disneydb`.`film`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`film` ;
+DROP TABLE IF EXISTS `disneydb`.`film` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`film` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`film` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `titolo` VARCHAR(50) NOT NULL,
   `data_uscita` DATE NOT NULL,
@@ -38,11 +38,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`cartone`
+-- Table `disneydb`.`cartone`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`cartone` ;
+DROP TABLE IF EXISTS `disneydb`.`cartone` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`cartone` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`cartone` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `categoria` VARCHAR(20) NOT NULL,
   `titolo` VARCHAR(50) NOT NULL,
@@ -58,11 +58,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`parola_chiave`
+-- Table `disneydb`.`parola_chiave`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`parola_chiave` ;
+DROP TABLE IF EXISTS `disneydb`.`parola_chiave` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`parola_chiave` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`parola_chiave` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `testo` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`id`))
@@ -70,11 +70,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`avatar`
+-- Table `disneydb`.`avatar`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`avatar` ;
+DROP TABLE IF EXISTS `disneydb`.`avatar` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`avatar` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`avatar` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `immagine` BLOB NOT NULL,
   PRIMARY KEY (`id`))
@@ -82,11 +82,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`utente`
+-- Table `disneydb`.`utente`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`utente` ;
+DROP TABLE IF EXISTS `disneydb`.`utente` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`utente` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`utente` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(20) NOT NULL,
   `nome` VARCHAR(30) NOT NULL,
@@ -102,18 +102,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`utente` (
   INDEX `fk_utente_avatar1_idx` (`avatar_id` ASC) VISIBLE,
   CONSTRAINT `fk_utente_avatar1`
     FOREIGN KEY (`avatar_id`)
-    REFERENCES `mydb`.`avatar` (`id`)
+    REFERENCES `disneydb`.`avatar` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`recensione`
+-- Table `disneydb`.`recensione`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`recensione` ;
+DROP TABLE IF EXISTS `disneydb`.`recensione` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`recensione` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`recensione` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `voto` DECIMAL(2,1) NOT NULL,
   `titolo` VARCHAR(30) NOT NULL,
@@ -124,18 +124,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`recensione` (
   INDEX `fk_recensione_utente1_idx` (`utente_id` ASC) VISIBLE,
   CONSTRAINT `fk_recensione_utente1`
     FOREIGN KEY (`utente_id`)
-    REFERENCES `mydb`.`utente` (`id`)
+    REFERENCES `disneydb`.`utente` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`regia`
+-- Table `disneydb`.`regia`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`regia` ;
+DROP TABLE IF EXISTS `disneydb`.`regia` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`regia` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`regia` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(30) NOT NULL,
   `cognome` VARCHAR(30) NOT NULL,
@@ -150,11 +150,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`personaggio`
+-- Table `disneydb`.`personaggio`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`personaggio` ;
+DROP TABLE IF EXISTS `disneydb`.`personaggio` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`personaggio` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`personaggio` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
   `descrizione` MEDIUMTEXT NOT NULL,
@@ -165,11 +165,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`notizia`
+-- Table `disneydb`.`notizia`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`notizia` ;
+DROP TABLE IF EXISTS `disneydb`.`notizia` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`notizia` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`notizia` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `titolo` VARCHAR(30) NOT NULL,
   `fonte` VARCHAR(30) NOT NULL,
@@ -182,11 +182,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`commento`
+-- Table `disneydb`.`commento`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`commento` ;
+DROP TABLE IF EXISTS `disneydb`.`commento` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`commento` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`commento` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(30) NOT NULL,
   `email` VARCHAR(40) NOT NULL,
@@ -199,23 +199,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`commento` (
   INDEX `fk_commento_notizia1_idx` (`notizia_id` ASC) VISIBLE,
   CONSTRAINT `fk_commento_utente1`
     FOREIGN KEY (`utente_id`)
-    REFERENCES `mydb`.`utente` (`id`)
+    REFERENCES `disneydb`.`utente` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_commento_notizia1`
     FOREIGN KEY (`notizia_id`)
-    REFERENCES `mydb`.`notizia` (`id`)
+    REFERENCES `disneydb`.`notizia` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`ordine`
+-- Table `disneydb`.`ordine`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`ordine` ;
+DROP TABLE IF EXISTS `disneydb`.`ordine` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`ordine` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`ordine` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `totale_parziale` DOUBLE(5,2) NOT NULL,
   `spese_spedizione` DOUBLE(5,2) NOT NULL,
@@ -224,18 +224,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`ordine` (
   INDEX `fk_ordine_utente1_idx` (`utente_id` ASC) VISIBLE,
   CONSTRAINT `fk_ordine_utente1`
     FOREIGN KEY (`utente_id`)
-    REFERENCES `mydb`.`utente` (`id`)
+    REFERENCES `disneydb`.`utente` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`indirizzo_spedizione`
+-- Table `disneydb`.`indirizzo_spedizione`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`indirizzo_spedizione` ;
+DROP TABLE IF EXISTS `disneydb`.`indirizzo_spedizione` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`indirizzo_spedizione` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`indirizzo_spedizione` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(30) NOT NULL,
   `cognome` VARCHAR(30) NOT NULL,
@@ -251,18 +251,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`indirizzo_spedizione` (
   INDEX `fk_indirizzo_spedizione_utente1_idx` (`utente_id` ASC) VISIBLE,
   CONSTRAINT `fk_indirizzo_spedizione_utente1`
     FOREIGN KEY (`utente_id`)
-    REFERENCES `mydb`.`utente` (`id`)
+    REFERENCES `disneydb`.`utente` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`metodo_pagamento`
+-- Table `disneydb`.`metodo_pagamento`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`metodo_pagamento` ;
+DROP TABLE IF EXISTS `disneydb`.`metodo_pagamento` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`metodo_pagamento` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`metodo_pagamento` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `numero_carta` REAL UNSIGNED NOT NULL,
   `cvv` INT UNSIGNED NOT NULL,
@@ -273,18 +273,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`metodo_pagamento` (
   INDEX `fk_metodo_pagamento_utente1_idx` (`utente_id` ASC) VISIBLE,
   CONSTRAINT `fk_metodo_pagamento_utente1`
     FOREIGN KEY (`utente_id`)
-    REFERENCES `mydb`.`utente` (`id`)
+    REFERENCES `disneydb`.`utente` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`gruppo`
+-- Table `disneydb`.`gruppo`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`gruppo` ;
+DROP TABLE IF EXISTS `disneydb`.`gruppo` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`gruppo` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`gruppo` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `tipologia utente` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
@@ -292,11 +292,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`utente_has_gruppo`
+-- Table `disneydb`.`utente_has_gruppo`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`utente_has_gruppo` ;
+DROP TABLE IF EXISTS `disneydb`.`utente_has_gruppo` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`utente_has_gruppo` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`utente_has_gruppo` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `utente_id` INT UNSIGNED NOT NULL,
   `gruppo_id` INT UNSIGNED NOT NULL,
@@ -305,34 +305,34 @@ CREATE TABLE IF NOT EXISTS `mydb`.`utente_has_gruppo` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_utente_has_gruppo_utente`
     FOREIGN KEY (`utente_id`)
-    REFERENCES `mydb`.`utente` (`id`)
+    REFERENCES `disneydb`.`utente` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_utente_has_gruppo_gruppo1`
     FOREIGN KEY (`gruppo_id`)
-    REFERENCES `mydb`.`gruppo` (`id`)
+    REFERENCES `disneydb`.`gruppo` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`servizi`
+-- Table `disneydb`.`servizi`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`servizi` ;
+DROP TABLE IF EXISTS `disneydb`.`servizi` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`servizi` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`servizi` (
   `username` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`username`))
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`gruppo_has_servizi`
+-- Table `disneydb`.`gruppo_has_servizi`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`gruppo_has_servizi` ;
+DROP TABLE IF EXISTS `disneydb`.`gruppo_has_servizi` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`gruppo_has_servizi` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`gruppo_has_servizi` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `gruppo_id` INT UNSIGNED NOT NULL,
   `servizi_username` VARCHAR(50) NOT NULL,
@@ -341,23 +341,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`gruppo_has_servizi` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_gruppo_has_servizi_gruppo1`
     FOREIGN KEY (`gruppo_id`)
-    REFERENCES `mydb`.`gruppo` (`id`)
+    REFERENCES `disneydb`.`gruppo` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_gruppo_has_servizi_servizi1`
     FOREIGN KEY (`servizi_username`)
-    REFERENCES `mydb`.`servizi` (`username`)
+    REFERENCES `disneydb`.`servizi` (`username`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`film_has_parola_chiave`
+-- Table `disneydb`.`film_has_parola_chiave`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`film_has_parola_chiave` ;
+DROP TABLE IF EXISTS `disneydb`.`film_has_parola_chiave` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`film_has_parola_chiave` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`film_has_parola_chiave` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `film_id` INT UNSIGNED NOT NULL,
   `parola_chiave_id` INT UNSIGNED NOT NULL,
@@ -366,23 +366,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`film_has_parola_chiave` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_film_has_parola_chiave_film1`
     FOREIGN KEY (`film_id`)
-    REFERENCES `mydb`.`film` (`id`)
+    REFERENCES `disneydb`.`film` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_film_has_parola_chiave_parola_chiave1`
     FOREIGN KEY (`parola_chiave_id`)
-    REFERENCES `mydb`.`parola_chiave` (`id`)
+    REFERENCES `disneydb`.`parola_chiave` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`personaggio_has_parola_chiave`
+-- Table `disneydb`.`personaggio_has_parola_chiave`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`personaggio_has_parola_chiave` ;
+DROP TABLE IF EXISTS `disneydb`.`personaggio_has_parola_chiave` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`personaggio_has_parola_chiave` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`personaggio_has_parola_chiave` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `personaggio_id` INT NOT NULL,
   `parola_chiave_id` INT UNSIGNED NOT NULL,
@@ -391,23 +391,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`personaggio_has_parola_chiave` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_personaggio_has_parola_chiave_personaggio1`
     FOREIGN KEY (`personaggio_id`)
-    REFERENCES `mydb`.`personaggio` (`id`)
+    REFERENCES `disneydb`.`personaggio` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_personaggio_has_parola_chiave_parola_chiave1`
     FOREIGN KEY (`parola_chiave_id`)
-    REFERENCES `mydb`.`parola_chiave` (`id`)
+    REFERENCES `disneydb`.`parola_chiave` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`parola_chiave_has_notizia`
+-- Table `disneydb`.`parola_chiave_has_notizia`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`parola_chiave_has_notizia` ;
+DROP TABLE IF EXISTS `disneydb`.`parola_chiave_has_notizia` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`parola_chiave_has_notizia` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`parola_chiave_has_notizia` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `parola_chiave_id` INT UNSIGNED NOT NULL,
   `notizia_id` INT UNSIGNED NOT NULL,
@@ -416,23 +416,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`parola_chiave_has_notizia` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_parola_chiave_has_notizia_parola_chiave1`
     FOREIGN KEY (`parola_chiave_id`)
-    REFERENCES `mydb`.`parola_chiave` (`id`)
+    REFERENCES `disneydb`.`parola_chiave` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_parola_chiave_has_notizia_notizia1`
     FOREIGN KEY (`notizia_id`)
-    REFERENCES `mydb`.`notizia` (`id`)
+    REFERENCES `disneydb`.`notizia` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`regia_has_film`
+-- Table `disneydb`.`regia_has_film`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`regia_has_film` ;
+DROP TABLE IF EXISTS `disneydb`.`regia_has_film` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`regia_has_film` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`regia_has_film` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `regia_id` INT UNSIGNED NOT NULL,
   `film_id` INT UNSIGNED NOT NULL,
@@ -441,23 +441,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`regia_has_film` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_regia_has_film_regia1`
     FOREIGN KEY (`regia_id`)
-    REFERENCES `mydb`.`regia` (`id`)
+    REFERENCES `disneydb`.`regia` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_regia_has_film_film1`
     FOREIGN KEY (`film_id`)
-    REFERENCES `mydb`.`film` (`id`)
+    REFERENCES `disneydb`.`film` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`cartone_has_regia`
+-- Table `disneydb`.`cartone_has_regia`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`cartone_has_regia` ;
+DROP TABLE IF EXISTS `disneydb`.`cartone_has_regia` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`cartone_has_regia` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`cartone_has_regia` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `cartone_id` INT UNSIGNED NOT NULL,
   `regia_id` INT UNSIGNED NOT NULL,
@@ -466,23 +466,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`cartone_has_regia` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_cartone_has_regia_cartone1`
     FOREIGN KEY (`cartone_id`)
-    REFERENCES `mydb`.`cartone` (`id`)
+    REFERENCES `disneydb`.`cartone` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_cartone_has_regia_regia1`
     FOREIGN KEY (`regia_id`)
-    REFERENCES `mydb`.`regia` (`id`)
+    REFERENCES `disneydb`.`regia` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`cartone_has_personaggio`
+-- Table `disneydb`.`cartone_has_personaggio`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`cartone_has_personaggio` ;
+DROP TABLE IF EXISTS `disneydb`.`cartone_has_personaggio` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`cartone_has_personaggio` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`cartone_has_personaggio` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `cartone_id` INT UNSIGNED NOT NULL,
   `personaggio_id` INT NOT NULL,
@@ -491,23 +491,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`cartone_has_personaggio` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_cartone_has_personaggio_cartone1`
     FOREIGN KEY (`cartone_id`)
-    REFERENCES `mydb`.`cartone` (`id`)
+    REFERENCES `disneydb`.`cartone` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_cartone_has_personaggio_personaggio1`
     FOREIGN KEY (`personaggio_id`)
-    REFERENCES `mydb`.`personaggio` (`id`)
+    REFERENCES `disneydb`.`personaggio` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`regia_has_parola_chiave`
+-- Table `disneydb`.`regia_has_parola_chiave`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`regia_has_parola_chiave` ;
+DROP TABLE IF EXISTS `disneydb`.`regia_has_parola_chiave` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`regia_has_parola_chiave` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`regia_has_parola_chiave` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `regia_id` INT UNSIGNED NOT NULL,
   `parola_chiave_id` INT UNSIGNED NOT NULL,
@@ -516,23 +516,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`regia_has_parola_chiave` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_regia_has_parola_chiave_regia1`
     FOREIGN KEY (`regia_id`)
-    REFERENCES `mydb`.`regia` (`id`)
+    REFERENCES `disneydb`.`regia` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_regia_has_parola_chiave_parola_chiave1`
     FOREIGN KEY (`parola_chiave_id`)
-    REFERENCES `mydb`.`parola_chiave` (`id`)
+    REFERENCES `disneydb`.`parola_chiave` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`cartone_has_parola_chiave`
+-- Table `disneydb`.`cartone_has_parola_chiave`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`cartone_has_parola_chiave` ;
+DROP TABLE IF EXISTS `disneydb`.`cartone_has_parola_chiave` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`cartone_has_parola_chiave` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`cartone_has_parola_chiave` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `cartone_id` INT UNSIGNED NOT NULL,
   `parola_chiave_id` INT UNSIGNED NOT NULL,
@@ -541,23 +541,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`cartone_has_parola_chiave` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_cartone_has_parola_chiave_cartone1`
     FOREIGN KEY (`cartone_id`)
-    REFERENCES `mydb`.`cartone` (`id`)
+    REFERENCES `disneydb`.`cartone` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_cartone_has_parola_chiave_parola_chiave1`
     FOREIGN KEY (`parola_chiave_id`)
-    REFERENCES `mydb`.`parola_chiave` (`id`)
+    REFERENCES `disneydb`.`parola_chiave` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`correlati`
+-- Table `disneydb`.`correlati`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`correlati` ;
+DROP TABLE IF EXISTS `disneydb`.`correlati` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`correlati` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`correlati` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `cartone_id` INT UNSIGNED NOT NULL,
   `film_id` INT UNSIGNED NOT NULL,
@@ -566,23 +566,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`correlati` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_cartone_has_film_cartone1`
     FOREIGN KEY (`cartone_id`)
-    REFERENCES `mydb`.`cartone` (`id`)
+    REFERENCES `disneydb`.`cartone` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_cartone_has_film_film1`
     FOREIGN KEY (`film_id`)
-    REFERENCES `mydb`.`film` (`id`)
+    REFERENCES `disneydb`.`film` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`cartone_has_cartone`
+-- Table `disneydb`.`cartone_has_cartone`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`cartone_has_cartone` ;
+DROP TABLE IF EXISTS `disneydb`.`cartone_has_cartone` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`cartone_has_cartone` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`cartone_has_cartone` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `cartone_id` INT UNSIGNED NOT NULL,
   `cartone_associato_id` INT UNSIGNED NOT NULL,
@@ -591,23 +591,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`cartone_has_cartone` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_cartone_has_cartone_cartone1`
     FOREIGN KEY (`cartone_id`)
-    REFERENCES `mydb`.`cartone` (`id`)
+    REFERENCES `disneydb`.`cartone` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_cartone_has_cartone_cartone2`
     FOREIGN KEY (`cartone_associato_id`)
-    REFERENCES `mydb`.`cartone` (`id`)
+    REFERENCES `disneydb`.`cartone` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`film_correlato`
+-- Table `disneydb`.`film_correlato`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`film_correlato` ;
+DROP TABLE IF EXISTS `disneydb`.`film_correlato` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`film_correlato` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`film_correlato` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `film_id` INT UNSIGNED NOT NULL,
   `film_correlato_id` INT UNSIGNED NOT NULL,
@@ -616,23 +616,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`film_correlato` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_film_has_film_film1`
     FOREIGN KEY (`film_id`)
-    REFERENCES `mydb`.`film` (`id`)
+    REFERENCES `disneydb`.`film` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_film_has_film_film2`
     FOREIGN KEY (`film_correlato_id`)
-    REFERENCES `mydb`.`film` (`id`)
+    REFERENCES `disneydb`.`film` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`cartone_preferito`
+-- Table `disneydb`.`cartone_preferito`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`cartone_preferito` ;
+DROP TABLE IF EXISTS `disneydb`.`cartone_preferito` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`cartone_preferito` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`cartone_preferito` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `cartone_id` INT UNSIGNED NOT NULL,
   `utente_id` INT UNSIGNED NOT NULL,
@@ -641,23 +641,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`cartone_preferito` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_cartone_has_utente_cartone1`
     FOREIGN KEY (`cartone_id`)
-    REFERENCES `mydb`.`cartone` (`id`)
+    REFERENCES `disneydb`.`cartone` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_cartone_has_utente_utente1`
     FOREIGN KEY (`utente_id`)
-    REFERENCES `mydb`.`utente` (`id`)
+    REFERENCES `disneydb`.`utente` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`film_preferito`
+-- Table `disneydb`.`film_preferito`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`film_preferito` ;
+DROP TABLE IF EXISTS `disneydb`.`film_preferito` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`film_preferito` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`film_preferito` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `film_id` INT UNSIGNED NOT NULL,
   `utente_id` INT UNSIGNED NOT NULL,
@@ -666,23 +666,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`film_preferito` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_film_has_utente_film1`
     FOREIGN KEY (`film_id`)
-    REFERENCES `mydb`.`film` (`id`)
+    REFERENCES `disneydb`.`film` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_film_has_utente_utente1`
     FOREIGN KEY (`utente_id`)
-    REFERENCES `mydb`.`utente` (`id`)
+    REFERENCES `disneydb`.`utente` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`media`
+-- Table `disneydb`.`media`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`media` ;
+DROP TABLE IF EXISTS `disneydb`.`media` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`media` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`media` (
   `id` INT NOT NULL,
   `file` BLOB NOT NULL,
   PRIMARY KEY (`id`))
@@ -690,11 +690,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`cartone_has_media`
+-- Table `disneydb`.`cartone_has_media`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`cartone_has_media` ;
+DROP TABLE IF EXISTS `disneydb`.`cartone_has_media` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`cartone_has_media` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`cartone_has_media` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `cartone_id` INT UNSIGNED NOT NULL,
   `media_id` INT NOT NULL,
@@ -703,23 +703,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`cartone_has_media` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_cartone_has_media_cartone1`
     FOREIGN KEY (`cartone_id`)
-    REFERENCES `mydb`.`cartone` (`id`)
+    REFERENCES `disneydb`.`cartone` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_cartone_has_media_media1`
     FOREIGN KEY (`media_id`)
-    REFERENCES `mydb`.`media` (`id`)
+    REFERENCES `disneydb`.`media` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`media_has_personaggio`
+-- Table `disneydb`.`media_has_personaggio`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`media_has_personaggio` ;
+DROP TABLE IF EXISTS `disneydb`.`media_has_personaggio` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`media_has_personaggio` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`media_has_personaggio` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `media_id` INT NOT NULL,
   `personaggio_id` INT NOT NULL,
@@ -728,23 +728,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`media_has_personaggio` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_media_has_personaggio_media1`
     FOREIGN KEY (`media_id`)
-    REFERENCES `mydb`.`media` (`id`)
+    REFERENCES `disneydb`.`media` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_media_has_personaggio_personaggio1`
     FOREIGN KEY (`personaggio_id`)
-    REFERENCES `mydb`.`personaggio` (`id`)
+    REFERENCES `disneydb`.`personaggio` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`media_has_regia`
+-- Table `disneydb`.`media_has_regia`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`media_has_regia` ;
+DROP TABLE IF EXISTS `disneydb`.`media_has_regia` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`media_has_regia` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`media_has_regia` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `media_id` INT NOT NULL,
   `regia_id` INT UNSIGNED NOT NULL,
@@ -753,23 +753,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`media_has_regia` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_media_has_regia_media1`
     FOREIGN KEY (`media_id`)
-    REFERENCES `mydb`.`media` (`id`)
+    REFERENCES `disneydb`.`media` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_media_has_regia_regia1`
     FOREIGN KEY (`regia_id`)
-    REFERENCES `mydb`.`regia` (`id`)
+    REFERENCES `disneydb`.`regia` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`media_has_film`
+-- Table `disneydb`.`media_has_film`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`media_has_film` ;
+DROP TABLE IF EXISTS `disneydb`.`media_has_film` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`media_has_film` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`media_has_film` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `media_id` INT NOT NULL,
   `film_id` INT UNSIGNED NOT NULL,
@@ -778,23 +778,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`media_has_film` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_media_has_film_media1`
     FOREIGN KEY (`media_id`)
-    REFERENCES `mydb`.`media` (`id`)
+    REFERENCES `disneydb`.`media` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_media_has_film_film1`
     FOREIGN KEY (`film_id`)
-    REFERENCES `mydb`.`film` (`id`)
+    REFERENCES `disneydb`.`film` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`personaggio_has_regia`
+-- Table `disneydb`.`personaggio_has_regia`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`personaggio_has_regia` ;
+DROP TABLE IF EXISTS `disneydb`.`personaggio_has_regia` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`personaggio_has_regia` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`personaggio_has_regia` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `personaggio_id` INT NOT NULL,
   `regia_id` INT UNSIGNED NOT NULL,
@@ -803,23 +803,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`personaggio_has_regia` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_personaggio_has_regia_personaggio1`
     FOREIGN KEY (`personaggio_id`)
-    REFERENCES `mydb`.`personaggio` (`id`)
+    REFERENCES `disneydb`.`personaggio` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_personaggio_has_regia_regia1`
     FOREIGN KEY (`regia_id`)
-    REFERENCES `mydb`.`regia` (`id`)
+    REFERENCES `disneydb`.`regia` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`personaggio_has_personaggio`
+-- Table `disneydb`.`personaggio_has_personaggio`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`personaggio_has_personaggio` ;
+DROP TABLE IF EXISTS `disneydb`.`personaggio_has_personaggio` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`personaggio_has_personaggio` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`personaggio_has_personaggio` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `personaggio_id` INT NOT NULL,
   `personaggio_correlato_id` INT NOT NULL,
@@ -828,23 +828,23 @@ CREATE TABLE IF NOT EXISTS `mydb`.`personaggio_has_personaggio` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_personaggio_has_personaggio_personaggio1`
     FOREIGN KEY (`personaggio_id`)
-    REFERENCES `mydb`.`personaggio` (`id`)
+    REFERENCES `disneydb`.`personaggio` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_personaggio_has_personaggio_personaggio2`
     FOREIGN KEY (`personaggio_correlato_id`)
-    REFERENCES `mydb`.`personaggio` (`id`)
+    REFERENCES `disneydb`.`personaggio` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`regia_has_regia`
+-- Table `disneydb`.`regia_has_regia`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`regia_has_regia` ;
+DROP TABLE IF EXISTS `disneydb`.`regia_has_regia` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`regia_has_regia` (
+CREATE TABLE IF NOT EXISTS `disneydb`.`regia_has_regia` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `regia_id` INT UNSIGNED NOT NULL,
   `regia_correlato_id` INT UNSIGNED NOT NULL,
@@ -853,12 +853,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`regia_has_regia` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_regia_has_regia_regia1`
     FOREIGN KEY (`regia_id`)
-    REFERENCES `mydb`.`regia` (`id`)
+    REFERENCES `disneydb`.`regia` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_regia_has_regia_regia2`
     FOREIGN KEY (`regia_correlato_id`)
-    REFERENCES `mydb`.`regia` (`id`)
+    REFERENCES `disneydb`.`regia` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
