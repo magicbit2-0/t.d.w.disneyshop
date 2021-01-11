@@ -2,9 +2,1161 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49096b57-4793-426e-9c10-3d76c9168588" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/css/documenter_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/css/img/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/css/img/warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/color.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/font.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/font2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/header.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/menu.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/section.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/images/topsearch.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/js/google-code-prettify/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/js/google-code-prettify/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/js/jquery.easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/js/jquery.scrollTo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/assets/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/doc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/Bozza dB.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/COSE DA FARE TEMPLATE_TDW.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/blogdetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/bloggrid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/celebritygrid01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/celebritylist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/celebritysingle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/celebritysingle2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/comingsoon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/css/plugins.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/disney.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/slick.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/slick.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/slick.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/fonts/slick.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Attori/Angelina Jolie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Attori/ChrisHemsworth.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Attori/NaomiScott.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Attori/WillSmith.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Aladdin2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Anna.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Anna2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Ariel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Arlo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Artu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Aurora.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Baloo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Bambi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Belle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Bestia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Biagio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Biancaneve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Big Hero 6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Bob Parr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Bolt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Buzz lightyear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Carl Fredricksen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Cenerentola2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Coco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Dory2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Dumbo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Elsa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Grimilde.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Inside Out.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/James Sullivan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Jasmine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Judy Hopps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Kuzco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Lilli.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Maggie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Mowgli.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Mulan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Nemo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Onward.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Peter Pan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Pinocchio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Pocahontas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Pongo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Ralph Spaccatutto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Rapunzel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Ratatouille.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Ribelle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Robin Hood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Romeo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Sette_Nani.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Simba.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Soul.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Tiana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Vaiana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Wall-E.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Winnie the Pooh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/Woody.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/oLAF.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/Personaggi/sfondo_personaggi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/fancybox_loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/fancybox_loading@2x.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/fancybox_overlay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/fancybox_sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/fancybox_sprite@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/chris hemsworth/avengers1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/chris hemsworth/avengers2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/chris hemsworth/avengers3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/chris hemsworth/avengers4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/chris hemsworth/doctorstrange.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/chris hemsworth/thor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/chris hemsworth/thor2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/chris hemsworth/thor3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/will smith/iosonoleggenda.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/will smith/mib.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/will smith/mib2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/will smith/mib3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/film attori/will smith/suicidesquad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/foto/aladdin1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/foto/aladdin2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/foto/aladdin3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/foto/aladdin4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/foto/aladdin5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/foto/aladdin6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/img/GIF Castello.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/img/LogoPiccolo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/img/fb1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/img/fb2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/img/fb3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/img/frecciaMenu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/img/lenteIngrandimento.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/img/lenteIngrandimentoPiccola.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/img/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/img/logopixar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/img/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Aladdin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Bambi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Biancaneve e i sette nani.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Big Hero 6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Bolt - Un eroe a quattro zampe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Cenerentola.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Dumbo - L'elefante volante.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Frozen - Il regno di ghiaccio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Frozen II.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Gli aristogatti.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Il libro della giungla.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Il re leone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/La Bella Addormentata nel Bosco.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/La bella e la bestia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/La carica dei 101.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/La principessa e il ranocchio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/La sirenetta.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/La spada nella roccia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Le avventure di Peter Pa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Le avventure di winnie the pooh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Le follie dell'imperatore.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Lilli e il vagabondo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Mucche alla riscossa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Mulan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Oceania.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Pinocchio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Pocahontas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Ralph Spaccatutto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Ralph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Rapunzel - L'intreccio della torre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Robin Hood.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Disney/Zootropolis.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Alla Ricerca Di Nemo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Coco.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Gli Incredibili.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Il Viaggio di Arlo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Inside Out.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Monsters &amp; co..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Onward.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Ratatouille.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Ribelle the Brave.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Soul.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Soul2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Toy Story.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/UP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cartoni Pixar/Wall-E.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/Bao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/Bao2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/Cricchetto e la Macchina del Tempo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/Gat-Bull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/Jack-Jack Attack.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/Kitbull.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/Knick Knack.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/L'agnello rimbalzello.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/La nuova macchina di mike.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/Lava.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/Non c'è festa senza Rex.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/One Man Band.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/Pennuti Spennati.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/Piper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Cortometraggi Pixar/Stu - Anche un alien può sbagliare.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Aladdin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Alice attraverso lo specchio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Alice in Wonderland.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Biancaneve e il cacciatore.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Cenerentola.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Dumbo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Il Re Leone.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Il cacciatore e la regina di ghiaccio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Il libro della giungla.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Il re leone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/La Bella e la Bestia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/La bella e la Bestia.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/La carica dei 101 - Questa volta la magia è vera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Lilli e il Vagabondo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Maleficent – Signora del male.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Maleficent.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Mulan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Pinocchio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/Ritorno al Bosco dei 100 Acri.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/locandine/Immagini Film Disney/The Legend of Tarzan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/nivo/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/nivo/close@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/nivo/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/nivo/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/nivo/loading@2x.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/nivo/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/nivo/next@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/nivo/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/nivo/prev@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/prossimamente/mulan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/triangle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/Aladdin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ads1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ads2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/author.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/author2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/author3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/author4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ava1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ava2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ava3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ava4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blog-detail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blog-detail2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blog-it1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blog-it2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blog26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blog27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blog29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/bloglist-it1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/bloglist-it2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/bloglist-it3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/bloglist-it4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/bloglist-it5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/bloglist-it6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blogv21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blogv22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blogv23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blogv24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blogv25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/blogv29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/cast1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/cast2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/cast3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/cast4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/cast5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/cast6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/cast7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/cast9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb28.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceb9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceblist1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceblist2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceblist3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceblist4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceblist5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceblist6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceblist7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ceblist8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/cebsingle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/cebsingle2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/celeb-hero-single.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/celebsingle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/cm-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/drop-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/err-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/error-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/film1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/film2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/film3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/film4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/film5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/film6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/film7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/film8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/ft-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/heart-ico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/hero-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/hero-bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/hero-bg3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image1-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image101.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image111.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image121.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image131.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image141.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image151.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image161.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image171.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image181.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image191.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image2-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image201.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image211.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image51.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image61.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image71.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image81.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/image91.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/media-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/media-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/media-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/movie-single.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-it1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-it10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-it11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-it12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-it2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-it3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-it4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-it5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-it6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-it7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-it8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-it9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-item1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-item10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-item11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-item12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-item2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-item3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-item4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-item5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-item6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-item7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-item8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv-item9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/mv5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/play-btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/play-vd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/poster1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/pt9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/search-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/search-bgsb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/season.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/series-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/share-ico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/slider-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/slider-bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/slider-rate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/slider1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/slider2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/slider3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/slider4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/sr-single-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/sr-single-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/sr-single-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/sr-single.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/topsearch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/trailer2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/trailer2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/trailer3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/trailer4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/trailer5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/trailer6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/trailer7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/user-hero-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/user-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/user-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/userava1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/userava2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/userava3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/userava4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/userava5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/vd-item1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/vd-item2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/vd-item3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/vd-item4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/vd-item5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/vd-item6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/vd-item7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/vd-item8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/vd-itme1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/images/uploads/vd-itme2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/infouser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/js/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/js/plugins2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/modello_er.mwb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/modello_er.mwb.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/moviegrid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/movielist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/moviesingle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/moviesingle2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/blogdetail_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/bloggrid_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/bloglist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/bloglist_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/celebritygrid01_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/celebritygrid02.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/celebritygrid02_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/celebritylist_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/celebritysingle_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/homev2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/homev2_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/homev3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/homev3_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/index_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/landing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/moviegrid_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/moviegridfw.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/moviegridfw_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/movielist_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/moviesingle_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/seriessingle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/seriessingle_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/userfavoritegrid_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/userfavoritelist_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/userprofile_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/non utilizzate/userrate_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/rivedere su er.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/shoppage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/userfavoritegrid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/userfavoritelist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/userprofile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/userrate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Aladdin.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Bambi trailer ita.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Biancaneve e i sette nani trailer ita.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Big Hero 6 - Trailer Italiano Ufficiale HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Bolt - Un Eroe a Quattro Zampe Trailer Italiano.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Cenerentola Trailer Italiano Ufficiale HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Dumbo trailer ita.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Frozen -- Il Regno di Ghiaccio - Trailer Ufficiale Italiano HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/I Classici Disney - Gli Aristogatti - Trailer Italiano HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/I Classici Disney - Le Avventure di Peter Pan - Trailer HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Il Re Leone 3D -- Trailer Ufficiale Italiano.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Il libro della giungla - Trailer italiano ufficiale - Al cinema dal 0806.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/La Bella Addormentata nel Bosco -- Trailer home video - Dal 24 settembre in Blu-ray e DVD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/La Bella e la Bestia in 3D -- Il trailer ufficiale italiano.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/La Carica dei 101 - Trailer Ufficiale Italiano HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/La Principessa e il ranocchio trailer ita.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Le follie dellimperatore trailer ita.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Lilly e il Vagabondo(1955).mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Mucche alla riscossa trailer ita.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Mulan Trailer ita.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Oceania - Trailer Italiano Ufficiale HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Pinocchio -- festadelpapà - Trailer Italiano Home Video HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Pocahontas  Trailer ITA ⟲ ℜε - Trailer.mp4" afterPathEscaped="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Pocahontas 🍁 Trailer ITA ⟲ ℜε - Trailer.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/RAPUNZEL - Lintreccio della torre Trailer italiano.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Ralph Spaccatutto - Trailer Ufficiale Italiano HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Robin Hood - Trailer (Disney).mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Trailer La Spada nella Roccia (1963).mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Winnie The Pooh - Nuove avventure nel Bosco dei 100 Acri - Il trailer.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/Zootropolis - Nuovo Trailer Ufficiale Italiano HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Disney/la sirenetta trailer ita.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/Disney  Soul - In Streaming dal 25 Dicembre.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/Disney Pixar Alla Ricerca di Nemo 3D - Trailer Ufficiale italiano HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/Disney•Pixar Coco - Trailer Ufficiale Italiano.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/Disney•Pixar Il Viaggio di Arlo - Nuovo Trailer Ufficiale Italiano HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/Gli Incredibili Trailer ita.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/Inside Out – Nuovo Trailer Ufficiale Italiano HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/Monsters Co. 3D - Trailer Ufficiale Italiano HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/ONWARD - Oltre la magia Trailer Ufficiale Italiano.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/Ratatouille - Trailer italiano.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/Ribelle -- The Brave - Trailer Ufficiale Italiano HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/Toy Story 1 HD Trailer.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/UP - Nuovo trailer del film Disney Pixar.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cartoni Pixar/WALL•E Teaser Trailer Official Disney Pixar UK.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/BAO official HD - Pixar Animation 2018.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/Cars Toons - Cricchetto e la macchina del tempo (NO BLOCCHI).mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/Jack Jack Attack.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/Kitbull Pixar SparkShorts.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/LAVA [song ITA completo HD] _Vena filosofica ..mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/La nuova macchina di Mike.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/Lagnello rimbalzello - Pixar - 2003.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/Non cè festa senza Rex - Clip dal corto HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/PIXARS KNICK KNACK - 1080p.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/Piper Disney Pixar Oscar winning Short Movie.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/Stu - Anche un alieno può sbagliare.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/one man band.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Cortometraggi Pixar/pennuti spennati.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/ALICE IN WONDERLAND - Il trailer italiano.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/Alice attraverso lo specchio - Trailer Italiano Ufficiale HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/Biancaneve e il Cacciatore (2012) _ Secondo trailer italiano ufficiale [HD].mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/Cenerentola - Trailer Italiano Ufficiale HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/DUMBO - Trailer Italiano HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/IL CACCIATORE E LA REGINA DI GHIACCIO - Trailer italiano ufficiale.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/Il Libro della Giungla - Nuovo Trailer Italiano Ufficiale HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/Il Re Leone Trailer Ufficiale.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/LA BELLA E LA BESTIA - Trailer Ufficiale Italiano.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/La Bella e la Bestia - Nuovo Trailer Italiano Ufficiale HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/La Carica Dei 101 trailer (fandub) collaborazione.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/Lilli e Il Vagabondo - Trailer Ufficiale In Streaming su Disney .mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/Maleficent - Trailer Ufficiale italiano _ HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/Maleficent Signora del Male Trailer Ufficiale italiano.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/Mulan Trailer Ufficiale 2 Italiano.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/PINOCCHIO di Matteo Garrone (2019) - Trailer Ufficiale HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/Ritorno al Bosco dei 100 Acri - Trailer Italiano Ufficiale HD.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/The Legend of Tarzan – Trailer ufficiale italiano.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/html/dtml/video/Film Disney/videoAladdin.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/Bozza dB.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/html/dest/Bozza dB.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/~$zza dB.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/Bozza dB.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/COSE DA FARE TEMPLATE_TDW.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/blogdetail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/bloggrid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/celebritygrid01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/celebritylist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/celebritysingle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/celebritysingle2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/comingsoon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/css/plugins.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/disney.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/ionicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/ionicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/ionicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/slick.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/slick.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/slick.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/fonts/slick.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Attori/Angelina Jolie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Attori/ChrisHemsworth.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Attori/NaomiScott.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Attori/WillSmith.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Aladdin2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Anna.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Anna2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Ariel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Arlo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Artu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Aurora.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Baloo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Bambi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Belle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Bestia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Biagio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Biancaneve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Big Hero 6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Bob Parr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Bolt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Buzz lightyear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Carl Fredricksen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Cenerentola2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Coco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Dory2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Dumbo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Elsa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Grimilde.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Inside Out.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/James Sullivan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Jasmine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Judy Hopps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Kuzco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Lilli.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Maggie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Mowgli.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Mulan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Nemo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Onward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Peter Pan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Pinocchio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Pocahontas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Pongo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Ralph Spaccatutto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Rapunzel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Ratatouille.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Ribelle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Robin Hood.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Romeo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Sette_Nani.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Simba.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Soul.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Tiana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Vaiana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Wall-E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Winnie the Pooh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/Woody.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/oLAF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/Personaggi/sfondo_personaggi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/fancybox_loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/fancybox_loading@2x.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/fancybox_overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/fancybox_sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/fancybox_sprite@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/chris hemsworth/avengers1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/chris hemsworth/avengers2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/chris hemsworth/avengers3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/chris hemsworth/avengers4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/chris hemsworth/doctorstrange.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/chris hemsworth/thor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/chris hemsworth/thor2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/chris hemsworth/thor3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/will smith/iosonoleggenda.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/will smith/mib.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/will smith/mib2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/will smith/mib3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/film attori/will smith/suicidesquad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/foto/aladdin1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/foto/aladdin2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/foto/aladdin3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/foto/aladdin4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/foto/aladdin5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/foto/aladdin6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/img/GIF Castello.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/img/LogoPiccolo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/img/fb1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/img/fb2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/img/fb3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/img/frecciaMenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/img/lenteIngrandimento.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/img/lenteIngrandimentoPiccola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/img/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/img/logopixar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/img/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Aladdin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Bambi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Biancaneve e i sette nani.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Big Hero 6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Bolt - Un eroe a quattro zampe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Cenerentola.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Dumbo - L'elefante volante.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Frozen - Il regno di ghiaccio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Frozen II.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Gli aristogatti.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Il libro della giungla.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Il re leone.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/La Bella Addormentata nel Bosco.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/La bella e la bestia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/La carica dei 101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/La principessa e il ranocchio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/La sirenetta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/La spada nella roccia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Le avventure di Peter Pa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Le avventure di winnie the pooh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Le follie dell'imperatore.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Lilli e il vagabondo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Mucche alla riscossa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Mulan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Oceania.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Pinocchio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Pocahontas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Ralph Spaccatutto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Ralph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Rapunzel - L'intreccio della torre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Robin Hood.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Disney/Zootropolis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Alla Ricerca Di Nemo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Coco.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Gli Incredibili.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Il Viaggio di Arlo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Inside Out.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Monsters &amp; co..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Onward.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Ratatouille.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Ribelle the Brave.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Soul.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Soul2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Toy Story.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/UP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cartoni Pixar/Wall-E.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/Bao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/Bao2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/Cricchetto e la Macchina del Tempo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/Gat-Bull.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/Jack-Jack Attack.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/Kitbull.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/Knick Knack.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/L'agnello rimbalzello.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/La nuova macchina di mike.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/Lava.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/Non c'è festa senza Rex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/One Man Band.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/Pennuti Spennati.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/Piper.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Cortometraggi Pixar/Stu - Anche un alien può sbagliare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Aladdin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Alice attraverso lo specchio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Alice in Wonderland.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Biancaneve e il cacciatore.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Cenerentola.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Dumbo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Il Re Leone.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Il cacciatore e la regina di ghiaccio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Il libro della giungla.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Il re leone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/La Bella e la Bestia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/La bella e la Bestia.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/La carica dei 101 - Questa volta la magia è vera.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Lilli e il Vagabondo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Maleficent – Signora del male.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Maleficent.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Mulan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Pinocchio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/Ritorno al Bosco dei 100 Acri.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/locandine/Immagini Film Disney/The Legend of Tarzan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/nivo/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/nivo/close@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/nivo/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/nivo/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/nivo/loading@2x.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/nivo/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/nivo/next@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/nivo/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/nivo/prev@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/prossimamente/mulan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/triangle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/Aladdin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ads1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ads2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/author.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/author2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/author3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/author4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ava1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ava2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ava3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ava4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blog-detail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blog-detail2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blog-it1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blog-it2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blog26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blog27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blog29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/bloglist-it1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/bloglist-it2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/bloglist-it3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/bloglist-it4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/bloglist-it5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/bloglist-it6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blogv21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blogv22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blogv23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blogv24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blogv25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/blogv29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/cast1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/cast2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/cast3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/cast4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/cast5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/cast6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/cast7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/cast9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceb9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceblist1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceblist2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceblist3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceblist4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceblist5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceblist6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceblist7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ceblist8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/cebsingle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/cebsingle2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/celeb-hero-single.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/celebsingle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/cm-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/drop-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/err-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/error-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/film1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/film2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/film3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/film4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/film5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/film6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/film7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/film8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/ft-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/heart-ico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/hero-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/hero-bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/hero-bg3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image1-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image121.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image131.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image141.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image151.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image161.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image171.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image181.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image191.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image2-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image201.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image211.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/image91.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/media-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/media-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/media-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/movie-single.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-it1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-it10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-it11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-it12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-it2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-it3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-it4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-it5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-it6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-it7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-it8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-it9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-item1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-item10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-item11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-item12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-item2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-item3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-item4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-item5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-item6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-item7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-item8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv-item9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/mv5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/play-btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/play-vd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/poster1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/pt9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/search-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/search-bgsb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/season.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/series-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/share-ico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/slider-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/slider-bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/slider-rate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/slider1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/slider2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/slider3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/slider4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/sr-single-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/sr-single-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/sr-single-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/sr-single.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/topsearch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/trailer2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/trailer2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/trailer3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/trailer4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/trailer5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/trailer6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/trailer7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/user-hero-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/user-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/user-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/userava1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/userava2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/userava3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/userava4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/userava5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/vd-item1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/vd-item2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/vd-item3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/vd-item4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/vd-item5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/vd-item6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/vd-item7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/vd-item8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/vd-itme1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/images/uploads/vd-itme2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/infouser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/js/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/js/plugins2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/modello_er.mwb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/modello_er.mwb.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/moviegrid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/movielist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/moviesingle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/moviesingle2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/blogdetail_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/bloggrid_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/bloglist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/bloglist_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/celebritygrid01_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/celebritygrid02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/celebritygrid02_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/celebritylist_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/celebritysingle_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/homev2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/homev2_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/homev3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/homev3_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/index_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/landing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/moviegrid_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/moviegridfw.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/moviegridfw_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/movielist_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/moviesingle_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/seriessingle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/seriessingle_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/userfavoritegrid_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/userfavoritelist_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/userprofile_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/non utilizzate/userrate_light.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/rivedere su er.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/shoppage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/userfavoritegrid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/userfavoritelist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/userprofile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/userrate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Aladdin.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Bambi trailer ita.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Biancaneve e i sette nani trailer ita.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Big Hero 6 - Trailer Italiano Ufficiale HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Bolt - Un Eroe a Quattro Zampe Trailer Italiano.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Cenerentola Trailer Italiano Ufficiale HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Dumbo trailer ita.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Frozen -- Il Regno di Ghiaccio - Trailer Ufficiale Italiano HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/I Classici Disney - Gli Aristogatti - Trailer Italiano HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/I Classici Disney - Le Avventure di Peter Pan - Trailer HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Il Re Leone 3D -- Trailer Ufficiale Italiano.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Il libro della giungla - Trailer italiano ufficiale - Al cinema dal 0806.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/La Bella Addormentata nel Bosco -- Trailer home video - Dal 24 settembre in Blu-ray e DVD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/La Bella e la Bestia in 3D -- Il trailer ufficiale italiano.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/La Carica dei 101 - Trailer Ufficiale Italiano HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/La Principessa e il ranocchio trailer ita.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Le follie dellimperatore trailer ita.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Lilly e il Vagabondo(1955).mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Mucche alla riscossa trailer ita.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Mulan Trailer ita.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Oceania - Trailer Italiano Ufficiale HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Pinocchio -- festadelpapà - Trailer Italiano Home Video HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Pocahontas  Trailer ITA ⟲ ℜε - Trailer.mp4" beforePathEscaped="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Pocahontas 🍁 Trailer ITA ⟲ ℜε - Trailer.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/RAPUNZEL - Lintreccio della torre Trailer italiano.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Ralph Spaccatutto - Trailer Ufficiale Italiano HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Robin Hood - Trailer (Disney).mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Trailer La Spada nella Roccia (1963).mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Winnie The Pooh - Nuove avventure nel Bosco dei 100 Acri - Il trailer.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/Zootropolis - Nuovo Trailer Ufficiale Italiano HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Disney/la sirenetta trailer ita.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/Disney  Soul - In Streaming dal 25 Dicembre.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/Disney Pixar Alla Ricerca di Nemo 3D - Trailer Ufficiale italiano HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/Disney•Pixar Coco - Trailer Ufficiale Italiano.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/Disney•Pixar Il Viaggio di Arlo - Nuovo Trailer Ufficiale Italiano HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/Gli Incredibili Trailer ita.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/Inside Out – Nuovo Trailer Ufficiale Italiano HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/Monsters Co. 3D - Trailer Ufficiale Italiano HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/ONWARD - Oltre la magia Trailer Ufficiale Italiano.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/Ratatouille - Trailer italiano.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/Ribelle -- The Brave - Trailer Ufficiale Italiano HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/Toy Story 1 HD Trailer.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/UP - Nuovo trailer del film Disney Pixar.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cartoni Pixar/WALL•E Teaser Trailer Official Disney Pixar UK.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/BAO official HD - Pixar Animation 2018.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/Cars Toons - Cricchetto e la macchina del tempo (NO BLOCCHI).mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/Jack Jack Attack.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/Kitbull Pixar SparkShorts.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/LAVA [song ITA completo HD] _Vena filosofica ..mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/La nuova macchina di Mike.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/Lagnello rimbalzello - Pixar - 2003.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/Non cè festa senza Rex - Clip dal corto HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/PIXARS KNICK KNACK - 1080p.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/Piper Disney Pixar Oscar winning Short Movie.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/Stu - Anche un alieno può sbagliare.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/one man band.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Cortometraggi Pixar/pennuti spennati.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/ALICE IN WONDERLAND - Il trailer italiano.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/Alice attraverso lo specchio - Trailer Italiano Ufficiale HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/Biancaneve e il Cacciatore (2012) _ Secondo trailer italiano ufficiale [HD].mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/Cenerentola - Trailer Italiano Ufficiale HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/DUMBO - Trailer Italiano HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/IL CACCIATORE E LA REGINA DI GHIACCIO - Trailer italiano ufficiale.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/Il Libro della Giungla - Nuovo Trailer Italiano Ufficiale HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/Il Re Leone Trailer Ufficiale.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/LA BELLA E LA BESTIA - Trailer Ufficiale Italiano.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/La Bella e la Bestia - Nuovo Trailer Italiano Ufficiale HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/La Carica Dei 101 trailer (fandub) collaborazione.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/Lilli e Il Vagabondo - Trailer Ufficiale In Streaming su Disney .mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/Maleficent - Trailer Ufficiale italiano _ HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/Maleficent Signora del Male Trailer Ufficiale italiano.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/Mulan Trailer Ufficiale 2 Italiano.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/PINOCCHIO di Matteo Garrone (2019) - Trailer Ufficiale HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/Ritorno al Bosco dei 100 Acri - Trailer Italiano Ufficiale HD.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/The Legend of Tarzan – Trailer ufficiale italiano.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/dest/video/Film Disney/videoAladdin.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/css/documenter_style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/css/img/info.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/css/img/warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/color.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/font.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/font2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/header.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/menu.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/section.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/images/topsearch.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/js/google-code-prettify/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/js/google-code-prettify/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/js/jquery.easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/js/jquery.scrollTo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/assets/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/html/documentation/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,15 +1170,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mCflbIGFZPZqcwHZWJW98UklKX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -41,6 +1198,8 @@
       <workItem from="1609002651075" duration="41000" />
       <workItem from="1609151475249" duration="5000" />
       <workItem from="1609580086782" duration="490000" />
+      <workItem from="1610386794322" duration="81000" />
+      <workItem from="1610386885034" duration="1065000" />
     </task>
     <servers />
   </component>
@@ -57,5 +1216,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1610386878616">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610386878616" />
   </component>
 </project>
