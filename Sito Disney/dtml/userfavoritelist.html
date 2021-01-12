@@ -17,7 +17,7 @@
 	<link rel="profile" href="#">
 
 	<!-- Logo Topolino parte alta -->
-	<link rel="shortcut icon" href="images/img/LogoPiccolo.png">
+	<link rel="shortcut icon" href="dtml/image/img/LogoPiccolo.png">
 
 	<!--Font-->
 	<style>
@@ -31,15 +31,15 @@
 	<meta name="format-detection" content="telephone-no">
 
 	<!-- CSS files -->
-	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="dtml/css/plugins.css">
+	<link rel="stylesheet" href="dtml/css/style.css">
 
 </head>
 <body>
 
 <!--preloading-->
 <div id="preloader">
-	<img class="logo" src="images/img/logo1.png" alt="" width="300" height="200">
+	<img class="logo" src="dtml/image/img/logo1.png" alt="" width="300" height="200">
 	<div id="status">
 		<span></span>
 		<span></span>
@@ -50,7 +50,7 @@
 <!--login form popup-->
 <div class="login-wrapper" id="login-content">
 	<div class="login-content">
-		<img src="images/img/x.png" onclick="location.href='index.html';" align="right">
+		<img src="dtml/image/img/x.png" onclick="location.href='index.html';" align="right">
 		<h3>Accedi</h3>
 		<form method="post" action="login.php">
 			<div class="row">
@@ -87,7 +87,7 @@
 <!--signup form popup-->
 <div class="login-wrapper"  id="signup-content">
 	<div class="login-content">
-		<img src="images/img/x.png" onclick="location.href='index.html';" align="right">
+		<img src="dtml/image/img/x.png" onclick="location.href='index.html';" align="right">
 		<h3>Registrati</h3>
 		<form method="post" action="signup.php">
 			<div class="row">
@@ -140,7 +140,7 @@
 						<span></span>
 					</div>
 				</div>
-				<a href="index.html"><img class="logo" src="images/img/logo1.png" alt="" width="119" height="58"></a>
+				<a href="index.html"><img class="logo" src="dtml/image/img/logo1.png" alt="" width="119" height="58"></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
@@ -197,6 +197,7 @@
 			</div>
 			<!-- /.navbar-collapse -->
 		</nav>
+
 	</div>
 </header>
 <!-- END | Header -->
@@ -206,7 +207,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="hero-ct">
-					<h1>Nome Utente</h1>
+					<h1>Nome utente</h1>
 					<ul class="breadcumb">
 						<li class="active"><a href="index.html">Home</a></li>
 						<li> <span class="ion-ios-arrow-right"></span> Film preferiti </li>
@@ -217,13 +218,13 @@
 	</div>
 </div>
 
-<div class="page-single">
+<div class="page-single userfav_list">
 	<div class="container">
 		<div class="row ipad-width2">
 			<div class="col-md-3 col-sm-12 col-xs-12">
 				<div class="user-information">
 					<div class="user-img">
-						<a href="#"><img src="images/uploads/user-img.png" alt=""><br></a>
+						<a href="#"><img src="dtml/image/uploads/user-img.png" alt=""><br></a>
 						<a href="#" class="redbtn">Cambia avatar</a>
 					</div>
 					<div class="user-fav">
@@ -251,220 +252,75 @@
 						<option value="date">Più Recenti</option>
 						<option value="date">Meno Recenti</option>
 					</select>
-					<a href="userfavoritelist.html" class="list"><i class="ion-ios-list-outline "></i></a>
-					<a href="userfavoritegrid.html" class="grid"><i class="ion-grid active"></i></a>
+					<a href="userfavoritelist.html" class="list"><i class="ion-ios-list-outline active"></i></a>
+					<a href="userfavoritegrid.html" class="grid"><i class="ion-grid "></i></a>
 				</div>
-				<div class="flex-wrap-movielist grid-fav">
-						<div class="movie-item-style-2 movie-item-style-1 style-3">
-							<img src="images/uploads/mv1.jpg" alt="">
-							<div class="hvr-inner">
-	            				<a  href="moviesingle.html">Leggi di più <i class="ion-android-arrow-dropright"></i> </a>
-	            			</div>
-							<div class="mv-item-infor">
-								<h6><a href="moviesingle.html">Titolo Film</a></h6>
-								<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-							</div>
-						</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html">Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
+				<div class="flex-wrap-movielist user-fav-list">
+					<div class="movie-item-style-2">
+						<img src="dtml/image/uploads/mv1.jpg" alt="">
 						<div class="mv-item-infor">
-							<h6><a href="moviesingle2.html">Titolo Cartone</a></h6>
+							<h6><a href="movielist.html">Nome Film <span>(data pubblicazione film)</span></a></h6>
 							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
+							<p class="describe">Descrizione iniziale...</p>
+							<p class="run-time"> Durata: 2h21’         <span>Data rilascio: data </span></p>
+							<p>Regista: <a href="celebritysingle.html">nome regista</a></p>
+							<p>Attori: <a href="celebritysingle.html">nome attore,</a> <a href="celebritysingle.html">Chris Evans,</a> <a href="celebritysingle.html">  Chris Hemsworth</a></p>
 						</div>
 					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html">Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
+					<div class="movie-item-style-2">
+						<img src="dtml/image/uploads/mv1.jpg" alt="">
 						<div class="mv-item-infor">
-							<h6><a href="moviesingle.html">Titolo Film</a></h6>
+							<h6><a href="movielist.html">Nome Film <span>(data pubblicazione film)</span></a></h6>
 							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
+							<p class="describe">Descrizione iniziale...</p>
+							<p class="run-time"> Durata: 2h21’         <span>Data rilascio: data </span></p>
+							<p>Regista: <a href="celebritysingle.html">nome regista</a></p>
+							<p>Attori: <a href="celebritysingle.html">nome attore,</a> <a href="celebritysingle.html">Chris Evans,</a> <a href="celebritysingle.html">  Chris Hemsworth</a></p>
 						</div>
 					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html">Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
+					<div class="movie-item-style-2">
+						<img src="dtml/image/uploads/mv1.jpg" alt="">
 						<div class="mv-item-infor">
-							<h6><a href="moviesingle2.html">Titolo Cartone</a></h6>
+							<h6><a href="moviesingle.html">Nome Film <span>(data pubblicazione film)</span></a></h6>
 							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
+							<p class="describe">Descrizione iniziale...</p>
+							<p class="run-time"> Durata: 2h21’         <span>Data rilascio: data </span></p>
+							<p>Regista: <a href="celebritysingle.html">nome regista</a></p>
+							<p>Attori: <a href="celebritysingle.html">nome attore,</a> <a href="celebritysingle.html">Chris Evans,</a> <a href="celebritysingle.html">  Chris Hemsworth</a></p>
 						</div>
 					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html">Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
+					<div class="movie-item-style-2">
+						<img src="dtml/image/uploads/mv1.jpg" alt="">
 						<div class="mv-item-infor">
-							<h6><a href="moviesingle.html">Titolo Film</a></h6>
+							<h6><a href="moviesingle2.html">Nome Cartone <span>(data pubblicazione cartone)</span></a></h6>
 							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
+							<p class="describe">Descrizione iniziale...</p>
+							<p class="run-time"> Durata: 2h21’         <span>Data rilascio: data </span></p>
+							<p>Direttore: <a href="celebritysingle.html">nome direttore</a></p>
+							<p>Personaggi: <a href="celebritysingle2.html">nome personaggio,</a> <a href="celebritysingle2.html"> nome personaggio,</a> <a href="celebritysingle2.html"> nome personaggio</a></p>
 						</div>
 					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html">Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
+					<div class="movie-item-style-2">
+						<img src="dtml/image/uploads/mv1.jpg" alt="">
 						<div class="mv-item-infor">
-							<h6><a href="moviesingle.html">Titolo Film</a></h6>
+							<h6><a href="moviesingle.html">Nome Film <span>(data pubblicazione film)</span></a></h6>
 							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html">Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle.html">Titolo Film</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle2.html">Titolo Cartone</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle2.html">Titolo Cartone</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle2.html">Titolo Cartone</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle2.html">Titolo Cartone</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle.html">Titolo Film</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle.html">Titolo Film</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle2.html">Titolo Cartone</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle2.html">Titolo Cartone</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle.html">Titolo Film</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle2.html">Titolo Cartone</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle.html">Titolo Film</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle2.html">Titolo Cartone</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-						</div>
-					</div>
-					<div class="movie-item-style-2 movie-item-style-1 style-3">
-						<img src="images/uploads/mv1.jpg" alt="">
-						<div class="hvr-inner">
-							<a  href="moviesingle.html"> Legge di più <i class="ion-android-arrow-dropright"></i> </a>
-						</div>
-						<div class="mv-item-infor">
-							<h6><a href="moviesingle.html">Titolo Film</a></h6>
-							<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
+							<p class="describe">Descrizione iniziale...</p>
+							<p class="run-time"> Durata: 2h21’         <span>Data rilascio: data </span></p>
+							<p>Regista: <a href="celebritysingle.html">nome regista</a></p>
+							<p>Attori: <a href="celebritysingle.html">nome attore,</a> <a href="celebritysingle.html">Chris Evans,</a> <a href="celebritysingle.html">  Chris Hemsworth</a></p>
 						</div>
 					</div>
 				</div>		
 				<div class="topbar-filter">
 					<label>Film per pagina:</label>
 					<select>
-						<option value="range">20 Film</option>
+						<option value="range">5 Film</option>
 						<option value="saab">10 Film</option>
 					</select>
 					<div class="pagination2">
 						<span>Pagina 1 di 2:</span>
-						<a class="active" href="userfavoritegrid.html">1</a>
+						<a class="active" href="userfavoritelist.html">1</a>
 						<a href="#">2</a>
 						<a href="#">3</a>
 						<a href="#">...</a>
@@ -483,7 +339,7 @@
 	<div class="container">
 		<div class="flex-parent-ft">
 			<div class="flex-child-ft item1">
-				<a href="index.html"><img class="logo" src="images/img/logo1.png" alt="" height="300" width="500"></a>
+				<a href="index.html"><img class="logo" src="dtml/image/img/logo1.png" alt="" height="300" width="500"></a>
 				<p> Burbank, California <br> Stati Uniti D'America, USA</p>
 				<p>Chiamaci: (+39) 0554646038202 </p>
 			</div>
@@ -527,9 +383,9 @@
 </footer>
 <!-- end of footer section-->
 
-<script src="js/jquery.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/plugins2.js"></script>
-<script src="js/custom.js"></script>
+<script src="dtml/js/jquery.js"></script>
+<script src="dtml/js/plugins.js"></script>
+<script src="dtml/js/plugins2.js"></script>
+<script src="dtml/js/custom.js"></script>
 </body>
 </html>

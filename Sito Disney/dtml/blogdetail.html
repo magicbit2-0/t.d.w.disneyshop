@@ -17,7 +17,7 @@
 	<link rel="profile" href="#">
 
 	<!-- Logo Topolino parte alta -->
-	<link rel="shortcut icon" href="images/img/LogoPiccolo.png">
+	<link rel="shortcut icon" href="dtml/image/img/LogoPiccolo.png">
 
 	<!--Font-->
 	<style>
@@ -31,15 +31,15 @@
 	<meta name="format-detection" content="telephone-no">
 
 	<!-- CSS files -->
-	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="dtml/css/plugins.css">
+	<link rel="stylesheet" href="dtml/css/style.css">
 
 </head>
 <body>
 
 <!--preloading-->
 <div id="preloader">
-	<img class="logo" src="images/img/logo1.png" alt="" width="300" height="200">
+	<img class="logo" src="dtml/image/img/logo1.png" alt="" width="300" height="200">
 	<div id="status">
 		<span></span>
 		<span></span>
@@ -50,7 +50,7 @@
 <!--login form popup-->
 <div class="login-wrapper" id="login-content">
 	<div class="login-content">
-		<img src="images/img/x.png" onclick="location.href='index.html';" align="right">
+		<img src="dtml/image/img/x.png" onclick="location.href='index.html';" align="right">
 		<h3>Accedi</h3>
 		<form method="post" action="login.php">
 			<div class="row">
@@ -87,7 +87,7 @@
 <!--signup form popup-->
 <div class="login-wrapper"  id="signup-content">
 	<div class="login-content">
-		<img src="images/img/x.png" onclick="location.href='index.html';" align="right">
+		<img src="dtml/image/img/x.png" onclick="location.href='index.html';" align="right">
 		<h3>Registrati</h3>
 		<form method="post" action="signup.php">
 			<div class="row">
@@ -140,7 +140,7 @@
 						<span></span>
 					</div>
 				</div>
-				<a href="index.html"><img class="logo" src="images/img/logo1.png" alt="" width="119" height="58"></a>
+				<a href="index.html"><img class="logo" src="dtml/image/img/logo1.png" alt="" width="119" height="58"></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
@@ -222,10 +222,10 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="hero-ct">
-					<h1> Notizie </h1>
+					<h1>Notizie</h1>
 					<ul class="breadcumb">
 						<li class="active"><a href="index.html">Home</a></li>
-						<li> <span class="ion-ios-arrow-right"></span> A Griglia </li>
+						<li> <span class="ion-ios-arrow-right"></span> Singola notizia </li>
 					</ul>
 				</div>
 			</div>
@@ -233,124 +233,99 @@
 	</div>
 </div>
 
-<!-- blog grid section-->
+<!-- blog detail section-->
 <div class="page-single">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9 col-sm-12 col-xs-12">
-				<div class="row">
-					<div class="col-md-4 col-sm-12 col-xs-12">
-						<div class="blog-item-style-2">
-							<a href="blogdetail.html"><img src="images/uploads/blogv21.jpg" alt=""></a>
-							<div class="blog-it-infor">
-								<h3><a href="blogdetail.html"> Titolo Notizia </a></h3>
-								<span class="time">Data pubblicazione notizia</span>
-								<p>Parte iniziale notizia ...</p>
+				<div class="blog-detail-ct">
+					<h1>Titolo notizia</h1>
+					<span class="time">Data pubblicazione notizia</span>
+					<img src="dtml/image/uploads/blog-detail.jpg" alt="">
+					<p> Descrizione notizia </p>
+					<div class="flex-it flex-ct">
+						<p>
+							Continuo descrizione notizia con immagine a destra
+						</p>
+						<img src="dtml/image/uploads/blog-detail2.jpg" alt="">
+					</div>
+					<p> Continuo descrizione notizia e fine </p>
+					<!-- share link -->
+					<div class="flex-it share-tag">
+						<div class="right-it">
+							<h4>Tags</h4>
+							<a href="moviegrid.html">cartone disney,</a>
+							<a href="celebritygrid01.html"> personaggi</a>
+						</div>
+					</div>
+					<!-- comment items -->
+					<div class="comments">
+						<h4>Commenti</h4>
+						<div class="cmt-item flex-it">
+							<img src="dtml/image/uploads/author.png" alt="">
+							<div class="author-infor">
+								<div class="flex-it2">
+									<h6><a href="userprofile.html">nome_utente</a></h6> <span class="time">data commento</span>
+								</div>
+								<p>Commento</p>
+								<p><a class="rep-btn" href="#">+ Commenti</a></p>
+							</div>
+						</div>
+						<div class="cmt-item flex-it reply">
+							<img src="dtml/image/uploads/author2.png" alt="">
+							<div class="author-infor">
+								<div class="flex-it2">
+									<h6><a href="userprofile.html">nome_utente</a></h6> <span class="time">data commento</span>
+								</div>
+								<p>Commento</p>
+							</div>
+						</div>
+						<div class="cmt-item flex-it reply">
+							<img src="dtml/image/uploads/author3.png" alt="">
+							<div class="author-infor">
+								<div class="flex-it2">
+									<h6><a href="userprofile.html">nome_utente</a></h6> <span class="time">data commento</span>
+								</div>
+								<p>Commento</p>
+							</div>
+						</div>
+						<div class="cmt-item flex-it">
+							<img src="dtml/image/uploads/author4.png" alt="">
+							<div class="author-infor">
+								<div class="flex-it2">
+									<h6><a href="userprofile.html">nome_utente</a></h6> <span class="time">data commento</span>
+								</div>
+								<p>Commento</p>
+								<p><a class="rep-btn" href="#">+ Commenti</a></p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-12 col-xs-12">
-						<div class="blog-item-style-2">
-							<a href="blogdetail.html"><img src="images/uploads/blogv21.jpg" alt=""></a>
-							<div class="blog-it-infor">
-								<h3><a href="blogdetail.html"> Titolo Notizia </a></h3>
-								<span class="time">Data pubblicazione notizia</span>
-								<p>Parte iniziale notizia ...</p>
+					<div class="comment-form">
+						<h4>Lascia un commento</h4>
+						<form action="">
+							<div class="row">
+								<div class="col-md-4">
+									<input type="text" placeholder="Nome">
+								</div>
+								<div class="col-md-4">
+									<input type="text" placeholder="Email">
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-12 col-xs-12">
-						<div class="blog-item-style-2">
-							<a href="blogdetail.html"><img src="images/uploads/blogv21.jpg" alt=""></a>
-							<div class="blog-it-infor">
-								<h3><a href="blogdetail.html"> Titolo Notizia </a></h3>
-								<span class="time">Data pubblicazione notizia</span>
-								<p>Parte iniziale notizia ...</p>
+							<div class="row">
+								<div class="col-md-12">
+									<textarea name="message" id="" placeholder="Commento"></textarea>
+								</div>
 							</div>
-						</div>
+							<input class="submit" type="submit" placeholder="Invia">
+						</form>
 					</div>
+					<!-- comment form -->
 				</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-12 col-xs-12">
-						<div class="blog-item-style-2">
-							<a href="blogdetail.html"><img src="images/uploads/blogv21.jpg" alt=""></a>
-							<div class="blog-it-infor">
-								<h3><a href="blogdetail.html"> Titolo Notizia </a></h3>
-								<span class="time">Data pubblicazione notizia</span>
-								<p>Parte iniziale notizia ...</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-12 col-xs-12">
-						<div class="blog-item-style-2">
-							<a href="blogdetail.html"><img src="images/uploads/blogv21.jpg" alt=""></a>
-							<div class="blog-it-infor">
-								<h3><a href="blogdetail.html"> Titolo Notizia </a></h3>
-								<span class="time">Data pubblicazione notizia</span>
-								<p>Parte iniziale notizia ...</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-12 col-xs-12">
-						<div class="blog-item-style-2">
-							<a href="blogdetail.html"><img src="images/uploads/blogv21.jpg" alt=""></a>
-							<div class="blog-it-infor">
-								<h3><a href="blogdetail.html"> Titolo Notizia </a></h3>
-								<span class="time">Data pubblicazione notizia</span>
-								<p>Parte iniziale notizia ...</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-12 col-xs-12">
-						<div class="blog-item-style-2">
-							<a href="blogdetail.html"><img src="images/uploads/blogv21.jpg" alt=""></a>
-							<div class="blog-it-infor">
-								<h3><a href="blogdetail.html"> Titolo Notizia </a></h3>
-								<span class="time">Data pubblicazione notizia</span>
-								<p>Parte iniziale notizia ...</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-12 col-xs-12">
-						<div class="blog-item-style-2">
-							<a href="blogdetail.html"><img src="images/uploads/blogv21.jpg" alt=""></a>
-							<div class="blog-it-infor">
-								<h3><a href="blogdetail.html"> Titolo Notizia </a></h3>
-								<span class="time">Data pubblicazione notizia</span>
-								<p>Parte iniziale notizia ...</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-12 col-xs-12">
-						<div class="blog-item-style-2">
-							<a href="blogdetail.html"><img src="images/uploads/blogv21.jpg" alt=""></a>
-							<div class="blog-it-infor">
-								<h3><a href="blogdetail.html"> Titolo Notizia </a></h3>
-								<span class="time">Data pubblicazione notizia</span>
-								<p>Parte iniziale notizia ...</p>
-							</div>
-						</div>
-					</div>
-				</div>
-            	<ul class="pagination">
-					<!-- vedere -->
-            		<li class="icon-prev"><a href="#"><i class="ion-ios-arrow-left"></i></a></li>
-            		<li class="active"><a href="bloggrid.html">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">...</a></li>
-					<li><a href="#">21</a></li>
-					<li><a href="#">22</a></li>
-					<li class="icon-next"><a href="#"><i class="ion-ios-arrow-right"></i></a></li>
-            	</ul>
 			</div>
 			<div class="col-md-3 col-sm-12 col-xs-12">
 				<div class="sidebar">
 					<div class="sb-search sb-it">
-						<h4 class="sb-title">Cerca Notizia</h4>
+						<h4 class="sb-title">Cerca</h4>
 						<input type="text" placeholder="Inserisci le parole chiave">
 					</div>
 					<div class="sb-cate sb-it">
@@ -358,10 +333,10 @@
 						<!-- vedere-->
 						<ul>
 							<li><a href="#">Premi (30)</a></li>
-							<li><a href="#">Box office (38)</a></li>
-							<li><a href="#">Film reviews (72)</a></li>
-							<li><a href="#">News (45)</a></li>
-							<li><a href="#">Global (06)</a></li>
+							<li><a href="#">Cartoni (38)</a></li>
+							<li><a href="#">Film (72)</a></li>
+							<li><a href="#">Notizie (45)</a></li>
+							<li><a href="#">Attori (06)</a></li>
 						</ul>
 					</div>
 					<div class="sb-recentpost sb-it">
@@ -392,14 +367,14 @@
 		</div>
 	</div>
 </div>
-<!--end of  blog grid section-->
+<!-- end of  blog detail section-->
 
 <!-- footer section-->
 <footer class="ht-footer">
 	<div class="container">
 		<div class="flex-parent-ft">
 			<div class="flex-child-ft item1">
-				<a href="index.html"><img class="logo" src="images/img/logo1.png" alt="" height="300" width="500"></a>
+				<a href="index.html"><img class="logo" src="dtml/image/img/logo1.png" alt="" height="300" width="500"></a>
 				<p> Burbank, California <br> Stati Uniti D'America, USA</p>
 				<p>Chiamaci: (+39) 0554646038202 </p>
 			</div>
@@ -443,9 +418,9 @@
 </footer>
 <!-- end of footer section-->
 
-<script src="js/jquery.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/plugins2.js"></script>
-<script src="js/custom.js"></script>
+<script src="dtml/js/jquery.js"></script>
+<script src="dtml/js/plugins.js"></script>
+<script src="dtml/js/plugins2.js"></script>
+<script src="dtml/js/custom.js"></script>
 </body>
 </html>
