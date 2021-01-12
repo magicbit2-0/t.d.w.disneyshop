@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="49096b57-4793-426e-9c10-3d76c9168588" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/blogdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/blogdetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/bloggrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/bloggrid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritygrid01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritygrid01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritylist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritylist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritysingle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritysingle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritysingle2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritysingle2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/comingsoon.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/comingsoon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/infouser.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/infouser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/moviegrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/moviegrid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movielist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movielist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/moviesingle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/moviesingle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/moviesingle2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/moviesingle2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/shoppage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/shoppage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userfavoritegrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userfavoritegrid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userfavoritelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userfavoritelist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userprofile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userrate.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userrate.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mCflbIGFZPZqcwHZWJW98UklKX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sito Disney/html/include" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\t.d.w.disneyshop\Sito Disney\html\include" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49096b57-4793-426e-9c10-3d76c9168588" name="Default Changelist" comment="" />
+      <created>1609002647134</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609002647134</updated>
+      <workItem from="1609002651075" duration="41000" />
+      <workItem from="1609151475249" duration="5000" />
+      <workItem from="1609580086782" duration="490000" />
+      <workItem from="1610386794322" duration="81000" />
+      <workItem from="1610386885034" duration="1368000" />
+      <workItem from="1610467898837" duration="4657000" />
+      <workItem from="1610472896683" duration="37000" />
+      <workItem from="1610473032870" duration="803000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="179" y="0" key="CommitChangelistDialog2" timestamp="1610387892064">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="179" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1610387892064" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1610386878616">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610386878616" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1610468949866">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1610468949866" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1610468355468">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1610468355468" />
+    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610387864558">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="500" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1610387864558" />
+    <state x="396" y="96" width="672" height="678" key="search.everywhere.popup" timestamp="1610470012051">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="396" y="96" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1610470012051" />
+  </component>
+</project>
