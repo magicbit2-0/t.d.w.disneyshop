@@ -7,7 +7,6 @@
     $result = $mysqli -> query("select * from articolo order by titolo asc");
 
     while ($data = $result -> fetch_assoc()){
-        echo $data[];
     };
 
     exit;
