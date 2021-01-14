@@ -153,7 +153,7 @@ CREATE TABLE IF NOT EXISTS `disneydb`.`commento` (
   `email` VARCHAR(40) NOT NULL,
   `testo` MEDIUMTEXT NOT NULL,
   `data` DATE NOT NULL,
-  `utente_id` INT UNSIGNED NOT NULL,
+  `utente_id` INT UNSIGNED,
   `notizia_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_commento_utente1_idx` (`utente_id` ASC) VISIBLE,
