@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49096b57-4793-426e-9c10-3d76c9168588" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/blogdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/blogdetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/bloggrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/bloggrid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritygrid01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritygrid01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritylist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritylist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritysingle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritysingle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritysingle2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritysingle2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/comingsoon.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/comingsoon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/infouser.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/infouser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/moviegrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/moviegrid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movielist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movielist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/moviesingle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/moviesingle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/moviesingle2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/moviesingle2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/shoppage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/shoppage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userfavoritegrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userfavoritegrid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userfavoritelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userfavoritelist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userprofile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userrate.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userrate.html" afterDir="false" />
-    </list>
+    <list default="true" id="49096b57-4793-426e-9c10-3d76c9168588" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +27,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sito Disney/html/include" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -72,6 +52,7 @@
       <workItem from="1610467898837" duration="4657000" />
       <workItem from="1610472896683" duration="37000" />
       <workItem from="1610473032870" duration="803000" />
+      <workItem from="1610615997528" duration="81000" />
     </task>
     <servers />
   </component>
@@ -98,10 +79,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="179" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1610387892064" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1610386878616">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1610616081853">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610386878616" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610616081853" />
     <state x="517" y="287" key="NewPhpFileDialog" timestamp="1610468949866">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
