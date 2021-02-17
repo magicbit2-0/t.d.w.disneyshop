@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49096b57-4793-426e-9c10-3d76c9168588" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sito Disney/img.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +61,7 @@
       <workItem from="1610635928914" duration="573000" />
       <workItem from="1610636572479" duration="81000" />
       <workItem from="1613247368218" duration="851000" />
+      <workItem from="1613583135413" duration="1035000" />
     </task>
     <servers />
   </component>
@@ -80,5 +82,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1613583257228">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1613583257228" />
   </component>
 </project>
