@@ -12,7 +12,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `utente` WRITE;
 /*!40000 ALTER TABLE `utente` DISABLE KEYS */;
-INSERT INTO `utente` VALUES (1,'enrico00','Enrico Simone','Adamelli','0000-00-00','enricosimone.adamelli@student.univaq.it','Italia','Abruzzo','Via Sulmona nÂ°3','enrico',1),(2,'martina99','Martina','Nolletti','0000-00-00','martina.nolletti@student.univaq.it','Italia','Abruzzo','Piazza dei Longobardi nÂ°6','martina',1),(3,'michele99','Michele','Intrevado','0000-00-00','michele.intrevado@student.univaq.it','Italia','Abruzzo','Via Carlo Montari nÂ°11','michele',1);
+INSERT INTO `utente` VALUES (1,'enrico00','Enrico Simone','Adamelli','2000-01-16','enricosimone.adamelli@student.univaq.it','Italia','Abruzzo','Via Sulmona n°3','enrico',1),(2,'martina99','Martina','Nolletti','1999-05-24','martina.nolletti@student.univaq.it','Italia','Abruzzo','Piazza dei Longobardi n°6','martina',1),(3,'michele99','Michele','Intrevado','1999-06-16','michele.intrevado@student.univaq.it','Italia','Abruzzo','Via Carlo Montari n°11','michele',1);
 /*!40000 ALTER TABLE `utente` ENABLE KEYS */;
 UNLOCK TABLES;
 
