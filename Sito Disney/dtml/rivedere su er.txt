@@ -1,4 +1,0 @@
-7) immagine e video li mettiamo come attributi o tabelle?
-
-
-mettere immagine di default all'avatar
