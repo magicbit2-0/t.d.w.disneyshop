@@ -369,191 +369,140 @@
     <!-- /.sidebar -->
   </aside>
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper kanban">
+    <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Kanban Board</h1>
+            <h1>Timeline</h1>
           </div>
-          <div class="col-sm-6 d-none d-sm-block">
+          <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Kanban Board</li>
+              <li class="breadcrumb-item active">Timeline</li>
             </ol>
           </div>
         </div>
-      </div>
+      </div><!-- /.container-fluid -->
     </section>
 
-    <section class="content pb-3">
-      <div class="container-fluid h-100">
-        <div class="card card-row card-secondary">
-          <div class="card-header">
-            <h3 class="card-title">
-              Backlog
-            </h3>
-          </div>
-          <div class="card-body">
-            <div class="card card-info card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Create Labels</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#3</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" type="checkbox" id="customCheckbox1" disabled>
-                  <label for="customCheckbox1" class="custom-control-label">Bug</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" type="checkbox" id="customCheckbox2" disabled>
-                  <label for="customCheckbox2" class="custom-control-label">Feature</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" type="checkbox" id="customCheckbox3" disabled>
-                  <label for="customCheckbox3" class="custom-control-label">Enhancement</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" type="checkbox" id="customCheckbox4" disabled>
-                  <label for="customCheckbox4" class="custom-control-label">Documentation</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" type="checkbox" id="customCheckbox5" disabled>
-                  <label for="customCheckbox5" class="custom-control-label">Examples</label>
-                </div>
-              </div>
-            </div>
-            <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Create Issue template</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#4</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" type="checkbox" id="customCheckbox1_1" disabled>
-                  <label for="customCheckbox1_1" class="custom-control-label">Bug Report</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" type="checkbox" id="customCheckbox1_2" disabled>
-                  <label for="customCheckbox1_2" class="custom-control-label">Feature Request</label>
-                </div>
-              </div>
-            </div>
-            <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Create PR template</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#6</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="card card-light card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Create Actions</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#7</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
-                </div>
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
 
+        <!-- Timelime example  -->
+        <div class="row">
+          <div class="col-md-12">
+            <!-- The time line -->
+            <div class="timeline">
+              <!-- timeline time label -->
+              <div class="time-label">
+                <span class="bg-red">10 Feb. 2014</span>
               </div>
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card-row card-primary">
-          <div class="card-header">
-            <h3 class="card-title">
-              To Do
-            </h3>
-          </div>
-          <div class="card-body">
-            <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Create first milestone</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#5</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
+              <!-- /.timeline-label -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-envelope bg-blue"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                  <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
+
+                  <div class="timeline-body">
+                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+                    weebly ning heekya handango imeem plugg dopplr jibjab, movity
+                    jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
+                    quora plaxo ideeli hulu weebly balihoo...
+                  </div>
+                  <div class="timeline-footer">
+                    <a class="btn btn-primary btn-sm">Read more</a>
+                    <a class="btn btn-danger btn-sm">Delete</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card-row card-default">
-          <div class="card-header bg-info">
-            <h3 class="card-title">
-              In Progress
-            </h3>
-          </div>
-          <div class="card-body">
-            <div class="card card-light card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Update Readme</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#2</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
+              <!-- END timeline item -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-user bg-green"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 5 mins ago</span>
+                  <h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request</h3>
                 </div>
               </div>
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card-row card-success">
-          <div class="card-header">
-            <h3 class="card-title">
-              Done
-            </h3>
-          </div>
-          <div class="card-body">
-            <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Create repo</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#1</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
+              <!-- END timeline item -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-comments bg-yellow"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 27 mins ago</span>
+                  <h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
+                  <div class="timeline-body">
+                    Take me to your leader!
+                    Switzerland is small and neutral!
+                    We are more like Germany, ambitious and misunderstood!
+                  </div>
+                  <div class="timeline-footer">
+                    <a class="btn btn-warning btn-sm">View comment</a>
+                  </div>
                 </div>
               </div>
+              <!-- END timeline item -->
+              <!-- timeline time label -->
+              <div class="time-label">
+                <span class="bg-green">3 Jan. 2014</span>
+              </div>
+              <!-- /.timeline-label -->
+              <!-- timeline item -->
+              <div>
+                <i class="fa fa-camera bg-purple"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 2 days ago</span>
+                  <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+                  <div class="timeline-body">
+                    <img src="https://placehold.it/150x100" alt="...">
+                    <img src="https://placehold.it/150x100" alt="...">
+                    <img src="https://placehold.it/150x100" alt="...">
+                    <img src="https://placehold.it/150x100" alt="...">
+                    <img src="https://placehold.it/150x100" alt="...">
+                  </div>
+                </div>
+              </div>
+              <!-- END timeline item -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-video bg-maroon"></i>
+
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 5 days ago</span>
+
+                  <h3 class="timeline-header"><a href="#">Mr. Doe</a> shared a video</h3>
+
+                  <div class="timeline-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tMWkeBIohBs" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="timeline-footer">
+                    <a href="#" class="btn btn-sm bg-maroon">See comments</a>
+                  </div>
+                </div>
+              </div>
+              <!-- END timeline item -->
+              <div>
+                <i class="fas fa-clock bg-gray"></i>
+              </div>
             </div>
           </div>
+          <!-- /.col -->
         </div>
       </div>
+      <!-- /.timeline -->
+
     </section>
+    <!-- /.content -->
   </div>
+  <!-- /.content-wrapper -->
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
@@ -571,24 +520,12 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="../plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- Ekko Lightbox -->
-<script src="../plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../dist/js/adminlte.min.js"></script>
-<!-- Filterizr-->
-<script src="../plugins/filterizr/jquery.filterizr.min.js"></script>
+<script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../dist/js/demo.js"></script>
-<!-- Page specific script -->
-<script>
-  $(function () {
-
-  })
-</script>
+<script src="../../dist/js/demo.js"></script>
 </body>
 </html>
