@@ -3,40 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Calendar</title>
+  <title>Dashboard Amministratore</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
-  <!-- fullCalendar -->
-  <link rel="stylesheet" href="../plugins/fullcalendar/main.css">
+  <!-- Ekko Lightbox -->
+  <link rel="stylesheet" href="../plugins/ekko-lightbox/ekko-lightbox.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-  <!-- summernote -->
-  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
-
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
-
-  <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-  </div>
-
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
@@ -56,17 +35,56 @@
         <div class="navbar-search-block">
           <form class="form-inline">
             <div class="input-group input-group-sm">
-              <input class="form-control form-control-navbar" type="search" placeholder="cerca" aria-label="cerca">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
               <div class="input-group-append">
                 <button class="btn btn-navbar" type="submit">
                   <i class="fas fa-search"></i>
                 </button>
-                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                  <i class="fas fa-times"></i>
-                </button>
               </div>
             </div>
           </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">Vedi i messaggi</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header"></span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> n nuovi messaggi
+            <span class="float-right text-muted text-sm">3 minuti fa</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> n nuovi utenti
+            <span class="float-right text-muted text-sm">12 ore fa</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">Vedi tutte le notifiche</a>
         </div>
       </li>
       <li class="nav-item">
@@ -86,9 +104,9 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Admin</span>
+    <a href="../index3.html" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Amministratore</span>
     </a>
 
     <!-- Sidebar -->
@@ -96,10 +114,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block"></a>
+          <a href="#" class="d-block">Nome Amministratore</a>
         </div>
       </div>
 
@@ -121,7 +139,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="../index.html" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -129,7 +147,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="widgets.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Strumenti
@@ -138,83 +156,26 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Diagrammi
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Affluenza Utenti</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Acquisti</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/inline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Film più cercati</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="pages/UI/timeline.html" class="nav-link">
+            <a href="UI/timeline.html" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
-              <p>Pagina per commenti</p>
+              <p>Gestione commenti</p>
             </a>
           </li>
+          <li class="nav-header">Pagine</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
+            <a href="calendar.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
               <p>
-                Forms
-                <i class="fas fa-angle-left right"></i>
+                Calendario
+                <span class="badge badge-info right"></span>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/forms/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Elementi generali</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/advanced.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Elementi utente</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sign in Utente</p>
-                </a>
-              </li>
-            </ul>
           </li>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/tables/jsgrid.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Lista Utenti</p>
-              </a>
-            </li>
-          </ul>
-          <li class="nav-header">Pagine Sito Disney</li>
           <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
+            <a href="gallery.html" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
-                Immagini
+                Galleria
               </p>
             </a>
           </li>
@@ -228,95 +189,80 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/mailbox/mailbox.html" class="nav-link">
+                <a href="mailbox/mailbox.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Email Utenti</p>
+                  <p>In arrivo</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/mailbox/compose.html" class="nav-link">
+                <a href="mailbox/compose.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Scrivi</p>
+                  <p>Scrivi Email</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/mailbox/read-mail.html" class="nav-link">
+                <a href="mailbox/read-mail.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Leggi</p>
+                  <p>Leggi Email</p>
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Pagine
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/examples/invoice.html" class="nav-link">
+                <a href="examples/invoice.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ordini</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/profile.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Profili Utenti</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/e-commerce.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Prodotti</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/projects.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lista prodotti</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/projects.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lista personaggi</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/projects.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lista regia</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-add.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Aggiungi Prodotto</p></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-add.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Aggiungi Personaggio</p></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-add.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Aggiungi Regia</p></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-edit.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Aggiungi Prodotto 2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-detail.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Commenti Prodotti</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/contacts.html" class="nav-link">
+                <a href="examples/profile.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Utenti</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="examples/e-commerce.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>E-commerce</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="examples/projects.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lista Prodotti</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="examples/project-add.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Aggiungi Prodotto</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="examples/project-edit.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Modifica Prodotto</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="examples/project-detail.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Commenti Prodotto</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="examples/contacts.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Profili Utenti</p>
                 </a>
               </li>
             </ul>
@@ -325,43 +271,39 @@
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
-                Registrazione e Login
+                Login e Registrazione
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/examples/login-v2.html" class="nav-link">
+                <a href="examples/login-v2.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Login</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/register-v2.html" class="nav-link">
+                <a href="examples/register-v2.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Registrazione</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/forgot-password-v2.html" class="nav-link">
+                <a href="examples/forgot-password-v2.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Password Dimenticata</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/examples/recover-password-v2.html" class="nav-link">
+                <a href="examples/recover-password-v2.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Recupera Password</p>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a href="pages/examples/lockscreen.html" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Login admin</p>
-            </a>
-          </li>
+        </ul>
+        </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -376,12 +318,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Gallery</h1>
+            <h1>Galleria</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Gallery</li>
+              <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+              <li class="breadcrumb-item active">Galleria</li>
             </ol>
           </div>
         </div>
@@ -395,27 +337,27 @@
           <div class="col-12">
             <div class="card card-primary">
               <div class="card-header">
-                <h4 class="card-title">FilterizR Gallery with Ekko Lightbox</h4>
+                <h4 class="card-title"></h4>
               </div>
               <div class="card-body">
                 <div>
                   <div class="btn-group w-100 mb-2">
-                    <a class="btn btn-info active" href="javascript:void(0)" data-filter="all"> All items </a>
-                    <a class="btn btn-info" href="javascript:void(0)" data-filter="1"> Category 1 (WHITE) </a>
-                    <a class="btn btn-info" href="javascript:void(0)" data-filter="2"> Category 2 (BLACK) </a>
-                    <a class="btn btn-info" href="javascript:void(0)" data-filter="3"> Category 3 (COLORED) </a>
-                    <a class="btn btn-info" href="javascript:void(0)" data-filter="4"> Category 4 (COLORED, BLACK) </a>
+                    <a class="btn btn-info active" href="javascript:void(0)" data-filter="all"> Tutte le immagini</a>
+                    <a class="btn btn-info" href="javascript:void(0)" data-filter="1"> Personaggi </a>
+                    <a class="btn btn-info" href="javascript:void(0)" data-filter="2"> Regia </a>
+                    <a class="btn btn-info" href="javascript:void(0)" data-filter="3"> Cartoni Disney, Pixar, Cortometraggi </a>
+                    <a class="btn btn-info" href="javascript:void(0)" data-filter="4"> Film Disney </a>
                   </div>
                   <div class="mb-2">
-                    <a class="btn btn-secondary" href="javascript:void(0)" data-shuffle> Shuffle items </a>
+                    <a class="btn btn-secondary" href="javascript:void(0)" data-shuffle> In ordine casuale </a>
                     <div class="float-right">
                       <select class="custom-select" style="width: auto;" data-sortOrder>
-                        <option value="index"> Sort by Position </option>
-                        <option value="sortData"> Sort by Custom Data </option>
+                        <option value="index"> Ordina per posizione </option>
+                        <option value="sortData"> Ordina per gruppo categoria </option>
                       </select>
                       <div class="btn-group">
-                        <a class="btn btn-default" href="javascript:void(0)" data-sortAsc> Ascending </a>
-                        <a class="btn btn-default" href="javascript:void(0)" data-sortDesc> Descending </a>
+                        <a class="btn btn-default" href="javascript:void(0)" data-sortAsc> Crescente </a>
+                        <a class="btn btn-default" href="javascript:void(0)" data-sortDesc> Decrescente </a>
                       </div>
                     </div>
                   </div>
@@ -484,78 +426,6 @@
                     </div>
                   </div>
                 </div>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="card card-primary">
-              <div class="card-header">
-                <h4 class="card-title">Ekko Lightbox</h4>
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-2">
-                    <a href="https://via.placeholder.com/1200/FFFFFF.png?text=1" data-toggle="lightbox" data-title="sample 1 - white" data-gallery="gallery">
-                      <img src="https://via.placeholder.com/300/FFFFFF?text=1" class="img-fluid mb-2" alt="white sample"/>
-                    </a>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="https://via.placeholder.com/1200/000000.png?text=2" data-toggle="lightbox" data-title="sample 2 - black" data-gallery="gallery">
-                      <img src="https://via.placeholder.com/300/000000?text=2" class="img-fluid mb-2" alt="black sample"/>
-                    </a>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=3" data-toggle="lightbox" data-title="sample 3 - red" data-gallery="gallery">
-                      <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=3" class="img-fluid mb-2" alt="red sample"/>
-                    </a>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=4" data-toggle="lightbox" data-title="sample 4 - red" data-gallery="gallery">
-                      <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=4" class="img-fluid mb-2" alt="red sample"/>
-                    </a>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="https://via.placeholder.com/1200/000000.png?text=5" data-toggle="lightbox" data-title="sample 5 - black" data-gallery="gallery">
-                      <img src="https://via.placeholder.com/300/000000?text=5" class="img-fluid mb-2" alt="black sample"/>
-                    </a>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="https://via.placeholder.com/1200/FFFFFF.png?text=6" data-toggle="lightbox" data-title="sample 6 - white" data-gallery="gallery">
-                      <img src="https://via.placeholder.com/300/FFFFFF?text=6" class="img-fluid mb-2" alt="white sample"/>
-                    </a>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="https://via.placeholder.com/1200/FFFFFF.png?text=7" data-toggle="lightbox" data-title="sample 7 - white" data-gallery="gallery">
-                      <img src="https://via.placeholder.com/300/FFFFFF?text=7" class="img-fluid mb-2" alt="white sample"/>
-                    </a>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="https://via.placeholder.com/1200/000000.png?text=8" data-toggle="lightbox" data-title="sample 8 - black" data-gallery="gallery">
-                      <img src="https://via.placeholder.com/300/000000?text=8" class="img-fluid mb-2" alt="black sample"/>
-                    </a>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=9" data-toggle="lightbox" data-title="sample 9 - red" data-gallery="gallery">
-                      <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=9" class="img-fluid mb-2" alt="red sample"/>
-                    </a>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="https://via.placeholder.com/1200/FFFFFF.png?text=10" data-toggle="lightbox" data-title="sample 10 - white" data-gallery="gallery">
-                      <img src="https://via.placeholder.com/300/FFFFFF?text=10" class="img-fluid mb-2" alt="white sample"/>
-                    </a>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="https://via.placeholder.com/1200/FFFFFF.png?text=11" data-toggle="lightbox" data-title="sample 11 - white" data-gallery="gallery">
-                      <img src="https://via.placeholder.com/300/FFFFFF?text=11" class="img-fluid mb-2" alt="white sample"/>
-                    </a>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="https://via.placeholder.com/1200/000000.png?text=12" data-toggle="lightbox" data-title="sample 12 - black" data-gallery="gallery">
-                      <img src="https://via.placeholder.com/300/000000?text=12" class="img-fluid mb-2" alt="black sample"/>
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -567,10 +437,7 @@
   <!-- /.content-wrapper -->
 
   <footer class="main-footer">
-    <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.1.0-rc
-    </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong><p>© Disney © Disney•Pixar © & ™ © 2021 Dinsey&Pixar - Tutti i diritti riservati.</p></strong>
   </footer>
 
   <!-- Control Sidebar -->

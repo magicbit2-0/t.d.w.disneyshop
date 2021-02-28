@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard amministratore</title>
+  <title>Dashboard Amministratore</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -53,17 +53,56 @@
         <div class="navbar-search-block">
           <form class="form-inline">
             <div class="input-group input-group-sm">
-              <input class="form-control form-control-navbar" type="search" placeholder="cerca" aria-label="cerca">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
               <div class="input-group-append">
                 <button class="btn btn-navbar" type="submit">
                   <i class="fas fa-search"></i>
                 </button>
-                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                  <i class="fas fa-times"></i>
-                </button>
               </div>
             </div>
           </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">Vedi i messaggi</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header"></span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> n nuovi messaggi
+            <span class="float-right text-muted text-sm">3 minuti fa</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> n nuovi utenti
+            <span class="float-right text-muted text-sm">12 ore fa</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">Vedi tutte le notifiche</a>
         </div>
       </li>
       <li class="nav-item">
@@ -85,7 +124,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Admin</span>
+      <span class="brand-text font-weight-light">Amministratore</span>
     </a>
 
     <!-- Sidebar -->
@@ -96,7 +135,7 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block"></a>
+          <a href="#" class="d-block">Nome Amministratore</a>
         </div>
       </div>
 
@@ -135,83 +174,26 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Diagrammi
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Affluenza Utenti</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Acquisti</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/inline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Film più cercati</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
             <a href="pages/UI/timeline.html" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
-              <p>Pagina per commenti</p>
+              <p>Gestione commenti</p>
             </a>
           </li>
+          <li class="nav-header">Pagine</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
+            <a href="pages/calendar.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
               <p>
-                Forms
-                <i class="fas fa-angle-left right"></i>
+                Calendario
+                <span class="badge badge-info right"></span>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/forms/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Elementi generali</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/advanced.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Elementi utente</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sign in Utente</p>
-                </a>
-              </li>
-            </ul>
           </li>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/tables/jsgrid.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Lista Utenti</p>
-              </a>
-            </li>
-          </ul>
-          <li class="nav-header">Pagine Sito Disney</li>
           <li class="nav-item">
             <a href="pages/gallery.html" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
-                Immagini
+                Galleria
               </p>
             </a>
           </li>
@@ -227,22 +209,31 @@
               <li class="nav-item">
                 <a href="pages/mailbox/mailbox.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Email Utenti</p>
+                  <p>In arrivo</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/mailbox/compose.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Scrivi</p>
+                  <p>Scrivi Email</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/mailbox/read-mail.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Leggi</p>
+                  <p>Leggi Email</p>
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Pagine
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="pages/examples/invoice.html" class="nav-link">
@@ -253,67 +244,43 @@
               <li class="nav-item">
                 <a href="pages/examples/profile.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Profili Utenti</p>
+                  <p>Utenti</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/examples/e-commerce.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Prodotti</p>
+                  <p>E-commerce</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/examples/projects.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Lista prodotti</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/projects.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lista personaggi</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/projects.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lista regia</p>
+                  <p>Lista Prodotti</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/examples/project-add.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Aggiungi Prodotto</p></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-add.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Aggiungi Personaggio</p></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-add.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Aggiungi Regia</p></p>
+                  <p>Aggiungi Prodotto</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/examples/project-edit.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Aggiungi Prodotto 2</p>
+                  <p>Modifica Prodotto</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/examples/project-detail.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Commenti Prodotti</p>
+                  <p>Commenti Prodotto</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/examples/contacts.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Utenti</p>
+                  <p>Profili Utenti</p>
                 </a>
               </li>
             </ul>
@@ -322,42 +289,38 @@
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
-                Registrazione e Login
+                Login e Registrazione
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/examples/login-v2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Login</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/register-v2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Registrazione</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/forgot-password-v2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Password Dimenticata</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/recover-password-v2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Recupera Password</p>
-                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/examples/login-v2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Login</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/register-v2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Registrazione</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/forgot-password-v2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Password Dimenticata</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/recover-password-v2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Recupera Password</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a href="pages/examples/lockscreen.html" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Login admin</p>
-            </a>
           </li>
         </ul>
       </nav>
@@ -377,7 +340,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
               <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
@@ -395,14 +358,13 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>n</h3>
+                <h3>n°</h3>
 
-                <p>Nuovi ordini</p>
+                <p>Ordini</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="#" class="small-box-footer">Leggi di più<i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -410,14 +372,13 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>n<sup style="font-size: 20px">%</sup></h3>
+                <h3>n°<sup style="font-size: 20px">%</sup></h3>
 
                 <p>Percentuali Ordini</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
               </div>
-              <a href="#" class="small-box-footer">Leggi di più<i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -425,14 +386,13 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>n</h3>
+                <h3>n°</h3>
 
-                <p>Utenti Registrati</p>
+                <p>Registrazioni Utenti</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
               </div>
-              <a href="#" class="small-box-footer">Leggi di più<i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -440,14 +400,13 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>n</h3>
+                <h3>n°</h3>
 
                 <p>Accessi Utenti</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>
               </div>
-              <a href="#" class="small-box-footer">Leggi di più<i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -462,15 +421,15 @@
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="fas fa-chart-pie mr-1"></i>
-                  Vendita
+                  Ordini
                 </h3>
                 <div class="card-tools">
                   <ul class="nav nav-pills ml-auto">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#revenue-chart" data-toggle="tab">Diagramma Cartesiano</a>
+                      <a class="nav-link active" href="#revenue-chart" data-toggle="tab">Area</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#sales-chart" data-toggle="tab">Areogramma</a>
+                      <a class="nav-link" href="#sales-chart" data-toggle="tab">A torta</a>
                     </li>
                   </ul>
                 </div>
@@ -495,8 +454,18 @@
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="ion ion-clipboard mr-1"></i>
-                  Attività da svolgere
+                  TO DO List
                 </h3>
+
+                <div class="card-tools">
+                  <ul class="pagination pagination-sm">
+                    <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+                  </ul>
+                </div>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -513,7 +482,7 @@
                       <label for="todoCheck1"></label>
                     </div>
                     <!-- todo text -->
-                    <span class="text">Aggiungi i film</span>
+                    <span class="text">Aggiungere film e cartoni</span>
                     <!-- Emphasis label -->
                     <small class="badge badge-danger"><i class="far fa-clock"></i> 2 minuti fa</small>
                     <!-- General tools such as edit or delete-->
@@ -531,8 +500,8 @@
                       <input type="checkbox" value="" name="todo2" id="todoCheck2" checked>
                       <label for="todoCheck2"></label>
                     </div>
-                    <span class="text">Aggiungi i personaggi</span>
-                    <small class="badge badge-info"><i class="far fa-clock"></i> 3 ore fa</small>
+                    <span class="text">Aggiugnere attori e registi</span>
+                    <small class="badge badge-info"><i class="far fa-clock"></i> 10 minuti fa</small>
                     <div class="tools">
                       <i class="fas fa-edit"></i>
                       <i class="fas fa-trash-o"></i>
@@ -547,8 +516,8 @@
                       <input type="checkbox" value="" name="todo3" id="todoCheck3">
                       <label for="todoCheck3"></label>
                     </div>
-                    <span class="text">Controlla gli ordini</span>
-                    <small class="badge badge-warning"><i class="far fa-clock"></i> 2 ore fa </small>
+                    <span class="text">Controllare ordini utenti</span>
+                    <small class="badge badge-warning"><i class="far fa-clock"></i> 3 ore fa</small>
                     <div class="tools">
                       <i class="fas fa-edit"></i>
                       <i class="fas fa-trash-o"></i>
@@ -563,8 +532,8 @@
                       <input type="checkbox" value="" name="todo4" id="todoCheck4">
                       <label for="todoCheck4"></label>
                     </div>
-                    <span class="text">Controlla gli utenti registrati</span>
-                    <small class="badge badge-success"><i class="far fa-clock"></i> 1 giorno fa </small>
+                    <span class="text">Controllare nuovi utenti registrati</span>
+                    <small class="badge badge-success"><i class="far fa-clock"></i> 1 giorno fa</small>
                     <div class="tools">
                       <i class="fas fa-edit"></i>
                       <i class="fas fa-trash-o"></i>
@@ -579,8 +548,8 @@
                       <input type="checkbox" value="" name="todo5" id="todoCheck5">
                       <label for="todoCheck5"></label>
                     </div>
-                    <span class="text">Aggiungi gli attori</span>
-                    <small class="badge badge-primary"><i class="far fa-clock"></i> 7 minuti fa</small>
+                    <span class="text">Aggiungere personaggi</span>
+                    <small class="badge badge-primary"><i class="far fa-clock"></i>1 giorno fa</small>
                     <div class="tools">
                       <i class="fas fa-edit"></i>
                       <i class="fas fa-trash-o"></i>
@@ -595,8 +564,8 @@
                       <input type="checkbox" value="" name="todo6" id="todoCheck6">
                       <label for="todoCheck6"></label>
                     </div>
-                    <span class="text">Controlla i commenti</span>
-                    <small class="badge badge-secondary"><i class="far fa-clock"></i> 2 giorni fa</small>
+                    <span class="text">Controllare i prodotti più votati</span>
+                    <small class="badge badge-secondary"><i class="far fa-clock"></i> 3 giorni fa</small>
                     <div class="tools">
                       <i class="fas fa-edit"></i>
                       <i class="fas fa-trash-o"></i>
@@ -620,7 +589,7 @@
               <div class="card-header border-0">
                 <h3 class="card-title">
                   <i class="fas fa-map-marker-alt mr-1"></i>
-                  Utenti
+                  Visitatori
                 </h3>
                 <!-- card tools -->
                 <div class="card-tools">
@@ -638,7 +607,7 @@
                 <div class="row">
                   <div class="col-4 text-center">
                     <div id="sparkline-1"></div>
-                    <div class="text-white">Visitatori</div>
+                    <div class="text-white">Utenti</div>
                   </div>
                   <!-- ./col -->
                   <div class="col-4 text-center">
@@ -660,6 +629,7 @@
             <!-- Calendar -->
             <div class="card bg-gradient-success">
               <div class="card-header border-0">
+
                 <h3 class="card-title">
                   <i class="far fa-calendar-alt"></i>
                   Calendario
@@ -694,7 +664,7 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong><p>© Disney © Disney•Pixar © & ™ © 2021 Dinsey&Pixar - Tutti i diritti riservati</p></strong>
+    <strong><p>© Disney © Disney•Pixar © & ™ © 2021 Dinsey&Pixar - Tutti i diritti riservati.</p></strong>
   </footer>
 
   <!-- Control Sidebar -->
