@@ -7,6 +7,6 @@ $result = $mysqli->query("select trailer from articolo where id={$_REQUEST['id']
 $data = $result->fetch_assoc();
 
 header("Content-Type: video/mp4");
-echo $data['locandina'];
+echo $data['trailer'];
 
 ?>
