@@ -221,8 +221,6 @@
             </ul>
           </li>
         </ul>
-        </li>
-        </ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -265,26 +263,42 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="inputName">Nome Cartone</label>
-                <input type="text" id="inputName" class="form-control" value="">
+                <input type="text" id="inputName" class="form-control">
               </div>
               <div class="form-group">
-                <label for="inputDescription">Descrizione Cartone</label>
-                <textarea id="inputDescription" class="form-control" rows="4">...</textarea>
+                <label for="inputDescription">Trama</label>
+                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
               </div>
               <div class="form-group">
-                <div class="form-group">
-                  <label for="inputEstimatedBudget">Prezzo</label>
-                  <input type="number" id="inputEstimatedBudget" class="form-control">
+                <label for="inputDirettore">Direttore</label>
+                <input type="text" id="inputDirettore" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="inputData">Data Rilascio</label>
+                <input type="date" id="inputData" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="inputDurata">Durata</label>
+                <input type="text" id="inputDurata" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="inputPersonaggio">Lista Personaggi</label>
+                <input type="text" id="inputPersonaggio" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="inputCartoni">Lista Cartoni Correlati</label>
+                <input type="text" id="inputCartoni" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="inputPrezzo">Prezzo</label>
+                <input type="number" id="inputPrezzo" class="form-control">
+              </div>
+              <div class="form-group">
+                <div class="btn btn-default btn-file">
+                  <i class="fas fa-paperclip"></i> Allega
+                  <input type="file" name="attachment">
                 </div>
-              </div>
-              <div class="form-group">
-                <!-- aggiustare foto -->
-                <label for="inputClientCompany">Foto Cartone</label>
-                <input type="text" id="inputClientCompany" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="inputProjectLeader">Aggiungere altre cose</label>
-                <input type="text" id="inputProjectLeader" class="form-control">
+                <p class="help-block">Max. 32MB</p>
               </div>
             </div>
             <!-- /.card-body -->
