@@ -19,7 +19,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="../../index.html" class="brand-link">
+    <a href="../../index3.html" class="brand-link">
       <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Amministratore</span>
     </a>
@@ -61,8 +61,6 @@
               </p>
             </a>
           </li>
-
-
           <li class="nav-header">Pagine</li>
           <li class="nav-item">
             <a href="../calendar.html" class="nav-link">
@@ -238,12 +236,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Modifica Cast</h1>
+            <h1>Cartone</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
-              <li class="breadcrumb-item active">Modifica Cast</li>
+              <li class="breadcrumb-item active">Cartone</li>
             </ol>
           </div>
         </div>
@@ -252,135 +250,72 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card card-primary">
-            <div class="card-header">
-              <h3 class="card-title">Cast</h3>
 
-              <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                  <i class="fas fa-minus"></i>
-                </button>
+      <!-- Default box -->
+      <div class="card card-solid">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <h3 class="d-inline-block d-sm-none">Nome Cartone</h3>
+              <div class="col-12">
+                <img src="../../dist/img/prod-1.jpg" class="product-image" alt="Product Image">
               </div>
             </div>
-            <div class="card-body">
-              <div class="form-group">
-                <label for="inputName">Nome Cast</label>
-                <input type="text" id="inputName" class="form-control" value="">
+            <div class="col-12 col-sm-6">
+              <h3 class="my-3">Nome Cartone</h3>
+              <p>Descrizione Cartone.</p>
+
+              <hr>
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
               </div>
-              <div class="form-group">
-                <label for="inputDescription">Descrizione Cast</label>
-                <textarea id="inputDescription" class="form-control" rows="4">...</textarea>
+
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
               </div>
-              <div class="form-group">
-                <!-- aggiustare foto -->
-                <label for="inputClientCompany">Foto Cast</label>
-                <input type="text" id="inputClientCompany" class="form-control">
+
+              <div class="bg-gray py-2 px-3 mt-4">
+                <h2 class="mb-0">
+                  Prezzo:
+                </h2>
+                <h4 class="mt-0">
+                  <small>IVA (%): </small>
+                </h4>
               </div>
-              <div class="form-group">
-                <label for="inputProjectLeader">Aggiungere altre cose</label>
-                <input type="text" id="inputProjectLeader" class="form-control">
-              </div>
+
             </div>
-            <!-- /.card-body -->
           </div>
-          <!-- /.card -->
+          <div class="row mt-4">
+            <nav class="w-100">
+              <div class="nav nav-tabs" id="product-tab" role="tablist">
+                <a class="nav-item nav-link active" id="product-desc-tab" data-toggle="tab" href="#product-desc" role="tab" aria-controls="product-desc" aria-selected="true">Personaggi</a>
+                <a class="nav-item nav-link" id="product-comments-tab" data-toggle="tab" href="#product-comments" role="tab" aria-controls="product-comments" aria-selected="false">Recensioni</a>
+                <a class="nav-item nav-link" id="product-rating-tab" data-toggle="tab" href="#product-rating" role="tab" aria-controls="product-rating" aria-selected="false">Correlati</a>
+              </div>
+            </nav>
+            <div class="tab-content p-3" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="product-desc" role="tabpanel" aria-labelledby="product-desc-tab"> Personaggi Cartone </div>
+              <div class="tab-pane fade" id="product-comments" role="tabpanel" aria-labelledby="product-comments-tab"> Recensioni Cartone</div>
+              <div class="tab-pane fade" id="product-rating" role="tabpanel" aria-labelledby="product-rating-tab"> Correlati Cartone </div>
+            </div>
+          </div>
         </div>
-        <div class="card card-info">
-          <div class="card-header">
-            <h3 class="card-title">Files</h3>
-
-            <div class="card-tools">
-              <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                <i class="fas fa-minus"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card-body p-0">
-            <table class="table">
-              <thead>
-              <tr>
-                <th> Nome File</th>
-                <th> Dimensione File</th>
-                <th></th>
-              </tr>
-              </thead>
-              <tbody>
-
-              <tr>
-                <td>nome file</td>
-                <td>dimensione file</td>
-                <td class="text-right py-0 align-middle">
-                  <div class="btn-group btn-group-sm">
-                    <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
-                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                  </div>
-                </td>
-              <tr>
-                <td>nome file</td>
-                <td>dimensione file</td>
-                <td class="text-right py-0 align-middle">
-                  <div class="btn-group btn-group-sm">
-                    <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
-                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                  </div>
-                </td>
-              <tr>
-                <td>nome file</td>
-                <td>dimensione file</td>
-                <td class="text-right py-0 align-middle">
-                  <div class="btn-group btn-group-sm">
-                    <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
-                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                  </div>
-                </td>
-              <tr>
-                <td>nome file</td>
-                <td>dimensione file</td>
-                <td class="text-right py-0 align-middle">
-                  <div class="btn-group btn-group-sm">
-                    <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
-                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                  </div>
-                </td>
-              <tr>
-                <td>nome file</td>
-                <td>dimensione file</td>
-                <td class="text-right py-0 align-middle">
-                  <div class="btn-group btn-group-sm">
-                    <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
-                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                  </div>
-                </td>
-              </tbody>
-            </table>
-          </div>
-          <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
+        <!-- /.card-body -->
       </div>
-  </div>
-  <div class="row">
-    <div class="col-12">
-      <a href="#" class="btn btn-secondary">Cancella</a>
-      <input type="submit" value="Salva modifiche" class="btn btn-success float-right">
-    </div>
-  </div>
-  </section>
-  <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
+      <!-- /.card -->
 
-<footer class="main-footer">
-  <strong><p>© Disney © Disney•Pixar © & ™ © 2021 Dinsey&Pixar - Tutti i diritti riservati.</p></strong>
-</footer>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
 
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
-  <!-- Control sidebar content goes here -->
-</aside>
-<!-- /.control-sidebar -->
+  <footer class="main-footer">
+    <strong><p>© Disney © Disney•Pixar © & ™ © 2021 Dinsey&Pixar - Tutti i diritti riservati.</p></strong>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 
@@ -392,5 +327,15 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.product-image-thumb').on('click', function () {
+      var $image_element = $(this).find('img')
+      $('.product-image').prop('src', $image_element.attr('src'))
+      $('.product-image-thumb.active').removeClass('active')
+      $(this).addClass('active')
+    })
+  })
+</script>
 </body>
 </html>

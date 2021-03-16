@@ -19,7 +19,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="../../index.html" class="brand-link">
+    <a href="../../index3.html" class="brand-link">
       <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Amministratore</span>
     </a>
@@ -61,8 +61,6 @@
               </p>
             </a>
           </li>
-
-
           <li class="nav-header">Pagine</li>
           <li class="nav-item">
             <a href="../calendar.html" class="nav-link">
@@ -238,12 +236,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Modifica Cast</h1>
+            <h1>Aggiungi Cartone</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
-              <li class="breadcrumb-item active">Modifica Cast</li>
+              <li class="breadcrumb-item active">Aggiungi Cartone</li>
             </ol>
           </div>
         </div>
@@ -256,7 +254,7 @@
         <div class="col-md-6">
           <div class="card card-primary">
             <div class="card-header">
-              <h3 class="card-title">Cast</h3>
+              <h3 class="card-title">Cartone</h3>
 
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -266,121 +264,73 @@
             </div>
             <div class="card-body">
               <div class="form-group">
-                <label for="inputName">Nome Cast</label>
-                <input type="text" id="inputName" class="form-control" value="">
+                <label for="inputName">Nome Cartone</label>
+                <input type="text" id="inputName" class="form-control">
               </div>
+
               <div class="form-group">
-                <label for="inputDescription">Descrizione Cast</label>
-                <textarea id="inputDescription" class="form-control" rows="4">...</textarea>
+                <label for="inputRegista">Protagonista</label>
+                <input type="text" id="inputRegista" class="form-control">
               </div>
+
               <div class="form-group">
-                <!-- aggiustare foto -->
-                <label for="inputClientCompany">Foto Cast</label>
-                <input type="text" id="inputClientCompany" class="form-control">
+                <label for="inputDescription">Trama</label>
+                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
               </div>
+
               <div class="form-group">
-                <label for="inputProjectLeader">Aggiungere altre cose</label>
-                <input type="text" id="inputProjectLeader" class="form-control">
+                <label for="inputData">Data Rilascio</label>
+                <input type="date" id="inputData" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="inputDurata">Durata</label>
+                <input type="text" id="inputDurata" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="inputPrezzo">Prezzo</label>
+                <input type="number" id="inputPrezzo" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="inputPersonaggio">Lista Personaggi</label>
+                <input type="text" id="inputPersonaggio" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <div class="btn btn-default btn-file">
+                  <i class="fas fa-paperclip"></i> Allega
+                  <input type="file" name="attachment">
+                </div>
+                <p class="help-block">Max. 32MB</p>
               </div>
             </div>
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
         </div>
-        <div class="card card-info">
-          <div class="card-header">
-            <h3 class="card-title">Files</h3>
-
-            <div class="card-tools">
-              <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                <i class="fas fa-minus"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card-body p-0">
-            <table class="table">
-              <thead>
-              <tr>
-                <th> Nome File</th>
-                <th> Dimensione File</th>
-                <th></th>
-              </tr>
-              </thead>
-              <tbody>
-
-              <tr>
-                <td>nome file</td>
-                <td>dimensione file</td>
-                <td class="text-right py-0 align-middle">
-                  <div class="btn-group btn-group-sm">
-                    <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
-                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                  </div>
-                </td>
-              <tr>
-                <td>nome file</td>
-                <td>dimensione file</td>
-                <td class="text-right py-0 align-middle">
-                  <div class="btn-group btn-group-sm">
-                    <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
-                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                  </div>
-                </td>
-              <tr>
-                <td>nome file</td>
-                <td>dimensione file</td>
-                <td class="text-right py-0 align-middle">
-                  <div class="btn-group btn-group-sm">
-                    <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
-                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                  </div>
-                </td>
-              <tr>
-                <td>nome file</td>
-                <td>dimensione file</td>
-                <td class="text-right py-0 align-middle">
-                  <div class="btn-group btn-group-sm">
-                    <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
-                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                  </div>
-                </td>
-              <tr>
-                <td>nome file</td>
-                <td>dimensione file</td>
-                <td class="text-right py-0 align-middle">
-                  <div class="btn-group btn-group-sm">
-                    <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
-                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                  </div>
-                </td>
-              </tbody>
-            </table>
-          </div>
-          <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
       </div>
+      <div class="row">
+        <div class="col-12">
+          <a href="project-add.html" class="btn btn-secondary">Cancella</a>
+          <input type="submit" value="Crea nuovo prodotto" class="btn btn-success float-right">
+        </div>
+      </div>
+    </section>
+    <!-- /.content -->
   </div>
-  <div class="row">
-    <div class="col-12">
-      <a href="#" class="btn btn-secondary">Cancella</a>
-      <input type="submit" value="Salva modifiche" class="btn btn-success float-right">
-    </div>
-  </div>
-  </section>
-  <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
+  <!-- /.content-wrapper -->
 
-<footer class="main-footer">
-  <strong><p>© Disney © Disney•Pixar © & ™ © 2021 Dinsey&Pixar - Tutti i diritti riservati.</p></strong>
-</footer>
+  <footer class="main-footer">
+    <strong><p>© Disney © Disney•Pixar © & ™ © 2021 Dinsey&Pixar - Tutti i diritti riservati.</p></strong>
+  </footer>
 
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
-  <!-- Control sidebar content goes here -->
-</aside>
-<!-- /.control-sidebar -->
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 

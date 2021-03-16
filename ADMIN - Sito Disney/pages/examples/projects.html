@@ -121,9 +121,21 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../examples/projects.html" class="nav-link">
+                <a href="projects.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Prodotti</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="regia.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Cast</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="personaggi.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Personaggi</p>
                 </a>
               </li>
               <!--<li class="nav-item">
@@ -139,7 +151,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../examples/profile.html" class="nav-link">
+                <a href="profile.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Utente</p>
                 </a>
@@ -169,7 +181,7 @@
                 </a>
               </li>-->
               <li class="nav-item">
-                <a href="../examples/contacts.html" class="nav-link">
+                <a href="contacts.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Profili Utenti</p>
                 </a>
@@ -248,6 +260,20 @@
           <h3 class="card-title">Lista prodotti</h3>
 
           <div class="card-tools">
+            <td class="project-actions text-right">
+              <a class="btn btn-primary btn-sm" href="project-add.html">
+                <i class="fas fa-folder">
+                </i>
+                Aggiungi film
+              </a>
+            </td>
+            <td class="project-actions text-right">
+              <a class="btn btn-primary btn-sm" href="project-add2.html">
+                <i class="fas fa-folder">
+                </i>
+                Aggiungi cartone
+              </a>
+            </td>
             <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
               <i class="fas fa-minus"></i>
             </button>
@@ -286,7 +312,7 @@
                       </td>
                       <td>
                           <a>
-                            nome prodotto
+                            nome prodotto (film)
                           </a>
                           <br/>
                           <small>
@@ -329,6 +355,11 @@
                               </i>
                               Modifica
                           </a>
+                          <a class="btn btn-info btn-sm" href="project-detail.html">
+                              <i class="fas fa-pencil-alt">
+                              </i>
+                              Commenti
+                          </a>
                           <a class="btn btn-danger btn-sm" href="#">
                               <i class="fas fa-trash">
                               </i>
@@ -342,7 +373,7 @@
                     </td>
                     <td>
                       <a>
-                        nome prodotto
+                        nome prodotto (cartone)
                       </a>
                       <br/>
                       <small>
@@ -375,15 +406,20 @@
                       <span class="badge badge-success">Successo</span>
                     </td>
                     <td class="project-actions text-right">
-                      <a class="btn btn-primary btn-sm" href="e-commerce.html">
+                      <a class="btn btn-primary btn-sm" href="e-commerce2.html">
                         <i class="fas fa-folder">
                         </i>
                         Vedi prodotto
                       </a>
-                      <a class="btn btn-info btn-sm" href="project-edit.html">
+                      <a class="btn btn-info btn-sm" href="project-edit2.html">
                         <i class="fas fa-pencil-alt">
                         </i>
                         Modifica
+                      </a>
+                      <a class="btn btn-info btn-sm" href="project-detail.html">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Commenti
                       </a>
                       <a class="btn btn-danger btn-sm" href="#">
                         <i class="fas fa-trash">
@@ -441,117 +477,10 @@
                         </i>
                         Modifica
                       </a>
-                      <a class="btn btn-danger btn-sm" href="#">
-                        <i class="fas fa-trash">
-                        </i>
-                        Elimina
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      n°
-                    </td>
-                    <td>
-                      <a>
-                        nome prodotto
-                      </a>
-                      <br/>
-                      <small>
-                        data uscita
-                      </small>
-                    </td>
-                    <td>
-                      <ul class="list-inline">
-                        <li>
-                          nome protagonista
-                        </li>
-                        <li>
-                          nome protagonista
-                        </li>
-                        <li>
-                          nome protagonista
-                        </li>
-                      </ul>
-                    </td>
-                    <td class="project_progress">
-                      <div class="progress progress-sm">
-                        <div class="progress-bar bg-green" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
-                        </div>
-                      </div>
-                      <small>
-                        n° stelline medie
-                      </small>
-                    </td>
-                    <td class="project-state">
-                      <span class="badge badge-success">Successo</span>
-                    </td>
-                    <td class="project-actions text-right">
-                      <a class="btn btn-primary btn-sm" href="e-commerce.html">
-                        <i class="fas fa-folder">
-                        </i>
-                        Vedi prodotto
-                      </a>
-                      <a class="btn btn-info btn-sm" href="project-edit.html">
+                      <a class="btn btn-info btn-sm" href="project-detail.html">
                         <i class="fas fa-pencil-alt">
                         </i>
-                        Modifica
-                      </a>
-                      <a class="btn btn-danger btn-sm" href="#">
-                        <i class="fas fa-trash">
-                        </i>
-                        Elimina
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      n°
-                    </td>
-                    <td>
-                      <a>
-                        nome prodotto
-                      </a>
-                      <br/>
-                      <small>
-                        data uscita
-                      </small>
-                    </td>
-                    <td>
-                      <ul class="list-inline">
-                        <li>
-                          nome protagonista
-                        </li>
-                        <li>
-                          nome protagonista
-                        </li>
-                        <li>
-                          nome protagonista
-                        </li>
-                      </ul>
-                    </td>
-                    <td class="project_progress">
-                      <div class="progress progress-sm">
-                        <div class="progress-bar bg-green" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
-                        </div>
-                      </div>
-                      <small>
-                        n° stelline medie
-                      </small>
-                    </td>
-                    <td class="project-state">
-                      <span class="badge badge-success">Successo</span>
-                    </td>
-                    <td class="project-actions text-right">
-                      <a class="btn btn-primary btn-sm" href="e-commerce.html">
-                        <i class="fas fa-folder">
-                        </i>
-                        Vedi prodotto
-                      </a>
-                      <a class="btn btn-info btn-sm" href="project-edit.html">
-                        <i class="fas fa-pencil-alt">
-                        </i>
-                        Modifica
+                        Commenti
                       </a>
                       <a class="btn btn-danger btn-sm" href="#">
                         <i class="fas fa-trash">
@@ -609,6 +538,11 @@
                         </i>
                         Modifica
                       </a>
+                      <a class="btn btn-info btn-sm" href="project-detail.html">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Commenti
+                      </a>
                       <a class="btn btn-danger btn-sm" href="#">
                         <i class="fas fa-trash">
                         </i>
@@ -665,6 +599,11 @@
                         </i>
                         Modifica
                       </a>
+                      <a class="btn btn-info btn-sm" href="project-detail.html">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Commenti
+                      </a>
                       <a class="btn btn-danger btn-sm" href="#">
                         <i class="fas fa-trash">
                         </i>
@@ -721,6 +660,11 @@
                         </i>
                         Modifica
                       </a>
+                      <a class="btn btn-info btn-sm" href="project-detail.html">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Commenti
+                      </a>
                       <a class="btn btn-danger btn-sm" href="#">
                         <i class="fas fa-trash">
                         </i>
@@ -776,6 +720,133 @@
                         <i class="fas fa-pencil-alt">
                         </i>
                         Modifica
+                      </a>
+                      <a class="btn btn-info btn-sm" href="project-detail.html">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Commenti
+                      </a>
+                      <a class="btn btn-danger btn-sm" href="#">
+                        <i class="fas fa-trash">
+                        </i>
+                        Elimina
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      n°
+                    </td>
+                    <td>
+                      <a>
+                        nome prodotto
+                      </a>
+                      <br/>
+                      <small>
+                        data uscita
+                      </small>
+                    </td>
+                    <td>
+                      <ul class="list-inline">
+                        <li>
+                          nome protagonista
+                        </li>
+                        <li>
+                          nome protagonista
+                        </li>
+                        <li>
+                          nome protagonista
+                        </li>
+                      </ul>
+                    </td>
+                    <td class="project_progress">
+                      <div class="progress progress-sm">
+                        <div class="progress-bar bg-green" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
+                        </div>
+                      </div>
+                      <small>
+                        n° stelline medie
+                      </small>
+                    </td>
+                    <td class="project-state">
+                      <span class="badge badge-success">Successo</span>
+                    </td>
+                    <td class="project-actions text-right">
+                      <a class="btn btn-primary btn-sm" href="e-commerce.html">
+                        <i class="fas fa-folder">
+                        </i>
+                        Vedi prodotto
+                      </a>
+                      <a class="btn btn-info btn-sm" href="project-edit.html">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Modifica
+                      </a>
+                      <a class="btn btn-info btn-sm" href="project-detail.html">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Commenti
+                      </a>
+                      <a class="btn btn-danger btn-sm" href="#">
+                        <i class="fas fa-trash">
+                        </i>
+                        Elimina
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      n°
+                    </td>
+                    <td>
+                      <a>
+                        nome prodotto
+                      </a>
+                      <br/>
+                      <small>
+                        data uscita
+                      </small>
+                    </td>
+                    <td>
+                      <ul class="list-inline">
+                        <li>
+                          nome protagonista
+                        </li>
+                        <li>
+                          nome protagonista
+                        </li>
+                        <li>
+                          nome protagonista
+                        </li>
+                      </ul>
+                    </td>
+                    <td class="project_progress">
+                      <div class="progress progress-sm">
+                        <div class="progress-bar bg-green" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
+                        </div>
+                      </div>
+                      <small>
+                        n° stelline medie
+                      </small>
+                    </td>
+                    <td class="project-state">
+                      <span class="badge badge-success">Successo</span>
+                    </td>
+                    <td class="project-actions text-right">
+                      <a class="btn btn-primary btn-sm" href="e-commerce.html">
+                        <i class="fas fa-folder">
+                        </i>
+                        Vedi prodotto
+                      </a>
+                      <a class="btn btn-info btn-sm" href="project-edit.html">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Modifica
+                      </a>
+                      <a class="btn btn-info btn-sm" href="project-detail.html">
+                        <i class="fas fa-pencil-alt">
+                        </i>
+                        Commenti
                       </a>
                       <a class="btn btn-danger btn-sm" href="#">
                         <i class="fas fa-trash">
