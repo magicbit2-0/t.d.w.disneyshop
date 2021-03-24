@@ -265,6 +265,17 @@
                 <label for="inputName">Nome Cartone</label>
                 <input type="text" id="inputName" class="form-control">
               </div>
+
+              <div class="form-group">
+                <label for="inputName">Categoria</label>
+                <br>
+                <select name="categoria" id="categoria" class="form-control">
+                  <option value="Cortometraggi Pixar">Cortometraggi Pixar</option>
+                  <option value="Cartone Disney">Cartone Disney</option>
+                  <option value="Cartone Pixar">Cartone Pixar</option>
+                </select>
+              </div>
+
               <div class="form-group">
                 <label for="inputDescription">Trama</label>
                 <textarea id="inputDescription" class="form-control" rows="4"></textarea>
@@ -286,16 +297,22 @@
                 <input type="text" id="inputPersonaggio" class="form-control">
               </div>
               <div class="form-group">
-                <label for="inputCartoni">Lista Cartoni Correlati</label>
-                <input type="text" id="inputCartoni" class="form-control">
-              </div>
-              <div class="form-group">
                 <label for="inputPrezzo">Prezzo</label>
                 <input type="number" id="inputPrezzo" class="form-control">
               </div>
               <div class="form-group">
+                <label for="inputLocandina">Locandina</label>
+                <br>
                 <div class="btn btn-default btn-file">
-                  <i class="fas fa-paperclip"></i> Allega
+                  <i class="fas fa-paperclip"></i> Allega Locandina
+                  <input type="file" name="attachment">
+                </div>
+                <p class="help-block">Max. 32MB</p>
+
+                <label for="inputTrailer">Trailer</label>
+                <br>
+                <div class="btn btn-default btn-file">
+                  <i class="fas fa-paperclip"></i> Allega Trailer
                   <input type="file" name="attachment">
                 </div>
                 <p class="help-block">Max. 32MB</p>

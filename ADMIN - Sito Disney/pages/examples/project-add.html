@@ -265,6 +265,15 @@
                 <label for="inputName">Nome Film</label>
                 <input type="text" id="inputName" class="form-control">
               </div>
+
+              <div class="form-group">
+                <label for="inputDescription">Categoria</label>
+                <br>
+                <select name="categoria" id="categoria" class="form-control">
+                  <option value="Film Disney" selected>Film Disney</option>
+                </select>
+              </div>
+
               <div class="form-group">
                 <label for="inputDescription">Trama</label>
                 <textarea id="inputDescription" class="form-control" rows="4"></textarea>
@@ -290,12 +299,18 @@
                 <input type="number" id="inputPrezzo" class="form-control">
               </div>
               <div class="form-group">
-                <label for="inputFilm">Lista Film Correlati</label>
-                <input type="text" id="inputFilm" class="form-control">
-              </div>
-              <div class="form-group">
+                <label for="inputLocandina">Locandina</label>
+                <br>
                 <div class="btn btn-default btn-file">
-                  <i class="fas fa-paperclip"></i> Allega
+                  <i class="fas fa-paperclip"></i> Allega Locandina
+                  <input type="file" name="attachment">
+                </div>
+                <p class="help-block">Max. 32MB</p>
+
+                <label for="inputTrailer">Trailer</label>
+                <br>
+                <div class="btn btn-default btn-file">
+                  <i class="fas fa-paperclip"></i> Allega Trailer
                   <input type="file" name="attachment">
                 </div>
                 <p class="help-block">Max. 32MB</p>
@@ -305,6 +320,7 @@
           </div>
           <!-- /.card -->
         </div>
+
       </div>
       <div class="row">
         <div class="col-12">
