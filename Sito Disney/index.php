@@ -4,12 +4,16 @@
 
     $main=new Template("dtml/index.html");
 
-    $result = $mysqli -> query("select * from articolo order by titolo asc");
+    $main->setContent("titolo", "Titolo film");
+
+    $result = $mysqli -> query("SELECT * FROM articolo ORDER BY titolo ASC");
 
     while ($data = $result -> fetch_assoc()){
+        $main->setContent("titolo_film", $data['titolo']);
+        $main->setContent("categoria_film", $data['categoria']);
     };
 
-    exit;
+    //exit;
 
     $main->close();
 ?>
