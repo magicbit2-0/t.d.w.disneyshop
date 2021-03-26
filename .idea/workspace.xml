@@ -2,12 +2,116 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a45adae0-c820-45a7-81c5-0983529e3987" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/t.d.w.disneyshop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Aladdin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Anna.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Ariel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Arlo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Artu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Aurora.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Baloo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Bambi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Belle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Bestia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Biagio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Biancaneve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Bolt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Cenerentola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Dumbo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Elsa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Jasmine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Lilli.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Nemo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Rapunzel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Simba.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Wall-E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Winnie the Pooh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/Woody.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/oLAF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi - OKAY/sfondo_personaggi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Aladdin e il re dei ladri.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Aladdin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Bambi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Biancaneve e i sette nani.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Big Hero 6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Bolt - Un eroe a quattro zampe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Cenerentola.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Dumbo - L'elefante volante.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Frozen - Il regno di ghiaccio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Frozen II.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Gli aristogatti.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Hercules.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Il libro della giungla.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Il re leone 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Il re leone 3 - Hakuna Matata.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Il re leone.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/La Bella Addormentata nel Bosco.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/La bella e la bestia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/La carica dei 101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/La principessa e il ranocchio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/La sirenetta 2 - Ritorno agli abissi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/La sirenetta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/La spada nella roccia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Le avventure di Peter Pa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Le avventure di winnie the pooh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Le follie dell'imperatore.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Lilli e il vagabondo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Mucche alla riscossa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Mulan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Oceania.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Pinocchio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Pocahontas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Ralph Spaccatutto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Ralph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Rapunzel - L'intreccio della torre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Robin Hood.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Disney - OKAY/Zootropolis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Alla Ricerca Di Dory.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Alla Ricerca Di Nemo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Coco.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Gli Incredibili 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Gli Incredibili.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Il Viaggio di Arlo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Inside Out.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Monsters &amp; co..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Onward.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Ratatouille.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Ribelle the Brave.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Soul.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Toy Story 2 - Woody &amp; Buzz alla riscossa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Toy Story 3 - La grande fuga.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Toy Story 4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Toy Story.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/UP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cartoni Pixar - OKAY/Wall-E.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cortometraggi Pixar - OKAY/Bao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cortometraggi Pixar - OKAY/Jack-Jack Attack.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cortometraggi Pixar - OKAY/Kitbull.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cortometraggi Pixar - OKAY/Knick Knack.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cortometraggi Pixar - OKAY/L'agnello rimbalzello.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cortometraggi Pixar - OKAY/La nuova macchina di mike.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cortometraggi Pixar - OKAY/Lava.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cortometraggi Pixar - OKAY/Non c'è festa senza Rex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cortometraggi Pixar - OKAY/One Man Band.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cortometraggi Pixar - OKAY/Piper.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Cortometraggi Pixar - OKAY/Stu - Anche un alien può sbagliare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/Aladdin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/Alice attraverso lo specchio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/Alice in Wonderland.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/Biancaneve e il cacciatore.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/Cenerentola.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/Dumbo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/Il libro della giungla.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/La Bella e la Bestia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/Lilli e il Vagabondo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/Mulan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/Ritorno al Bosco dei 100 Acri.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/The Legend of Tarzan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/il cacciatore e la regina i ghiaccio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/il re leone.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/locandine - OKAY/Immagini Film Disney - OKAY/maleficent.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/include/dbms.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/dbms.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +119,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/ADMIN/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -45,7 +149,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616690801524</updated>
-      <workItem from="1616690802917" duration="2358000" />
+      <workItem from="1616690802917" duration="2398000" />
+      <workItem from="1616773382249" duration="5127000" />
     </task>
     <servers />
   </component>
