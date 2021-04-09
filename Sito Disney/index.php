@@ -13,7 +13,7 @@
         $main->setContent("titolo_prodotto", $data['titolo']);
         $main->setContent("categoria_prodotto", $data['categoria']);
         $main->setContent("votazione_prodotto", $data['votazione']);
-        //$main->setContent("immagine_prodotto",$data['locandina'] );
+        echo "ciao";
     }
     }
     $main->close();
