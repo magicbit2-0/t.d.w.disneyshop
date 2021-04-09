@@ -2,7 +2,7 @@
 
 require "include/dbms.inc.php";
 
-$result = $mysqli->query("select locandina from articolo where id={$_REQUEST['id']}");
+$result = $mysqli->query("select locandina from articolo where id=101");
 
 $data = $result->fetch_assoc();
 
