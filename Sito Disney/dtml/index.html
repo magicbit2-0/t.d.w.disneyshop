@@ -229,11 +229,11 @@
 				<[foreach]>
 	    		<div class="movie-item">
 	    			<div class="mv-img">
-						<a href="moviesingle.html"><img src='data:image/jpeg;base64 <[locandina_prodotto]>' alt="" width="285" height="437"></a>
+						<a href="moviesingle.html"><img src='img.php?id=<[idImg]>' alt="" width="285" height="437"></a>
 	    			</div>
 	    			<div class="title-in">
 	    				<div class="cate">
-							<span class="blue"><a href="moviegrid.html"><[categoria_prodotto]></a></span>
+							<span class="<[color]>"><a href="moviegrid.html"><[categoria_prodotto]></a></span>
 	    				</div>
 	    				<h6><a href="moviesingle.html"><[titolo_prodotto]></a></h6>
 	    				<p><i class="ion-android-star"></i><span><[votazione_prodotto]></span> /10</p>
@@ -1051,36 +1051,18 @@
 					<div class="ads">
 						<img src="dtml/images/img/GIF Castello.gif" alt="" width="336" height="296">
 					</div>
+
 					<div class="celebrities">
 						<h4 class="sb-title">VIP</h4>
+						<[foreach]>
 						<div class="celeb-item">
-							<a href="celebritysingle.html"><img src="dtml/images/Attori/ChrisHemsworth.jpg" alt="" width="70" height="70"></a>
+							<a href="celebritysingle.html"><img src='imgActor.php?id=<[idImgAttore]>' alt="" width="70" height="70"></a>
 							<div class="celeb-author">
-								<h6><a href="celebritysingle.html">Nome Attore</a></h6>
+								<h6><a href="celebritysingle.html"><[nome_attore]></a></h6>
 								<span>Attore</span>
 							</div>
 						</div>
-						<div class="celeb-item">
-							<a href="celebritysingle.html"><img src="dtml/images/Attori/NaomiScott.jpg" alt="" width="70" height="70"></a>
-							<div class="celeb-author">
-								<h6><a href="celebritysingle.html">Nome Attore</a></h6>
-								<span>Attore</span>
-							</div>
-						</div>
-						<div class="celeb-item">
-							<a href="celebritysingle.html"><img src="dtml/images/Attori/WillSmith.jpg" alt="" width="70" height="70"></a>
-							<div class="celeb-author">
-								<h6><a href="celebritysingle.html">Nome Attore</a></h6>
-								<span>Attore</span>
-							</div>
-						</div>
-						<div class="celeb-item">
-							<a href="celebritysingle.html"><img src="dtml/images/Attori/Angelina Jolie.jpg" alt="" width="70" height="70"></a>
-							<div class="celeb-author">
-								<h6><a href="celebritysingle.html">Nome Attore</a></h6>
-								<span>Attore</span>
-							</div>
-						</div>
+						<[/foreach]>
 						<a href="celebritygrid01.html" class="btn">Scopri tutti i vip<i class="ion-ios-arrow-right"></i></a>
 					</div>
 				</div>
@@ -1147,7 +1129,7 @@
 						</div>
 						<div class="item">
 							<div class="trailer-img">
-								<img src="dtml/images/locandine/Immagini%20Film%20Disney/Il%20re%20leone.png" alt="photo by Alexander Dimitrov" width="100" height="56">
+								<img src="dtml/images/locandine/Immagini%20Film%20Disney/Il%20re%20leone.jpg" alt="photo by Alexander Dimitrov" width="100" height="56">
 							</div>
 							<div class="trailer-infor">
 	                        	<h4 class="desc">Il Re Leone (2019)</h4>
@@ -1197,11 +1179,11 @@
 				        <div id="tab31" class="tab active">
 				            <div class="row">
 				            	<div class="blog-item-style-1">
-				            		<img src="dtml/images/Personaggi/Soul.jpg" alt="" width="170" height="250">
+				            		<img src='imgNotizia.php?id=<[idImgNotizia]>' alt="" width="170" height="250">
 				            		<div class="blog-it-infor">
-				            			<h3><a href="blogdetail.html">Soul, la nuova clip del film Pixar è un invito a “perdersi nella musica”</a></h3>
-				            			<span class="time">1 ora fa</span>
-				            			<p>Questa settimana la Pixar ha condiviso una nuova clip di <span>Soul</span>, il suo nuovo, attesissimo film d’animazione diretto da Peter Docter e con protagonista <span> Jamie Foxx </span> nel ruolo di un insegnante di musica e aspirante musicista jazz, fautore, suo malgrado, di un viaggio metafisico alla scoperta del vero scopo della sua anima...</p>
+				            			<h3><a href="blogdetail.html"><[titolo_notizia]></a></h3>
+				            			<span class="time"><[data_notizia]></span>
+				            			<p><[descrizione_notizia]></p>
 										<div class="title-hd">
 										<a href="blogdetail.html" class="viewall">Continua a leggere<i class="ion-ios-arrow-right"></i></a>
 										</div>
@@ -1218,24 +1200,20 @@
 					</div>
 					<div class="more-items">
 						<div class="left">
+							<[foreach]>
 							<div class="more-it">
-								<h6><a href="blogdetail.html">Disney, a 78 anni Harrison Ford torna Indiana Jones</a></h6>
-								<span class="time">13 ore fa</span>
+								<h6><a href="blogdetail.html"><[titolo_notizia2]></a></h6>
+								<span class="time"><[data_notizia2]></span>
 							</div>
-							<div class="more-it">
-								<h6><a href="blogdetail.html">DISNEY PLUS, ARRIVANO I FILM VIETATI AI MINORI! CAMBIA L'ABBONAMENTO, TUTTI I DETTAGLI!</a></h6>
-								<span class="time">15 ore fa</span>
-							</div>
+							<[/foreach]>
 						</div>
 						<div class="right">
+							<[foreach]>
 							<div class="more-it">
-								<h6><a href="blogdetail.html">DISNEY, COME SEGUIRE IN DIRETTA STREAMING L'INVESTOR DAY 2020</a></h6>
-								<span class="time">18 ore fa</span>
+								<h6><a href="blogdetail.html"><[titolo_notizia3]></a></h6>
+								<span class="time"><[data_notizia3]></span>
 							</div>
-							<div class="more-it">
-								<h6><a href="blogdetail.html">Vodafone-Disney e lo smartwatch per bambini attento alla sicurezza</a></h6>
-								<span class="time">23 ore fa</span>
-							</div>
+							<[/foreach]>
 						</div>
 					</div>
 				</div>
