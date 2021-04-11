@@ -37,6 +37,25 @@
         $main->setContent("idImgAttore", $data1['id']);
     }
 
+    $result3a = $mysqli->query("select id, titolo, votazione from articolo where categoria <> 'Cortometraggi Pixar' order by prezzo asc limit 8");
+        while ($data3a = $result3a->fetch_assoc()) {
+            $main->setContent("nome_prod", $data3a['titolo']);
+            $main->setContent("voto_prod", $data3a['votazione']);
+            $main->setContent("idImg3a", $data3a['id']);
+        }
+       /* $result3b = $mysqli->query("select id, concat(nome,\" \",cognome) as nomeT from regia limit 4"); //query per attori
+
+        while ($data3b = $result3b->fetch_assoc()) {
+            $main->setContent("nome_attore", $data3b['nomeT']);
+            $main->setContent("idImgAttore", $data3b['id']);
+        }*/
+        $result3c = $mysqli->query("select id, titolo, votazione from articolo order by votazione desc limit 8");
+
+        while ($data3c = $result3c->fetch_assoc()) {
+            $main->setContent("nome_prod3", $data3c['titolo']);
+            $main->setContent("voto_prod3", $data3c['votazione']);
+            $main->setContent("idImg3c", $data3c['id']);
+        }
     $result5 = $mysqli->query("SELECT id, titolo,descrizione, data_pubblicazione from notizia where (data_pubblicazione > now() - interval 6 month) order by data_pubblicazione desc limit 1;"); //query per notizie
 
     while ($data5 = $result5->fetch_assoc()) {

@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sito Disney/imgActor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sito Disney/imgNotizia.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/img.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/img.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +70,8 @@
       <workItem from="1617974375235" duration="3437000" />
       <workItem from="1618049791237" duration="3449000" />
       <workItem from="1618066355099" duration="31000" />
-      <workItem from="1618066388649" duration="7258000" />
+      <workItem from="1618066388649" duration="7389000" />
+      <workItem from="1618153142611" duration="3877000" />
     </task>
     <servers />
   </component>
@@ -90,6 +88,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="194" y="254" key="#SQL_Dialects" timestamp="1617379633157">
