@@ -8321,6 +8321,14 @@ margin-right: 20px;
   margin-top: 30px;
   grid-template-columns: auto auto auto auto;
 }
+#celebrity_items_3{
+  margin-top: 30px;
+  grid-template-columns: auto auto auto auto;
+}
+#celebrity_items_4{
+  margin-top: 30px;
+  grid-template-columns: auto auto auto auto;
+}
 
 #pixarGif{
   margin-left: 100px;

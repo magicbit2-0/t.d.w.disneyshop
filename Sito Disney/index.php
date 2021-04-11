@@ -6,14 +6,14 @@
     $main = new Template("dtml/index.html");
 
     if (isset($mysqli)) {
-        $result = $mysqli->query("(SELECT id ,titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' order by data_uscita desc limit 1) union
-        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' order by data_uscita desc limit 1) union
-        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' order by data_uscita desc limit 1) union
-        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Cortometraggi Pixar' order by data_uscita desc limit 1) union
-        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' order by data_uscita desc limit 2) union
-        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' order by data_uscita desc limit 2) union
-        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' order by data_uscita desc limit 2) union
-        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Cortometraggi Pixar' order by data_uscita desc limit 2);");
+        $result = $mysqli->query("(SELECT id ,titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' and votazione is not null order by data_uscita desc limit 1) union
+        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' and votazione is not null order by data_uscita desc limit 1) union
+        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' and votazione is not null order by data_uscita desc limit 1) union
+        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Cortometraggi Pixar' and votazione is not null order by data_uscita desc limit 1) union
+        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' and votazione is not null order by data_uscita desc limit 2) union
+        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' and votazione is not null order by data_uscita desc limit 2) union
+        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' and votazione is not null order by data_uscita desc limit 2) union
+        (SELECT id, titolo, categoria, votazione FROM articolo where categoria = 'Cortometraggi Pixar' and votazione is not null order by data_uscita desc limit 2);");
 
     while ($data = $result->fetch_assoc()) {
         $main->setContent("titolo_prodotto", $data['titolo']);
@@ -43,12 +43,13 @@
             $main->setContent("voto_prod", $data3a['votazione']);
             $main->setContent("idImg3a", $data3a['id']);
         }
-       /* $result3b = $mysqli->query("select id, concat(nome,\" \",cognome) as nomeT from regia limit 4"); //query per attori
+        $result3b = $mysqli->query("select id, titolo, categoria from articolo where data_uscita > now()");
 
         while ($data3b = $result3b->fetch_assoc()) {
-            $main->setContent("nome_attore", $data3b['nomeT']);
-            $main->setContent("idImgAttore", $data3b['id']);
-        }*/
+            $main->setContent("nome_prod2", $data3b['titolo']);
+            $main->setContent("voto_prod2", $data3b['categoria']);
+            $main->setContent("idImg3b", $data3b['id']);
+        }
         $result3c = $mysqli->query("select id, titolo, votazione from articolo order by votazione desc limit 8");
 
         while ($data3c = $result3c->fetch_assoc()) {
@@ -56,6 +57,34 @@
             $main->setContent("voto_prod3", $data3c['votazione']);
             $main->setContent("idImg3c", $data3c['id']);
         }
+
+        $result4a = $mysqli->query("select id, nome from personaggio order by rand() limit 4;");
+
+        while ($data4a = $result4a->fetch_assoc()) {
+            $main->setContent("nome_personaggioRand", $data4a['nome']);
+            $main->setContent("idImgPersonaggioRand", $data4a['id']);
+        }
+
+        $result4b = $mysqli->query("select personaggio.id, personaggio.nome from personaggio join parola_chiave_personaggio
+                                            on (personaggio.id = parola_chiave_personaggio.personaggio_id) join parola_chiave
+                                            on (parola_chiave.id = parola_chiave_personaggio.parola_chiave_id)
+                                            where parola_chiave.id=12 limit 3;");
+
+        while ($data4b = $result4b->fetch_assoc()) {
+            $main->setContent("nome_personaggioEroe", $data4b['nome']);
+            $main->setContent("idImgPersonaggioEroe", $data4b['id']);
+        }
+        $result4c = $mysqli->query("select personaggio.id, personaggio.nome from personaggio join parola_chiave_personaggio
+                                            on (personaggio.id = parola_chiave_personaggio.personaggio_id) join parola_chiave
+                                            on (parola_chiave.id = parola_chiave_personaggio.parola_chiave_id)
+                                            where parola_chiave.id=13 order by rand() limit 3;");
+
+        while ($data4c = $result4c->fetch_assoc()) {
+            $main->setContent("nome_personaggioPrinc", $data4c['nome']);
+            $main->setContent("idImgPersonaggioPrinc", $data4c['id']);
+        }
+
+
     $result5 = $mysqli->query("SELECT id, titolo,descrizione, data_pubblicazione from notizia where (data_pubblicazione > now() - interval 6 month) order by data_pubblicazione desc limit 1;"); //query per notizie
 
     while ($data5 = $result5->fetch_assoc()) {
