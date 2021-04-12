@@ -1,0 +1,462 @@
+
+<div class="slider movie-items">
+    <div class="container">
+        <div class="row">
+            <div class="social-link">
+                <p>Seguici su: </p>
+                <a href="https://www.facebook.com/DisneyIT/?brand_redir=11784025953"><i class="ion-social-facebook"></i></a>
+                <a href="https://twitter.com/Disney_IT?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="ion-social-twitter"></i></a>
+                <a href="https://www.instagram.com/disney/?hl=it"><i class="ion-social-instagram-outline"></i></a>
+                <a href="https://www.youtube.com/user/WaltDisneyStudiosIT"><i class="ion-social-youtube"></i></a>
+            </div>
+            <div  class="slick-multiItemSlider">
+                <[foreach]>
+                <div class="movie-item">
+                    <div class="mv-img">
+                        <a href="#"><img src='img.php?id=<[idImg]>' alt="" width="285" height="437"></a>
+                    </div>
+                    <div class="title-in">
+                        <div class="cate">
+                            <span class="<[color]>"><a href="moviegrid.html"><[categoria_prodotto]></a></span>
+                        </div>
+                        <h6><a href='<[pagina_articolo_categoria]>'><[titolo_prodotto]></a></h6>
+                        <p><i class="ion-android-star"></i><span><[votazione_prodotto]></span> /10</p>
+                    </div>
+                </div>
+                <[/foreach]>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sul Sito -->
+<div class="movie-items">
+    <div class="container">
+        <div class="row ipad-width">
+            <div class="col-md-8">
+                <div class="title-hd">
+                    <h2>Sul Sito</h2>
+                    <a href="moviegrid.html" class="viewall">Vedi tutti<i class="ion-ios-arrow-right"></i></a>
+                </div>
+                <div class="tabs">
+                    <ul class="tab-links">
+                        <li class="active"><a href="#tab1">#Economici</a></li>
+                        <li><a href="#tab2">#In arrivo</a></li>
+                        <li><a href="#tab3">#Più votati</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab active">
+                            <div class="row">
+                                <div class="slick-multiItem">
+                                    <[foreach]>
+                                    <div class="slide-it">
+                                        <div class="movie-item">
+                                            <div class="mv-img">
+                                                <img src='img.php?id=<[idImg3a]>' alt="" width="185" height="284">
+                                            </div>
+                                            <div class="hvr-inner">
+                                                <a  href="moviesingle.html">Leggi di più<i class="ion-android-arrow-dropright"></i> </a>
+                                            </div>
+                                            <div class="title-in">
+                                                <h6><a href="moviesingle.html"><[nome_prod]></a></h6>
+                                                <p><i class="ion-android-star"></i><span><[voto_prod]></span> /10</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <[/foreach]>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab">
+                            <div class="row">
+                                <div class="slick-multiItem">
+                                    <[foreach]>
+                                    <div class="slide-it">
+                                        <div class="movie-item">
+                                            <div class="mv-img">
+                                                <img src='img.php?id=<[idImg3b]>' alt="" width="185" height="284">
+                                            </div>
+                                            <div class="hvr-inner">
+                                                <a  href="moviesingle.html">Leggi di più<i class="ion-android-arrow-dropright"></i> </a>
+                                            </div>
+                                            <div class="title-in">
+                                                <h6><a href="moviesingle.html"><[nome_prod2]></a></h6>
+                                                <p><span><[voto_prod2]></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <[/foreach]>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab">
+                            <div class="row">
+                                <div class="slick-multiItem">
+                                    <[foreach]>
+                                    <div class="slide-it">
+                                        <div class="movie-item">
+                                            <div class="mv-img">
+                                                <img src='img.php?id=<[idImg3c]>' alt="" width="185" height="284">
+                                            </div>
+                                            <div class="hvr-inner">
+                                                <a  href="moviesingle.html">Leggi di più<i class="ion-android-arrow-dropright"></i> </a>
+                                            </div>
+                                            <div class="title-in">
+                                                <h6><a href="moviesingle.html"><[nome_prod3]></a></h6>
+                                                <p><i class="ion-android-star"></i><span><[voto_prod3]></span> /10</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <[/foreach]>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-hd">
+                    <h2>Scopri i nostri personaggi . . . </h2>
+                    <a href="celebritygrid01.html" class="viewall">Vedi tutti<i class="ion-ios-arrow-right"></i></a>
+                </div>
+                <div class="tabs">
+                    <ul class="tab-links-2">
+                        <li class="active"><a href="#tab21">#Personaggidelgiorno</a></li>
+                        <li><a href="#tab22">#Eroe </a></li>
+                        <li><a href="#tab23">#Principessa</a></li>
+                        <li><a href="#tab24">#Ceraunavolta</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab21" class="tab active">
+                            <div class="row">
+                                <div class="celebrity-items" id="celebrity_items_2">
+                                    <[foreach]>
+                                    <div class="ceb-item">
+                                        <a href="celebritysingle2.html">
+                                            <img src='imgPersonaggio.php?id=<[idImgPersonaggioRand]>' alt="cartone">
+                                        </a>
+                                        <div class="ceb-infor">
+                                            <h2><a href="celebritysingle2.html"><[nome_personaggioRand]></a></h2>
+                                        </div>
+                                    </div>
+                                    <[/foreach]>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab22" class="tab">
+                            <div class="row">
+                                <div class="celebrity-items" id="celebrity_items_3">
+                                    <[foreach]>
+                                    <div class="ceb-item">
+                                        <a href="celebritysingle2.html">
+                                            <img src='imgPersonaggio.php?id=<[idImgPersonaggioEroe]>' alt="cartone">
+                                        </a>
+                                        <div class="ceb-infor">
+                                            <h2><a href="celebritysingle2.html"><[nome_personaggioEroe]></a></h2>
+                                        </div>
+                                    </div>
+                                    <[/foreach]>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab23" class="tab">
+                            <div class="row">
+                                <div class="celebrity-items" id="celebrity_items_4">
+                                    <[foreach]>
+                                    <div class="ceb-item">
+                                        <a href="celebritysingle2.html">
+                                            <img src='imgPersonaggio.php?id=<[idImgPersonaggioPrinc]>' alt="cartone">
+                                        </a>
+                                        <div class="ceb-infor">
+                                            <h2><a href="celebritysingle2.html"><[nome_personaggioPrinc]></a></h2>
+                                        </div>
+                                    </div>
+                                    <[/foreach]>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab24" class="tab">
+                            <div class="row">
+                                <div class="slick-multiItem">
+                                    <div class="slide-it">
+                                        <div class="movie-item">
+                                            <div class="mv-img">
+                                                <img src="dtml/images/uploads/mv-item8.jpg" alt="" width="185" height="284">
+                                            </div>
+                                            <div class="hvr-inner">
+                                                <a  href="celebritysingle2.html"> Leggi di più <i class="ion-android-arrow-dropright"></i> </a>
+                                            </div>
+                                            <div class="title-in">
+                                                <h6><a href="celebritysingle2.html">Nome Personaggio</a></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-it">
+                                        <div class="movie-item">
+                                            <div class="mv-img">
+                                                <img src="dtml/images/uploads/mv-item8.jpg" alt="" width="185" height="284">
+                                            </div>
+                                            <div class="hvr-inner">
+                                                <a  href="celebritysingle2.html"> Leggi di più <i class="ion-android-arrow-dropright"></i> </a>
+                                            </div>
+                                            <div class="title-in">
+                                                <h6><a href="celebritysingle2.html">Nome Personaggio</a></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-it">
+                                        <div class="movie-item">
+                                            <div class="mv-img">
+                                                <img src="dtml/images/uploads/mv-item8.jpg" alt="" width="185" height="284">
+                                            </div>
+                                            <div class="hvr-inner">
+                                                <a  href="celebritysingle2.html"> Leggi di più <i class="ion-android-arrow-dropright"></i> </a>
+                                            </div>
+                                            <div class="title-in">
+                                                <h6><a href="celebritysingle2.html">Nome Personaggio</a></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-it">
+                                        <div class="movie-item">
+                                            <div class="mv-img">
+                                                <img src="dtml/images/uploads/mv-item8.jpg" alt="" width="185" height="284">
+                                            </div>
+                                            <div class="hvr-inner">
+                                                <a  href="celebritysingle2.html"> Leggi di più <i class="ion-android-arrow-dropright"></i> </a>
+                                            </div>
+                                            <div class="title-in">
+                                                <h6><a href="celebritysingle2.html">Nome Personaggio</a></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-it">
+                                        <div class="movie-item">
+                                            <div class="mv-img">
+                                                <img src="dtml/images/uploads/mv-item8.jpg" alt="" width="185" height="284">
+                                            </div>
+                                            <div class="hvr-inner">
+                                                <a  href="celebritysingle2.html"> Leggi di più <i class="ion-android-arrow-dropright"></i> </a>
+                                            </div>
+                                            <div class="title-in">
+                                                <h6><a href="celebritysingle2.html">Nome Personaggio</a></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-it">
+                                        <div class="movie-item">
+                                            <div class="mv-img">
+                                                <img src="dtml/images/uploads/mv-item8.jpg" alt="" width="185" height="284">
+                                            </div>
+                                            <div class="hvr-inner">
+                                                <a  href="celebritysingle2.html"> Leggi di più <i class="ion-android-arrow-dropright"></i> </a>
+                                            </div>
+                                            <div class="title-in">
+                                                <h6><a href="celebritysingle2.html">Nome Personaggio</a></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <div class="ads">
+                        <img src="dtml/images/img/GIF Castello.gif" alt="" width="336" height="296">
+                    </div>
+
+                    <div class="celebrities">
+                        <h4 class="sb-title">VIP</h4>
+                        <[foreach]>
+                        <div class="celeb-item">
+                            <a href="celebritysingle.html"><img src='imgActor.php?id=<[idImgAttore]>' alt="" width="70" height="70"></a>
+                            <div class="celeb-author">
+                                <h6><a href="celebritysingle.html"><[nome_attore]></a></h6>
+                                <span>Attore</span>
+                            </div>
+                        </div>
+                        <[/foreach]>
+                        <a href="celebritygrid01.html" class="btn">Scopri tutti i vip<i class="ion-ios-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="trailers">
+    <div class="container">
+        <div class="row ipad-width">
+            <div class="col-md-12">
+                <div class="title-hd">
+                    <h2>Al Cinema</h2>
+                </div>
+                <div class="videos">
+                    <div class="slider-for-2 video-ft">
+                        <div>
+                            <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/RYAp1GuzTrE"></iframe>
+                        </div>
+                        <div>
+                            <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/uPARjcBLi6w"></iframe>
+                        </div>
+                        <div>
+                            <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/TxMLNzpn66o"></iframe>
+                        </div>
+                        <div>
+                            <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/DLwmEdOsW8s"></iframe>
+                        </div>
+                        <div>
+                            <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/e3Nl_TCQXuw"></iframe>
+                        </div>
+                        <div>
+                            <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/FLdEVdFZJgk"></iframe>
+                        </div>
+                    </div>
+                    <div class="slider-nav-2 thumb-ft">
+                        <div class="item">
+                            <div class="trailer-img">
+                                <img src="dtml/images/locandine/Immagini%20Film%20Disney/Lilli%20e%20il%20Vagabondo.png"  alt="photo by Barn dtml/images" width="4096" height="2737">
+                            </div>
+                            <div class="trailer-infor">
+                                <h4 class="desc">Lilly e il Vagabondo (2019)</h4>
+                                <p>1:21</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="trailer-img">
+                                <img src="dtml/images/locandine/Immagini%20Film%20Disney/Cenerentola.jpg"  alt="photo by Barn dtml/images" width="350" height="200">
+                            </div>
+                            <div class="trailer-infor">
+                                <h4 class="desc">Cenerentola (2015) </h4>
+                                <p>2:31</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="trailer-img">
+                                <img src="dtml/images/locandine/Immagini%20Cartoni%20Pixar/Onward.jpg" alt="photo by Joshua Earle">
+                            </div>
+                            <div class="trailer-infor">
+                                <h4 class="desc">Onward -Oltre la Magia (2020)</h4>
+                                <p>2:26</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="trailer-img">
+                                <img src="dtml/images/locandine/Immagini%20Film%20Disney/Il%20re%20leone.jpg" alt="photo by Alexander Dimitrov" width="100" height="56">
+                            </div>
+                            <div class="trailer-infor">
+                                <h4 class="desc">Il Re Leone (2019)</h4>
+                                <p>1:41</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="trailer-img">
+                                <img src="dtml/images/locandine/Immagini%20Film%20Disney/La%20Bella%20e%20la%20Bestia.jpg"  alt="photo by Wojciech Szaturski" width="100" height="56">
+                            </div>
+                            <div class="trailer-infor">
+                                <h4 class="desc">La Bella e la Bestia (2017)</h4>
+                                <p>2:31</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="trailer-img">
+                                <img src="dtml/images/locandine/Immagini%20Film%20Disney/Aladdin.jpg"  alt="photo by Wojciech Szaturski" width="360" height="189">
+                            </div>
+                            <div class="trailer-infor">
+                                <h4 class="desc">Aladdin (2019)</h4>
+                                <p>2:19</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- latest new v1 section-->
+<div class="latestnew">
+    <div class="container">
+        <div class="row ipad-width">
+            <div class="col-md-8">
+                <div class="ads" id="pixarGif">
+                    <iframe class="giphy-embed" src="./dtml/images/img/logopixar.gif" width="500px" height="250px"></iframe>
+                </div>
+                <div class="title-hd">
+                    <h2>Ultime notizie</h2>
+                </div>
+                <div class="tabs">
+                    <ul class="tab-links-3">
+                        <li class="active"><a href="#tab31">#UltimeNotizie</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab31" class="tab active">
+                            <div class="row">
+                                <div class="blog-item-style-1">
+                                    <img src='imgNotizia.php?id=<[idImgNotizia]>' alt="" width="170" height="250">
+                                    <div class="blog-it-infor">
+                                        <h3><a href="blogdetail.html"><[titolo_notizia]></a></h3>
+                                        <span class="time"><[data_notizia]></span>
+                                        <p><[descrizione_notizia]></p>
+                                        <div class="title-hd">
+                                            <a href="blogdetail.html" class="viewall">Continua a leggere<i class="ion-ios-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="morenew">
+                    <div class="title-hd">
+                        <h3>Altre notizie</h3>
+                        <a href="bloggrid.html" class="viewall">Vedi tutte le notizie<i class="ion-ios-arrow-right"></i></a>
+                    </div>
+                    <div class="more-items">
+                        <div class="left">
+                            <[foreach]>
+                            <div class="more-it">
+                                <h6><a href="blogdetail.html"><[titolo_notizia2]></a></h6>
+                                <span class="time"><[data_notizia2]></span>
+                            </div>
+                            <[/foreach]>
+                        </div>
+                        <div class="right">
+                            <[foreach]>
+                            <div class="more-it">
+                                <h6><a href="blogdetail.html"><[titolo_notizia3]></a></h6>
+                                <span class="time"><[data_notizia3]></span>
+                            </div>
+                            <[/foreach]>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <div class="sb-facebook sb-it">
+                        <a href = "https://www.facebook.com/DisneyIT/"><h4 class="sb-title">Trovaci su Facebook</h4></a>
+                        <div class="slick-tw">
+                            <img src="dtml/images/img/fb1.jpg" width="500" height=auto>
+                            <img src="dtml/images/img/fb2.jpg" width="500" height=auto>
+                            <img src="dtml/images/img/fb3.jpg" width="500" height=auto>
+                        </div>
+                    </div>
+                    <div class="sb-twitter sb-it">
+                        <h4 class="sb-title">#Twitta con noi</h4>
+                        <div class="slick-tw">
+                            <div class="tweet item" id="1337200221017808900">
+                            </div>
+                            <div class="tweet item" id="1337199381855039489">
+                            </div>
+                            <div class="tweet item" id="1337819509978087429">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end of latest new v1 section-->

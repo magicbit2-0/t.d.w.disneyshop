@@ -20,11 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sito Disney/imgPersonaggio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/dtml/homepage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/blogdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/blogdetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/bloggrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/bloggrid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritygrid01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritygrid01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritylist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritylist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritysingle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritysingle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritysingle2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritysingle2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/comingsoon.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/comingsoon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/css/plugins.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/css/plugins.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/infouser.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/infouser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/moviegrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/moviegrid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movielist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movielist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/moviesingle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/moviesingle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/moviesingle2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/moviesingle2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/shoppage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/shoppage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userfavoritegrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userfavoritegrid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userfavoritelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userfavoritelist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userprofile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userrate.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userrate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +59,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1qcWoyHfPuV8DWhLnotjgHzazGZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,6 +79,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\t.d.w.disneyshop\Sito Disney\dtml\" />
       <recent name="C:\wamp64\www\t.d.w.disneyshop\Sito Disney" />
     </key>
   </component>
@@ -73,7 +97,8 @@
       <workItem from="1618049791237" duration="3449000" />
       <workItem from="1618066355099" duration="31000" />
       <workItem from="1618066388649" duration="7389000" />
-      <workItem from="1618153142611" duration="5786000" />
+      <workItem from="1618153142611" duration="6036000" />
+      <workItem from="1618235061396" duration="9506000" />
     </task>
     <servers />
   </component>
@@ -109,13 +134,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1618164420077" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1618070748740">
+    <state x="410" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1618242814521">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1618070748740" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1618072774569">
+    <state x="410" y="139" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1618242814521" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1618237387177">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1618072774569" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1618237387177" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1618240540702">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1618240540702" />
   </component>
 </project>
