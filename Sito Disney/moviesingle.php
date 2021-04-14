@@ -9,32 +9,42 @@ $conteggio = 0;
 
 if (isset($mysqli)) {
     $result = $mysqli->query("select id as idImg, titolo, data_uscita, durata, trama, votazione, prezzo, categoria from articolo where id = {$_GET['id']}");
-    $data = $result->fetch_assoc();
+         $data = $result->fetch_assoc();
 
-    foreach ($data as $key => $value){
-        $body->setContent($key,$value);
+        foreach ($data as $key => $value){
+            $body->setContent($key,$value);
+        }
+
+    $result = $mysqli->query("select r.id as idRegista, concat(r.nome,' ', r.cognome) as nome_regista from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id
+                                    join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'regia' and a.id = {$_GET['id']}");
+         $data = $result->fetch_assoc();
+
+        foreach ($data as $key => $value){
+            $body->setContent($key,$value);
+        }
+    $result1 = $mysqli->query("select r.id as id_attore, concat(r.nome,' ', r.cognome) as nome_attore from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id 
+                                    join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'attore' and a.id = {$_GET['id']}");
+
+    while ($data1 = $result1->fetch_assoc()){
+        $body->setContent("id_attore", $data1['id_attore']);
+        $body->setContent("nome_attore", $data1['nome_attore']);
     }
 
     $result = $mysqli->query("(select a1.id , a2.id as id_correlato, a2.titolo as titolo_correlato, a2.categoria as categoria_correlato, a2.votazione as votazione_correlato, a2.durata as durata_correlato, a2.trama as trama_correlato, a2.data_uscita as data_uscita_correlato from articolo_correlato tab join articolo a1 on a1.id = tab.articolo_id join articolo a2 on a2.id = tab.articolo_correlato_id where a1.id = {$_GET['id']} ) union
                                     (select a1.id , a2.id as id_correlato, a2.titolo as titolo_correlato, a2.categoria as categoria_correlato, a2.votazione as votazione_correlato, a2.durata as durata_correlato, a2.trama as trama_correlato, a2.data_uscita as data_uscita_correlato from articolo_correlato tab join articolo a1 on a1.id = tab.articolo_correlato_id join articolo a2 on a2.id = tab.articolo_id where a1.id = {$_GET['id']} )");
 
 
-   while ($data = $result->fetch_assoc()){
-       $conteggio++;
-        $body->setContent("id_correlato", $data['id_correlato']);
-        $body->setContent("titolo_correlato", $data['titolo_correlato']);
-        $body->setContent("categoria_correlato", $data['categoria_correlato']);
-        $body->setContent("votazione_correlato", $data['votazione_correlato']);
-        $body->setContent("durata_correlato", $data['durata_correlato']);
-        $body->setContent("data_uscita_correlato", $data['data_uscita_correlato']);
-        $body->setContent("trama_correlato", substr($data['trama_correlato'], 0, 300) . " [...]");
-    }
-        $body->setContent("conteggio", $conteggio);
-
-    /* while ($data = $result->fetch_assoc()) {
-        $body->setContent("nome_attore", $data['nomeT']);
-        $body->setContent("idImgAttore", $data['id']);
-    }*/
+       while ($data = $result->fetch_assoc()){
+           $conteggio++;
+            $body->setContent("id_correlato", $data['id_correlato']);
+            $body->setContent("titolo_correlato", $data['titolo_correlato']);
+            $body->setContent("categoria_correlato", $data['categoria_correlato']);
+            $body->setContent("votazione_correlato", $data['votazione_correlato']);
+            $body->setContent("durata_correlato", $data['durata_correlato']);
+            $body->setContent("data_uscita_correlato", $data['data_uscita_correlato']);
+            $body->setContent("trama_correlato", substr($data['trama_correlato'], 0, 300) . " [...]");
+        }
+            $body->setContent("conteggio", $conteggio);
 }
 
 $main->setContent("body", $body->get());

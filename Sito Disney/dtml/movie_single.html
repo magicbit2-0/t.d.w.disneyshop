@@ -365,79 +365,31 @@
                                 <div id="cast" class="tab">
                                     <div class="row">
                                         <h3>Cast di</h3>
-                                        <h2>Nome Film</h2>
+                                        <h2><[titolo]></h2>
                                         <div class="title-hd-sm">
                                             <h4>Regista</h4>
                                         </div>
                                         <div class="mvcast-item">
                                             <div class="cast-it">
                                                 <div class="cast-left">
-                                                    <h4>Iniziali Regista</h4>
-                                                    <a href="celebritysingle.html">Nome regista</a>
+                                                    <img src="imgActor.php?id=<[idRegista]>" style width="100px" alt="">
+                                                    <a href="celebritysingle.html">clicca qui per saperne di più</a>
                                                 </div>
-                                                <p>...  Regista</p>
+                                                <p><[nome_regista]></p>
                                             </div>
                                         </div>
                                         <div class="title-hd-sm">
                                             <h4>Attori</h4>
                                         </div>
                                         <div class="mvcast-item">
+                                            <[foreach]>
                                             <div class="cast-it">
                                                 <div class="cast-left">
-                                                    <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                    <a href="celebritysingle.html">Nome attore</a>
+                                                    <img src='imgActor.php?id=<[id_attore]>' alt="" style width="100px">
+                                                    <a href="celebritysingle.html"><[nome_attore]></a>
                                                 </div>
-                                                <p>...  Nome attore</p>
                                             </div>
-                                            <div class="cast-it">
-                                                <div class="cast-left">
-                                                    <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                    <a href="celebritysingle.html">Nome attore</a>
-                                                </div>
-                                                <p>...  Nome attore</p>
-                                            </div>
-                                            <div class="cast-it">
-                                                <div class="cast-left">
-                                                    <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                    <a href="celebritysingle.html">Nome attore</a>
-                                                </div>
-                                                <p>...  Nome attore</p>
-                                            </div>
-                                            <div class="cast-it">
-                                                <div class="cast-left">
-                                                    <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                    <a href="celebritysingle.html">Nome attore</a>
-                                                </div>
-                                                <p>...  Nome attore</p>
-                                            </div>
-                                            <div class="cast-it">
-                                                <div class="cast-left">
-                                                    <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                    <a href="celebritysingle.html">Nome attore</a>
-                                                </div>
-                                                <p>...  Nome attore</p>
-                                            </div>
-                                            <div class="cast-it">
-                                                <div class="cast-left">
-                                                    <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                    <a href="celebritysingle.html">Nome attore.</a>
-                                                </div>
-                                                <p>...  Nome attore</p>
-                                            </div>
-                                            <div class="cast-it">
-                                                <div class="cast-left">
-                                                    <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                    <a href="celebritysingle.html">Nome attore</a>
-                                                </div>
-                                                <p>...  Nome attore</p>
-                                            </div>
-                                            <div class="cast-it">
-                                                <div class="cast-left">
-                                                    <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                    <a href="celebritysingle.html">Nome attore</a>
-                                                </div>
-                                                <p>...  Nome attore</p>
-                                            </div>
+                                            <[/foreach]>
                                         </div>
                                     </div>
                                 </div>
