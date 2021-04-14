@@ -20,10 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sito Disney/dtml/blog_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_grid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/blogdetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/blogdetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/moviegrid.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviegrid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/movielist.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/movielist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +37,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/ADMIN/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +57,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -79,6 +91,7 @@
       <workItem from="1618153142611" duration="6036000" />
       <workItem from="1618235061396" duration="19646000" />
       <workItem from="1618326495608" duration="5538000" />
+      <workItem from="1618414063050" duration="4472000" />
     </task>
     <servers />
   </component>
