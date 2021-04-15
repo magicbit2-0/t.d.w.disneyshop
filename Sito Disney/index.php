@@ -46,8 +46,14 @@
         $body->setContent("idImgAttore", $data1['id']);
     }
 
-    $result3a = $mysqli->query("select id, titolo, votazione from articolo where categoria <> 'Cortometraggi Pixar' order by prezzo asc limit 8");
+    $result3a = $mysqli->query("select id, titolo, votazione, categoria from articolo where categoria <> 'Cortometraggi Pixar' order by prezzo asc limit 8");
         while ($data3a = $result3a->fetch_assoc()) {
+            if ($data3a['categoria'] == "Film Disney"){
+                $body -> setContent("pagina_articolo_categoria1", 'moviesingle.php?id=<[idImg3a]>');
+            }
+            else if ($data3a['categoria'] <> "Film Disney"){
+                $body -> setContent("pagina_articolo_categoria1", 'moviesingle2.php?id=<[idImg3a]>');
+            }
             $body->setContent("nome_prod", $data3a['titolo']);
             $body->setContent("voto_prod", $data3a['votazione']);
             $body->setContent("idImg3a", $data3a['id']);
@@ -55,6 +61,12 @@
         $result3b = $mysqli->query("select id, titolo, categoria from articolo where data_uscita > now()");
 
         while ($data3b = $result3b->fetch_assoc()) {
+            if ($data3b['categoria'] == "Film Disney"){
+                $body -> setContent("pagina_articolo_categoria2", 'moviesingle.php?id=<[idImg3b]>');
+            }
+            else if ($data3b['categoria'] <> "Film Disney"){
+                $body -> setContent("pagina_articolo_categoria2", 'moviesingle2.php?id=<[idImg3b]>');
+            }
             $body->setContent("nome_prod2", $data3b['titolo']);
             $body->setContent("voto_prod2", $data3b['categoria']);
             $body->setContent("idImg3b", $data3b['id']);
@@ -62,6 +74,12 @@
         $result3c = $mysqli->query("select id, titolo, votazione from articolo order by votazione desc limit 8");
 
         while ($data3c = $result3c->fetch_assoc()) {
+            if ($data3c['categoria'] == "Film Disney"){
+                $body -> setContent("pagina_articolo_categoria3", 'moviesingle.php?id=<[idImg3c]>');
+            }
+            else if ($data3c['categoria'] <> "Film Disney"){
+                $body -> setContent("pagina_articolo_categoria3", 'moviesingle2.php?id=<[idImg3c]>');
+            }
             $body->setContent("nome_prod3", $data3c['titolo']);
             $body->setContent("voto_prod3", $data3c['votazione']);
             $body->setContent("idImg3c", $data3c['id']);

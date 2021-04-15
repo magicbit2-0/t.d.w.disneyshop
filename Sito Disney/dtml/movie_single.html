@@ -127,11 +127,13 @@
                                         <div class="col-md-4 col-xs-12 col-sm-12">
                                             <div class="sb-it">
                                                 <h6>Regista: </h6>
-                                                <p><a href="celebritysingle.html">nome regista</a></p>
+                                                <p><a href="celebritysingle.html"><[nome_regista1]></a></p>
                                             </div>
                                             <div class="sb-it">
                                                 <h6>Attori: </h6>
-                                                <p><a href="celebritysingle.html">nome attore,</a> <a href="celebritysingle.html">nome attore,</a> <a href="celebritysingle.html">nome attore,</a><a href="celebritysingle.html"> nome attore</a></p>
+                                                <[foreach]>
+                                                <p><a href="celebritysingle.html"><[nome_attore2]></a> </p>
+                                                <[/foreach]>
                                             </div>
                                             <div class="sb-it">
                                                 <h6>Categoria: </h6>
@@ -149,12 +151,17 @@
                                                 <h6>Parole chiave: </h6>
                                                 <p class="tags">
                                                     <!-- Parole chiave che ritornano alla stessa pagina o pagine diverse-->
-                                                    <span class="time"><a href="moviegrid.html">film</a></span>
-                                                    <span class="time"><a href="celebritygrid01.html">nome_protagonista</a></span>
-                                                    <span class="time"><a href="celebritygrid01.html">nome_attore</a></span>
-                                                    <span class="time"><a href="moviegrid.html">disney</a></span>
-                                                    <span class="time"><a href="moviegrid.html">titolo_film</a></span>
-                                                    <span class="time"><a href="moviegrid.html">anno_di_uscita</a></span>
+                                                    <span class="time"><a href="moviegrid.html"><[titolo]></a></span>
+                                                    <span class="time"><a href="moviegrid.html"><[categoria]></a></span>
+                                                    <span class="time"><a href="moviegrid.html"><[data_uscita]></a></span>
+                                                    <[foreach]>
+                                                    <span class="time"><a href="celebritygrid01.html"><[nome_protagonista1]></a></span>
+                                                    <[/foreach]>
+                                                    <[foreach]>
+                                                    <span class="time"><a href="celebritygrid01.html"><[regia1]></a></span>
+                                                    <span class="time"><a href="celebritygrid01.html"><[regia2]></a></span>
+                                                    <[/foreach]>
+
                                                 </p>
                                             </div>
                                         </div>

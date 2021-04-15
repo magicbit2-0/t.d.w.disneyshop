@@ -21,8 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi/timon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/images/Personaggi/timon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +90,7 @@
       <workItem from="1618235061396" duration="19646000" />
       <workItem from="1618326495608" duration="5538000" />
       <workItem from="1618414063050" duration="4472000" />
-      <workItem from="1618422960447" duration="7334000" />
+      <workItem from="1618422960447" duration="11290000" />
     </task>
     <servers />
   </component>
