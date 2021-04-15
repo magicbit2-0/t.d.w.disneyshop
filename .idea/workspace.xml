@@ -22,7 +22,8 @@
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/blogdetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/blogdetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/blog_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

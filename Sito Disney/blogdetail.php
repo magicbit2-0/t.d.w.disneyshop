@@ -7,7 +7,7 @@
     $body=new Template("dtml/blog_detail.html");
 
     if (isset($mysqli)) {
-        $result = $mysqli->query("(SELECT id, titolo, data_pubblicazione, descrizione FROM notizia");
+        $result = $mysqli->query("SELECT id, titolo, data_pubblicazione, descrizione FROM notizia WHERE id={$_GET['id']}");
 
         while ($data = $result->fetch_assoc()){
             $body->setContent("titolo_notizia", $data['titolo']);
