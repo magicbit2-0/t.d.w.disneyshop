@@ -71,4 +71,22 @@ insert into parola_chiave_regia (id, regia_id, parola_chiave_id) values (null,12
 insert into parola_chiave_regia (id, regia_id, parola_chiave_id) values (null,13,4);
 
 UPDATE `disneydb`.`personaggio_articolo` SET `articolo_id` = '2' WHERE (`id` = '2');
+-- aggiornamento personaggi relativi a ogni film
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,29 ,26);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,101 ,26);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,11 ,27);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,19 ,28);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,102 ,28);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,20 ,29);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,33 ,30);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,34 ,30);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,46 ,31);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,49 ,32);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,5 ,33);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,28 ,34);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,45 ,35);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,14 ,36);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,15 ,36);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,16 ,36);
+ insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,95 ,36);
 
