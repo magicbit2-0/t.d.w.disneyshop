@@ -89,4 +89,6 @@ UPDATE `disneydb`.`personaggio_articolo` SET `articolo_id` = '2' WHERE (`id` = '
  insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,15 ,36);
  insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,16 ,36);
  insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,95 ,36);
+ 
+ insert into articolo_correlato (id, articolo_id, articolo_correlato_id) values (null, 19, 102);
 
