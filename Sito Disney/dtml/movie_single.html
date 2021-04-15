@@ -67,17 +67,15 @@
                                         <div class="col-md-8 col-sm-12 col-xs-12">
                                             <p><[trama]></p>
                                             <div class="title-hd-sm">
-                                                <h4>Video e Foto</h4>
-                                                <a href="#media" class="time"> Vedi tutti <i class="ion-ios-arrow-right"></i></a>
+                                                <h4>Personaggi principali</h4>
                                             </div>
-                                            <div class="mvsingle-item ov-item">
-                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="dtml/image/uploads/image11.jpg" ><img src="dtml/image/uploads/image1.jpg" alt=""></a>
-                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="dtml/image/uploads/image21.jpg" ><img src="dtml/image/uploads/image2.jpg" alt=""></a>
-                                                <a class="img-lightbox"  data-fancybox-group="gallery" href="dtml/image/uploads/image31.jpg" ><img src="dtml/image/uploads/image3.jpg" alt=""></a>
-                                                <div class="vd-it">
-                                                    <img class="vd-img" src="dtml/image/uploads/image4.jpg" alt="">
-                                                    <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="dtml/image/uploads/play-vd.png" alt=""></a>
+                                            <div class="mvsingle-item ov-item celebrity-items" style="align-items: flex-end;">
+                                                <[foreach]>
+                                                <div class="ceb-item">
+                                                    <img src='imgPersonaggio.php?id=<[id_personaggio1]>' alt="">
+                                                    <p><a class="img-lightbox"  data-fancybox-group="gallery" href="../dtml/image/uploads/image11.jpg"><[nome_personaggio1]> </a></p>
                                                 </div>
+                                                <[/foreach]>
                                             </div>
                                             <div class="title-hd-sm">
                                                 <h4>Cast</h4>
@@ -87,60 +85,19 @@
                                             <div class="mvcast-item">
                                                 <div class="cast-it">
                                                     <div class="cast-left">
-                                                        <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                        <a href="celebritysingle.html">Nome Attore</a>
+                                                        <img src='imgActor.php?id=<[id_regista1]>' style="width:80px" alt="">
+                                                        <a href="celebritysingle.html"><[nome_regista1]></a>
                                                     </div>
-                                                    <p>...  Nome protagonista film</p>
                                                 </div>
+                                                <[foreach]>
                                                 <div class="cast-it">
                                                     <div class="cast-left">
-                                                        <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                        <a href="celebritysingle.html">Nome Attore</a>
+                                                        <img src='imgActor.php?id=<[id_attore1]>' style width="80px" alt="">
+                                                        <a href="celebritysingle.html"><[nome_attore1]></a>
                                                     </div>
-                                                    <p>...  Nome protagonista film</p>
+                                                    <!-- <p>...nome protagonista film </p> -->
                                                 </div>
-                                                <div class="cast-it">
-                                                    <div class="cast-left">
-                                                        <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                        <a href="celebritysingle.html">Nome Attore</a>
-                                                    </div>
-                                                    <p>...  Nome protagonista film</p>
-                                                </div>
-                                                <div class="cast-it">
-                                                    <div class="cast-left">
-                                                        <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                        <a href="celebritysingle.html">Nome Attore</a>
-                                                    </div>
-                                                    <p>...  Nome protagonista film</p>
-                                                </div>
-                                                <div class="cast-it">
-                                                    <div class="cast-left">
-                                                        <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                        <a href="celebritysingle.html">Nome Attore</a>
-                                                    </div>
-                                                    <p>...  Nome protagonista film</p>
-                                                </div>
-                                                <div class="cast-it">
-                                                    <div class="cast-left">
-                                                        <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                        <a href="celebritysingle.html">Nome Attore</a>
-                                                    </div>
-                                                    <p>...  Nome protagonista film</p>
-                                                </div>
-                                                <div class="cast-it">
-                                                    <div class="cast-left">
-                                                        <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                        <a href="celebritysingle.html">Nome Attore</a>
-                                                    </div>
-                                                    <p>...  Nome protagonista film</p>
-                                                </div>
-                                                <div class="cast-it">
-                                                    <div class="cast-left">
-                                                        <img src="dtml/image/uploads/cast1.jpg" alt="">
-                                                        <a href="celebritysingle.html">Nome Attore</a>
-                                                    </div>
-                                                    <p>...  Nome protagonista film</p>
-                                                </div>
+                                                <[/foreach]>
                                             </div>
                                             <div class="title-hd-sm">
                                                 <h4>Recensioni degli utenti</h4>

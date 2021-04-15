@@ -21,6 +21,8 @@ if (isset($mysqli)) {
 
         foreach ($data as $key => $value){
             $body->setContent($key,$value);
+            $body->setContent("id_regista1", $data['idRegista']);
+            $body->setContent("nome_regista1", $data['nome_regista']);
         }
     $result1 = $mysqli->query("select r.id as id_attore, concat(r.nome,' ', r.cognome) as nome_attore from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id 
                                     join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'attore' and a.id = {$_GET['id']}");
@@ -28,7 +30,17 @@ if (isset($mysqli)) {
     while ($data1 = $result1->fetch_assoc()){
         $body->setContent("id_attore", $data1['id_attore']);
         $body->setContent("nome_attore", $data1['nome_attore']);
+        $body->setContent("id_attore1", $data1['id_attore']);
+        $body->setContent("nome_attore1", $data1['nome_attore']);
     }
+    $result1 = $mysqli->query("SELECT p.id as p_id, p.nome as p_nome FROM personaggio_articolo pa join personaggio p on p.id = pa.personaggio_id join articolo a on a.id = pa.articolo_id where a.id = {$_GET['id']}");
+
+    while ($data1 = $result1->fetch_assoc()){
+        $body->setContent("id_personaggio1", $data1['p_id']);
+        $body->setContent("nome_personaggio1", $data1['p_nome']);
+    }
+
+
 
     $result = $mysqli->query("(select a1.id , a2.id as id_correlato, a2.titolo as titolo_correlato, a2.categoria as categoria_correlato, a2.votazione as votazione_correlato, a2.durata as durata_correlato, a2.trama as trama_correlato, a2.data_uscita as data_uscita_correlato from articolo_correlato tab join articolo a1 on a1.id = tab.articolo_id join articolo a2 on a2.id = tab.articolo_correlato_id where a1.id = {$_GET['id']} ) union
                                     (select a1.id , a2.id as id_correlato, a2.titolo as titolo_correlato, a2.categoria as categoria_correlato, a2.votazione as votazione_correlato, a2.durata as durata_correlato, a2.trama as trama_correlato, a2.data_uscita as data_uscita_correlato from articolo_correlato tab join articolo a1 on a1.id = tab.articolo_correlato_id join articolo a2 on a2.id = tab.articolo_id where a1.id = {$_GET['id']} )");
