@@ -5,7 +5,7 @@
                 <div class="hero-ct">
                     <h1>Notizie</h1>
                     <ul class="breadcumb">
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="index.php">Home</a></li>
                         <li> <span class="ion-ios-arrow-right"></span> Singola notizia </li>
                     </ul>
                 </div>
@@ -23,54 +23,27 @@
                     <span class="time"><[data_notizia]></span>
                     <img src='imgNotizia.php?id=<[idImgNotizia]>' alt="">
                     <p><[descrizione_notizia]></p>
-                    <!-- share link -->
                     <div class="flex-it share-tag">
                         <div class="right-it">
                             <h4>Tags</h4>
-                            <a href="moviegrid.html">cartone disney,</a>
-                            <a href="celebritygrid01.html"> personaggi</a>
+                            <a href="moviegrid.php">cartone disney,</a>
+                            <a href="celebritygrid01.php"> personaggi</a>
                         </div>
                     </div>
-                    <!-- comment items -->
                     <div class="comments">
                         <h4>Commenti</h4>
                         <div class="cmt-item flex-it">
+                            <[foreach]>
                             <img src="dtml/image/uploads/author.png" alt="">
                             <div class="author-infor">
                                 <div class="flex-it2">
-                                    <h6><a href="userprofile.html">nome_utente</a></h6> <span class="time">data commento</span>
+                                    <h6><a href='<[pagina_utente]>'><[nome_utente]></a></h6>
+                                    <span class="time"><[data_commento]></span>
                                 </div>
-                                <p>Commento</p>
+                                <p><[testo_commento]></p>
                                 <p><a class="rep-btn" href="#">+ Commenti</a></p>
                             </div>
-                        </div>
-                        <div class="cmt-item flex-it reply">
-                            <img src="dtml/image/uploads/author2.png" alt="">
-                            <div class="author-infor">
-                                <div class="flex-it2">
-                                    <h6><a href="userprofile.html">nome_utente</a></h6> <span class="time">data commento</span>
-                                </div>
-                                <p>Commento</p>
-                            </div>
-                        </div>
-                        <div class="cmt-item flex-it reply">
-                            <img src="dtml/image/uploads/author3.png" alt="">
-                            <div class="author-infor">
-                                <div class="flex-it2">
-                                    <h6><a href="userprofile.html">nome_utente</a></h6> <span class="time">data commento</span>
-                                </div>
-                                <p>Commento</p>
-                            </div>
-                        </div>
-                        <div class="cmt-item flex-it">
-                            <img src="dtml/image/uploads/author4.png" alt="">
-                            <div class="author-infor">
-                                <div class="flex-it2">
-                                    <h6><a href="userprofile.html">nome_utente</a></h6> <span class="time">data commento</span>
-                                </div>
-                                <p>Commento</p>
-                                <p><a class="rep-btn" href="#">+ Commenti</a></p>
-                            </div>
+                            <[/foreach]>
                         </div>
                     </div>
                     <div class="comment-form">
@@ -115,24 +88,24 @@
                     <div class="sb-recentpost sb-it">
                         <h4 class="sb-title">Più popolari</h4>
                         <div class="recent-item">
-                            <span>01</span><h6><a href="blogdetail.html">Titolo Notizia</a></h6>
+                            <span>01</span><h6><a href='<[pagina_notizia1]>'><[notizia1]></a></h6>
                         </div>
                         <div class="recent-item">
-                            <span>02</span><h6><a href="blogdetail.html">Titolo Notizia</a></h6>
+                            <span>02</span><h6><a href='<[pagina_notizia2]>'><[notizia2]></a></h6>
                         </div>
                         <div class="recent-item">
-                            <span>03</span><h6><a href="blogdetail.html">Titolo Notizia</a></h6>
+                            <span>03</span><h6><a href='<[pagina_notizia3]>'><[notizia3]></a></h6>
                         </div>
                     </div>
                     <div class="sb-tags sb-it">
                         <h4 class="sb-title">Tags</h4>
                         <ul class="tag-items">
-                            <li><a href="moviegrid.html">cartoni disney</a></li>
-                            <li><a href="moviegrid.html">film disney</a></li>
-                            <li><a href="moviegrid.html">cartoni pixar</a></li>
-                            <li><a href="moviegrid.html">cortometraggi</a></li>
-                            <li><a href="celebritygrid01.html">personaggi</a></li>
-                            <li><a href="celebritygrid01.html">cast</a></li>
+                            <li><a href="moviegrid.php">cartoni disney</a></li>
+                            <li><a href="moviegrid.php">film disney</a></li>
+                            <li><a href="moviegrid.php">cartoni pixar</a></li>
+                            <li><a href="moviegrid.php">cortometraggi</a></li>
+                            <li><a href="celebritygrid01.php">personaggi</a></li>
+                            <li><a href="celebritygrid01.php">cast</a></li>
                         </ul>
                     </div>
                 </div>

@@ -1,0 +1,82 @@
+<div class="hero common-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-ct">
+                    <h1> Notizie </h1>
+                    <ul class="breadcumb">
+                        <li class="active"><a href="index.php">Home</a></li>
+                        <li> <span class="ion-ios-arrow-right"></span> A Griglia </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- blog grid section-->
+<div class="page-single">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-12 col-xs-12">
+                <div class="row">
+                    <[foreach]>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="blog-item-style-2">
+                            <a href='<[pagina_notizia]>'><img src='imgNotizia.php?id=<[idImgNotizia]>' alt=""></a>
+                            <div class="blog-it-infor">
+                                <h3><a href='<[pagina_notizia]>'><[titolo_notizia]></a></h3>
+                                <span class="time"><[data_notizia]></span>
+                                <p><[testo_notizia]></p>
+                            </div>
+                        </div>
+                    </div>
+                    <[/foreach]>
+                </div>
+                <ul class="pagination">
+                    <!-- vedere -->
+                    <li class="icon-prev"><a href="#"><i class="ion-ios-arrow-left"></i></a></li>
+                    <li class="active"><a href="bloggrid.php">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">21</a></li>
+                    <li><a href="#">22</a></li>
+                    <li class="icon-next"><a href="#"><i class="ion-ios-arrow-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="sidebar">
+                    <div class="sb-search sb-it">
+                        <h4 class="sb-title">Cerca Notizia</h4>
+                        <input type="text" placeholder="Inserisci le parole chiave">
+                    </div>
+                    <div class="sb-recentpost sb-it">
+                        <h4 class="sb-title">Più popolari</h4>
+                        <div class="recent-item">
+                            <span>01</span><h6><a href="blogdetail.php?id=<[idImgNotizia1]>"><[notizia1]></a></h6>
+                        </div>
+                        <div class="recent-item">
+                            <span>02</span><h6><a href="blogdetail.php?id=<[idImgNotizia2]>"><[notizia2]></a></h6>
+                        </div>
+                        <div class="recent-item">
+                            <span>03</span><h6><a href="blogdetail.php?id=<[idImgNotizia3]>"><[notizia3]></a></h6>
+                        </div>
+                    </div>
+                    <div class="sb-tags sb-it">
+                        <h4 class="sb-title">Tags</h4>
+                        <ul class="tag-items">
+                            <li><a href="moviegrid.php">cartoni disney</a></li>
+                            <li><a href="moviegrid.php">film disney</a></li>
+                            <li><a href="moviegrid.php">cartoni pixar</a></li>
+                            <li><a href="moviegrid.php">cortometraggi</a></li>
+                            <li><a href="celebritygrid01.php">personaggi</a></li>
+                            <li><a href="celebritygrid01.php">cast</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

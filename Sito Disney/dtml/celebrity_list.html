@@ -1,0 +1,241 @@
+<div class="hero common-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-ct">
+                    <h1>Celebrità</h1>
+                    <ul class="breadcumb">
+                        <li class="active"><a href="index.php">Home</a></li>
+                        <li> <span class="ion-ios-arrow-right"></span> A Lista </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- celebrity list section-->
+<div class="page-single">
+    <div class="container">
+        <div class="row ipad-width2">
+            <div class="col-md-9 col-sm-12 col-xs-12">
+                <div class="topbar-filter">
+                    <p class="pad-change">Trovate <span> 1000 celebrità</span> in totale</p>
+                    <label>Ordina per:</label>
+                    <select>
+                        <option value="popularity">Più Cliccati</option>
+                        <option value="text">Ordine Alfabetico</option>
+                        <option value="date">Data di Nascita</option>
+                    </select>
+                    <a href="celebritylist.php" class="list"><i class="ion-ios-list-outline active"></i></a>
+                    <a href="celebritygrid01.php" class="grid"><i class="ion-grid "></i></a>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <[foreach]>
+                        <div class="ceb-item-style-2">
+                            <img src="dtml/image/uploads/ceblist1.jpg" alt="">
+                            <div class="ceb-infor">
+                                <h2><a href="celebritysingle.php"><[nome_celebrita]></a></h2>
+                                <span><[ruolo]>, <[paese_nascita]></span>
+                                <p><[biografia]></p>
+                            </div>
+                        </div>
+                        <[/foreach]>
+                    </div>
+                </div>
+                <div class="topbar-filter">
+                    <label>Celebrità per pagina:</label>
+                    <select>
+                        <option value="range">10 Celebrità</option>
+                        <option value="saab">15 Celebrità</option>
+                    </select>
+                    <div class="pagination2">
+                        <span>Pagina 1 di 6:</span>
+                        <a class="active" href="celebritylist.php">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#"><i class="ion-arrow-right-b"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-12">
+                <div class="sidebar">
+                    <div class="searh-form">
+                        <h4 class="sb-title">Cerca le celebrità</h4>
+                        <form class="form-style-1 celebrity-form" action="#">
+                            <div class="row">
+                                <div class="col-md-12 form-it">
+                                    <label>Celebrità</label>
+                                    <input type="text" placeholder="Nome Celebrità">
+                                </div>
+                                <div class="col-md-12 form-it">
+                                    <label>Cerca per lettera</label>
+                                    <select>
+                                        <option value="range">Inserisci la lettera</option>
+                                        <option value="saab">A</option>
+                                        <option value="saab">B</option>
+                                        <option value="saab">C</option>
+                                        <option value="saab">D</option>
+                                        <option value="saab">E</option>
+                                        <option value="saab">F</option>
+                                        <option value="saab">G</option>
+                                        <option value="saab">H</option>
+                                        <option value="saab">I</option>
+                                        <option value="saab">J</option>
+                                        <option value="saab">K</option>
+                                        <option value="saab">L</option>
+                                        <option value="saab">M</option>
+                                        <option value="saab">N</option>
+                                        <option value="saab">O</option>
+                                        <option value="saab">P</option>
+                                        <option value="saab">Q</option>
+                                        <option value="saab">R</option>
+                                        <option value="saab">S</option>
+                                        <option value="saab">T</option>
+                                        <option value="saab">U</option>
+                                        <option value="saab">V</option>
+                                        <option value="saab">W</option>
+                                        <option value="saab">X</option>
+                                        <option value="saab">Y</option>
+                                        <option value="saab">Z</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 form-it">
+                                    <label>Categoria</label>
+                                    <select>
+                                        <option value="range">Inserisci la categoria</option>
+                                        <option value="saab">Attori</option>
+                                        <option value="saab">Personaggi</option>
+                                        <option value="saab">Registi</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 form-it">
+                                    <label>Anno</label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <select>
+                                                <option value="range">Da</option>
+                                                <option value="number">1937</option>
+                                                <option value="number">1940</option>
+                                                <option value="number">1941</option>
+                                                <option value="number">1942</option>
+                                                <option value="number">1950</option>
+                                                <option value="number">1951</option>
+                                                <option value="number">1953</option>
+                                                <option value="number">1955</option>
+                                                <option value="number">1959</option>
+                                                <option value="number">1961</option>
+                                                <option value="number">1963</option>
+                                                <option value="number">1967</option>
+                                                <option value="number">1970</option>
+                                                <option value="number">1973</option>
+                                                <option value="number">1981</option>
+                                                <option value="number">1989</option>
+                                                <option value="number">1991</option>
+                                                <option value="number">1992</option>
+                                                <option value="number">1994</option>
+                                                <option value="number">1995</option>
+                                                <option value="number">1996</option>
+                                                <option value="number">1997</option>
+                                                <option value="number">1998</option>
+                                                <option value="number">1999</option>
+                                                <option value="number">2000</option>
+                                                <option value="number">2001</option>
+                                                <option value="number">2002</option>
+                                                <option value="number">2003</option>
+                                                <option value="number">2004</option>
+                                                <option value="number">2005</option>
+                                                <option value="number">2006</option>
+                                                <option value="number">2007</option>
+                                                <option value="number">2008</option>
+                                                <option value="number">2009</option>
+                                                <option value="number">2010</option>
+                                                <option value="number">2012</option>
+                                                <option value="number">2013</option>
+                                                <option value="number">2014</option>
+                                                <option value="number">2015</option>
+                                                <option value="number">2016</option>
+                                                <option value="number">2017</option>
+                                                <option value="number">2018</option>
+                                                <option value="number">2019</option>
+                                                <option value="number">2020</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select>
+                                                <option value="range">A</option>
+                                                <option value="number">1937</option>
+                                                <option value="number">1940</option>
+                                                <option value="number">1941</option>
+                                                <option value="number">1942</option>
+                                                <option value="number">1950</option>
+                                                <option value="number">1951</option>
+                                                <option value="number">1953</option>
+                                                <option value="number">1955</option>
+                                                <option value="number">1959</option>
+                                                <option value="number">1961</option>
+                                                <option value="number">1963</option>
+                                                <option value="number">1967</option>
+                                                <option value="number">1970</option>
+                                                <option value="number">1973</option>
+                                                <option value="number">1981</option>
+                                                <option value="number">1989</option>
+                                                <option value="number">1991</option>
+                                                <option value="number">1992</option>
+                                                <option value="number">1994</option>
+                                                <option value="number">1995</option>
+                                                <option value="number">1996</option>
+                                                <option value="number">1997</option>
+                                                <option value="number">1998</option>
+                                                <option value="number">1999</option>
+                                                <option value="number">2000</option>
+                                                <option value="number">2001</option>
+                                                <option value="number">2002</option>
+                                                <option value="number">2003</option>
+                                                <option value="number">2004</option>
+                                                <option value="number">2005</option>
+                                                <option value="number">2006</option>
+                                                <option value="number">2007</option>
+                                                <option value="number">2008</option>
+                                                <option value="number">2009</option>
+                                                <option value="number">2010</option>
+                                                <option value="number">2012</option>
+                                                <option value="number">2013</option>
+                                                <option value="number">2014</option>
+                                                <option value="number">2015</option>
+                                                <option value="number">2016</option>
+                                                <option value="number">2017</option>
+                                                <option value="number">2018</option>
+                                                <option value="number">2019</option>
+                                                <option value="number">2020</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <input class="submit" type="submit" value="Cerca">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="celebrities">
+                        <h4 class="sb-title">Celebrità in primo piano</h4>
+                        <div class="celeb-item">
+                            <[foreach]>
+                            <a href="celebritysingle2.php"><img class="logo" src="dtml/image/Personaggi/Anna.png" alt="" width="100" height="70"></a>
+                            <div class="celeb-author">
+                                <h6><a href="celebritysingle2.php"><[nome_celebrità]></a></h6>
+                                <span><[ruolo]></span>
+                            </div>
+                            <[/foreach]>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
