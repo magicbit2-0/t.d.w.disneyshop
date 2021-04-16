@@ -337,8 +337,8 @@
                                             <[foreach]>
                                             <div class="cast-it">
                                                 <div class="cast-left">
-                                                    <img src='imgActor.php?id=<[id_attore]>' alt="" style="width:100px">
-                                                    <a href="celebritysingle2.html"><[nome_attore]></a>
+                                                    <img src='imgPersonaggio.php?id=<[idPersonaggio]>' alt="" style="width:100px">
+                                                    <a href="celebritysingle2.html"><[nomePersonaggio]></a>
                                                 </div>
                                             </div>
                                             <[/foreach]>
@@ -348,9 +348,9 @@
                                 <div id="moviesrelated" class="tab">
                                     <div class="row">
                                         <h3>Correlati di </h3>
-                                        <h2> Nome cartone </h2>
+                                        <h2><[titolo]></h2>
                                         <div class="topbar-filter">
-                                            <p>Trovati <span>12 film</span> in totale</p>
+                                            <p>Trovati <span><[conteggio]></span> in totale</p>
                                             <label>Ordina per:</label>
                                             <select>
                                                 <option value="popularity">Più popolari</option>
@@ -371,6 +371,7 @@
                                             </div>
                                         </div>
                                         <[/foreach]>
+                                        <[no_correlati]>
                                         <div class="topbar-filter">
                                             <label>Film per pagina:</label>
                                             <select>
