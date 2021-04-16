@@ -27,12 +27,12 @@
         }
 
         $result = $mysqli->query("SELECT titolo FROM notizia order by data_uscita desc limit 3");
-        while ($data1 = $result->fetch_assoc()) {
+       /* while ($data1 = $result->fetch_assoc()) {
             $body -> setContent("pagina_notizia1", 'blogdetail.php?id=<[idNotizia]>');
             $body->setContent("pagina_notizia2", 'blogdetail.php?id=<[idNotizia]>');
             $body->setContent("pagina_notizia3", 'blogdetail.php?id=<[idNotizia]>');
             $body->setContent("testo_commento", 'blogdetail.php?id=<[idNotizia]>');
-        }
+        }*/
 
 
     }

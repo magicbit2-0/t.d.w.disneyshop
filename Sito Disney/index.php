@@ -120,31 +120,34 @@
         $maxCaratteri = 200;
         $caratteri = strlen($data5['descrizione']);
         if ($caratteri > $maxCaratteri) {
+            $body->setContent("idImgNotizia", $data5['id']);
             $body->setContent("descrizione_notizia", substr($data5['descrizione'], 0, $maxCaratteri) . " [...]");
         } else {
             $body->setContent("descrizione_notizia", $data5['descrizione']);
         }
 
         $body->setContent("data_notizia", $data5['data_pubblicazione']);
-        $body->setContent("idImgNotizia", $data5['id']);
+
         }
 
         $result6 = $mysqli->query("select id, titolo, data_pubblicazione from notizia where (data_pubblicazione > now() - interval 2 YEAR 
         and data_pubblicazione < now() - interval 6 MONTH) order by data_pubblicazione desc limit 2;"); //query per notizie
 
         while ($data6 = $result6->fetch_assoc()) {
+            $body->setContent("idImgNotizia2", $data6['id']);
             $body->setContent("titolo_notizia2", $data6['titolo']);
             $body->setContent("data_notizia2", $data6['data_pubblicazione']);
-            $body->setContent("idImgNotizia2", $data6['id']);
+
         }
 
         $result7 = $mysqli->query("select id, titolo, data_pubblicazione from notizia  where id not in 
         (select id from notizia where (data_pubblicazione > now() - interval 2 YEAR ) order by data_pubblicazione desc) order by data_pubblicazione limit 2;");//query per notizie
 
         while ($data7 = $result7->fetch_assoc()) {
+            $body->setContent("idImgNotizia3", $data7['id']);
             $body->setContent("titolo_notizia3", $data7['titolo']);
             $body->setContent("data_notizia3", $data7['data_pubblicazione']);
-            $body->setContent("idImgNotizia3", $data7['id']);
+
         }
     }
     $main->setContent("body", $body->get());
