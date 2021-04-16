@@ -36,7 +36,7 @@
                         <div class="rate">
                             <i class="ion-android-star"></i>
                             <p><span><[votazione]></span> /10<br>
-                                <span class="rv">3 Recensioni ???</span>
+                                <span class="rv">3 Recensioni</span>
                             </p>
                         </div>
                         <div class="rate-star">
@@ -57,8 +57,8 @@
                         <div class="tabs">
                             <ul class="tab-links tabs-mv">
                                 <li class="active"><a href="#overview">Trama</a></li>
-                                <li><a href="#reviews">Recensioni???</a></li>
-                                <li><a href="#cast">Cast</a></li>
+                                <li><a href="#reviews">recensioni???</a></li>
+                                <li><a href="#cast">personaggi</a></li>
                                 <li><a href="#moviesrelated">correlati</a></li>
                             </ul>
                             <div class="tab-content">
@@ -78,22 +78,16 @@
                                                 <[/foreach]>
                                             </div>
                                             <div class="title-hd-sm">
-                                                <h4>Cast</h4>
+                                                <h4>Personaggi</h4>
                                                 <a href="#" class="time"> Vedi tutti <i class="ion-ios-arrow-right"></i></a>
                                             </div>
                                             <!-- movie cast -->
                                             <div class="mvcast-item">
-                                                <div class="cast-it">
-                                                    <div class="cast-left">
-                                                        <img src='imgActor.php?id=<[id_regista1]>' style="width:80px" alt="">
-                                                        <a href="celebritysingle.html"><[nome_regista1]></a>
-                                                    </div>
-                                                </div>
                                                 <[foreach]>
                                                 <div class="cast-it">
                                                     <div class="cast-left">
-                                                        <img src='imgActor.php?id=<[id_attore1]>' style="width:80px" alt="">
-                                                        <a href="celebritysingle.html"><[nome_attore1]></a>
+                                                        <img src='imgPersonaggio.php?id=<[id_personaggio]>' style="width:80px" alt="">
+                                                        <a href="celebritysingle.html"><[nome_personaggio]></a>
                                                     </div>
                                                     <!-- <p>...nome protagonista film </p> -->
                                                 </div>
@@ -126,11 +120,11 @@
                                         </div>
                                         <div class="col-md-4 col-xs-12 col-sm-12">
                                             <div class="sb-it">
-                                                <h6>Regista: </h6>
+                                                <h6>Diretto da: </h6>
                                                 <p><a href="celebritysingle.html"><[nome_regista1]></a></p>
                                             </div>
                                             <div class="sb-it">
-                                                <h6>Attori: </h6>
+                                                <h6>Protagonisti: </h6>
                                                 <[foreach]>
                                                 <p><a href="celebritysingle.html"><[nome_attore2]></a> </p>
                                                 <[/foreach]>
@@ -157,11 +151,6 @@
                                                     <[foreach]>
                                                     <span class="time"><a href="celebritygrid01.html"><[nome_protagonista1]></a></span>
                                                     <[/foreach]>
-                                                    <[foreach]>
-                                                    <span class="time"><a href="celebritygrid01.html"><[regia1]></a></span>
-                                                    <span class="time"><a href="celebritygrid01.html"><[regia2]></a></span>
-                                                    <[/foreach]>
-
                                                 </p>
                                             </div>
                                         </div>
@@ -172,9 +161,8 @@
                                         <div class="rv-hd">
                                             <div class="div">
                                                 <h3>Tutte le recensioni di </h3>
-                                                <h2> Nome Film </h2>
+                                                <h2> Nome Cartone </h2>
                                             </div>
-                                            <!-- Pagina per scrivere le recensioni -->
                                             <a href="#" class="redbtn recensioneBtn">Scrivi Recensione</a>
                                         </div>
                                         <div class="topbar-filter">
@@ -328,10 +316,10 @@
                                 </div>
                                 <div id="cast" class="tab">
                                     <div class="row">
-                                        <h3>Cast di</h3>
+                                        <h3>Personaggi di</h3>
                                         <h2><[titolo]></h2>
                                         <div class="title-hd-sm">
-                                            <h4>Regista</h4>
+                                            <h4>Diretto da:</h4>
                                         </div>
                                         <div class="mvcast-item">
                                             <div class="cast-it">
@@ -343,14 +331,14 @@
                                             </div>
                                         </div>
                                         <div class="title-hd-sm">
-                                            <h4>Attori</h4>
+                                            <h4>Protagonisti</h4>
                                         </div>
                                         <div class="mvcast-item">
                                             <[foreach]>
                                             <div class="cast-it">
                                                 <div class="cast-left">
                                                     <img src='imgActor.php?id=<[id_attore]>' alt="" style="width:100px">
-                                                    <a href="celebritysingle.html"><[nome_attore]></a>
+                                                    <a href="celebritysingle2.html"><[nome_attore]></a>
                                                 </div>
                                             </div>
                                             <[/foreach]>
@@ -360,9 +348,9 @@
                                 <div id="moviesrelated" class="tab">
                                     <div class="row">
                                         <h3>Correlati di </h3>
-                                        <h2><[titolo]></h2>
+                                        <h2> Nome cartone </h2>
                                         <div class="topbar-filter">
-                                            <p>Trovati <span><[conteggio]></span> in totale</p>
+                                            <p>Trovati <span>12 film</span> in totale</p>
                                             <label>Ordina per:</label>
                                             <select>
                                                 <option value="popularity">Più popolari</option>
