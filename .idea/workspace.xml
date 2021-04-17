@@ -23,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db aggiornamento da eseguire.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db aggiornamento da eseguire.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,7 @@
       <workItem from="1618422960447" duration="11290000" />
       <workItem from="1618514375553" duration="4633000" />
       <workItem from="1618584607759" duration="624000" />
-      <workItem from="1618585236261" duration="7220000" />
+      <workItem from="1618585236261" duration="9228000" />
     </task>
     <servers />
   </component>

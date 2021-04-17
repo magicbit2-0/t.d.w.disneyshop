@@ -74,7 +74,22 @@ if (isset($mysqli)) {
         $body->setContent("no_correlati", "Non sono stati trovati altri film correlati a ".'<[titolo]>');
     }
     else {$body->setContent("no_correlati","");}
-}
+
+    $result1 = $mysqli->query("SELECT r.titolo as titolo_recensione, r.data as data_recensione, r.testo as testo_recensione,
+                                     concat(u.nome,' ', u.cognome) as nome_utente, r.voto as votazione_recensione 
+                                     FROM disneydb.recensione r 
+                                     join articolo a on r.articolo_id = a.id join utente u on r.utente_id = u.id 
+                                     where a.id = {$_GET['id']}");
+
+    while ($data1 = $result1->fetch_assoc()) {
+        $body->setContent("titolo_recensione", $data1['titolo_recensione']);
+        $body->setContent("data_recensione", $data1['data_recensione']);
+        $body->setContent("testo_recensione", $data1['testo_recensione']);
+        $body->setContent("nome_utente", $data1['nome_utente']);
+        $body->setContent("votazione_recensione", $data1['votazione_recensione']);
+    }
+
+    }
 
 $main->setContent("body", $body->get());
 $main->close();
