@@ -36,10 +36,8 @@ if (isset($mysqli)) {
     while ($data1 = $result1->fetch_assoc()){
         $body->setContent("id_personaggio", $data1['p_id']);
         $body->setContent("id_personaggio1", $data1['p_id']);
-        $body->setContent("idPersonaggio", $data1['p_id']);
-        $body->setContent("nome_personaggio", $data1['p_nome']);
         $body->setContent("nome_personaggio1", $data1['p_nome']);
-        $body->setContent("nomePersonaggio", $data1['p_nome']);
+        $body->setContent("nome_personaggio", $data1['p_nome']);
     }
 
     $result1 = $mysqli->query("select p.nome as p_nome from personaggio p 
@@ -48,6 +46,7 @@ if (isset($mysqli)) {
 
     while ($data1 = $result1->fetch_assoc()){
         $body->setContent("nome_protagonista1", $data1['p_nome']);
+        $body->setContent("nome_protagonista", $data1['p_nome']);
     }
 
     $result = $mysqli->query("(select a1.id , a2.id as id_correlato, a2.titolo as titolo_correlato, a2.categoria as categoria_correlato, a2.votazione as votazione_correlato, 

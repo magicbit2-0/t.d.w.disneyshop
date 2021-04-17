@@ -67,8 +67,10 @@
                                         <div class="col-md-8 col-sm-12 col-xs-12">
                                             <p><[trama]></p>
                                             <div class="title-hd-sm">
-                                                <h4>Personaggi principali</h4>
+                                                <h4>Personaggi</h4>
+                                                <a href="#" class="time"> Vedi tutti <i class="ion-ios-arrow-right"></i></a>
                                             </div>
+                                            <!-- movie cast -->
                                             <div class="mvsingle-item ov-item celebrity-items" style="align-items: flex-end;">
                                                 <[foreach]>
                                                 <div class="ceb-item">
@@ -77,22 +79,7 @@
                                                 </div>
                                                 <[/foreach]>
                                             </div>
-                                            <div class="title-hd-sm">
-                                                <h4>Personaggi</h4>
-                                                <a href="#" class="time"> Vedi tutti <i class="ion-ios-arrow-right"></i></a>
-                                            </div>
-                                            <!-- movie cast -->
-                                            <div class="mvcast-item">
-                                                <[foreach]>
-                                                <div class="cast-it">
-                                                    <div class="cast-left">
-                                                        <img src='imgPersonaggio.php?id=<[id_personaggio]>' style="width:80px" alt="">
-                                                        <a href="celebritysingle.html"><[nome_personaggio]></a>
-                                                    </div>
-                                                    <!-- <p>...nome protagonista film </p> -->
-                                                </div>
-                                                <[/foreach]>
-                                            </div>
+
                                             <div class="title-hd-sm">
                                                 <h4>Recensioni degli utenti</h4>
                                                 <a href="#" class="time"> Vedi tutte le recensioni <i class="ion-ios-arrow-right"></i></a>
@@ -120,13 +107,9 @@
                                         </div>
                                         <div class="col-md-4 col-xs-12 col-sm-12">
                                             <div class="sb-it">
-                                                <h6>Diretto da: </h6>
-                                                <p><a href="celebritysingle.html"><[nome_regista1]></a></p>
-                                            </div>
-                                            <div class="sb-it">
                                                 <h6>Protagonisti: </h6>
                                                 <[foreach]>
-                                                <p><a href="celebritysingle.html"><[nome_attore2]></a> </p>
+                                                <p><a href="celebritysingle.html"><[nome_protagonista]></a> </p>
                                                 <[/foreach]>
                                             </div>
                                             <div class="sb-it">
@@ -316,30 +299,16 @@
                                 </div>
                                 <div id="cast" class="tab">
                                     <div class="row">
-                                        <h3>Personaggi di</h3>
+                                        <h3>Scopri i personaggi di</h3>
                                         <h2><[titolo]></h2>
-                                        <div class="title-hd-sm">
-                                            <h4>Diretto da:</h4>
-                                        </div>
-                                        <div class="mvcast-item">
-                                            <div class="cast-it">
-                                                <div class="cast-left">
-                                                    <img src="imgActor.php?id=<[idRegista]>" style="width:100px" alt="">
-                                                    <a href="celebritysingle.html">clicca qui per saperne di più</a>
-                                                </div>
-                                                <p><[nome_regista]></p>
-                                            </div>
-                                        </div>
                                         <div class="title-hd-sm">
                                             <h4>Protagonisti</h4>
                                         </div>
-                                        <div class="mvcast-item">
+                                        <div class="mvsingle-item ov-item celebrity-items" style="align-items: flex-end;">
                                             <[foreach]>
-                                            <div class="cast-it">
-                                                <div class="cast-left">
-                                                    <img src='imgPersonaggio.php?id=<[idPersonaggio]>' alt="" style="width:100px">
-                                                    <a href="celebritysingle2.html"><[nomePersonaggio]></a>
-                                                </div>
+                                            <div class="ceb-item">
+                                                <img src='imgPersonaggio.php?id=<[id_personaggio]>' alt="">
+                                                <p><a class="img-lightbox"  data-fancybox-group="gallery" href="../dtml/image/uploads/image11.jpg"><[nome_personaggio]> </a></p>
                                             </div>
                                             <[/foreach]>
                                         </div>
