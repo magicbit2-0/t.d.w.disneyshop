@@ -1,4 +1,5 @@
 use disneydb;
+/*
 update articolo set votazione=8.0, prezzo=19.99 where id = 101;
 insert into parola_chiave (id,testo) values (11, 'comingsoon'),(12,'eroe'), (13, 'principessa'), (14, 'animale');
 insert into parola_chiave_personaggio (id, personaggio_id, parola_chiave_id) values (null,1,12);
@@ -91,4 +92,28 @@ UPDATE `disneydb`.`personaggio_articolo` SET `articolo_id` = '2' WHERE (`id` = '
  insert into personaggio_articolo (id, articolo_id, personaggio_id) values (null,95 ,36);
  
  insert into articolo_correlato (id, articolo_id, articolo_correlato_id) values (null, 19, 102);
+ */
+ 
+-- ESEGUIRE DA QUI!!!!!!!!!!
+/*
+drop table recensione_da_cancellare;
+create table recensione (
+`id` int unsigned NOT NULL AUTO_INCREMENT,
+  `voto` decimal(2,1) NOT NULL,
+  `titolo` varchar(30) NOT NULL,
+   `testo` mediumtext NOT NULL,
+  `data` date NOT NULL,
+  `utente_id` int unsigned NOT NULL,
+  `articolo_id` int unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_recensione_utente1_idx` (`utente_id`),
+  KEY `fk_recensione_articolo1_idx` (`articolo_id`),
+ CONSTRAINT `fk_recensione_utente` FOREIGN KEY (`utente_id`) REFERENCES `utente` (`id`),
+  CONSTRAINT `fk_recensione_articolo` FOREIGN KEY (`articolo_id`) REFERENCES `articolo` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8; */
 
+-- insert into recensione (`id`,`voto`,`titolo`,`testo`,`data`,`utente_id`,`articolo_id`) values (1,9.9,'Cartone stupendo!','Frozen è un cartone fantastico, che parla del legame forte tra due sorelle! Lo consiglio e lo rivedrei altre 1000 volte.','2019-09-19',2,9);
+-- insert into recensione (`id`,`voto`,`titolo`,`testo`,`data`,`utente_id`,`articolo_id`) values (2,7.0,'Discreto...','Il film è carino, ma non mi ha fatto impazzire!','2020-12-05',8,95);
+-- insert into recensione (`id`,`voto`,`titolo`,`testo`,`data`,`utente_id`,`articolo_id`) values (3,8.9,'Film bellissimo.','Il film mi è piaciuto un sacco soprattutto per gli effetti che ci sono e una bellissima colonna sonora.
+-- Il cacciatore e la regina di ghiaccio per me è quasi 9!','2021-02-02',4,95);
+-- insert into recensione (`id`,`voto`,`titolo`,`testo`,`data`,`utente_id`,`articolo_id`) values (4,6.3,'Bello!','Il film è bellissimo', '2020-04-17',2,1);
