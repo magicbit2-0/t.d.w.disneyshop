@@ -5,6 +5,8 @@ require "include/template2.inc.php";
 
 $main=new Template("dtml/index.html");
 $body=new Template("dtml/movie_single2.html");
+$conteggio = 0;
+$conteggio_recensioni = 0;
 
 if (isset($mysqli)) {
     $result = $mysqli->query("select id as idImg, titolo, data_uscita, durata, trama, votazione, prezzo, categoria from articolo where id = {$_GET['id']}");
@@ -69,7 +71,7 @@ if (isset($mysqli)) {
         $body->setContent("data_uscita_correlato", $data['data_uscita_correlato']);
         $body->setContent("trama_correlato", substr($data['trama_correlato'], 0, 300) . " [...]");
     }
-    $body->setContent("conteggio", $conteggio);
+    $body->setContent("conteggio", "".$conteggio);
     if ($conteggio == 0){
         $body->setContent("no_correlati", "Non sono stati trovati altri film correlati a ".'<[titolo]>');
     }
@@ -82,13 +84,14 @@ if (isset($mysqli)) {
                                      where a.id = {$_GET['id']}");
 
     while ($data1 = $result1->fetch_assoc()) {
+        $conteggio_recensioni++;
         $body->setContent("titolo_recensione", $data1['titolo_recensione']);
         $body->setContent("data_recensione", $data1['data_recensione']);
         $body->setContent("testo_recensione", $data1['testo_recensione']);
         $body->setContent("nome_utente", $data1['nome_utente']);
         $body->setContent("votazione_recensione", $data1['votazione_recensione']);
     }
-
+         $body->setContent("conteggio_recensione","".$conteggio_recensioni);
     }
 
 $main->setContent("body", $body->get());

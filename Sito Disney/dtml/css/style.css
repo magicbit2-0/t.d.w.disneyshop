@@ -5677,6 +5677,7 @@ ul {
 /*movie single hero*/
 .mv-single-hero {
   background: url('../dtml/images/uploads/hero-bg.jpg') no-repeat;
+  /*background-color: #020d18d9;*/
   height: 598px;
 }
 /*series single hero*/

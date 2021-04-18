@@ -21,9 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/css/plugins.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/css/plugins.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db aggiornamento da eseguire.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db aggiornamento da eseguire.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +94,9 @@
       <workItem from="1618514375553" duration="4633000" />
       <workItem from="1618584607759" duration="624000" />
       <workItem from="1618585236261" duration="9228000" />
+      <workItem from="1618754673036" duration="4620000" />
+      <workItem from="1618759769332" duration="45000" />
+      <workItem from="1618762125826" duration="599000" />
     </task>
     <servers />
   </component>

@@ -178,7 +178,7 @@
                                             <a href="#" class="redbtn recensioneBtn">Scrivi Recensione</a>
                                         </div>
                                         <div class="topbar-filter">
-                                            <p>Trovate <span> 7 recensioni </span> in totale </p>
+                                            <p>Trovate <span><[conteggio_recensioni]> </span> in totale </p>
                                             <label>Ordina per:</label>
                                             <select>
                                                 <option value="popularity">Più Popolari</option>
@@ -187,126 +187,24 @@
                                                 <option value="date">Meno Recenti</option>
                                             </select>
                                         </div>
+                                        <[foreach]>
                                         <div class="mv-user-review-item">
                                             <div class="user-infor">
                                                 <img src="dtml/image/uploads/userava1.jpg" alt="">
                                                 <div>
-                                                    <h3>Titolo recensione</h3>
-                                                    <div class="no-star">
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star last"></i>
+                                                    <h3><[titolo_recensione]></h3>
+                                                    <div class="rate">
+                                                        <p><i class="ion-android-star"></i>
+                                                            <span><[votazione_recensione]></span> /10<br>
                                                     </div>
                                                     <p class="time">
-                                                        Data recensione da <a href="userprofile.html"> nome_utente </a>
+                                                        <[data_recensione]><a href="userprofile.html"> <[nome_utente]></a>
                                                     </p>
                                                 </div>
                                             </div>
-                                            <p> RECENSIONE </p>
+                                            <p><[testo_recensione]></p>
                                         </div>
-                                        <div class="mv-user-review-item">
-                                            <div class="user-infor">
-                                                <img src="dtml/image/uploads/userava1.jpg" alt="">
-                                                <div>
-                                                    <h3>Titolo recensione</h3>
-                                                    <div class="no-star">
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star last"></i>
-                                                    </div>
-                                                    <p class="time">
-                                                        Data recensione da <a href="userprofile.html"> nome_utente </a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p> RECENSIONE </p>
-                                        </div>
-                                        <div class="mv-user-review-item">
-                                            <div class="user-infor">
-                                                <img src="dtml/image/uploads/userava1.jpg" alt="">
-                                                <div>
-                                                    <h3>Titolo recensione</h3>
-                                                    <div class="no-star">
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star last"></i>
-                                                    </div>
-                                                    <p class="time">
-                                                        Data recensione da <a href="userprofile.html"> nome_utente </a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p> RECENSIONE </p>
-                                        </div>
-                                        <div class="mv-user-review-item">
-                                            <div class="user-infor">
-                                                <img src="dtml/image/uploads/userava1.jpg" alt="">
-                                                <div>
-                                                    <h3>Titolo recensione</h3>
-                                                    <div class="no-star">
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star last"></i>
-                                                    </div>
-                                                    <p class="time">
-                                                        Data recensione da <a href="userprofile.html"> nome_utente </a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p> RECENSIONE </p>
-                                        </div>
-                                        <div class="mv-user-review-item">
-                                            <div class="user-infor">
-                                                <img src="dtml/image/uploads/userava1.jpg" alt="">
-                                                <div>
-                                                    <h3>Titolo recensione</h3>
-                                                    <div class="no-star">
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star"></i>
-                                                        <i class="ion-android-star last"></i>
-                                                    </div>
-                                                    <p class="time">
-                                                        Data recensione da <a href="userprofile.html"> nome_utente </a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p> RECENSIONE </p>
-                                        </div>
+                                        <[/foreach]>
                                         <div class="topbar-filter">
                                             <label>Recensioni per pagina:</label>
                                             <select>

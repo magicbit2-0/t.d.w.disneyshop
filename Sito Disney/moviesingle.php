@@ -6,6 +6,7 @@ require "include/template2.inc.php";
 $main=new Template("dtml/index.html");
 $body=new Template("dtml/movie_single.html");
 $conteggio = 0;
+$conteggio_recensioni = 0;
 
 if (isset($mysqli)) {
     $result = $mysqli->query("select id as idImg, titolo, data_uscita, durata, trama, votazione, prezzo, categoria from articolo where id = {$_GET['id']}");
@@ -82,7 +83,23 @@ if (isset($mysqli)) {
             $body->setContent("data_uscita_correlato", $data['data_uscita_correlato']);
             $body->setContent("trama_correlato", substr($data['trama_correlato'], 0, 300) . " [...]");
         }
-            $body->setContent("conteggio", $conteggio);
+            $body->setContent("conteggio", "".$conteggio);
+
+    $result1 = $mysqli->query("SELECT r.titolo as titolo_recensione, r.data as data_recensione, r.testo as testo_recensione,
+                                     concat(u.nome,' ', u.cognome) as nome_utente, r.voto as votazione_recensione 
+                                     FROM disneydb.recensione r 
+                                     join articolo a on r.articolo_id = a.id join utente u on r.utente_id = u.id 
+                                     where a.id = {$_GET['id']}");
+
+    while ($data1 = $result1->fetch_assoc()) {
+        $conteggio_recensioni++;
+        $body->setContent("titolo_recensione", $data1['titolo_recensione']);
+        $body->setContent("data_recensione", $data1['data_recensione']);
+        $body->setContent("testo_recensione", $data1['testo_recensione']);
+        $body->setContent("nome_utente", $data1['nome_utente']);
+        $body->setContent("votazione_recensione", $data1['votazione_recensione']);
+    }
+    $body->setContent("conteggio_recensione","".$conteggio_recensioni);
 }
 
 $main->setContent("body", $body->get());
