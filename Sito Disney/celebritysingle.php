@@ -26,7 +26,6 @@ if (isset($mysqli)) {
         $body->setContent("annoNascita",$data2['anno_nascita']);
         $body->setContent("eta",$data2['eta']);
         $body->setContent("nazionalita",$data2['nazionalità']);
-
     }
 }
 

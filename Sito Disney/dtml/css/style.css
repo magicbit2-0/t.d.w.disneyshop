@@ -5676,9 +5676,15 @@ ul {
 }
 /*movie single hero*/
 .mv-single-hero {
-  background: url('../dtml/images/uploads/hero-bg.jpg') no-repeat;
-  /*background-color: #020d18d9;*/
+  /*background: url('../images/uploads/hero-bg.jpg') no-repeat;
+  background-color: #0b2034bf;
+  height: 598px;*/
+
+  background-color: #113251;
   height: 598px;
+  border: #335878 solid;
+  border-width: 0px 0px 1px 0px;
+  margin-bottom: 5px;
 }
 /*series single hero*/
 .sr-single-hero {
@@ -5686,7 +5692,8 @@ ul {
   height: 598px;
 }
 .hero3 {
-  background: url('../dtml/images/uploads/celeb-hero-single.jpg') no-repeat;
+  /*background: url('../dtml/images/uploads/celeb-hero-single.jpg') no-repeat;*/
+  background-color: #08345f;
   height: 538px;
 }
 .common-hero {

@@ -15,13 +15,7 @@ if (isset($mysqli)) {
     foreach ($data as $key => $value){
         $body->setContent($key,$value);
     }
-    //non c'è direttore
-    $result = $mysqli->query("select r.id as idRegista, concat(r.nome,' ', r.cognome) as nome_regista from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id
-                                    join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'regia' and a.id = {$_GET['id']}");
-    while($data = $result->fetch_assoc()){
-        $body->setContent("idRegista", $data['idRegista']);
-        $body->setContent("nome_regista", $data['nome_regista']);
-    }
+
     $result1 = $mysqli->query("select r.id as id_attore, concat(r.nome,' ', r.cognome) as nome_attore from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id 
                                     join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'attore' and a.id = {$_GET['id']}");
 
