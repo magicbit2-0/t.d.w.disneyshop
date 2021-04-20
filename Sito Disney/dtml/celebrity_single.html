@@ -25,7 +25,6 @@
 							<ul class="tab-links tabs-mv">
 								<li class="active"><a href="#overviewceb">Generale</a></li>
 								<li><a href="#biography">Biografia</a></li>
-								<li><a href="#mediaceb">Media</a></li>
 								<li><a href="#filmography">Filmografia</a></li>
 							</ul>
 						    <div class="tab-content">
@@ -45,10 +44,6 @@
 												<br>
 											</p>
 											<p class="time"><a href="#">Leggi tutta la bio<i class="ion-ios-arrow-right"></i></a></p>
-						            		<div class="title-hd-sm">
-												<h4>Video e Foto</h4>
-												<a href="#" class="time">Vedi tutti<i class="ion-ios-arrow-right"></i></a>
-											</div>
 											<div class="mvsingle-item ov-item">
 												<a class="img-lightbox"  data-fancybox-group="gallery" href="dtml/image/uploads/image11.jpg" ><img src="dtml/image/uploads/image1.jpg" alt=""></a>
 												<a class="img-lightbox"  data-fancybox-group="gallery" href="dtml/image/uploads/image21.jpg" ><img src="dtml/image/uploads/image2.jpg" alt=""></a>
@@ -63,18 +58,21 @@
 												<a href="#" class="time">Vedi tutta<i class="ion-ios-arrow-right"></i></a>
 											</div>
 											<!-- movie cast -->
+											<[foreach]>
 											<div class="mvcast-item">											
 												<div class="cast-it">
 													<div class="cast-left cebleb-film">
-														<img src="dtml/image/locandine/Immagini%20Film%20Disney/Aladdin.jpg" alt="immagine non trovata">
+														<img src='img.php?id=<[idfilm]>' alt="immagine film non trovata" width="200px">
 														<div>
-															<a href="moviesingle.html">Nome film</a>
-															<p class="time">Personaggio principale</p>
+															<a href="moviesingle.html"><[titolofilm]></a>
+															<p class="time"><[nome_protagonista]></p>
+															<p><[datafilm]></p>
 														</div>
 													</div>
-													<p>Data uscita film</p>
+													
 												</div>
 											</div>
+											<[/foreach]>
 						            	</div>
 
 						            	<div class="col-md-4 col-xs-12 col-sm-12">
@@ -111,124 +109,19 @@
 						            	<div class="rv-hd">
 											<div>
 												<h3>Biografia di</h3>
-						       	 				<h2>Nome celebrità</h2>
+						       	 				<h2><[nome]> <[cognome]></h2>
 											</div>							            						
 						            	</div>
-						            	<p> Biografia .......</p>
+						            	<p><[biografia]></p>
 						            </div>
 						        </div>
-						        <div id="mediaceb" class="tab">
-						        	<div class="row">
-						        		<div class="rv-hd">
-						            		<div>
-						            			<h3>Video e Foto di</h3>
-					       	 					<h2> Nome Celebrità </h2>
-						            		</div>
-						            	</div>
-						            	<div class="title-hd-sm">
-											<h4>Video <span>(3)</span></h4>
-										</div>
-										<div class="mvsingle-item media-item">
-											<div class="vd-item">
-												<div class="vd-it">
-													<img class="vd-img" src="dtml/image/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
-													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="dtml/image/uploads/play-vd.png" alt=""></a>
-												</div>
-												<div class="vd-infor">
-													<h6> <a href="#">Video Film </a></h6>
-													<p class="time">Durata Video </p>
-												</div>
-											</div>
-											<div class="vd-item">
-												<div class="vd-it">
-													<img class="vd-img" src="dtml/image/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
-													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="dtml/image/uploads/play-vd.png" alt=""></a>
-												</div>
-												<div class="vd-infor">
-													<h6> <a href="#">Video Film </a></h6>
-													<p class="time">Durata Video </p>
-												</div>
-											</div>
-											<div class="vd-item">
-												<div class="vd-it">
-													<img class="vd-img" src="dtml/image/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
-													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="dtml/image/uploads/play-vd.png" alt=""></a>
-												</div>
-												<div class="vd-infor">
-													<h6> <a href="#">Video Film </a></h6>
-													<p class="time">Durata Video </p>
-												</div>
-											</div>
-											<div class="vd-item">
-												<div class="vd-it">
-													<img class="vd-img" src="dtml/image/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
-													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="dtml/image/uploads/play-vd.png" alt=""></a>
-												</div>
-												<div class="vd-infor">
-													<h6> <a href="#">Video Film </a></h6>
-													<p class="time">Durata Video </p>
-												</div>
-											</div>
-											<div class="vd-item">
-												<div class="vd-it">
-													<img class="vd-img" src="dtml/image/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
-													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="dtml/image/uploads/play-vd.png" alt=""></a>
-												</div>
-												<div class="vd-infor">
-													<h6> <a href="#">Video Film </a></h6>
-													<p class="time">Durata Video </p>
-												</div>
-											</div>
-											<div class="vd-item">
-												<div class="vd-it">
-													<img class="vd-img" src="dtml/image/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
-													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="dtml/image/uploads/play-vd.png" alt=""></a>
-												</div>
-												<div class="vd-infor">
-													<h6> <a href="#">Video Film </a></h6>
-													<p class="time">Durata Video </p>
-												</div>
-											</div>
-											<div class="vd-item">
-												<div class="vd-it">
-													<img class="vd-img" src="dtml/image/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
-													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="dtml/image/uploads/play-vd.png" alt=""></a>
-												</div>
-												<div class="vd-infor">
-													<h6> <a href="#">Video Film </a></h6>
-													<p class="time">Durata Video </p>
-												</div>
-											</div>
-											<div class="vd-item">
-												<div class="vd-it">
-													<img class="vd-img" src="dtml/image/locandine/Immagini Cartoni Disney/Aladdin.jpg" alt="">
-													<a class="fancybox-media hvr-grow"  href="https://www.youtube.com/watch?v=onhE877ds-k"><img src="dtml/image/uploads/play-vd.png" alt=""></a>
-												</div>
-												<div class="vd-infor">
-													<h6> <a href="#">Video Film </a></h6>
-													<p class="time">Durata Video </p>
-												</div>
-											</div>
-										</div>
-										<div class="title-hd-sm">
-											<h4>Foto <span>(20)</span></h4>
-										</div>
-										<div class="mvsingle-item">
-											<a class="img-lightbox"  data-fancybox-group="gallery" href="dtml/image/foto/aladdin1.jpg" ><img src="dtml/image/foto/aladdin1.jpg" alt=""></a>
-											<a class="img-lightbox"  data-fancybox-group="gallery"  href="dtml/image/foto/aladdin2.jpg" ><img src="dtml/image/foto/aladdin2.jpg" alt=""></a>
-											<a class="img-lightbox"  data-fancybox-group="gallery"  href="dtml/image/foto/aladdin3.jpg" ><img src="dtml/image/foto/aladdin3.jpg" alt=""></a>
-											<a class="img-lightbox"  data-fancybox-group="gallery"  href="dtml/image/foto/aladdin4.jpg" ><img src="dtml/image/foto/aladdin4.jpg" alt=""></a>
-											<a class="img-lightbox"  data-fancybox-group="gallery"  href="dtml/image/foto/aladdin5.jpg" ><img src="dtml/image/foto/aladdin5.jpg" alt=""></a>
-											<a class="img-lightbox"  data-fancybox-group="gallery"  href="dtml/image/foto/aladdin6.jpg" ><img src="dtml/image/foto/aladdin6.jpg" alt=""></a>
-										</div>
-						        	</div>
-					       	 	</div>
+						        
 					       	 	<div id="filmography" class="tab">
 						        	<div class="row">
 						            	<div class="rv-hd">
 						            		<div>
 						            			<h3>Correlati di</h3>
-					       	 					<h2>Nome Celebrità</h2>
+					       	 					<h2><[nome]> <[cognome]></h2>
 						            		</div>
 						            	</div>
 						            	<div class="topbar-filter">
