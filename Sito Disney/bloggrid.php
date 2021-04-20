@@ -25,14 +25,25 @@
             $body->setContent("idImgNotizia", $data['id']);
         }
 
-        $result = $mysqli->query("(SELECT titolo from notizia where categoria = 'Film Disney') union
-        (SELECT titolo from notizia where categoria = 'Cartone Disney') union
-        (SELECT titolo from notizia where categoria = 'Film Disney');");
 
-        while ($data = $result->fetch_assoc()) {
-            $body->setContent("notizia1", $data['titolo']);
-            $body->setContent("notizia2", $data['titolo']);
-            $body->setContent("notizia3", $data['titolo']);
+
+
+        $result = $mysqli->query("SELECT id as idNotizia1, titolo FROM notizia WHERE categoria='Cartone Disney' limit 1");
+        while ($data2 = $result->fetch_assoc()) {
+            $body->setContent("notizia1", $data2['titolo']);
+            $body->setContent("pagina_notizia1", 'blogdetail.php?id=<[idNotizia1]>');
+        }
+
+        $result = $mysqli->query("SELECT id as idNotizia2, titolo FROM notizia WHERE categoria='Film Disney' limit 1");
+        while ($data3 = $result->fetch_assoc()) {
+            $body->setContent("notizia2", $data3['titolo']);
+            $body->setContent("pagina_notizia2", 'blogdetail.php?id=<[idNotizia2]>');
+        }
+
+        $result = $mysqli->query("SELECT id as idNotizia3, titolo FROM notizia order by data_pubblicazione desc limit 1");
+        while ($data4 = $result->fetch_assoc()) {
+            $body->setContent("notizia3", $data4['titolo']);
+            $body->setContent("pagina_notizia3", 'blogdetail.php?id=<[idNotizia3]>');
         }
     }
 $main->setContent("body", $body->get());
