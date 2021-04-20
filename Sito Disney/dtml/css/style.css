@@ -5698,14 +5698,14 @@ ul {
 }
 .common-hero {
   height: 385px;
-  background: url('../dtml/images/Personaggi/sfondo_personaggi.jpg') no-repeat;
+  background: url('../images/Personaggi/sfondo_personaggi.jpg') no-repeat;
 }
 .common-hero:before {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .user-hero {
   height: 385px;
-  background: url('../dtml/images/Personaggi/sfondo_personaggi.jpg') no-repeat;
+  background: url('../images/Personaggi/sfondo_personaggi.jpg') no-repeat;
 }
 .user-hero .hero-ct {
   padding-top: 225px;
@@ -7816,7 +7816,8 @@ header {
   position: absolute;
   z-index: 100;
   width: 100%;
-  background-color: transparent;
+  /*background-color: transparent;*/
+  background-color: #020d18;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
