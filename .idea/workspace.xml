@@ -19,17 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sito Disney/dtml/coming_soon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/blogdetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/blogdetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/bloggrid.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/bloggrid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/celebritygrid01.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/celebritygrid01.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/comingsoon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/comingsoon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/blog_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/blog_grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/blog_grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_grid01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_grid01.html" afterDir="false" />
-    </list>
+    <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +90,7 @@
       <workItem from="1618754673036" duration="4620000" />
       <workItem from="1618759769332" duration="45000" />
       <workItem from="1618762125826" duration="1673000" />
-      <workItem from="1618913745400" duration="5573000" />
+      <workItem from="1618913745400" duration="5667000" />
     </task>
     <servers />
   </component>
