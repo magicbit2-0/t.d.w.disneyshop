@@ -19,7 +19,7 @@
 			<div class="col-md-8 col-sm-12 col-xs-12">
 				<div class="movie-single-ct">
 					<h1 class="bd-hd"><[nome]> <[cognome]></h1>
-					<p class="ceb-single">Attore/Regista/Direttore RIVEDERE TABELLE DB</p>
+					<p class="ceb-single" style="text-transform: uppercase;"><[parola_chiave]></p>
 					<div class="movie-tabs">
 						<div class="tabs">
 							<ul class="tab-links tabs-mv">
@@ -66,7 +66,7 @@
 														<div>
 															<a href="moviesingle.html"><[titolofilm]></a>
 															<p class="time"><[nome_protagonista]></p>
-															<p><[datafilm]></p>
+															<p style="width: auto;"><[datafilm]></p>
 														</div>
 													</div>
 													
@@ -92,12 +92,16 @@
 						            		<div class="sb-it">
 						            			<h6>Tags:</h6>
 						            			<p class="tags">
-						            				<span class="time"><a href="moviesingle.html">nome_attore</a></span>
-													<span class="time"><a href="celebritysingle2.html">nome_personaggio_recitato</a></span>
-													<span class="time"><a href="moviegrid.html">film</a></span>
-													<span class="time"><a href="moviegrid.html">disney</a></span>
-													<span class="time"><a href="moviegrid.html">anno_uscita</a></span>
-													<span class="time"><a href="moviesingle2.html">nome_cartone_relativo</a></span>
+						            				<[foreach]>
+													<span class="time"><a href="moviesingle.html"><[parola_chiave_attore]></a></span>
+													<[/foreach]>
+													<[foreach]>
+													<span class="time"><a href="moviesingle.html"><[titolo_film2]></a></span>
+													<[/foreach]>
+													<span class="time"><a href="moviesingle.html"><[nome]></a></span>
+													<span class="time"><a href="moviesingle.html"><[cognome]></a></span>
+													<span class="time"><a href="moviesingle.html"><[nazionalita]></a></span>
+													<span class="time"><a href="moviesingle.html"><[anno_nascita]></a></span>
 						            			</p>
 						            		</div>
 						            	</div>
@@ -136,94 +140,20 @@
 										</div>
 										<!-- movie cast -->
 										<div class="mvcast-item">											
+											<[foreach]>
 											<div class="cast-it">
 												<div class="cast-left cebleb-film">
-													<img src="dtml/image/uploads/film1.jpg" alt="">
+													<img src='img.php?id=<[idfilm1]>' alt="immagine film non trovata" style="width:150px;">
 													<div>
-														<a href="moviesingle.html">Nome Film </a>
-														<p class="time">Protagonista</p>
+														<a href="moviesingle.html"><[titolofilm1]></a>
+														<p class="time" style="width: auto;">Protagonista: <[nome_protagonista1]></p>
+														<p class="time" style="width: auto;"><[categoria_film]></p>
 													</div>
 													
 												</div>
-												<p>Data uscita Film</p>
+												<p><[datafilm1]></p>
 											</div>
-											<div class="cast-it">
-												<div class="cast-left cebleb-film">
-													<img src="dtml/image/uploads/film1.jpg" alt="">
-													<div>
-														<a href="moviesingle.html">Nome Film </a>
-														<p class="time">Protagonista</p>
-													</div>
-
-												</div>
-												<p>Data uscita Film</p>
-											</div>
-											<div class="cast-it">
-												<div class="cast-left cebleb-film">
-													<img src="dtml/image/uploads/film1.jpg" alt="">
-													<div>
-														<a href="moviesingle.html">Nome Film </a>
-														<p class="time">Protagonista</p>
-													</div>
-
-												</div>
-												<p>Data uscita Film</p>
-											</div>
-											<div class="cast-it">
-												<div class="cast-left cebleb-film">
-													<img src="dtml/image/uploads/film1.jpg" alt="">
-													<div>
-														<a href="moviesingle.html">Nome Film </a>
-														<p class="time">Protagonista</p>
-													</div>
-
-												</div>
-												<p>Data uscita Film</p>
-											</div>
-											<div class="cast-it">
-												<div class="cast-left cebleb-film">
-													<img src="dtml/image/uploads/film1.jpg" alt="">
-													<div>
-														<a href="moviesingle.html">Nome Film </a>
-														<p class="time">Protagonista</p>
-													</div>
-
-												</div>
-												<p>Data uscita Film</p>
-											</div>
-											<div class="cast-it">
-												<div class="cast-left cebleb-film">
-													<img src="dtml/image/uploads/film1.jpg" alt="">
-													<div>
-														<a href="moviesingle.html">Nome Film </a>
-														<p class="time">Protagonista</p>
-													</div>
-
-												</div>
-												<p>Data uscita Film</p>
-											</div>
-											<div class="cast-it">
-												<div class="cast-left cebleb-film">
-													<img src="dtml/image/uploads/film1.jpg" alt="">
-													<div>
-														<a href="moviesingle.html">Nome Film </a>
-														<p class="time">Protagonista</p>
-													</div>
-
-												</div>
-												<p>Data uscita Film</p>
-											</div>
-											<div class="cast-it">
-												<div class="cast-left cebleb-film">
-													<img src="dtml/image/uploads/film1.jpg" alt="">
-													<div>
-														<a href="moviesingle.html">Nome Film </a>
-														<p class="time">Protagonista</p>
-													</div>
-
-												</div>
-												<p>Data uscita Film</p>
-											</div>
+											<[/foreach]>
 										</div>
 						            </div>
 					       	 	</div>
