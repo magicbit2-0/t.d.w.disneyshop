@@ -12,37 +12,24 @@
 		<div class="row ipad-width">
 			<div class="col-md-4 col-sm-12 col-xs-12">
 				<div class="mv-ceb">
-					<img src='imgActor.php?id=<[idImgAttore]>' alt="">
+					<img src='imgPersonaggio.php?id=<[id_personaggio]>' alt="immagine personaggio non trovata">
 				</div>
 			</div>
 			<div class="col-md-8 col-sm-12 col-xs-12">
 				<div class="movie-single-ct">
-					<h1 class="bd-hd"><[nome]> <[cognome]></h1>
-					<p class="ceb-single" style="text-transform: uppercase;"><[parola_chiave]></p>
+					<h1 class="bd-hd"><[nome]></h1>
+					<p class="ceb-single"><[parola_chiave]></p>
 					<div class="movie-tabs">
 						<div class="tabs">
 							<ul class="tab-links tabs-mv">
-								<li class="active"><a href="#overviewceb">Generale</a></li>
-								<li><a href="#biography">Biografia</a></li>
+								<li class="active"><a href="#overviewceb"> Generale</a></li>
 								<li><a href="#filmography">Filmografia</a></li>
 							</ul>
 						    <div class="tab-content">
 						        <div id="overviewceb" class="tab active">
 						            <div class="row">
 						            	<div class="col-md-8 col-sm-12 col-xs-12">
-						            		<p>
-												Nome: <[nome]>
-												<br>
-												Cognome: <[cognome]>
-												<br>
-												Anno Di nascita: <[anno_nascita]>
-												<br>
-												Età: <[eta]>
-												<br>
-												Nazionalità: <[nazionalita]>
-												<br>
-											</p>
-											<p class="time"><a href="#">Leggi tutta la bio<i class="ion-ios-arrow-right"></i></a></p>
+						            		<p><[descrizione]></p>
 											<div class="mvsingle-item ov-item">
 												<a class="img-lightbox"  data-fancybox-group="gallery" href="dtml/image/uploads/image11.jpg" ><img src="dtml/image/uploads/image1.jpg" alt=""></a>
 												<a class="img-lightbox"  data-fancybox-group="gallery" href="dtml/image/uploads/image21.jpg" ><img src="dtml/image/uploads/image2.jpg" alt=""></a>
@@ -57,37 +44,30 @@
 												<a href="#" class="time">Vedi tutta<i class="ion-ios-arrow-right"></i></a>
 											</div>
 											<!-- movie cast -->
-											<[foreach]>
+                                            <[foreach]>
 											<div class="mvcast-item">											
 												<div class="cast-it">
 													<div class="cast-left cebleb-film">
-														<img src='img.php?id=<[idfilm]>' alt="immagine film non trovata" width="200px">
+														<img src='img.php?id=<[idcartone]>' alt="immagine cartone non trovata" width="200px">
 														<div>
-															<a href="moviesingle.html"><[titolofilm]></a>
+															<a href="moviesingle.html"><[titolocartone]></a>
 															<p class="time"><[nome_protagonista]></p>
-															<p style="width: auto;"><[datafilm]></p>
-														</div>
+                                                            <p style="width: auto;"><[datacartone]></p>
+														</div>														
 													</div>
-													
 												</div>
 											</div>
-											<[/foreach]>
+                                            <[/foreach]>
 						            	</div>
-
 						            	<div class="col-md-4 col-xs-12 col-sm-12">
 						            		<div class="sb-it">
-						            			<h6>Nome e Cognome: </h6>
-						            			<p><a href="celebritysingle.php?id=<[idImgAttore]>"><[nome]> <[cognome]></a></p>
+						            			<h6>Nome: </h6>
+						            			<p><a href="celebritysingle2.html"><[nome]></a></p>
 						            		</div>
 						            		<div class="sb-it">
 						            			<h6>Data di nascita: </h6>
 						            			<p><[anno_nascita]></p>
 						            		</div>
-						            		<div class="sb-it">
-						            			<h6>Paese di nascita:  </h6>
-						            			<p><[paese_nascita]></p>
-						            		</div>
-
 						            		<div class="sb-it">
 						            			<h6>Tags:</h6>
 						            			<p class="tags">
@@ -104,18 +84,6 @@
 						            			</p>
 						            		</div>
 						            	</div>
-
-						            </div>
-						        </div>
-						        <div id="biography" class="tab">
-						           <div class="row">
-						            	<div class="rv-hd">
-											<div>
-												<h3>Biografia di</h3>
-						       	 				<h2><[nome]> <[cognome]></h2>
-											</div>							            						
-						            	</div>
-						            	<p><[biografia]></p>
 						            </div>
 						        </div>
 						        
@@ -124,7 +92,7 @@
 						            	<div class="rv-hd">
 						            		<div>
 						            			<h3>Correlati di</h3>
-					       	 					<h2><[nome]> <[cognome]></h2>
+					       	 					<h2><[nome]></h2>
 						            		</div>
 						            	</div>
 						            	<div class="topbar-filter">
@@ -139,20 +107,17 @@
 										</div>
 										<!-- movie cast -->
 										<div class="mvcast-item">											
-											<[foreach]>
 											<div class="cast-it">
 												<div class="cast-left cebleb-film">
-													<img src='img.php?id=<[idfilm1]>' alt="immagine film non trovata" style="width:150px;">
+													<img src="dtml/image/uploads/film1.jpg" alt="">
 													<div>
-														<a href="moviesingle.html"><[titolofilm1]></a>
-														<p class="time" style="width: auto;">Protagonista: <[nome_protagonista1]></p>
-														<p class="time" style="width: auto;"><[categoria_film]></p>
+														<a href="moviesingle.html">Nome Film </a>
+														<p class="time">Protagonista</p>
 													</div>
 													
 												</div>
-												<p><[datafilm1]></p>
+												<p>Data uscita Film</p>
 											</div>
-											<[/foreach]>
 										</div>
 						            </div>
 					       	 	</div>
