@@ -20,18 +20,18 @@
         <div class="row">
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="row">
-                    <[foreach]>
                     <div class="col-md-4 col-sm-12 col-xs-12">
                         <div class="blog-item-style-2">
+                            <[foreach]>
                             <a href='<[pagina_notizia]>'><img src='imgNotizia.php?id=<[idImgNotizia]>' alt=""></a>
                             <div class="blog-it-infor">
                                 <h3><a href='<[pagina_notizia]>'><[titolo_notizia]></a></h3>
                                 <span class="time"><[data_notizia]></span>
                                 <p><[testo_notizia]></p>
                             </div>
+                            <[/foreach]>
                         </div>
                     </div>
-                    <[/foreach]>
                 </div>
                 <ul class="pagination">
                     <!-- vedere -->
