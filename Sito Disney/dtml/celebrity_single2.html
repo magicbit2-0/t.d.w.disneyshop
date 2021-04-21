@@ -18,11 +18,11 @@
 			<div class="col-md-8 col-sm-12 col-xs-12">
 				<div class="movie-single-ct">
 					<h1 class="bd-hd"><[nome]></h1>
-					<p class="ceb-single"><[parola_chiave]></p>
+					<p class="ceb-single" style="text-transform: uppercase">personaggio</p>
 					<div class="movie-tabs">
 						<div class="tabs">
 							<ul class="tab-links tabs-mv">
-								<li class="active"><a href="#overviewceb"> Generale</a></li>
+								<li class="active"><a href="#overviewceb">Profilo</a></li>
 								<li><a href="#filmography">Filmografia</a></li>
 							</ul>
 						    <div class="tab-content">
@@ -50,9 +50,9 @@
 													<div class="cast-left cebleb-film">
 														<img src='img.php?id=<[idcartone]>' alt="immagine cartone non trovata" width="200px">
 														<div>
-															<a href="moviesingle.html"><[titolocartone]></a>
+															<a href="moviesingle.html"><[titolo_cartone]></a>
 															<p class="time"><[nome_protagonista]></p>
-                                                            <p style="width: auto;"><[datacartone]></p>
+                                                            <p style="width: auto;"><[data_cartone]></p>
 														</div>														
 													</div>
 												</div>
@@ -66,21 +66,19 @@
 						            		</div>
 						            		<div class="sb-it">
 						            			<h6>Data di nascita: </h6>
-						            			<p><[anno_nascita]></p>
+						            			<p><[data_nascita]></p>
 						            		</div>
 						            		<div class="sb-it">
 						            			<h6>Tags:</h6>
 						            			<p class="tags">
 						            				<[foreach]>
-													<span class="time"><a href="moviesingle.html"><[parola_chiave_attore]></a></span>
+													<span class="time"><a href="moviesingle.html"><[parola_chiave]></a></span>
 													<[/foreach]>
 													<[foreach]>
-													<span class="time"><a href="moviesingle.html"><[titolo_film2]></a></span>
+													<span class="time"><a href="moviesingle.html"><[titolo_film]></a></span>
 													<[/foreach]>
 													<span class="time"><a href="moviesingle.html"><[nome]></a></span>
-													<span class="time"><a href="moviesingle.html"><[cognome]></a></span>
-													<span class="time"><a href="moviesingle.html"><[nazionalita]></a></span>
-													<span class="time"><a href="moviesingle.html"><[anno_nascita]></a></span>
+													<span class="time"><a href="moviesingle.html"><[data_nascita]></a></span>
 						            			</p>
 						            		</div>
 						            	</div>
