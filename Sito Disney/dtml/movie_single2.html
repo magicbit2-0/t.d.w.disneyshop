@@ -75,7 +75,7 @@
                                                 <[foreach]>
                                                 <div class="ceb-item">
                                                     <img src='imgPersonaggio.php?id=<[id_personaggio1]>' alt="">
-                                                    <p><a class="img-lightbox"  data-fancybox-group="gallery" href="../dtml/image/uploads/image11.jpg"><[nome_personaggio1]> </a></p>
+                                                    <p><a class="img-lightbox"  data-fancybox-group="gallery" href="celebritysingle2.php?id=<[id_personaggio1]>"><[nome_personaggio1]> </a></p>
                                                 </div>
                                                 <[/foreach]>
                                             </div>
@@ -109,12 +109,12 @@
                                             <div class="sb-it">
                                                 <h6>Protagonisti: </h6>
                                                 <[foreach]>
-                                                <p><a href="celebritysingle.html"><[nome_protagonista]></a> </p>
+                                                <p><a href="celebritysingle2.php?id=<[idProtagonista]>"><[nome_protagonista]></a> </p>
                                                 <[/foreach]>
                                             </div>
                                             <div class="sb-it">
                                                 <h6>Categoria: </h6>
-                                                <p><a href="moviegrid.html"><[categoria]></a></p>
+                                                <p><a href="moviegrid.php?categoria='<[categoria]>'"><[categoria]></a></p>
                                             </div>
                                             <div class="sb-it">
                                                 <h6>Data rilascio: </h6>
@@ -128,11 +128,11 @@
                                                 <h6>Parole chiave: </h6>
                                                 <p class="tags">
                                                     <!-- Parole chiave che ritornano alla stessa pagina o pagine diverse-->
-                                                    <span class="time"><a href="moviegrid.html"><[titolo]></a></span>
-                                                    <span class="time"><a href="moviegrid.html"><[categoria]></a></span>
-                                                    <span class="time"><a href="moviegrid.html"><[data_uscita]></a></span>
+                                                    <span class="time"><a href="moviegrid.php"><[titolo]></a></span>
+                                                    <span class="time"><a href="moviegrid.php?categoria='<[categoria]>'"><[categoria]></a></span>
+                                                    <span class="time"><a href="moviegrid.php"><[data_uscita]></a></span>
                                                     <[foreach]>
-                                                    <span class="time"><a href="celebritygrid01.html"><[nome_protagonista1]></a></span>
+                                                    <span class="time"><a href="celebritygrid01.php"><[nome_protagonista1]></a></span>
                                                     <[/foreach]>
                                                 </p>
                                             </div>
@@ -185,13 +185,7 @@
                                             </select>
                                             <div class="pagination2">
                                                 <span>Pagina 1 di 6:</span>
-                                                <a class="active" href="moviesingle.html">1</a>
-                                                <a href="#">2</a>
-                                                <a href="#">3</a>
-                                                <a href="#">4</a>
-                                                <a href="#">5</a>
-                                                <a href="#">6</a>
-                                                <a href="#"><i class="ion-arrow-right-b"></i></a>
+                                                <a class="active" href="moviesingle2.php?id=<[idImg]>">1</a>
                                             </div>
                                         </div>
                                     </div>
@@ -207,7 +201,7 @@
                                             <[foreach]>
                                             <div class="ceb-item">
                                                 <img src='imgPersonaggio.php?id=<[id_personaggio]>' alt="">
-                                                <p><a class="img-lightbox"  data-fancybox-group="gallery" href="../dtml/image/uploads/image11.jpg"><[nome_personaggio]> </a></p>
+                                                <p><a class="img-lightbox"  data-fancybox-group="gallery" href="celebritysingle2.php?id=<[id_personaggio]>"><[nome_personaggio]> </a></p>
                                             </div>
                                             <[/foreach]>
                                         </div>
@@ -231,7 +225,7 @@
                                         <div class="movie-item-style-2">
                                             <img src="img.php?id=<[id_correlato]>" alt="">
                                             <div class="mv-item-infor">
-                                                <h6><a href="moviesingle.html"><[titolo_correlato]></a></h6>
+                                                <h6><a href="<[categoria_film]>"><[titolo_correlato]></a></h6>
                                                 <p class="rate"><i class="ion-android-star"></i><span><[votazione_correlato]></span> /10</p>
                                                 <p class="describe"><[trama_correlato]></p>
                                                 <p class="run-time"> Durata: <[durata_correlato]><span>Data Rilascio: <[data_uscita_correlato]></span></p>
@@ -248,7 +242,7 @@
                                             </select>
                                             <div class="pagination2">
                                                 <span>Pagina 1 di 2:</span>
-                                                <a class="active" href="moviesingle.html">1</a>
+                                                <a class="active" href="moviesingle.php">1</a>
                                                 <a href="#">2</a>
                                                 <a href="#"><i class="ion-arrow-right-b"></i></a>
                                             </div>

@@ -23,10 +23,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/celebritygrid01.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/celebritygrid01.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/celebritylist.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/celebritylist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_grid01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_grid01.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/movielist.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/movielist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritylist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritylist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +104,7 @@
       <workItem from="1618930912923" duration="1543000" />
       <workItem from="1618932557885" duration="119000" />
       <workItem from="1618932679529" duration="6738000" />
-      <workItem from="1619024162188" duration="25800000" />
+      <workItem from="1619024162188" duration="34414000" />
     </task>
     <servers />
   </component>

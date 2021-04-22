@@ -20,27 +20,26 @@
         <div class="row ipad-width2">
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="topbar-filter">
-                    <p class="pad-change">Trovate <span> <[number_of_films]> celebrità</span> in totale</p>
+                    <p class="pad-change">Trovati <span> <[number_of_films]> personaggi</span> in totale</p>
                     <label>Ordina per:</label>
                     <select>
                         <option value="popularity">Più Cliccati</option>
                         <option value="text">Ordine Alfabetico</option>
                         <option value="date">Data di Nascita</option>
                     </select>
-                    <a href="celebritylist.php" class="list"><i class="ion-ios-list-outline active"></i></a>
-                    <a href="celebritygrid01.php" class="grid"><i class="ion-grid "></i></a>
+                    <a href="<[categoria_lista]>" class="list"><i class="ion-ios-list-outline active"></i></a>
+                    <a href="<[categoria_griglia]>" class="grid"><i class="ion-grid "></i></a>
                 </div>
                 <div class="row">
                     <[foreach]>
                     <div class="col-md-12">
-                        <div class="ceb-item-style-2">
-                            <a href='<[pagina_celebrità]>'>
-                                <img src='<[immagine_cast]>' alt=""></a>
+                        <div class="ceb-item-style-2" style="display: grid;grid-template-columns: 600px auto;grid-template-rows: 250px;">
                             <div class="ceb-infor">
                                 <h2><a href="<[pagina_celebrità]>"><[nome_celebrità]></a></h2>
-                                <span><[ruolo]>, <[paese_nascita]></span>
+                                <span><[ruolo]></span>
                                 <p><[biografia]></p>
-                            </div>
+                                <span><h4><a href="<[pagina_celebrità]>" style="color: lightslategrey;">leggi di più</a></h4></span>
+                            </div><img src='<[immagine_cast]>' alt="" style="height: -webkit-fill-available;">
                         </div>
                     </div>
                     <[/foreach]>
@@ -52,14 +51,10 @@
                         <option value="saab">15 Celebrità</option>
                     </select>
                     <div class="pagination2">
-                        <span>Pagina 1 di 6:</span>
-                        <a class="active" href="celebritylist.php">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#"><i class="ion-arrow-right-b"></i></a>
+                        <span>Pagina <[actual_page]> di <[number_of_pages]>:</span>
+                        <[foreach]>
+                            <[tagpagina]>
+                        <[/foreach]>
                     </div>
                 </div>
             </div>

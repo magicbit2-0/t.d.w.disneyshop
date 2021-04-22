@@ -27,23 +27,28 @@ if (isset($mysqli)) {
         $body->setContent("nome_attore2", $data1['nome_attore']);
     }
 
-    $result1 = $mysqli->query("SELECT p.id as p_id, p.nome as p_nome FROM personaggio_articolo pa join personaggio p on p.id = pa.personaggio_id join articolo a on a.id = pa.articolo_id where a.id = {$_GET['id']}");
+    $result1 = $mysqli->query("SELECT p.id as p_id, p.nome as p_nome FROM personaggio_articolo pa 
+                                    join personaggio p on p.id = pa.personaggio_id 
+                                    join articolo a on a.id = pa.articolo_id where a.id = {$_GET['id']}");
 
     while ($data1 = $result1->fetch_assoc()){
         $body->setContent("id_personaggio", $data1['p_id']);
         $body->setContent("id_personaggio1", $data1['p_id']);
+        $body->setContent("idProtagonista", $data1['p_id']);
         $body->setContent("nome_personaggio1", $data1['p_nome']);
         $body->setContent("nome_personaggio", $data1['p_nome']);
+        $body->setContent("nome_protagonista1", $data1['p_nome']);
+        $body->setContent("nome_protagonista", $data1['p_nome']);
     }
 
-    $result1 = $mysqli->query("select p.nome as p_nome from personaggio p 
+    /*$result1 = $mysqli->query("select p.nome as p_nome from personaggio p
                                     join personaggio_articolo pa on pa.personaggio_id = p.id 
                                     join articolo a on a.id = pa.articolo_id where a.id = {$_GET['id']}");
 
     while ($data1 = $result1->fetch_assoc()){
         $body->setContent("nome_protagonista1", $data1['p_nome']);
         $body->setContent("nome_protagonista", $data1['p_nome']);
-    }
+    }*/
 
     $result = $mysqli->query("(select a1.id , a2.id as id_correlato, a2.titolo as titolo_correlato, a2.categoria as categoria_correlato, a2.votazione as votazione_correlato, 
                                     a2.durata as durata_correlato, a2.trama as trama_correlato, a2.data_uscita as data_uscita_correlato 
@@ -56,6 +61,12 @@ if (isset($mysqli)) {
 
 
     while ($data = $result->fetch_assoc()){
+        if($data['categoria_correlato'] <> 'Film Disney'){
+            $body -> setContent("categoria_film",'moviesingle2.php?id='.$data['id_correlato']);
+        }
+        else{
+            $body -> setContent("categoria_film",'moviesingle.php?id='.$data['id_correlato']);
+        }
         $conteggio++;
         $body->setContent("id_correlato", $data['id_correlato']);
         $body->setContent("titolo_correlato", $data['titolo_correlato']);

@@ -79,21 +79,21 @@
                                             </div>
                                             <div class="title-hd-sm">
                                                 <h4>Cast</h4>
-                                                <a href="#" class="time"> Vedi tutti <i class="ion-ios-arrow-right"></i></a>
+                                                <a href="#cast" class="time"> Vedi tutti <i class="ion-ios-arrow-right"></i></a>
                                             </div>
                                             <!-- movie cast -->
                                             <div class="mvcast-item">
                                                 <div class="cast-it">
                                                     <div class="cast-left">
                                                         <img src='imgActor.php?id=<[id_regista1]>' style="width:80px" alt="">
-                                                        <a href="celebritysingle.html"><[nome_regista1]></a>
+                                                        <a href="celebritysingle.php?<[id_regista1]>"><[nome_regista1]></a>
                                                     </div>
                                                 </div>
                                                 <[foreach]>
                                                 <div class="cast-it">
                                                     <div class="cast-left">
                                                         <img src='imgActor.php?id=<[id_attore1]>' style="width:80px" alt="">
-                                                        <a href="celebritysingle.html"><[nome_attore1]></a>
+                                                        <a href="celebritysingle.php?id=<[id_attore1]>"><[nome_attore1]></a>
                                                     </div>
                                                     <!-- <p>...nome protagonista film </p> -->
                                                 </div>
@@ -103,41 +103,21 @@
                                                 <h4>Recensioni degli utenti</h4>
                                                 <a href="#" class="time"> Vedi tutte le recensioni <i class="ion-ios-arrow-right"></i></a>
                                             </div>
-                                            <!-- movie user review -->
-                                            <div class="mv-user-review-item">
-                                                <h3>Titolo Recensione</h3>
-                                                <div class="no-star">
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star last"></i>
-                                                </div>
-                                                <p class="time">
-                                                    Data recensione da <a href="userprofile.html"> nome_utente</a>
-                                                </p>
-                                                <p> RECENSIONE </p>
-                                            </div>
                                         </div>
                                         <div class="col-md-4 col-xs-12 col-sm-12">
                                             <div class="sb-it">
                                                 <h6>Regista: </h6>
-                                                <p><a href="celebritysingle.html"><[nome_regista1]></a></p>
+                                                <p><a href="celebritysingle.php?id=<[id_regista1]>"><[nome_regista1]></a></p>
                                             </div>
                                             <div class="sb-it">
                                                 <h6>Attori: </h6>
                                                 <[foreach]>
-                                                <p><a href="celebritysingle.html"><[nome_attore2]></a> </p>
+                                                <p><a href="celebritysingle.php?id=<[id_attore2]>"><[nome_attore2]></a> </p>
                                                 <[/foreach]>
                                             </div>
                                             <div class="sb-it">
                                                 <h6>Categoria: </h6>
-                                                <p><a href="moviegrid.html"><[categoria]></a></p>
+                                                <p><a href="moviegrid.php"><[categoria]></a></p>
                                             </div>
                                             <div class="sb-it">
                                                 <h6>Data rilascio: </h6>
@@ -151,15 +131,15 @@
                                                 <h6>Parole chiave: </h6>
                                                 <p class="tags">
                                                     <!-- Parole chiave che ritornano alla stessa pagina o pagine diverse-->
-                                                    <span class="time"><a href="moviegrid.html"><[titolo]></a></span>
-                                                    <span class="time"><a href="moviegrid.html"><[categoria]></a></span>
-                                                    <span class="time"><a href="moviegrid.html"><[data_uscita]></a></span>
+                                                    <span class="time"><a href="moviegrid.php"><[titolo]></a></span>
+                                                    <span class="time"><a href="moviegrid.php"><[categoria]></a></span>
+                                                    <span class="time"><a href="moviegrid.php"><[data_uscita]></a></span>
                                                     <[foreach]>
-                                                    <span class="time"><a href="celebritygrid01.html"><[nome_protagonista1]></a></span>
+                                                    <span class="time"><a href="celebritygrid01.php"><[nome_protagonista1]></a></span>
                                                     <[/foreach]>
                                                     <[foreach]>
-                                                    <span class="time"><a href="celebritygrid01.html"><[regia1]></a></span>
-                                                    <span class="time"><a href="celebritygrid01.html"><[regia2]></a></span>
+                                                    <span class="time"><a href="celebritygrid01.php"><[regia1]></a></span>
+                                                    <span class="time"><a href="celebritygrid01.php"><[regia2]></a></span>
                                                     <[/foreach]>
 
                                                 </p>
@@ -212,14 +192,8 @@
                                                 <option value="saab">10 Recensioni</option>
                                             </select>
                                             <div class="pagination2">
-                                                <span>Pagina 1 di 6:</span>
-                                                <a class="active" href="moviesingle.html">1</a>
-                                                <a href="#">2</a>
-                                                <a href="#">3</a>
-                                                <a href="#">4</a>
-                                                <a href="#">5</a>
-                                                <a href="#">6</a>
-                                                <a href="#"><i class="ion-arrow-right-b"></i></a>
+                                                <span>Pagina 1 di 1:</span>
+                                                <a class="active" href="moviesingle.php">1</a>
                                             </div>
                                         </div>
                                     </div>
@@ -235,7 +209,7 @@
                                             <div class="cast-it">
                                                 <div class="cast-left">
                                                     <img src="imgActor.php?id=<[idRegista]>" style="width:100px" alt="">
-                                                    <a href="celebritysingle.html">clicca qui per saperne di più</a>
+                                                    <a href="celebritysingle.php?id=<[idRegista]>">clicca qui per saperne di più</a>
                                                 </div>
                                                 <p><[nome_regista]></p>
                                             </div>
@@ -248,7 +222,7 @@
                                             <div class="cast-it">
                                                 <div class="cast-left">
                                                     <img src='imgActor.php?id=<[id_attore]>' alt="" style="width:100px">
-                                                    <a href="celebritysingle.html"><[nome_attore]></a>
+                                                    <a href="celebritysingle.php?id=<[id_attore]>"><[nome_attore]></a>
                                                 </div>
                                             </div>
                                             <[/foreach]>
@@ -273,7 +247,7 @@
                                         <div class="movie-item-style-2">
                                             <img src="img.php?id=<[id_correlato]>" alt="">
                                             <div class="mv-item-infor">
-                                                <h6><a href="moviesingle.html"><[titolo_correlato]></a></h6>
+                                                <h6><a href="<[categoria_film]>"><[titolo_correlato]></a></h6>
                                                 <p class="rate"><i class="ion-android-star"></i><span><[votazione_correlato]></span> /10</p>
                                                 <p class="describe"><[trama_correlato]></p>
                                                 <p class="run-time"> Durata: <[durata_correlato]><span>Data Rilascio: <[data_uscita_correlato]></span></p>
@@ -289,7 +263,7 @@
                                             </select>
                                             <div class="pagination2">
                                                 <span>Pagina 1 di 2:</span>
-                                                <a class="active" href="moviesingle.html">1</a>
+                                                <a class="active" href="moviesingle.php">1</a>
                                                 <a href="#">2</a>
                                                 <a href="#"><i class="ion-arrow-right-b"></i></a>
                                             </div>

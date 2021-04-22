@@ -54,7 +54,7 @@ if (isset($mysqli)) {
         default:
         $result = $mysqli->query("select p.id as idPersonaggio, p.nome as nomePersonaggio, k.testo as testo from personaggio p 
                                     join parola_chiave_personaggio pc on pc.personaggio_id = p.id join parola_chiave k on pc.parola_chiave_id = k.id where k.testo = 'personaggio' 
-                                    union select p.id, p.nome, p.nome from personaggio p where p.id > 25 union
+                                    union
                                     select r.id, concat(r.nome,' ', r.cognome) , k.testo from parola_chiave_regia pr 
                                     join parola_chiave k on pr.parola_chiave_id = k.id join regia r on pr.regia_id=r.id
                                     ORDER BY nomePersonaggio LIMIT " . $this_page_first_result . ',' . $results_per_page);

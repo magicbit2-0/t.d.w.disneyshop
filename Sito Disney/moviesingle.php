@@ -32,6 +32,7 @@ if (isset($mysqli)) {
         $body->setContent("id_attore", $data1['id_attore']);
         $body->setContent("nome_attore", $data1['nome_attore']);
         $body->setContent("id_attore1", $data1['id_attore']);
+        $body->setContent("id_attore2", $data1['id_attore']);
         $body->setContent("nome_attore1", $data1['nome_attore']);
         $body->setContent("nome_attore2", $data1['nome_attore']);
     }
@@ -74,6 +75,12 @@ if (isset($mysqli)) {
 
 
        while ($data = $result->fetch_assoc()){
+           if($data['categoria_correlato'] <> 'Film Disney'){
+               $body -> setContent("categoria_film",'moviesingle2.php?id='.$data['id_correlato']);
+           }
+           else{
+               $body -> setContent("categoria_film",'moviesingle.php?id='.$data['id_correlato']);
+           }
            $conteggio++;
             $body->setContent("id_correlato", $data['id_correlato']);
             $body->setContent("titolo_correlato", $data['titolo_correlato']);
