@@ -21,8 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/celebritysingle2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/celebritysingle2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_single2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_single2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/celebritygrid01.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/celebritygrid01.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_grid01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_grid01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebritygrid01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebritygrid01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/moviegrid.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviegrid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/movielist.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/movielist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +103,7 @@
       <workItem from="1618930912923" duration="1543000" />
       <workItem from="1618932557885" duration="119000" />
       <workItem from="1618932679529" duration="6738000" />
-      <workItem from="1619024162188" duration="1856000" />
+      <workItem from="1619024162188" duration="18653000" />
     </task>
     <servers />
   </component>
@@ -138,10 +143,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="139" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1619025877195" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1619025547272">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1619037352654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1619025547272" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1619037352654" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1618240540702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

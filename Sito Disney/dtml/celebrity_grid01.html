@@ -20,7 +20,7 @@
         <div class="row ipad-width2">
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="topbar-filter">
-                    <p>Trovate <span> <[conteggio_celebrità]> </span> in totale</p>
+                    <p>Trovate <span> <[number_of_films]> personaggi e altri attori </span> in totale</p>
                     <label>Ordina per:</label>
                     <select>
                         <option value="popularity">Più Cliccati</option>
@@ -31,17 +31,16 @@
                     <a href="celebritygrid01.php" class="grid"><i class="ion-grid active"></i></a>
                 </div>
                 <div class="celebrity-items">
+                    <[foreach]>
                     <div class="ceb-item">
-                        <[foreach]>
                         <a href='<[pagina_celebrità]>'>
-                            <img src='imgPersonaggio.php?id=<[idImgPersonaggio]>' alt=""></a>
-                            <img src='imgActor.php?id=<[idImgAttore]>' alt=""></a>
+                            <img src='<[immagine_cast]>' alt=""></a>
                         <div class="ceb-infor">
                             <h2><a href='<[pagina_celebrità]>'><[nome_celebrità]></a></h2>
-                            <span>Personaggio/Attore</span>
+                            <span style="text-transform:uppercase;"><[ruolo]></span>
                         </div>
-                        <[/foreach]>
                     </div>
+                    <[/foreach]>
                 </div>
                 <div class="topbar-filter">
                     <label>Celebrità per pagina:</label>
@@ -50,15 +49,18 @@
                         <option value="saab">15 Celebrità</option>
                     </select>
                     <div class="pagination2">
-                        <span>Pagina 1 di 6:</span>
-                        <a class="active" href="#">1</a>
+                        <span>Pagina <[actual_page]> di <[number_of_pages]>:</span>
+                        <[foreach]>
+                            <[tagpagina]>
+                        <[/foreach]>
+                        <!--<a class="active" href="#">1</a>
                         <a class="active" href="#">2</a>
-                        <!--<a href="#">2</a>-->
+                        <a href="#">2</a>
                         <a href="#">3</a>
                         <a href="#">4</a>
                         <a href="#">5</a>
                         <a href="#">6</a>
-                        <a href="#"><i class="ion-arrow-right-b"></i></a>
+                        <a href="#"><i class="ion-arrow-right-b"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -227,9 +229,9 @@
                         <div class="celeb-item">
                             <[foreach]>
                             <!-- Personaggio e attore-->
-                            <a href='pagina_celebrità'><img class="logo" src='imgPersonaggio.php?id=<[idImgPersonaggio]>' alt="" width="100" height="70"></a>
+                            <a href='pagina_celebrità'><img class="logo" src='imgPersonaggio.php?id=<[idImgPersonaggio1]>' alt="" width="100" height="70"></a>
                             <div class="celeb-author">
-                                <h6><a href='pagina_celebrità'><[nome_celebrità]></a></h6>
+                                <h6><a href='pagina_celebrità'><[nome_celebrita1]></a></h6>
                                 <span>Personaggio/Attore</span>
                             </div>
                             <[/foreach]>

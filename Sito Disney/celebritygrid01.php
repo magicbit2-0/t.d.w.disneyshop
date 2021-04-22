@@ -9,21 +9,49 @@ $conteggio_celebrità = 0;
 
 if (isset($mysqli)) {
 
-    $result = $mysqli->query("(SELECT id as idImgPersonaggio, nome FROM personaggio) union (SELECT id as idImgRegia, concat(nome,' ', cognome) as nome_regia FROM regia)");
+    $results_per_page = 15;
+    if (!isset($_GET['page'])) {
+        $page = 1;
+        $body -> setContent("actual_page", 1);
+    } else {
+        $page = $_GET['page'];
+        $body -> setContent("actual_page", $_GET['page']);
+    }
+    $this_page_first_result = ($page - 1) * $results_per_page;
 
-    while ($data = $result->fetch_assoc()){
-        /*if ($data[''] == ""){
-            $body -> setContent("pagina_celebrità", 'celebritysingle2.php?id=<[idImgPersonaggio]>');
+    $result = $mysqli->query("select p.id as idPersonaggio, p.nome as nomePersonaggio, k.testo as testo from personaggio p 
+                                    join parola_chiave_personaggio pc on pc.personaggio_id = p.id join parola_chiave k on pc.parola_chiave_id = k.id where k.testo = 'personaggio' 
+                                    union select p.id, p.nome, p.nome from personaggio p where p.id > 25 union
+                                    select r.id, concat(r.nome,' ', r.cognome) , k.testo from parola_chiave_regia pr 
+                                    join parola_chiave k on pr.parola_chiave_id = k.id join regia r on pr.regia_id=r.id
+                                    ORDER BY nomePersonaggio LIMIT " . $this_page_first_result . ',' . $results_per_page);
+
+            $result0 = $mysqli->query("SELECT id FROM personaggio");
+            $number_of_results = mysqli_num_rows($result0); //conta il numero delle righe ottenute
+            $body -> setContent("number_of_films", $number_of_results);
+            $number_of_pages = ceil($number_of_results / $results_per_page);
+            $body -> setContent("number_of_pages", $number_of_pages);
+            for ($page = 1; $page <= $number_of_pages; $page++) {
+                $body->setContent("tagpagina",'<a href="celebritygrid01.php?page=' . $page . '">' . $page . '</a> ');
+            }
+
+while ($data = $result->fetch_assoc()){
+        if ($data['testo'] == "attore" or $data['testo'] == "regia"){
+            $body -> setContent("immagine_cast", "imgActor.php?id=".$data['idPersonaggio']);
+            $body -> setContent("pagina_celebrità", 'celebritysingle.php?id=<[idPersonaggio]>');
+            $body -> setContent("testo", $data['testo']);
+            $body -> setContent("nome_celebrità", $data['nomePersonaggio']);
+        } else {
+            $body -> setContent("immagine_cast", "imgPersonaggio.php?id=".$data['idPersonaggio']);
+            $body -> setContent("pagina_celebrità", 'celebritysingle2.php?id=<[idPersonaggio]>');
+            $body -> setContent("testo", "PERSONAGGIO");
+            $body -> setContent("nome_celebrità", $data['nomePersonaggio']);
         }
-        else if ($data[''] <> ""){
-            $body -> setContent("pagina_celebrità", 'celebritysingle.php?id=<[idImgRegia]>');
-        }*/
         $conteggio++;
-        $body->setContent("nome_personaggio", $data['nome']);
-        $body->setContent("nome_attore", $data['nome_regia']);
-        $body->setContent("idImgPersonaggio", $data['id']);
+
     }
     $body->setContent("conteggio", "".$conteggio);
+    $body -> setContent("actual_page", $_GET['page']);
 
 }
 $main->setContent("body", $body->get());

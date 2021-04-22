@@ -19,16 +19,19 @@
         <div class="row ipad-width">
             <div class="col-md-8 col-sm-12 col-xs-12">
                 <div class="topbar-filter">
-                    <p>Trovati <span>81 Film</span> in totale</p>
+                    <p>Trovati <span><[number_of_films]> Film</span> in totale</p>
                     <label>Ordina per:</label>
                     <select>
-                        <option value="popularity">Più popolari</option>
+                        <[foreach]>
+                            <[campo_select]>
+                        <[/foreach]>
+                        <!--<option value="popularity">Più popolari</option>
                         <option value="rating">Più votati</option>
                         <option value="date">Più Recenti</option>
-                        <option value="date">Meno Recenti</option>
+                        <option value="date">Meno Recenti</option>-->
                     </select>
-                    <a href="movielist.php" class="list"><i class="ion-ios-list-outline "></i></a>
-                    <a href="moviegrid.php" class="grid"><i class="ion-grid active"></i></a>
+                    <a href="<[categoria_lista]>" class="list"><i class="ion-ios-list-outline "></i></a>
+                    <a href="<[categoria_griglia]>" class="grid"><i class="ion-grid active"></i></a>
                 </div>
                 <div class="flex-wrap-movielist">
                     <[foreach]>
@@ -51,14 +54,18 @@
                         <option value="saab">10 Film</option>
                     </select>
                     <div class="pagination2">
-                        <span>Paina 1 di 2:</span>
+                        <span>Pagina <[actual_page]> di <[number_of_pages]>:</span>
+                        <[foreach]>
+                            <[tagpagina]>
+                        <[/foreach]>
+                        <!--
                         <a class="active" href="moviegrid.php">1</a>
                         <a href="#">2</a>
                         <a href="#">3</a>
                         <a href="#">...</a>
                         <a href="#">4</a>
                         <a href="#">5</a>
-                        <a href="#"><i class="ion-arrow-right-b"></i></a>
+                        <a href="#"><i class="ion-arrow-right-b"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -197,9 +204,9 @@
                     <div class="sb-facebook sb-it">
                         <a href = "https://www.facebook.com/DisneyIT/"><h4 class="sb-title">Trovaci su Facebook</h4></a>
                         <div class="slick-tw">
-                            <img src="dtml/image/img/fb1.jpg" width="500" height=auto>
-                            <img src="dtml/image/img/fb2.jpg" width="500" height=auto>
-                            <img src="dtml/image/img/fb3.jpg" width="500" height=auto>
+                            <img src="../Sito Disney/dtml/images/img/fb1.jpg" width="500" height=auto>
+                            <img src="../Sito Disney/dtml/images/img/fb2.jpg" width="500" height=auto>
+                            <img src="../Sito Disney/dtml/images/img/fb3.jpg" width="500" height=auto>
                         </div>
                     </div>
                     <div class="sb-twitter sb-it">
