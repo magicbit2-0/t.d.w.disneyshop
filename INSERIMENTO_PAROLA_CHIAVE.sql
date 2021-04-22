@@ -1,0 +1,11 @@
+INSERT INTO parola_chiave_personaggio(id, personaggio_id, parola_chiave_id) VALUES ('51', '26', '3');
+INSERT INTO parola_chiave_personaggio(id, personaggio_id, parola_chiave_id) VALUES ('52', '27', '3');
+INSERT INTO parola_chiave_personaggio(id, personaggio_id, parola_chiave_id) VALUES ('53', '28', '3');
+INSERT INTO parola_chiave_personaggio(id, personaggio_id, parola_chiave_id) VALUES ('54', '29', '3');
+INSERT INTO parola_chiave_personaggio(id, personaggio_id, parola_chiave_id) VALUES ('55', '30', '3');
+INSERT INTO parola_chiave_personaggio(id, personaggio_id, parola_chiave_id) VALUES ('56', '31', '3');
+INSERT INTO parola_chiave_personaggio(id, personaggio_id, parola_chiave_id) VALUES ('57', '32', '3');
+INSERT INTO parola_chiave_personaggio(id, personaggio_id, parola_chiave_id) VALUES ('58', '33', '3');
+INSERT INTO parola_chiave_personaggio(id, personaggio_id, parola_chiave_id) VALUES ('59', '34', '3');
+INSERT INTO parola_chiave_personaggio(id, personaggio_id, parola_chiave_id) VALUES ('60', '35', '3');
+INSERT INTO parola_chiave_personaggio(id, personaggio_id, parola_chiave_id) VALUES ('61', '36', '3');
