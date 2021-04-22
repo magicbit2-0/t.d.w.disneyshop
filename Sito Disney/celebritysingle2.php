@@ -27,6 +27,14 @@ if(isset($mysqli)){
         $body->setContent("data_cartone", $data['data_uscita']);
 
     }
+
+    $result = $mysqli->query("select a.id as idfilm, a.titolo as titolofilm, a.categoria as categoria, a.data_uscita as data from personaggio as p join personaggio_articolo as pa on (p.id = pa.personaggio_id) join articolo as a on (pa.articolo_id = a.id) where p.id = {$_GET['id']}");   
+    while($data = $result->fetch_assoc()){
+        $body->setContent("idfilm1",$data['idfilm']);
+        $body->setContent("titolofilm1",$data['titolofilm']);
+        $body->setContent("categoria_film",$data['categoria']);
+        $body->setContent("datafilm1",$data['data']);
+    }
 }
 
 $main->setContent("body", $body->get());
