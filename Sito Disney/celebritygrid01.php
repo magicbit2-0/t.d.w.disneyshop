@@ -38,12 +38,12 @@ if (isset($mysqli)) {
 while ($data = $result->fetch_assoc()){
         if ($data['testo'] == "attore" or $data['testo'] == "regia"){
             $body -> setContent("immagine_cast", "imgActor.php?id=".$data['idPersonaggio']);
-            $body -> setContent("pagina_celebrità", 'celebritysingle.php?id=<[idPersonaggio]>');
+            $body -> setContent("pagina_celebrità", "celebritysingle.php?id=".$data['idPersonaggio']);
             $body -> setContent("testo", $data['testo']);
             $body -> setContent("nome_celebrità", $data['nomePersonaggio']);
         } else {
             $body -> setContent("immagine_cast", "imgPersonaggio.php?id=".$data['idPersonaggio']);
-            $body -> setContent("pagina_celebrità", 'celebritysingle2.php?id=<[idPersonaggio]>');
+            $body -> setContent("pagina_celebrità", "celebritysingle2.php?id=".$data['idPersonaggio']);
             $body -> setContent("testo", "PERSONAGGIO");
             $body -> setContent("nome_celebrità", $data['nomePersonaggio']);
         }
