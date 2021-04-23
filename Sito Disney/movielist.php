@@ -22,8 +22,8 @@ if (isset($mysqli)) {
         $result = $mysqli->query("SELECT id as idImg, trama, durata, titolo, data_uscita, votazione, categoria 
                                     FROM articolo ORDER BY votazione desc, data_uscita desc 
                                     LIMIT " . $this_page_first_result . ',' . $results_per_page);
-                $body -> setContent("categoria_lista",'movielist.php?categoria='. $_GET['categoria']);
-                $body -> setContent("categoria_griglia",'moviegrid.php?categoria='. $_GET['categoria']);
+                $body -> setContent("categoria_lista",'movielist.php');
+                $body -> setContent("categoria_griglia",'moviegrid.php');
 
         $result0 = $mysqli->query("SELECT id FROM articolo");
         $number_of_results = mysqli_num_rows($result0); //conta il numero delle righe ottenute

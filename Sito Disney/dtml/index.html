@@ -209,7 +209,10 @@
 				<option value="saab">Personaggi</option>
 				<option value="saab">Cast</option>
 			</select>
-			<input type="text" placeholder="Cerca per cartone, film, personaggio o cast">
+			<form action ="searchpage.php?chiave=<[parolaCercata]>" method = "post"  style="width: 100%; display:inline-flex">
+				<input name="parolaCercata" type="text" placeholder="Cerca per cartone, film, personaggio o cast">
+				<input type="submit" href="searchpage.php" value="Cerca" name="btn" style="background: none;">
+			</form>
 		</div>
 	</div>
 </header>

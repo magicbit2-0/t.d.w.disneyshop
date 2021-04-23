@@ -1,0 +1,228 @@
+<div class="hero common-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-ct">
+                    <h1>Tutti i Film</h1>
+                    <ul class="breadcumb">
+                        <li class="active"><a href="index.php">Home</a></li>
+                        <li> <span class="ion-ios-arrow-right"></span> Visualizzazione a griglia </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-single">
+    <div class="container">
+        <div class="row ipad-width">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <div class="topbar-filter">
+                    <p>Trovati <span><[number_of_films]> Film</span> in totale</p>
+                    <label>Ordina per:</label>
+                    <select>
+                        <[foreach]>
+                        <[campo_select]>
+                        <[/foreach]>
+                        <!--<option value="popularity">Più popolari</option>
+                        <option value="rating">Più votati</option>
+                        <option value="date">Più Recenti</option>
+                        <option value="date">Meno Recenti</option>-->
+                    </select>
+                    <a href="<[categoria_lista]>" class="list"><i class="ion-ios-list-outline "></i></a>
+                    <a href="<[categoria_griglia]>" class="grid"><i class="ion-grid active"></i></a>
+                </div>
+                <div class="flex-wrap-movielist">
+                    <[foreach]>
+                    <div class="movie-item-style-2 movie-item-style-1">
+                        <img src='<[immagineCercata]>' alt="">
+                        <div class="hvr-inner">
+                            <a href='<[pagina_articolo_categoria]>'> Leggi di più <i class="ion-android-arrow-dropright"></i></a>
+                        </div>
+                        <div class="mv-item-infor">
+                            <h6><a href='<[pagina_articolo_categoria]>'><[titolo]></a></h6>
+                            <p class="rate"><i class="ion-android-star"></i><span><[votazione]></span></p>
+                            <p class="rate"><span><[categoria]></span></p>
+                        </div>
+                    </div>
+                    <[/foreach]>
+                </div>
+                <div class="topbar-filter">
+                    <label>Film per pagina:</label>
+                    <select>
+                        <option value="range">20 Film</option>
+                        <option value="saab">10 Film</option>
+                    </select>
+                    <div class="pagination2">
+                        <span>Pagina <[actual_page]> di <[number_of_pages]>:</span>
+                        <[foreach]>
+                        <[tagpagina]>
+                        <[/foreach]>
+                        <!--
+                        <a class="active" href="moviegrid.php">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">...</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#"><i class="ion-arrow-right-b"></i></a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="sidebar">
+                    <div class="searh-form">
+                        <h4 class="sb-title">Cerca Film</h4>
+                        <form class="form-style-1" action="#">
+                            <div class="row">
+                                <div class="col-md-12 form-it">
+                                    <label>Titolo</label>
+                                    <input type="text" placeholder="Nome del Film">
+                                </div>
+                                <div class="col-md-12 form-it">
+                                    <label>Categoria</label>
+                                    <div class="group-ip">
+                                        <select
+                                                name="skills" multiple="" class="ui fluid dropdown">
+                                            <option value="">Inserisci la categoria</option>
+                                            <option value="Action1">Cartoni Disney</option>
+                                            <option value="Action2">Cartoni Pixar</option>
+                                            <option value="Action3">Film Disney</option>
+                                            <option value="Action4">Cortometraggi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-it">
+                                    <label>Anno</label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <select>
+                                                <option value="range">Da</option>
+                                                <option value="number">1937</option>
+                                                <option value="number">1940</option>
+                                                <option value="number">1941</option>
+                                                <option value="number">1942</option>
+                                                <option value="number">1950</option>
+                                                <option value="number">1951</option>
+                                                <option value="number">1953</option>
+                                                <option value="number">1955</option>
+                                                <option value="number">1959</option>
+                                                <option value="number">1961</option>
+                                                <option value="number">1963</option>
+                                                <option value="number">1967</option>
+                                                <option value="number">1970</option>
+                                                <option value="number">1973</option>
+                                                <option value="number">1981</option>
+                                                <option value="number">1989</option>
+                                                <option value="number">1991</option>
+                                                <option value="number">1992</option>
+                                                <option value="number">1994</option>
+                                                <option value="number">1995</option>
+                                                <option value="number">1996</option>
+                                                <option value="number">1997</option>
+                                                <option value="number">1998</option>
+                                                <option value="number">1999</option>
+                                                <option value="number">2000</option>
+                                                <option value="number">2001</option>
+                                                <option value="number">2002</option>
+                                                <option value="number">2003</option>
+                                                <option value="number">2004</option>
+                                                <option value="number">2005</option>
+                                                <option value="number">2006</option>
+                                                <option value="number">2007</option>
+                                                <option value="number">2008</option>
+                                                <option value="number">2009</option>
+                                                <option value="number">2010</option>
+                                                <option value="number">2012</option>
+                                                <option value="number">2013</option>
+                                                <option value="number">2014</option>
+                                                <option value="number">2015</option>
+                                                <option value="number">2016</option>
+                                                <option value="number">2017</option>
+                                                <option value="number">2018</option>
+                                                <option value="number">2019</option>
+                                                <option value="number">2020</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select>
+                                                <option value="range">A</option>
+                                                <option value="number">1937</option>
+                                                <option value="number">1940</option>
+                                                <option value="number">1941</option>
+                                                <option value="number">1942</option>
+                                                <option value="number">1950</option>
+                                                <option value="number">1951</option>
+                                                <option value="number">1953</option>
+                                                <option value="number">1955</option>
+                                                <option value="number">1959</option>
+                                                <option value="number">1961</option>
+                                                <option value="number">1963</option>
+                                                <option value="number">1967</option>
+                                                <option value="number">1970</option>
+                                                <option value="number">1973</option>
+                                                <option value="number">1981</option>
+                                                <option value="number">1989</option>
+                                                <option value="number">1991</option>
+                                                <option value="number">1992</option>
+                                                <option value="number">1994</option>
+                                                <option value="number">1995</option>
+                                                <option value="number">1996</option>
+                                                <option value="number">1997</option>
+                                                <option value="number">1998</option>
+                                                <option value="number">1999</option>
+                                                <option value="number">2000</option>
+                                                <option value="number">2001</option>
+                                                <option value="number">2002</option>
+                                                <option value="number">2003</option>
+                                                <option value="number">2004</option>
+                                                <option value="number">2005</option>
+                                                <option value="number">2006</option>
+                                                <option value="number">2007</option>
+                                                <option value="number">2008</option>
+                                                <option value="number">2009</option>
+                                                <option value="number">2010</option>
+                                                <option value="number">2012</option>
+                                                <option value="number">2013</option>
+                                                <option value="number">2014</option>
+                                                <option value="number">2015</option>
+                                                <option value="number">2016</option>
+                                                <option value="number">2017</option>
+                                                <option value="number">2018</option>
+                                                <option value="number">2019</option>
+                                                <option value="number">2020</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <input class="submit" type="submit" value="cerca">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sb-facebook sb-it">
+                        <a href = "https://www.facebook.com/DisneyIT/"><h4 class="sb-title">Trovaci su Facebook</h4></a>
+                        <div class="slick-tw">
+                            <img src="../Sito Disney/dtml/images/img/fb1.jpg" width="500" height=auto>
+                            <img src="../Sito Disney/dtml/images/img/fb2.jpg" width="500" height=auto>
+                            <img src="../Sito Disney/dtml/images/img/fb3.jpg" width="500" height=auto>
+                        </div>
+                    </div>
+                    <div class="sb-twitter sb-it">
+                        <h4 class="sb-title">#Twitta con noi</h4>
+                        <div class="slick-tw">
+                            <div class="tweet item" id="1337200221017808900">
+                            </div>
+                            <div class="tweet item" id="1337199381855039489">
+                            </div>
+                            <div class="tweet item" id="1337819509978087429">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
