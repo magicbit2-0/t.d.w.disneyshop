@@ -20,20 +20,9 @@
             <div class="col-md-8 col-sm-12 col-xs-12">
                 <div class="topbar-filter">
                     <p>Trovati <span><[number_of_films]> Film</span> in totale</p>
-                    <label>Ordina per:</label>
-                    <select>
-                        <[foreach]>
-                        <[campo_select]>
-                        <[/foreach]>
-                        <!--<option value="popularity">Più popolari</option>
-                        <option value="rating">Più votati</option>
-                        <option value="date">Più Recenti</option>
-                        <option value="date">Meno Recenti</option>-->
                     </select>
-                    <a href="<[categoria_lista]>" class="list"><i class="ion-ios-list-outline "></i></a>
-                    <a href="<[categoria_griglia]>" class="grid"><i class="ion-grid active"></i></a>
                 </div>
-                <div class="celebrity-items" >
+                <div class="celebrity-items" style="align-items: baseline;" >
                     <[foreach]>
                     <div class="ceb-item" >
                         <a href='<[pagina_articolo_categoria]>'>
@@ -46,30 +35,10 @@
                     </div>
                     <[/foreach]>
                 </div>
-                <div class="topbar-filter">
-                    <label>Film per pagina:</label>
-                    <select>
-                        <option value="range">20 Film</option>
-                        <option value="saab">10 Film</option>
-                    </select>
-                    <div class="pagination2">
-                        <span>Pagina <[actual_page]> di <[number_of_pages]>:</span>
-                        <[foreach]>
-                        <[tagpagina]>
-                        <[/foreach]>
-                        <!--
-                        <a class="active" href="moviegrid.php">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">...</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#"><i class="ion-arrow-right-b"></i></a>-->
-                    </div>
-                </div>
+
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="sidebar">
+                <div class="sidebar" style="border-left: 2px solid #38495c;margin-left: 50px;padding-left: 10px;">
                     <div class="searh-form">
                         <h4 class="sb-title">Cerca Film</h4>
                         <form class="form-style-1" action="#">
@@ -81,8 +50,7 @@
                                 <div class="col-md-12 form-it">
                                     <label>Categoria</label>
                                     <div class="group-ip">
-                                        <select
-                                                name="skills" multiple="" class="ui fluid dropdown">
+                                        <select name="skills" multiple="" class="ui fluid dropdown">
                                             <option value="">Inserisci la categoria</option>
                                             <option value="Action1">Cartoni Disney</option>
                                             <option value="Action2">Cartoni Pixar</option>
