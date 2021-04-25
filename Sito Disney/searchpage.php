@@ -6,9 +6,19 @@ require "include/template2.inc.php";
 $main=new Template("dtml/index.html");
 $body=new Template("dtml/search_page.html");
 $ricerca = "%{$_POST['parolaCercata']}%";
+$ricerca2 = "%{$_POST['parolaCercata2']}%";
 if (isset($mysqli)) {
 
-    $result = $mysqli->query("(SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
+    if(isset($_POST['categorie'])){
+        $result = $mysqli->query("SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
+                                    FROM articolo a join articolo_parola_chiave apk on apk.articolo_id = a.id
+                                    join parola_chiave k on k.id = apk.parola_chiave_id
+                                    where a.titolo like '$ricerca2' and a.categoria like \"{$_POST['categorie']}\"
+                                    and year(a.data_uscita)>= {$_POST['da']} and year(a.data_uscita) <= {$_POST['a']} 
+                                    ORDER BY votazione desc, data_uscita desc");
+    }
+    else {
+        $result = $mysqli->query("(SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
                                     FROM articolo a join personaggio_articolo pa on pa.articolo_id = a.id 
                                     join personaggio p on p.id = pa.personaggio_id
 									left join backstage_articolo ba on ba.articolo_id = a.id
@@ -31,9 +41,10 @@ if (isset($mysqli)) {
                                     join parola_chiave k on k.id=pkr.parola_chiave_id
                                     where (concat(r.nome,' ',r.cognome) like '$ricerca' or r.nome like '$ricerca' or r.cognome like '$ricerca' or k.testo like 
                                     '$ricerca' or a.titolo like '$ricerca' or r.anno_nascita like '$ricerca') and k.testo='attore' or 'regia')");
+    }
+
     $number_of_results = mysqli_num_rows($result);
     $body -> setContent("number_of_films", $number_of_results);
-
 
     while ($data = $result->fetch_assoc()) {
         if ($data['categoria'] == "Film Disney"){

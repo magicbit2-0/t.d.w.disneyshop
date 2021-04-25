@@ -7,7 +7,7 @@ $main=new Template("dtml/index.html");
 $body=new Template("dtml/movie_grid.html");
 
 if (isset($mysqli)) {
-
+    echo $_GET['ordinamento'].' ciao '.$_POST['categorie'];
     $results_per_page = 12;
     if (!isset($_GET['page'])) {
         $page = 1;
@@ -61,7 +61,6 @@ if (isset($mysqli)) {
         $body->setContent("idImgProd", $data['idImgProd']);
     }
     $body -> setContent("actual_page", $_GET['page']);
-
 }
 $main->setContent("body", $body->get());
 $main->close();
