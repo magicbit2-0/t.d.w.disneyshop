@@ -5,6 +5,7 @@ require "include/template2.inc.php";
 
 $main=new Template("dtml/index.html");
 $body=new Template("dtml/celebrity_single2.html");
+$numero=0;
 
 if(isset($mysqli)){
 
@@ -25,7 +26,6 @@ if(isset($mysqli)){
         $body->setContent("titolo_film", $data['titolo']);
         $body->setContent("titolo_cartone", $data['titolo']);
         $body->setContent("data_cartone", $data['data_uscita']);
-
     }
 
     $result = $mysqli->query("select a.id as idfilm, a.titolo as titolofilm, a.categoria as categoria, a.data_uscita as data from personaggio as p join personaggio_articolo as pa on (p.id = pa.personaggio_id) join articolo as a on (pa.articolo_id = a.id) where p.id = {$_GET['id']}");   
@@ -34,7 +34,10 @@ if(isset($mysqli)){
         $body->setContent("titolofilm1",$data['titolofilm']);
         $body->setContent("categoria_film",$data['categoria']);
         $body->setContent("datafilm1",$data['data']);
+        $numero++;
     }
+
+    $body->setContent("numero",$numero);
 }
 
 $main->setContent("body", $body->get());

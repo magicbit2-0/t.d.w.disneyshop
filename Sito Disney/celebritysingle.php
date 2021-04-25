@@ -5,6 +5,7 @@ require "include/template2.inc.php";
 
 $main=new Template("dtml/index.html");
 $body=new Template("dtml/celebrity_single.html");
+$numero_filmografia=0;
 
 if (isset($mysqli)) {
 
@@ -17,6 +18,7 @@ if (isset($mysqli)) {
 
     $result1 = $mysqli->query("select distinct a.id as idfilm, a.titolo as titolofilm, a.data_uscita as datafilm, a.categoria, ps.nome as nome_protagonista from regia r join backstage_articolo b on (r.id = b.regia_id) join articolo a on (b.articolo_id = a.id) join personaggio_articolo pa on pa.articolo_id = a.id join personaggio ps on ps.id = pa.personaggio_id where r.id = {$_GET['id']} group by a.id");
     while ($data1 = $result1->fetch_assoc()){
+        $numero_filmografia++;
         $body->setContent("idfilm", $data1['idfilm']);
         $body->setContent("idfilm1", $data1['idfilm']);
         $body->setContent("titolofilm", $data1['titolofilm']);
@@ -39,7 +41,7 @@ if (isset($mysqli)) {
         $body->setContent("parola_chiave_attore", $data['testo']);
     }
 
-
+    $body->setContent("numero",$numero_filmografia);
 }
 
 $main->setContent("body", $body->get());
