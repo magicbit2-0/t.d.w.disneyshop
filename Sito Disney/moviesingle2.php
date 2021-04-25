@@ -9,15 +9,15 @@ $conteggio = 0;
 $conteggio_recensioni = 0;
 
 if (isset($mysqli)) {
-    $result = $mysqli->query("select id as idImg, titolo, data_uscita, durata, trama, votazione, prezzo, categoria from articolo where id = {$_GET['id']}");
+    $result = $mysqli->query("(select id as idImg, titolo, data_uscita, durata, trama, votazione, prezzo, categoria from articolo where id = {$_GET['id']})");
     $data = $result->fetch_assoc();
 
     foreach ($data as $key => $value){
         $body->setContent($key,$value);
     }
 
-    $result1 = $mysqli->query("select r.id as id_attore, concat(r.nome,' ', r.cognome) as nome_attore from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id 
-                                    join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'attore' and a.id = {$_GET['id']}");
+    $result1 = $mysqli->query("(select r.id as id_attore, concat(r.nome,' ', r.cognome) as nome_attore from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id 
+                                    join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'attore' and a.id = {$_GET['id']})");
 
     while ($data1 = $result1->fetch_assoc()){
         $body->setContent("id_attore", $data1['id_attore']);
@@ -27,9 +27,9 @@ if (isset($mysqli)) {
         $body->setContent("nome_attore2", $data1['nome_attore']);
     }
 
-    $result1 = $mysqli->query("SELECT p.id as p_id, p.nome as p_nome FROM personaggio_articolo pa 
+    $result1 = $mysqli->query("(SELECT p.id as p_id, p.nome as p_nome FROM personaggio_articolo pa 
                                     join personaggio p on p.id = pa.personaggio_id 
-                                    join articolo a on a.id = pa.articolo_id where a.id = {$_GET['id']}");
+                                    join articolo a on a.id = pa.articolo_id where a.id = {$_GET['id']})");
 
     while ($data1 = $result1->fetch_assoc()){
         $body->setContent("id_personaggio", $data1['p_id']);
@@ -59,34 +59,56 @@ if (isset($mysqli)) {
                                     from articolo_correlato tab join articolo a1 on a1.id = tab.articolo_correlato_id join articolo a2 on a2.id = tab.articolo_id 
                                     where a1.id = {$_GET['id']} )");
 
-
-    while ($data = $result->fetch_assoc()){
-        if($data['categoria_correlato'] <> 'Film Disney'){
-            $body -> setContent("categoria_film",'moviesingle2.php?id='.$data['id_correlato']);
+    $number_of_results = mysqli_num_rows($result);
+    $body -> setContent("number_of_films", $number_of_results);
+    echo $number_of_results;
+    if ($number_of_results > 0) {
+        while ($data = $result->fetch_assoc()) {
+        echo $number_of_results . " sono nell'if ";
+        if ($data['categoria_correlato'] <> 'Film Disney') {
+            $categoria_film = 'moviesingle2.php?id=' . $data['id_correlato'];
+        } else {
+            $categoria_film = 'moviesingle.php?id=' . $data['id_correlato'];
         }
-        else{
-            $body -> setContent("categoria_film",'moviesingle.php?id='.$data['id_correlato']);
+        $body->setContent("no_correlati", '<foreach>
+                                        <div class="movie-item-style-2">
+                                            <img src="img.php?id=' . $data['id_correlato'] . '" alt="">
+                                            <div class="mv-item-infor">
+                                                <h6><a href="' .$categoria_film.' ">' . $data['titolo_correlato']. '</a></h6>
+                                                <p class="rate"><i class="ion-android-star"></i><span>'.$data['votazione_correlato'] .'</span> /10</p>
+                                                <p class="describe">'.substr($data['trama_correlato'], 0, 300) . " [...]".'</p>
+                                                <p class="run-time"> Durata: '. $data['durata_correlato'].'<span>Data Rilascio: '. $data['data_uscita_correlato'].'</span></p>
+                                                <p>Categoria:'. $data['categoria_correlato'] .'</p>
+                                            </div>
+                                        </div>
+                                        </foreach>
+                                        ');
         }
-        $conteggio++;
-        $body->setContent("id_correlato", $data['id_correlato']);
-        $body->setContent("titolo_correlato", $data['titolo_correlato']);
-        $body->setContent("categoria_correlato", $data['categoria_correlato']);
-        $body->setContent("votazione_correlato", $data['votazione_correlato']);
-        $body->setContent("durata_correlato", $data['durata_correlato']);
-        $body->setContent("data_uscita_correlato", $data['data_uscita_correlato']);
-        $body->setContent("trama_correlato", substr($data['trama_correlato'], 0, 300) . " [...]");
     }
-    $body->setContent("conteggio", "".$conteggio);
-    if ($conteggio == 0){
-        $body->setContent("no_correlati", "Non sono stati trovati altri film correlati a ".'<[titolo]>');
-    }
-    else {$body->setContent("no_correlati","");}
+       /* while ($data = $result->fetch_assoc()) {
+            if ($data['categoria_correlato'] <> 'Film Disney') {
+                $body->setContent("categoria_film", 'moviesingle2.php?id=' . $data['id_correlato']);
+            } else {
+                $body->setContent("categoria_film", 'moviesingle.php?id=' . $data['id_correlato']);
+            }
+            $body->setContent("id_correlato", $data['id_correlato']);
+            $body->setContent("titolo_correlato", $data['titolo_correlato']);
+            $body->setContent("categoria_correlato", $data['categoria_correlato']);
+            $body->setContent("votazione_correlato", $data['votazione_correlato']);
+            $body->setContent("durata_correlato", $data['durata_correlato']);
+            $body->setContent("data_uscita_correlato", $data['data_uscita_correlato']);
+            $body->setContent("trama_correlato", substr($data['trama_correlato'], 0, 300) . " [...]");
+        }
+        $body->setContent("conteggio", $number_of_results);
+    }*/
+    else {$body->setContent("no_correlati","<div><h2 style='color:#d36b6b'> Non sono stati trovati film correlati a ". $data['titolo'] ."</h2></div>" );}
 
-    $result1 = $mysqli->query("SELECT r.titolo as titolo_recensione, r.data as data_recensione, r.testo as testo_recensione,
+
+    $result1 = $mysqli->query("(SELECT r.titolo as titolo_recensione, r.data as data_recensione, r.testo as testo_recensione,
                                      concat(u.nome,' ', u.cognome) as nome_utente, r.voto as votazione_recensione 
                                      FROM disneydb.recensione r 
                                      join articolo a on r.articolo_id = a.id join utente u on r.utente_id = u.id 
-                                     where a.id = {$_GET['id']}");
+                                     where a.id = {$_GET['id']})");
 
     while ($data1 = $result1->fetch_assoc()) {
         $conteggio_recensioni++;

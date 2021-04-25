@@ -68,7 +68,7 @@
                                             <p><[trama]></p>
                                             <div class="title-hd-sm">
                                                 <h4>Personaggi</h4>
-                                                <a href="moviesingle2.php?id=<[idImg]>#cast" class="time"> Vedi tutti <i class="ion-ios-arrow-right"></i></a>
+                                                <a href="celebritygrid01.php" class="time"> Vedi tutti <i class="ion-ios-arrow-right"></i></a>
                                             </div>
                                             <!-- movie cast -->
                                             <div class="mvsingle-item ov-item celebrity-items" style="align-items: flex-end;">
@@ -177,17 +177,6 @@
                                         </div>
                                         <[/foreach]>
                                         <div><[no_correlati]></div>
-                                        <div class="topbar-filter">
-                                            <label>Recensioni per pagina:</label>
-                                            <select>
-                                                <option value="range">5 Recensioni</option>
-                                                <option value="saab">10 Recensioni</option>
-                                            </select>
-                                            <div class="pagination2">
-                                                <span>Pagina 1 di 6:</span>
-                                                <a class="active" href="moviesingle2.php?id=<[idImg]>">1</a>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                                 <div id="cast" class="tab">
@@ -221,18 +210,6 @@
                                                 <option value="date">Meno Recenti</option>
                                             </select>
                                         </div>
-                                        <[foreach]>
-                                        <div class="movie-item-style-2">
-                                            <img src="img.php?id=<[id_correlato]>" alt="">
-                                            <div class="mv-item-infor">
-                                                <h6><a href="<[categoria_film]>"><[titolo_correlato]></a></h6>
-                                                <p class="rate"><i class="ion-android-star"></i><span><[votazione_correlato]></span> /10</p>
-                                                <p class="describe"><[trama_correlato]></p>
-                                                <p class="run-time"> Durata: <[durata_correlato]><span>Data Rilascio: <[data_uscita_correlato]></span></p>
-                                                <p>Categoria: <[categoria_correlato]> </p>
-                                            </div>
-                                        </div>
-                                        <[/foreach]>
                                         <[no_correlati]>
                                         <div class="topbar-filter">
                                             <label>Film per pagina:</label>
