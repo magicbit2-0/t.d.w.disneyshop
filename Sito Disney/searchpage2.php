@@ -4,19 +4,21 @@ require "include/dbms.inc.php";
 require "include/template2.inc.php";
 
 $main=new Template("dtml/index.html");
-$body=new Template("dtml/search_page.html");
+$body=new Template("dtml/search_page2.html");
 $ricerca = "%{$_POST['parolaCercata']}%";
 $ricerca2 = "%{$_POST['parolaCercata2']}%";
 
 if (isset($mysqli)) {
 
-    if(isset($_POST['categorie'])){
-        $result = $mysqli->query("SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
-                                    FROM articolo a join articolo_parola_chiave apk on apk.articolo_id = a.id
-                                    join parola_chiave k on k.id = apk.parola_chiave_id
-                                    where a.titolo like '$ricerca2' and a.categoria like \"{$_POST['categorie']}\"
-                                    and year(a.data_uscita)>= {$_POST['da']} and year(a.data_uscita) <= {$_POST['a']} 
-                                    ORDER BY votazione desc, data_uscita desc");
+    if(isset($_POST['categoria'])){
+        $result = $mysqli->query("(SELECT distinct p.id as idCercato, p.nome as nomeEntita, p.nome as votazione, k.testo as categoria, p.data_nascita
+                                        FROM personaggio p join parola_chiave_personaggio ppk on ppk.personaggio_id = p.id join parola_chiave k on k.id = ppk.parola_chiave_id
+                                        WHERE p.nome like '$ricerca2' and k.testo like \"{$_POST['categorie']}\" and year(p.data_nascita)>= {$_POST['da']} and year(p.data_nascita) <= {$_POST['a']}
+                                        ORDER BY p.data_nascita desc) union
+                                        (SELECT distinct r.id as idCercato, concat(r.nome,' ',r.cognome) as nomeEntita, r.nome as votazione, k.testo as categoria, r.anno_nascita as data_nascita
+                                        FROM regia r join parola_chiave_regia rpk on rpk.regia_id = r.id join parola_chiave k on k.id = rpk.parola_chiave_id
+                                        WHERE (concat(r.nome,' ',r.cognome) like '$ricerca' or r.nome like '$ricerca' or r.cognome like '$ricerca') and k.testo like \"{$_POST['categorie']}\" and year(r.anno_nascita)>= {$_POST['da']} and year(r.anno_nascita) <= {$_POST['a']}
+                                        ORDER BY r.anno_nascita desc)");
     }
     else {
         $result = $mysqli->query("(SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
@@ -43,14 +45,13 @@ if (isset($mysqli)) {
                                     where (concat(r.nome,' ',r.cognome) like '$ricerca' or r.nome like '$ricerca' or r.cognome like '$ricerca' or k.testo like 
                                     '$ricerca' or a.titolo like '$ricerca' or r.anno_nascita like '$ricerca') and k.testo='attore' or 'regia')");
     }
-
     $number_of_results = mysqli_num_rows($result);
-    $body -> setContent("number_of_films", $number_of_results);
+    $body -> setContent("number_of_film", $number_of_results);
 
     while ($data = $result->fetch_assoc()) {
         if ($data['categoria'] == "Film Disney"){
             $body->setContent("pagina_articolo_categoria", 'moviesingle.php?id='.$data['idCercato']);
-            $body->setContent("idCercato", $data['idCercato']); //moviesingle.php?id=<[idImgProd]>
+            $body->setContent("idCercato", $data['idCercato']);
             $body->setContent("titolo", $data['nomeEntita']);
             $body->setContent("votazione", "<i class=\"ion-android-star\"></i>".$data['votazione']." /10");
             $body->setContent("categoria", $data['categoria']);
@@ -58,19 +59,20 @@ if (isset($mysqli)) {
         }
         else if ($data['categoria'] == "Cartone Pixar" or $data['categoria'] == "Cartone Disney" or $data['categoria'] == "Cortometraggi Pixar"){
             $body->setContent("pagina_articolo_categoria", 'moviesingle2.php?id='.$data['idCercato']);
-            $body->setContent("idCercato", $data['idCercato']); //moviesingle.php?id=<[idImgProd]>
+            $body->setContent("idCercato", $data['idCercato']);
             $body->setContent("titolo", $data['nomeEntita']);
             $body->setContent("votazione", "<i class=\"ion-android-star\"></i>".$data['votazione']." /10");
             $body->setContent("categoria", $data['categoria']);
-            $body->setContent("immagineCercata", 'img.php?id='.$data['idCercato']);}
-
+            $body->setContent("immagineCercata", 'img.php?id='.$data['idCercato']);
+        }
         else if ($data['categoria'] == "attore" or $data['categoria'] == "regia"){
             $body->setContent("pagina_articolo_categoria", 'celebritysingle.php?id='.$data['idCercato']);
-            $body->setContent("idCercato", $data['idCercato']); //moviesingle.php?id=<[idImgProd]>
+            $body->setContent("idCercato", $data['idCercato']);
             $body->setContent("titolo", $data['nomeEntita']);
             $body->setContent("votazione", $data['data_nascita']);
             $body->setContent("categoria", $data['categoria']);
-            $body->setContent("immagineCercata", 'imgActor.php?id='.$data['idCercato']);}
+            $body->setContent("immagineCercata", 'imgActor.php?id='.$data['idCercato']);
+        }
         else {
             $body->setContent("pagina_articolo_categoria", 'celebritysingle2.php?id='.$data['idCercato']);
             $body->setContent("idCercato", $data['idCercato']);

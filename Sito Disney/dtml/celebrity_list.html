@@ -20,7 +20,7 @@
         <div class="row ipad-width2">
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="topbar-filter">
-                    <p class="pad-change">Trovati <span> <[number_of_films]> personaggi</span> in totale</p>
+                    <p class="pad-change">Trovati <span> <[number_of_films]> personaggi e altri attori</span> in totale</p>
                     <label>Ordina per:</label>
                     <select>
                         <option value="popularity">Più Cliccati</option>
@@ -45,11 +45,7 @@
                     <[/foreach]>
                 </div>
                 <div class="topbar-filter">
-                    <label>Celebrità per pagina:</label>
-                    <select>
-                        <option value="range">10 Celebrità</option>
-                        <option value="saab">15 Celebrità</option>
-                    </select>
+                    <label>Celebrità per pagina: 10 celebrità </label>
                     <div class="pagination2">
                         <span>Pagina <[actual_page]> di <[number_of_pages]>:</span>
                         <[foreach]>
@@ -62,152 +58,84 @@
                 <div class="sidebar" style="border-left: 2px solid #38495c;margin-left: 50px;padding-left: 10px;">
                     <div class="searh-form">
                         <h4 class="sb-title">Cerca le celebrità</h4>
-                        <form class="form-style-1 celebrity-form" action="#">
+                        <form class="form-style-1 celebrity-form" action="searchpage2.php?<[parolaCercata2]>" method="post">
                             <div class="row">
                                 <div class="col-md-12 form-it">
                                     <label>Celebrità</label>
-                                    <input type="text" placeholder="Nome Celebrità">
+                                    <input name="parolaCercata2" type="text" placeholder="Nome Celebrità">
                                 </div>
                                 <div class="col-md-12 form-it">
                                     <label>Cerca per lettera</label>
-                                    <select>
-                                        <option value="range">Inserisci la lettera</option>
-                                        <option value="saab">A</option>
-                                        <option value="saab">B</option>
-                                        <option value="saab">C</option>
-                                        <option value="saab">D</option>
-                                        <option value="saab">E</option>
-                                        <option value="saab">F</option>
-                                        <option value="saab">G</option>
-                                        <option value="saab">H</option>
-                                        <option value="saab">I</option>
-                                        <option value="saab">J</option>
-                                        <option value="saab">K</option>
-                                        <option value="saab">L</option>
-                                        <option value="saab">M</option>
-                                        <option value="saab">N</option>
-                                        <option value="saab">O</option>
-                                        <option value="saab">P</option>
-                                        <option value="saab">Q</option>
-                                        <option value="saab">R</option>
-                                        <option value="saab">S</option>
-                                        <option value="saab">T</option>
-                                        <option value="saab">U</option>
-                                        <option value="saab">V</option>
-                                        <option value="saab">W</option>
-                                        <option value="saab">X</option>
-                                        <option value="saab">Y</option>
-                                        <option value="saab">Z</option>
+                                    <select name="lettera">
+                                        <option value="%%">Inserisci la lettera</option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                        <option value="E">E</option>
+                                        <option value="F">F</option>
+                                        <option value="G">G</option>
+                                        <option value="H">H</option>
+                                        <option value="I">I</option>
+                                        <option value="J">J</option>
+                                        <option value="K">K</option>
+                                        <option value="L">L</option>
+                                        <option value="M">M</option>
+                                        <option value="N">N</option>
+                                        <option value="O">O</option>
+                                        <option value="P">P</option>
+                                        <option value="Q">Q</option>
+                                        <option value="R">R</option>
+                                        <option value="S">S</option>
+                                        <option value="T">T</option>
+                                        <option value="U">U</option>
+                                        <option value="V">V</option>
+                                        <option value="W">W</option>
+                                        <option value="X">X</option>
+                                        <option value="Y">Y</option>
+                                        <option value="Z">Z</option>
                                     </select>
                                 </div>
                                 <div class="col-md-12 form-it">
                                     <label>Categoria</label>
-                                    <select>
-                                        <option value="range">Inserisci la categoria</option>
-                                        <option value="saab">Attori</option>
-                                        <option value="saab">Personaggi</option>
-                                        <option value="saab">Registi</option>
+                                    <select name="categoria">
+                                        <option value="%%">Inserisci la categoria</option>
+                                        <option value="attore">Attori</option>
+                                        <option value="personaggio">Personaggi</option>
+                                        <option value="regia">Registi</option>
                                     </select>
                                 </div>
                                 <div class="col-md-12 form-it">
                                     <label>Anno</label>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <select>
+                                            <select name="da">
                                                 <option value="range">Da</option>
-                                                <option value="number">1937</option>
-                                                <option value="number">1940</option>
-                                                <option value="number">1941</option>
-                                                <option value="number">1942</option>
-                                                <option value="number">1950</option>
-                                                <option value="number">1951</option>
-                                                <option value="number">1953</option>
-                                                <option value="number">1955</option>
-                                                <option value="number">1959</option>
-                                                <option value="number">1961</option>
-                                                <option value="number">1963</option>
-                                                <option value="number">1967</option>
-                                                <option value="number">1970</option>
-                                                <option value="number">1973</option>
-                                                <option value="number">1981</option>
-                                                <option value="number">1989</option>
-                                                <option value="number">1991</option>
-                                                <option value="number">1992</option>
-                                                <option value="number">1994</option>
-                                                <option value="number">1995</option>
-                                                <option value="number">1996</option>
-                                                <option value="number">1997</option>
-                                                <option value="number">1998</option>
-                                                <option value="number">1999</option>
-                                                <option value="number">2000</option>
-                                                <option value="number">2001</option>
-                                                <option value="number">2002</option>
-                                                <option value="number">2003</option>
-                                                <option value="number">2004</option>
-                                                <option value="number">2005</option>
-                                                <option value="number">2006</option>
-                                                <option value="number">2007</option>
-                                                <option value="number">2008</option>
-                                                <option value="number">2009</option>
-                                                <option value="number">2010</option>
-                                                <option value="number">2012</option>
-                                                <option value="number">2013</option>
-                                                <option value="number">2014</option>
-                                                <option value="number">2015</option>
-                                                <option value="number">2016</option>
-                                                <option value="number">2017</option>
-                                                <option value="number">2018</option>
-                                                <option value="number">2019</option>
-                                                <option value="number">2020</option>
+                                                <option value="1937" selected>1937</option>
+                                                <option value="1940">1940</option>
+                                                <option value="1950">1950</option>
+                                                <option value="1960">1960</option>
+                                                <option value="1970">1970</option>
+                                                <option value="1980">1980</option>
+                                                <option value="1990">1990</option>
+                                                <option value="2000">2000</option>
+                                                <option value="2010">2010</option>
+                                                <option value="2020">2020</option>
                                             </select>
                                         </div>
                                         <div class="col-md-6">
-                                            <select>
+                                            <select name="a">
                                                 <option value="range">A</option>
-                                                <option value="number">1937</option>
-                                                <option value="number">1940</option>
-                                                <option value="number">1941</option>
-                                                <option value="number">1942</option>
-                                                <option value="number">1950</option>
-                                                <option value="number">1951</option>
-                                                <option value="number">1953</option>
-                                                <option value="number">1955</option>
-                                                <option value="number">1959</option>
-                                                <option value="number">1961</option>
-                                                <option value="number">1963</option>
-                                                <option value="number">1967</option>
-                                                <option value="number">1970</option>
-                                                <option value="number">1973</option>
-                                                <option value="number">1981</option>
-                                                <option value="number">1989</option>
-                                                <option value="number">1991</option>
-                                                <option value="number">1992</option>
-                                                <option value="number">1994</option>
-                                                <option value="number">1995</option>
-                                                <option value="number">1996</option>
-                                                <option value="number">1997</option>
-                                                <option value="number">1998</option>
-                                                <option value="number">1999</option>
-                                                <option value="number">2000</option>
-                                                <option value="number">2001</option>
-                                                <option value="number">2002</option>
-                                                <option value="number">2003</option>
-                                                <option value="number">2004</option>
-                                                <option value="number">2005</option>
-                                                <option value="number">2006</option>
-                                                <option value="number">2007</option>
-                                                <option value="number">2008</option>
-                                                <option value="number">2009</option>
-                                                <option value="number">2010</option>
-                                                <option value="number">2012</option>
-                                                <option value="number">2013</option>
-                                                <option value="number">2014</option>
-                                                <option value="number">2015</option>
-                                                <option value="number">2016</option>
-                                                <option value="number">2017</option>
-                                                <option value="number">2018</option>
-                                                <option value="number">2019</option>
-                                                <option value="number">2020</option>
+                                                <option value="1940">1940</option>
+                                                <option value="1950">1950</option>
+                                                <option value="1960">1960</option>
+                                                <option value="1970">1970</option>
+                                                <option value="1980">1980</option>
+                                                <option value="1990">1990</option>
+                                                <option value="2000">2000</option>
+                                                <option value="2010">2010</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2021" selected>2021</option>
                                             </select>
                                         </div>
                                     </div>
