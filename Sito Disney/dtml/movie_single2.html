@@ -79,31 +79,6 @@
                                                 </div>
                                                 <[/foreach]>
                                             </div>
-
-                                            <div class="title-hd-sm">
-                                                <h4>Recensioni degli utenti</h4>
-                                                <a href="#" class="time"> Vedi tutte le recensioni <i class="ion-ios-arrow-right"></i></a>
-                                            </div>
-                                            <!-- movie user review -->
-                                            <div class="mv-user-review-item">
-                                                <h3>Titolo Recensione</h3>
-                                                <div class="no-star">
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star"></i>
-                                                    <i class="ion-android-star last"></i>
-                                                </div>
-                                                <p class="time">
-                                                    Data recensione da <a href="userprofile.html"> nome_utente</a>
-                                                </p>
-                                                <p> RECENSIONE </p>
-                                            </div>
                                         </div>
                                         <div class="col-md-4 col-xs-12 col-sm-12">
                                             <div class="sb-it">
@@ -149,7 +124,7 @@
                                             <a href="#" class="redbtn recensioneBtn">Scrivi Recensione</a>
                                         </div>
                                         <div class="topbar-filter">
-                                            <p>Trovate <span><[conteggio_recensioni]> </span> in totale </p>
+                                            <[number_of_reviews]>
                                             <label>Ordina per:</label>
                                             <select>
                                                 <option value="popularity">Più Popolari</option>
@@ -159,24 +134,8 @@
                                             </select>
                                         </div>
                                         <[foreach]>
-                                        <div class="mv-user-review-item">
-                                            <div class="user-infor">
-                                                <img src="dtml/image/uploads/userava1.jpg" alt="">
-                                                <div>
-                                                    <h3><[titolo_recensione]></h3>
-                                                    <div class="rate">
-                                                        <p><i class="ion-android-star"></i>
-                                                        <span><[votazione_recensione]></span> /10<br>
-                                                    </div>
-                                                    <p class="time">
-                                                        <[data_recensione]><a href="userprofile.html"> <[nome_utente]></a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p><[testo_recensione]></p>
-                                        </div>
+                                            <div><[no_reviews]></div>
                                         <[/foreach]>
-                                        <div><[no_correlati]></div>
                                     </div>
                                 </div>
                                 <div id="cast" class="tab">
@@ -201,7 +160,7 @@
                                         <h3>Correlati di </h3>
                                         <h2><[titolo]></h2>
                                         <div class="topbar-filter">
-                                            <p>Trovati <span><[conteggio]></span> in totale</p>
+                                            <p>Trovati <span><[number_of_results]></span> in totale</p>
                                             <label>Ordina per:</label>
                                             <select>
                                                 <option value="popularity">Più popolari</option>
@@ -210,19 +169,10 @@
                                                 <option value="date">Meno Recenti</option>
                                             </select>
                                         </div>
-                                        <[no_correlati]>
+                                        <[foreach]>
+                                            <[no_correlati]>
+                                        <[/foreach]>
                                         <div class="topbar-filter">
-                                            <label>Film per pagina:</label>
-                                            <select>
-                                                <option value="range">5 Film</option>
-                                                <option value="saab">10 Film</option>
-                                            </select>
-                                            <div class="pagination2">
-                                                <span>Pagina 1 di 2:</span>
-                                                <a class="active" href="moviesingle.php">1</a>
-                                                <a href="#">2</a>
-                                                <a href="#"><i class="ion-arrow-right-b"></i></a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

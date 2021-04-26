@@ -15,7 +15,7 @@ if (isset($mysqli)) {
                                     FROM articolo a join articolo_parola_chiave apk on apk.articolo_id = a.id
                                     join parola_chiave k on k.id = apk.parola_chiave_id
                                     where a.titolo like '$ricerca2' and a.categoria like \"{$_POST['categorie']}\"
-                                    and year(a.data_uscita)>= {$_POST['da']} and year(a.data_uscita) <= {$_POST['a']} 
+                                    and year(a.data_uscita) >= {$_POST['da']} and year(a.data_uscita) <= {$_POST['a']} 
                                     ORDER BY votazione desc, data_uscita desc");
     } else
     if(isset($_POST['categoriaCelebrità'])){

@@ -12,14 +12,14 @@ if (isset($mysqli)) {
     $result = $mysqli->query("(select id as idImg, titolo, data_uscita, durata, trama, votazione, prezzo, categoria from articolo where id = {$_GET['id']})");
     $data = $result->fetch_assoc();
 
-    foreach ($data as $key => $value){
-        $body->setContent($key,$value);
+    foreach ($data as $key => $value) {
+        $body->setContent($key, $value);
     }
 
     $result1 = $mysqli->query("(select r.id as id_attore, concat(r.nome,' ', r.cognome) as nome_attore from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id 
                                     join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'attore' and a.id = {$_GET['id']})");
 
-    while ($data1 = $result1->fetch_assoc()){
+    while ($data1 = $result1->fetch_assoc()) {
         $body->setContent("id_attore", $data1['id_attore']);
         $body->setContent("nome_attore", $data1['nome_attore']);
         $body->setContent("id_attore1", $data1['id_attore']);
@@ -31,7 +31,7 @@ if (isset($mysqli)) {
                                     join personaggio p on p.id = pa.personaggio_id 
                                     join articolo a on a.id = pa.articolo_id where a.id = {$_GET['id']})");
 
-    while ($data1 = $result1->fetch_assoc()){
+    while ($data1 = $result1->fetch_assoc()) {
         $body->setContent("id_personaggio", $data1['p_id']);
         $body->setContent("id_personaggio1", $data1['p_id']);
         $body->setContent("idProtagonista", $data1['p_id']);
@@ -60,66 +60,71 @@ if (isset($mysqli)) {
                                     where a1.id = {$_GET['id']} )");
 
     $number_of_results = mysqli_num_rows($result);
-    $body -> setContent("number_of_films", $number_of_results);
-    echo $number_of_results;
     if ($number_of_results > 0) {
+        $body->setContent("number_of_results", $number_of_results);
         while ($data = $result->fetch_assoc()) {
-        echo $number_of_results . " sono nell'if ";
-        if ($data['categoria_correlato'] <> 'Film Disney') {
-            $categoria_film = 'moviesingle2.php?id=' . $data['id_correlato'];
-        } else {
-            $categoria_film = 'moviesingle.php?id=' . $data['id_correlato'];
-        }
-        $body->setContent("no_correlati", '<foreach>
+            if ($data['categoria_correlato'] <> 'Film Disney') {
+                $categoria_film = 'moviesingle2.php?id=' . $data['id_correlato'];
+            } else {
+                $categoria_film = 'moviesingle.php?id=' . $data['id_correlato'];
+            }
+            $body->setContent("no_correlati", '
                                         <div class="movie-item-style-2">
                                             <img src="img.php?id=' . $data['id_correlato'] . '" alt="">
                                             <div class="mv-item-infor">
-                                                <h6><a href="' .$categoria_film.' ">' . $data['titolo_correlato']. '</a></h6>
-                                                <p class="rate"><i class="ion-android-star"></i><span>'.$data['votazione_correlato'] .'</span> /10</p>
-                                                <p class="describe">'.substr($data['trama_correlato'], 0, 300) . " [...]".'</p>
-                                                <p class="run-time"> Durata: '. $data['durata_correlato'].'<span>Data Rilascio: '. $data['data_uscita_correlato'].'</span></p>
-                                                <p>Categoria:'. $data['categoria_correlato'] .'</p>
+                                                <h6><a href="' . $categoria_film . ' ">' . $data['titolo_correlato'] . '</a></h6>
+                                                <p class="rate"><i class="ion-android-star"></i><span>' . $data['votazione_correlato'] . '</span> /10</p>
+                                                <p class="describe">' . substr($data['trama_correlato'], 0, 300) . " [...]" . '</p>
+                                                <p class="run-time"> Durata: ' . $data['durata_correlato'] . '<span>Data Rilascio: ' . $data['data_uscita_correlato'] . '</span></p>
+                                                <p>Categoria:' . $data['categoria_correlato'] . '</p>
                                             </div>
-                                        </div>
-                                        </foreach>
-                                        ');
+                                        </div>');
         }
+    } else {
+        $body->setContent("no_correlati", "<div><h2 style='color:#d36b6b'> Non sono stati trovati film correlati a " . $data['titolo'] . "</h2></div>");
+        $body->setContent("number_of_results", "Nessun film trovato");
     }
-       /* while ($data = $result->fetch_assoc()) {
-            if ($data['categoria_correlato'] <> 'Film Disney') {
-                $body->setContent("categoria_film", 'moviesingle2.php?id=' . $data['id_correlato']);
-            } else {
-                $body->setContent("categoria_film", 'moviesingle.php?id=' . $data['id_correlato']);
-            }
-            $body->setContent("id_correlato", $data['id_correlato']);
-            $body->setContent("titolo_correlato", $data['titolo_correlato']);
-            $body->setContent("categoria_correlato", $data['categoria_correlato']);
-            $body->setContent("votazione_correlato", $data['votazione_correlato']);
-            $body->setContent("durata_correlato", $data['durata_correlato']);
-            $body->setContent("data_uscita_correlato", $data['data_uscita_correlato']);
-            $body->setContent("trama_correlato", substr($data['trama_correlato'], 0, 300) . " [...]");
-        }
-        $body->setContent("conteggio", $number_of_results);
-    }*/
-    else {$body->setContent("no_correlati","<div><h2 style='color:#d36b6b'> Non sono stati trovati film correlati a ". $data['titolo'] ."</h2></div>" );}
 
 
-    $result1 = $mysqli->query("(SELECT r.titolo as titolo_recensione, r.data as data_recensione, r.testo as testo_recensione,
+    $result = $mysqli->query("(SELECT r.titolo as titolo_recensione, r.data as data_recensione, r.testo as testo_recensione,
                                      concat(u.nome,' ', u.cognome) as nome_utente, r.voto as votazione_recensione 
                                      FROM disneydb.recensione r 
                                      join articolo a on r.articolo_id = a.id join utente u on r.utente_id = u.id 
                                      where a.id = {$_GET['id']})");
 
-    while ($data1 = $result1->fetch_assoc()) {
-        $conteggio_recensioni++;
-        $body->setContent("titolo_recensione", $data1['titolo_recensione']);
-        $body->setContent("data_recensione", $data1['data_recensione']);
-        $body->setContent("testo_recensione", $data1['testo_recensione']);
-        $body->setContent("nome_utente", $data1['nome_utente']);
-        $body->setContent("votazione_recensione", $data1['votazione_recensione']);
+    $number_of_reviews = mysqli_num_rows($result);
+    if ($number_of_reviews > 0) {
+        $body->setContent("number_of_reviews", "<p>Trovate <span>$number_of_reviews</span> in totale </p>");
+        while ($data1 = $result->fetch_assoc()) {
+            $body->setContent("no_reviews", '
+                                        <div class="mv-user-review-item">
+                                            <div class="user-infor">
+                                                <img src="dtml/image/uploads/userava1.jpg" alt="">
+                                                <div>
+                                                    <h3>' . $data1['titolo_recensione'] . '</h3>
+                                                    <div class="rate">
+                                                        <p><i class="ion-android-star"></i>
+                                                        <span>' . $data1['votazione_recensione'] . '</span> /10<br>
+                                                    </div>
+                                                    <p class="time">
+                                                        ' . $data1['data_recensione'] . '<a href="userprofile.html">' . $data1['nome_utente'] . '</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p>' . $data1['testo_recensione'] . '</p>
+                                        </div>');
+        }
+        /*$body->setContent("titolo_recensione", $data['titolo_recensione']);
+        $body->setContent("data_recensione", $data['data_recensione']);
+        $body->setContent("testo_recensione", $data['testo_recensione']);
+        $body->setContent("nome_utente", $data['nome_utente']);
+        $body->setContent("votazione_recensione", $data['votazione_recensione']);
+    */
+    } else {
+        $body->setContent("no_reviews", "<div><h2 style='color:#d36b6b'> Non ci sono ancora recensioni per questo articolo</h2></div>");
+        $body->setContent("number_of_reviews", "<p><span>Nessuna recensione trovata</span></p>");
     }
-         $body->setContent("conteggio_recensione","".$conteggio_recensioni);
-    }
+}
 
 $main->setContent("body", $body->get());
 $main->close();

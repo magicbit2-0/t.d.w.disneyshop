@@ -99,10 +99,6 @@
                                                 </div>
                                                 <[/foreach]>
                                             </div>
-                                            <div class="title-hd-sm">
-                                                <h4>Recensioni degli utenti</h4>
-                                                <a href="#" class="time"> Vedi tutte le recensioni <i class="ion-ios-arrow-right"></i></a>
-                                            </div>
                                         </div>
                                         <div class="col-md-4 col-xs-12 col-sm-12">
                                             <div class="sb-it">
@@ -117,7 +113,7 @@
                                             </div>
                                             <div class="sb-it">
                                                 <h6>Categoria: </h6>
-                                                <p><a href="moviegrid.php"><[categoria]></a></p>
+                                                <p><a href="moviegrid.php?categoria='<[categoria]>'"><[categoria]></a></p>
                                             </div>
                                             <div class="sb-it">
                                                 <h6>Data rilascio: </h6>
@@ -132,7 +128,7 @@
                                                 <p class="tags">
                                                     <!-- Parole chiave che ritornano alla stessa pagina o pagine diverse-->
                                                     <span class="time"><a href="moviegrid.php"><[titolo]></a></span>
-                                                    <span class="time"><a href="moviegrid.php"><[categoria]></a></span>
+                                                    <span class="time"><a href="moviegrid.php?categoria='<[categoria]>'"><[categoria]></a></span>
                                                     <span class="time"><a href="moviegrid.php"><[data_uscita]></a></span>
                                                     <[foreach]>
                                                     <span class="time"><a href="celebritygrid01.php"><[nome_protagonista1]></a></span>
@@ -168,33 +164,9 @@
                                             </select>
                                         </div>
                                         <[foreach]>
-                                        <div class="mv-user-review-item">
-                                            <div class="user-infor">
-                                                <img src="dtml/image/uploads/userava1.jpg" alt="">
-                                                <div>
-                                                    <h3><[titolo_recensione]></h3>
-                                                    <div class="rate">
-                                                        <p><i class="ion-android-star"></i>
-                                                            <span><[votazione_recensione]></span> /10<br>
-                                                    </div>
-                                                    <p class="time">
-                                                        <[data_recensione]><a href="userprofile.html"> <[nome_utente]></a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p><[testo_recensione]></p>
-                                        </div>
+                                        <div><[no_reviews]></div>
                                         <[/foreach]>
                                         <div class="topbar-filter">
-                                            <label>Recensioni per pagina:</label>
-                                            <select>
-                                                <option value="range">5 Recensioni</option>
-                                                <option value="saab">10 Recensioni</option>
-                                            </select>
-                                            <div class="pagination2">
-                                                <span>Pagina 1 di 1:</span>
-                                                <a class="active" href="moviesingle.php">1</a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -234,7 +206,7 @@
                                         <h3>Correlati di </h3>
                                         <h2><[titolo]></h2>
                                         <div class="topbar-filter">
-                                            <p>Trovati <span><[conteggio]></span> in totale</p>
+                                            <p>Trovati <span><[number_of_results]></span> in totale</p>
                                             <label>Ordina per:</label>
                                             <select>
                                                 <option value="popularity">Più popolari</option>
@@ -244,29 +216,9 @@
                                             </select>
                                         </div>
                                         <[foreach]>
-                                        <div class="movie-item-style-2">
-                                            <img src="img.php?id=<[id_correlato]>" alt="">
-                                            <div class="mv-item-infor">
-                                                <h6><a href="<[categoria_film]>"><[titolo_correlato]></a></h6>
-                                                <p class="rate"><i class="ion-android-star"></i><span><[votazione_correlato]></span> /10</p>
-                                                <p class="describe"><[trama_correlato]></p>
-                                                <p class="run-time"> Durata: <[durata_correlato]><span>Data Rilascio: <[data_uscita_correlato]></span></p>
-                                                <p>Categoria: <[categoria_correlato]> </p>
-                                            </div>
-                                        </div>
+                                            <[no_correlati]>
                                         <[/foreach]>
                                         <div class="topbar-filter">
-                                            <label>Film per pagina:</label>
-                                            <select>
-                                                <option value="range">5 Film</option>
-                                                <option value="saab">10 Film</option>
-                                            </select>
-                                            <div class="pagination2">
-                                                <span>Pagina 1 di 2:</span>
-                                                <a class="active" href="moviesingle.php">1</a>
-                                                <a href="#">2</a>
-                                                <a href="#"><i class="ion-arrow-right-b"></i></a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
