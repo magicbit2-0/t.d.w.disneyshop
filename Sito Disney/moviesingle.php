@@ -112,7 +112,7 @@ if (isset($mysqli)) {
             $body->setContent("no_reviews", '
                                         <div class="mv-user-review-item">
                                             <div class="user-infor">
-                                                <img src="dtml/image/uploads/userava1.jpg" alt="">
+                                                <img src="dtml/images/avatar/avatar_Ariel.png" alt="">
                                                 <div>
                                                     <h3>' . $data1['titolo_recensione'] . '</h3>
                                                     <div class="rate">

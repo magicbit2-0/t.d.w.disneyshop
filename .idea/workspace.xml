@@ -21,15 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_single2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_single2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/search_page2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/searchpage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/searchpage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/searchpage2.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +104,7 @@
       <workItem from="1619373757770" duration="90000" />
       <workItem from="1619373852980" duration="2903000" />
       <workItem from="1619429716473" duration="7437000" />
-      <workItem from="1619447769247" duration="10395000" />
+      <workItem from="1619447769247" duration="10995000" />
     </task>
     <servers />
   </component>
