@@ -17,6 +17,20 @@ if (isset($mysqli)) {
                                     where a.titolo like '$ricerca2' and a.categoria like \"{$_POST['categorie']}\"
                                     and year(a.data_uscita)>= {$_POST['da']} and year(a.data_uscita) <= {$_POST['a']} 
                                     ORDER BY votazione desc, data_uscita desc");
+    } else
+    if(isset($_POST['categoriaCelebrità'])){
+        $result = $mysqli->query("(SELECT distinct p.id as idCercato, p.nome as nomeEntita,p.nome as categoria, p.data_nascita
+                                    from personaggio p join parola_chiave_personaggio pkp on pkp.personaggio_id = p.id
+                                    join parola_chiave k on k.id=pkp.parola_chiave_id
+                                    where p.nome like '$ricerca2' and substr(p.nome,1,1) like \"{$_POST['lettera']}\" and k.testo like \"{$_POST['categoriaCelebrità']}\"
+                                    and year(p.data_nascita)>= {$_POST['da']} and year(p.data_nascita) <= {$_POST['a']}) union
+                                    (SELECT distinct r.id as idCercato, concat(r.nome,' ',r.cognome)  as nomeEntita, k.testo as categoria, r.anno_nascita
+                                    from regia r join parola_chiave_regia pkp on pkp.regia_id = r.id
+                                    join parola_chiave k on k.id=pkp.parola_chiave_id
+                                    where (concat(r.nome,' ',r.cognome) like '$ricerca2' and (substr(r.nome,1,1) like \"{$_POST['lettera']}\"
+                                    or substr(r.cognome,1,1) like \"{$_POST['lettera']}\") and k.testo like \"{$_POST['categoriaCelebrità']}\"
+                                    and year(r.anno_nascita) >= {$_POST['da']} and year(r.anno_nascita) <= {$_POST['a']}))");
+
     }
     else {
         $result = $mysqli->query("(SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
