@@ -25,9 +25,6 @@
             $body->setContent("idImgNotizia", $data['id']);
         }
 
-
-
-
         $result = $mysqli->query("SELECT id as idNotizia1, titolo FROM notizia WHERE categoria='Cartone Disney' limit 1");
         while ($data2 = $result->fetch_assoc()) {
             $body->setContent("notizia1", $data2['titolo']);
