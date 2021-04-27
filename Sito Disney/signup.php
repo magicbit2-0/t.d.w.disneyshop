@@ -4,7 +4,7 @@
     require "include/template2.inc.php";
 
     $main = new Template("dtml/index.html");
-    $body = new Template("dtml/login.html");
+    $body = new Template("dtml/signup.html");
 
     $main->setContent("body", $body->get());
     $main->close();
