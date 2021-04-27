@@ -17,7 +17,7 @@
 	<link rel="profile" href="#">
 
 	<!-- Logo Topolino parte alta -->
-	<link rel="shortcut icon" href="dtml/image/img/LogoPiccolo.png">
+	<link rel="shortcut icon" href="dtml/images/img/LogoPiccolo.png">
 
 	<!--Font-->
 	<style>
@@ -31,100 +31,21 @@
 	<meta name="format-detection" content="telephone-no">
 
 	<!-- CSS files -->
-	<link rel="stylesheet" href="../css/plugins.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="dtml/css/plugins.css">
+	<link rel="stylesheet" href="dtml/css/style.css">
 
 </head>
 <body>
 
 <!--preloading-->
 <div id="preloader">
-	<img class="logo" src="dtml/image/img/logo1.png" alt="" width="300" height="200">
+	<img class="logo" src="dtml/images/img/logo1.png" alt="" width="300" height="200">
 	<div id="status">
 		<span></span>
 		<span></span>
 	</div>
 </div>
 <!--end of preloading-->
-
-<!--login form popup-->
-<div class="login-wrapper" id="login-content">
-	<div class="login-content">
-		<img src="dtml/image/img/x.png" onclick="location.href='index.html';" align="right">
-		<h3>Accedi</h3>
-		<form method="post" action="login.php">
-			<div class="row">
-				<label for="username">
-					Username:
-					<input type="text" name="username" id="username" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
-				</label>
-			</div>
-
-			<div class="row">
-				<label for="password">
-					Password:
-					<input type="password" name="password" id="password" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-				</label>
-			</div>
-
-			<div class="row">
-				<div class="remember">
-					<div>
-						<input type="checkbox" name="remember" value="Remember me"><span>Ricordami</span>
-					</div>
-					<a href="#">Hai dimenticato la password ?</a>
-				</div>
-			</div>
-
-			<div class="row">
-				<button type="submit">Accedi</button>
-			</div>
-		</form>
-	</div>
-</div>
-<!--end of login form popup-->
-
-<!--signup form popup-->
-<div class="login-wrapper"  id="signup-content">
-	<div class="login-content">
-		<img src="dtml/image/img/x.png" onclick="location.href='index.html';" align="right">
-		<h3>Registrati</h3>
-		<form method="post" action="signup.php">
-			<div class="row">
-				<label for="username-2">
-					Username:
-					<input type="text" name="username" id="username-2" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
-				</label>
-			</div>
-
-			<div class="row">
-				<label for="email-2">
-					Email:
-					<input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-				</label>
-			</div>
-
-			<div class="row">
-				<label for="password-2">
-					Password:
-					<input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-				</label>
-			</div>
-
-			<div class="row">
-				<label for="repassword-2">
-					Re-inserisci Password:
-					<input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-				</label>
-			</div>
-
-			<div class="row">
-				<button type="submit">Registrati</button>
-			</div>
-		</form>
-	</div>
-</div>
-<!--end of signup form popup-->
 
 <!-- BEGIN | Header -->
 <header class="ht-header">
@@ -140,7 +61,7 @@
 						<span></span>
 					</div>
 				</div>
-				<a href="index.html"><img class="logo" src="dtml/image/img/logo1.png" alt="" width="119" height="58"></a>
+				<a href="index.php"><img class="logo" src="dtml/images/img/logo1.png" alt="" width="119" height="58"></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
@@ -149,33 +70,33 @@
 						<a href="#page-top"></a>
 					</li>
 					<li class="dropdown first">
-						<a class="btn btn-default lv1" href="index.html">HOME</a>
+						<a class="btn btn-default lv1" href="index.php">HOME</a>
 					</li>
 					<li class="dropdown first">
 						<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
 							FILM<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						<ul class="dropdown-menu level1">
-							<li><a href="moviegrid.html">Tutti i Film</a></li>
-							<li><a href="moviegrid.html">Cartoni Disney</a></li>
-							<li><a href="moviegrid.html">Cartoni Pixar</a></li>
-							<li><a href="moviegrid.html">Film Disney</a></li>
-							<li><a href="moviegrid.html">Cortometraggi</a></li>
+							<li><a href="moviegrid.php">Tutti i Film</a></li>
+							<li><a href="moviegrid.php?categoria='Cartone Disney'">Cartoni Disney</a></li>
+							<li><a href="moviegrid.php?categoria='Cartone Pixar'">Cartoni Pixar</a></li>
+							<li><a href="moviegrid.php?categoria='Film Disney'">Film Disney</a></li>
+							<li><a href="moviegrid.php?categoria='Cortometraggi Pixar'">Cortometraggi</a></li>
 						</ul>
 					</li>
 					<li class="dropdown first">
 						<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
 							CELEBRITA'<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						<ul class="dropdown-menu level1">
-							<li><a href="celebritygrid01.html">Tutte le Celebrità</a></li>
-							<li><a href="celebritygrid01.html">Personaggi</a></li>
-							<li><a href="celebritygrid01.html">Cast</a></li>
+							<li><a href="celebritygrid01.php">Tutte le Celebrità</a></li>
+							<li><a href="celebritygrid01.php?testo='personaggio'">Personaggi</a></li>
+							<li><a href="celebritygrid01.php?testo='attore'">Cast</a></li>
 						</ul>
 					</li>
 					<li class="dropdown first">
-						<a class="btn btn-default lv1" href="bloggrid.html">NOTIZIE</a>
+						<a class="btn btn-default lv1" href="bloggrid.php">NOTIZIE</a>
 					</li>
 					<li class="dropdown first">
-						<a class="btn btn-default lv1" href="comingsoon.html">PROSSIMAMENTE</a>
+						<a class="btn btn-default lv1" href="comingsoon.php">PROSSIMAMENTE</a>
 					</li>
 				</ul>
 
@@ -186,18 +107,33 @@
 							AREA PERSONALE<i class="fa fa-angle-down" aria-hidden="true"></i>
 						</a>
 						<ul class="dropdown-menu level1">
-							<li><a href="userfavoritegrid.html">Preferiti</a></li>
-							<li><a href="userrate.html">Recensioni</a></li>
-							<li><a href="userprofile.html">Profilo</a></li>
+							<li><a href="userfavoritegrid.php">Preferiti</a></li>
+							<li><a href="userrate.php">Recensioni</a></li>
+							<li><a href="userprofile.php">Profilo</a></li>
 						</ul>
 					</li>
-					<li class="btn loginLink"><a href="#">Accedi</a></li>
-					<li class="btn signupLink"><a href="#">Registrati</a></li>
+					<li class="btn loginLink"><a href="#">Esci</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
 		</nav>
 
+		<!-- top search form -->
+		<div class="top-search">
+			<select name="ricerca">
+				<option value="%%">Tutto</option>
+				<option value="Cartone Disney">Cartoni Disney</option>
+				<option value="Cartone Pixar">Cartoni Pixar</option>
+				<option value="Film Disney">Film Disney</option>
+				<option value="Cortometraggi Pixar">Cortometraggi</option>
+				<option value="saab">Personaggi</option>
+				<option value="saab">Cast</option>
+			</select>
+			<form action ="searchpage.php?<[parolaCercata]>" method = "post"  style="width: 100%; display:inline-flex">
+				<input name="parolaCercata" type="text" placeholder="Cerca per cartone, film, personaggio o cast">
+				<input type="submit" href="searchpage.php" value="Cerca" name="btn" style="background: none;">
+			</form>
+		</div>
 	</div>
 </header>
 <!-- END | Header -->
@@ -209,7 +145,7 @@
 				<div class="hero-ct">
 					<h1>Nome utente</h1>
 					<ul class="breadcumb">
-						<li class="active"><a href="index.html">Home</a></li>
+						<li class="active"><a href="index.php">Home</a></li>
 						<li> <span class="ion-ios-arrow-right"></span> Profilo </li>
 					</ul>
 				</div>
@@ -230,14 +166,14 @@
 					<div class="user-fav">
 						<p>Dettagli Account</p>
 						<ul>
-							<li class="active"><a href="userprofile.html">Profilo</a></li>
-							<li ><a href="userfavoritegrid.html">Film Preferiti</a></li>
-							<li><a href="userrate.html">Votazioni Film</a></li>
+							<li class="active"><a href="userprofile.php">Profilo</a></li>
+							<li ><a href="userfavoritegrid.php">Film Preferiti</a></li>
+							<li><a href="userrate.php">Votazioni Film</a></li>
 						</ul>
 					</div>
 					<div class="user-fav">
 						<ul>
-							<li id="EsciAccount"><a href="index.html">Esci</a></li>
+							<li id="EsciAccount"><a href="index.php">Esci</a></li>
 						</ul>
 					</div>
 				</div>
@@ -467,7 +403,7 @@
 	<div class="container">
 		<div class="flex-parent-ft">
 			<div class="flex-child-ft item1">
-				<a href="index.html"><img class="logo" src="dtml/image/img/logo1.png" alt="" height="300" width="500"></a>
+				<a href="index.php"><img class="logo" src="dtml/images/img/logo1.png" alt="" height="300" width="500"></a>
 				<p> Burbank, California <br> Stati Uniti D'America, USA</p>
 				<p>Chiamaci: (+39) 0554646038202 </p>
 			</div>
@@ -476,10 +412,10 @@
 				<ul>
 					<li><a href="https://disney.it/chi-siamo">Chi siamo</a></li>
 					<li><a href="https://support.disney.com/hc/it">Aiuto</a></li>
-					<li><a href="index.html">Registrati</a></li>
-					<li><a href="index.html">Accedi</a></li>
+					<li><a href="index.php">Registrati</a></li>
+					<li><a href="index.php">Accedi</a></li>
 
-					<li><a href="bloggrid.html">Notizie</a></li>
+					<li><a href="bloggrid.php">Notizie</a></li>
 				</ul>
 			</div>
 			<div class="flex-child-ft item3">
@@ -511,9 +447,10 @@
 </footer>
 <!-- end of footer section-->
 
-<script src="../dtml/js/jquery.js"></script>
-<script src="../dtml/js/plugins.js"></script>
-<script src="../dtml/js/plugins2.js"></script>
-<script src="../dtml/js/custom.js"></script>
+<script src="dtml/js/jquery.js"></script>
+<script src="dtml/js/plugins.js"></script>
+<script src="dtml/js/plugins2.js"></script>
+<script src="dtml/js/custom.js"></script>
+
 </body>
 </html>
