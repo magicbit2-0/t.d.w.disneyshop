@@ -1,1 +1,0 @@
-SELECT id as idNotizia1, titolo FROM notizia WHERE categoria='Cartone Disney' limit 1

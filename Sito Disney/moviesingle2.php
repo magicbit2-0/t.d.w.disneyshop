@@ -87,7 +87,7 @@ if (isset($mysqli)) {
 
 
     $result = $mysqli->query("(SELECT r.titolo as titolo_recensione, r.data as data_recensione, r.testo as testo_recensione,
-                                     concat(u.nome,' ', u.cognome) as nome_utente, r.voto as votazione_recensione 
+                                     concat(u.nome,' ', u.cognome) as nome_utente, r.voto as votazione_recensione , u.avatar_id as idAvatar
                                      FROM disneydb.recensione r 
                                      join articolo a on r.articolo_id = a.id join utente u on r.utente_id = u.id 
                                      where a.id = {$_GET['id']})");
@@ -95,11 +95,38 @@ if (isset($mysqli)) {
     $number_of_reviews = mysqli_num_rows($result);
     if ($number_of_reviews > 0) {
         $body->setContent("number_of_reviews", "<p>Trovate <span>$number_of_reviews</span> in totale </p>");
+        $body->setContent("number_of_reviews2", "$number_of_reviews recensioni");
         while ($data1 = $result->fetch_assoc()) {
+            switch($data1['idAvatar']){
+                case '1':
+                    $backgroundcolor = 'lightpink';
+                    break;
+                case '2':
+                    $backgroundcolor = '#d3c24b';
+                    break;
+                case '3':
+                    $backgroundcolor = '#d584cf';
+                    break;
+                case '4':
+                    $backgroundcolor = 'cadetblue';
+                    break;
+                case '5':
+                    $backgroundcolor = '#50b666';
+                    break;
+                case '6':
+                    $backgroundcolor = '#6792c7';
+                    break;
+                case '7':
+                    $backgroundcolor = '#e86c6c';
+                    break;
+                default:
+                    $backgroundcolor = 'aliceblue';
+                    break;
+            }
             $body->setContent("no_reviews", '
                                         <div class="mv-user-review-item">
                                             <div class="user-infor">
-                                                <img src="dtml/image/uploads/userava1.jpg" alt="">
+                                                <img src="imgAvatar.php?id='.$data1['idAvatar'].'" alt="" style="background-color:'.$backgroundcolor.';border-radius: 50%;width: 70px;height: 70px;">
                                                 <div>
                                                     <h3>' . $data1['titolo_recensione'] . '</h3>
                                                     <div class="rate">
@@ -114,15 +141,11 @@ if (isset($mysqli)) {
                                             <p>' . $data1['testo_recensione'] . '</p>
                                         </div>');
         }
-        /*$body->setContent("titolo_recensione", $data['titolo_recensione']);
-        $body->setContent("data_recensione", $data['data_recensione']);
-        $body->setContent("testo_recensione", $data['testo_recensione']);
-        $body->setContent("nome_utente", $data['nome_utente']);
-        $body->setContent("votazione_recensione", $data['votazione_recensione']);
-    */
     } else {
         $body->setContent("no_reviews", "<div><h2 style='color:#d36b6b'> Non ci sono ancora recensioni per questo articolo</h2></div>");
         $body->setContent("number_of_reviews", "<p><span>Nessuna recensione trovata</span></p>");
+        $body->setContent("number_of_reviews2", "Nessuna recensione");
+
     }
 }
 

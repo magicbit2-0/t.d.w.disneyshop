@@ -118,3 +118,9 @@ UPDATE `disneydb`.`personaggio_articolo` SET `articolo_id` = '2' WHERE (`id` = '
  Il cacciatore e la regina di ghiaccio per me è quasi 9!','2021-02-02',4,95);
  insert into recensione (`id`,`voto`,`titolo`,`testo`,`data`,`utente_id`,`articolo_id`) values (4,6.3,'Bello!','Il film è bellissimo', '2020-04-17',2,1);
  */
+ 
+ /*update utente set avatar_id = 3 where id = 2;
+ update utente set avatar_id = 5 where id = 4;
+ update utente set avatar_id = 4 where id = 10;*/
+ -- delete from avatar where id >= 8;
+ 
