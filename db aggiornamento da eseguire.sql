@@ -124,3 +124,10 @@ UPDATE `disneydb`.`personaggio_articolo` SET `articolo_id` = '2' WHERE (`id` = '
  update utente set avatar_id = 4 where id = 10;*/
  -- delete from avatar where id >= 8;
  
+ -- alter table utente modify password varchar(35);
+ /*update utente set password = md5('martina') where username = 'martina';
+ update utente set password = md5('enrico') where username = 'enrico';
+ update utente set password = md5('samuel') where username = 'samuel';
+ update utente set password = md5('lorenzo') where username = 'lorenzo';
+ update utente set password = md5('michele') where username = 'michele';*/
+ 
