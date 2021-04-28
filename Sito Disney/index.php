@@ -1,21 +1,30 @@
 <?php
     error_reporting(E_ALL & ~E_NOTICE);
+    session_start();
     require "include/dbms.inc.php";
     require "include/template2.inc.php";
     //require "include/auth.inc.php";
 
     $main = new Template("dtml/index.html");
-    $body = new Template("dtml/homepage.html");
+    if(isset($_REQUEST['accesso'])){
+        if($_REQUEST['accesso'] == 'LoginError'){
+            $body2 = new Template("dtml/login.html"); //ritenta accesso
+            $body2->setContent("message", "errorLogin");
+            $main->setContent("body2", $body2->get());
+        }
+        else if($_REQUEST['accesso'] == 'LoginOk'){
+            $main = new Template("dtml/index2.html"); //accesso effettuato
+        }
+    }
 
+    $body = new Template("dtml/homepage.html");
+    print_r($_SESSION);
     if (isset($mysqli)) {
-        /*
-        if (mysqli_num_rows($result) == 1){
+        if($_SESSION['idUtente']!= null){
             $main = new Template("dtml/index2.html");
-        } else {
-            //errore: messaggio di errore nel pop-up
-            $main = new Template("dtml/index.html");
-        }*/
-        if(isset($_POST['username']) and isset($_POST['username'])) {
+        }
+        /*
+        if(isset($_POST['username']) and isset($_POST['password'])) {
             $result = $mysqli->query("(SELECT * FROM utente 
                                         WHERE username = '{$_POST['username']}'
                                         and password = md5('{$_POST['password']}')) 
@@ -24,12 +33,19 @@
                 $main = new Template("dtml/index2.html"); //esci
                 $body = new Template("dtml/homepage.html");
             } else {
-                //$main = new Template("dtml/index.html"); //accedi
+                $main = new Template("dtml/index.html"); //accedi
                 $body2 = new Template("dtml/login.html");
                 $body2->setContent("message", "errorLogin");
                 $main->setContent("body2", $body2->get());
             }
-        }
+        }*/
+        /*if (mysqli_num_rows($result) == 1){
+            $main = new Template("dtml/index2.html");
+        } else {
+            //errore: messaggio di errore nel pop-up
+            $main = new Template("dtml/index.html");
+        }*/
+
         $result = $mysqli->query("(SELECT id as idImg,titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' and votazione is not null order by data_uscita desc limit 1) union
         (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' and votazione is not null order by data_uscita desc limit 1) union
         (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' and votazione is not null order by data_uscita desc limit 1) union

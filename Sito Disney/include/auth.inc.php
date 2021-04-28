@@ -1,77 +1,46 @@
 <?php
 Class Auth {
-
-    function doLogin() {
-
-
+    function doLogin()
+    {
         global $mysqli;
-
-        if (isset($_POST['username']) and isset($_POST['password'])) {
-
-            /* username and passowrd have been entered in login.php */
-
-            /* AUTHENTICATION ONLY */
-            $result = $mysqli->query("
-                SELECT * 
-                FROM utenti
-                WHERE username = '{$_POST['username']}' AND password = MD5('{$_POST['password']}');
-            ");
-
-
-
-            /*$result = $mysqli->query("
-
-                    SELECT service.script
-                    from users
-                    left join user_group
-                    on user_group.username = users.username
-                    left join group_service
-                    ON group_service.id_group = user_group.id_groups
-                    left JOIN service
-                    ON service.id = group_service.id_servoce
-                    where users.username = '{$_POST['username']}' AND users.password = MD5('{$_POST['password']}')
-
-                ");*/
-            if (!$result) {
-                echo "Error!";
-                exit();
-            }
-
-            if ($result->num_rows == 0) {
-                Header("Location: index.php?error");
-                exit();
-            }
-            /*$script = array();
-            while ($data = $result->fetch_assoc()) {
-
-                $script[$data['script']] = true;
-
-            }
-            $_SESSION['auth'] = $script;*/
-
-
-        } else {
-
-            /* una richiesta di autenticazione fuori da login.php */
-
-
-           // if (!isset($_SESSION['auth'])) {
-
-             //   Header("Location: index.php?error");
-             //   exit;
-
-            //}
-
-
-        }
-
-        /*$script = basename($_SERVER['SCRIPT_NAME']);
-
-        if (!isset($_SESSION['auth'][$script])) {
-            Header("Location: login.php?error&non_autorizzato");
+        if($_SESSION['idUtente'] != null){
+            Header("location: ./index.php?accesso=LoginOk");
+            $_SESSION['auth']=true;
             exit;
-        }*/
-
+        }
+        if(isset($_POST['username']) and isset($_POST['password'])) {
+            $result = $mysqli->query("(SELECT * FROM utente 
+                                        WHERE username = '{$_POST['username']}'
+                                        and password = md5('{$_POST['password']}')) 
+                                        ");
+            $data =$result->fetch_assoc();
+            $_SESSION['idUtente']=$data['id'];
+            if (!$result){
+                echo "errore";
+                exit;
+            }
+            if (mysqli_num_rows($result) != 1) {
+                Header("location: ./index.php?accesso=LoginError");
+                exit;
+                /*$main = new Template("dtml/index.html"); //accedi
+                $body2 = new Template("dtml/login.html");
+                $body2->setContent("message", "errorLogin");
+                $main->setContent("body2", $body2->get());*/
+            }
+            Header("location: ./index.php?accesso=LoginOk");
+            /*$main = new Template("dtml/index2.html"); //esci
+                $body = new Template("dtml/homepage.html");*/
+            $_SESSION['auth']=true;
+        }
+        else
+        {
+            if(!isset($_SESSION['auth'])) {
+                /*$main = new Template("dtml/index.html");
+                $body = new Template("dtml/homepage.html");*/
+                Header("location: ./index.php");
+                exit;
+            }
+        }
     }
 
 }

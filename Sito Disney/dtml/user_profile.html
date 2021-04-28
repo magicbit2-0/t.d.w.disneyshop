@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="hero-ct">
-                    <h1>Nome utente</h1>
+                    <h1><[username]></h1>
                     <ul class="breadcumb">
                         <li class="active"><a href="index.php">Home</a></li>
                         <li> <span class="ion-ios-arrow-right"></span> Profilo </li>
@@ -20,7 +20,7 @@
             <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="user-information">
                     <div class="user-img">
-                        <a href="#"><img src="dtml/image/uploads/user-img.png" alt=""><br></a>
+                        <[foto_avatar]>
                         <a href="#" class="redbtn">Cambia avatar</a>
                     </div>
                     <div class="user-fav">
@@ -33,7 +33,7 @@
                     </div>
                     <div class="user-fav">
                         <ul>
-                            <li id="EsciAccount"><a href="index.php">Esci</a></li>
+                            <li id="EsciAccount"><a href="logout.php">Esci</a></li>
                         </ul>
                     </div>
                 </div>
@@ -45,36 +45,37 @@
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Nome utente</label>
-                                <input type="text" placeholder="nome utente">
+                                <input type="text" placeholder="<[username]>">
                             </div>
                             <div class="col-md-6 form-it">
                                 <label>Indirizzo email</label>
-                                <input type="text" placeholder="indirizzo email">
+                                <input type="text" placeholder="<[email]>">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Nome</label>
-                                <input type="text" placeholder="Nome">
+                                <input type="text" placeholder="<[nome]>">
                             </div>
                             <div class="col-md-6 form-it">
                                 <label>Cognome</label>
-                                <input type="text" placeholder="Cognome">
+                                <input type="text" placeholder="<[cognome]>">
                             </div>
                             <div class="col-md-6 form-it">
                                 <label>Data Nascita</label>
-                                <input type="date" placeholder="DataNascita">
+                                <input type="text" placeholder="<[data_nascita]>" readonly style="background-color: #233a50">
                             </div>
                             <div class="col-md-6 form-it">
                                 <label>Indirizzo</label>
-                                <input type="text" placeholder="Indirizzo">
+                                <input type="text" placeholder="<[indirizzo]>">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Paese</label>
                                 <select>
-                                    <option value="text">Italia</option>
+                                    <option value="text"><[paese]></option>
+                                    <option value="saab">Italia</option>
                                     <option value="saab">Albania</option>
                                     <option value="saab">Algeria</option>
                                     <option value="saab">Andorra</option>
@@ -217,7 +218,7 @@
                             </div>
                             <div class="col-md-6 form-it">
                                 <label>Regione:</label>
-                                <input type="text" placeholder="Regione">
+                                <input type="text" placeholder="<[regione]>">
                             </div>
                         </div>
                         <div class="row">
