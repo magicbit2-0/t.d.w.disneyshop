@@ -1,31 +1,26 @@
-<div class="hero common-hero">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="hero-ct">
-                    <h1>Accedi</h1>
-                    <ul class="breadcumb">
-                        <li class="active"><a href="index.php">Home</a></li>
-                    </ul>
-                </div>
+<div class="container" style="margin-bottom: 125px;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="hero-ct">
             </div>
         </div>
     </div>
 </div>
 
-<div class="container">
-    <form class="form-style-1" action="login.php" method="post" style="margin-top: 50px;text-align-last: center;border: #77a3ae 2px solid;">
+<div class="container" style="padding-bottom: 30px;text-align: -webkit-center;border-bottom: 1px solid #77a3ae;">
+    <form class="form-style-1" action="index.php" method="post" style="width: 400px;height: 280px;margin-bottom: auto;margin-top: 50px;text-align-last: center;border: #77a3ae 2px solid;">
+        <[message::notification library="widget"]>
         <div class="row">
             <label for="username">
                 Username:
-                <input type="text" name="username" id="username" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                <input type="text" name="username" id="username" placeholder="" required="required" />
             </label>
         </div>
     
         <div class="row">
             <label for="password">
                 Password:
-                <input type="password" name="password" id="password" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                <input type="password" name="password" id="password" placeholder="" required="required" />
             </label>
         </div>
 

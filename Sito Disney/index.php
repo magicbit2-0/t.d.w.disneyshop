@@ -8,26 +8,28 @@
     $body = new Template("dtml/homepage.html");
 
     if (isset($mysqli)) {
-        /*if(isset($_POST['username']) and isset($_POST['password'])) {
+        /*
+        if (mysqli_num_rows($result) == 1){
+            $main = new Template("dtml/index2.html");
+        } else {
+            //errore: messaggio di errore nel pop-up
+            $main = new Template("dtml/index.html");
+        }*/
+        if(isset($_POST['username']) and isset($_POST['username'])) {
             $result = $mysqli->query("(SELECT * FROM utente 
                                         WHERE username = '{$_POST['username']}'
                                         and password = md5('{$_POST['password']}')) 
                                         ");
             if (mysqli_num_rows($result) == 1) {
-                $main = new Template("dtml/index2.html");
+                $main = new Template("dtml/index2.html"); //esci
+                $body = new Template("dtml/homepage.html");
             } else {
-                $main = new Template("dtml/index.html");
+                //$main = new Template("dtml/index.html"); //accedi
+                $body2 = new Template("dtml/login.html");
+                $body2->setContent("message", "errorLogin");
+                $main->setContent("body2", $body2->get());
             }
-        }*/
-        /*$result = $mysqli->query("SELECT * FROM utente
-                                        WHERE username = '{$_POST['username']}'
-                                        and password = md5('{$_POST['password']}') 
-                                        ");
-        if (mysqli_num_rows($result) == 1){
-            $main = new Template("dtml/index2.html");
-        } else {
-            $main = new Template("dtml/index.html");
-        }*/
+        }
         $result = $mysqli->query("(SELECT id as idImg,titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' and votazione is not null order by data_uscita desc limit 1) union
         (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' and votazione is not null order by data_uscita desc limit 1) union
         (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' and votazione is not null order by data_uscita desc limit 1) union

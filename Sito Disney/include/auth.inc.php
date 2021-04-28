@@ -38,7 +38,7 @@ Class Auth {
             }
 
             if ($result->num_rows == 0) {
-                Header("Location: ../index.php?error");
+                Header("Location: index.php?error");
                 exit();
             }
             /*$script = array();

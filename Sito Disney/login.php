@@ -10,11 +10,11 @@
                                         and password = md5('{$_POST['password']}')) 
                                         ");
         if (mysqli_num_rows($result) == 1){
-            $main = new Template("dtml/index2.html");
-            $body = new Template("dtml/login.html");
-        } else {
-            $main = new Template("dtml/index.html");
+            $main = new Template("dtml/index2.html"); //esci
             $body = new Template("dtml/homepage.html");
+        } else {
+            $main = new Template("dtml/index.html"); //accedi
+            $body = new Template("dtml/login.html");
         }
     }
     $main->setContent("body", $body->get());
