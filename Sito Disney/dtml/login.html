@@ -14,7 +14,7 @@
 </div>
 
 <div class="container">
-    <form class="form-style-1" action="login.php" method="post">
+    <form class="form-style-1" action="login.php" method="post" style="margin-top: 50px;text-align-last: center;border: #77a3ae 2px solid;">
         <div class="row">
             <label for="username">
                 Username:
@@ -27,15 +27,17 @@
                 Password:
                 <input type="password" name="password" id="password" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
             </label>
-        </div>  
-             
+        </div>
+
         <div class="row">
-            <div class="remember">
+            <div class="remember" style="display: flex;align-items: center;justify-content: center;">
+                <div>
                     <input type="checkbox" name="remember" value="Remember me">
-                    <p>Ricordami</p>
-                <a href="#">Hai dimenticato la password ?</a>
+                </div>
+                <span style="margin-left: 5px; margin-right: 20px;">Ricordami</span>
+                <a href="#">  Hai dimenticato la password ?</a>
             </div>
-        </div>	
+        </div>
         
         <div class="row">
         <button type="submit">Accedi</button>

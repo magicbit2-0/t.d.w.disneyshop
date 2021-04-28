@@ -2,57 +2,32 @@
     error_reporting(E_ALL & ~E_NOTICE);
     require "include/dbms.inc.php";
     require "include/template2.inc.php";
+    //require "include/auth.inc.php";
 
     $main = new Template("dtml/index.html");
     $body = new Template("dtml/homepage.html");
 
-
-
-/*$output = '';
-
-if(isset($_POST['search'])) {
-    $search = $_POST['search'];
-    $search = preg_replace("#[^0-9a-z]i#","", $search);
-
-    $query = $mysqli->query("SELECT id,titolo,categoria,data_uscita FROM ARTICOLO WHERE TITOLO LIKE '%$search%'"); //or die ("Could not search");
-    $count = mysqli_num_rows($query);
-    //$main -> setContent("ricerca","moviegrid.php");
-    if($count == 0){
-        $output = "There was no search results!";
-
-    }else{
-
-        while ($row = mysqli_fetch_array($query)) {
-
-            $town = $row ['id'];
-            $street = $row ['titolo'];
-            $bedrooms = $row ['categoria'];
-            $bathrooms = $row ['data_uscita'];
-
-            $output .='<div> '.$town.''.$street.''.$bedrooms.''.$bathrooms.'</div>';
-
-        }
-
-    }
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     if (isset($mysqli)) {
-        //$main -> setContent("ricerca","moviegrid.php");
-
+        /*if(isset($_POST['username']) and isset($_POST['password'])) {
+            $result = $mysqli->query("(SELECT * FROM utente 
+                                        WHERE username = '{$_POST['username']}'
+                                        and password = md5('{$_POST['password']}')) 
+                                        ");
+            if (mysqli_num_rows($result) == 1) {
+                $main = new Template("dtml/index2.html");
+            } else {
+                $main = new Template("dtml/index.html");
+            }
+        }*/
+        /*$result = $mysqli->query("SELECT * FROM utente
+                                        WHERE username = '{$_POST['username']}'
+                                        and password = md5('{$_POST['password']}') 
+                                        ");
+        if (mysqli_num_rows($result) == 1){
+            $main = new Template("dtml/index2.html");
+        } else {
+            $main = new Template("dtml/index.html");
+        }*/
         $result = $mysqli->query("(SELECT id as idImg,titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' and votazione is not null order by data_uscita desc limit 1) union
         (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' and votazione is not null order by data_uscita desc limit 1) union
         (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' and votazione is not null order by data_uscita desc limit 1) union

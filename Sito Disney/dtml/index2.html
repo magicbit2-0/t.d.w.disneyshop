@@ -6,7 +6,7 @@
 <html class="ie ie8 no-js" lang="it-IT">
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html lang="it" class="no-js" xmlns="http://www.w3.org/1999/html">
+<html lang="it" class="no-js" xmlns="http://www.w3.org/1999/html" style="background-color: #0b1a2a;">
 <head>
     <!-- Basic need -->
     <title>Disney & Pixar</title>
@@ -35,7 +35,8 @@
     <link rel="stylesheet" href="dtml/css/style.css">
 
 </head>
-<body>
+
+<body style="overflow: visible;background-color: #0b1a2a;">
 
 <!--preloading-->
 <div id="preloader">
@@ -46,6 +47,85 @@
     </div>
 </div>
 <!--end of preloading-->
+
+<!--login form popup-->
+<div class="login-wrapper" id="login-content">
+    <div class="login-content">
+        <!-- <img src="dtml/images/img/x.png" onclick="location.href='index.php';" align="right">
+        <h3>Esci</h3>
+         <form method="post" action="login.php">
+            <div class="row">
+                <label for="username">
+                    Username:
+                    <input type="text" name="username" id="username" placeholder=""  required="required" /> pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"-->
+        <!-- </label>
+    </div>
+
+    <div class="row">
+        <label for="password">
+            Password:
+            <input type="password" name="password" id="password" placeholder="" required="required" />
+        </label>
+    </div>
+
+    <div class="row">
+        <div class="remember">
+            <div>
+                <input type="checkbox" name="remember" value="Remember me"><span>Ricordami</span>
+            </div>
+            <a href="#">Hai dimenticato la password ?</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <button type="submit">Accedi</button> -->
+            </div>
+        </form>
+    </div>
+</div>
+<!--end of login form popup-->
+
+<!--signup form popup-->
+<div class="login-wrapper"  id="signup-content">
+    <div class="login-content">
+        <img src="dtml/images/img/x.png" onclick="location.href='index.php';" align="right">
+        <h3>Registrati</h3>
+        <form method="post" action="signup.php">
+            <div class="row">
+                <label for="username-2">
+                    Username:
+                    <input type="text" name="username" id="username-2" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <label for="email-2">
+                    Email:
+                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <label for="password-2">
+                    Password:
+                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <label for="repassword-2">
+                    Re-inserisci Password:
+                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <button type="submit">Registrati</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--end of signup form popup-->
 
 <!-- BEGIN | Header -->
 <header class="ht-header">
@@ -112,7 +192,8 @@
                             <li><a href="userprofile.php">Profilo</a></li>
                         </ul>
                     </li>
-                    <li class="btn loginLink"><a href="#">Esci</a></li>
+                    <li class="btn loginLink"><a href="index.php">Esci</a></li>
+                    <li class="btn signupLink"><a href="#">Registrati</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -171,9 +252,9 @@
             <div class="flex-child-ft item4">
                 <h4>Account</h4>
                 <ul>
-                    <li><a href="userprofile.html">Profilo</a></li>
-                    <li><a href="userfavoritegrid.html">Preferiti</a></li>
-                    <li><a href="userrate.html">Recensioni</a></li>
+                    <li><a href="userprofile.php">Profilo</a></li>
+                    <li><a href="userfavoritegrid.php">Preferiti</a></li>
+                    <li><a href="userrate.php">Recensioni</a></li>
                 </ul>
             </div>
         </div>

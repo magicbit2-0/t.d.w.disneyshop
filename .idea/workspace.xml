@@ -20,20 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sito Disney/dtml/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/include/auth.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/user_favoritegrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/user_favoritegrid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/user_favoritelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/user_favoritelist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/user_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/user_rate.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/user_rate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/userprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/userprofile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/shoppage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/shoppage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/userfavouritegrid.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/userfavoritegrid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/userfavouritelist.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/userfavoritelist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/userprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/userprofile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/userrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/userrate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db aggiornamento da eseguire.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db aggiornamento da eseguire.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/include/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +112,8 @@
       <workItem from="1619373852980" duration="2903000" />
       <workItem from="1619429716473" duration="7437000" />
       <workItem from="1619447769247" duration="11355000" />
-      <workItem from="1619515857680" duration="11731000" />
+      <workItem from="1619515857680" duration="22248000" />
+      <workItem from="1619606637466" duration="3428000" />
     </task>
     <servers />
   </component>
@@ -154,11 +149,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1619373848069" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1619539569459">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1619542629873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="537" y="297" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1619433445904" />
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1619539569459" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1619542629873" />
     <state x="410" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1619025877195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -167,9 +162,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1619202066422" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1618240540702">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1619544693867">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1618240540702" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1619544693867" />
   </component>
 </project>
