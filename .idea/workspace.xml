@@ -20,16 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sito Disney/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/user_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/user_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/include/auth.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/auth.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/userprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/userprofile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/user_favoritegrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/user_favoritegrid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/user_favoritelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/user_favoritelist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/userfavoritegrid.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/userfavoritegrid.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +110,7 @@
       <workItem from="1619447769247" duration="11355000" />
       <workItem from="1619515857680" duration="22248000" />
       <workItem from="1619606637466" duration="18934000" />
+      <workItem from="1619686029454" duration="1936000" />
     </task>
     <servers />
   </component>

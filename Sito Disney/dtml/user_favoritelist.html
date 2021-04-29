@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="hero-ct">
-                    <h1>Nome utente</h1>
+                    <h1><[username]></h1>
                     <ul class="breadcumb">
                         <li class="active"><a href="index.php">Home</a></li>
                         <li> <span class="ion-ios-arrow-right"></span> Film preferiti </li>
@@ -20,7 +20,7 @@
             <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="user-information">
                     <div class="user-img">
-                        <a href="#"><img src="dtml/image/uploads/user-img.png" alt=""><br></a>
+                        <[foto_avatar]>
                         <a href="#" class="redbtn">Cambia avatar</a>
                     </div>
                     <div class="user-fav">
@@ -33,14 +33,14 @@
                     </div>
                     <div class="user-fav">
                         <ul>
-                            <li id="EsciAccount"><a href="index.php">Esci</a></li>
+                            <li id="EsciAccount"><a href="logout.php">Esci</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="topbar-filter user">
-                    <p> Trovati <span> 10 film </span> in totale </p>
+                    <p> Trovati <span> <[number_of_results]> film </span> in totale </p>
                     <label>Ordina per:</label>
                     <select>
                         <option value="popularity">Più popolari</option>
