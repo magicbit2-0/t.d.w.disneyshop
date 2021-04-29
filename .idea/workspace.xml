@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="" />
+    <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +109,7 @@
       <workItem from="1619606637466" duration="18934000" />
       <workItem from="1619686029454" duration="2085000" />
       <workItem from="1619693163408" duration="6782000" />
-      <workItem from="1619712970371" duration="3635000" />
+      <workItem from="1619712970371" duration="3949000" />
     </task>
     <servers />
   </component>
