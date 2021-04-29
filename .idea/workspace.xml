@@ -21,17 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/UI/timeline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/aggiungi-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/aggiungi-personaggi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/aggiungi-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/aggiungi-regia.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/contacts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/e-commerce.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/e-commerce.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/e-commerce2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/e-commerce2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/forgot-password-v2.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/invoice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/login-v2.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-personaggi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-regia.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/persona.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/persona.html" afterDir="false" />
@@ -44,13 +40,7 @@
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-edit2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-edit2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/recover-password-v2.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/regia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/register-v2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/gallery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/mailbox/compose.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/mailbox/mailbox.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/mailbox/read-mail.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +129,7 @@
       <workItem from="1619606637466" duration="18934000" />
       <workItem from="1619686029454" duration="2085000" />
       <workItem from="1619693163408" duration="6782000" />
-      <workItem from="1619712970371" duration="1292000" />
+      <workItem from="1619712970371" duration="1801000" />
     </task>
     <servers />
   </component>
