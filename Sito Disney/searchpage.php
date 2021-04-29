@@ -11,12 +11,12 @@ $ricerca2 = "%{$_POST['parolaCercata2']}%";
 if (isset($mysqli)) {
 
     if(isset($_POST['categorie'])){
-        $result = $mysqli->query("SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
+        $result = $mysqli->query("(SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
                                     FROM articolo a join articolo_parola_chiave apk on apk.articolo_id = a.id
                                     join parola_chiave k on k.id = apk.parola_chiave_id
                                     where a.titolo like '$ricerca2' and a.categoria like \"{$_POST['categorie']}\"
                                     and year(a.data_uscita) >= {$_POST['da']} and year(a.data_uscita) <= {$_POST['a']} 
-                                    ORDER BY votazione desc, data_uscita desc");
+                                    ORDER BY votazione desc, data_uscita desc)");
     } else
     if(isset($_POST['categoriaCelebrità'])){
         $result = $mysqli->query("(SELECT distinct p.id as idCercato, p.nome as nomeEntita,p.nome as categoria, p.data_nascita
@@ -33,7 +33,9 @@ if (isset($mysqli)) {
 
     }
     else {
-        $result = $mysqli->query("(SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
+        $result = $mysqli->query("(select distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
+                                    FROM articolo a where (a.titolo like '$ricerca' or a.categoria like '$ricerca') union 
+                                    (SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
                                     FROM articolo a join personaggio_articolo pa on pa.articolo_id = a.id 
                                     join personaggio p on p.id = pa.personaggio_id
 									left join backstage_articolo ba on ba.articolo_id = a.id
@@ -55,7 +57,7 @@ if (isset($mysqli)) {
                                     join parola_chiave_regia pkr on pkr.regia_id = r.id
                                     join parola_chiave k on k.id=pkr.parola_chiave_id
                                     where (concat(r.nome,' ',r.cognome) like '$ricerca' or r.nome like '$ricerca' or r.cognome like '$ricerca' or k.testo like 
-                                    '$ricerca' or a.titolo like '$ricerca' or r.anno_nascita like '$ricerca') and k.testo='attore' or 'regia')");
+                                    '$ricerca' or a.titolo like '$ricerca' or r.anno_nascita like '$ricerca') and k.testo='attore' or 'regia'))");
     }
 
     $number_of_results = mysqli_num_rows($result);
