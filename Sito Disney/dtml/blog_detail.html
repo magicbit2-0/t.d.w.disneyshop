@@ -40,19 +40,18 @@
                         </div>
                     </div>
                     <div class="comments">
-                        <h4>Commenti</h4>
+                        <h4>Commenti</h4> <[foreach]>
                         <div class="cmt-item flex-it">
-                            <[foreach]>
                             <div class="author-infor">
                                 <div class="flex-it2">
-                                    <h6><a href='<[pagina_utente]>'><[nome_utente]></a></h6>
+                                    <h6 style="color: whitesmoke;"><[nome_utente]></h6>
                                     <span class="time"><[data_commento]></span>
                                 </div>
                                 <p><[testo_commento]></p>
                                 <p><a class="rep-btn" href="#">+ Commenti</a></p>
                             </div>
-                            <[/foreach]>
                         </div>
+                        <[/foreach]>
                     </div>
                     <div class="comment-form">
                         <h4>Lascia un commento</h4>

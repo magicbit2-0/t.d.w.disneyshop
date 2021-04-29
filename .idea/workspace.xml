@@ -20,25 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sito Disney/bottonChange.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/blogdetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/blogdetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/bloggrid.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/bloggrid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/celebritygrid01.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/celebritygrid01.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/celebritylist.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/celebritylist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/celebritysingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/celebritysingle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/celebritysingle2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/celebritysingle2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/comingsoon.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/comingsoon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/user_rate.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/user_rate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/moviegrid.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviegrid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/movielist.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/movielist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/searchpage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/searchpage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/userfavoritegrid.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/userfavoritegrid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/userrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/userrate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/blog_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +110,7 @@
       <workItem from="1619515857680" duration="22248000" />
       <workItem from="1619606637466" duration="18934000" />
       <workItem from="1619686029454" duration="2085000" />
-      <workItem from="1619693163408" duration="3630000" />
+      <workItem from="1619693163408" duration="6782000" />
     </task>
     <servers />
   </component>
