@@ -3,7 +3,6 @@
     session_start();
     require "include/dbms.inc.php";
     require "include/template2.inc.php";
-    //require "include/auth.inc.php";
 
     $main = new Template("dtml/index.html");
     if(isset($_REQUEST['accesso'])){

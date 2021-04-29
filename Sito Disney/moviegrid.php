@@ -2,12 +2,11 @@
 error_reporting(E_ALL & ~E_NOTICE);
 require "include/dbms.inc.php";
 require "include/template2.inc.php";
+require "bottonChange.php";
 
-$main=new Template("dtml/index.html");
 $body=new Template("dtml/movie_grid.html");
 
 if (isset($mysqli)) {
-    /*echo $_GET['ordinamento'].' ciao '.$_POST['categorie'];*/
     $results_per_page = 12;
     if (!isset($_GET['page'])) {
         $page = 1;

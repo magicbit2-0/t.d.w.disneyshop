@@ -2,8 +2,8 @@
 error_reporting(E_ALL & ~E_NOTICE);
 require "include/dbms.inc.php";
 require "include/template2.inc.php";
+require "bottonChange.php";
 
-$main=new Template("dtml/index.html");
 $body=new Template("dtml/search_page.html");
 $ricerca = "%{$_POST['parolaCercata']}%";
 $ricerca2 = "%{$_POST['parolaCercata2']}%";

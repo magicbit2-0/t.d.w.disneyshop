@@ -7,7 +7,6 @@ require "include/template2.inc.php";
 $main=new Template("dtml/index2.html");
 $body=new Template("dtml/user_favoritegrid.html");
 
-print_r($_SESSION);
 if (isset($mysqli)) {
     $result = $mysqli->query("(select * from utente  
                                      where id = {$_SESSION['idUtente']})");
