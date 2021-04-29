@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Amministratore</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../index.html" class="brand-link">
+      <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Amministratore</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a class="d-block">Nome Amministratore</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="../../index.html" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+          <li class="nav-header">Pagine</li>
+          <li class="nav-item">
+            <a href="../calendar.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                Calendario
+                <span class="badge badge-info right"></span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../gallery.html" class="nav-link">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                Galleria
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-envelope"></i>
+              <p>
+                Email
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>In arrivo</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/compose.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Scrivi Email</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/read-mail.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Leggi Email</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Gestione cataloghi
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="projects.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Prodotti</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="regia.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Cast</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="personaggi.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Personaggi</p>
+                </a>
+              </li>
+              <!--<li class="nav-item">
+                <a href="pages/examples/invoice.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Ordine Utenza</p>
+                </a>
+              </li>-->
+              <li class="nav-item">
+                <a href="../UI/timeline.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gestione Commenti</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="profile.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Utente</p>
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="pages/examples/e-commerce.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>E-commerce</p>
+                </a>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a href="pages/examples/project-add.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Aggiungi Prodotto</p>
+                </a>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a href="pages/examples/project-edit.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Modifica Prodotto</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/examples/project-detail.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Commenti Prodotto</p>
+                </a>
+              </li>-->
+              <li class="nav-item">
+                <a href="contacts.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Profili Utenti</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-plus-square"></i>
+              <p>
+                Login e Registrazione
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="login-v2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Login</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="register-v2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Registrazione</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="forgot-password-v2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Password Dimenticata</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="recover-password-v2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Recupera Password</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Cartone</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+              <li class="breadcrumb-item active">Cartone</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="card card-solid">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <h3 class="d-inline-block d-sm-none">Nome Cartone</h3>
+              <div class="col-12">
+                <img src="../../dist/img/prod-1.jpg" class="product-image" alt="Product Image">
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <h3 class="my-3">Nome Cartone</h3>
+              <p>Trama Cartone.</p>
+
+              <p>Direttore: </p>
+              <p>Personaggi: </p>
+              <p>Data Rilascio: </p>
+              <p>Durata: </p>
+              <hr>
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              </div>
+
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              </div>
+
+              <div class="bg-gray py-2 px-3 mt-4">
+                <h2 class="mb-0">
+                  Prezzo:
+                </h2>
+                <h4 class="mt-0">
+                  <small>IVA (%): </small>
+                </h4>
+              </div>
+
+            </div>
+          </div>
+          <!--<div class="row mt-4">
+            <nav class="w-100">
+              <div class="nav nav-tabs" id="product-tab" role="tablist">
+                <a class="nav-item nav-link active" id="product-desc-tab" data-toggle="tab" href="#product-desc" role="tab" aria-controls="product-desc" aria-selected="true">Personaggi</a>
+                <a class="nav-item nav-link" id="product-comments-tab" data-toggle="tab" href="#product-comments" role="tab" aria-controls="product-comments" aria-selected="false">Recensioni</a>
+                <a class="nav-item nav-link" id="product-rating-tab" data-toggle="tab" href="#product-rating" role="tab" aria-controls="product-rating" aria-selected="false">Correlati</a>
+              </div>
+            </nav>
+            <div class="tab-content p-3" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="product-desc" role="tabpanel" aria-labelledby="product-desc-tab"> Personaggi Cartone </div>
+              <div class="tab-pane fade" id="product-comments" role="tabpanel" aria-labelledby="product-comments-tab"> Recensioni Cartone</div>
+              <div class="tab-pane fade" id="product-rating" role="tabpanel" aria-labelledby="product-rating-tab"> Correlati Cartone </div>
+            </div>
+          </div>-->
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <strong><p>© Disney © Disney•Pixar © & ™ © 2021 Dinsey&Pixar - Tutti i diritti riservati.</p></strong>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.product-image-thumb').on('click', function () {
+      var $image_element = $(this).find('img')
+      $('.product-image').prop('src', $image_element.attr('src'))
+      $('.product-image-thumb.active').removeClass('active')
+      $(this).addClass('active')
+    })
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Amministratore</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../index.html" class="brand-link">
+      <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Amministratore</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a class="d-block">Nome Amministratore</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="../../index.html" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+          <li class="nav-header">Pagine</li>
+          <li class="nav-item">
+            <a href="../calendar.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                Calendario
+                <span class="badge badge-info right"></span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../gallery.html" class="nav-link">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                Galleria
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-envelope"></i>
+              <p>
+                Email
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>In arrivo</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/compose.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Scrivi Email</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/read-mail.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Leggi Email</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Gestione cataloghi
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="projects.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Prodotti</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="regia.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Cast</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="personaggi.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Personaggi</p>
+                </a>
+              </li>
+              <!--<li class="nav-item">
+                <a href="pages/examples/invoice.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Ordine Utenza</p>
+                </a>
+              </li>-->
+              <li class="nav-item">
+                <a href="../UI/timeline.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gestione Commenti</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="profile.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Utente</p>
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="pages/examples/e-commerce.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>E-commerce</p>
+                </a>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a href="pages/examples/project-add.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Aggiungi Prodotto</p>
+                </a>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a href="pages/examples/project-edit.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Modifica Prodotto</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/examples/project-detail.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Commenti Prodotto</p>
+                </a>
+              </li>-->
+              <li class="nav-item">
+                <a href="contacts.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Profili Utenti</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-plus-square"></i>
+              <p>
+                Login e Registrazione
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="login-v2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Login</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="register-v2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Registrazione</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="forgot-password-v2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Password Dimenticata</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="recover-password-v2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Recupera Password</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Ordini</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+              <li class="breadcrumb-item active">Ordini</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <!-- Main content -->
+            <div class="invoice p-3 mb-3">
+              <!-- title row -->
+              <div class="row">
+                <div class="col-12">
+                  <h4>
+                    <i class="fas fa-globe"></i> Ordine n°
+                    <small class="float-right">Data ordine</small>
+                  </h4>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- info row -->
+              <div class="row invoice-info">
+                <div class="col-sm-4 invoice-col">
+                  Da
+                  <address>
+                    <strong>Nome utente</strong><br>
+                    Indirizzo<br>
+                    Regione, Stato<br>
+                    Telefono<br>
+                    Email
+                  </address>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-4 invoice-col">
+                  A
+                  <address>
+                    <strong>Sito Disney (Amministratore)</strong><br>
+                    Indirizzo<br>
+                    Regione, Stato<br>
+                    Telefono<br>
+                    Email
+                  </address>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-4 invoice-col">
+                  <b>Ordine n° #007612</b><br>
+                  <br>
+                  <b>ID ordine:</b> <br>
+                  <b>Carta per il pagamento:</b> <br>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+
+              <!-- Table row -->
+              <div class="row">
+                <div class="col-12 table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                    <tr>
+                      <th>Quantità</th>
+                      <th>Prodotto</th>
+                      <th>ID prodotto</th>
+                      <th>Descrizione</th>
+                      <th>Prezzo</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>n° quantità</td>
+                      <td>nome prodotto</td>
+                      <td>ID prodotto</td>
+                      <td>descrizione prodotto</td>
+                      <td>prezzo prodotto</td>
+                    </tr>
+                    <tr>
+                      <td>n° quantità</td>
+                      <td>nome prodotto</td>
+                      <td>ID prodotto</td>
+                      <td>descrizione prodotto</td>
+                      <td>prezzo prodotto</td>
+                    </tr>
+                    <tr>
+                      <td>n° quantità</td>
+                      <td>nome prodotto</td>
+                      <td>ID prodotto</td>
+                      <td>descrizione prodotto</td>
+                      <td>prezzo prodotto</td>
+                    </tr>
+                    <tr>
+                      <td>n° quantità</td>
+                      <td>nome prodotto</td>
+                      <td>ID prodotto</td>
+                      <td>descrizione prodotto</td>
+                      <td>prezzo prodotto</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+
+              <div class="row">
+                <!-- accepted payments column -->
+                <div class="col-6">
+                  <p class="lead">Metodi di pagamento:</p>
+                  <img src="../../dist/img/credit/visa.png" alt="Visa">
+                  <img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
+                  <img src="../../dist/img/credit/american-express.png" alt="American Express">
+                  <img src="../../dist/img/credit/paypal2.png" alt="Paypal">
+                </div>
+                <!-- /.col -->
+                <div class="col-6">
+                  <p class="lead">Data ordine</p>
+
+                  <div class="table-responsive">
+                    <table class="table">
+                      <tr>
+                        <th style="width:50%">Prezzo prodotti:</th>
+                        <td>prezzo somma prodotti</td>
+                      </tr>
+                      <tr>
+                        <th>Spedizione:</th>
+                        <td>prezzo spedizione</td>
+                      </tr>
+                      <tr>
+                        <th>Iva (%)</th>
+                        <td>prezzo iva</td>
+                      </tr>
+                      <tr>
+                        <th>Totale:</th>
+                        <td>prezzo totale</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+
+              <!-- this row will not appear when printing -->
+              <div class="row no-print">
+                <div class="col-12">
+                  <a href="invoice-print.html" rel="noopener" target="_blank" class="btn btn-default">
+                    <i class="fas fa-print"></i> Stampa</a>
+                </div>
+              </div>
+            </div>
+            <!-- /.invoice -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong><p>© Disney © Disney•Pixar © & ™ © 2021 Dinsey&Pixar - Tutti i diritti riservati.</p></strong>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+</body>
+</html>
