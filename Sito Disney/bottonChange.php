@@ -24,11 +24,9 @@ if($_SESSION['idUtente']!= null) {
                                     join utente u on u.id = gu.utente_id where u.id = '{$_SESSION['idUtente']}' order by tipo_utente)");
     while($data = $result->fetch_assoc()) {
         if ($data['tipo_utente'] == 'amministratore') {
-        echo $data['tipo_utente'];
-        $main->setContent("tipo_utente", '<li><a href="admin.php">Dashboard</a></li>');
+            $main->setContent("tipo_utente", '<li><a href="admin.php">Dashboard</a></li>');
     }
         if ($data['tipo_utente'] == 'cliente') {
-            echo $data['tipo_utente'];
             //$main->setContent("tipo_utente", '<li><a href="'.$key.'">Preferiti</a></li>');
             $main->setContent("tipo_utente", '<li><a href="userfavoritegrid.php">Preferiti</a></li>
                                                          <li><a href="userrate.php">Recensioni</a></li>');
@@ -36,5 +34,4 @@ if($_SESSION['idUtente']!= null) {
 
     }
 }
-print_r($_SESSION);
 ?>
