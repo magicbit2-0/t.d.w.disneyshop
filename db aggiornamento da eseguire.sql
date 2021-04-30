@@ -129,13 +129,13 @@ UPDATE `disneydb`.`personaggio_articolo` SET `articolo_id` = '2' WHERE (`id` = '
  update utente set password = md5('lorenzo') where username = 'lorenzo';
  update utente set password = md5('michele') where username = 'michele';*/
  
--- INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('62', '37', '3');
--- INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('63', '38', '3');
--- INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('64', '39', '3');
--- INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('65', '40', '3');
--- INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('66', '41', '14');
--- INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('67', '42', '3');
--- INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('68', '43', '13');
--- INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('69', '44', '3');
--- INSERT INTO `disneydb`.`parola_chiave_regia` (`id`, `regia_id`, `parola_chiave_id`) VALUES ('14', '14', '4');
--- INSERT INTO `disneydb`.`parola_chiave_regia` (`id`, `regia_id`, `parola_chiave_id`) VALUES ('15', '15', '4');
+ /*INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('62', '37', '3');
+ INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('63', '38', '3');
+ INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('64', '39', '3');
+ INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('65', '40', '3');
+ INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('66', '41', '14');
+ INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('67', '42', '3');
+ INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('68', '43', '13');
+ INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('69', '44', '3');
+ INSERT INTO `disneydb`.`parola_chiave_regia` (`id`, `regia_id`, `parola_chiave_id`) VALUES ('14', '14', '4');
+ INSERT INTO `disneydb`.`parola_chiave_regia` (`id`, `regia_id`, `parola_chiave_id`) VALUES ('15', '15', '4');*/
