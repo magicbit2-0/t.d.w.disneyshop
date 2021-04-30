@@ -93,8 +93,6 @@ UPDATE `disneydb`.`personaggio_articolo` SET `articolo_id` = '2' WHERE (`id` = '
  
  insert into articolo_correlato (id, articolo_id, articolo_correlato_id) values (null, 19, 102);
  */
- 
--- ESEGUIRE DA QUI!!!!!!!!!!
 
 -- drop table recensione;
 /* create table recensione (
@@ -119,20 +117,17 @@ UPDATE `disneydb`.`personaggio_articolo` SET `articolo_id` = '2' WHERE (`id` = '
  insert into recensione (`id`,`voto`,`titolo`,`testo`,`data`,`utente_id`,`articolo_id`) values (4,6.3,'Bello!','Il film è bellissimo', '2020-04-17',2,1);
  */
  
- /*update utente set avatar_id = 3 where id = 2;
+/*update utente set avatar_id = 3 where id = 2;
  update utente set avatar_id = 5 where id = 4;
  update utente set avatar_id = 4 where id = 10;*/
  -- delete from avatar where id >= 8;
  
  -- alter table utente modify password varchar(35);
- /*update utente set password = md5('martina') where username = 'martina';
+/*update utente set password = md5('martina') where username = 'martina';
  update utente set password = md5('enrico') where username = 'enrico';
  update utente set password = md5('samuel') where username = 'samuel';
  update utente set password = md5('lorenzo') where username = 'lorenzo';
  update utente set password = md5('michele') where username = 'michele';*/
- 
- 
- -- ESEGUIRE DA QUI
  
 -- INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('62', '37', '3');
 -- INSERT INTO `disneydb`.`parola_chiave_personaggio` (`id`, `personaggio_id`, `parola_chiave_id`) VALUES ('63', '38', '3');
