@@ -1,0 +1,60 @@
+<div class="hero common-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-ct">
+                    <h1> Carrello</h1>
+                    <ul class="breadcumb">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li> <span class="ion-ios-arrow-right"></span>Carrello</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-single movie_list">
+    <div class="container">
+        <div class="row ipad-width2">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <[foreach]>
+                <div class="movie-item-style-2">
+                    <img src="dtml/image/locandine/Immagini%20Cartoni%20Disney/Aladdin.jpg" alt="">
+                    <div class="mv-item-infor">
+                        <h6><a href="moviesingle.html">Titolo Film <span>(Data pubblicazione)</span></a></h6>
+                        <p class="describe2">Prezzo</p>
+                        <p class="run-time"> Durata: 2h21'       <span>Data Rilascio: data</span></p>
+                    </div>
+                </div>
+                <[/foreach]>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="sidebar">
+                    <div class="searh-form">
+                        <h4 class="sb-title">Acquista</h4>
+                        <form class="form-style-1" action="#">
+                            <div class="row">
+                                <div class="container" id="PriceContainer">
+                                    <span class="cartprice">Totale parziale: </span>
+                                    <span class="cartprice value">€xx.xx</span>
+
+
+                                    <span class="cartprice">Spese di Spedizione:</span>
+                                    <span class="cartprice value">€xx.xx</span>
+
+
+                                    <span class="cartprice">Totale(Iva inclusa):</span>
+                                    <span class="cartprice value">€xx.xx</span>
+                                </div>
+                                <div class="col-md-12 " id="provaid">
+                                    <input class="buybtn" type="button" onclick="location.href='infouser.html';" value="Acquista Ora">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
