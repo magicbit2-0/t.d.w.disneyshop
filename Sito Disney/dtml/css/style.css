@@ -8462,6 +8462,22 @@ input.annullabtn{
   border-radius: 5px;
   margin-left: 20px;
 }
+
+button.annullabtn{
+  font-family: 'Dosis', sans-serif;
+  font-size: 10px;
+  color: #abb7c4;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #abb7c4;
+  color: #ffffff;
+  padding: 8px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
 #annullarow{
   direction: rtl;
   margin-top: 10px;

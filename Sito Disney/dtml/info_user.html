@@ -9,7 +9,9 @@
     </div>
 </div>
 
-<div class="container" id="infocontainer" style="margin-top: 80px;">
+<div class="container" id="infocontainer" style="margin-top: 80px; margin-bottom: 80px;">
+    <div>
+    <form id="formordine" action="">
     <div class="title2-hd">Dettagli Spedizione</div>
         <div height="570" class="container infocontainer2">
             <div class="col-sm-12" width="800px" margin-right="24px" margin-left="24px">
@@ -18,29 +20,29 @@
                         <div class="inforow">
                             <label class="label2" for="name">
                                 Nome:
-                                <input type="text" name="name" id="name" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-name" data-id="nome" value="<[nome]>">
+                                <input type="text" name="name" id="nome1" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-name" data-id="nome" value="<[nome]>">
                             </label>
                             <label class="label2" for="surname">
                                 Cognome:
-                                <input type="text" name="surname" id="surname" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-surname" data-id="cognome" value="<[cognome]>">
+                                <input type="text" name="surname" id="cognome1" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-surname" data-id="cognome" value="<[cognome]>">
                             </label>
                         </div>
                         <div class="inforow">
                             <label class="label2" for="indirizzo1">
                                 Indirizzo n. 1:
-                                    <input type="text" name="indirizzo1" id="indirizzo1" maxlength="99" placeholder="" required="required" autocomplete="address-line1" data-id="indirizzo1" value="<[indirizzo1]>">
+                                <input type="text" name="indirizzo1" id="indirizzo1.1" maxlength="99" placeholder="" required="required" autocomplete="address-line1" data-id="indirizzo1" value="<[indirizzo1]>">
                             </label>
                         </div>
                         <div class="inforow">
                             <label class="label2" for="indirizzo2">
                                 Indirizzo n. 2:
-                                <input type="text" name="indirizzo2" id="indirizzo2" maxlength="99" placeholder="" autocomplete="address-line2" data-id="indirizzo2" value="<[indirizzo2]>">
+                                <input type="text" name="indirizzo2" id="indirizzo1.2" maxlength="99" placeholder="" autocomplete="address-line2" data-id="indirizzo2" value="<[indirizzo2]>">
                             </label>
                         </div>
                         <div class="inforow">
                             <label class="label2" >
                                 Paese
-                            <select name="paese" >
+                            <select name="paese" id="paese1" >
                                     <option value="text"><[paese]></option>
                                     <option value="saab">Italia</option>
                                     <option value="saab">Albania</option>
@@ -185,28 +187,27 @@
                             </label>
                             <label class="label2" for="stato">
                                 Regione:
-                                <input type="text" name="stato" id="stato" maxlength="99" placeholder="Facoltativo" autocomplete="address-level1" data-id="stato" value="<[regione]>">
+                                <input type="text" name="stato" id="regione1" maxlength="99" placeholder="Facoltativo" autocomplete="address-level1" data-id="stato" value="<[regione]>">
                             </label>
                         </div>
                         <div class="inforow">
                             <label class="label2" for="città">
                                 Città
-                                <input type="text" name="città" id="città" maxlength="99" placeholder="" required="required" autocomplete="address-level2" data-id="city" value="<[citta]>">
+                                <input type="text" name="città" id="citta1" maxlength="99" placeholder="" required="required" autocomplete="address-level2" data-id="city" value="<[citta]>">
                             </label>
                             <label class="label2" for="cap">
                                 CAP
-                                <input type="text" name="cap" id="cap" maxlength="5" placeholder="" required="required" autocomplete="postal-code" data-id="zipcode" value="<[cap]>">
+                                <input type="text" name="cap" id="cap1" maxlength="5" placeholder="" required="required" autocomplete="postal-code" data-id="zipcode" value="<[cap]>">
                             </label>
                         </div>
                         <div class="inforow">
                             <label class="label2" for="numero">
                                 Numero di telefono
-                                <input type="text" name="numero" id="numero" maxlength="10" placeholder="" required="required" autocomplete="tel" data-id="phoneNumber" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="<[telefono]>">
+                                <input type="text" name="numero" id="numero1" maxlength="10" placeholder="" required="required" autocomplete="tel" data-id="phoneNumber" class="WishTextInput-sc-1k4jzwj-3 immfcL" value="<[telefono]>">
                             </label>
                         </div>
                         <div class="inforow" id="annullarow">
-                            <input class="annullabtn" type="button" onclick="location.href='';" value="Cancella">
-                            <label class="indirizzocheck" for="indirizzo"> Usa questo indirizzo </label>
+                            <label class="indirizzocheck" for="indirizzo"> Usa questo indirizzo in futuro</label>
                             <input class="indirizzocheck1" type="checkbox" name="indirizzo" id="indirizzo" value="Usa questo indirizzo">
                         </div>
                     </div>
@@ -220,7 +221,7 @@
                         <div class="inforow">
                             <label class="label2" for="cardnumber">
                                 Numero di Carta
-                                <input type="text" name="cardnumber" id="cardnumber" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-cardnumber" data-id="cardnumber" value="<[numero_carta]>">
+                                <input type="text" name="cardnumber" id="numerocarta" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{​​8,20}​​$" required="required" maxlength="99" autocomplete="given-cardnumber" data-id="cardnumber" value="<[numero_carta]>">
                             </label>
                             <label class="label2" for="cvv">
                                 CVV
@@ -238,14 +239,17 @@
                             </label>
                         </div>
                     <div class="inforow" id="annullarow1">
-                        <input class="annullabtn" type="button" onclick="location.href='';" value="Cancella">
-                        <label class="indirizzocheck" for="metodo"> Usa questo metodo di pagamento </label>
+                        <label class="indirizzocheck" for="metodo"> Usa questo metodo di pagamento in futuro</label>
                         <input class="indirizzocheck1" type="checkbox" name="metodo" id="metodo" value="usa questo metodo">
                     </div>
                 </div>
             </div>
-        </div>
-        <input class="comprabtn" type="button" onclick="location.href='index.html';" value="Compra Ora">
-        <input class="comprabtn" type="button" onclick="location.href='shoppage.html';" value="Annulla">
+        </div>        
+    </div>
+
+    </form>
+
+    <button type="submit" form="" class="comprabtn" form="formordine">Compra Ora</button>
+    <button class="comprabtn" onclick="location.href='shoppage.php'" type="button" form="formordine">Annulla</button>
     </div>
 </div>
