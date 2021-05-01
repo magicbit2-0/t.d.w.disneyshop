@@ -9,7 +9,7 @@ $body=new Template("dtml/shop_page.html");
 
 if(isset($mysqli)){
 
-    
+        
 
 }
 
