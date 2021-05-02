@@ -19,14 +19,7 @@
         <div class="row ipad-width2">
             <div class="col-md-8 col-sm-12 col-xs-12">
                 <[foreach]>
-                <div class="movie-item-style-2">
-                    <img src='img.php?id=<[idImg]>' alt="">
-                    <div class="mv-item-infor">
-                        <h6><a href="moviesingle.html"><[titolo]><span><[data_uscita]></span></a></h6>
-                        <p class="describe2"><[prezzo]></p>
-                        <p class="run-time"> Durata: <[durata]>       <span>Data Rilascio: <[data_uscita]></span></p>
-                    </div>
-                </div>
+                    <[articoli_carrello]>
                 <[/foreach]>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
@@ -37,18 +30,18 @@
                             <div class="row">
                                 <div class="container" id="PriceContainer">
                                     <span class="cartprice">Totale parziale: </span>
-                                    <span class="cartprice value">€<[totale_parziale]></span>
+                                    <span class="cartprice value">€ <[totale_parziale]></span>
 
 
                                     <span class="cartprice">Spese di Spedizione:</span>
-                                    <span class="cartprice value">€xx.xx</span>
+                                    <span class="cartprice value">€ <[spese_spedizione]></span>
 
 
                                     <span class="cartprice">Totale(Iva inclusa):</span>
                                     <span class="cartprice value">€<[totale]></span>
                                 </div>
                                 <div class="col-md-12 " id="provaid">
-                                    <input class="buybtn" type="button" onclick="location.href='infouser.html';" value="Acquista Ora">
+                                    <input class="buybtn" type="button" onclick="location.href='infouser.php';" value="Acquista Ora">
                                 </div>
                             </div>
                         </form>

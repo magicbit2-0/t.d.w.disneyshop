@@ -4,7 +4,7 @@ session_start();
 require "include/dbms.inc.php";
 require "include/template2.inc.php";
 
-    $_SESSION 
+    $_SESSION['articoli'][]=$_GET['id'];
 
-$main->close();
+    header('Location: http://localhost/t.d.w.disneyshop/Sito%20Disney/shoppage.php')
 ?>
