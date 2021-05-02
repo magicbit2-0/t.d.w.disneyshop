@@ -34,7 +34,7 @@ Class Auth {
                 $body2->setContent("message", "errorLogin");
                 $main->setContent("body2", $body2->get());*/
             }
-            Header("location: ./index.php?accesso=LoginOk");
+            Header("location: ./index.php");
             /*$main = new Template("dtml/index2.html"); //esci
               $body = new Template("dtml/homepage.html");*/
 

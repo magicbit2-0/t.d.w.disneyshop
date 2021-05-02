@@ -55,13 +55,14 @@
         <h3><a href="login.php">AccediPage</a></h3>
         <h3>Accedi</h3>
         <form method="post" action="login.php">
+			<[message::notification library="widget"]>
         	<div class="row">
         		 <label for="username">
                     Username:
                     <input type="text" name="username" id="username" placeholder=""  required="required" /> <!--pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"-->
                 </label>
         	</div>
-           
+
             <div class="row">
             	<label for="password">
                     Password:
@@ -90,40 +91,207 @@
 <div class="login-wrapper"  id="signup-content">
     <div class="login-content">
 		<img src="dtml/images/img/x.png" onclick="location.href='index.php';" align="right">
-        <h3>Registrati</h3>
-        <form method="post" action="signup.php">
+
+		<h3><a href="signup.php">Registrati</a></h3>
+        <!--<form method="post" action="signup.php">
+			<div class="row">
+				<label for="nome">
+					Nome:
+					<input type="text" name="nome" id="nome" placeholder="" required="required" />
+				</label>
+				<label for="cognome">
+					Cognome:
+					<input type="text" name="cognome" id="cognome" placeholder="" required="required" />
+				</label>
+			</div>
             <div class="row">
-                 <label for="username-2">
-                    Username:
-                    <input type="text" name="username" id="username-2" placeholder="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                 <label for="birthdate">
+                    Data di Nascita:
+                    <input type="date" name="birthdate" id="birthdate" placeholder="" required="required" />
                 </label>
             </div>
            
             <div class="row">
-                <label for="email-2">
+                <label for="email">
                     Email:
-                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                    <input type="password" name="email" id="email" placeholder="" pattern="" required="required" />
                 </label>
             </div>
+			<div class="row">
+				<label for="paese">
+					Paese:
+					<select name="paese" id="paese">
+						<option value="saab" selected>Italia</option>
+						<option value="saab">Albania</option>
+						<option value="saab">Algeria</option>
+						<option value="saab">Andorra</option>
+						<option value="saab">Anguilla</option>
+						<option value="saab">Arabia Saudita</option>
+						<option value="saab">Argentina</option>
+						<option value="saab">Armenia</option>
+						<option value="saab">Aruba</option>
+						<option value="saab">Australia</option>
+						<option value="saab">Austria</option>
+						<option value="saab">Azerbaijan</option>
+						<option value="saab">Bahamas</option>
+						<option value="saab">Bahrein</option>
+						<option value="saab">Bangladesh</option>
+						<option value="saab">Barbados</option>
+						<option value="saab">Belgio</option>
+						<option value="saab">Belize</option>
+						<option value="saab">Bermuda</option>
+						<option value="saab">Bhutan</option>
+						<option value="saab">Birmania</option>
+						<option value="saab">Bolivia</option>
+						<option value="saab">Bosnia ed Erzegovina</option>
+						<option value="saab">Botswana</option>
+						<option value="saab">Brasile</option>
+						<option value="saab">Bulgaria</option>
+						<option value="saab">Cambogia</option>
+						<option value="saab">Canada</option>
+						<option value="saab">Cile</option>
+						<option value="saab">Cipro</option>
+						<option value="saab">Colombia</option>
+						<option value="saab">Corea del Sud</option>
+						<option value="saab">Costa Rica</option>
+						<option value="saab">Croazia</option>
+						<option value="saab">Danimarca</option>
+						<option value="saab">Dominica</option>
+						<option value="saab">Ecuador</option>
+						<option value="saab">Egitto</option>
+						<option value="saab">El Salvador</option>
+						<option value="saab">Emirati Arabi Uniti</option>
+						<option value="saab">Estonia</option>
+						<option value="saab">Figi</option>
+						<option value="saab">Filippine</option>
+						<option value="saab">Finlandia</option>
+						<option value="saab">Francia</option>
+						<option value="saab">Gabon</option>
+						<option value="saab">Georgia</option>
+						<option value="saab">Germania</option>
+						<option value="saab">Ghana</option>
+						<option value="saab">Giamaica</option>
+						<option value="saab">Giappone</option>
+						<option value="saab">Gibilterra</option>
+						<option value="saab">Giordania</option>
+						<option value="saab">Grecia</option>
+						<option value="saab">Grenada</option>
+						<option value="saab">Guatemala</option>
+						<option value="saab">Guyana</option>
+						<option value="saab">Honduras</option>
+						<option value="saab">India</option>
+						<option value="saab">Indonesia</option>
+						<option value="saab">Irlanda</option>
+						<option value="saab">Islanda</option>
+						<option value="saab">Isole Cayman</option>
+						<option value="saab">Isole Vergini Americane</option>
+						<option value="saab">Isole Vergini Britanniche</option>
+						<option value="saab">Israele</option>
+						<option value="saab">Jersey</option>
+						<option value="saab">Kazakistan</option>
+						<option value="saab">Kenia</option>
+						<option value="saab">Kuwait</option>
+						<option value="saab">Kyrgyzstan</option>
+						<option value="saab">Lettonia</option>
+						<option value="saab">Liechtenstein</option>
+						<option value="saab">Lituania</option>
+						<option value="saab">Lussemburgo</option>
+						<option value="saab">Macedonia Del Nord</option>
+						<option value="saab">Maldive</option>
+						<option value="saab">Malesia</option>
+						<option value="saab">Malta</option>
+						<option value="saab">Marocco</option>
+						<option value="saab">Mauritius</option>
+						<option value="saab">Messico</option>
+						<option value="saab">Moldavia</option>
+						<option value="saab">Monaco</option>
+						<option value="saab">Mongolia</option>
+						<option value="saab">Montenegro</option>
+						<option value="saab">Montserrat</option>
+						<option value="saab">Namibia</option>
+						<option value="saab">Nepal</option>
+						<option value="saab">Nicaragua</option>
+						<option value="saab">Nigeria</option>
+						<option value="saab">Nigue</option>
+						<option value="saab">Norvegia</option>
+						<option value="saab">Nuova Zelanda</option>
+						<option value="saab">Oman</option>
+						<option value="saab">Paesi Bassi</option>
+						<option value="saab">Pakistan</option>
+						<option value="saab">Panama</option>
+						<option value="saab">Paraguay</option>
+						<option value="saab">Perù</option>
+						<option value="saab">Polonia</option>
+						<option value="saab">Porto Rico</option>
+						<option value="saab">Portogallo</option>
+						<option value="saab">Qatar</option>
+						<option value="saab">Regno Unito (Gran Bretagna)</option>
+						<option value="saab">Repubblica Ceca</option>
+						<option value="saab">Repubblica Domenicana</option>
+						<option value="saab">Reunion</option>
+						<option value="saab">Romania</option>
+						<option value="saab">Russia</option>
+						<option value="saab">Saint Helena</option>
+						<option value="saab">San Marino</option>
+						<option value="saab">Santa Lucia</option>
+						<option value="saab">Serbia</option>
+						<option value="saab">Seychelles</option>
+						<option value="saab">Singapore</option>
+						<option value="saab">Slovacchia</option>
+						<option value="saab">Slovenia</option>
+						<option value="saab">Spagna</option>
+						<option value="saab">Sri Lanka</option>
+						<option value="saab">Stati Uniti D'America</option>
+						<option value="saab">Sud Africa</option>
+						<option value="saab">Suriname</option>
+						<option value="saab">Svezia</option>
+						<option value="saab">Svizzera</option>
+						<option value="saab">Swaziland</option>
+						<option value="saab">Tailandia</option>
+						<option value="saab">Taiwan, Cina</option>
+						<option value="saab">Tonga</option>
+						<option value="saab">Trinidad e Tobago</option>
+						<option value="saab">Tunisia</option>
+						<option value="saab">Turchia</option>
+						<option value="saab">Ucraina</option>
+						<option value="saab">Ungheria</option>
+						<option value="saab">Uruguay</option>
+						<option value="saab">Uzbekistan</option>
+						<option value="saab">Venezuela</option>
+						<option value="saab">Vietnam</option>
+						<option value="saab">Zambia</option>
+					</select>
+				</label>
+				<label for="regione">
+					Regione:
+					<input type="text" name="regione" id="regione" placeholder="" required="required" />
+				</label>
+			</div>
 
 			<div class="row">
-                <label for="password-2">
+				<label for="username2">
+					Username:
+					<input type="text" name="username2" id="username2" placeholder="" required="required" />
+				</label>
+			</div>
+			<div class="row">
+                <label for="password2">
                     Password:
-                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                    <input type="password" name="password2" id="password2" placeholder="" pattern="" required="required" />
                 </label>
             </div>
 
 			<div class="row">
-                <label for="repassword-2">
+                <label for="repasswordRe">
                     Re-inserisci Password:
-                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                    <input type="password" name="passwordRe" id="repasswordRe" placeholder="" pattern="" required="required" />
                 </label>
             </div>
 
 			<div class="row">
              <button type="submit">Registrati</button>
            </div>
-        </form>
+        </form>-->
     </div>
 </div>
 <!--end of signup form popup-->
@@ -194,7 +362,7 @@
 							</ul>
 						</li>
 						<li class="btn loginLink"><a href="#">Accedi</a></li>
-						<li class="btn signupLink"><a href="#">Registrati</a></li>
+						<li class="btn"><a href="signup.php">Registrati</a></li>
 					</ul>
 				</div>
 			<!-- /.navbar-collapse -->
@@ -219,7 +387,7 @@
 	</div>
 </header>
 <!-- END | Header -->
-<[message::notification library="widget"]>
+
 <[body2]>
 <[body]>
 

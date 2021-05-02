@@ -20,22 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sito Disney/aggiungiAttoriAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sito Disney/aggiungiProdottiAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sito Disney/listaAttoriAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sito Disney/listaUtentiAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sito Disney/profileAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/include/functions.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/aggiungiPersonaggi.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/aggiungiPersonaggiAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/admin_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/admin_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/aggiungi-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/aggiungi-regia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/persona.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/persona.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/personaggio.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/personaggio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-add2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-add2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/regia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/include/auth.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/auth.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/include/tags/widget.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/tags/widget.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +65,7 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -133,6 +124,8 @@
       <workItem from="1619712970371" duration="4425000" />
       <workItem from="1619721901761" duration="400000" />
       <workItem from="1619774879819" duration="18660000" />
+      <workItem from="1619945225443" duration="1685000" />
+      <workItem from="1619963496620" duration="17559000" />
     </task>
     <servers />
   </component>
@@ -172,11 +165,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1619805625451" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1619808360199">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1619978296463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="537" y="297" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1619433445904" />
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1619808360199" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1619978296463" />
     <state x="497" y="290" width="674" height="534" key="find.popup" timestamp="1619800674059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
