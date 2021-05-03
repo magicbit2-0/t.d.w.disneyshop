@@ -11,7 +11,7 @@ $totaleParziale = 0;
 $speseSpedizione = 3;
 print_r($_SESSION);
 if (isset($mysqli)) {
-    if(isset($_SESSION['articoli'])){
+    if (count($_SESSION['articoli'])>0) {
         for($i=0; $i < count($_SESSION['articoli']); $i++){
             $result = $mysqli->query("select id, titolo, year(data_uscita) as data_uscita, durata, prezzo from articolo where id = {$_SESSION['articoli'][$i]};"); 
         
@@ -21,13 +21,9 @@ if (isset($mysqli)) {
                                                             <div class="mv-item-infor">
                                                                 <h6><a href="moviesingle.html">'.$data['titolo'].'  <span>('.$data['data_uscita'].')</span></a></h6>
                                                                 <p class="describe2">€ '. $data['prezzo'] .'</p>
-                                                                <p class="run-time"> Durata: '.$data['durata'].'       <span>Data Rilascio: '.$data['data_uscita'].'</span></p>
-                                                                <li class="removecart">
-                                                                    <a href="removeFromCart.php?id='.$data['id'].'">rimuovi dal carrello</a>
-                                                                </li>
-                                                                <button name="togliCarrello" type="button" class="removecart" href="removeFromCart.php?id='.$data['id'].'">Rimuovi dal carrello</button>
-                                                             </div>
-                                                            
+                                                                <p class="run-time" style="margin-bottom: 50px;"> Durata: '.$data['durata'].'       <span>Data Rilascio: '.$data['data_uscita'].'</span></p>
+                                                                <a class="removecart" href="removeFromCart.php?id='.$data['id'].'">rimuovi dal carrello</a>
+                                                            </div>
                                                         </div>');
                 $totaleParziale = $totaleParziale + $data['prezzo'];
             }
