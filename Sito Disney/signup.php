@@ -48,7 +48,6 @@
             //exit;
         }
         if($good == 1){
-            $body -> setContent("allerta","<body onunload=\"window.alert('Registrazione effettuata!')\"");
             createUser($mysqli,$nome,$cognome,$birthdate,$email,$paese,$regione,$indirizzo,$username,$pwd);
         }
 

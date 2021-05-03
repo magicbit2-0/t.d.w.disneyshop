@@ -40,38 +40,19 @@
             </div>
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="topbar-filter user">
-                    <p> Trovati <span> <[number_of_results]> film </span> in totale </p>
-                    <label>Ordina per:</label>
+                    <[number_of_results]>
+                    <label style="margin-left: 400px;">Ordina per:</label>
                     <select>
                         <option value="popularity">Più popolari</option>
                         <option value="rating">Più votati</option>
                         <option value="date">Più Recenti</option>
                         <option value="date">Meno Recenti</option>
                     </select>
-                    <a href="userfavoritelist.php" class="list"><i class="ion-ios-list-outline "></i></a>
-                    <a href="userfavoritegrid.php" class="grid"><i class="ion-grid active"></i></a>
                 </div>
                 <div class="flex-wrap-movielist grid-fav">
                     <[foreach]>
                         <[no_preferiti]>
                     <[/foreach]>
-                </div>
-                <div class="topbar-filter">
-                    <label>Film per pagina:</label>
-                    <select>
-                        <option value="range">20 Film</option>
-                        <option value="saab">10 Film</option>
-                    </select>
-                    <div class="pagination2">
-                        <span>Pagina 1 di 2:</span>
-                        <a class="active" href="userfavoritegrid.php">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">...</a>
-                        <a href="#">78</a>
-                        <a href="#">79</a>
-                        <a href="#"><i class="ion-arrow-right-b"></i></a>
-                    </div>
                 </div>
             </div>
         </div>

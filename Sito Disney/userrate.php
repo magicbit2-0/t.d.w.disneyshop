@@ -53,13 +53,13 @@ if (isset($mysqli)) {
     $number_of_results = mysqli_num_rows($result);
     if ($number_of_results > 0) {
         while ($data = $result->fetch_assoc()) {
-            $body->setContent("number_of_results", $number_of_results);
+            $body->setContent("number_of_results","<p> Trovati <span>  $number_of_results  film </span> in totale </p>");
             if ($data['categoria'] <> 'Film Disney') {
                 $categoria_film = 'moviesingle2.php?id=' . $data['idArticolo'];
             } else {
                 $categoria_film = 'moviesingle.php?id=' . $data['idArticolo'];
             }
-            $body->setContent("recensioni", '
+            $body->setContent("recensione", '
             <div class="movie-item-style-2 userrate">
                <img src="img.php?id='.$data['idArticolo'].'" alt="">
                <div class="mv-item-infor">
@@ -79,7 +79,7 @@ if (isset($mysqli)) {
             </div>');
         }
     } else {
-        $body->setContent("recensione", "<div><h2 style='color:#d36b6b'> Non hai ancora recensito alcun film</h2></div>");
+        $body->setContent("recensione", "<div><h2 style='color:#d36b6b'> Non hai ancora recensito un film</h2></div>");
         $body->setContent("number_of_results", "Nessuna recensione trovata");
     }
 }

@@ -18,6 +18,8 @@
 }*/
 
 $body = new Template("dtml/homepage.html");
+if(isset($_REQUEST['signedup']))
+    $body -> setContent("allerta","<body onload=\"window.alert(' Registrazione effettuata! ') \" > ");
     if (isset($mysqli)) {
         /*if($_SESSION['idUtente']!= null){
             $main = new Template("dtml/index2.html");

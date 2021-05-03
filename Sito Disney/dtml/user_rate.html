@@ -40,7 +40,7 @@
             </div>
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="topbar-filter user">
-                    <p> Trovati <span> <[number_of_results]> film </span> in totale </p>
+                    <[number_of_results]>
                     <label id="ordinaLabel">Ordina per:</label>
                     <select>
                         <option value="popularity">Più popolari</option>
@@ -50,20 +50,8 @@
                     </select>
                 </div>
                     <[foreach]>
-                        <[recensioni]>
+                        <[recensione]>
                     <[/foreach]>
-                <div class="topbar-filter">
-                    <label>Film per pagina:</label>
-                    <select>
-                        <option value="range">10 Film</option>
-                        <option value="saab">20 Film</option>
-                    </select>
-                    <div class="pagination2">
-                        <span>Pagina 1 di 1:</span>
-                        <a class="active" href="userrate.php">1</a>
-                        <a href="#"><i class="ion-arrow-right-b"></i></a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

@@ -53,7 +53,7 @@ if (isset($mysqli)) {
     $number_of_results = mysqli_num_rows($result);
     if ($number_of_results > 0) {
         while ($data = $result->fetch_assoc()) {
-            $body->setContent("number_of_results", $number_of_results);
+            $body->setContent("number_of_results", "<p> Trovati <span> $number_of_results film </span> in totale </p>");
             if ($data['categoria'] <> 'Film Disney') {
                 $categoria_film = 'moviesingle2.php?id=' . $data['idArticolo'];
             } else {
@@ -71,8 +71,8 @@ if (isset($mysqli)) {
                         </div>');
         }
     } else {
-        $body->setContent("no_preferiti", "<div><h2 style='color:#d36b6b'> Non sono stati trovati film correlati a " . $data['titolo'] . "</h2></div>");
-        $body->setContent("number_of_results", "Nessun film trovato");
+        $body->setContent("no_preferiti", "<div><h2 style='color:#d36b6b'> Non ci sono articoli preferiti </h2></div>");
+        $body->setContent("number_of_results", "Nessun articolo trovato");
     }
 }
 $main->setContent("body", $body->get());
