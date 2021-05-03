@@ -21,14 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/user_favoritegrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/user_favoritegrid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/user_rate.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/user_rate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/userfavoritegrid.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/userfavoritegrid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/userrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/userrate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/bottonChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/bottonChange.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/shoppage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/shoppage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +124,7 @@
       <workItem from="1619774879819" duration="18660000" />
       <workItem from="1619945225443" duration="1685000" />
       <workItem from="1619963496620" duration="17559000" />
-      <workItem from="1620036440844" duration="8908000" />
+      <workItem from="1620036440844" duration="11189000" />
     </task>
     <servers />
   </component>

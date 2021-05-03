@@ -28,7 +28,8 @@ if($_SESSION['idUtente']!= null) {
     }
         if ($data['tipo_utente'] == 'cliente') {
             $main->setContent("tipo_utente", '<li><a href="userfavoritegrid.php">Preferiti</a></li>
-                                                         <li><a href="userrate.php">Recensioni</a></li>');
+                                                         <li><a href="userrate.php">Recensioni</a></li>
+                                                         <li><a href="shoppage.php">Carrello</a></li>');
         }
     }
 }
