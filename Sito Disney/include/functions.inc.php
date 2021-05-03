@@ -45,5 +45,22 @@ function createUser($mysqli,$nome,$cognome,$birthdate,$email,$paese,$regione,$in
         echo "errore";
         exit;
     }
+    else {
+        $result = $mysqli->query("select id as idUtente from utente where username = '$username' and password = md5('$pwd')");
+        if (mysqli_num_rows($result) == 1) {
+            $data = $result->fetch_assoc();
+            $idUtente = $data['idUtente'];
+        $result = $mysqli->query("insert into gruppo_utente (id, utente_id,gruppo_id)
+                                  values (null,'$idUtente',1)
+                                  ");
+            if(!$result){
+                echo "errore";
+                exit;
+            } else {
+
+        header("location: ./index.php?signedup");
+            }
+        }
+    }
 }
 ?>

@@ -67,6 +67,9 @@ class widget extends taglibrary
             case "success";
                 $buffer = "<p class=\"alert-success\"><i class=\"icon-ok\"></i> The item has been succesfully added!</p>";
                 break;
+            case "signedup";
+                $buffer = "<p class=\"alert-success\"><i class=\"icon-ok\"></i> Registrazione effettuata!</p>";
+                break;
             default:
                 $buffer = "";
                 break;

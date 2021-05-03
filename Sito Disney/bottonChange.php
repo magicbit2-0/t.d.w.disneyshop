@@ -27,11 +27,9 @@ if($_SESSION['idUtente']!= null) {
             $main->setContent("tipo_utente", '<li><a href="admin.php">Dashboard</a></li>');
     }
         if ($data['tipo_utente'] == 'cliente') {
-            //$main->setContent("tipo_utente", '<li><a href="'.$key.'">Preferiti</a></li>');
             $main->setContent("tipo_utente", '<li><a href="userfavoritegrid.php">Preferiti</a></li>
                                                          <li><a href="userrate.php">Recensioni</a></li>');
         }
-
     }
 }
 ?>

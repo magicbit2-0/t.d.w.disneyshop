@@ -5,10 +5,10 @@
 
     $main = new Template("dtml/index.html");
     $body = new Template("dtml/signup.html");
-    $good = 1;
+
 
     if(isset($_POST['submit'])){
-
+        $good = 1;
         $nome = $_POST['nome'];
         $cognome = $_POST['cognome'];
         $birthdate = $_POST['birthdate'];
@@ -39,6 +39,7 @@
             //header("location: signup.php?error=pwdMatch");
             $body->setContent("message", "pwdMatch");
             $good = 0;
+            //exit;
         }
         if(UsernameExists($mysqli,$username) !== false){
             // header("location: signup.php?error=usernameExists");
@@ -47,19 +48,14 @@
             //exit;
         }
         if($good == 1){
-        createUser($mysqli,$nome,$cognome,$birthdate,$email,$paese,$regione,$indirizzo,$username,$pwd);
-        $body->setContent("message", "success");
+            $body -> setContent("allerta","<body onunload=\"window.alert('Registrazione effettuata!')\"");
+            createUser($mysqli,$nome,$cognome,$birthdate,$email,$paese,$regione,$indirizzo,$username,$pwd);
         }
 
     }
     /*else {
         header("location: signup.php");
     }*/
-
-    if(isset($mysqli)){
-
-
-    }
 
     $main->setContent("body", $body->get());
     $main->close();

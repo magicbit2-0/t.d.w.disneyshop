@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sito Disney/include/functions.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/bottonChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/bottonChange.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/include/auth.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/auth.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/include/functions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/functions.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/include/tags/widget.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/tags/widget.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/signup.php" afterDir="false" />
     </list>
@@ -126,6 +125,7 @@
       <workItem from="1619774879819" duration="18660000" />
       <workItem from="1619945225443" duration="1685000" />
       <workItem from="1619963496620" duration="17559000" />
+      <workItem from="1620036440844" duration="5011000" />
     </task>
     <servers />
   </component>
