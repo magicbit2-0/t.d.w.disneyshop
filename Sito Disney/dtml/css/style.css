@@ -8509,6 +8509,17 @@ input.indirizzocheck1{
   float:right;
 }
 
+.removecart {
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #dd003f;
+  color: #ffffff;
+  padding: 7px 7px;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
 #cliccaqui{
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
