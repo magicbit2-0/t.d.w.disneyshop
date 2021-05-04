@@ -3,8 +3,7 @@ error_reporting(E_ALL & ~E_NOTICE);
 session_start();
 require "include/dbms.inc.php";
 require "include/template2.inc.php";
-
-$main=new Template("dtml/ADMIN/pages/examples/admin_body.html");
+require "include/adminFunctions.inc.php";
 $body=new Template("dtml/ADMIN/pages/examples/projects.html");
 if (isset($mysqli)) {
 

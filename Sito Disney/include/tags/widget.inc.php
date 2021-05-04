@@ -81,6 +81,19 @@ class widget extends taglibrary
 
     }
 
+    function nomeAdmin($nome)
+    {
+        $buffer = "qui è niente "  ;
+        global $mysqli;
+        /*if (($_SESSION['idUtente']) != null) {
+            $result = $mysqli->query("select nome from utente where id = {$_SESSION['idUtente']}");
+            $data = $result->fetch_assoc();
+            $nome = $data['nome'];
+            $buffer = "<a class=\"d-block\"> $nome </a>";
+            echo "qui è " . $nome;
+        }*/
+        return $buffer;
+    }
 
 }
 

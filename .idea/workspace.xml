@@ -20,11 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sito Disney/include/adminFunctions.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/bottonChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/bottonChange.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/shoppage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/shoppage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/aggiungiAttoriAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/aggiungiAttoriAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/aggiungiPersonaggiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/aggiungiPersonaggiAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/aggiungiProdottiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/aggiungiProdottiAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/admin_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/admin_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/include/tags/widget.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/tags/widget.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/listaAttoriAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/listaAttoriAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/listaPersonaggiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/listaPersonaggiAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/listaUtentiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/listaUtentiAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/personaggioAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/personaggioAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/profileAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/profileAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/projects.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +133,8 @@
       <workItem from="1619774879819" duration="18660000" />
       <workItem from="1619945225443" duration="1685000" />
       <workItem from="1619963496620" duration="17559000" />
-      <workItem from="1620036440844" duration="11189000" />
+      <workItem from="1620036440844" duration="11282000" />
+      <workItem from="1620121593663" duration="3771000" />
     </task>
     <servers />
   </component>
@@ -164,11 +174,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1619805625451" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1619978296463">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1620125009272">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="537" y="297" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1619433445904" />
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1619978296463" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1620125009272" />
     <state x="497" y="290" width="674" height="534" key="find.popup" timestamp="1619800674059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
