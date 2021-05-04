@@ -20,10 +20,12 @@ if(isset($mysqli)){
 
         if($righe == 0){
             //ne inserisco uno nuovo nel db
-            $mysqli->query("insert into indirizzo_spedizione (id, nome, cognome, indirizzo1, indirizzo2, paese, regione, citta, cap, telefono, utente_id ) values (null,{$_POST['name']},{$_POST['surname']},{$_POST['indirizzo1']},{$_POST['indirizzo2']},{$_POST['paese']},{$_POST['stato']},{$_POST['città']},{$_POST['cap']},{$_POST['numero']},{$_SESSION['idUtente']});");
+            $mysqli->query("insert into indirizzo_spedizione (id, nome, cognome, indirizzo1, indirizzo2, paese, regione, citta, cap, telefono, utente_id ) values (null,'{$_POST['name']}','{$_POST['surname']}','{$_POST['indirizzo1']}','{$_POST['indirizzo2']}','{$_POST['paese']}','{$_POST['stato']}','{$_POST['città']}','{$_POST['cap']}','{$_POST['numero']}','{$_SESSION['idUtente']}');");
+            
         } else {
             //aggiorno quello che ho già nel db
-            $mysqli->query("update indirizzo_spedizione set nome={$_POST['name']}, cognome={$_POST['surname']}, indirizzo1={$_POST['indirizzo1']}, indirizzo2={$_POST['indirizzo2']}, paese={$_POST['paese']}, regione={$_POST['stato']}, citta={$_POST['città']}, cap={$_POST['cap']}, telefono={$_POST['numero']} where utente_id = {$_SESSION['idUtente']};");
+            $mysqli->query("update indirizzo_spedizione set nome='{$_POST['name']}', cognome='{$_POST['surname']}', indirizzo1='{$_POST['indirizzo1']}', indirizzo2='{$_POST['indirizzo2']}', paese='{$_POST['paese']}', regione='{$_POST['stato']}', citta='{$_POST['città']}', cap='{$_POST['cap']}', telefono='{$_POST['numero']}' where utente_id = '{$_SESSION['idUtente']}';");
+
         }
     }
 
@@ -34,10 +36,10 @@ if(isset($mysqli)){
 
         if($righe == 0){
             //ne inserisco uno nuovo nel db
-            $mysqli->query("insert into metodo_pagamento (numero_carta,cvv,data_scadenza,nome_sulla_carta,utente_id) values({$_POST['cardnumber']},{$_POST['cvv']},{$_POST['scadenza']},{$_POST['nome_carta']},{$_SESSION['idUtente']});");
+            $mysqli->query("insert into metodo_pagamento (numero_carta,cvv,data_scadenza,nome_sulla_carta,utente_id) values('{$_POST['cardnumber']}','{$_POST['cvv']}','{$_POST['scadenza']}','{$_POST['nome_carta']}','{$_SESSION['idUtente']}');");
         } else {
             //aggiorno quello che ho già nel db
-            $mysqli->query("update metodo_pagamento set numero_carta={$_POST['cardnumber']}, cvv={$_POST['cvv']}, data_scadenza={$_POST['scadenza']}, nome_sulla_carta={$_POST['nome_carta']} where utente_id={$_SESSION['idUtente']};");
+            $mysqli->query("update metodo_pagamento set numero_carta='{$_POST['cardnumber']}', cvv='{$_POST['cvv']}', data_scadenza='{$_POST['scadenza']}', nome_sulla_carta='{$_POST['nome_carta']}' where utente_id='{$_SESSION['idUtente']}';");
         }
     }
 
