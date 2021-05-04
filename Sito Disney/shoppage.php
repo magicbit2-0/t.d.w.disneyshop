@@ -7,7 +7,6 @@ require "bottonChange.php";
 
 $body=new Template("dtml/shop_page.html");
 
-print_r($_SESSION);
 if (isset($mysqli)) {
         $totaleParziale = 0;
         $speseSpedizione = 3;
