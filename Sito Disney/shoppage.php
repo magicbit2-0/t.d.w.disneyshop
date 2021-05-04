@@ -19,7 +19,7 @@ if (isset($mysqli)) {
                     $body->setContent("articoli_carrello", '<div class="movie-item-style-2">
                                                             <img src="img.php?id=' . $data['id'] . '" alt="">
                                                             <div class="mv-item-infor">
-                                                                <h6><a href="moviesingle.html">' . $data['titolo'] . '  <span>(' . $data['data_uscita'] . ')</span></a></h6>
+                                                                <h6><a>' . $data['titolo'] . '  <span>(' . $data['data_uscita'] . ')</span></a></h6>
                                                                 <p class="describe2">€ ' . $data['prezzo'] . '</p>
                                                                 <p class="run-time" style="margin-bottom: 50px;"> Durata: ' . $data['durata'] . '       <span>Data Rilascio: ' . $data['data_uscita'] . '</span></p>
                                                                 <a class="removecart" href="removeFromCart.php?index=' . $i . '">rimuovi dal carrello</a>

@@ -16,8 +16,6 @@ if(isset($mysqli)){
         foreach ($data as $key => $value){ 
             $body->setContent($key,$value);
         }
-    } else {
-        
     }
 }
 

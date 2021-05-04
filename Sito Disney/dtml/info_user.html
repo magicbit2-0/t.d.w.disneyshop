@@ -11,7 +11,7 @@
 
 <div class="container" id="infocontainer" style="margin-top: 80px; margin-bottom: 80px;">
     <div>
-    <form id="formordine" action="">
+    <form id="formordine" method="POST">
     <div class="title2-hd">Dettagli Spedizione</div>
         <div height="570" class="container infocontainer2">
             <div class="col-sm-12" width="800px" margin-right="24px" margin-left="24px">
@@ -187,7 +187,7 @@
                             </label>
                             <label class="label2" for="stato">
                                 Regione:
-                                <input type="text" name="stato" id="regione1" maxlength="99" placeholder="Facoltativo" autocomplete="address-level1" data-id="stato" value="<[regione]>">
+                                <input type="text" name="stato" id="regione1" maxlength="99" placeholder="" autocomplete="address-level1" data-id="stato" value="<[regione]>">
                             </label>
                         </div>
                         <div class="inforow">
@@ -208,7 +208,7 @@
                         </div>
                         <div class="inforow" id="annullarow">
                             <label class="indirizzocheck" for="indirizzo"> Usa questo indirizzo in futuro</label>
-                            <input class="indirizzocheck1" type="checkbox" name="indirizzo" id="indirizzo" value="Usa questo indirizzo">
+                            <input class="indirizzocheck1" type="checkbox" name="salvaIndirizzo" id="indirizzo" value="">
                         </div>
                     </div>
                 </div>
@@ -231,16 +231,16 @@
                         <div class="inforow">
                             <label class="label2" for="scadenza">
                                 Data Scadenza
-                                <input type="text" name="scadenza" id="scadenza" maxlength="99" placeholder="" required="required" autocomplete="given-scadenza" data-id="scadenza" value="<[data_scadenza]>">
+                                <input type="date" name="scadenza" id="scadenza" placeholder="" required="required" autocomplete="given-scadenza" data-id="scadenza" value="<[data_scadenza]>">
                             </label>
                             <label class="label2" for="nome_carta">
                                 Nome sulla Carta
-                                <input type="text" name="nome_carta" id="nome_carta" maxlength="5" placeholder="" required="required" autocomplete="given-nome_carta" data-id="nome_carta" value="<[nome_sulla_carta]>">
+                                <input type="text" name="nome_carta" id="nome_carta" placeholder="" required="required" autocomplete="given-nome_carta" data-id="nome_carta" value="<[nome_sulla_carta]>">
                             </label>
                         </div>
                     <div class="inforow" id="annullarow1">
                         <label class="indirizzocheck" for="metodo"> Usa questo metodo di pagamento in futuro</label>
-                        <input class="indirizzocheck1" type="checkbox" name="metodo" id="metodo" value="usa questo metodo">
+                        <input class="indirizzocheck1" type="checkbox" name="salvaMetodoPagamento" id="metodo" value="">
                     </div>
                 </div>
             </div>
@@ -249,7 +249,7 @@
 
     </form>
 
-    <button type="submit" form="" class="comprabtn" form="formordine">Compra Ora</button>
+    <button type="submit" class="comprabtn" form="formordine" formaction="acquistoSimulato.php">Compra Ora</button>
     <button class="comprabtn" onclick="location.href='shoppage.php'" type="button" form="formordine">Annulla</button>
     </div>
 </div>
