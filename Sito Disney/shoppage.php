@@ -25,6 +25,9 @@ if (isset($mysqli)) {
                                                                 <a class="removecart" href="removeFromCart.php?index=' . $i . '">rimuovi dal carrello</a>
                                                             </div>
                                                         </div>');
+                    $body->setContent("bottone_compra",'<div class="col-md-12 " id="provaid">
+                                                            <input class="buybtn" type="button" onclick="location.href=\'infouser.php\';" value="Acquista Ora">
+                                                        </div>');
                     $totaleParziale = $totaleParziale + $data['prezzo'];
                 }
             }
