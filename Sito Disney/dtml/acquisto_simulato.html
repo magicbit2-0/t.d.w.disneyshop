@@ -9,6 +9,33 @@
     </div>
 </div>
 
-<div class="container" id="infocontainer" style="margin-top: 80px; margin-bottom: 80px;">
-    
+<div class="container" style="margin-top: 80px;margin-bottom: 80px;border: solid 2px;border-color: #D5DBE0;">
+    <br>
+    <h1 style="color: #D5DBE0;">Hai appena simulato un acquisto!</h1>
+    <br>
+    <br>
+    <h3 style="color: #D5DBE0;">Dati indirizzo spedizione:</h3>
+    <br>
+    <ul style="color: #D5DBE0;">
+        <li style="color: #D5DBE0;"><strong>Nome:</strong> <[nome]></li>
+        <li style="color: #D5DBE0;"><strong>Cognome:</strong> <[cognome]></li>
+        <li style="color: #D5DBE0;"><strong>Indirizzo:</strong> <[indirizzo1]></li>
+        <[indirizzo2]>
+        <li style="color: #D5DBE0;"><strong>Paese:</strong> <[paese]></li>
+        <li style="color: #D5DBE0;"><strong>Regione:</strong> <[regione]></li>
+        <li style="color: #D5DBE0;"><strong>Città:</strong> <[citta]></li>
+        <li style="color: #D5DBE0;"><strong>CAP:</strong> <[cap]></li>
+        <li style="color: #D5DBE0;"><strong>Telefono:</strong> <[telefono]></li>
+    </ul>
+    <br>
+    <br>
+    <h3 style="color: #D5DBE0;">Elenco articoli aquistati:</h3>
+    <br>
+    <ul style="list-style-type: disc;margin-left: 20px;">
+        <[foreach]>
+            <li style="color: #D5DBE0;"><[titolo]></li>
+        <[/foreach]>
+    </ul>
+    <br>
+    <input class="buybtn" type="button" style="margin-bottom: 30px;" onclick="location.href='index.php';" value="Torna Alla Home">
 </div>
