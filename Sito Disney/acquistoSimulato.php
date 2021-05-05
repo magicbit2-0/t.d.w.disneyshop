@@ -7,10 +7,6 @@ require "bottonChange.php";
 
 $body=new Template("dtml/acquisto_simulato.html");
 
-print_r($_POST);
-
-print_r($_SESSION);
-
 if(isset($mysqli)){
 
     //controllo salvataggio indirizzo in futuro
@@ -55,14 +51,31 @@ if(isset($mysqli)){
 
     //insert nel db del nuovo ordine
     $query_ordine = $mysqli->query("insert into ordine (id, totale_parziale, spese_spedizione, utente_id) values (null, '{$totale_parz}','3.00','{$_SESSION['idUtente']}');");
-    $ordine = $mysqli->insert_id($query_ordine);
+    $ordine = $mysqli->insert_id;
 
     //insert degli articoli relativi all'ordine nel db
     for($i=0; $i<count($_SESSION['articoli']);$i++){
         $mysqli->query("insert into articolo_ordinato (id, articolo_id, ordine_id) values(null,'{$_SESSION['articoli'][$i]}','$ordine');");
     }
 
+
+    //dati da visualizzare nella pagina dell'acquisto simulato
+    $result = $mysqli->query("SELECT * FROM disneydb.indirizzo_spedizione where id = '$ordine'");
+    while($data = $result->fetch_assoc()){
+        $body->setContent("nome", $data['nome']);
+        $body->setContent("cognome", $data['cognome']);
+        $body->setContent("indirizzo1", $data['indirizzo1']);
+        if($data['indirizzo2'] != ""){ $body->setContent("indirizzo2", "<li>Indirizzo 2: {$data['indirizzo2']} </li>"); }
+        $body->setContent("paese", $data['paese']);
+        $body->setContent("regione", $data['regione']);
+        $body->setContent("citta", $data['citta']);
+        $body->setContent("cap", $data['cap']);
+        $body->setContent("telefono", $data['telefono']);
+    }
+
 }
+
+unset($_SESSION['articoli']);
 
 $main->setContent("body", $body->get());
 $main->close();
