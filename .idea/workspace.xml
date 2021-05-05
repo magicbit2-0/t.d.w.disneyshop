@@ -20,13 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sito Disney/infoArticoloAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sito Disney/projectDetail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/e-commerce.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/e-commerce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/aggiungiProdottiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/aggiungiProdottiAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/admin_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/admin_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/aggiungi-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/aggiungi-regia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-add.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/projects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/include/adminFunctions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/adminFunctions.inc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +127,8 @@
       <workItem from="1619945225443" duration="1685000" />
       <workItem from="1619963496620" duration="17559000" />
       <workItem from="1620036440844" duration="11282000" />
-      <workItem from="1620121593663" duration="19094000" />
+      <workItem from="1620121593663" duration="19095000" />
+      <workItem from="1620210628610" duration="9786000" />
     </task>
     <servers />
   </component>

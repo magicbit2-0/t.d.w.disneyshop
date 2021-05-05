@@ -5,12 +5,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Aggiungi Cast</h1>
+            <h1>Aggiungi Attore o Regista</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../../admin.html">Home</a></li>
-              <li class="breadcrumb-item active">Aggiungi Cast</li>
+              <li class="breadcrumb-item"><a href="admin.php">Home</a></li>
+              <li class="breadcrumb-item active">Aggiungi Attore o Regista</li>
             </ol>
           </div>
         </div>
@@ -18,9 +18,9 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
+    <section class="content" style="width: 53%;margin-inline: auto;">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" style="flex: none;max-width: none;">
           <div class="card card-primary">
             <div class="card-header">
               <h3 class="card-title">Cast</h3>
@@ -33,11 +33,11 @@
             </div>
             <div class="card-body">
               <div class="form-group">
-                <label for="inputName">Nome Cast</label>
+                <label for="inputName">Nome</label>
                 <input type="text" id="inputName" class="form-control">
               </div>
               <div class="form-group">
-                <label for="inputSurname">Cognome Cast</label>
+                <label for="inputSurname">Cognome</label>
                 <input type="text" id="inputSurname" class="form-control">
               </div>
               <div class="form-group">
@@ -48,6 +48,14 @@
                 <label for="inputNazionalità">Nazionalità</label>
                 <input type="text" id="inputNazionalità" class="form-control">
               </div>
+              <div class="form-group">
+                <label for="inputPeseNascita">Paese Nascita</label>
+                <input type="text" id="inputPeseNascita" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="inputDescription">Biografia</label>
+                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
+              </div>
             </div>
             <!-- /.card-body -->
           </div>
@@ -55,7 +63,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" style="flex: none;max-width: none;">
           <div class="card card-primary">
             <div class="card-header">
               <h3 class="card-title">Cast</h3>
@@ -67,10 +75,7 @@
               </div>
             </div>
             <div class="card-body">
-              <div class="form-group">
-                <label for="inputDescription">Biografia</label>
-                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-              </div>
+
               <div class="form-group">
                 <label for="inputFilm">Film Correlati?</label>
                 <textarea id="inputFilm" class="form-control" rows="4"></textarea>
@@ -97,13 +102,13 @@
           <!-- /.card -->
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <a href="project-add.html" class="btn btn-secondary">Cancella</a>
-          <input type="submit" value="Crea nuovo prodotto" class="btn btn-success float-right">
-        </div>
-      </div>
     </section>
+    <div class="row" >
+      <div class="col-12" style="margin-bottom: 10px;padding: 0 30px 0 30px;">
+        <a href="project-add.html" class="btn btn-secondary">Cancella</a>
+        <input type="submit" value="Crea nuovo prodotto" class="btn btn-success float-right">
+      </div>
+    </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->

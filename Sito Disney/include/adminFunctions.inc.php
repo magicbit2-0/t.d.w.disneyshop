@@ -1,5 +1,5 @@
 <?php
-require "include/dbms.inc.php";
+require "dbms.inc.php";
 session_start();
 $main=new Template("dtml/ADMIN/pages/examples/admin_body.html");
 if (($_SESSION['idUtente']) != null) {

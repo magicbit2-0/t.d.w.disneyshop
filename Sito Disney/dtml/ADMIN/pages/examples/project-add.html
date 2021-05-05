@@ -1,4 +1,4 @@
- <!-- Content Wrapper. Contains page content -->
+<!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -9,7 +9,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="admin.php">Home</a></li>
               <li class="breadcrumb-item active">Aggiungi Film</li>
             </ol>
           </div>
@@ -51,11 +51,24 @@
               </div>
               <div class="form-group">
                 <label for="inputRegista">Regista</label>
-                <input type="text" id="inputRegista" class="form-control">
+                <select name="inputRegista" id="inputRegista" class="form-control">
+                  <option value="Film Disney" selected> - - -</option>
+                  <[foreach]>
+                  <[nomiRegisti]>
+                  <[/foreach]>
+                </select>
               </div>
               <div class="form-group">
-                <label for="inputAttori">Lista Attori</label>
-                <input type="text" id="inputAttori" class="form-control">
+                <label>Lista Attori</label>
+                <div class="select2-purple">
+                  <select class="select2 select2-hidden-accessible" multiple="" data-placeholder="Seleziona gli attori del film" data-dropdown-css-class="select2-purple" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                    <[foreach]>
+                    <[nomiAttori]>
+                    <[/foreach]>
+                  </select>
+                </div>
+
+                <!-- /.form-group -->
               </div>
               <div class="form-group">
                 <label for="inputData">Data Rilascio</label>
@@ -123,12 +136,15 @@
                 <textarea id="inputDescription" class="form-control" rows="4"></textarea>
               </div>
               <div class="form-group">
-                <label for="inputDirettore">Direttore</label>
-                <input type="text" id="inputDirettore" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="inputPersonaggio">Lista Personaggi</label>
-                <input type="text" id="inputPersonaggio" class="form-control">
+                <label>Lista personaggi</label>
+                <div class="select2-purple">
+                  <select class="select2 select2-hidden-accessible" multiple="" data-placeholder="Scegli i personaggi del cartone" data-dropdown-css-class="select2-purple" style="width: 100%;" data-select2-id="2" tabindex="-1" aria-hidden="true">
+                    <[foreach]>
+                    <[nomiPersonaggi]>
+                    <[/foreach]>
+                  </select>
+                </div>
+                <!-- /.form-group -->
               </div>
               <div class="form-group">
                 <label for="inputData">Data Rilascio</label>
@@ -160,6 +176,7 @@
                 </div>
                 <p class="help-block">Max. 32MB</p>
               </div>
+
             </div>
             <!-- /.card-body -->
           </div>
@@ -177,3 +194,4 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+<!-- Content Wrapper. Contains page content -->
