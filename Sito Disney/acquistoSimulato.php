@@ -55,22 +55,27 @@ if(isset($mysqli)){
 
     //insert degli articoli relativi all'ordine nel db
     for($i=0; $i<count($_SESSION['articoli']);$i++){
-        $mysqli->query("insert into articolo_ordinato (id, articolo_id, ordine_id) values(null,'{$_SESSION['articoli'][$i]}','$ordine');");
+        $mysqli->query("insert into articolo_ordinato (id, articolo_id, ordine_id) values(null,'{$_SESSION['articoli'][$i]}','{$ordine}');");
     }
 
 
     //dati da visualizzare nella pagina dell'acquisto simulato
-    $result = $mysqli->query("SELECT * FROM disneydb.indirizzo_spedizione where id = '$ordine'");
+    $result = $mysqli->query("SELECT * FROM disneydb.indirizzo_spedizione where utente_id='{$_SESSION['idUtente']}'");
     while($data = $result->fetch_assoc()){
         $body->setContent("nome", $data['nome']);
         $body->setContent("cognome", $data['cognome']);
         $body->setContent("indirizzo1", $data['indirizzo1']);
-        if($data['indirizzo2'] != ""){ $body->setContent("indirizzo2", "<li>Indirizzo 2: {$data['indirizzo2']} </li>"); }
+        if($data['indirizzo2'] != ""){ $body->setContent("indirizzo2", "<li style=\"color: aliceblue;\"><strong>Indirizzo 2:</strong> {$data['indirizzo2']} </li>"); }
         $body->setContent("paese", $data['paese']);
         $body->setContent("regione", $data['regione']);
         $body->setContent("citta", $data['citta']);
         $body->setContent("cap", $data['cap']);
         $body->setContent("telefono", $data['telefono']);
+    }
+
+    $result = $mysqli->query("select a.id, a.titolo from articolo_ordinato as ao join articolo as a on (ao.articolo_id=a.id) where ao.ordine_id = '{$ordine}';");
+    while($data = $result->fetch_assoc()){
+        $body->setContent("titolo", $data['titolo']);
     }
 
 }
