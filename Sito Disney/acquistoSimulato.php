@@ -19,7 +19,7 @@ if(isset($mysqli)){
         $righe = mysqli_num_rows($result);
 
         if($righe == 0){
-            //ne inserisco uno nuovo nel db
+            //ne inserisco uno nuovo nel db se già non c'è per l'utente loggato
             $mysqli->query("insert into indirizzo_spedizione (id, nome, cognome, indirizzo1, indirizzo2, paese, regione, citta, cap, telefono, utente_id ) values (null,'{$_POST['name']}','{$_POST['surname']}','{$_POST['indirizzo1']}','{$_POST['indirizzo2']}','{$_POST['paese']}','{$_POST['stato']}','{$_POST['città']}','{$_POST['cap']}','{$_POST['numero']}','{$_SESSION['idUtente']}');");
             
         } else {
@@ -35,7 +35,7 @@ if(isset($mysqli)){
         $righe = mysqli_num_rows($result);
 
         if($righe == 0){
-            //ne inserisco uno nuovo nel db
+            //ne inserisco uno nuovo nel db se già non c'è per l'utente loggato
             $mysqli->query("insert into metodo_pagamento (numero_carta,cvv,data_scadenza,nome_sulla_carta,utente_id) values('{$_POST['cardnumber']}','{$_POST['cvv']}','{$_POST['scadenza']}','{$_POST['nome_carta']}','{$_SESSION['idUtente']}');");
         } else {
             //aggiorno quello che ho già nel db
@@ -43,7 +43,25 @@ if(isset($mysqli)){
         }
     }
 
-    //$mysqli->query("");
+
+    //calcolo totale parziale ordine
+    $totale_parz=0;
+    for($i=0; $i<count($_SESSION['articoli']);$i++){
+        $result = $mysqli->query("select prezzo from articolo where id = {$_SESSION['articoli'][$i]};");
+        while($data = $result->fetch_assoc()){
+            $totale_parz = $totale_parz + $data['prezzo'];
+        }
+    }
+
+    //insert nel db del nuovo ordine
+    $query_ordine = $mysqli->query("insert into ordine (id, totale_parziale, spese_spedizione, utente_id) values (null, '{$totale_parz}','3.00','{$_SESSION['idUtente']}');");
+    $ordine = $mysqli->insert_id($query_ordine);
+
+    //insert degli articoli relativi all'ordine nel db
+    for($i=0; $i<count($_SESSION['articoli']);$i++){
+        $mysqli->query("insert into articolo_ordinato (id, articolo_id, ordine_id) values(null,'{$_SESSION['articoli'][$i]}','$ordine');");
+    }
+
 }
 
 $main->setContent("body", $body->get());
