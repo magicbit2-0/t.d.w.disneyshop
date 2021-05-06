@@ -64,7 +64,18 @@ class widget extends taglibrary
                 style=\"background-color: darksalmon;color: unset;font-weight: bold;text-transform: initial;\"
                 ><i class=\"icon-remove\"></i> Username già esistente. Prova con un altro!</p>";
                 break;
-            case "success";
+                case "questo elemento già esiste!":
+                $buffer = '<div class="alert" style="padding: 20px;background-color: #f44336; /* Red */color: white;margin-bottom: 15px;">
+                            <span class="closebtn" onclick="this.parentElement.style.display=\'none\';" style="margin-left: 15px;
+                            color: white;font-weight: bold;float: right;font-size: 22px;line-height: 20px;cursor: pointer;transition: 0.3s;">&times;
+                            </span>Questo elemento già esiste!</div>';
+                break;
+            case "addedItem";
+                $buffer = '<div class="alert" style="padding: 20px;background-color: #00bb00; /* Red */color: white;margin-bottom: 15px;">
+                           <span class="closebtn" onclick="this.parentElement.style.display=\'none\';" style="margin-left: 15px;color: white;font-weight: bold;float: right;
+                           font-size: 22px;line-height: 20px;cursor: pointer;transition: 0.3s;">&times;</span>Elemento aggiunto con successo.</div>';
+                break;
+                case "success";
                 $buffer = "<p class=\"alert-success\"><i class=\"icon-ok\"></i> The item has been succesfully added!</p>";
                 break;
             case "signedup";

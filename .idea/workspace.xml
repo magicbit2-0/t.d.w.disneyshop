@@ -22,9 +22,8 @@
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/aggiungiAttoriAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/aggiungiAttoriAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/admin_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/admin_body.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/aggiungi-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/aggiungi-regia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/project-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/include/tags/widget.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/tags/widget.inc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +126,7 @@
       <workItem from="1620036440844" duration="11282000" />
       <workItem from="1620121593663" duration="19095000" />
       <workItem from="1620210628610" duration="10191000" />
-      <workItem from="1620294056878" duration="3716000" />
+      <workItem from="1620294056878" duration="22195000" />
     </task>
     <servers />
   </component>
@@ -172,6 +171,10 @@
     </state>
     <state x="537" y="297" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1619433445904" />
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1620138092496" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1620313008925">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1620313008925" />
     <state x="497" y="290" width="674" height="534" key="find.popup" timestamp="1619800674059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
