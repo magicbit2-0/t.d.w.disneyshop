@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/invoiceUtenti.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620303784209</updated>
-      <workItem from="1620303792581" duration="3239000" />
+      <workItem from="1620303792581" duration="3818000" />
     </task>
     <servers />
   </component>
