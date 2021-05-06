@@ -8527,17 +8527,66 @@ input.indirizzocheck1{
   color: #4183C4;
   border-bottom: 1px solid dotted;
 }
- .trama-para{
-   width: 750px;
- }
-  /*border: 1px solid rgb(212, 227, 235);
-  border-radius: 2px;
-  font-weight: 400;
-  font-size: 14px;
-  height: 32px;
-  padding: 12px;
-  text-align: left;
-  color: rgb(25, 42, 50);
-  background-color: rgb(248, 250, 251);
-  cursor: auto;
-  width: 100% !important;*/
+.trama-para{
+  width: 750px;
+}
+
+
+/* DA QUI POP UP AVATAR */
+.sopra{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.sopra:target{
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup{
+  margin: 180px auto auto auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 80%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+/* contenuto popup
+.popup h1{
+  color: red;
+}*/
+
+.popup .chiudi{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .chiudi:hover{
+  color: red;
+}
+
+.popup .contenuto{
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .popup{
+    width: 70%;
+  }
+}
