@@ -21,8 +21,24 @@
                 <div class="user-information">
                     <div class="user-img">
                         <[foto_avatar]>
-                        <a href="#" class="redbtn">Cambia avatar</a>
+                        <a href="#popupAvatar" class="redbtn">Cambia avatar</a>
                     </div>
+                    
+                    <div id="popupAvatar" class="sopra" style="z-index: 10;">
+                        <div class="popup">
+                            <h1 style="margin-bottom: 20px;">Scegli il tuo nuovo avatar!</h1>
+                            <a class="chiudi" href="#">&times;</a>
+                            <form method="post" action="updateAvatar.php">
+                            <div class="contenuto" style="display: grid;grid-template-columns: auto auto auto auto; grid-row-gap: 30px;">
+                                <[foreach]>
+                                        <[avatar_disponibili]>
+                                <[/foreach]>
+                            </div>
+                            <input type="submit" class="redbtn" value="Cambia Avatar" style="margin-top: 20px;">
+                            </form>
+                        </div>
+                    </div>
+                    
                     <div class="user-fav">
                         <p>Dettagli Account</p>
                         <ul>

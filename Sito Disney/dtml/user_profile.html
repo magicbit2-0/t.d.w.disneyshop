@@ -24,12 +24,11 @@
                         <a href="#popupAvatar" class="redbtn">Cambia avatar</a>
                     </div>
 
-                    <!-- Da qui codice popup -->
                     <div id="popupAvatar" class="sopra" style="z-index: 10;">
                         <div class="popup">
                             <h1 style="margin-bottom: 20px;">Scegli il tuo nuovo avatar!</h1>
                             <a class="chiudi" href="#">&times;</a>
-                            <form method="post">
+                            <form method="post" action="updateAvatar.php">
                             <div class="contenuto" style="display: grid;grid-template-columns: auto auto auto auto; grid-row-gap: 30px;">
                                 <[foreach]>
                                         <[avatar_disponibili]>

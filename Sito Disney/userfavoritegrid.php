@@ -74,6 +74,43 @@ if (isset($mysqli)) {
         $body->setContent("no_preferiti", "<div><h2 style='color:#d36b6b'> Non ci sono articoli preferiti </h2></div>");
         $body->setContent("number_of_results", "Nessun articolo trovato");
     }
+
+
+    $result = $mysqli->query("select id from avatar where id not in (select avatar_id from utente where id = {$_SESSION['idUtente']});");
+    while ($data = $result->fetch_assoc()) {
+        switch($data['id']){
+            case '1':
+                $backgroundcolor = 'lightpink';
+                break;
+            case '2':
+                $backgroundcolor = '#d3c24b';
+                break;
+            case '3':
+                $backgroundcolor = '#d584cf';
+                break;
+            case '4':
+                $backgroundcolor = 'cadetblue';
+                break;
+            case '5':
+                $backgroundcolor = '#50b666';
+                break;
+            case '6':
+                $backgroundcolor = '#6792c7';
+                break;
+            case '7':
+                $backgroundcolor = '#e86c6c';
+                break;
+            default:
+                $backgroundcolor = 'aliceblue';
+                break;
+        }
+        $body->setContent("avatar_disponibili",'<a><img src="imgAvatar.php?id='.$data['id'] .'" alt="" style="background-color:'.$backgroundcolor.';
+                                                border-radius: 50%;width: 120px;height: 120px; margin-bottom: 10px;"><br>
+                                                <input type="radio" name="radioAvatar" value="'.$data['id'].'"> Scegli Questo Avatar</a>');
+        $body->setContent("idAvatar",$data['id']);
+
+    }
+
 }
 $main->setContent("body", $body->get());
 $main->close();
