@@ -64,11 +64,29 @@ class widget extends taglibrary
                 style=\"background-color: darksalmon;color: unset;font-weight: bold;text-transform: initial;\"
                 ><i class=\"icon-remove\"></i> Username già esistente. Prova con un altro!</p>";
                 break;
-                case "questo elemento già esiste!":
+            case "questo elemento già esiste!":
                 $buffer = '<div class="alert" style="padding: 20px;background-color: #f44336; /* Red */color: white;margin-bottom: 15px;">
                             <span class="closebtn" onclick="this.parentElement.style.display=\'none\';" style="margin-left: 15px;
                             color: white;font-weight: bold;float: right;font-size: 22px;line-height: 20px;cursor: pointer;transition: 0.3s;">&times;
                             </span>Questo elemento già esiste!</div>';
+                break;
+            case "unknown error occured!":
+                $buffer = '<div class="alert" style="padding: 20px;background-color: #f44336; /* Red */color: white;margin-bottom: 15px;">
+                            <span class="closebtn" onclick="this.parentElement.style.display=\'none\';" style="margin-left: 15px;
+                            color: white;font-weight: bold;float: right;font-size: 22px;line-height: 20px;cursor: pointer;transition: 0.3s;">&times;
+                            </span>Unknown error occured!</div>';
+                break;
+            case "Non puoi caricare file di questo tipo":
+                $buffer = '<div class="alert" style="padding: 20px;background-color: #f44336; /* Red */color: white;margin-bottom: 15px;">
+                            <span class="closebtn" onclick="this.parentElement.style.display=\'none\';" style="margin-left: 15px;
+                            color: white;font-weight: bold;float: right;font-size: 22px;line-height: 20px;cursor: pointer;transition: 0.3s;">&times;
+                            </span>Non puoi caricare file di questo tipo!</div>';
+                break;
+            case "Il file è troppo grande":
+                $buffer = '<div class="alert" style="padding: 20px;background-color: #f44336; /* Red */color: white;margin-bottom: 15px;">
+                            <span class="closebtn" onclick="this.parentElement.style.display=\'none\';" style="margin-left: 15px;
+                            color: white;font-weight: bold;float: right;font-size: 22px;line-height: 20px;cursor: pointer;transition: 0.3s;">&times;
+                            </span>Il file è troppo grande!</div>';
                 break;
             case "addedItem";
                 $buffer = '<div class="alert" style="padding: 20px;background-color: #00bb00; /* Red */color: white;margin-bottom: 15px;">

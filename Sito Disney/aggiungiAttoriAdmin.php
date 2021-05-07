@@ -6,6 +6,7 @@ require "include/adminFunctions.inc.php";
 
 //$main=new Template("dtml/ADMIN/admin.html");
 $body=new Template("dtml/ADMIN/pages/examples/aggiungi-regia.html");
+
 if (isset($mysqli)) {
 
     $result = $mysqli->query("select * from parola_chiave");
@@ -35,7 +36,7 @@ if (isset($mysqli)) {
                     $img_ex = pathinfo($imgName, PATHINFO_EXTENSION);
                     $img_ex_lc = strtolower($img_ex);
 
-                    $allowed_exs = array("jpg", "jpeg", "png");
+                    $allowed_exs = array("jpg", "jpeg", "png","jfif");
                     if (in_array($img_ex_lc, $allowed_exs)) {
                         $result = $mysqli->query("insert into regia (nome, cognome, anno_nascita, eta, nazionalità, paese_nascita, biografia, foto)
                                                     values ('{$_POST['inputName']}','{$_POST['inputSurname']}',
@@ -54,7 +55,9 @@ if (isset($mysqli)) {
                                                         values ('$idRegia','$idFilmCorrelati')");
                             }
                         }
-                        unset($_POST['aggiungiAttore']);
+                        //$_POST = array();
+                        //unset($_POST['aggiungiAttore']);
+                        //header("location: aggiungiAttoriAdmin.php?success=y");
                         $body->setContent("alert",'addedItem');
                         if (!$result) {
                             echo "Error!";
@@ -71,11 +74,11 @@ if (isset($mysqli)) {
             $em = "questo elemento già esiste!";
         }
     }
-    if ($em != null){
-        $body->setContent("alert",$em);
-        header("location: aggiungiAttoriAdmin.php?error=$em");
-    } else {
-        
+    if ($em != null) {
+        $body->setContent("alert", $em);
+        foreach ($_POST as $key => $selectedOption) {
+            $body->setContent($key, $selectedOption);
+        }
     }
 }
 $main->setContent("body_admin", $body->get());
