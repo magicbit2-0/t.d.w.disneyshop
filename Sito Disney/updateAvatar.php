@@ -7,6 +7,5 @@ require "include/template2.inc.php";
 $mysqli->query("update utente set avatar_id={$_POST['radioAvatar']} where id={$_SESSION['idUtente']};");
 
 //fare controllo su pagina di provenienza
-$paginaPrima = $_SERVER['HTTP_REFERER'];
-header('Location: '.$paginaPrima);
+header('Location: '.$_SERVER['HTTP_REFERER']);
 ?>
