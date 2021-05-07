@@ -57,7 +57,6 @@ if (isset($mysqli)) {
                         }
                         //$_POST = array();
                         //unset($_POST['aggiungiAttore']);
-                        //header("location: aggiungiAttoriAdmin.php?success=y");
                         $body->setContent("alert",'addedItem');
                         if (!$result) {
                             echo "Error!";
