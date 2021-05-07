@@ -53,7 +53,7 @@ if (isset($mysqli)) {
     $number_of_results = mysqli_num_rows($result);
     if ($number_of_results > 0) {
         while ($data = $result->fetch_assoc()) {
-            $body->setContent("number_of_results", "<p> Trovati <span> $number_of_results film </span> in totale </p>");
+            $body->setContent("number_of_results", "<p style=\"padding-right: 0px\"> Trovati <span> $number_of_results film </span> in totale </p>");
             if ($data['categoria'] <> 'Film Disney') {
                 $categoria_film = 'moviesingle2.php?id=' . $data['idArticolo'];
             } else {
