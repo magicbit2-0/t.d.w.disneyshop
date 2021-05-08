@@ -30,7 +30,7 @@ if (isset($mysqli)) {
             $data = $result->fetch_assoc();
                 $body->setContent("regista",'<p>Regista: * '.$data['regista']. ' * </p>');
 
-        $result = $mysqli->query("(select r.id as id_attore, concat(r.nome,' ', r.cognome) as attore from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id 
+        $result = $mysqli->query("(select distinct r.id as id_attore, concat(r.nome,' ', r.cognome) as attore from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id 
                                     join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id 
                                     where k.testo = 'attore' and a.id = {$_GET['id']})");
             $buffer = '<p>Attori: * ';
