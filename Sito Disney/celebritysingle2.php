@@ -50,6 +50,7 @@ if(isset($mysqli)){
     }
 
     $body->setContent("numero",$numero);
+
 }
 
 $main->setContent("body", $body->get());

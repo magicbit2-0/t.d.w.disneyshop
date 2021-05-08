@@ -118,6 +118,8 @@ if (isset($mysqli)) {
         $body->setContent("idAvatar",$data['id']);
 
     }
+
+    print_r($_SERVER['HTTP_REFERER']);
 }
 
 $main->setContent("body", $body->get());

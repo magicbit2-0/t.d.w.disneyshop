@@ -4,7 +4,17 @@ Class Auth {
     {
         global $mysqli;
         if($_SESSION['idUtente'] != null){
-            Header("location: ./index.php?accesso=LoginOk");
+            //Header("location: ./index.php?accesso=LoginOk");
+            
+            if(isset($_GET)){
+                $elem="";
+                foreach ($_GET as $ind => $val){
+                    $elem = $elem."&".$ind."=".$val;
+                }
+                Header("location: ".$_SERVER['HTTP_REFERER'].$elem."&accesso=LoginOk");
+            } else {
+                Header("location: ".$_SERVER['HTTP_REFERER']."?accesso=LoginOk");
+            }
             
 
             $_SESSION['auth']=true;
@@ -29,7 +39,16 @@ Class Auth {
             }
 
             if (mysqli_num_rows($result) != 1) {
-                Header("location: ./index.php?accesso=LoginError");
+                //Header("location: ./index.php?accesso=LoginError");
+                if(isset($_GET)){
+                    $elem="";
+                    foreach ($_GET as $ind => $val){
+                        $elem = $elem."&".$ind."=".$val;
+                    }
+                    Header("location: ".$_SERVER['HTTP_REFERER'].$elem."&accesso=LoginError");
+                } else {
+                    Header("location: ".$_SERVER['HTTP_REFERER']."?accesso=LoginError");
+                }
                 
 
                 exit;
@@ -39,7 +58,7 @@ Class Auth {
                 $main->setContent("body2", $body2->get());*/
             }
             
-            Header("location: ./index.php");
+            Header("location: ".$_SERVER['HTTP_REFERER']);
            
 
             /*$main = new Template("dtml/index2.html"); //esci
