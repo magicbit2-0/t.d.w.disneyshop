@@ -33,8 +33,8 @@
                 </button>
               </div>
             </div>
-            <form method="post" id="aggiungiAttoreForm" action="" enctype="multipart/form-data">
             <div class="card-body">
+              <form method="post" id="aggiungiAttoreForm" action="" enctype="multipart/form-data">
               <div class="form-group">
                 <label for="inputName">Nome</label>
                 <input type="text" id="inputName" name="inputName" class="form-control" value="<[inputName]>" required>
@@ -86,20 +86,19 @@
                   <label class="custom-file-label" for="customFile">Allega immagine</label>
                 </div>
               </div>
+              </form>
             </div>
-            </form>
+
             </div>
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
         </div>
     </section>
-    <div class="row" >
-      <div class="col-12" style="margin-bottom: 10px;padding: 0 30px 0 30px;">
+      <div class="col-12" style="padding: 0 30px 5px 30px;">
         <input type="reset" onclick="location.href='aggiungiAttoriAdmin.php'" class="btn btn-secondary" form="aggiungiAttoreForm" value="Cancella">
         <input type="submit" name="aggiungiAttore" form="aggiungiAttoreForm" value="Aggiungi Attore" class="btn btn-success float-right">
       </div>
-    </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -109,25 +108,3 @@
     transition: opacity 0.6s; /* 600ms to fade out */
   }
 </style>
-
-<script>
-  // Get all elements with class="closebtn"
-  var close = document.getElementsByClassName("closebtn");
-  var i;
-
-  // Loop through all close buttons
-  for (i = 0; i < close.length; i++) {
-    // When someone clicks on a close button
-    close[i].onclick = function(){
-
-      // Get the parent of <span class="closebtn"> (<div class="alert">)
-      var div = this.parentElement;
-
-      // Set the opacity of div to 0 (transparent)
-      div.style.opacity = "0";
-
-      // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
-      setTimeout(function(){ div.style.display = "none"; }, 600);
-    }
-  }
-</script>
