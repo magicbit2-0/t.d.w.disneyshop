@@ -29,7 +29,7 @@
           <thead>
           <tr>
             <th style="width: 1%">
-              Avatar Utente
+              Nome e Cognome
             </th>
             <th style="width: 10%">
               N° ordine
@@ -49,10 +49,10 @@
           <[foreach]>
           <tr>
             <td>
-              <img src='imgAvatar.php?id=<[idAvatar]>' style="border-radius: 15px;height: 100px;" alt="">
+              <[nome_utente]>
             </td>
             <td>
-              n° <[idAvatar]>
+              n° <[number_orders]>
             </td>
             <td>
               <a>
@@ -70,11 +70,6 @@
               <[prezzo]>
             </td>
             <td class="project-actions text-right" style="display: grid;">
-              <a class="btn btn-primary btn-sm" href="infoArticoloAdmin.php?id=<[idImg]>" style="margin-bottom: 1px;">
-                <i class="fas fa-folder">
-                </i>
-                Vedi prodotto
-              </a>
               <a class="btn btn-danger btn-sm" href="#">
                 <i class="fas fa-trash">
                 </i>
