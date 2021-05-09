@@ -7,9 +7,11 @@ $var = array();
 $body=new Template("dtml/ADMIN/pages/examples/modifica-regia.html");
 if (isset($mysqli)) {
     $result = $mysqli->query("SELECT *
-                                    FROM regia where id= {$_GET['id']}");
+                                    FROM regia where id = {$_GET['id']}");
     $data = $result->fetch_assoc();
-    $titolo = $data['titolo'];
+    $foto = $data['foto'];
+    //echo $foto;
+    //exit;
     foreach ($data as $key => $value) {
         $body->setContent($key, $value);
     }
@@ -17,17 +19,17 @@ if (isset($mysqli)) {
                                          join parola_chiave_regia pr on pr.parola_chiave_id=k.id
                                          join regia r on r.id=pr.regia_id where r.id={$_GET['id']} order by k.id");
     $count = mysqli_num_rows($result);
-    while($data = $result->fetch_assoc()){
-        $var['id'][]= $data['id_parola'];
+    while ($data = $result->fetch_assoc()) {
+        $var['id'][] = $data['id_parola'];
     }
-    $result = $mysqli->query("select id,testo from parola_chiave");
-    for($i = 0; $i <= $count; $i++){
-        while($data = $result->fetch_assoc()){
-            if ($var['id'][$i] == $data['id']){
-                $body->setContent("parola_chiave", '<option selected value="'.$data['id'].'">'.$data['testo'].'</option>');
+    $result = $mysqli->query("select distinct id,testo from parola_chiave");
+    for ($i = 0; $i <= $count; $i++) {
+        while ($data = $result->fetch_assoc()) {
+            if ($var['id'][$i] == $data['id']) {
+                $body->setContent("parola_chiave", '<option selected value="' . $data['id'] . '">' . $data['testo'] . '</option>');
                 break;
             } else {
-                $body->setContent("parola_chiave", '<option value="'.$data['id'].'">'.$data['testo'].'</option>');
+                $body->setContent("parola_chiave", '<option value="' . $data['id'] . '">' . $data['testo'] . '</option>');
             }
         }
     }
@@ -36,21 +38,77 @@ if (isset($mysqli)) {
                                     from articolo a join backstage_articolo ba on ba.articolo_id = a.id
                                     join regia r on r.id=ba.regia_id where r.id={$_GET['id']} order by a.id");
     $count = mysqli_num_rows($result);
-    while($data = $result->fetch_assoc()){
-        $var['id'][]= $data['id_correlato'];
+    while ($data = $result->fetch_assoc()) {
+        $var['id'][] = $data['id_correlato'];
     }
     $result = $mysqli->query("select distinct id,titolo from articolo where categoria like 'Film Disney'");
-    for($i = 0; $i <= $count; $i++){
-        while($data = $result->fetch_assoc()){
-            if ($var['id'][$i] == $data['id']){
-                $body->setContent("film_correlati", '<option selected value="'.$data['id'].'">'.$data['titolo'].'</option>');
+    for ($i = 0; $i <= $count; $i++) {
+        while ($data = $result->fetch_assoc()) {
+            if ($var['id'][$i] == $data['id']) {
+                $body->setContent("film_correlati", '<option selected value="' . $data['id'] . '">' . $data['titolo'] . '</option>');
                 break;
             } else {
-                $body->setContent("film_correlati", '<option value="'.$data['id'].'">'.$data['titolo'].'</option>');
+                $body->setContent("film_correlati", '<option value="' . $data['id'] . '">' . $data['titolo'] . '</option>');
             }
         }
     }
+    if (isset($_POST['submit'])) {
+        if (isset($_FILES) and $_FILES['customFile']['error'] != 4) {
+            $imgName = $_FILES["customFile"]["name"];
+            $imgType = $_FILES["customFile"]["type"];
+            $img_size = $_FILES["customFile"]["size"];
+            $imgData = addslashes(file_get_contents($_FILES["customFile"]["tmp_name"]));
+            $error = $_FILES["customFile"]["error"];
+            if ($error === 0) {
+                if ($img_size > 1250000) {
+                    $em = "il file è troppo grande";
+                } else {
+                    $img_ex = pathinfo($imgName, PATHINFO_EXTENSION);
+                    $img_ex_lc = strtolower($img_ex);
+
+                    $allowed_exs = array("jpg", "jpeg", "png", "jfif");
+                    if (in_array($img_ex_lc, $allowed_exs)) {
+                        $result = $mysqli->query("update regia set
+                                                                nome = '{$_POST['inputName']}',
+                                                                cognome = '{$_POST['inputSurname']}',
+                                                                anno_nascita = '{$_POST['inputData']}',
+                                                                eta = year(now())-year('{$_POST['inputData']}'),
+                                                                nazionalità = '{$_POST['inputNazionalità']}',
+                                                                paese_nascita = '{$_POST['inputPeseNascita']}',
+                                                                biografia = '{$_POST['inputDescription']}',
+                                                                foto = '$imgData' where id = {$_GET['id']}");
+                    }
+                }
+            }
+        } else {
+            $result = $mysqli->query("update regia set
+                                                    nome = '{$_POST['inputName']}',
+                                                    cognome = '{$_POST['inputSurname']}',
+                                                    anno_nascita = '{$_POST['inputData']}',
+                                                    eta = year(now())-year('{$_POST['inputData']}'),
+                                                    nazionalità = '{$_POST['inputNazionalità']}',
+                                                    paese_nascita = '{$_POST['inputPeseNascita']}',
+                                                    biografia = '{$_POST['inputDescription']}'
+                                                    where id = {$_GET['id']}");
+        }
+        if (isset($_POST['inputParoleChiave'])){
+            $result = $mysqli->query("delete from parola_chiave_regia where regia_id = {$_GET['id']}");
+            foreach ($_POST['inputParoleChiave'] as $idParolaChiave) {
+                $result = $mysqli->query("insert into parola_chiave_regia (regia_id , parola_chiave_id)
+                                                       values ('{$_GET['id']}','$idParolaChiave')");
+            }
+        }
+        if (isset($_POST['inputFilmCorrelati'])){
+            $result = $mysqli->query("delete from backstage_articolo where regia_id = {$_GET['id']}");
+            foreach ($_POST['inputFilmCorrelati'] as $idFilmCorrelati) {
+                $result = $mysqli->query("insert into backstage_articolo (regia_id , articolo_id)
+                                                        values ('{$_GET['id']}','$idFilmCorrelati')");
+            }
+        }
+        header("location: infoAttoreAdmin.php?id={$_GET['id']}");
+    }
 }
+
 $main->setContent("body_admin", $body->get());
 $main->close();
 ?>

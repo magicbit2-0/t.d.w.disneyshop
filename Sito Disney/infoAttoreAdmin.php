@@ -18,7 +18,7 @@ if (isset($mysqli)) {
                                          join parola_chiave_regia pr on pr.parola_chiave_id=k.id
                                          join regia r on r.id=pr.regia_id where r.id={$_GET['id']}");
     while($data = $result->fetch_assoc()){
-        $body->setContent("parola_chiave", $data['parola_chiave'].'</p>');
+        $body->setContent("parola_chiave", $data['parola_chiave']);
     }
 
     $result = $mysqli->query("select distinct a.id as id_correlato, a.titolo as titolo_correlato, year(a.data_uscita) as data_uscita_correlato

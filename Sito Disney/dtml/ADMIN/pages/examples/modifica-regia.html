@@ -35,7 +35,7 @@
           </div>
 
             <div class="card-body">
-              <form method="post" id="aggiungiAttoreForm" action="" enctype="multipart/form-data">
+              <form method="post" id="modificaAttoreForm" action="modificaAttoreAdmin.php?id=<[id]>" enctype="multipart/form-data">
               <div class="form-group">
                 <label for="inputName">Nome</label>
                 <input type="text" id="inputName" name="inputName" class="form-control" value="<[nome]>" required>
@@ -83,7 +83,7 @@
               <div class="form-group">
                 <label for="customFile">Allega nuova immagine</label>
                 <div class="custom-file" style="display: inline-flex;">
-                  <input type="file" class="custom-file-input" name="customFile" id="customFile" required>
+                  <input type="file" class="custom-file-input" name="customFile" id="customFile">
                   <label class="custom-file-label" for="customFile" style="width: 95%;"><[customFile]></label>
 
                   <div class="text-right py-0 align-middle">
@@ -115,7 +115,7 @@
   </section>
   <div class="col-12" style="padding: 0 30px 5px 30px;">
     <a href="#" class="btn btn-secondary">Cancella</a>
-    <input type="submit" value="Salva modifiche" class="btn btn-success float-right">
+    <input type="submit" name="submit" form="modificaAttoreForm" value="Salva modifiche" class="btn btn-success float-right">
   </div>
   <!-- /.content -->
 </div>
