@@ -53,16 +53,17 @@ if (isset($mysqli)) {
                 break;
         default:
         $result = $mysqli->query("select p.id as idPersonaggio, p.nome as nomePersonaggio, k.testo as testo from personaggio p 
-                                    join parola_chiave_personaggio pc on pc.personaggio_id = p.id join parola_chiave k on pc.parola_chiave_id = k.id where k.testo = 'personaggio' 
+                                    join parola_chiave_personaggio pc on pc.personaggio_id = p.id join parola_chiave k on pc.parola_chiave_id = k.id where k.testo = 'personaggio'
                                     union
                                     select r.id, concat(r.nome,' ', r.cognome) , k.testo from parola_chiave_regia pr 
-                                    join parola_chiave k on pr.parola_chiave_id = k.id join regia r on pr.regia_id=r.id
+                                    join parola_chiave k on pr.parola_chiave_id = k.id join regia r on pr.regia_id=r.id where k.testo='regia'
                                     ORDER BY nomePersonaggio LIMIT " . $this_page_first_result . ',' . $results_per_page);
                          $body -> setContent("categoria_lista",'celebritylist.php');
                          $body -> setContent("categoria_griglia",'celebritygrid01.php');
 
-                $result0 = $mysqli->query("SELECT id FROM personaggio");
-                $number_of_results = mysqli_num_rows($result0); //conta il numero delle righe ottenute
+                $result0 = $mysqli->query("(SELECT id FROM personaggio) union 
+                                                 (SELECT id FROM regia)");
+                $number_of_results = mysqli_num_rows($result0);
                 $body -> setContent("number_of_films", $number_of_results);
                 $number_of_pages = ceil($number_of_results / $results_per_page);
                 $body -> setContent("number_of_pages", $number_of_pages);

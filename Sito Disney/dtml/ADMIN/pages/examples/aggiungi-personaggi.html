@@ -9,7 +9,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../../admin.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="admin.php">Home</a></li>
               <li class="breadcrumb-item active">Aggiungi Personaggio</li>
             </ol>
           </div>
@@ -17,10 +17,10 @@
       </div><!-- /.container-fluid -->
     </section>
 
-    <!-- Main content -->
-    <section class="content">
+    <section class="content" style="width: 53%;margin-inline: auto;">
+      <[alert::notification library="widget"]>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" style="flex: none;max-width: none;">
           <div class="card card-primary">
             <div class="card-header">
               <h3 class="card-title">Personaggio</h3>
@@ -32,50 +32,64 @@
               </div>
             </div>
             <div class="card-body">
-              <div class="form-group">
-                <label for="inputName">Nome Personaggio</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="inputData">Data Nascita</label>
-                <input type="date" id="inputData" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="inputDescription">Biografia</label>
-                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-              </div>
-              <div class="form-group">
-                <label for="inputCartone">Cartoni Correlati?</label>
-                <textarea id="inputCartone" class="form-control" rows="4"></textarea>
-              </div>
-              <!--
-              <div class="form-group">
-                <label>Filmografia</label>
-                   <select>
-
-                    </select>
-                <input type="text" id="inputRegista" class="form-control">
-              </div> -->
-              <div class="form-group">
-                <div class="btn btn-default btn-file">
-                  <i class="fas fa-paperclip"></i> Allega Immagine Personaggio
-                  <input type="file" name="attachment">
+              <form method="post" id="aggiungiPersonaggioForm" action="" enctype="multipart/form-data">
+                <div class="form-group">
+                  <label for="inputName">Nome</label>
+                  <input type="text" id="inputName" name="inputName" class="form-control" value="<[inputName]>" required>
                 </div>
-                <p class="help-block">Max. 32MB</p>
-              </div>
+                <div class="form-group">
+                  <label for="inputDescription">Biografia</label>
+                  <textarea id="inputDescription" name="inputDescription" class="form-control" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="inputData">Data Nascita</label>
+                  <input type="date" id="inputData" name="inputData" class="form-control" value="<[inputData]>" required>
+                </div>
+                <div class="form-group">
+                  <label>Lista Parole chiave</label>
+                  <div class="select2-purple">
+                    <select class="select2 select2-hidden-accessible" name="inputParoleChiave[]" data-select2-id="1" required multiple="" data-placeholder="Seleziona le parole chiave relative a questo elemento" data-dropdown-css-class="select2-purple" style="width: 100%;"  tabindex="-1" aria-hidden="true">
+                      <[foreach]>
+                        <[paroleChiave]>
+                      <[/foreach]>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Cartoni in cui compare:</label>
+                  <div class="select2-purple">
+                    <select class="select2 select2-hidden-accessible" name="inputCartoniCorrelati[]" multiple="" data-placeholder="Seleziona i cartoni relativi a questo elemento" data-dropdown-css-class="select2-purple" style="width: 100%;" data-select2-id="2" tabindex="-1" aria-hidden="true">
+                      <[foreach]>
+                        <[cartoniCorrelati]>
+                      <[/foreach]>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="customFile">Allega immagine</label>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="customFile" id="customFile" required>
+                    <label class="custom-file-label" for="customFile">Allega immagine</label>
+                  </div>
+                </div>
+              </form>
             </div>
-            <!-- /.card-body -->
           </div>
-          <!-- /.card -->
+          <!-- /.card-body -->
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <a href="project-add.html" class="btn btn-secondary">Cancella</a>
-          <input type="submit" value="Crea nuovo prodotto" class="btn btn-success float-right">
-        </div>
+        <!-- /.card -->
       </div>
     </section>
+    <div class="col-12" style="padding: 0 30px 5px 30px;">
+      <input type="reset" onclick="location.href='aggiungiPersonaggiAdmin.php'" class="btn btn-secondary" form="aggiungiPersonaggioForm" value="Cancella">
+      <input type="submit" name="aggiungiPersonaggio" form="aggiungiPersonaggioForm" value="Aggiungi Personaggio" class="btn btn-success float-right">
+    </div>
     <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
+<!-- /.content-wrapper -->
+<style>
+  .alert {
+    opacity: 1;
+    transition: opacity 0.6s; /* 600ms to fade out */
+  }
+</style>

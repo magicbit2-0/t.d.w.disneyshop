@@ -9,7 +9,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="admin.php">Home</a></li>
               <li class="breadcrumb-item active">Personaggio</li>
             </ol>
           </div>
@@ -19,42 +19,76 @@
 
     <!-- Main content -->
     <section class="content">
-
       <!-- Default box -->
       <div class="card card-solid">
         <div class="card-body">
           <div class="row">
-            <div class="col-12 col-sm-6">
-              <h3 class="d-inline-block d-sm-none">Nome Personaggio</h3>
+            <div class="col-12 col-sm-6" style="margin-right: -70px;">
+              <h3 class="d-inline-block d-sm-none"><[nome]></h3>
               <div class="col-12">
-                <img src="../../dist/img/prod-1.jpg" class="product-image" alt="Product Image">
+                <img src="imgPersonaggio.php?id=<[id]>" class="product-image" alt="Person Image" style="height: 600px;width: auto;border: 1px solid #001f3f;">
               </div>
             </div>
-            <div class="col-12 col-sm-6">
-              <h3 class="my-3">Nome Personaggio</h3>
-              <p>Biografia Personaggio.</p>
+            <div class="col-12 col-sm-6" style="margin-left: -25px;">
+              <h3 class="my-3" style="text-transform: capitalize;"><[nome]></h3>
 
-              <p>Nome: </p>
-              <p>Data di nascita: </p>
+              <p>Nome: <[nome]></p>
+              <p>Data di nascita: <[data_nascita]></p>
+              <p>Parole chiave: <[foreach]> <[parola_chiave]> <[/foreach]></p>
               <hr>
               <div class="btn-group btn-group-toggle" data-toggle="buttons">
               </div>
 
               <div class="btn-group btn-group-toggle" data-toggle="buttons">
               </div>
+              <div class="row" style="flex-wrap: nowrap;width: min-content;margin-left: 460px;">
+                <a class="btn btn-info btn-sm" href="modificaPersonaggioAdmin.php?id=<[id]>" style="margin-top: 10px; margin-right: 10px;">
+                  <i class="fas fa-pencil-alt">
+                  </i>
+                  Modifica
+                </a>
+                <button onclick="document.getElementById('id01').style.display='block'"
+                        class="btn1 btn-danger1 btn-sm1" href="#" style="margin-top: 10px;">
+                  <i class="fas fa-trash">
+                  </i>
+                  Elimina
+                </button>
+              </div>
+              <div id="id01" class="modal1" style="width: 800px;height: 300px;margin-top: 130px;margin-left: 450px;overflow: hidden;">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+                <form class="modal-content1" action="/action_page.php">
+                  <div class="container1">
+                    <h1>Delete Account</h1>
+                    <p>Are you sure you want to delete your account?</p>
 
+                    <div class="clearfix1">
+                      <button type="button" class="cancelbtn1" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+                      <button type="button" class="deletebtn1">Delete</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
           <div class="row mt-4">
             <nav class="w-100">
               <div class="nav nav-tabs" id="product-tab" role="tablist">
-                <a class="nav-item nav-link active" id="product-desc-tab" data-toggle="tab" href="#product-desc" role="tab" aria-controls="product-desc" aria-selected="true">Personaggi Correlati</a>
+                <a class="nav-item nav-link active" id="product-desc-tab" data-toggle="tab" href="#product-desc" role="tab" aria-controls="product-desc" aria-selected="true">Descrizione</a>
                 <a class="nav-item nav-link" id="product-rating-tab" data-toggle="tab" href="#product-rating" role="tab" aria-controls="product-rating" aria-selected="false">Cartoni Correlati</a>
               </div>
             </nav>
             <div class="tab-content p-3" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="product-desc" role="tabpanel" aria-labelledby="product-desc-tab"> Personaggi Cartone </div>
-              <div class="tab-pane fade" id="product-rating" role="tabpanel" aria-labelledby="product-rating-tab"> Cartoni Correlati </div>
+              <div class="tab-pane fade show active" id="product-desc" role="tabpanel" aria-labelledby="product-desc-tab" style="font-size: 13px;" > <[descrizione]> </div>
+              <div class="tab-pane fade" id="product-rating" role="tabpanel" aria-labelledby="product-rating-tab" >
+                <table>
+                  <tbody>
+                  <[foreach]>
+                    <[cartoni_correlati]>
+                  <[/foreach]>
+                  </tbody>
+                </table>
+
+              </div>
             </div>
           </div>
         </div>
@@ -65,16 +99,106 @@
     </section>
     <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
+<!-- /.content-wrapper -->
+<style>
 
-<!-- jQuery -->
-<script src="dtml/ADMIN/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="dtml/ADMIN/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dtml/ADMIN/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dtml/ADMIN/dist/js/demo.js"></script>
+  /* Set a style for all buttons */
+  button1 {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  button1:hover {
+    opacity:1;
+  }
+
+  /* Float cancel and delete buttons and add an equal width */
+  .cancelbtn1, .deletebtn1 {
+    float: left;
+    width: 50%;
+  }
+
+  /* Add a color to the cancel button */
+  .cancelbtn1 {
+    background-color: #ccc;
+    color: black;
+  }
+
+  /* Add a color to the delete button */
+  .deletebtn1 {
+    background-color: #f44336;
+  }
+
+  /* Add padding and center-align text to the container */
+  .container1 {
+    padding: 16px;
+    text-align: center;
+  }
+
+  /* The Modal (background) */
+  .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+  }
+
+  /* Modal Content/Box */
+  .modal-content1 {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* Style the horizontal ruler */
+  hr1 {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  /* The Modal Close Button (x) */
+  .close1 {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+
+  .close1:hover,
+  .close1:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+
+  /* Clear floats */
+  .clearfix1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Change styles for cancel button and delete button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn1, .deletebtn1 {
+      width: 100%;
+    }
+  }
+</style>
 <script>
   $(document).ready(function() {
     $('.product-image-thumb').on('click', function () {
@@ -85,4 +209,14 @@
     })
   })
 </script>
+
+
+<!-- jQuery -->
+<script src="dtml/ADMIN/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="dtml/ADMIN/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dtml/ADMIN/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dtml/ADMIN/dist/js/demo.js"></script>
 

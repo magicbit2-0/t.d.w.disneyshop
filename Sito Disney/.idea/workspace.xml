@@ -2,16 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/infoPersonaggioAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modificaPersonaggioAdmin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aggiungiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/aggiungiAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/profileUtente.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/profileUtente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/invoiceUtenti.php" beforeDir="false" afterPath="$PROJECT_DIR$/invoiceUtenti.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listaUtentiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/listaUtentiAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profileUtente.php" beforeDir="false" afterPath="$PROJECT_DIR$/profileUtente.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggiungiAttoriAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/aggiungiAttoriAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggiungiPersonaggiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/aggiungiPersonaggiAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celebritygrid01.php" beforeDir="false" afterPath="$PROJECT_DIR$/celebritygrid01.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-personaggi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-regia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-personaggi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-regia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggio.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/regia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/acquisto_simulato.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/acquisto_simulato.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/celebrity_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/celebrity_single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/celebrity_single2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/celebrity_single2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/movie_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/movie_single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/movie_single2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/movie_single2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listaAttoriAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/listaAttoriAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listaPersonaggiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/listaPersonaggiAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personaggioAdmin.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +80,7 @@
       <updated>1620303784209</updated>
       <workItem from="1620303792581" duration="4085000" />
       <workItem from="1620475784575" duration="7954000" />
-      <workItem from="1620574360229" duration="13000000" />
+      <workItem from="1620574360229" duration="20818000" />
     </task>
     <servers />
   </component>
@@ -85,10 +100,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1620476076542" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1620578037109">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1620600987196">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1620578037109" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1620600987196" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1620575560963">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

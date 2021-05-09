@@ -21,11 +21,6 @@ if (isset($mysqli)) {
         while($data1=$result1->fetch_assoc()){
             $body->setContent("parola_chiave", $data1['parola_chiave']);
         }
-    /*$result = $mysqli->query("select id as idImgAttore, nome, cognome, anno_nascita, eta, nazionalità as nazionalita, paese_nascita, biografia, foto from regia where id = {$_GET['id']}");
-    $data = $result->fetch_assoc();
-    while ($data = $result->fetch_assoc()){
-        $body->setContent("parola_chiave", $data['testo']);
-    }*/
     }
 }
 $main->setContent("body_admin", $body->get());

@@ -31,7 +31,7 @@ if (isset($mysqli)) {
             $error = $_FILES["customFile"]["error"];
             if ($error === 0) {
                 if ($img_size > 1250000) {
-                    $em = "il file è troppo grande";
+                    $em = "Il file è troppo grande";
                 } else {
                     $img_ex = pathinfo($imgName, PATHINFO_EXTENSION);
                     $img_ex_lc = strtolower($img_ex);
