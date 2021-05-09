@@ -20,7 +20,7 @@ if (isset($mysqli)) {
                                     join articolo ar on ao.articolo_id=ar.id);");
     while($data = $result->fetch_assoc()) {
         $body->setContent("nome_utente", $data['nome']);
-        /*INSERIRE AL POSTO DI DUE: ID UTENTE */
+        /*INSERIRE LA WHERE CON ID UTENTE */
         $result0 = $mysqli->query("SELECT ao.ordine_id FROM articolo_ordinato ao
                                          join ordine o on o.id=ao.ordine_id
                                          join utente u on u.id=o.utente_id

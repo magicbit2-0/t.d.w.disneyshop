@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aggiungiAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggiungiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/aggiungiAdmin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/profileUtente.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/profileUtente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/invoiceUtenti.php" beforeDir="false" afterPath="$PROJECT_DIR$/invoiceUtenti.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listaUtentiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/listaUtentiAdmin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profileUtente.php" beforeDir="false" afterPath="$PROJECT_DIR$/profileUtente.php" afterDir="false" />
     </list>
@@ -63,7 +65,7 @@
       <updated>1620303784209</updated>
       <workItem from="1620303792581" duration="4085000" />
       <workItem from="1620475784575" duration="7954000" />
-      <workItem from="1620574360229" duration="5503000" />
+      <workItem from="1620574360229" duration="13000000" />
     </task>
     <servers />
   </component>

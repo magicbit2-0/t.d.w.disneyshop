@@ -9,7 +9,7 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="../../admin.php">Home</a></li>
+            <li class="breadcrumb-item"><a href="admin.php">Home</a></li>
             <li class="breadcrumb-item active">Aggiungi Amministratore</li>
           </ol>
         </div>
@@ -18,9 +18,10 @@
   </section>
 
   <!-- Main content -->
-  <section class="content">
+  <section class="content" style="width: 53%;margin-inline: auto;">
+    <[alert::notification library="widget"]>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6" style="flex: none;max-width: none;">
         <div class="card card-primary">
           <div class="card-header">
             <h3 class="card-title">Amministratore</h3>
@@ -31,51 +32,119 @@
               </button>
             </div>
           </div>
-          <div class="card-body">
-            <div class="form-group">
-              <label for="inputName">Nome Amministratore</label>
-              <input type="text" id="inputName" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="inputData">Data Nascita</label>
-              <input type="date" id="inputData" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="inputDescription">Biografia</label>
-              <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-            </div>
-            <div class="form-group">
-              <label for="inputCartone">Cartoni Correlati?</label>
-              <textarea id="inputCartone" class="form-control" rows="4"></textarea>
-            </div>
-            <!--
-            <div class="form-group">
-              <label>Filmografia</label>
-                 <select>
 
-                  </select>
-              <input type="text" id="inputRegista" class="form-control">
-            </div> -->
-            <div class="form-group">
-              <div class="btn btn-default btn-file">
-                <i class="fas fa-paperclip"></i> Allega Immagine Personaggio
-                <input type="file" name="attachment">
+          <div class="card-body">
+            <form method="post" id="aggiungiAdminForm" action="aggiungiAdmin.php?id=<[id]>" enctype="multipart/form-data">
+              <div class="form-group">
+                <label for="inputName">Nome</label>
+                <input type="text" id="inputName" name="inputName" class="form-control" value="<[nome]>" required>
               </div>
-              <p class="help-block">Max. 32MB</p>
-            </div>
+              <div class="form-group">
+                <label for="inputSurname">Cognome</label>
+                <input type="text" id="inputSurname" name="inputSurname" class="form-control" value="<[cognome]>" required>
+              </div>
+              <div class="form-group">
+                <label for="inputData">Data Nascita</label>
+                <input type="date" id="inputData" name="inputData" class="form-control" value="<[data_nascita]>" required>
+              </div>
+              <div class="form-group">
+                <label for="inputPaese">Paese</label>
+                <input type="text" id="inputPaese" name="inputPaese" class="form-control" value="<[paese]>" required>
+              </div>
+              <div class="form-group">
+                <label for="inputRegione">Regione</label>
+                <input type="text" id="inputRegione" name="inputRegione" class="form-control" value="<[regione]>" required>
+              </div>
+              <div class="form-group">
+                <label for="inputIndirizzo">Indirizzo</label>
+                <input type="text" id="inputIndirizzo" name="inputIndirizzo" class="form-control" value="<[indirizzo]>" required>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="text" id="inputEmail" name="inputEmail" class="form-control" value="<[email]>" required>
+              </div>
+              <!-- SOLO DA CLIENTE A AMMINISTRATORE!!!-->
+              <div class="form-group">
+                <label>Rendi amministratore</label>
+                <div class="select2-purple">
+                  <select class="select2 select2-hidden-accessible" name="inputTipologia[]" data-select2-id="1" required multiple="" data-placeholder="Seleziona la tipologia di utente che si vuole assegnare" data-dropdown-css-class="select2-purple" style="width: 100%;"  tabindex="-1" aria-hidden="true">
+                    <[foreach]>
+                      <[gruppi]>
+                    <[/foreach]>
+                  </select>
+                </div>
+              </div>
+            </form>
           </div>
-          <!-- /.card-body -->
+
         </div>
-        <!-- /.card -->
+        <!-- /.card-body -->
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <a href="project-add.html" class="btn btn-secondary">Cancella</a>
-        <input type="submit" value="Crea nuovo prodotto" class="btn btn-success float-right">
-      </div>
+      <!-- /.card -->
     </div>
   </section>
+  <div class="col-12" style="padding: 0 30px 5px 30px;">
+    <a href="#" class=""></a>
+    <input type="submit" name="submit" form="aggiungiAdminForm" value="Salva modifiche" class="btn btn-success float-right">
+  </div>
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+<style>
+  .sopra{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .sopra:target{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .popup{
+    margin: 90px auto auto auto;
+    padding: 0px 10px 10px 10px;
+    background: #fff;
+    border-radius: 5px;
+    width: fit-content;
+    position: relative;
+    transition: all 1s ease-in-out;
+  }
+
+  .popup .chiudi{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .popup .chiudi:hover{
+    color: red;
+  }
+
+  .popup .contenuto{
+    max-height: 30%;
+    overflow: auto;
+  }
+
+  @media screen and (max-width: 700px) {
+    .popup{
+      width: 70%;
+    }
+  }
+  .alert {
+    opacity: 1;
+    transition: opacity 0.6s; /* 600ms to fade out */
+  }
+</style>
