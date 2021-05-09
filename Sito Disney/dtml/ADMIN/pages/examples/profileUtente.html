@@ -22,7 +22,6 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
-
           <!-- Profile Image -->
           <div class="card card-primary card-outline">
             <div class="card-body box-profile">
@@ -32,7 +31,6 @@
                      alt="User profile picture">
               </div>
               <h3 class="profile-username text-center"><[nome]></h3>
-              <p class="text-muted text-center">Cliente</p>
               <ul class="list-group list-group-unbordered mb-3">
                 <li class="list-group-item">
                   <b>Preferiti</b> <a class="float-right"> n° <[n_preferiti]></a>
@@ -95,15 +93,22 @@
                   <[foreach]>
                   <div class="post">
                     <div class="user-block">
-                      <img class="profile-user-img img-fluid img-circle" src='img.php?id=<[idArticolo]>' alt="user image">
+                      <img class="img-circle img-fluid" style="border-radius: 15px;width: 75px;height: auto;" src='img.php?id=<[idArticolo]>' alt="user image">
                       <span class="username">
                           <a href="#"><[n_ordine]></a>
-                          <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
                         </span>
                     </div>
                     <!-- /.user-block -->
                     <p>
+                      <strong>
                       <[titolo_prodotto]>.
+                      </strong>
+                    </p>
+                    <p>
+                      <[data_uscita]>
+                    </p>
+                    <p>
+                      <[prezzo]>
                     </p>
                   </div>
                   <!-- /.post -->
