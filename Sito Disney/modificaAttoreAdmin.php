@@ -13,32 +13,43 @@ if (isset($mysqli)) {
     foreach ($data as $key => $value) {
         $body->setContent($key, $value);
     }
-    /*$result = $mysqli->query("select k.id,k.testo from parola_chiave k
+    $result = $mysqli->query("select k.id as id_parola,k.testo from parola_chiave k
                                          join parola_chiave_regia pr on pr.parola_chiave_id=k.id
-                                         join regia r on r.id=pr.regia_id where r.id={$_GET['id']}");
-    */
+                                         join regia r on r.id=pr.regia_id where r.id={$_GET['id']} order by k.id");
+    $count = mysqli_num_rows($result);
+    while($data = $result->fetch_assoc()){
+        $var['id'][]= $data['id_parola'];
+    }
+    $result = $mysqli->query("select id,testo from parola_chiave");
+    for($i = 0; $i <= $count; $i++){
+        while($data = $result->fetch_assoc()){
+            if ($var['id'][$i] == $data['id']){
+                $body->setContent("parola_chiave", '<option selected value="'.$data['id'].'">'.$data['testo'].'</option>');
+                break;
+            } else {
+                $body->setContent("parola_chiave", '<option value="'.$data['id'].'">'.$data['testo'].'</option>');
+            }
+        }
+    }
+    $var = array();
     $result = $mysqli->query("select distinct a.id as id_correlato, a.titolo as titolo_correlato, year(a.data_uscita) as data_uscita_correlato
                                     from articolo a join backstage_articolo ba on ba.articolo_id = a.id
-                                    join regia r on r.id=ba.regia_id where r.id={$_GET['id']}");
+                                    join regia r on r.id=ba.regia_id where r.id={$_GET['id']} order by a.id");
+    $count = mysqli_num_rows($result);
     while($data = $result->fetch_assoc()){
         $var['id'][]= $data['id_correlato'];
     }
-    //$result = $mysqli->query("select id,testo from parola_chiave");
     $result = $mysqli->query("select distinct id,titolo from articolo where categoria like 'Film Disney'");
-    while($data = $result->fetch_assoc()){
-        foreach ($var['id'] as $key => $value){
-        if ($value == $data['id']){
-            $body->setContent("film_correlati", '<option selected value="'.$data['id'].'">'.$data['titolo'].'</option>');
-            break;
-        }else{
-            $body->setContent("film_correlati", '<option value="'.$data['id'].'">'.$data['titolo'].'</option>');
-        }
+    for($i = 0; $i <= $count; $i++){
+        while($data = $result->fetch_assoc()){
+            if ($var['id'][$i] == $data['id']){
+                $body->setContent("film_correlati", '<option selected value="'.$data['id'].'">'.$data['titolo'].'</option>');
+                break;
+            } else {
+                $body->setContent("film_correlati", '<option value="'.$data['id'].'">'.$data['titolo'].'</option>');
+            }
         }
     }
-    while ($data = $result->fetch_assoc()){
-        $body->setContent("parola_chiave", '<option selected value="'.$data['id'].'">'.$data['testo'].'</option>');
-    }
-
 }
 $main->setContent("body_admin", $body->get());
 $main->close();
