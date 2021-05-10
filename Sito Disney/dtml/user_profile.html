@@ -56,40 +56,40 @@
             </div>
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="form-style-1 user-pro" action="">
-                    <form action="" class="user">
+                    <form action="updateProfile.php" class="user" method="POST">
                         <h4>01. Dettagli profilo</h4>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Nome utente</label>
-                                <input type="text" placeholder="username" value="<[username]>">
+                                <input type="text" placeholder="username" value="<[username]>" name="username" required>
                             </div>
                             <div class="col-md-6 form-it">
                                 <label>Indirizzo email</label>
-                                <input type="text" placeholder="email" value="<[email]>">
+                                <input type="text" placeholder="email" value="<[email]>" name="email" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Nome</label>
-                                <input type="text" placeholder="nome" value="<[nome]>">
+                                <input type="text" placeholder="nome" value="<[nome]>" name="nome" required>
                             </div>
                             <div class="col-md-6 form-it">
                                 <label>Cognome</label>
-                                <input type="text" placeholder="cognome" value="<[cognome]>">
+                                <input type="text" placeholder="cognome" value="<[cognome]>" name="cognome" required>
                             </div>
                             <div class="col-md-6 form-it">
                                 <label>Data Nascita</label>
-                                <input type="text" value="<[data_nascita]>" placeholder="" style="background-color: #233a50">
+                                <input type="date" value="<[data_nascita]>" placeholder="" style="background-color: #233a50" name="dataNascita" required>
                             </div>
                             <div class="col-md-6 form-it">
                                 <label>Indirizzo</label>
-                                <input type="text" placeholder="indirizzo" value="<[indirizzo]>">
+                                <input type="text" placeholder="indirizzo" value="<[indirizzo]>" name="indirizzo" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Paese</label>
-                                <select>
+                                <select name="paese" required>
                                     <option value="<[paese]>"><[paese]></option>
                                     <option value="Italia">Italia</option>
                                     <option value="Albania">Albania</option>
@@ -234,7 +234,7 @@
                             </div>
                             <div class="col-md-6 form-it">
                                 <label>Regione:</label>
-                                <input type="text" placeholder="regione" value="<[regione]>">
+                                <input type="text" placeholder="regione" value="<[regione]>" name="regione" required>
                             </div>
                         </div>
                         <div class="row">
@@ -243,24 +243,24 @@
                             </div>
                         </div>
                     </form>
-                    <form action="" class="password">
+                    <form action="updatePassword.php" class="password" method="POST">
                         <h4>02. Cambia la password</h4>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Password vecchia</label>
-                                <input type="text" placeholder="**********">
+                                <input type="password" placeholder="" required name="oldPassword">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Password nuova</label>
-                                <input type="text" placeholder="***************">
+                                <input type="password" placeholder="" required name="newPassword">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Conferma nuova Password</label>
-                                <input type="text" placeholder="*************** ">
+                                <input type="password" placeholder="" required name="confirmNewPassword">
                             </div>
                         </div>
                         <div class="row">
