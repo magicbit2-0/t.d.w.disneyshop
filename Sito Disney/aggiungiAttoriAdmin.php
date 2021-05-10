@@ -24,6 +24,11 @@ if (isset($mysqli)) {
         */
         $result = $mysqli->query("select nome, cognome from regia where nome like '{$_POST['inputName']}' and cognome like '{$_POST['inputSurname']}'");
         if(mysqli_num_rows($result) === 0 ) {
+            $inputName =addslashes($_POST['inputName']);
+            $inputSurname =addslashes($_POST['inputSurname']);
+            $inputNazionalita =addslashes($_POST['inputNazionalità']);
+            $inputPaese =addslashes($_POST['inputPeseNascita']);
+            $inputBiografia =addslashes($_POST['inputDescription']);
             $imgName = $_FILES["customFile"]["name"];
             $imgType = $_FILES["customFile"]["type"];
             $img_size = $_FILES["customFile"]["size"];
@@ -39,10 +44,10 @@ if (isset($mysqli)) {
                     $allowed_exs = array("jpg", "jpeg", "png","jfif");
                     if (in_array($img_ex_lc, $allowed_exs)) {
                         $result = $mysqli->query("insert into regia (nome, cognome, anno_nascita, eta, nazionalità, paese_nascita, biografia, foto)
-                                                    values ('{$_POST['inputName']}','{$_POST['inputSurname']}',
+                                                    values ('$inputName','$inputSurname',
                                                     '{$_POST['inputData']}',year(now())-year('{$_POST['inputData']}'),
-                                                    '{$_POST['inputNazionalità']}','{$_POST['inputPeseNascita']}',
-                                                    '{$_POST['inputDescription']}','$imgData')");
+                                                    '$inputNazionalita','$inputPaese',
+                                                    '$inputBiografia','$imgData')");
                         $idRegia = $mysqli->insert_id;
                         foreach ($_POST['inputParoleChiave'] as $idParolaChiave) {
                             $result = $mysqli->query("insert into parola_chiave_regia (regia_id , parola_chiave_id)

@@ -52,22 +52,22 @@
                   Modifica
                 </a>
                 <button onclick="document.getElementById('id01').style.display='block'"
-                        class="btn1 btn-danger1 btn-sm1" href="#" style="margin-top: 10px;-webkit-text-stroke: snow;">
+                        class="btn btn-danger btn-sm" href="#" style="margin-top: 10px;-webkit-text-stroke: snow;">
                   <i class="fas fa-trash">
                   </i>
                   Elimina
                 </button>
               </div>
-              <div id="id01" class="modal1" style="width: 800px;height: 300px;margin-top: 130px;margin-left: 450px;overflow: hidden;">
+              <div id="id01" class="modal1" style="width: 800px;height: 300px;margin-top: 130px;margin-left: 450px;overflow: hidden;border-radius: 20px;">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
-                <form class="modal-content1" action="/action_page.php">
+                <form class="modal-content1" style="width: auto;height: 300px;margin-top: -50px;padding:75px;border-radius: 20px;" action="/action_page.php">
                   <div class="container1">
-                    <h1>Delete Account</h1>
-                    <p>Are you sure you want to delete your account?</p>
+                    <h1>Elimina elemento</h1>
+                    <p>Sei sicuro di voler eliminare questo elemento?</p>
 
                     <div class="clearfix1">
-                      <button type="button" class="cancelbtn1" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
-                      <button type="button" class="deletebtn1">Delete</button>
+                      <button type="button" class="cancelbtn1" onclick="document.getElementById('id01').style.display='none'">Annulla</button>
+                      <button type="button" class="deletebtn1" onclick="location.href='eliminaOggetto.php?id=<[id]>&table=<[table]>'">Elimina</button>
                     </div>
                   </div>
                 </form>
@@ -182,7 +182,7 @@
       top: 15px;
       font-size: 40px;
       font-weight: bold;
-      color: #f1f1f1;
+      color: #b2aeae;
     }
 
     .close1:hover,
@@ -206,6 +206,15 @@
     }
   </style>
 <script>
+  // Get the modal
+  var modal1 = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target === modal1) {
+      modal1.style.display = "none";
+    }
+  }
   $(document).ready(function() {
     $('.product-image-thumb').on('click', function () {
       var $image_element = $(this).find('img')
@@ -214,4 +223,5 @@
       $(this).addClass('active')
     })
   })
+
 </script>

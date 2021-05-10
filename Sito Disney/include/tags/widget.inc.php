@@ -88,12 +88,18 @@ class widget extends taglibrary
                             color: white;font-weight: bold;float: right;font-size: 22px;line-height: 20px;cursor: pointer;transition: 0.3s;">&times;
                             </span>Il file è troppo grande!</div>';
                 break;
+            case "deleted":
+                    $buffer = '<div class="alert" style="background-color: #f44336; /* Red */color: white;margin-bottom: 10px;width: 310px;height: 20px;
+                            padding-bottom: 30px;margin-left: 935px;"> <span class="closebtn" onclick="this.parentElement.style.display=\'none\';" style="margin-left: 15px;
+                            color: white;font-weight: bold;float: right;font-size: 22px;line-height: 20px;cursor: pointer;transition: 0.3s;">&times;
+                            </span>Elemento cancellato con successo!</div>';
+                    break;
             case "addedItem";
                 $buffer = '<div class="alert" style="padding: 20px;background-color: #00bb00; /* Red */color: white;margin-bottom: 15px;">
                            <span class="closebtn" onclick="this.parentElement.style.display=\'none\';" style="margin-left: 15px;color: white;font-weight: bold;float: right;
                            font-size: 22px;line-height: 20px;cursor: pointer;transition: 0.3s;">&times;</span>Elemento aggiunto con successo.</div>';
                 break;
-                case "success";
+            case "success";
                 $buffer = "<p class=\"alert-success\"><i class=\"icon-ok\"></i> The item has been succesfully added!</p>";
                 break;
             case "signedup";

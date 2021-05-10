@@ -8,3 +8,4 @@ if (($_SESSION['idUtente']) != null) {
     $main->setContent("nomeAdmin", '<a class=\"d-block\">' . $data ['nomeAdmin'] . '</a>');
 }
 ?>
+

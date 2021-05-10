@@ -20,11 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sito Disney/eliminaOggetto.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-regia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/aggiungiAttoriAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/aggiungiAttoriAdmin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/persona.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/persona.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/regia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/include/adminFunctions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/adminFunctions.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/include/tags/widget.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/tags/widget.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito Disney/infoAttoreAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/infoAttoreAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/modificaAttoreAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/modificaAttoreAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/listaAttoriAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/listaAttoriAdmin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +134,7 @@
       <workItem from="1620294056878" duration="33246000" />
       <workItem from="1620409114563" duration="2594000" />
       <workItem from="1620469109698" duration="5382000" />
-      <workItem from="1620488010759" duration="26587000" />
+      <workItem from="1620488010759" duration="46353000" />
     </task>
     <servers />
   </component>
@@ -178,11 +182,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="155" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1620410652646" />
-    <state x="516" y="309" key="NewPhpFileDialog" timestamp="1620482572752">
+    <state x="516" y="309" key="NewPhpFileDialog" timestamp="1620644996891">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="537" y="297" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1619433445904" />
-    <state x="516" y="309" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1620482572752" />
+    <state x="516" y="309" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1620644996891" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1620313008925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -195,10 +199,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="139" width="700" height="530" key="recent.locations.popup/0.0.1536.824@0.0.1536.824" timestamp="1619025877195" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1620471798909">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1620671186318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1620471798909" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1620671186318" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1619544693867">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

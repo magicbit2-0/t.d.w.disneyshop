@@ -9,7 +9,8 @@ if (isset($mysqli)) {
     $result = $mysqli->query("SELECT *
                                     FROM regia where id= {$_GET['id']}");
     $data = $result->fetch_assoc();
-    $titolo = $data['titolo'];
+    $table = 'regia';
+    $body->setContent("table", $table);
     foreach ($data as $key => $value) {
         $body->setContent($key, $value);
     }
