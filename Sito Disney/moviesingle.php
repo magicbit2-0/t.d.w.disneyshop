@@ -12,6 +12,13 @@ if (isset($mysqli)) {
 
         foreach ($data as $key => $value){
             $body->setContent($key,$value);
+            //se non sei loggato non puoi aggiungere articoli al carrello
+            if(isset($_SESSION['idUtente'])){
+                $body->setContent("bottoneCompra",'<div class="btn-transform transform-vertical">
+                                                    <div><a href="addtocart.php?id='.$data['idImg'].'" class="item item-1 yellowbtn" style="text-transform: none;"> <i class="ion-card"></i>Aggiungi al carrello '.$data['prezzo'].'€</a></div>
+                                                    <div><a href="addtocart.php?id='.$data['idImg'].'" class="item item-2 yellowbtn"><i class="ion-card"></i></a></div>
+                                                </div>');
+            }
         }
 
     $result = $mysqli->query("select r.id as idRegista, concat(r.nome,' ', r.cognome) as nome_regista from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id
@@ -156,6 +163,8 @@ if (isset($mysqli)) {
         $body->setContent("no_reviews", "<div><h2 style='color:#d36b6b'> Non ci sono ancora recensioni per questo articolo</h2></div>");
         $body->setContent("number_of_reviews", "<p><span>Nessuna recensione trovata</span></p>");
     }
+
+    
 }
 
 $main->setContent("body", $body->get());

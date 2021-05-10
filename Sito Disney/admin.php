@@ -7,11 +7,22 @@ require "include/adminFunctions.inc.php";
 
 $body=new Template("dtml/ADMIN/pages/examples/admin.html");
 if (isset($mysqli)) {
-    /*$result = $mysqli->query("select id as idImgAttore, nome, cognome, anno_nascita, eta, nazionalità as nazionalita, paese_nascita, biografia, foto from regia where id = {$_GET['id']}");
-    $data = $result->fetch_assoc();
-    while ($data = $result->fetch_assoc()){
-        $body->setContent("parola_chiave", $data['testo']);
-    }*/
+
+    $result0 = $mysqli->query("select o.id from ordine o");
+    $number_of_results = mysqli_num_rows($result0);
+    $body -> setContent("ordini", $number_of_results);
+
+    $result1 = $mysqli->query("select a.id from articolo a");
+    $number_of_results = mysqli_num_rows($result1);
+    $body -> setContent("film", $number_of_results);
+
+    $result2 = $mysqli->query("select a.id from articolo_preferito a");
+    $number_of_results = mysqli_num_rows($result2);
+    $body -> setContent("preferiti", $number_of_results);
+
+    $result3 = $mysqli->query("select u.id from utente u");
+    $number_of_results = mysqli_num_rows($result3);
+    $body -> setContent("utenti_registrati", $number_of_results);
 }
 $main->setContent("body_admin", $body->get());
 $main->close();

@@ -9,7 +9,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../../admin.php">Home</a></li>
+              <li class="breadcrumb-item"><a href="admin.php">Home</a></li>
               <li class="breadcrumb-item active">Tutti gli utenti</li>
             </ol>
           </div>
@@ -20,9 +20,9 @@
     <!-- Main content -->
     <section class="content">
       <!-- Default box -->
-
       <div class="card card-solid">
         <div class="card-body pb-0">
+          <p>Trovati <[numero_utenti]> Utenti in totale</p>
           <div class="row">
             <[foreach]>
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
@@ -34,7 +34,7 @@
                       <p class="text-muted text-sm"><b>Stato/Regione: </b> <[paese]>/<[regione]> </p>
                       <ul class="ml-4 mb-0 fa-ul text-muted">
                         <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Indirizzo: <[indirizzo]></li>
-                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Email: <[email]></li>
+                        <li class="small"><span class="fa-li"><i class="fas fa-envelope"></i></i></span> Email: <[email]></li>
                       </ul>
                     </div>
                     <div class="col-5 text-center">
@@ -47,6 +47,11 @@
                     <a href='<[pagina_utente]>' class="btn btn-sm btn-primary">
                       <i class="fas fa-user"></i> Visita Profilo
                     </a>
+                    <a class="btn btn-info btn-sm" href='<[pagina_utente2]>' style="margin-bottom: 1px;">
+                      <i class="fas fa-pencil-alt">
+                      </i>
+                      Modifica
+                    </a>
                   </div>
                 </div>
               </div>
@@ -54,27 +59,18 @@
             <[/foreach]>
           </div>
         </div>
-
-        <!--vedere paginazione-->
         <!-- /.card-body -->
         <div class="card-footer">
           <nav aria-label="Contacts Page Navigation">
-            <ul class="pagination justify-content-center m-0">
-              <li class="page-item active"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item"><a class="page-link" href="#">6</a></li>
-              <li class="page-item"><a class="page-link" href="#">7</a></li>
-              <li class="page-item"><a class="page-link" href="#">8</a></li>
-            </ul>
+              Pagina <strong> <[actual_page]> </strong> di <strong> <[number_of_pages]> </strong>:
+              <[foreach]>
+                <[tagpagina]>
+              <[/foreach]>
           </nav>
         </div>
         <!-- /.card-footer -->
       </div>
       <!-- /.card -->
-
     </section>
     <!-- /.content -->
   </div>

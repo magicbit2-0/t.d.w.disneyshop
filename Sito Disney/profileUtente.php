@@ -31,16 +31,32 @@ if (isset($mysqli)) {
         $body->setContent("email", $data1['email']);
     }
 
-    $result = $mysqli->query("select a.id as idArticolo, a.titolo, a.data_uscita, a.prezzo
+    $result3 = $mysqli->query("select a.id as idArticolo, a.titolo, a.data_uscita, a.prezzo
                                     from articolo a 
                                     join articolo_ordinato ao on a.id=ao.articolo_id
                                     join ordine o on o.id=ao.ordine_id
                                     join utente u on u.id=o.utente_id where u.id= {$_GET['id']}");
-    while ($data2 = $result->fetch_assoc()){
-        $body->setContent("idArticolo", $data2['idArticolo']);
-        $body->setContent("titolo_prodotto", $data2['titolo']);
-        $body->setContent("data_uscita", $data2['data_uscita']);
-        $body->setContent("prezzo", $data2['prezzo']);
+    $number_of_results1 = mysqli_num_rows($result3);
+    if($number_of_results1 > 0) {
+        while ($data2 = $result3->fetch_assoc()) {
+            $body->setContent("ordini",  '<div class="post">
+                                                            <p>
+                                                              <img class="img-circle img-fluid" style="border-radius: 15px;width: 75px;height: auto;" src="img.php?id=' . $data2['idArticolo'] . '" alt="">
+                                                              <strong>
+                                                                ' . $data2['titolo'] . '
+                                                              </strong>
+                                                            </p>
+                                                            <p>
+                                                                Data uscita: ' . $data2['data_uscita'] . '
+                                                            </p>
+                                                            <p>
+                                                                Prezzo: ' . $data2['prezzo'] . '
+                                                            </p>
+                                                          </div>');
+        }
+    }
+    else {
+        $body->setContent("ordini", "<div><h2 style='color:#d36b6b'> Non sono stati trovati ordini! " . "</h2></div>");
     }
 }
 $main->setContent("body_admin", $body->get());
