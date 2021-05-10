@@ -27,7 +27,7 @@ if (isset($mysqli)) {
                                                         </div>');
                     $body->setContent("bottone_compra",'<div class="col-md-12 " id="provaid">
                                                             <input class="buybtn" type="button" onclick="location.href=\'infouser.php\';" value="Acquista Ora">
-                                                        </div>');
+                                                        </div>');         
                     $totaleParziale = $totaleParziale + $data['prezzo'];
                 }
             }
