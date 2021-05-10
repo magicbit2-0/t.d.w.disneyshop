@@ -13,7 +13,7 @@ if (isset($mysqli)) {
     while ($data = $result->fetch_assoc()){
         $body->setContent("paroleChiave", '<option value="'.$data['id'].'">'.$data['testo'].'</option>');
     }
-    $result = $mysqli->query("select a.id, a.titolo from articolo a where a.categoria like '%Cartone%'");
+    $result = $mysqli->query("select a.id, a.titolo from articolo a where a.categoria like '%Cartone%' or '%Cortometraggi%'");
     while ($data = $result->fetch_assoc()){
         $body->setContent("cartoniCorrelati", '<option value="'.$data['id'].'">'.$data['titolo'].'</option>');
     }
@@ -45,9 +45,9 @@ if (isset($mysqli)) {
                         }
                         $cartoni_correlati = is_array($_POST['$inputCartoniCorrelati']) ? count($_POST['$inputCartoniCorrelati']) : 0;
                         if ($cartoni_correlati > 0) {
-                            foreach ($_POST['$inputCartoniCorrelati'] as $idCartoniCorrelati) {
+                            for ($i=0; $i<count($_POST['$inputCartoniCorrelati']); $i++) {
                                 $result = $mysqli->query("insert into personaggio_articolo (personaggio_id , articolo_id)
-                                                        values ('$idPersonaggio','$idCartoniCorrelati')");
+                                                        values ('$idPersonaggio','{$_POST['$inputCartoniCorrelati'][$i]}');");
                             }
                         }
                         $body->setContent("alert",'addedItem');
@@ -72,6 +72,7 @@ if (isset($mysqli)) {
             $body->setContent($key, $selectedOption);
         }
     }
+    print_r($_POST);
 }
 $main->setContent("body_admin", $body->get());
 $main->close();
