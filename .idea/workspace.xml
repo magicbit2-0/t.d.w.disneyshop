@@ -19,17 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sito Disney/eliminaOggetto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/aggiungiAttoriAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/aggiungiAttoriAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/persona.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/persona.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/regia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/include/adminFunctions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/adminFunctions.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/include/tags/widget.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/tags/widget.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/infoAttoreAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/infoAttoreAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/listaAttoriAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/listaAttoriAdmin.php" afterDir="false" />
-    </list>
+    <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +124,7 @@
       <workItem from="1620294056878" duration="33246000" />
       <workItem from="1620409114563" duration="2594000" />
       <workItem from="1620469109698" duration="5382000" />
-      <workItem from="1620488010759" duration="46353000" />
+      <workItem from="1620488010759" duration="46969000" />
     </task>
     <servers />
   </component>
