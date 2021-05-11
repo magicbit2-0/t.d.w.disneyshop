@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/aggiungiNotizia.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-notizia.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-notizia.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizia.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizie.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modificaNotizia.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notizia.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notizie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aggiungiPersonaggiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/aggiungiPersonaggiAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/invoiceUtenti.php" beforeDir="false" afterPath="$PROJECT_DIR$/invoiceUtenti.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +66,7 @@
       <workItem from="1620475784575" duration="7954000" />
       <workItem from="1620574360229" duration="20818000" />
       <workItem from="1620658754649" duration="4159000" />
+      <workItem from="1620746434727" duration="3014000" />
     </task>
     <servers />
   </component>
@@ -79,10 +86,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1620476076542" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1620600987196">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1620749358963">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1620600987196" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1620749358963" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1620575560963">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

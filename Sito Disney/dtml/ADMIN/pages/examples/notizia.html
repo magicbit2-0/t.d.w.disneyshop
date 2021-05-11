@@ -1,0 +1,210 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Notizia</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="admin.php">Home</a></li>
+            <li class="breadcrumb-item active">Notizia</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+    <!-- Default box -->
+    <div class="card card-solid">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-sm-6" style="margin-right: -70px;">
+            <h3 class="d-inline-block d-sm-none"><[titolo]></h3>
+            <div class="col-12">
+              <img src="imgNotizia.php?id=<[id]>" class="product-image" alt="Person Image" style="height: 600px;width: auto;border: 1px solid #001f3f;">
+            </div>
+          </div>
+          <div class="col-12 col-sm-6" style="margin-left: -25px;">
+            <h3 class="my-3" style="text-transform: capitalize;"><[titolo]></h3>
+
+            <p>Titolo: <[titolo]></p>
+            <p>Fonte: <[fonte]></p>
+            <p>Data di pubblicazione: <[data_pubblicazione]></p>
+            <p>Categoria: <[categoria]></p>
+            <hr>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            </div>
+
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            </div>
+            <div class="row" style="flex-wrap: nowrap;width: min-content;margin-left: 460px;">
+              <a class="btn btn-info btn-sm" href="modificaNotiziaAdmin.php?id=<[id]>" style="margin-top: 10px; margin-right: 10px;">
+                <i class="fas fa-pencil-alt">
+                </i>
+                Modifica
+              </a>
+              <button onclick="document.getElementById('id01').style.display='block'"
+                      class="btn btn-danger btn-sm" href="#" style="margin-top: 10px;">
+                <i class="fas fa-trash">
+                </i>
+                Elimina
+              </button>
+            </div>
+            <div id="id01" class="modal1" style="width: 800px;height: 300px;margin-top: 130px;margin-left: 450px;overflow: hidden;border-radius: 20px;">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+              <form class="modal-content1" style="width: auto;height: 300px;margin-top: -50px;padding:75px;border-radius: 20px;" action="/action_page.php">
+                <div class="container1">
+                  <h1>Elimina elemento</h1>
+                  <p>Sei sicuro di voler eliminare questo elemento?</p>
+
+                  <div class="clearfix1">
+                    <button type="button" class="cancelbtn1" onclick="document.getElementById('id01').style.display='none'">Annulla</button>
+                    <button type="button" class="deletebtn1" onclick="location.href='eliminaOggetto.php?id=<[id]>&table=<[table]>'">Elimina</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <nav class="w-100">
+            <div class="nav nav-tabs" id="product-tab" role="tablist">
+              <a class="nav-item nav-link active" id="product-desc-tab" data-toggle="tab" href="#product-desc" role="tab" aria-controls="product-desc" aria-selected="true">Descrizione</a>
+            </div>
+          </nav>
+          <div class="tab-content p-3" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="product-desc" role="tabpanel" aria-labelledby="product-desc-tab" style="font-size: 13px;" > <[desrizione]> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.card-body -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+<style>
+
+  /* Set a style for all buttons */
+  button1 {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  button1:hover {
+    opacity:1;
+  }
+
+  /* Float cancel and delete buttons and add an equal width */
+  .cancelbtn1, .deletebtn1 {
+    float: left;
+    width: 50%;
+  }
+
+  /* Add a color to the cancel button */
+  .cancelbtn1 {
+    background-color: #ccc;
+    color: black;
+  }
+
+  /* Add a color to the delete button */
+  .deletebtn1 {
+    background-color: #f44336;
+  }
+
+  /* Add padding and center-align text to the container */
+  .container1 {
+    padding: 16px;
+    text-align: center;
+  }
+
+  /* The Modal (background) */
+  .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+  }
+
+  /* Modal Content/Box */
+  .modal-content1 {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* Style the horizontal ruler */
+  hr1 {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  /* The Modal Close Button (x) */
+  .close1 {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #b2aeae;
+  }
+
+  .close1:hover,
+  .close1:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+
+  /* Clear floats */
+  .clearfix1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Change styles for cancel button and delete button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn1, .deletebtn1 {
+      width: 100%;
+    }
+  }
+</style>
+<script>
+  // Get the modal
+  var modal1 = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target === modal1) {
+      modal1.style.display = "none";
+    }
+  }
+  $(document).ready(function() {
+    $('.product-image-thumb').on('click', function () {
+      var $image_element = $(this).find('img')
+      $('.product-image').prop('src', $image_element.attr('src'))
+      $('.product-image-thumb.active').removeClass('active')
+      $(this).addClass('active')
+    })
+  })
+
+</script>
