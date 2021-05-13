@@ -53,6 +53,11 @@ if (isset($mysqli)) {
         }
     }
     if (isset($_POST['submit'])) {
+        $inputName =addslashes($_POST['inputName']);
+        $inputSurname =addslashes($_POST['inputSurname']);
+        $inputNazionalita =addslashes($_POST['inputNazionalità']);
+        $inputPaese =addslashes($_POST['inputPeseNascita']);
+        $inputBiografia =addslashes($_POST['inputDescription']);
         if (isset($_FILES) and $_FILES['customFile']['error'] != 4) {
             $imgName = $_FILES["customFile"]["name"];
             $imgType = $_FILES["customFile"]["type"];
@@ -69,26 +74,26 @@ if (isset($mysqli)) {
                     $allowed_exs = array("jpg", "jpeg", "png", "jfif");
                     if (in_array($img_ex_lc, $allowed_exs)) {
                         $result = $mysqli->query("update regia set
-                                                                nome = '{$_POST['inputName']}',
-                                                                cognome = '{$_POST['inputSurname']}',
+                                                                nome = '$inputName',
+                                                                cognome = '$inputSurname',
                                                                 anno_nascita = '{$_POST['inputData']}',
                                                                 eta = year(now())-year('{$_POST['inputData']}'),
-                                                                nazionalità = '{$_POST['inputNazionalità']}',
-                                                                paese_nascita = '{$_POST['inputPeseNascita']}',
-                                                                biografia = '{$_POST['inputDescription']}',
+                                                                nazionalità = '$inputNazionalita',
+                                                                paese_nascita = '$inputPaese',
+                                                                biografia = '$inputBiografia',
                                                                 foto = '$imgData' where id = {$_GET['id']}");
                     }
                 }
             }
         } else {
             $result = $mysqli->query("update regia set
-                                                    nome = '{$_POST['inputName']}',
-                                                    cognome = '{$_POST['inputSurname']}',
+                                                    nome = '$inputName',
+                                                    cognome = '$inputSurname',
                                                     anno_nascita = '{$_POST['inputData']}',
                                                     eta = year(now())-year('{$_POST['inputData']}'),
-                                                    nazionalità = '{$_POST['inputNazionalità']}',
-                                                    paese_nascita = '{$_POST['inputPeseNascita']}',
-                                                    biografia = '{$_POST['inputDescription']}'
+                                                    nazionalità = '$inputNazionalita',
+                                                    paese_nascita = '$inputPaese',
+                                                    biografia = '$inputBiografia'
                                                     where id = {$_GET['id']}");
         }
         if (isset($_POST['inputParoleChiave'])){
