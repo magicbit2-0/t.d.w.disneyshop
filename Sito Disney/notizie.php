@@ -7,7 +7,7 @@ require "include/adminFunctions.inc.php";
 $body=new Template("dtml/ADMIN/pages/examples/notizie.html");
 if (isset($mysqli)) {
 
-    $result = $mysqli->query("SELECT id as idNotizia, titolo, fonte, data_pubblicazione, categria FROM notizia");
+    $result = $mysqli->query("SELECT id as idNotizia, titolo, fonte, data_pubblicazione, categoria FROM notizia");
     while($data = $result->fetch_assoc()) {
         foreach ($data as $key => $value) {
             $body->setContent($key, $value);

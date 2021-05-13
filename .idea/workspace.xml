@@ -19,7 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="" />
+    <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/aggiungiNotizia.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/aggiungiNotizia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/admin_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/admin_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-notizia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-notizia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-personaggi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/notizia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/notizia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/notizie.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/notizie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/personaggio.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/personaggio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/modificaPersonaggioAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/modificaPersonaggioAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/notizie.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/notizie.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -125,6 +136,7 @@
       <workItem from="1620409114563" duration="2594000" />
       <workItem from="1620469109698" duration="5382000" />
       <workItem from="1620488010759" duration="46969000" />
+      <workItem from="1620915779335" duration="4748000" />
     </task>
     <servers />
   </component>

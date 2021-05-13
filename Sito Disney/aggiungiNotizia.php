@@ -8,8 +8,8 @@ require "include/adminFunctions.inc.php";
 $body=new Template("dtml/ADMIN/pages/examples/aggiungi-notizia.html");
 
 if (isset($mysqli)) {
-
-    $result = $mysqli->query("select id, categoria from articolo");
+    /*non si vedono le categorie, manca l'id*/
+    $result = $mysqli->query("select distinct categoria from articolo");
     while ($data = $result->fetch_assoc()){
         $body->setContent("categoria", '<option value="'.$data['id'].'">'.$data['categoria'].'</option>');
     }
@@ -34,7 +34,7 @@ if (isset($mysqli)) {
                         $result = $mysqli->query("insert into notizia (titolo, fonte, data_pubblicazione, descrizione, categoria, immagine)
                                                     values ('{$_POST['inputName']}','{$_POST['inputFonte']}','{$_POST['inputData']}',
                                                     '{$_POST['inputDescription']}','$imgData')");
-                        /*per la categoria???*/
+                        /*la categoria?????????????*/
 
                         $body->setContent("alert",'addedItem');
                         if (!$result) {
@@ -58,7 +58,6 @@ if (isset($mysqli)) {
             $body->setContent($key, $selectedOption);
         }
     }
-    print_r($_POST);
 }
 $main->setContent("body_admin", $body->get());
 $main->close();

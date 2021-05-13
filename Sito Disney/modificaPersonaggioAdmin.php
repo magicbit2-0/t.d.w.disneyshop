@@ -70,7 +70,7 @@ if (isset($mysqli)) {
                     if (in_array($img_ex_lc, $allowed_exs)) {
                         $result = $mysqli->query("update personaggio set
                                                                 nome = '{$_POST['inputName']}',
-                                                                biografia = '{$_POST['inputDescription']}',
+                                                                descrizione = '{$_POST['inputDescription']}',
                                                                 data_nascita = '{$_POST['inputData']}',
                                                                 foto = '$imgData' where id = {$_GET['id']}");
                     }
@@ -79,7 +79,7 @@ if (isset($mysqli)) {
         } else {
             $result = $mysqli->query("update personaggio set
                                                                 nome = '{$_POST['inputName']}',
-                                                                biografia = '{$_POST['inputDescription']}',
+                                                                descrizione = '{$_POST['inputDescription']}',
                                                                 data_nascita = '{$_POST['inputData']}',
                                                                 where id = {$_GET['id']}");
         }
