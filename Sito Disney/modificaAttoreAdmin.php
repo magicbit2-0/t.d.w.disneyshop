@@ -5,6 +5,8 @@ require "include/template2.inc.php";
 require "include/adminFunctions.inc.php";
 $var = array();
 $body=new Template("dtml/ADMIN/pages/examples/modifica-regia.html");
+
+$body->setContent("goBack", $_SERVER['HTTP_REFERER']);
 if (isset($mysqli)) {
     $result = $mysqli->query("SELECT *
                                     FROM regia where id = {$_GET['id']}");

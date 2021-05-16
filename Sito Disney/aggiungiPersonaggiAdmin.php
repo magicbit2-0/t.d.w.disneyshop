@@ -8,7 +8,6 @@ require "include/adminFunctions.inc.php";
 $body=new Template("dtml/ADMIN/pages/examples/aggiungi-personaggi.html");
 
 if (isset($mysqli)) {
-
     $result = $mysqli->query("select * from parola_chiave");
     while ($data = $result->fetch_assoc()){
         $body->setContent("paroleChiave", '<option value="'.$data['id'].'">'.$data['testo'].'</option>');
@@ -21,6 +20,8 @@ if (isset($mysqli)) {
     if(isset($_POST['aggiungiFilm'])){
         $result = $mysqli->query("select titolo from articolo where nome like '{$_POST['inputName']}'");
         if(mysqli_num_rows($result) === 0 ) {
+            $inputName =addslashes($_POST['inputName']);
+            $inputBiografia =addslashes($_POST['inputDescription']);
             $imgName = $_FILES["customFile"]["name"];
             $imgType = $_FILES["customFile"]["type"];
             $img_size = $_FILES["customFile"]["size"];
@@ -36,7 +37,7 @@ if (isset($mysqli)) {
                     $allowed_exs = array("jpg", "jpeg", "png","jfif");
                     if (in_array($img_ex_lc, $allowed_exs)) {
                         $result = $mysqli->query("insert into personaggio (nome, descrizione, data_nascita, foto)
-                                                    values ('{$_POST['inputName']}','{$_POST['inputDescription']}',
+                                                    values ('$inputName','$inputBiografia',
                                                     '{$_POST['inputData']}','$imgData')");
                         $idPersonaggio = $mysqli->insert_id;
                         foreach ($_POST['inputParoleChiave'] as $idParolaChiave) {
@@ -72,7 +73,6 @@ if (isset($mysqli)) {
             $body->setContent($key, $selectedOption);
         }
     }
-    print_r($_POST);
 }
 $main->setContent("body_admin", $body->get());
 $main->close();

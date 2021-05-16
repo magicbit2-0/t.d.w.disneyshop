@@ -53,6 +53,8 @@ if (isset($mysqli)) {
         }
     }
     if (isset($_POST['submit'])) {
+        $inputName =addslashes($_POST['inputName']);
+        $inputBiografia =addslashes($_POST['inputDescription']);
         if (isset($_FILES) and $_FILES['customFile']['error'] != 4) {
             $imgName = $_FILES["customFile"]["name"];
             $imgType = $_FILES["customFile"]["type"];
@@ -69,8 +71,8 @@ if (isset($mysqli)) {
                     $allowed_exs = array("jpg", "jpeg", "png", "jfif");
                     if (in_array($img_ex_lc, $allowed_exs)) {
                         $result = $mysqli->query("update personaggio set
-                                                        nome = '{$_POST['inputName']}',
-                                                        descrizione = '{$_POST['inputDescription']}',
+                                                        nome = '$inputName',
+                                                        descrizione = '$inputBiografia',
                                                         data_nascita = '{$_POST['inputData']}',
                                                         foto = '$imgData' 
                                                         where id = {$_GET['id']}");
@@ -79,8 +81,8 @@ if (isset($mysqli)) {
             }
         } else {
             $result = $mysqli->query("update personaggio set
-                                            nome = '{$_POST['inputName']}',
-                                            descrizione = '{$_POST['inputDescription']}',
+                                            nome = '$inputName',
+                                            descrizione = '$inputBiografia',
                                             data_nascita = '{$_POST['inputData']}',
                                             where id = {$_GET['id']}");
         }

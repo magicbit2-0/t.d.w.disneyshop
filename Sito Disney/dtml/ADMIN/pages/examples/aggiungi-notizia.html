@@ -53,22 +53,25 @@
               </div>
               <div class="row">
                 <div class="col-md-6 form-it">
-                  <label>Categoria</label>
-                  <select name="categoria">
-                    <option value="Cartone Disney">Cartone Disney</option>
-                    <option value="Cartone Pixar">Cartone Pixar</option>
-                    <option value="Cortometraggi">Cortometraggi Pixar</option>
-                    <option value="Film Disney">Film Disney</option>
-                  </select>
+                  <div class="form-group">
+                    <label for="inputDescription">Categoria</label>
+                    <br>
+                    <select name="categoria" id="categoria" class="form-control">
+                      <option value="Cartone Disney">Cartone Disney</option>
+                      <option value="Cartone Pixar">Cartone Pixar</option>
+                      <option value="Cortometraggi">Cortometraggi Pixar</option>
+                      <option value="Film Disney">Film Disney</option>
+                    </select>
+                  </div>
                 </div>
+              </div>
               <div class="form-group">
-                <label for="customFile">Allega immagine</label>
-                <div class="custom-file">
-                  <input type="file" class="custom-file-input" name="customFile" id="customFile" required>
-                  <label class="custom-file-label" for="customFile">Allega immagine</label>
-                </div>
+              <label for="customFile">Allega immagine</label>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" name="customFile" id="customFile" required>
+                <label class="custom-file-label" for="customFile">Allega immagine</label>
               </div>
-              </div>
+            </div>
             </form>
           </div>
         </div>
