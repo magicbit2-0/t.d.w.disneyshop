@@ -51,22 +51,23 @@
                 <label for="inputDescription">Descrizione</label>
                 <textarea id="inputDescription" name="inputDescription" class="form-control" rows="4" required></textarea>
               </div>
-              <div class="form-group">
-                <label>Categoria</label>
-                <div class="select2-purple">
-                  <select class="select2 select2-hidden-accessible" name="inputCategoria[]" data-select2-id="1" required multiple="" data-placeholder="Seleziona la categoria relativa a questo elemento" data-dropdown-css-class="select2-purple" style="width: 100%;"  tabindex="-1" aria-hidden="true">
-                    <[foreach]>
-                      <[categoria]>
-                    <[/foreach]>
+              <div class="row">
+                <div class="col-md-6 form-it">
+                  <label>Categoria</label>
+                  <select name="categoria">
+                    <option value="Cartone Disney">Cartone Disney</option>
+                    <option value="Cartone Pixar">Cartone Pixar</option>
+                    <option value="Cortometraggi">Cortometraggi Pixar</option>
+                    <option value="Film Disney">Film Disney</option>
                   </select>
                 </div>
-              </div>
               <div class="form-group">
                 <label for="customFile">Allega immagine</label>
                 <div class="custom-file">
                   <input type="file" class="custom-file-input" name="customFile" id="customFile" required>
                   <label class="custom-file-label" for="customFile">Allega immagine</label>
                 </div>
+              </div>
               </div>
             </form>
           </div>
@@ -77,8 +78,8 @@
     </div>
   </section>
   <div class="col-12" style="padding: 0 30px 5px 30px;">
-    <a href="#" class=""></a>
-    <input type="submit" name="submit" form="aggiungiNotiziaForm" value="Salva modifiche" class="btn btn-success float-right">
+    <input type="reset" onclick="location.href='aggiungiNotizia.php'" class="btn btn-secondary" form="aggiungiNotiziaForm" value="Cancella">
+    <input type="submit" name="aggiungiNotizia" form="aggiungiNotiziaForm" value="Aggiungi Notizia" class="btn btn-success float-right">
   </div>
   <!-- /.content -->
 </div>

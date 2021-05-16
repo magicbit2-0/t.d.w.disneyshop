@@ -9,7 +9,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="admin.php">Home</a></li>
               <li class="breadcrumb-item active">Lista prodotti</li>
             </ol>
           </div>
@@ -28,14 +28,7 @@
               <a class="btn btn-primary btn-sm" href="aggiungiProdottiAdmin.php">
                 <i class="fas fa-folder">
                 </i>
-                Aggiungi film
-              </a>
-            </td>
-            <td class="project-actions text-right">
-              <a class="btn btn-primary btn-sm" href="project-add2.html">
-                <i class="fas fa-folder">
-                </i>
-                Aggiungi cartone
+                Aggiungi prodotto
               </a>
             </td>
             <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -51,10 +44,10 @@
               <thead>
                   <tr>
                       <th style="width: 1%">
-                          immagine
+                          Immagine
                       </th>
                       <th style="width: 10%">
-                          n° prodotto
+                          N° prodotto
                       </th>
                       <th style="width: 20%">
                           Nome prodotto
@@ -64,9 +57,6 @@
                       </th>
                       <th>
                           Votazione
-                      </th>
-                      <th style="width: 8%" class="text-center">
-                          Impressioni
                       </th>
                       <th style="width: 20%">
                       </th>
@@ -79,7 +69,7 @@
                         <img src='img.php?id=<[idImg]>' style="border-radius: 15px;height: 100px;" alt="">
                       </td>
                       <td>
-                          n° <[idImg]>
+                          N° <[idImg]>
                       </td>
                       <td>
                           <a>
@@ -87,7 +77,7 @@
                           </a>
                           <br/>
                           <small>
-                              <[data_uscita]>
+                            <[data_uscita]>
                           </small>
                       </td>
                       <td>
@@ -101,21 +91,18 @@
                               n° stelline medie
                           </small>
                       </td>
-                      <td class="project-state" style="border-right: 1px solid #e0e4e7">
-                          <span class="badge badge-success">Successo</span>
-                      </td>
                       <td class="project-actions text-right" style="display: grid;">
                           <a class="btn btn-primary btn-sm" href="infoArticoloAdmin.php?id=<[idImg]>" style="margin-bottom: 1px;">
                               <i class="fas fa-folder">
                               </i>
                               Vedi prodotto
                           </a>
-                          <a class="btn btn-info btn-sm" href="project-edit.html" style="margin-bottom: 1px;">
+                          <a class="btn btn-info btn-sm" href="modificaProdotto.php" style="margin-bottom: 1px;">
                               <i class="fas fa-pencil-alt">
                               </i>
                               Modifica
                           </a>
-                          <a class="btn btn-danger btn-sm" href="#">
+                          <a class="btn btn-danger btn-sm" href="#" style="margin-bottom: 1px;">
                               <i class="fas fa-trash">
                               </i>
                               Elimina
@@ -123,18 +110,12 @@
                       </td>
                   </tr>
                   <[/foreach]>
-                  <!-- <a class="btn btn-info btn-sm" href="project-detail.html">
-                                  <i class="fas fa-pencil-alt">
-                                  </i>
-                                  Commenti
-                              </a> -->
               </tbody>
           </table>
         </div>
         <!-- /.card-body -->
       </div>
       <!-- /.card -->
-
     </section>
     <!-- /.content -->
   </div>

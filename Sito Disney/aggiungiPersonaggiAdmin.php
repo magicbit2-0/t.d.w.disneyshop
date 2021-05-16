@@ -18,8 +18,8 @@ if (isset($mysqli)) {
         $body->setContent("cartoniCorrelati", '<option value="'.$data['id'].'">'.$data['titolo'].'</option>');
     }
 
-    if(isset($_POST['aggiungiPersonaggio'])){
-        $result = $mysqli->query("select nome from personaggio where nome like '{$_POST['inputName']}'");
+    if(isset($_POST['aggiungiFilm'])){
+        $result = $mysqli->query("select titolo from articolo where nome like '{$_POST['inputName']}'");
         if(mysqli_num_rows($result) === 0 ) {
             $imgName = $_FILES["customFile"]["name"];
             $imgType = $_FILES["customFile"]["type"];
@@ -43,11 +43,11 @@ if (isset($mysqli)) {
                             $result = $mysqli->query("insert into parola_chiave_personaggio (personaggio_id , parola_chiave_id)
                                                         values ('$idPersonaggio','$idParolaChiave')");
                         }
-                        $cartoni_correlati = is_array($_POST['$inputCartoniCorrelati']) ? count($_POST['$inputCartoniCorrelati']) : 0;
+                        $cartoni_correlati = is_array($_POST['inputCartoniCorrelati']) ? count($_POST['inputCartoniCorrelati']) : 0;
                         if ($cartoni_correlati > 0) {
-                            for ($i=0; $i<count($_POST['$inputCartoniCorrelati']); $i++) {
-                                $result = $mysqli->query("insert into personaggio_articolo (personaggio_id , articolo_id)
-                                                        values ('$idPersonaggio','{$_POST['$inputCartoniCorrelati'][$i]}');");
+                            foreach ($_POST['inputCartoniCorrelati'] as $idCartoniCorrelati) {
+                                $result = $mysqli->query("insert into personaggio_articolo (articolo_id , personaggio_id)
+                                                        values ('$idCartoniCorrelati','$idPersonaggio')");
                             }
                         }
                         $body->setContent("alert",'addedItem');

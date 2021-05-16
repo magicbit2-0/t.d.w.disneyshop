@@ -4,15 +4,10 @@ require "include/dbms.inc.php";
 require "include/template2.inc.php";
 require "include/adminFunctions.inc.php";
 
-//$main=new Template("dtml/ADMIN/admin.html");
+
 $body=new Template("dtml/ADMIN/pages/examples/aggiungi-notizia.html");
 
 if (isset($mysqli)) {
-    /*non si vedono le categorie, manca l'id*/
-    $result = $mysqli->query("select distinct categoria from articolo");
-    while ($data = $result->fetch_assoc()){
-        $body->setContent("categoria", '<option value="'.$data['id'].'">'.$data['categoria'].'</option>');
-    }
 
     if(isset($_POST['aggiungiNotizia'])){
         $result = $mysqli->query("select titolo from notizia where titolo like '{$_POST['inputName']}'");
@@ -33,9 +28,7 @@ if (isset($mysqli)) {
                     if (in_array($img_ex_lc, $allowed_exs)) {
                         $result = $mysqli->query("insert into notizia (titolo, fonte, data_pubblicazione, descrizione, categoria, immagine)
                                                     values ('{$_POST['inputName']}','{$_POST['inputFonte']}','{$_POST['inputData']}',
-                                                    '{$_POST['inputDescription']}','$imgData')");
-                        /*la categoria?????????????*/
-
+                                                    '{$_POST['inputDescription']}','{$_POST['categoria']}','$imgData')");
                         $body->setContent("alert",'addedItem');
                         if (!$result) {
                             echo "Error!";

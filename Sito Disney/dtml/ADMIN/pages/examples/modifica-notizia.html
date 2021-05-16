@@ -50,15 +50,14 @@
                 <label for="inputDescription">Descrizione</label>
                 <textarea id="inputDescription" name="inputDescription" class="form-control" rows="4" required><[descrizione]></textarea>
               </div>
-              <div class="form-group">
+              <div class="col-md-6 form-it">
                 <label>Categoria</label>
-                <div class="select2-purple">
-                  <select class="select2 select2-hidden-accessible" name="inputCategoria[]" data-select2-id="1" required multiple="" data-placeholder="Seleziona la categoria relativa a questo elemento" data-dropdown-css-class="select2-purple" style="width: 100%;"  tabindex="-1" aria-hidden="true">
-                    <[foreach]>
-                      <[Categoria]>
-                    <[/foreach]>
-                  </select>
-                </div>
+                <select name="categoria">
+                  <option value="Cartone Disney">Cartone Disney</option>
+                  <option value="Cartone Pixar">Cartone Pixar</option>
+                  <option value="Cortometraggi">Cortometraggi Pixar</option>
+                  <option value="Film Disney">Film Disney</option>
+                </select>
               </div>
               <div class="form-group">
                 <label for="customFile">Allega immagine</label>
@@ -77,10 +76,10 @@
     </div>
   </section>
   <div class="col-12" style="padding: 0 30px 5px 30px;">
-    <a href="#" class="btn btn-secondary">Cancella</a>
-    <input type="submit" name="submit" form="modificaNotiziaForm" value="Salva modifiche" class="btn btn-success float-right">
+    <input type="reset" onclick="location.href='modificaNotizia.php?id=<[id]>'" class="btn btn-secondary" form="modificaNotiziaForm" value="Cancella">
+    <input type="submit" name="modificaNotizia" form="modificaNotiziaForm" value="Modifica Notizia" class="btn btn-success float-right">
   </div>
-  <!-- /.content -->
+    <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
 <style>
@@ -141,4 +140,3 @@
     transition: opacity 0.6s; /* 600ms to fade out */
   }
 </style>
-

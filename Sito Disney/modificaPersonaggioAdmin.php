@@ -15,7 +15,7 @@ if (isset($mysqli)) {
     foreach ($data as $key => $value) {
         $body->setContent($key, $value);
     }
-    $result = $mysqli->query("select k.id as id_parola,k.testo from parola_chiave k
+    $result = $mysqli->query("select k.id as id_parola, k.testo from parola_chiave k
                                          join parola_chiave_personaggio pp on pp.parola_chiave_id=k.id
                                          join personaggio p on p.id=pp.personaggio_id where p.id={$_GET['id']} order by p.id");
     $count = mysqli_num_rows($result);
@@ -41,7 +41,7 @@ if (isset($mysqli)) {
     while ($data = $result->fetch_assoc()) {
         $var['id'][] = $data['id_correlato'];
     }
-    $result = $mysqli->query("select distinct id, titolo from articolo where categoria like '%Cartone%'");
+    $result = $mysqli->query("select distinct id, titolo from articolo where categoria like '%Cartone%' or '%Cortometraggi%'");
     for ($i = 0; $i <= $count; $i++) {
         while ($data = $result->fetch_assoc()) {
             if ($var['id'][$i] == $data['id']) {
@@ -69,19 +69,20 @@ if (isset($mysqli)) {
                     $allowed_exs = array("jpg", "jpeg", "png", "jfif");
                     if (in_array($img_ex_lc, $allowed_exs)) {
                         $result = $mysqli->query("update personaggio set
-                                                                nome = '{$_POST['inputName']}',
-                                                                descrizione = '{$_POST['inputDescription']}',
-                                                                data_nascita = '{$_POST['inputData']}',
-                                                                foto = '$imgData' where id = {$_GET['id']}");
+                                                        nome = '{$_POST['inputName']}',
+                                                        descrizione = '{$_POST['inputDescription']}',
+                                                        data_nascita = '{$_POST['inputData']}',
+                                                        foto = '$imgData' 
+                                                        where id = {$_GET['id']}");
                     }
                 }
             }
         } else {
             $result = $mysqli->query("update personaggio set
-                                                                nome = '{$_POST['inputName']}',
-                                                                descrizione = '{$_POST['inputDescription']}',
-                                                                data_nascita = '{$_POST['inputData']}',
-                                                                where id = {$_GET['id']}");
+                                            nome = '{$_POST['inputName']}',
+                                            descrizione = '{$_POST['inputDescription']}',
+                                            data_nascita = '{$_POST['inputData']}',
+                                            where id = {$_GET['id']}");
         }
         if (isset($_POST['inputParoleChiave'])){
             $result = $mysqli->query("delete from parola_chiave_personagigo where personaggio_id = {$_GET['id']}");
@@ -93,8 +94,8 @@ if (isset($mysqli)) {
         if (isset($_POST['inputCartoniCorrelati'])){
             $result = $mysqli->query("delete from personaggio_articolo where personaggio_id = {$_GET['id']}");
             foreach ($_POST['inputCartoniCorrelati'] as $idCartoniCorrelati) {
-                $result = $mysqli->query("insert into personaggio_articolo (personaggio_id , articolo_id)
-                                                        values ('{$_GET['id']}','$idCartoniCorrelati')");
+                $result = $mysqli->query("insert into personaggio_articolo (articolo_id, personaggio_id)
+                                                        values ('$idCartoniCorrelati', '{$_GET['id']}')");
             }
         }
         header("location: infoPersonaggioAdmin.php?id={$_GET['id']}");

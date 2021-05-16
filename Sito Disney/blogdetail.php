@@ -44,7 +44,13 @@
             $body->setContent("pagina_notizia3", 'blogdetail.php?id='.$data4['idNotizia3']);
         }
     }
-
+    $result=$mysqli->query("select utente_id from commento where notizia_id={$_GET['id']}");
+    $idUtente=$mysqli->insert_id;
+    if(isset($_POST['aggiungiCommento'])){
+        $result = $mysqli->query("insert into commento (nome, email, testo, utente_id)
+                                values ('{$_POST['inputNome']}','{$_POST['inputEmail']}',
+                                '{$_POST['inputCommento']}', '$idUtente'");
+    }
 
     $main->setContent("body", $body->get());
     $main->close();

@@ -11,11 +11,11 @@ if (isset($mysqli)) {
     $result = $mysqli->query("SELECT *
                                     FROM notizia where id = {$_GET['id']}");
     $data = $result->fetch_assoc();
-    $foto = $data['foto'];
+    $immagine = $data['immagine'];
     foreach ($data as $key => $value) {
         $body->setContent($key, $value);
     }
-    /*per la categoria????*/
+
     if (isset($_POST['submit'])) {
         if (isset($_FILES) and $_FILES['customFile']['error'] != 4) {
             $imgName = $_FILES["customFile"]["name"];
@@ -37,7 +37,8 @@ if (isset($mysqli)) {
                                                                 fonte = '{$_POST['inputFonte']}',
                                                                 data_pubblicazione = '{$_POST['inputData']}',
                                                                 descrizione = '{$_POST['inputDescription']}',
-                                                                foto = '$imgData' where id = {$_GET['id']}");
+                                                                categoria = '{$_POST['categoria']}',
+                                                                immagine = '$imgData' where id = {$_GET['id']}");
                     }
                 }
             }
@@ -47,6 +48,7 @@ if (isset($mysqli)) {
                                                                 fonte = '{$_POST['inputFonte']}',
                                                                 data_pubblicazione = '{$_POST['inputData']}',
                                                                 descrizione = '{$_POST['inputDescription']}',
+                                                                categoria = '{$_POST['categoria']}',
                                                                 where id = {$_GET['id']}");
         }
 

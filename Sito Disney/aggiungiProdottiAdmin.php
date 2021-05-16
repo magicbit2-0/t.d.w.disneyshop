@@ -28,4 +28,3 @@ if (isset($mysqli)) {
 }
 $main->setContent("body_admin", $body->get());
 $main->close();
-?>
