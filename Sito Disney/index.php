@@ -188,6 +188,7 @@ if(isset($_REQUEST['signedup']))
             $body->setContent("data_notizia3", $data7['data_pubblicazione']);
 
         }
+        
     }
     $main->setContent("body", $body->get());
     $main->close();
