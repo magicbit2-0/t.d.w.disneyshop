@@ -37,33 +37,32 @@
             <form method="post" id="aggiungiAdminForm" action="aggiungiAdmin.php?id=<[id]>" enctype="multipart/form-data">
               <div class="form-group">
                 <label for="inputName">Nome</label>
-                <input type="text" id="inputName" name="inputName" class="form-control" value="<[nome]>" required>
+                <input type="text" id="inputName" name="inputName" class="form-control" value="<[nome]>" required readonly>
               </div>
               <div class="form-group">
                 <label for="inputSurname">Cognome</label>
-                <input type="text" id="inputSurname" name="inputSurname" class="form-control" value="<[cognome]>" required>
+                <input type="text" id="inputSurname" name="inputSurname" class="form-control" value="<[cognome]>" required readonly>
               </div>
               <div class="form-group">
                 <label for="inputData">Data Nascita</label>
-                <input type="date" id="inputData" name="inputData" class="form-control" value="<[data_nascita]>" required>
+                <input type="date" id="inputData" name="inputData" class="form-control" value="<[data_nascita]>" required readonly>
               </div>
               <div class="form-group">
                 <label for="inputPaese">Paese</label>
-                <input type="text" id="inputPaese" name="inputPaese" class="form-control" value="<[paese]>" required>
+                <input type="text" id="inputPaese" name="inputPaese" class="form-control" value="<[paese]>" required readonly>
               </div>
               <div class="form-group">
                 <label for="inputRegione">Regione</label>
-                <input type="text" id="inputRegione" name="inputRegione" class="form-control" value="<[regione]>" required>
+                <input type="text" id="inputRegione" name="inputRegione" class="form-control" value="<[regione]>" required readonly>
               </div>
               <div class="form-group">
                 <label for="inputIndirizzo">Indirizzo</label>
-                <input type="text" id="inputIndirizzo" name="inputIndirizzo" class="form-control" value="<[indirizzo]>" required>
+                <input type="text" id="inputIndirizzo" name="inputIndirizzo" class="form-control" value="<[indirizzo]>" required readonly>
               </div>
               <div class="form-group">
                 <label for="inputEmail">Email</label>
-                <input type="text" id="inputEmail" name="inputEmail" class="form-control" value="<[email]>" required>
+                <input type="text" id="inputEmail" name="inputEmail" class="form-control" value="<[email]>" required readonly>
               </div>
-              <!-- SOLO DA CLIENTE A AMMINISTRATORE!!!-->
               <div class="form-group">
                 <label>Rendi amministratore</label>
                 <div class="select2-purple">
@@ -84,7 +83,7 @@
     </div>
   </section>
   <div class="col-12" style="padding: 0 30px 5px 30px;">
-    <a href="#" class=""></a>
+    <input type="reset" onclick="location.href='aggiungiAdmin.php?id=<[id]>'" class="btn btn-secondary" form="aggiungiAdminForm" value="Cancella">
     <input type="submit" name="submit" form="aggiungiAdminForm" value="Salva modifiche" class="btn btn-success float-right">
   </div>
   <!-- /.content -->

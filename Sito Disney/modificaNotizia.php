@@ -15,6 +15,11 @@ if (isset($mysqli)) {
         $body->setContent($key, $value);
     }
 
+    $result = $mysqli->query("select distinct categoria from articolo");
+    while ($data = $result->fetch_assoc()){
+        $body->setContent("categoria", '<option>'.$data['categoria'].'</option>');
+    }
+
     if (isset($_POST['submit'])) {
         $inputName =addslashes($_POST['inputName']);
         $inputFonte =addslashes($_POST['inputFonte']);
@@ -35,24 +40,24 @@ if (isset($mysqli)) {
                     $allowed_exs = array("jpg", "jpeg", "png", "jfif");
                     if (in_array($img_ex_lc, $allowed_exs)) {
                         $result = $mysqli->query("update notizia set
-                                                        titolo = '$inputName',
-                                                        fonte = '$inputFonte',
-                                                        data_pubblicazione = '{$_POST['inputData']}',
-                                                        descrizione = '$inputDescription',
-                                                        categoria = '{$_POST['categoria']}',
-                                                        foto = '$imgData'
-                                                        where id = {$_GET['id']}");
+                                                            titolo = '$inputName',
+                                                            fonte = '$inputFonte',
+                                                            data_pubblicazione = '{$_POST['inputData']}',
+                                                            descrizione = '$inputDescription',
+                                                            categoria = '{$_POST['categoria']}',
+                                                            immagine = '$imgData'
+                                                            where id = {$_GET['id']}");
                     }
                 }
             }
         } else {
             $result = $mysqli->query("update notizia set
-                                                        titolo = '$inputName',
-                                                        fonte = '$inputFonte',
-                                                        data_pubblicazione = '{$_POST['inputData']}',
-                                                        descrizione = '$inputDescription',
-                                                        categoria = '{$_POST['categoria']}'
-                                            where id = {$_GET['id']}");
+                                                titolo = '$inputName',
+                                                fonte = '$inputFonte',
+                                                data_pubblicazione = '{$_POST['inputData']}',
+                                                descrizione = '$inputDescription',
+                                                categoria = '{$_POST['categoria']}'
+                                                where id = {$_GET['id']}");
         }
 
         header("location: notizia.php?id={$_GET['id']}");
