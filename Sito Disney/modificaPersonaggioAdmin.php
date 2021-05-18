@@ -15,6 +15,7 @@ if (isset($mysqli)) {
     foreach ($data as $key => $value) {
         $body->setContent($key, $value);
     }
+
     $result = $mysqli->query("select k.id as id_parola, k.testo from parola_chiave k
                                          join parola_chiave_personaggio pp on pp.parola_chiave_id=k.id
                                          join personaggio p on p.id=pp.personaggio_id where p.id={$_GET['id']} order by p.id");
@@ -33,6 +34,7 @@ if (isset($mysqli)) {
             }
         }
     }
+
     $var = array();
     $result = $mysqli->query("select distinct a.id as id_correlato, a.titolo as titolo_correlato, year(a.data_uscita) as data_uscita_correlato
                                     from articolo a join personaggio_articolo pa on pa.articolo_id = a.id
@@ -74,7 +76,7 @@ if (isset($mysqli)) {
                                                         nome = '$inputName',
                                                         descrizione = '$inputBiografia',
                                                         data_nascita = '{$_POST['inputData']}',
-                                                        foto = '$imgData' 
+                                                        foto = '$imgData'
                                                         where id = {$_GET['id']}");
                     }
                 }
@@ -83,11 +85,11 @@ if (isset($mysqli)) {
             $result = $mysqli->query("update personaggio set
                                             nome = '$inputName',
                                             descrizione = '$inputBiografia',
-                                            data_nascita = '{$_POST['inputData']}',
+                                            data_nascita = '{$_POST['inputData']}'
                                             where id = {$_GET['id']}");
         }
         if (isset($_POST['inputParoleChiave'])){
-            $result = $mysqli->query("delete from parola_chiave_personagigo where personaggio_id = {$_GET['id']}");
+            $result = $mysqli->query("delete from parola_chiave_personaggio where personaggio_id = {$_GET['id']}");
             foreach ($_POST['inputParoleChiave'] as $idParolaChiave) {
                 $result = $mysqli->query("insert into parola_chiave_personaggio (personaggio_id , parola_chiave_id)
                                                        values ('{$_GET['id']}','$idParolaChiave')");

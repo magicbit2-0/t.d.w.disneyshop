@@ -21,7 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-personaggi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/eliminaOggetto.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/eliminaOggetto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/modificaNotizia.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/modificaNotizia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/modificaPersonaggioAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/modificaPersonaggioAdmin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +137,8 @@
       <workItem from="1621178294507" duration="18000" />
       <workItem from="1621178314029" duration="35000" />
       <workItem from="1621178352358" duration="330000" />
+      <workItem from="1621346808611" duration="17000" />
+      <workItem from="1621355264348" duration="3010000" />
     </task>
     <servers />
   </component>
@@ -151,5 +156,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1621346823795">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621346823795" />
   </component>
 </project>

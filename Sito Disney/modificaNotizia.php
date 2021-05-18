@@ -4,7 +4,6 @@ require "include/dbms.inc.php";
 require "include/template2.inc.php";
 require "include/adminFunctions.inc.php";
 
-$var = array();
 $body=new Template("dtml/ADMIN/pages/examples/modifica-notizia.html");
 
 if (isset($mysqli)) {
@@ -17,6 +16,9 @@ if (isset($mysqli)) {
     }
 
     if (isset($_POST['submit'])) {
+        $inputName =addslashes($_POST['inputName']);
+        $inputFonte =addslashes($_POST['inputFonte']);
+        $inputDescription =addslashes($_POST['inputDescription']);
         if (isset($_FILES) and $_FILES['customFile']['error'] != 4) {
             $imgName = $_FILES["customFile"]["name"];
             $imgType = $_FILES["customFile"]["type"];
@@ -33,23 +35,24 @@ if (isset($mysqli)) {
                     $allowed_exs = array("jpg", "jpeg", "png", "jfif");
                     if (in_array($img_ex_lc, $allowed_exs)) {
                         $result = $mysqli->query("update notizia set
-                                                                titolo = '{$_POST['inputName']}',
-                                                                fonte = '{$_POST['inputFonte']}',
-                                                                data_pubblicazione = '{$_POST['inputData']}',
-                                                                descrizione = '{$_POST['inputDescription']}',
-                                                                categoria = '{$_POST['categoria']}',
-                                                                immagine = '$imgData' where id = {$_GET['id']}");
+                                                        titolo = '$inputName',
+                                                        fonte = '$inputFonte',
+                                                        data_pubblicazione = '{$_POST['inputData']}',
+                                                        descrizione = '$inputDescription',
+                                                        categoria = '{$_POST['categoria']}',
+                                                        foto = '$imgData'
+                                                        where id = {$_GET['id']}");
                     }
                 }
             }
         } else {
             $result = $mysqli->query("update notizia set
-                                                                titolo = '{$_POST['inputName']}',
-                                                                fonte = '{$_POST['inputFonte']}',
-                                                                data_pubblicazione = '{$_POST['inputData']}',
-                                                                descrizione = '{$_POST['inputDescription']}',
-                                                                categoria = '{$_POST['categoria']}',
-                                                                where id = {$_GET['id']}");
+                                                        titolo = '$inputName',
+                                                        fonte = '$inputFonte',
+                                                        data_pubblicazione = '{$_POST['inputData']}',
+                                                        descrizione = '$inputDescription',
+                                                        categoria = '{$_POST['categoria']}'
+                                            where id = {$_GET['id']}");
         }
 
         header("location: notizia.php?id={$_GET['id']}");

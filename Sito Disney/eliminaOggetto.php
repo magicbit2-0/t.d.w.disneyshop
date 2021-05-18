@@ -13,8 +13,28 @@ if (isset($mysqli)){
                 //$result = $mysqli->query("delete from {$table} where id = {$id} ");
                 $_SESSION['delete'] = "el";
                 break;
+            case 'personaggio':
+                //$result = $mysqli->query("delete from {$table} where id = {$id} ");
+                $_SESSION['delete'] = "el";
+                break;
+            case 'notizia':
+                //$result = $mysqli->query("delete from {$table} where id = {$id} ");
+                $_SESSION['delete'] = "el";
+                break;
+            case 'ordine':
+                //$result = $mysqli->query("delete from {$table} where id = {$id} ");
+                $_SESSION['delete'] = "el";
+                break;
         }
-        header("location: listaAttoriAdmin.php");
+        if($table == 'regia'){
+            header("location: listaAttoriAdmin.php");
+        }elseif ($table == 'personaggio'){
+            header("location: listaPersonaggiAdmin.php");
+        } elseif ($table == 'notizia'){
+            header("location: notizie.php");
+        }elseif ($table == 'ordine'){
+            header("location: invoiceUtenti.php");
+        }
         //$result = $mysqli->query("delete from $table where id = $id");
     } else {
         echo "id o table non trovati";
