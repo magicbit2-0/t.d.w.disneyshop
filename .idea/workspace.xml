@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/aggiungi-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/aggiungi-admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-notizia.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/ADMIN/pages/examples/modifica-notizia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/modificaNotizia.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/modificaNotizia.php" afterDir="false" />
-    </list>
+    <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,6 +135,7 @@
       <workItem from="1621355264348" duration="3144000" />
       <workItem from="1621364362827" duration="32000" />
       <workItem from="1621367803878" duration="1050000" />
+      <workItem from="1621415734337" duration="18000" />
     </task>
     <servers />
   </component>
