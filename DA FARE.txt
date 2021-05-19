@@ -1,0 +1,29 @@
+PAGINA MOVIESINGLE2/MOVIESINGLE:
+1) Aggiungi ai preferiti
+2) Vota questo film
+3) Scrivi recensione
+
+PAGINA BLOGDETAIL:
+1) Commenti
+
+PROSSIMAMENTE:
+1) Mettere i giorni, le ore, i minuti e i secondi bene
+
+ACCEDI:
+1) Ricordami
+2) Hai dimenticato la password?
+
+REGISTRATI:
+1) Mettere bene i colori dio banana fa schifo quella form con tre colori sullo sfondo
+
+UTENTE NORMALE LOGGATO:
+1) PROFILO-> 02. CAMBIA LA PASSWORD
+2) Cambia il tuo avatar (solo grafica perchè funziona)
+
+UTENTE AMMINISTRATORE LOGGATO:
+1) Autorizzazioni per gli utenti: un cliente non può avere accesso alle funzioni dell'amministratore e viceversa (?) (ultime lezioni del prof)
+2) TUTTE le pagine mancanti dell'amministratore (html e php)
+3) Profilo utente-> si vedono i film preferiti e le votazioni dei film
+
+GENERICHE COSE DA VEDERE:
+1) I warning non funzionano (?) 

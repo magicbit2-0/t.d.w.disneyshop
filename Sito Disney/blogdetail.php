@@ -44,6 +44,7 @@
             $body->setContent("pagina_notizia3", 'blogdetail.php?id='.$data4['idNotizia3']);
         }
     }
+
     $result=$mysqli->query("select utente_id from commento where notizia_id={$_GET['id']}");
     $idUtente=$mysqli->insert_id;
     if(isset($_POST['aggiungiCommento'])){
