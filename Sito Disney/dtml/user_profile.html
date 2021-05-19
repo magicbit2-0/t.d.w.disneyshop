@@ -15,6 +15,28 @@
 </div>
 
 <div class="page-single">
+
+    <div id="op" class="sopra1" style="z-index: 10;">
+        <div class="popup1">
+            <p class="ion-alert-circled alert-warning" style="background-color: darksalmon;color: black;font-weight: bold;text-transform: initial;margin-right: 40px;"><i class="icon-remove"></i>La vecchia password che hai inserito è errata!</p>
+            <a class="chiudi1" href="#">&times;</a>
+        </div>
+    </div>
+    
+    <div id="np" class="sopra1" style="z-index: 10;">
+        <div class="popup1">
+            <p class="ion-alert-circled alert-warning" style="background-color: darksalmon;color: black;font-weight: bold;text-transform: initial;margin-right: 40px;"><i class="icon-remove"></i>La nuova password e la sua conferma non corrispondono!</p>
+            <a class="chiudi1" href="#">&times;</a>
+        </div>
+    </div>
+
+    <div id="success" class="sopra1" style="z-index: 10;">
+        <div class="popup1">
+            <p class="ion-alert-circled alert-warning" style="background-color: lightgreen;color: black;font-weight: bold;text-transform: initial;margin-right: 40px;"><i class="icon-remove"></i>Password modificata con successo</p>
+            <a class="chiudi1" href="#">&times;</a>
+        </div>
+    </div>
+
     <div class="container">
         <div class="row ipad-width">
             <div class="col-md-3 col-sm-12 col-xs-12">
@@ -247,20 +269,20 @@
                         <h4>02. Cambia la password</h4>
                         <div class="row">
                             <div class="col-md-6 form-it">
-                                <label>Password vecchia</label>
-                                <input type="password" placeholder="" required name="oldPassword">
+                                <label>Vecchia Password</label>
+                                <input type="password" required name="oldPassword">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
-                                <label>Password nuova</label>
-                                <input type="password" placeholder="" required name="newPassword">
+                                <label>Nuova Password</label>
+                                <input type="password" required name="newPassword">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
-                                <label>Conferma nuova Password</label>
-                                <input type="password" placeholder="" required name="confirmNewPassword">
+                                <label>Conferma Nuova Password</label>
+                                <input type="password" required name="confirmNewPassword">
                             </div>
                         </div>
                         <div class="row">

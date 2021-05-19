@@ -7855,7 +7855,7 @@ header .navbar-default .flex-parent {
 @media (min-width: 992px) {
   header .navbar-default .flex-parent {
     display: flex !important;
-    jutify-content: flex-start;
+    juStify-content: flex-start;
   }
 }
 header .navbar-default .flex-parent .menu-left {
@@ -8551,7 +8551,7 @@ input.indirizzocheck1{
 }
 
 .popup{
-  margin: 180px auto auto auto;
+  margin: 200px auto auto auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -8588,5 +8588,59 @@ input.indirizzocheck1{
 @media screen and (max-width: 700px) {
     .popup{
     width: 70%;
+  }
+}
+
+/*DA QUI POP UP PASSWORD*/
+.sopra1{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.sopra1:target{
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup1{
+  margin: 200px auto auto auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 33%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.popup1 .chiudi1{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup1 .chiudi1:hover{
+  color: red;
+}
+
+.popup1{
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 400px) {
+    .popup1{
+    width: 50%;
   }
 }

@@ -7,6 +7,7 @@ require "bottonChange.php";
 
 $body=new Template("dtml/user_profile.html");
 if (isset($mysqli)){
+
     $result = $mysqli->query("select * from utente  
                                      where id = {$_SESSION['idUtente']}");
     $data = $result->fetch_assoc();
@@ -81,7 +82,7 @@ if (isset($mysqli)){
         $body->setContent("idAvatar",$data['id']);
 
     }
-
+    
 }
 
 $main->setContent("body", $body->get());

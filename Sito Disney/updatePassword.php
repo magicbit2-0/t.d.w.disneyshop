@@ -5,13 +5,18 @@ require "include/dbms.inc.php";
 require "include/template2.inc.php";
 
 $result = $mysqli->query("select password from utente where id = {$_SESSION['idUtente']};");
-$data -> fetch_assoc($result);
+while ($data = $result->fetch_assoc()){
+    if(md5($_POST['oldPassword']) == $data['password']){
+        if($_POST['newPassword'] == $_POST['confirmNewPassword']){
+            
+            $result = $mysqli->query("update utente set password=md5('{$_POST['newPassword']}') where id={$_SESSION['idUtente']};");
 
-if($_POST['oldPassword'] == md5($data['password'])){
-    if($_POST['newPassword'] == $_POST['confirmNewPassword']){
-        //qui dentro esegui query aggiornamento password
-        
+            header('Location: userprofile.php#success');
+        } else {
+            header('Location: userprofile.php#np');    
+        }
+    } else {
+        header('Location: userprofile.php#op');
     }
 }
-header('Location: userprofile.php');
 ?>
