@@ -18,7 +18,7 @@ if (isset($mysqli)){
         $table=$_GET['table'];
         switch ($table){
             case 'regia':
-                $result = $mysqli->query("delete from {$table} where id = {$id} ");
+                //$result = $mysqli->query("delete from {$table} where id = {$id} ");
                 $_SESSION['delete'] = "el";
                 break;
             case 'personaggio':

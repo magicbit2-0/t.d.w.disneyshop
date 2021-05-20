@@ -7,7 +7,7 @@ require "include/adminFunctions.inc.php";
 $body=new Template("dtml/ADMIN/pages/examples/personaggio.html");
 if (isset($mysqli)) {
     $result = $mysqli->query("SELECT *
-                                    FROM personaggio where id= {$_GET['id']}");
+                                    FROM personaggio where id = {$_GET['id']}");
     $data = $result->fetch_assoc();
     $table = 'personaggio';
     $body->setContent("table", $table);

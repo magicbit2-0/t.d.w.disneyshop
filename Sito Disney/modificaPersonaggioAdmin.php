@@ -36,21 +36,21 @@ if (isset($mysqli)) {
     }
 
     $var = array();
-    $result = $mysqli->query("select distinct a.id as id_correlato, a.titolo as titolo_correlato, year(a.data_uscita) as data_uscita_correlato
+    $result = $mysqli->query("select distinct a.id as id_correlato, a.titolo as titolo_correlato, a.categoria,  year(a.data_uscita) as data_uscita_correlato
                                     from articolo a join personaggio_articolo pa on pa.articolo_id = a.id
                                     join personaggio p on p.id=pa.personaggio_id where p.id={$_GET['id']} order by a.id");
     $count = mysqli_num_rows($result);
     while ($data = $result->fetch_assoc()) {
         $var['id'][] = $data['id_correlato'];
     }
-    $result = $mysqli->query("select distinct id, titolo from articolo where categoria like '%Cartone%' or '%Cortometraggi%'");
+    $result = $mysqli->query("select distinct id, titolo, categoria from articolo");
     for ($i = 0; $i <= $count; $i++) {
         while ($data = $result->fetch_assoc()) {
             if ($var['id'][$i] == $data['id']) {
-                $body->setContent("cartoni_correlati", '<option selected value="' . $data['id'] . '">' . $data['titolo'] . '</option>');
+                $body->setContent("cartoni_correlati", '<option selected value="' . $data['id'] . '">' . $data['titolo'] . ' - '.$data['categoria'].' </option>');
                 break;
             } else {
-                $body->setContent("cartoni_correlati", '<option value="' . $data['id'] . '">' . $data['titolo'] . '</option>');
+                $body->setContent("cartoni_correlati", '<option value="' . $data['id'] . '">' . $data['titolo'] . '- '.$data['categoria'].'</option>');
             }
         }
     }

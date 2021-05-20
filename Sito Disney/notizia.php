@@ -6,12 +6,12 @@ require "include/adminFunctions.inc.php";
 
 $body=new Template("dtml/ADMIN/pages/examples/notizia.html");
 if (isset($mysqli)) {
-    /*per la categoria????*/
+    $table = 'notizia';
+    $body->setContent("table", $table);
     $result = $mysqli->query("SELECT *
                                     FROM notizia where id= {$_GET['id']}");
     $data = $result->fetch_assoc();
-    $table = 'notizia';
-    $body->setContent("table", $table);
+
     foreach ($data as $key => $value) {
         $body->setContent($key, $value);
     }

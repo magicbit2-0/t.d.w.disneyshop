@@ -12,13 +12,13 @@ if (isset($mysqli)) {
     while ($data = $result->fetch_assoc()){
         $body->setContent("paroleChiave", '<option value="'.$data['id'].'">'.$data['testo'].'</option>');
     }
-    $result = $mysqli->query("select a.id, a.titolo from articolo a where a.categoria like '%Cartone%' or '%Cortometraggi%'");
+    $result = $mysqli->query("select a.id, a.titolo, a.categoria from articolo a ");
     while ($data = $result->fetch_assoc()){
-        $body->setContent("cartoniCorrelati", '<option value="'.$data['id'].'">'.$data['titolo'].'</option>');
+        $body->setContent("cartoniCorrelati", '<option value="'.$data['id'].'">'.$data['titolo'].' - '. $data['categoria'] .'</option>');
     }
 
-    if(isset($_POST['aggiungiFilm'])){
-        $result = $mysqli->query("select titolo from articolo where nome like '{$_POST['inputName']}'");
+    if(isset($_POST['aggiungiPersonaggio'])){
+        $result = $mysqli->query("select nome from personaggio where nome like '{$_POST['inputName']}'");
         if(mysqli_num_rows($result) === 0 ) {
             $inputName =addslashes($_POST['inputName']);
             $inputBiografia =addslashes($_POST['inputDescription']);

@@ -51,29 +51,32 @@
                 <textarea id="inputDescription" name="inputDescription" class="form-control" rows="4" required><[descrizione]></textarea>
               </div>
               <div class="form-group">
-                <label for="categoria">Categoria</label>
-                <select name="categoria" id="categoria" class="form-control">
-                  <option value="- - -" selected> Seleziona la categoria </option>
-                  <[foreach]>
-                    <[categoria]>
-                  <[/foreach]>
-                </select>
+                <label for="inputData">Categoria</label>
+                <input type="text" id="inputCategoria" name="inputCategoria" class="form-control" value="<[categoria]>" required>
               </div>
-              <!--<div class="col-md-6 form-it">
-                <label>Categoria</label>
-                <select name="categoria">
-                  <option value="Cartone Disney">Cartone Disney</option>
-                  <option value="Cartone Pixar">Cartone Pixar</option>
-                  <option value="Cortometraggi">Cortometraggi Pixar</option>
-                  <option value="Film Disney">Film Disney</option>
-                </select>
-              </div>-->
               <div class="form-group">
-                <label for="customFile">Allega immagine</label>
-                <div class="custom-file">
-                  <input type="file" class="custom-file-input" name="customFile" id="customFile" required>
-                  <label class="custom-file-label" for="customFile">Allega immagine</label>
+                <label for="customFile">Allega nuova immagine</label>
+                <div class="custom-file" style="display: inline-flex;">
+                  <input type="file" class="custom-file-input" name="customFile" id="customFile">
+                  <label class="custom-file-label" for="customFile" style="width: 95%;"><[customFile]></label>
+
+                  <div class="text-right py-0 align-middle">
+                    <div class="btn-group btn-group-sm">
+                      <a href="#popupImg" class="btn btn-info" style="height: 2.4rem;width: 37px;padding: 8px;"><i class="fas fa-eye"></i></a>
+                    </div>
+                    <div id="popupImg" class="sopra" style="z-index: 10;">
+                      <div class="popup">
+                        <h4 style="display: inline-flex;float: left;margin-top: 4px;">Immagine corrente</h4>
+                        <a class="chiudi" style="position: unset;top: 0px;right: 0px;" href="#">&times;</a>
+                        <div class="contenuto" >
+                          <img src="imgNotizia.php?id=<[id]>" height="550px">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
+
               </div>
             </form>
           </div>

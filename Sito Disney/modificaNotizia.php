@@ -15,15 +15,11 @@ if (isset($mysqli)) {
         $body->setContent($key, $value);
     }
 
-    $result = $mysqli->query("select distinct categoria from articolo");
-    while ($data = $result->fetch_assoc()){
-        $body->setContent("categoria", '<option>'.$data['categoria'].'</option>');
-    }
-
-    if (isset($_POST['submit'])) {
-        $inputName =addslashes($_POST['inputName']);
-        $inputFonte =addslashes($_POST['inputFonte']);
-        $inputDescription =addslashes($_POST['inputDescription']);
+    if (isset($_POST['modificaNotizia'])) {
+        $inputName = addslashes($_POST['inputName']);
+        $inputFonte = addslashes($_POST['inputFonte']);
+        $inputCategoria = addslashes($_POST['inputCategoria']);
+        $inputDescription = addslashes($_POST['inputDescription']);
         if (isset($_FILES) and $_FILES['customFile']['error'] != 4) {
             $imgName = $_FILES["customFile"]["name"];
             $imgType = $_FILES["customFile"]["type"];
@@ -44,7 +40,7 @@ if (isset($mysqli)) {
                                                             fonte = '$inputFonte',
                                                             data_pubblicazione = '{$_POST['inputData']}',
                                                             descrizione = '$inputDescription',
-                                                            categoria = '{$_POST['categoria']}',
+                                                            categoria = '$inputCategoria',
                                                             immagine = '$imgData'
                                                             where id = {$_GET['id']}");
                     }
@@ -56,7 +52,7 @@ if (isset($mysqli)) {
                                                 fonte = '$inputFonte',
                                                 data_pubblicazione = '{$_POST['inputData']}',
                                                 descrizione = '$inputDescription',
-                                                categoria = '{$_POST['categoria']}'
+                                                categoria = '$inputCategoria'
                                                 where id = {$_GET['id']}");
         }
 

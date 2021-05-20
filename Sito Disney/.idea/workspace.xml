@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="" />
+    <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggiungiPersonaggiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/aggiungiPersonaggiAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-personaggi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-notizia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-notizia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-personaggi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-regia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizie.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggio.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/profileUtente.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/profileUtente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eliminaOggetto.php" beforeDir="false" afterPath="$PROJECT_DIR$/eliminaOggetto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infoPersonaggioAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/infoPersonaggioAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/invoiceUtenti.php" beforeDir="false" afterPath="$PROJECT_DIR$/invoiceUtenti.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modificaNotizia.php" beforeDir="false" afterPath="$PROJECT_DIR$/modificaNotizia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modificaPersonaggioAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/modificaPersonaggioAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notizia.php" beforeDir="false" afterPath="$PROJECT_DIR$/notizia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notizie.php" beforeDir="false" afterPath="$PROJECT_DIR$/notizie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profileUtente.php" beforeDir="false" afterPath="$PROJECT_DIR$/profileUtente.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +84,7 @@
       <workItem from="1621178706783" duration="3586000" />
       <workItem from="1621251833761" duration="2120000" />
       <workItem from="1621432513721" duration="603000" />
-      <workItem from="1621507811528" duration="9108000" />
+      <workItem from="1621507811528" duration="15269000" />
     </task>
     <servers />
   </component>

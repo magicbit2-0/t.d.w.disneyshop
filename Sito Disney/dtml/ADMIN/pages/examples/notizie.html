@@ -102,26 +102,7 @@
                 </i>
                 Modifica
               </a>
-              <button onclick="document.getElementById('id01').style.display='block'"
-                      class="btn btn-danger btn-sm" href="#">
-                <i class="fas fa-trash">
-                </i>
-                Elimina
-              </button>
-              <div id="id01" class="modal1" style="width: 800px;height: 300px;margin-top: 130px;margin-left: 450px;overflow: hidden;border-radius: 20px;">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
-                <form class="modal-content1" style="width: auto;height: 300px;margin-top: -50px;padding:75px;border-radius: 20px;" action="/action_page.php">
-                  <div class="container1">
-                    <h1>Elimina elemento</h1>
-                    <p>Sei sicuro di voler eliminare questo elemento?</p>
-
-                    <div class="clearfix1">
-                      <button type="button" class="cancelbtn1" onclick="document.getElementById('id01').style.display='none'">Annulla</button>
-                      <button type="button" class="deletebtn1" onclick="location.href='eliminaOggetto.php?id=<[id]>&table=<[table]>'">Elimina</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
+              <[elimina]>
             </td>
           </tr>
           <[/foreach]>

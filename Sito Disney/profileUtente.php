@@ -11,8 +11,10 @@ if (isset($mysqli)) {
     $number_of_results = mysqli_num_rows($result0);
     $body -> setContent("n_preferiti", $number_of_results);
 
-    $result1 = $mysqli->query("select a.id from articolo_ordinato a join ordine o on a.ordine_id=o.id 
-                                     join utente u on u.id=o.utente_id where u.id={$_GET['id']}");
+    $result1 = $mysqli->query("select o.id from ordine o 
+                                     join utente u 
+                                     on u.id = o.utente_id where u.id={$_GET['id']}
+                                     group by o.id;");
     $number_of_results = mysqli_num_rows($result1);
     $body -> setContent("n_ordini", $number_of_results);
 
