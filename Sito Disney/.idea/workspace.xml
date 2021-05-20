@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aggiungiPersonaggiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/aggiungiPersonaggiAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-notizia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-notizia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-regia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizie.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggio.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infoPersonaggioAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/infoPersonaggioAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listaPersonaggiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/listaPersonaggiAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modificaAttoreAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/modificaAttoreAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modificaPersonaggioAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/modificaPersonaggioAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-personaggi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/regia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/invoiceUtenti.php" beforeDir="false" afterPath="$PROJECT_DIR$/invoiceUtenti.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listaAttoriAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/listaAttoriAdmin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +70,9 @@
       <workItem from="1620927615950" duration="1037000" />
       <workItem from="1620999782643" duration="45000" />
       <workItem from="1621178706783" duration="3586000" />
+      <workItem from="1621251833761" duration="2120000" />
+      <workItem from="1621432513721" duration="603000" />
+      <workItem from="1621507811528" duration="2339000" />
     </task>
     <servers />
   </component>

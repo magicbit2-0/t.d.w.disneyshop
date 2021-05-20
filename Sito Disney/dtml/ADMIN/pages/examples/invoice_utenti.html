@@ -28,20 +28,20 @@
         <table class="table table-striped projects">
           <thead>
           <tr>
-            <th style="width: 1%">
+            <th style="width: 15%">
               Nome e Cognome
             </th>
             <th style="width: 10%">
               N° ordine
             </th>
-            <th style="width: 20%">
-              Nome prodotto
-            </th>
-            <th style="width: 15%">
-              Categoria
+            <th style="width: 29%">
+              Prodotti
             </th>
             <th style="width: 20%">
-              Prezzo prodotto
+              Indirizzo
+            </th>
+            <th style="width: 11%">
+              Prezzo totale
             </th>
           </tr>
           </thead>
@@ -55,19 +55,22 @@
               n° <[number_orders]>
             </td>
             <td>
-              <a>
-                <[titolo]>
-              </a>
-              <br/>
-              <small>
-                <[data_uscita]>
-              </small>
+                  <[foreach]>
+
+                    <a>
+                      <[titolo]> (<[data_uscita]>)
+                    </a>
+                    <small style="font-weight: bold; float: right;">
+                      €<[prezzo]>
+                    </small>
+                    <br/>
+                  <[/foreach]>
+          </td>
+            <td>
+            <[indirizzo]>
             </td>
             <td>
-              <[categoria_prod]>
-            </td>
-            <td>
-              <[prezzo]>
+            <[prezzoTotale]> €
             </td>
             <td class="project-actions text-right" style="display: grid;">
               <a class="btn btn-danger btn-sm" href="#">
