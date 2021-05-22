@@ -43,19 +43,19 @@
           <table class="table table-striped projects">
               <thead>
                   <tr>
-                      <th style="width: 1%">
+                      <th style="width: 10%;text-align-last: center">
+                          Identificativo
+                      </th>
+                      <th style="width: 1%;text-align-last: center">
                           Immagine
                       </th>
-                      <th style="width: 10%">
-                          N° prodotto
-                      </th>
-                      <th style="width: 20%">
+                      <th style="width: 20%;text-align-last: center">
                           Nome prodotto
                       </th>
-                      <th style="width: 15%">
+                      <th style="width: 15%;text-align-last: center">
                           Categoria
                       </th>
-                      <th>
+                      <th style="text-align-last: center">
                           Votazione
                       </th>
                       <th style="width: 20%">
@@ -65,13 +65,14 @@
               <tbody>
                   <[foreach]>
                   <tr>
-                      <td>
+                      <td style="text-align-last: center">
+                      N° <[idImg]>
+                      </td>
+                      <td style="text-align-last: center">
                         <img src='img.php?id=<[idImg]>' style="border-radius: 15px;height: 100px;" alt="">
                       </td>
-                      <td>
-                          N° <[idImg]>
-                      </td>
-                      <td>
+
+                      <td style="text-align-last: center">
                           <a>
                             <[titolo]>
                           </a>
@@ -80,10 +81,10 @@
                             <[data_uscita]>
                           </small>
                       </td>
-                      <td>
+                      <td style="text-align-last: center">
                         <[categoria]>
                       </td>
-                      <td class="project_progress">
+                      <td class="project_progress" style="text-align-last: center">
                           <div class="progress progress-sm">
                         <[votazione1]>
                           </div>

@@ -25,7 +25,34 @@ if (isset($mysqli)) {
     $result = $mysqli->query("select a.id as idAvatar, u.id as idUtente, concat(nome,' ',cognome) as nome, paese, regione, indirizzo, email 
                                     from utente u join avatar a on u.avatar_id=a.id where u.id= {$_GET['id']}");
     while ($data1 = $result->fetch_assoc()){
+        switch($data1['idAvatar']){
+            case '1':
+                $backgroundcolor = 'lightpink';
+                break;
+            case '2':
+                $backgroundcolor = '#d3c24b';
+                break;
+            case '3':
+                $backgroundcolor = '#d584cf';
+                break;
+            case '4':
+                $backgroundcolor = 'cadetblue';
+                break;
+            case '5':
+                $backgroundcolor = '#50b666';
+                break;
+            case '6':
+                $backgroundcolor = '#6792c7';
+                break;
+            case '7':
+                $backgroundcolor = '#e86c6c';
+                break;
+            default:
+                $backgroundcolor = 'aliceblue';
+                break;
+        }
         $body->setContent("idAvatar", $data1['idAvatar']);
+        $body->setContent("avatar", '<img class="profile-user-img img-fluid img-circle" src="imgAvatar.php?id='.$data1['idAvatar'].'" style="background-color: '.$backgroundcolor.'" alt="User profile picture">');
         $body->setContent("nome", $data1['nome']);
         $body->setContent("paese", $data1['paese']);
         $body->setContent("regione", $data1['regione']);

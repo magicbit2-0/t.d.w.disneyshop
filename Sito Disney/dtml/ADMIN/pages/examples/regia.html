@@ -46,22 +46,22 @@
         <table class="table table-striped projects">
           <thead>
           <tr>
-            <th style="width: 1%">
+            <th style="width: 10%;text-align-last: center">
+            Identificativo
+            </th>
+            <th style="width: 1%;text-align-last: center">
               Foto
             </th>
-            <th style="width: 10%">
-              Identificativo
-            </th>
-            <th style="width: 15%">
+            <th style="width: 15%;text-align-last: center">
               Nome
             </th>
-            <th style="width: 15%">
+            <th style="width: 15%;text-align-last: center">
               Parole chiave
             </th>
-            <th style="width: 15%" >
+            <th style="width: 15%;text-align-last: center" >
               Data Nascita
             </th>
-            <th style="width: 8%" class="text-center">
+            <th style="width: 8%;text-align-last: center" class="text-center">
               Nazionalità
             </th>
             <th style="width: 20%">
@@ -71,18 +71,18 @@
           <tbody>
           <[foreach]>
           <tr>
-            <td>
+            <td style="text-align-last: center">
+            n° <[cont]>
+            </td>
+            <td style="text-align-last: center">
               <img src='imgActor.php?id=<[idActor]>' style="border-radius: 15px;height: 120px;" alt="">
             </td>
-            <td>
-              n° <[cont]>
-            </td>
-            <td>
+            <td style="text-align-last: center">
               <a>
                 <[nomeAttore]>
               </a>
             </td>
-            <td>
+            <td style="text-align-last: center">
               <ul class="list-inline" style="text-transform: capitalize;">
                 <[foreach]>
                 <li>
@@ -91,10 +91,10 @@
                 <[/foreach]>
               </ul>
             </td>
-            <td>
+            <td style="text-align-last: center">
               <[anno_nascita]>
             </td>
-            <td style="border-right: 1px solid #e0e4e7">
+            <td style="border-right: 1px solid #e0e4e7;text-align-last: center">
               <[nazionalità]>
             </td>
             <td class="project-actions text-right" style="display: grid;">

@@ -3,22 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aggiungiPersonaggiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/aggiungiPersonaggiAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-personaggi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-notizia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-notizia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-personaggi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-regia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizie.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggio.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggiungiProdottiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/aggiungiProdottiAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/profileUtente.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/profileUtente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eliminaOggetto.php" beforeDir="false" afterPath="$PROJECT_DIR$/eliminaOggetto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infoPersonaggioAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/infoPersonaggioAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/invoiceUtenti.php" beforeDir="false" afterPath="$PROJECT_DIR$/invoiceUtenti.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modificaNotizia.php" beforeDir="false" afterPath="$PROJECT_DIR$/modificaNotizia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modificaPersonaggioAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/modificaPersonaggioAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notizia.php" beforeDir="false" afterPath="$PROJECT_DIR$/notizia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notizie.php" beforeDir="false" afterPath="$PROJECT_DIR$/notizie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/regia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listaUtentiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/listaUtentiAdmin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profileUtente.php" beforeDir="false" afterPath="$PROJECT_DIR$/profileUtente.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +31,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1sA7vWso1fRbedGWGflH4Nqi8pB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -50,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../EventsApp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,6 +85,7 @@
       <workItem from="1621251833761" duration="2120000" />
       <workItem from="1621432513721" duration="603000" />
       <workItem from="1621507811528" duration="15269000" />
+      <workItem from="1621689538841" duration="13901000" />
     </task>
     <servers />
   </component>
