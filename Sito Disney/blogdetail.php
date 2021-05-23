@@ -50,7 +50,7 @@
     if(isset($_POST['aggiungiCommento'])){
         $result = $mysqli->query("insert into commento (nome, email, testo, utente_id)
                                 values ('{$_POST['inputNome']}','{$_POST['inputEmail']}',
-                                '{$_POST['inputCommento']}', '$idUtente'");
+                                '{$_POST['inputCommento']}', data.now(), '$idUtente'");
     }
 
     $main->setContent("body", $body->get());

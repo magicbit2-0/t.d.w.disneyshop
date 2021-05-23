@@ -12,4 +12,3 @@ PROSSIMAMENTE:
 UTENTE AMMINISTRATORE LOGGATO:
 1) Autorizzazioni per gli utenti: un cliente non può avere accesso alle funzioni dell'amministratore e viceversa (ultime lezioni del prof)
 2) TUTTE le pagine mancanti dell'amministratore (html e php)
-3) Profilo utente-> si vedono i film preferiti e le votazioni dei film
