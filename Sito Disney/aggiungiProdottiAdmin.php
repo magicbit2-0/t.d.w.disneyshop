@@ -73,7 +73,7 @@ if (isset($mysqli)) {
                         $idArticolo = $mysqli->insert_id;
                         if(isset($_POST['aggiungiProdotto'])) {
                             echo "REGISTA: <br>";
-                            if ($_POST['inputRegista'] !== '- - -' and count($_POST['inputRegista']) == 1) {
+                            if ($_POST['inputRegista'] !== '- - -' and isset($_POST['inputRegista'])) {
                                 echo $_POST['inputRegista']."<br>";
                             } else echo "nessun regista messo <br>";
                             $parole_chiave = is_array($_POST['inputParoleChiave']) ? count($_POST['inputParoleChiave']) : 0;
