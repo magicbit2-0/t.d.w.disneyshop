@@ -81,6 +81,15 @@ if (isset($mysqli)){
                                                 <input type="radio" name="radioAvatar" value="'.$data['id'].'"> Scegli Questo Avatar</a>');
         $body->setContent("idAvatar",$data['id']);
 
+        $result = $mysqli->query("select g.`tipologia utente` as tipo_utente from utente u 
+        join gruppo_utente gu on(u.id = gu.utente_id) join gruppo g on(gu.gruppo_id = g.id) where u.id = {$_SESSION['idUtente']};");
+        while($data = $result->fetch_assoc()){
+            if($data['tipo_utente'] == "cliente"){
+                $body->setContent("serviziUtente","<li><a href='userfavoritegrid.php'>Film Preferiti</a></li>
+                                                    <li><a href='userrate.php'>Votazioni Film</a></li>'");
+            }
+        }
+
     }
     
 }
