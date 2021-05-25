@@ -12,7 +12,11 @@ if (isset($mysqli)) {
         $body->setContent("paroleChiave", '<option value="'.$data['id'].'">'.$data['testo'].'</option>');
         $body->setContent("paroleChiave1", '<option value="'.$data['id'].'">'.$data['testo'].'</option>');
     }
-
+    $result = $mysqli->query("select a.id,a.titolo,a.categoria from articolo a where a.categoria like '%%'");
+    while ($data = $result->fetch_assoc()){
+        $body->setContent("filmCorrelati", '<option value="'.$data['id'].'">'.$data['titolo'].' - '.$data['categoria'].'</option>');
+        $body->setContent("filmCorrelati1", '<option value="'.$data['id'].'">'.$data['titolo'].' - '.$data['categoria'].'</option>');
+    }
     $result = $mysqli->query("select id, nome from personaggio");
     while ($data = $result->fetch_assoc()){
         $body->setContent("nomiPersonaggi", '<option value="'.$data['id'].'">'.$data['nome'].'</option>');
@@ -94,6 +98,13 @@ if (isset($mysqli)) {
                                 foreach ($_POST['inputPersonaggiCorrelati'] as $idPersonaggiCorrelati) {
                                     $result = $mysqli->query("insert into personaggio_articolo (personaggio_id , articolo_id)
                                                         values ('$idPersonaggiCorrelati','$idArticolo')");
+                                }
+                                $film_correlati = is_array($_POST['inputFilmCorrelati']) ? count($_POST['inputFilmCorrelati']) : 0;
+                                if ($film_correlati > 0) {
+                                    foreach ($_POST['inputFilmCorrelati'] as $idFilmCorrelati) {
+                                        $result = $mysqli->query("insert into articolo_correlato (articolo_id , articolo_correlato_id)
+                                                        values ('$idArticolo','$idFilmCorrelati')");
+                                    }
                                 }
                         }
                         $body->setContent("alert",'addedItem');
