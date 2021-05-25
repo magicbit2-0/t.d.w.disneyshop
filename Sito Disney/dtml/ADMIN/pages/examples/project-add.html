@@ -5,6 +5,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
+          <[alert::notification library="widget"]>
           <h1>Aggiungi Prodotto</h1>
         </div>
         <div class="col-sm-6">
@@ -19,6 +20,7 @@
 
   <!-- Main content -->
   <section class="content">
+
     <div class="row">
       <div class="col-md-6">
         <div class="card card-primary">
@@ -35,7 +37,7 @@
             <form method="post" id="aggiungiFilmForm" action="" enctype="multipart/form-data">
             <div class="form-group">
               <label for="inputFilmName">Nome Film</label>
-              <input type="text" id="inputFilmName" name="inputName" class="form-control" required>
+              <input type="text" id="inputFilmName" name="inputName" class="form-control" value="<[inputName]>" required>
             </div>
 
             <div class="form-group">
@@ -48,7 +50,7 @@
 
             <div class="form-group">
               <label for="inputFilmTrama">Trama</label>
-              <textarea id="inputFilmTrama" name="inputTrama" class="form-control" rows="4"></textarea>
+              <textarea id="inputFilmTrama" name="inputTrama" class="form-control" rows="4"><[inputTrama]></textarea>
             </div>
             <div class="form-group">
               <label for="inputRegista">Regista</label>
@@ -82,15 +84,15 @@
               </div>
             <div class="form-group">
               <label for="inputFilmData">Data Rilascio</label>
-              <input type="date" id="inputFilmData" name="inputData" class="form-control" required>
+              <input type="date" id="inputFilmData" name="inputData" class="form-control" value="<[inputData]>" required>
             </div>
             <div class="form-group">
               <label for="inputFilmDurata">Durata</label>
-              <input type="text" id="inputFilmDurata" name="inputDurata" class="form-control" required>
+              <input type="text" id="inputFilmDurata" name="inputDurata" value="<[inputDurata]>" class="form-control" required>
             </div>
             <div class="form-group">
               <label for="inputFilmPrezzo">Prezzo</label>
-              <input type="number" id="inputFilmPrezzo" name="inputPrezzo" class="form-control" required>
+              <input type="number" id="inputFilmPrezzo" name="inputPrezzo" value="<[inputPrezzo]>" class="form-control" required>
             </div>
             <div class="form-group">
               <label for="customFile">Locandina</label>
@@ -106,7 +108,8 @@
               </div>
             </div>
               <div class="form-group" style="text-align-last: center;">
-              <input type="submit" name="aggiungiProdotto" form="aggiungiFilmForm" value="Aggiungi nuovo prodotto" class="btn btn-success">
+                <input type="reset" onclick="location.href='aggiungiProdottiAdmin.php'" class="btn btn-secondary" style="background-color: indianred" form="aggiungiFilmForm" value="Cancella">
+                <input type="submit" name="aggiungiProdotto" form="aggiungiFilmForm" value="Aggiungi nuovo prodotto" class="btn btn-success">
               </div>
             </form>
           </div>
@@ -129,7 +132,7 @@
             <form method="post" id="aggiungiCartoneForm" action="" enctype="multipart/form-data">
             <div class="form-group">
               <label for="inputName">Nome Cartone</label>
-              <input type="text" id="inputName" name="inputName" class="form-control" required>
+              <input type="text" id="inputName" name="inputName" class="form-control" value="<[inputName]>" required>
             </div>
 
             <div class="form-group">
@@ -144,7 +147,7 @@
 
             <div class="form-group">
               <label for="inputDescription">Trama</label>
-              <textarea id="inputDescription" name="inputDescription" class="form-control" rows="7" style="height: 196px"></textarea>
+              <textarea id="inputDescription" name="inputTrama" class="form-control" rows="7" style="height: 196px"><[inputTrama]></textarea>
             </div>
             <div class="form-group">
               <label>Lista personaggi</label>
@@ -169,16 +172,16 @@
               </div>
             <div class="form-group">
               <label for="inputData">Data Rilascio</label>
-              <input type="date" id="inputData" name="inputData" class="form-control" required>
+              <input type="date" id="inputData" name="inputData" class="form-control" value="<[inputData]>" required>
             </div>
             <div class="form-group">
               <label for="inputDurata">Durata</label>
-              <input type="text" id="inputDurata" name="inputDurata" class="form-control" required>
+              <input type="text" id="inputDurata" name="inputDurata" class="form-control" value="<[inputDurata]>" required>
             </div>
 
             <div class="form-group">
               <label for="inputPrezzo">Prezzo</label>
-              <input type="number" id="inputPrezzo" name="inputPrezzo" class="form-control" required>
+              <input type="number" id="inputPrezzo" name="inputPrezzo" class="form-control" value="<[inputPrezzo]>" required>
             </div>
             <div class="form-group">
               <label for="customFile2">Locandina</label>
@@ -194,6 +197,7 @@
               </div>
             </div>
               <div class="form-group" style="text-align-last: center;">
+                <input type="reset" onclick="location.href='aggiungiProdottiAdmin.php'" class="btn btn-secondary" style="background-color: indianred" form="aggiungiCartoneForm" value="Cancella">
               <input type="submit" name="aggiungiProdotto" form="aggiungiCartoneForm" value="Aggiungi nuovo prodotto" class="btn btn-success">
               </div>
             </form>
@@ -204,11 +208,9 @@
       </div>
 
     </div>
-    <div class="row">
-      <div class="col-12">
-        <a href="project-add.html" class="btn btn-secondary">Cancella</a>
+      <div class="col-12" style="padding: 0 30px 5px 30px;">
+        <input type="button" onclick="location.href='projects.php'" class="btn btn-secondary" value="Annulla">
       </div>
-    </div>
   </section>
   <!-- /.content -->
 </div>

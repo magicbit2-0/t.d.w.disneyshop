@@ -60,54 +60,42 @@ if (isset($mysqli)) {
 
                     $allowed_exs = array("jpg", "jpeg", "png","jfif");
                     if (in_array($img_ex_lc, $allowed_exs)) {
-                        /*$result = $mysqli->query("insert into articolo (titolo, data_uscita, durata, trama, votazione, prezzo, locandina, trailer,  categoria)
+                        $result = $mysqli->query("insert into articolo (titolo, data_uscita, durata, trama, votazione, prezzo, locandina, trailer,  categoria)
                                                     values ('$inputName','{$_POST['inputData']}',
                                                     '$inputDurata','$inputTrama', 0 ,
                                                     '$inputPrezzo','$imgData',
-                                                    '$vdoData','$inputCategoria')");*/
-                        echo "insert into articolo (titolo, data_uscita, durata, trama, votazione, prezzo, locandina, trailer,  categoria)
+                                                    '$vdoData','$inputCategoria')");
+                        /*echo "insert into articolo (titolo, data_uscita, durata, trama, votazione, prezzo, locandina, trailer,  categoria)
                                                     values ('$inputName','{$_POST['inputData']}',
                                                     '$inputDurata','$inputTrama', 0 ,
                                                     '$inputPrezzo','$imgData',
-                                                    '$vdoData','$inputCategoria')" . "<br>";
+                                                    '$vdoData','$inputCategoria')" . "<br>";*/
                         $idArticolo = $mysqli->insert_id;
-                        if(isset($_POST['aggiungiProdotto'])) {
-                            echo "REGISTA: <br>";
                             if ($_POST['inputRegista'] !== '- - -' and isset($_POST['inputRegista'])) {
-                                echo $_POST['inputRegista']."<br>";
-                            } else echo "nessun regista messo <br>";
+                                $result = $mysqli->query("insert into backstage_articolo (regia_id , articolo_id)
+                                                        values ('{$_POST['inputRegista']}','$idArticolo')");
+                            }
                             $parole_chiave = is_array($_POST['inputParoleChiave']) ? count($_POST['inputParoleChiave']) : 0;
                             if ($parole_chiave > 0) {
-                                echo "PAROLE CHIAVE: <br>";
                                 foreach ($_POST['inputParoleChiave'] as $idParolaChiave) {
-                                    //$result = $mysqli->query("insert into articolo_parola_chiave (articolo_id , parola_chiave_id)
-                                    //                    values ('$idArticolo','$idParolaChiave')");
-                                    echo "$idParolaChiave <br>";
-
+                                    $result = $mysqli->query("insert into articolo_parola_chiave (articolo_id , parola_chiave_id)
+                                                        values ('$idArticolo','$idParolaChiave')");
                                 }
                             }
                             $attori_correlati = is_array($_POST['inputAttoriCorrelati']) ? count($_POST['inputAttoriCorrelati']) : 0;
                             if ($attori_correlati > 0) {
-                                echo "ATTORI CORRELATI: <br>";
                                 foreach ($_POST['inputAttoriCorrelati'] as $idAttoriCorrelati) {
-                                //    $result = $mysqli->query("insert into backstage_articolo (regia_id , articolo_id)
-                                //                        values ('$idAttoriCorrelati','$idArticolo')");
-                                    echo "$idAttoriCorrelati <br>";
+                                    $result = $mysqli->query("insert into backstage_articolo (regia_id , articolo_id)
+                                                        values ('$idAttoriCorrelati','$idArticolo')");
                                 }
                             }
                             $personaggi_correlati = is_array($_POST['inputPersonaggiCorrelati']) ? count($_POST['inputPersonaggiCorrelati']) : 0;
                             if ($personaggi_correlati > 0) {
-                                echo "PERSONAGGI CORRELATI: <br>";
                                 foreach ($_POST['inputPersonaggiCorrelati'] as $idPersonaggiCorrelati) {
-                                //    $result = $mysqli->query("insert into personaggio_articolo (personaggio_id , articolo_id)
-                                //                        values ('$idPersonaggiCorrelati','$idArticolo')");
-                                    echo "$idPersonaggiCorrelati <br>";
+                                    $result = $mysqli->query("insert into personaggio_articolo (personaggio_id , articolo_id)
+                                                        values ('$idPersonaggiCorrelati','$idArticolo')");
                                 }
-                            }
-                            exit;
                         }
-                        //$_POST = array();
-                        //unset($_POST['aggiungiAttore']);
                         $body->setContent("alert",'addedItem');
                         if (!$result) {
                             echo "Error!";
@@ -123,9 +111,12 @@ if (isset($mysqli)) {
         } else {
             $em = "questo elemento già esiste!";
         }
-
-        print_r($_POST);
-        exit;
+        if ($em != null) {
+            $body->setContent("alert", $em);
+            foreach ($_POST as $key => $selectedOption) {
+                $body->setContent($key, $selectedOption);
+            }
+        }
     }
 
 }
