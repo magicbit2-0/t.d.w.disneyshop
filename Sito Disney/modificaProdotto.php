@@ -61,7 +61,7 @@ if (isset($mysqli)) {
          $count = mysqli_num_rows($result);
          $buffer = '<div class="form-group">
                   <label for="inputRegista">Regista</label>
-                  <select name="inputRegista" id="inputRegista" data-value="<[inputRegista]>" class="form-control">';
+                  <select name="inputRegista" id="inputRegista" class="form-control">';
          for ($i = 0; $i <= $count; $i++) {
              while ($data = $result->fetch_assoc()) {
                  if ($var['id'][$i] == $data['id']) {
@@ -73,7 +73,7 @@ if (isset($mysqli)) {
              }
          }
          $buffer.='</select></div>';
-         $body->setContent("regista", $buffer );
+         $body->setContent("regista", $buffer );*/
 
          $result = $mysqli->query("select r.id as id_attore from backstage_articolo ba
                                                  join articolo a on a.id = ba.articolo_id
@@ -104,8 +104,8 @@ if (isset($mysqli)) {
              }
          }
          $buffer.='</select></div><!-- /.form-group --></div>';
-         //$body->setContent("personaggi", $buffer);
-         */
+         $body->setContent("personaggi", $buffer);
+
      }
 
     $result = $mysqli->query("select k.id as id_parola,k.testo from parola_chiave k
@@ -150,7 +150,7 @@ if (isset($mysqli)) {
             }
         }
     }
-    if (isset($_POST['submit'])) {
+    /*if (isset($_POST['submit'])) {
         $inputName =addslashes($_POST['inputName']);
         $inputSurname =addslashes($_POST['inputSurname']);
         $inputNazionalita =addslashes($_POST['inputNazionalità']);
@@ -209,7 +209,7 @@ if (isset($mysqli)) {
             }
         }
         header("location: infoAttoreAdmin.php?id={$_GET['id']}");
-    }
+    }*/
 }
 
 $main->setContent("body_admin", $body->get());

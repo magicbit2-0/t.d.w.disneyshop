@@ -55,16 +55,6 @@
                 <[regista]>
                 <[personaggi]>
                 <div class="form-group">
-                  <label>Lista Parole chiave</label>
-                  <div class="select2-purple">
-                    <select class="select2 select2-hidden-accessible" name="inputParoleChiave[]" data-select2-id="5" multiple="" data-placeholder="Seleziona le parole chiave relative a questo elemento" data-dropdown-css-class="select2-purple" style="width: 100%;"  tabindex="-1" aria-hidden="true">
-                      <[foreach]>
-                      <[parola_chiave]>
-                      <[/foreach]>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
                   <label for="inputFilmData">Data Rilascio</label>
                   <input type="date" id="inputFilmData" name="inputData" class="form-control" value="<[data_uscita]>" required>
                 </div>
@@ -75,6 +65,16 @@
                 <div class="form-group">
                   <label for="inputFilmPrezzo">Prezzo</label>
                   <input type="number" id="inputFilmPrezzo" name="inputPrezzo" value="<[prezzo]>" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label>Lista Parole chiave</label>
+                  <div class="select2-purple">
+                    <select class="select2 select2-hidden-accessible" name="inputParoleChiave[]" data-select2-id="5" multiple="" data-placeholder="Seleziona le parole chiave relative a questo elemento" data-dropdown-css-class="select2-purple" style="width: 100%;"  tabindex="-1" aria-hidden="true">
+                      <[foreach]>
+                      <[parola_chiave]>
+                      <[/foreach]>
+                    </select>
+                  </div>
                 </div>
                 <div class="form-group">
                   <label>Film correlati:</label>
