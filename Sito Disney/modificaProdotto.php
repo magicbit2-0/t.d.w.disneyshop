@@ -30,7 +30,7 @@ if (isset($mysqli)) {
                  $buffer = '<div class="form-group">
                           <label>Lista Personaggi</label>
                           <div class="select2-purple">
-                            <select class="select2 select2-hidden-accessible" name="inputAttoriCorrelati[]" multiple="" data-placeholder="Seleziona gli attori del film" data-dropdown-css-class="select2-purple" style="width: 100%;" data-select2-id="2" tabindex="-1" aria-hidden="true">';
+                            <select class="select2 select2-hidden-accessible" name="inputPersonaggiCorrelati[]" multiple="" data-placeholder="Seleziona gli attori del film" data-dropdown-css-class="select2-purple" style="width: 100%;" data-select2-id="2" tabindex="-1" aria-hidden="true">';
                  for ($i = 0; $i <= $count; $i++) {
                      while ($data = $result->fetch_assoc()) {
                          if ($var['id'][$i] == $data['id']) {
@@ -47,7 +47,7 @@ if (isset($mysqli)) {
      } else {
 
          $body->setContent( "categorie",'<option value="Film Disney" selected>Film Disney</option>');
-         /*$result = $mysqli->query("select r.id as id_regista from backstage_articolo ba
+         $result = $mysqli->query("select r.id as id_regista from backstage_articolo ba
                                                  join articolo a on a.id = ba.articolo_id
                                                  join regia r on r.id = ba.regia_id
                                                  join parola_chiave_regia kr on kr.regia_id = r.id
@@ -73,8 +73,8 @@ if (isset($mysqli)) {
              }
          }
          $buffer.='</select></div>';
-         $body->setContent("regista", $buffer );*/
-
+         $body->setContent("regista", $buffer );
+         $var = array();
          $result = $mysqli->query("select r.id as id_attore from backstage_articolo ba
                                                  join articolo a on a.id = ba.articolo_id
                                                  join regia r on r.id = ba.regia_id
@@ -86,9 +86,9 @@ if (isset($mysqli)) {
              $var['id'][] = $data['id_attore'];
          }
          $result = $mysqli->query("select r.id, concat(r.nome,' ',r.cognome) as nomeAttore from regia r 
-                                         join parola_chiave_regia pcr on pcr.regia_id=r.id
-                                         join parola_chiave p on p.id= pcr.parola_chiave_id
-                                         where p.testo='attore'");
+                                                 join parola_chiave_regia pcr on pcr.regia_id=r.id
+                                                 join parola_chiave p on p.id= pcr.parola_chiave_id
+                                                 where p.testo='attore'");
          $buffer = '<div class="form-group">
                           <label>Lista Attori</label>
                           <div class="select2-purple">
@@ -107,7 +107,7 @@ if (isset($mysqli)) {
          $body->setContent("personaggi", $buffer);
 
      }
-
+    $var = array();
     $result = $mysqli->query("select k.id as id_parola,k.testo from parola_chiave k
                                          join articolo_parola_chiave pr on pr.parola_chiave_id=k.id
                                          join articolo a on a.id=pr.articolo_id where a.id={$_GET['id']} order by k.id");
@@ -139,7 +139,7 @@ if (isset($mysqli)) {
     while ($data = $result->fetch_assoc()) {
         $var['id'][] = $data['id_correlato'];
     }
-    $result = $mysqli->query("select distinct id,titolo, categoria from articolo");
+    $result = $mysqli->query("select distinct id,titolo, categoria from articolo where id <> {$_GET['id']}");
     for ($i = 0; $i <= $count; $i++) {
         while ($data = $result->fetch_assoc()) {
             if ($var['id'][$i] == $data['id']) {
@@ -150,17 +150,23 @@ if (isset($mysqli)) {
             }
         }
     }
-    /*if (isset($_POST['submit'])) {
-        $inputName =addslashes($_POST['inputName']);
-        $inputSurname =addslashes($_POST['inputSurname']);
-        $inputNazionalita =addslashes($_POST['inputNazionalità']);
-        $inputPaese =addslashes($_POST['inputPeseNascita']);
-        $inputBiografia =addslashes($_POST['inputDescription']);
+    if (isset($_POST['submit'])) {
+        $inputName = addslashes($_POST['inputName']);
+        $inputCategoria = addslashes($_POST['inputCategoria']);
+        $inputTrama = addslashes($_POST['inputTrama']);
+        $inputDurata = addslashes($_POST['inputDurata']);
+        $inputPrezzo = addslashes($_POST['inputPrezzo']);
+
+        if (isset($_FILES['customTrailer']) and $_FILES['customTrailer']['error'] != 4)
+            $vdoData = addslashes(file_get_contents($_FILES["customTrailer"]["tmp_name"]));
+        else $vdoData = null;
         if (isset($_FILES) and $_FILES['customFile']['error'] != 4) {
             $imgName = $_FILES["customFile"]["name"];
             $imgType = $_FILES["customFile"]["type"];
             $img_size = $_FILES["customFile"]["size"];
             $imgData = addslashes(file_get_contents($_FILES["customFile"]["tmp_name"]));
+
+
             $error = $_FILES["customFile"]["error"];
             if ($error === 0) {
                 if ($img_size > 1250000) {
@@ -171,45 +177,77 @@ if (isset($mysqli)) {
 
                     $allowed_exs = array("jpg", "jpeg", "png", "jfif");
                     if (in_array($img_ex_lc, $allowed_exs)) {
-                        $result = $mysqli->query("update regia set
-                                                                nome = '$inputName',
-                                                                cognome = '$inputSurname',
-                                                                anno_nascita = '{$_POST['inputData']}',
-                                                                eta = year(now())-year('{$_POST['inputData']}'),
-                                                                nazionalità = '$inputNazionalita',
-                                                                paese_nascita = '$inputPaese',
-                                                                biografia = '$inputBiografia',
-                                                                foto = '$imgData' where id = {$_GET['id']}");
+                        echo 'update articolo set titolo = '.$inputName.',data_uscita = '.$_POST['inputData'].',durata = '.$inputDurata.',
+                                                    trama = '.$inputTrama.',prezzo = '.$inputPrezzo.',trailer = '.$vdoData.',
+                                                    locandina = '.$imgData.',categoria = '.$inputCategoria.' where id ='. $_GET['id'];
+                        /*$result = $mysqli->query("update articolo set
+                                                                titolo = '$inputName',
+                                                                data_uscita = '{$_POST['inputData']}',
+                                                                durata = '$inputDurata',
+                                                                trama = '$inputTrama',
+                                                                prezzo = '$inputPrezzo',
+                                                                locandina = '$imgData',
+                                                                trailer = '$vdoData',
+                                                                categoria = '$inputCategoria' where id = {$_GET['id']}");*/
                     }
                 }
             }
         } else {
-            $result = $mysqli->query("update regia set
-                                                    nome = '$inputName',
-                                                    cognome = '$inputSurname',
-                                                    anno_nascita = '{$_POST['inputData']}',
-                                                    eta = year(now())-year('{$_POST['inputData']}'),
-                                                    nazionalità = '$inputNazionalita',
-                                                    paese_nascita = '$inputPaese',
-                                                    biografia = '$inputBiografia'
-                                                    where id = {$_GET['id']}");
-        }
+            /*$result = $mysqli->query("update articolo set
+                                                    titolo = '$inputName',
+                                                    data_uscita = '{$_POST['inputData']}',
+                                                    durata = '$inputDurata',
+                                                    trama = '$inputTrama',
+                                                    prezzo = '$inputPrezzo',
+                                                    trailer = '$vdoData',
+                                                    categoria = '$inputCategoria' where id = {$_GET['id']}");
+        */
+        echo 'update articolo set titolo = '.$inputName.',data_uscita = '.$_POST['inputData'].',durata = '.$inputDurata.',
+                                                    trama = '.$inputTrama.',prezzo = '.$inputPrezzo.',trailer = '.$vdoData.',
+                                                    categoria = '.$inputCategoria.' where id ='. $_GET['id'];}
+        echo "<br> PAROLE CORRELATE: <br>";
         if (isset($_POST['inputParoleChiave'])){
-            $result = $mysqli->query("delete from parola_chiave_regia where regia_id = {$_GET['id']}");
+            //$result = $mysqli->query("delete from articolo_parola_chiave where regia_id = {$_GET['id']}");
             foreach ($_POST['inputParoleChiave'] as $idParolaChiave) {
-                $result = $mysqli->query("insert into parola_chiave_regia (regia_id , parola_chiave_id)
-                                                       values ('{$_GET['id']}','$idParolaChiave')");
+                echo "$idParolaChiave <br>";
+                //$result = $mysqli->query("insert into articolo_parola_chiave (articolo_id , parola_chiave_id)
+                //                                       values ('{$_GET['id']}','$idParolaChiave')");
             }
         }
+        echo "FILM CORRELATI: <br>";
         if (isset($_POST['inputFilmCorrelati'])){
-            $result = $mysqli->query("delete from backstage_articolo where regia_id = {$_GET['id']}");
+            //$result = $mysqli->query("delete from articolo_correlato where articolo_id = {$_GET['id']}");
             foreach ($_POST['inputFilmCorrelati'] as $idFilmCorrelati) {
-                $result = $mysqli->query("insert into backstage_articolo (regia_id , articolo_id)
-                                                        values ('{$_GET['id']}','$idFilmCorrelati')");
+                echo "$idFilmCorrelati <br>";
+                //$result = $mysqli->query("insert into articolo_correlato (articolo_id , articolo_correlato_id)
+                //                                       values ('{$_GET['id']}','$idFilmCorrelati')");
             }
         }
+        echo "PERSONAGGI: <br>";
+        if (isset($_POST['inputPersonaggiCorrelati'])){
+            //$result = $mysqli->query("delete from personaggio_articolo where articolo_id = {$_GET['id']}");
+            foreach ($_POST['inputPersonaggiCorrelati'] as $idPersonaggiCorrelati) {
+                echo "$idPersonaggiCorrelati <br>";
+                //$result = $mysqli->query("insert into personaggio_articolo (articolo_id , personaggio_id)
+                //                                       values ('{$_GET['id']}','$idPersonaggiCorrelati')");
+            }
+        } else if(isset($_POST['inputAttoriCorrelati'])){
+            //$result = $mysqli->query("delete from backstage_articolo where articolo_id = {$_GET['id']}");
+            if(isset($_POST['inputRegista'])){
+                echo 'REGISTA: '.$_POST['inputRegista'] .'<br>';
+                //$result = $mysqli->query("insert into backstage_articolo (articolo_id , regia_id)
+                //                                           values ('{$_GET['id']}','{$_POST['inputRegista']}')");
+            }
+            echo "ATTORI: <br>";
+            foreach ($_POST['inputAttoriCorrelati'] as $idAttoriCorrelati) {
+                echo "$idAttoriCorrelati <br>";
+                //$result = $mysqli->query("insert into backstage_articolo (articolo_id , regia_id)
+                //                                       values ('{$_GET['id']}','$idAttoriCorrelati')");
+            }
+        }
+        exit;
         header("location: infoAttoreAdmin.php?id={$_GET['id']}");
-    }*/
+    }
 }
 
 $main->setContent("body_admin", $body->get());

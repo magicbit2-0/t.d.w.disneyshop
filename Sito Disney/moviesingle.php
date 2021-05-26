@@ -167,9 +167,9 @@ if (isset($mysqli)) {
     $result = $mysqli->query("select trailer from articolo where id = {$_GET['id']}");
     $number_of_trailer = mysqli_num_rows($result);
     if($number_of_trailer > 0){
-        $body->setContent("bottoneTrailer","<div><a href='#' class='item item-1 redbtn'> <i class='ion-play'></i>Guarda trailer</a></div>
-                                            <div><a href='trailer.php?id=<[idImg]>' class='item item-2 redbtn fancybox-media hvr-grow'><i class='ion-play'></i></a></div>");
-    }
+        $body->setContent("bottoneTrailer",'<div><a href=\'#\' class=\'item item-1 redbtn\'> <i class=\'ion-play\'></i>Guarda trailer</a></div>
+                                            <div><a href=\'https://www.youtube.com/embed/'.$data['trailer'] .'\' class=\'item item-2 redbtn fancybox-media hvr-grow\'><i class=\'ion-play\'></i></a></div>');
+    }//trailer.php?id={$_GET['id']}
 
     
 }
