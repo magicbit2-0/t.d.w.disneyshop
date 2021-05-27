@@ -44,7 +44,7 @@ if (isset($mysqli)) {
         );
     }
 
-    $result = $mysqli->query("(select a.id as idArticolo,a.titolo,a.votazione, a.categoria
+    $result = $mysqli->query("(select a.id as idArticolo,a.titolo,a.votazione, a.categoria as categoriaArticolo
                                     from utente u 
                                     join articolo_preferito ap on ap.utente_id=u.id
                                     join articolo a on a.id=ap.articolo_id  
@@ -54,10 +54,10 @@ if (isset($mysqli)) {
     if ($number_of_results > 0) {
         while ($data = $result->fetch_assoc()) {
             $body->setContent("number_of_results", "<p style=\"padding-right: 0px\"> Trovati <span> $number_of_results film </span> in totale </p>");
-            if ($data['categoria'] <> 'Film Disney') {
-                $categoria_film = 'moviesingle2.php?id=' . $data['idArticolo'];
-            } else {
+            if ($data['categoriaArticolo'] == "Film Disney") {
                 $categoria_film = 'moviesingle.php?id=' . $data['idArticolo'];
+            } else {
+                $categoria_film = 'moviesingle2.php?id=' . $data['idArticolo'];
             }
             $body->setContent("no_preferiti", '<div class="movie-item-style-2 movie-item-style-1 style-3">
                         <img src="img.php?id=' . $data['idArticolo'] . '" alt="">
@@ -65,7 +65,7 @@ if (isset($mysqli)) {
                             <a href="' . $categoria_film . '">Leggi di più <i class="ion-android-arrow-dropright"></i> </a>
                         </div>
                         <div class="mv-item-infor">
-                            <h6><a href="moviesingle.php?id=' . $data['idArticolo'] . '">' . $data['titolo'] . '</a></h6>
+                            <h6><a href="'.$categoria_film.'">' . $data['titolo'] . '</a></h6>
                             <p class="rate"><i class="ion-android-star"></i><span>' . $data['votazione'] . '</span> /10</p>
                         </div>
                         </div>');

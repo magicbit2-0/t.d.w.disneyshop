@@ -171,6 +171,21 @@ if (isset($mysqli)) {
                                             <div><a href=\'https://www.youtube.com/embed/'.$data['trailer'] .'\' class=\'item item-2 redbtn fancybox-media hvr-grow\'><i class=\'ion-play\'></i></a></div>');
     }//trailer.php?id={$_GET['id']}
 
+    $result = $mysqli->query("select * from articolo_preferito where articolo_id={$_GET['id']} and utente_id={$_SESSION['idUtente']};");
+    $is_favourite = mysqli_num_rows($result);
+    if($is_favourite > 0){
+        $body->setContent("aggiugiRimuoviPreferito", "<form action='removefromfavorites.php' method='POST'>
+                                                        <i class='ion-heart' style='color: #dd003f; margin-right: 5px;'></i>
+                                                        <input type='hidden' name='idFilm' value='{$_GET['id']}'>
+                                                        <input type='submit' name='preferito' value='RIMUOVI DAI PREFERITI' style='font-family: Dosis, sans-serif; font-size: 14px; color: #dd003f; font-weight: bold; background: none;'>
+                                                    </form>");
+    } else {
+        $body->setContent("aggiugiRimuoviPreferito", "<form action='addToFavorites.php' method='POST'>
+                                                        <i class='ion-heart' style='color: #dd003f; margin-right: 5px;'></i>
+                                                        <input type='hidden' name='idFilm' value='{$_GET['id']}'>
+                                                        <input type='submit' name='preferito' value='AGGIUNGI AI PREFERITI' style='font-family: Dosis, sans-serif; font-size: 14px; color: #dd003f; font-weight: bold; background: none;'>
+                                                    </form>");
+    }
     
 }
 
