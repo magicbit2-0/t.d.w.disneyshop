@@ -5,6 +5,7 @@ require "include/template2.inc.php";
 require "include/adminFunctions.inc.php";
 
 $body=new Template("dtml/ADMIN/pages/examples/project-edit.html");
+$body->setContent("goBack", $_SERVER['HTTP_REFERER']);
 
 if (isset($mysqli)) {
     $result = $mysqli->query("SELECT *

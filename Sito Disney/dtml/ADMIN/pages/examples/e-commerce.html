@@ -54,18 +54,32 @@
               </div>
 
                 <div class="row" style="flex-wrap: nowrap;width: min-content;margin-left: 460px;">
-                <a class="btn btn-info btn-sm" href="project-edit.html" style="margin-top: 10px; margin-right: 10px;">
+                <a class="btn btn-info btn-sm" href="modificaProdotto.php?id=<[idImg]>" style="margin-top: 10px; margin-right: 10px;">
                   <i class="fas fa-pencil-alt">
                   </i>
                   Modifica
                 </a>
-                <a class="btn btn-danger btn-sm" href="#" style="margin-top: 10px;">
-                  <i class="fas fa-trash">
-                  </i>
-                  Elimina
-                </a>
+                  <button onclick="document.getElementById('id01').style.display='block'"
+                          class="btn btn-danger btn-sm" href="#" style="margin-top: 10px;-webkit-text-stroke: snow;">
+                    <i class="fas fa-trash">
+                    </i>
+                    Elimina
+                  </button>
                 </div>
+              <div id="id01" class="modal1" style="width: 800px;height: 300px;margin-top: 130px;margin-left: 450px;overflow: hidden;border-radius: 20px;">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+                <form class="modal-content1" style="width: auto;height: 300px;margin-top: -50px;padding:75px;border-radius: 20px;" action="/action_page.php">
+                  <div class="container1">
+                    <h1>Elimina elemento</h1>
+                    <p>Sei sicuro di voler eliminare questo elemento?</p>
 
+                    <div class="clearfix1">
+                      <button type="button" class="cancelbtn1" onclick="document.getElementById('id01').style.display='none'">Annulla</button>
+                      <button type="button" class="deletebtn1" onclick="location.href='eliminaOggetto.php?id=<[id]>&table=<[table]>'">Elimina</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
           <div class="row mt-4">
@@ -100,7 +114,106 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-<script>
+ <style>
+
+   /* Set a style for all buttons */
+   button1 {
+     background-color: #04AA6D;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+     opacity: 0.9;
+   }
+
+   button1:hover {
+     opacity:1;
+   }
+
+   /* Float cancel and delete buttons and add an equal width */
+   .cancelbtn1, .deletebtn1 {
+     float: left;
+     width: 50%;
+   }
+
+   /* Add a color to the cancel button */
+   .cancelbtn1 {
+     background-color: #ccc;
+     color: black;
+   }
+
+   /* Add a color to the delete button */
+   .deletebtn1 {
+     background-color: #f44336;
+   }
+
+   /* Add padding and center-align text to the container */
+   .container1 {
+     padding: 16px;
+     text-align: center;
+   }
+
+   /* The Modal (background) */
+   .modal1 {
+     display: none; /* Hidden by default */
+     position: fixed; /* Stay in place */
+     z-index: 1; /* Sit on top */
+     left: 0;
+     top: 0;
+     width: 100%; /* Full width */
+     height: 100%; /* Full height */
+     overflow: auto; /* Enable scroll if needed */
+     background-color: #474e5d;
+     padding-top: 50px;
+   }
+
+   /* Modal Content/Box */
+   .modal-content1 {
+     background-color: #fefefe;
+     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+     border: 1px solid #888;
+     width: 80%; /* Could be more or less, depending on screen size */
+   }
+
+   /* Style the horizontal ruler */
+   hr1 {
+     border: 1px solid #f1f1f1;
+     margin-bottom: 25px;
+   }
+
+   /* The Modal Close Button (x) */
+   .close1 {
+     position: absolute;
+     right: 35px;
+     top: 15px;
+     font-size: 40px;
+     font-weight: bold;
+     color: #f1f1f1;
+   }
+
+   .close1:hover,
+   .close1:focus {
+     color: #f44336;
+     cursor: pointer;
+   }
+
+   /* Clear floats */
+   .clearfix1::after {
+     content: "";
+     clear: both;
+     display: table;
+   }
+
+   /* Change styles for cancel button and delete button on extra small screens */
+   @media screen and (max-width: 300px) {
+     .cancelbtn1, .deletebtn1 {
+       width: 100%;
+     }
+   }
+ </style>
+ <script>
   $(document).ready(function() {
     $('.product-image-thumb').on('click', function () {
       var $image_element = $(this).find('img')

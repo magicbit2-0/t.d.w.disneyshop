@@ -17,6 +17,10 @@ if (isset($mysqli)){
         $id=$_GET['id'];
         $table=$_GET['table'];
         switch ($table){
+            case 'articolo':
+                //$result = $mysqli->query("delete from {$table} where id = {$id} ");
+                $_SESSION['delete'] = "el";
+                break;
             case 'regia':
                 //$result = $mysqli->query("delete from {$table} where id = {$id} ");
                 $_SESSION['delete'] = "el";
@@ -40,6 +44,8 @@ if (isset($mysqli)){
         }
         if($table == 'regia'){
             header("location: listaAttoriAdmin.php");
+        }elseif ($table == 'articolo'){
+            header("location: projects.php");
         }elseif ($table == 'personaggio'){
             header("location: listaPersonaggiAdmin.php");
         } elseif ($table == 'notizia'){

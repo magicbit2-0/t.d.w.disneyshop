@@ -9,6 +9,8 @@ if (isset($mysqli)) {
     $result = $mysqli->query("SELECT id as idImg, titolo, trama, durata, data_uscita, votazione, prezzo, categoria 
                                     FROM articolo where id= {$_GET['id']}");
     $data = $result->fetch_assoc();
+    $table = 'articolo';
+    $body->setContent("table", $table);
     $titolo = $data['titolo'];
         foreach ($data as $key => $value) {
             $body->setContent($key, $value);
