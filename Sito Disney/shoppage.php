@@ -1,6 +1,5 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
-session_start();
 require "include/dbms.inc.php";
 require "include/template2.inc.php";
 require "bottonChange.php";
@@ -41,7 +40,6 @@ if (isset($mysqli)) {
     $body->setContent("totale",$totaleParziale + $speseSpedizione);
 
 }
-
 $main->setContent("body", $body->get());
 $main->close();
 ?>

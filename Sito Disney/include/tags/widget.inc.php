@@ -46,6 +46,11 @@ class widget extends taglibrary
                 style=\"background-color: darksalmon;color: unset;font-weight: bold;text-transform: initial;\"
                 ><i class=\"icon-remove\"></i> Username/Password errati. Riprova!</p>";
                 break;
+            case "noLogin":
+                $buffer = "<p class=\"ion-alert-circled alert-warning\" 
+                style=\"background-color: darksalmon;color: unset;font-weight: bold;text-transform: initial;\"
+                ><i class=\"icon-warning\"></i> Non puoi accedere a questa pagina! Effettua prima il login</p>";
+                break;
             case "error":
                 $buffer = "<p class=\"warnbox red\"><i class=\"icon-remove\"></i> There was an error!</p>";
                 break;
