@@ -19,7 +19,7 @@ if (isset($mysqli)) {
         $body->setContent("votazione1", '<div class="progress-bar bg-green" role="progressbar" aria-valuenow="'.$data['votazione'].'" 
                                                         aria-valuemin="0" aria-valuemax="10" style="width: '. $data['votazione']*10 .'%"></div>');
     }
-    $body->setContent("elimina", '<button class="btn btn-danger btn-sm" onclick="document.getElementById(\'idA01'.$data['idImg'].'\').style.display=\'block\'">
+    $body->setContent("elimina", '<button class="btn btn-danger btn-sm" style="width: -webkit-fill-available;" onclick="document.getElementById(\'idA01'.$data['idImg'].'\').style.display=\'block\'">
                                                   <i class="fas fa-trash">
                                                   </i>Elimina</button>
                                                 <div id="idA01' . $data['idImg'] . '" class="modal1" style="width: 800px;height: 300px;margin-top: 130px;margin-left: 450px;overflow: hidden;border-radius: 20px;">

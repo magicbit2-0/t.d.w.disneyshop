@@ -22,6 +22,10 @@
   <!-- Select2 -->
   <link rel="stylesheet" href="dtml/ADMIN/plugins/select2/css/select2.min.css">
   <link rel="stylesheet" href="dtml/ADMIN/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="dtml/ADMIN/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="dtml/ADMIN/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="dtml/ADMIN/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <!-- Bootstrap4 Duallistbox -->
   <link rel="stylesheet" href="dtml/ADMIN/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
   <!-- BS Stepper -->
@@ -364,8 +368,21 @@
 <script src="dtml/ADMIN/plugins/bs-stepper/js/bs-stepper.min.js"></script>
 <!-- dropzonejs -->
 <script src="dtml/ADMIN/plugins/dropzone/min/dropzone.min.js"></script>
-<!-- bs-custom-file-input -->
+<!-- DataTables  & Plugins -->
 <script src="dtml/ADMIN/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<script src="dtml/ADMIN/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="dtml/ADMIN/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="dtml/ADMIN/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="dtml/ADMIN/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="dtml/ADMIN/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="dtml/ADMIN/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="dtml/ADMIN/plugins/jszip/jszip.min.js"></script>
+<script src="dtml/ADMIN/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="dtml/ADMIN/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="dtml/ADMIN/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="dtml/ADMIN/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="dtml/ADMIN/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- bs-custom-file-input -->
 <script>
   $(function () {
     bsCustomFileInput.init();
@@ -441,6 +458,22 @@
     })
 
   })
+
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
   // BS-Stepper Init
   document.addEventListener('DOMContentLoaded', function () {
     window.stepper = new Stepper(document.querySelector('.bs-stepper'))

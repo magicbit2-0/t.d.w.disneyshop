@@ -1,3 +1,4 @@
+
  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -20,21 +21,106 @@
 
     <!-- Main content -->
     <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Lista prodotti</h3>
+          <div class="card-tools">
+            <td class="project-actions text-right">
+              <a class="btn btn-primary btn-sm" href="aggiungiProdottiAdmin.php">
+                <i class="fas fa-folder">
+                </i>
+                Aggiungi prodotto
+              </a>
+            </td>
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <table id="example1" class="table table-bordered table-striped">
+            <thead>
+            <tr>
+              <th style="width: 14%;text-align-last: center">N° Identificativo</th>
+              <th style="width: 1%;text-align-last: center">Immagine</th>
+              <th style="width: 20%;text-align-last: center">Nome prodotto</th>
+              <th style="width: 15%;text-align-last: center">Categoria</th>
+              <th style="text-align-last: center">Votazione</th>
+              <th style="text-align-last: center; width: 20%;">Azioni</th>
+            </tr>
+            </thead>
+            <tbody>
+            <[foreach]>
+            <tr>
+              <td style="text-align-last: center; vertical-align: middle">
+                <[idImg]>
+              </td>
+              <td style="text-align-last: center">
+                <img src='img.php?id=<[idImg]>' style="border-radius: 15px;height: 100px;" alt="">
+              </td>
+              <td style="text-align-last: center;vertical-align: middle">
+                <a>
+                  <[titolo]>
+                </a>
+                <br/>
+                <small>
+                  <[data_uscita]>
+                </small>
+              </td>
+              <td style="text-align-last: center; vertical-align: middle">
+                <[categoria]>
+              </td>
+              <td class="project_progress" style=" text-align-last: center;vertical-align: middle">
+                <div class="progress progress-sm">
+                  <[votazione1]>
+                </div>
+                <small>
+                  votazione media
+                </small>
+              </td>
+              <td class="project-actions text-right " style=" text-align-last: center;vertical-align: middle;">
+                <a class="btn btn-primary btn-sm" href="infoArticoloAdmin.php?id=<[idImg]>" style="margin-bottom: 1px;width: -webkit-fill-available;">
+                  <i class="fas fa-folder">
+                  </i>
+                  Vedi prodotto
+                </a>
+                <a class="btn btn-info btn-sm" href="modificaProdotto.php?id=<[idImg]>" style="margin-bottom: 1px;width: -webkit-fill-available;">
+                  <i class="fas fa-pencil-alt">
+                  </i>
+                  Modifica
+                </a>
+                <[elimina]>
+              </td>
+            </tr>
+            <[/foreach]>
+            </tbody>
+            <tfoot>
+            <tr>
+              <th style="width: 14%;text-align-last: center">N° Identificativo</th>
+              <th style="width: 1%;text-align-last: center">Immagine</th>
+              <th style="width: 20%;text-align-last: center">Nome prodotto</th>
+              <th style="width: 15%;text-align-last: center">Categoria</th>
+              <th style="text-align-last: center">Votazione</th>
+              <th style="text-align-last: center; width: 20%;">Azioni</th>
+            </tr>
+            </tfoot>
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
+
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
           <h3 class="card-title">Lista prodotti</h3>
           <div class="card-tools">
-            <div class="float-right">
-              <select class="custom-select" style="width: auto;" data-sortorder="">
-                <option value="index"> Sort by Position </option>
-                <option value="sortData"> Sort by Custom Data </option>
-              </select>
-              <div class="btn-group">
-                <a class="btn btn-default" href="javascript:void(0)" data-sortasc=""> Ascending </a>
-                <a class="btn btn-default" href="javascript:void(0)" data-sortdesc=""> Descending </a>
-              </div>
-            </div>
             <td class="project-actions text-right">
               <a class="btn btn-primary btn-sm" href="aggiungiProdottiAdmin.php">
                 <i class="fas fa-folder">
@@ -52,82 +138,42 @@
         </div>
         <div class="card-body p-0">
           <table class="table table-striped projects">
-              <thead>
-                  <tr>
-                      <th style="width: 10%;text-align-last: center">
-                          Identificativo
-                      </th>
-                      <th style="width: 1%;text-align-last: center">
-                          Immagine
-                      </th>
-                      <th style="width: 20%;text-align-last: center">
-                          Nome prodotto
-                      </th>
-                      <th style="width: 15%;text-align-last: center">
-                          Categoria
-                      </th>
-                      <th style="text-align-last: center">
-                          Votazione
-                      </th>
-                      <th style="width: 20%">
-                      </th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <[foreach]>
-                  <tr>
-                      <td style="text-align-last: center">
-                      N° <[idImg]>
-                      </td>
-                      <td style="text-align-last: center">
-                        <img src='img.php?id=<[idImg]>' style="border-radius: 15px;height: 100px;" alt="">
-                      </td>
+            <thead>
+            <tr>
+              <th > <!-- style="width: 10%;text-align-last: center" -->
+                Identificativo
+              </th>
+              <th > <!-- style="width: 1%;text-align-last: center" -->
+                Immagine
+              </th>
+              <th > <!-- style="width: 20%;text-align-last: center" -->
+                Nome prodotto
+              </th>
+              <th> <!-- style="width: 15%;text-align-last: center" -->
+                Categoria
+              </th>
+              <th ><!-- style="text-align-last: center" -->
+                Votazione
+              </th>
+              <th ><!-- style="width: 20%" -->
+              </th>
+            </tr>
+            </thead>
+            <tbody>
 
-                      <td style="text-align-last: center">
-                          <a>
-                            <[titolo]>
-                          </a>
-                          <br/>
-                          <small>
-                            <[data_uscita]>
-                          </small>
-                      </td>
-                      <td style="text-align-last: center">
-                        <[categoria]>
-                      </td>
-                      <td class="project_progress" style="text-align-last: center">
-                          <div class="progress progress-sm">
-                        <[votazione1]>
-                          </div>
-                        <small>
-                              votazione media
-                          </small>
-                      </td>
-                      <td class="project-actions text-right" style="display: grid;">
-                          <a class="btn btn-primary btn-sm" href="infoArticoloAdmin.php?id=<[idImg]>" style="margin-bottom: 1px;">
-                              <i class="fas fa-folder">
-                              </i>
-                              Vedi prodotto
-                          </a>
-                          <a class="btn btn-info btn-sm" href="modificaProdotto.php?id=<[idImg]>" style="margin-bottom: 1px;">
-                              <i class="fas fa-pencil-alt">
-                              </i>
-                              Modifica
-                          </a>
-                            <[elimina]>
-                          </a>
-                      </td>
-                  </tr>
-                  <[/foreach]>
-              </tbody>
+            </tbody>
           </table>
         </div>
         <!-- /.card-body -->
       </div>
       <!-- /.card -->
+          </div>
+        </div>
+      </div>
     </section>
     <!-- /.content -->
   </div>
+
  <style>
    .alert {
      opacity: 1;
