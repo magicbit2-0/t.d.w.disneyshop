@@ -45,12 +45,12 @@
         }
     }
 
-    $result=$mysqli->query("select utente_id from commento where notizia_id={$_GET['id']}");
-    $idUtente=$mysqli->insert_id;
-    if(isset($_POST['aggiungiCommento'])){
-        $result = $mysqli->query("insert into commento (nome, email, testo, utente_id)
-                                values ('{$_POST['inputNome']}','{$_POST['inputEmail']}',
-                                '{$_POST['inputCommento']}', data.now(), '$idUtente'");
+    if(isset($_SESSION['idUtente'])){
+        $result=$mysqli->query("select concat(nome,' ',cognome) as nome, email from utente where id = {$_SESSION['idUtente']}");
+        while ($data = $result->fetch_assoc()) {
+            $body->setContent("inputNome", $data['nome']);
+            $body->setContent("inputEmail", $data['email']);
+        }
     }
 
     $main->setContent("body", $body->get());
