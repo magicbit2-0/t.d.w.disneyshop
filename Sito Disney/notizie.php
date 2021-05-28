@@ -18,7 +18,7 @@ if (isset($mysqli)) {
         }
         $body->setContent("idNotizia1", $data['idNotizia']);
         $body->setContent("elimina", '
-                                                <button class="btn btn-danger btn-sm" onclick="document.getElementById(\'idN01'.$data['idNotizia'].'\').style.display=\'block\'">
+                                                <button class="btn btn-danger btn-sm" style="width: -webkit-fill-available;" onclick="document.getElementById(\'idN01'.$data['idNotizia'].'\').style.display=\'block\'">
                                                   <i class="fas fa-trash">
                                                   </i>Elimina</button>
                                                 <div id="idN01' . $data['idNotizia'] . '" class="modal1" style="width: 800px;height: 300px;margin-top: 130px;margin-left: 450px;overflow: hidden;border-radius: 20px;">

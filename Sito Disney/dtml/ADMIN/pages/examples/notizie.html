@@ -21,6 +21,103 @@
   <!-- Main content -->
   <section class="content">
 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Lista Notizie</h3>
+              <div class="card-tools">
+                <td class="project-actions text-right">
+                  <a class="btn btn-primary btn-sm" href="aggiungiNotizia.php">
+                    <i class="fas fa-folder">
+                    </i>
+                    Aggiungi notizia
+                  </a>
+                </td>
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th style="width: 13%;text-align-last: center">N° Identificativo</th>
+                  <th style="width: 25%;text-align-last: center">Titolo</th>
+                  <th style="width: 8%;text-align-last: center" class="text-center">Fonte</th>
+                  <th style="width: 13%;">Data Pubblicazione</th>
+                  <th style="width: 11%;text-align-last: center">Categoria</th>
+                  <th style="width: 19%;text-align-last: center">Azioni</th>
+                </tr>
+                </thead>
+                <tbody>
+                <[foreach]>
+                <tr>
+                  <td style="text-align-last: center; vertical-align: middle">
+                    <[idNotizia]>
+                  </td>
+                  <td style="vertical-align: middle;font-weight: 600;font-size: 12px;">
+                    <a>
+                      <[titolo]>
+                    </a>
+                  </td>
+                  <td style="text-align-last: center; vertical-align: middle">
+                    <[fonte]>
+                  </td>
+                  <td style="text-align-last: center; vertical-align: middle">
+                    <[data_pubblicazione]>
+                  </td>
+                  <td style="text-align-last: center; vertical-align: middle">
+                    <ul class="list-inline" style="text-transform: capitalize;">
+                      <[foreach]>
+                      <li>
+                        <[categoria]>
+                      </li>
+                      <[/foreach]>
+                    </ul>
+                  </td>
+                  <td class="project-actions text-right " style=" text-align-last: center;vertical-align: middle;">
+                    <a class="btn btn-primary btn-sm" href="notizia.php?id=<[idNotizia1]>" style="margin-bottom: 1px;width: -webkit-fill-available;">
+                      <i class="fas fa-folder">
+                      </i>
+                      Vedi Dettagli
+                    </a>
+                    <a class="btn btn-info btn-sm" href="modificaNotizia.php?id=<[idNotizia1]>" style="margin-bottom: 1px;width: -webkit-fill-available;">
+                      <i class="fas fa-pencil-alt">
+                      </i>
+                      Modifica
+                    </a>
+                    <[elimina]>
+                  </td>
+                </tr>
+                <[/foreach]>
+                </tbody>
+                <tfoot>
+                <tr>
+                  <th style="width: 13%;text-align-last: center">N° Identificativo</th>
+                  <th style="width: 25%;text-align-last: center">Titolo</th>
+                  <th style="width: 8%;text-align-last: center" class="text-center">Fonte</th>
+                  <th style="width: 13%;">Data Pubblicazione</th>
+                  <th style="width: 11%;text-align-last: center">Categoria</th>
+                  <th style="width: 19%;text-align-last: center">Azioni</th>
+                </tr>
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+    </div>
+
+
     <!-- Default box -->
     <div class="card">
       <div class="card-header">
@@ -66,46 +163,6 @@
           </tr>
           </thead>
           <tbody>
-          <[foreach]>
-          <tr>
-            <td>
-              n° <[idNotizia]>
-            </td>
-            <td>
-              <a>
-                <[titolo]>
-              </a>
-            </td>
-            <td>
-              <[fonte]>
-            </td>
-            <td>
-              <[data_pubblicazione]>
-            </td>
-            <td>
-              <ul class="list-inline" style="text-transform: capitalize;">
-                <[foreach]>
-                <li>
-                  <[categoria]>
-                </li>
-                <[/foreach]>
-              </ul>
-            </td>
-            <td class="project-actions text-right" style="display: grid;">
-              <a class="btn btn-primary btn-sm" href='notizia.php?id=<[idNotizia1]>' style="margin-bottom: 1px;">
-                <i class="fas fa-folder">
-                </i>
-                Vedi Dettagli
-              </a>
-              <a class="btn btn-info btn-sm" href="modificaNotizia.php?id=<[idNotizia1]>" style="margin-bottom: 1px;">
-                <i class="fas fa-pencil-alt">
-                </i>
-                Modifica
-              </a>
-              <[elimina]>
-            </td>
-          </tr>
-          <[/foreach]>
           </tbody>
         </table>
       </div>

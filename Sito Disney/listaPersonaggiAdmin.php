@@ -19,7 +19,7 @@ if (isset($mysqli)) {
         }
         $body->setContent("idPersonaggio1", $data['idPersonaggio']);
         $body->setContent("elimina", '
-                                                <button class="btn btn-danger btn-sm" onclick="document.getElementById(\'idP01'.$data['idPersonaggio'].'\').style.display=\'block\'">
+                                                <button class="btn btn-danger btn-sm" style="width: -webkit-fill-available;" onclick="document.getElementById(\'idP01'.$data['idPersonaggio'].'\').style.display=\'block\'">
                                                   <i class="fas fa-trash">
                                                   </i>Elimina</button>
                                                 <div id="idP01' . $data['idPersonaggio'] . '" class="modal1" style="width: 800px;height: 300px;margin-top: 130px;margin-left: 450px;overflow: hidden;border-radius: 20px;">
