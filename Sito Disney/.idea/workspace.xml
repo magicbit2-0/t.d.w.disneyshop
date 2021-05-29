@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizie.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/regia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/invoiceUtenti.php" beforeDir="false" afterPath="$PROJECT_DIR$/invoiceUtenti.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listaAttoriAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/listaAttoriAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listaPersonaggiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/listaPersonaggiAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notizie.php" beforeDir="false" afterPath="$PROJECT_DIR$/notizie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/projects.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +89,8 @@
       <workItem from="1622020779264" duration="8238000" />
       <workItem from="1622110899020" duration="9236000" />
       <workItem from="1622136752721" duration="6527000" />
-      <workItem from="1622208894570" duration="9715000" />
+      <workItem from="1622208894570" duration="9837000" />
+      <workItem from="1622280692458" duration="378000" />
     </task>
     <servers />
   </component>

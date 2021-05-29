@@ -47,14 +47,14 @@ if(isset($_REQUEST['signedup']))
             $main = new Template("dtml/index.html");
         }*/
 
-        $result = $mysqli->query("(SELECT id as idImg,titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' and votazione is not null order by data_uscita desc limit 1) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' and votazione is not null order by data_uscita desc limit 1) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' and votazione is not null order by data_uscita desc limit 1) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cortometraggi Pixar' and votazione is not null order by data_uscita desc limit 1) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' and votazione is not null order by data_uscita desc limit 2) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' and votazione is not null order by data_uscita desc limit 2) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' and votazione is not null order by data_uscita desc limit 2) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cortometraggi Pixar' and votazione is not null order by data_uscita desc limit 2);");
+        $result = $mysqli->query("(SELECT id as idImg,titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' and votazione <> 0.0 order by data_uscita desc limit 1) union
+        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' and votazione <> 0.0 order by data_uscita desc limit 1) union
+        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' and votazione <> 0.0 order by data_uscita desc limit 1) union
+        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cortometraggi Pixar' and votazione <> 0.0 order by data_uscita desc limit 1) union
+        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' and votazione <> 0.0 order by data_uscita desc limit 2) union
+        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' and votazione <> 0.0 order by data_uscita desc limit 2) union
+        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' and votazione <> 0.0 order by data_uscita desc limit 2) union
+        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cortometraggi Pixar' and votazione <> 0.0 order by data_uscita desc limit 2);");
 
     while ($data = $result->fetch_assoc()) {
         if ($data['categoria'] == "Film Disney"){

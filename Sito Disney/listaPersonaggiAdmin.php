@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_NOTICE);
 require "include/dbms.inc.php";
 require "include/template2.inc.php";
 require "include/adminFunctions.inc.php";
-
+$cont=1;
 $body=new Template("dtml/ADMIN/pages/examples/personaggi.html");
 if(isset($_SESSION['delete'])){
     $body->setContent("alert", "deleted");
@@ -17,6 +17,7 @@ if (isset($mysqli)) {
         foreach ($data as $key => $value) {
             $body->setContent($key, $value);
         }
+        $body->setContent("cont", $cont++);
         $body->setContent("idPersonaggio1", $data['idPersonaggio']);
         $body->setContent("elimina", '
                                                 <button class="btn btn-danger btn-sm" style="width: -webkit-fill-available;" onclick="document.getElementById(\'idP01'.$data['idPersonaggio'].'\').style.display=\'block\'">

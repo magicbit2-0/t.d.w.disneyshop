@@ -4,6 +4,7 @@ require "include/dbms.inc.php";
 require "include/template2.inc.php";
 require "include/adminFunctions.inc.php";
 $body=new Template("dtml/ADMIN/pages/examples/projects.html");
+$cont=1;
 if(isset($_SESSION['delete'])){
     $body->setContent("alert", "deleted");
     unset($_SESSION['delete']);
@@ -16,6 +17,7 @@ if (isset($mysqli)) {
         foreach ($data as $key => $value) {
             $body->setContent($key, $value);
             }
+        $body->setContent("cont", $cont++);
         $body->setContent("votazione1", '<div class="progress-bar bg-green" role="progressbar" aria-valuenow="'.$data['votazione'].'" 
                                                         aria-valuemin="0" aria-valuemax="10" style="width: '. $data['votazione']*10 .'%"></div>');
     }
