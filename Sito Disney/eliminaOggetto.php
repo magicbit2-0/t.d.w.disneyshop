@@ -16,46 +16,28 @@ if (isset($mysqli)){
     if(isset($_GET['id']) and isset($_GET['table'])){
         $id=$_GET['id'];
         $table=$_GET['table'];
+        $result = $mysqli->query("delete from {$table} where id = {$id} ");
+        $_SESSION['delete'] = "el";
         switch ($table){
             case 'articolo':
-                //$result = $mysqli->query("delete from {$table} where id = {$id} ");
-                $_SESSION['delete'] = "el";
+                header("location: projects.php");
                 break;
             case 'regia':
-                //$result = $mysqli->query("delete from {$table} where id = {$id} ");
-                $_SESSION['delete'] = "el";
+                header("location: listaAttoriAdmin.php");
                 break;
             case 'personaggio':
-                //$result = $mysqli->query("delete from {$table} where id = {$id} ");
-                $_SESSION['delete'] = "el";
+                header("location: listaPersonaggiAdmin.php");
                 break;
             case 'notizia':
-                //$result = $mysqli->query("delete from {$table} where id = {$id} ");
-                $_SESSION['delete'] = "el";
+                header("location: notizie.php");
                 break;
             case 'ordine':
-                //$result = $mysqli->query("delete from {$table} where id = {$id} ");
-                $_SESSION['delete'] = "el";
+                header("location: invoiceUtenti.php");
                 break;
             case 'parola_chiave':
-                //$result = $mysqli->query("delete from {$table} where id = {$id} ");
-                $_SESSION['delete'] = "el";
+                header("location: aggiungiParolaChiaveAdmin.php ");
                 break;
         }
-        if($table == 'regia'){
-            header("location: listaAttoriAdmin.php");
-        }elseif ($table == 'articolo'){
-            header("location: projects.php");
-        }elseif ($table == 'personaggio'){
-            header("location: listaPersonaggiAdmin.php");
-        } elseif ($table == 'notizia'){
-            header("location: notizie.php");
-        }elseif ($table == 'ordine'){
-            header("location: invoiceUtenti.php");
-        }elseif ($table == 'parola_chiave'){
-            header("location: aggiungiParolaChiaveAdmin.php ");
-        }
-        //$result = $mysqli->query("delete from $table where id = $id");
     } else {
         echo "id o table non trovati";
         exit;

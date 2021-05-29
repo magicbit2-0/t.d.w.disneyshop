@@ -20,7 +20,6 @@ if (isset($mysqli)) {
         $body->setContent("cont", $cont++);
         $body->setContent("votazione1", '<div class="progress-bar bg-green" role="progressbar" aria-valuenow="'.$data['votazione'].'" 
                                                         aria-valuemin="0" aria-valuemax="10" style="width: '. $data['votazione']*10 .'%"></div>');
-    }
     $body->setContent("elimina", '<button class="btn btn-danger btn-sm" style="width: -webkit-fill-available;" onclick="document.getElementById(\'idA01'.$data['idImg'].'\').style.display=\'block\'">
                                                   <i class="fas fa-trash">
                                                   </i>Elimina</button>
@@ -38,6 +37,7 @@ if (isset($mysqli)) {
                                                     </div>
                                                   </div>
                                                 </div>');
+    }
 }
 $main->setContent("body_admin", $body->get());
 $main->close();

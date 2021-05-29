@@ -47,13 +47,18 @@ if (isset($mysqli)) {
             $inputTrama = addslashes($_POST['inputTrama']);
             $inputDurata = addslashes($_POST['inputDurata']);
             $inputPrezzo = addslashes($_POST['inputPrezzo']);
+                $url = addslashes($_POST['customTrailer']);
+                $url = filter_var($url, FILTER_SANITIZE_URL);
+                $inputTrailer = parse_url($url, PHP_URL_PATH);
+                if (filter_var($url, FILTER_VALIDATE_URL) or $url == '') {
+                } else {
+                    $em = "url non valido";
+                    goto URL_INVALIDO;
+                }
             $imgName = $_FILES["customFile"]["name"];
             $imgType = $_FILES["customFile"]["type"];
             $img_size = $_FILES["customFile"]["size"];
             $imgData = addslashes(file_get_contents($_FILES["customFile"]["tmp_name"]));
-            if (isset($_FILES['customTrailer']) and $_FILES['customTrailer']['error'] != 4)
-            $vdoData = addslashes(file_get_contents($_FILES["customTrailer"]["tmp_name"]));
-            else $vdoData = null;
             $error = $_FILES["customFile"]["error"];
             if ($error === 0) {
                 if ($img_size > 1250000) {
@@ -68,7 +73,7 @@ if (isset($mysqli)) {
                                                     values ('$inputName','{$_POST['inputData']}',
                                                     '$inputDurata','$inputTrama', 0 ,
                                                     '$inputPrezzo','$imgData',
-                                                    '$vdoData','$inputCategoria')");
+                                                    '$inputTrailer','$inputCategoria')");
                         /*echo "insert into articolo (titolo, data_uscita, durata, trama, votazione, prezzo, locandina, trailer,  categoria)
                                                     values ('$inputName','{$_POST['inputData']}',
                                                     '$inputDurata','$inputTrama', 0 ,
@@ -122,6 +127,7 @@ if (isset($mysqli)) {
         } else {
             $em = "questo elemento già esiste!";
         }
+        URL_INVALIDO:
         if ($em != null) {
             $body->setContent("alert", $em);
             foreach ($_POST as $key => $selectedOption) {
