@@ -161,20 +161,22 @@ if (isset($mysqli)) {
     } //trailer.php?id={$_GET['id']}  RYAp1GuzTrE
 
 
-    $result = $mysqli->query("select * from articolo_preferito where articolo_id={$_GET['id']} and utente_id={$_SESSION['idUtente']};");
-    $is_favourite = mysqli_num_rows($result);
-    if($is_favourite > 0){
-        $body->setContent("aggiugiRimuoviPreferito", "<form action='removefromfavorites.php' method='POST'>
-                                                        <i class='ion-heart' style='color: #dd003f; margin-right: 5px;'></i>
-                                                        <input type='hidden' name='idFilm' value='{$_GET['id']}'>
-                                                        <input type='submit' name='preferito' value='RIMUOVI DAI PREFERITI' style='font-family: Dosis, sans-serif; font-size: 14px; color: #dd003f; font-weight: bold; background: none;'>
-                                                    </form>");
-    } else {
-        $body->setContent("aggiugiRimuoviPreferito", "<form action='addToFavorites.php' method='POST'>
-                                                        <i class='ion-heart' style='color: #dd003f; margin-right: 5px;'></i>
-                                                        <input type='hidden' name='idFilm' value='{$_GET['id']}'>
-                                                        <input type='submit' name='preferito' value='AGGIUNGI AI PREFERITI' style='font-family: Dosis, sans-serif; font-size: 14px; color: #dd003f; font-weight: bold; background: none;'>
-                                                    </form>");
+    if(isset($_SESSION['idUtente'])){
+        $result = $mysqli->query("select * from articolo_preferito where articolo_id={$_GET['id']} and utente_id={$_SESSION['idUtente']};");
+        $is_favourite = mysqli_num_rows($result);
+        if($is_favourite > 0){
+            $body->setContent("aggiugiRimuoviPreferito", "<form action='removefromfavorites.php' method='POST'>
+                                                            <i class='ion-heart' style='color: #dd003f; margin-right: 5px;'></i>
+                                                            <input type='hidden' name='idFilm' value='{$_GET['id']}'>
+                                                            <input type='submit' name='preferito' value='RIMUOVI DAI PREFERITI' style='font-family: Dosis, sans-serif; font-size: 14px; color: #dd003f; font-weight: bold; background: none;'>
+                                                        </form>");
+        } else {
+            $body->setContent("aggiugiRimuoviPreferito", "<form action='addToFavorites.php' method='POST'>
+                                                            <i class='ion-heart' style='color: #dd003f; margin-right: 5px;'></i>
+                                                            <input type='hidden' name='idFilm' value='{$_GET['id']}'>
+                                                            <input type='submit' name='preferito' value='AGGIUNGI AI PREFERITI' style='font-family: Dosis, sans-serif; font-size: 14px; color: #dd003f; font-weight: bold; background: none;'>
+                                                        </form>");
+        }
     }
 }
 

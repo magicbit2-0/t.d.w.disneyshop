@@ -18,7 +18,7 @@
             $body->setContent("idImgNotizia", $data['id']);
         }
 
-        $result = $mysqli->query("SELECT u.id, u.nome, u.cognome, c.data, c.testo FROM utente u join commento c on u.id = c.utente_id join notizia n on c.notizia_id = n.id WHERE n.id={$_GET['id']}");
+        $result = $mysqli->query("select * from commento where notizia_id ={$_GET['id']}");
 
         while ($data1 = $result->fetch_assoc()) {
             $body->setContent("nome_utente", $data1['nome']);
