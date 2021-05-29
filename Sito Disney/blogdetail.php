@@ -19,11 +19,20 @@
         }
 
         $result = $mysqli->query("select * from commento where notizia_id ={$_GET['id']}");
-
-        while ($data1 = $result->fetch_assoc()) {
-            $body->setContent("nome_utente", $data1['nome']);
-            $body->setContent("data_commento", $data1['data']);
-            $body->setContent("testo_commento", $data1['testo']);
+        $numberOfComments = mysqli_num_rows($result);
+        if($numberOfComments > 0){
+            while ($data1 = $result->fetch_assoc()) {
+                $body->setContent("commenti", '<div class="cmt-item flex-it">
+                                                <div class="author-infor">
+                                                    <div class="flex-it2">
+                                                        <h6 style="color: whitesmoke;">'.$data1['nome'].'</h6>
+                                                        <span class="time">'.$data1['data'].'</span>
+                                                    </div>
+                                                    <p>'.$data1['testo'].'</p>
+                                                </div>
+                                            </div>');}
+        } else {
+            $body->setContent("commenti", "<div><h2 style='color:#d36b6b; margin-top: 10px;'>Non ci sono commenti per questa notizia</h2></div>");
         }
 
         $result = $mysqli->query("SELECT id as idNotizia1, titolo FROM notizia WHERE categoria='Cartone Disney' limit 1");

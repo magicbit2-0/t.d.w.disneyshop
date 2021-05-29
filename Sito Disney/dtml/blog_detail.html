@@ -40,21 +40,14 @@
                         </div>
                     </div>
                     <div class="comments">
-                        <h4>Commenti</h4> <[foreach]>
-                        <div class="cmt-item flex-it">
-                            <div class="author-infor">
-                                <div class="flex-it2">
-                                    <h6 style="color: whitesmoke;"><[nome_utente]></h6>
-                                    <span class="time"><[data_commento]></span>
-                                </div>
-                                <p><[testo_commento]></p>
-                            </div>
-                        </div>
+                        <h4>Commenti</h4> 
+                        <[foreach]>
+                            <[commenti]>
                         <[/foreach]>
                     </div>
                     <div class="comment-form">
                         <h4>Lascia un commento</h4>
-                        <form method="POST" id="aggiungiCommentoForm" action="addComment.php">
+                        <form method="POST" action="addComment.php">
                             <div class="row">
                                 <div class="col-md-4">
                                     <label for="inputNome" style="color: white;">Nome</label>
@@ -72,7 +65,7 @@
                                 </div>
                             </div>
                             <input type="hidden" name="notizia" value="<[idImgNotizia]>">
-                            <input type="submit" name="aggiungiCommento" form="aggiungiCommentoForm" value="Aggiungi Commento" class="btn btn-success float-right">
+                            <input type="submit" name="aggiungiCommento" value="Aggiungi Commento" class="btn btn-success float-right">
                         </form>
                     </div>
                     

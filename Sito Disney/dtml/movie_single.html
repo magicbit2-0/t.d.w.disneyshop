@@ -1,5 +1,5 @@
 
-<div class="hero mv-single-hero">
+<div class="hero mv-single-hero" style="border: none;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -32,7 +32,7 @@
                         <div class="rate">
                             <i class="ion-android-star"></i>
                             <p><span><[votazione]></span> /10<br>
-                                <span class="rv"><[conteggio_recensioni]> Recensioni</span>
+                                <span class="rv"><[conteggio_recensioni]></span>
                             </p>
                         </div>
                         <div class="rate-star">
@@ -146,7 +146,7 @@
                                                 <h2><[titolo]></h2>
                                             </div>
                                             <!-- Pagina per scrivere le recensioni -->
-                                            <a href="#" class="redbtn recensioneBtn">Scrivi Recensione</a>
+                                            <a href="#recensione" class="redbtn recensioneBtn">Scrivi Recensione</a>
                                         </div>
                                         <div class="topbar-filter">
                                             <p>Trovate <span><[conteggio_recensioni]> </span> in totale </p>
@@ -161,8 +161,9 @@
                                         <[foreach]>
                                         <div><[no_reviews]></div>
                                         <[/foreach]>
-                                        <div class="topbar-filter">
-                                        </div>
+
+                                        <[scriviRecensione]>
+
                                     </div>
                                 </div>
                                 <div id="cast" class="tab">

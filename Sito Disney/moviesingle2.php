@@ -178,6 +178,29 @@ if (isset($mysqli)) {
                                                             <input type='submit' name='preferito' value='AGGIUNGI AI PREFERITI' style='font-family: Dosis, sans-serif; font-size: 14px; color: #dd003f; font-weight: bold; background: none;'>
                                                         </form>");
         }
+
+        $body->setContent("scriviRecensione",'<div class="comment-form" style="margin-top: 50px;">
+                                                <form method="POST" action="addReview.php">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <label for="inputNome" style="color: white;">Voto:</label>
+                                                            <input type="number" step="0.1" min="0" max="10" value="0" id="inputNome" name="nome" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="inputEmail" style="color: white;">Titolo Recensione:</label>
+                                                            <input type="text" id="inputEmail" name="email" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12" style="width: 750px;">
+                                                            <label for="inputRecensione" style="color: white;">Scrivi qui la tua recensione:</label>
+                                                            <textarea type="text" id="inputRecensione" name="recensione" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <input type="hidden" name="articolo" value="<[idImg]>">
+                                                    <input type="submit" name="aggiungiCommento" value="Aggiungi Recensione" class="btn btn-success float-right" style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;">
+                                                </form>
+                                            </div>');
     }
 }
 
