@@ -13,8 +13,7 @@ Class Auth {
             exit();
         }*/
         if($_SESSION['idUtente'] != null){
-            Header("location: ./index.php?accesso=LoginOk");
-
+            //Header("location: ./index.php?accesso=LoginOk");
             $_SESSION['auth']=true;
             exit();
         }
@@ -25,12 +24,13 @@ Class Auth {
                                         ");
             $data = $result->fetch_assoc();
             $_SESSION['idUtente']=$data['id'];
-            $result0 = $mysqli->query("select u.id as id, s.nome as script from servizi s join servizi_gruppo sg on sg.id_servizi = s.id
-                                            join gruppo g on g.id = sg.id_gruppo
-                                            join gruppo_utente gu on gu.gruppo_id=g.id
-                                            join utente u on u.id = gu.utente_id 
-                                            where u.username = '{$_POST['username']}'
-                                            and password = md5('{$_POST['password']}')");
+            $result0 = $mysqli->query("SELECT servizi.nome 
+                                                FROM utente 
+                                                LEFT JOIN gruppo_utente ON gruppo_utente.utente_id = utente.id 
+                                                LEFT JOIN servizi_gruppo ON servizi_gruppo.id_gruppo = gruppo_utente.gruppo_id 
+                                                LEFT JOIN servizi ON servizi.id = servizi_gruppo.id_servizi 
+                                                WHERE username = '{$_POST['username']}'
+                                                and password = MD5('{$_POST['password']}');");
             if (!$result){
                 echo "errore";
                 exit();
@@ -60,16 +60,13 @@ Class Auth {
             while($data = $result0 -> fetch_assoc()){
                 $script[$data['script']]=true;
             }
-
             $_SESSION['auth']=$script;
-        }
-        else
-        {
+        }else {
             if(!isset($_SESSION['auth'])) {
                 /*$main = new Template("dtml/index.html");
                 $body = new Template("dtml/homepage.html");*/
-                Header("location: ./index.php?accesso=noLogin");
-                exit();
+                Header("location: ./index.php");
+                exit;
             }
         }
 
@@ -84,6 +81,5 @@ Class Auth {
 }
 
 Auth::doLogin();
-
 
 ?>

@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sito Disney/include/auth2.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/include/auth.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/include/auth.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito Disney/shoppage.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/shoppage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EventsApp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -142,7 +146,7 @@
       <workItem from="1621784916434" duration="1761000" />
       <workItem from="1621950627090" duration="21000" />
       <workItem from="1622020254727" duration="754000" />
-      <workItem from="1622298082176" duration="520000" />
+      <workItem from="1622298082176" duration="13773000" />
     </task>
     <servers />
   </component>
@@ -162,10 +166,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1621950646513">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1622361088489">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621950646513" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1622361088489" />
+    <state x="444" y="86" key="NewPhpClassDialog" timestamp="1622302128834">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="444" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1622302128834" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1621368009831">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
