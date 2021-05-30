@@ -31,7 +31,7 @@ if (isset($mysqli)) {
             $body->setContent("nome_regista1", $data['nome_regista']);
         }
     $result1 = $mysqli->query("select r.id as id_attore, concat(r.nome,' ', r.cognome) as nome_attore from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id 
-                                    join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'attore' and a.id = {$_GET['id']}");
+                                     join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'attore' and a.id = {$_GET['id']}");
 
     while ($data1 = $result1->fetch_assoc()){
         $body->setContent("id_attore", $data1['id_attore']);
@@ -151,7 +151,7 @@ if (isset($mysqli)) {
                                                         <span>' . $data1['votazione_recensione'] . '</span> /10<br>
                                                     </div>
                                                     <p class="time">
-                                                        ' . $data1['data_recensione'] . '<a href="userprofile.html"> ' . $data1['nome_utente'] . '</a>
+                                                        ' . $data1['data_recensione'] . " ". $data1['nome_utente'] . '
                                                     </p>
                                                 </div>
                                             </div>
@@ -174,6 +174,20 @@ if (isset($mysqli)) {
                                             <div><a href=\'https://www.youtube.com/embed'.$data['trailer'] .'\' class=\'item item-2 redbtn fancybox-media hvr-grow\'><i class=\'ion-play\'></i></a></div>');
     }//trailer.php?id={$_GET['id']}
 
+    $result = $mysqli->query("select votazione from articolo where id = {$_GET['id']}");
+    $data = $result->fetch_assoc();
+    $star = floor($data['votazione']);
+    $str = "";
+    for($i=0; $i<=$star-1; $i++){
+        $str = $str . '<i class="ion-ios-star"> </i>';
+    }
+    $str2 = "";
+    for($i=0; $i<=10-$star-1;$i++){
+        $str2 = $str2 . '<i class="ion-ios-star-outline"></i>';
+    }
+    $body->setContent("stellina_gialla", $str);
+    $body->setContent("stellina_nera", $str2);
+
     if(isset($_SESSION['idUtente'])){
         $result = $mysqli->query("select * from articolo_preferito where articolo_id={$_GET['id']} and utente_id={$_SESSION['idUtente']};");
         $is_favourite = mysqli_num_rows($result);
@@ -191,26 +205,26 @@ if (isset($mysqli)) {
                                                         </form>");
         }
 
-        $body->setContent("scriviRecensione",'<div class="comment-form" style="margin-top: 50px;">
+        $body->setContent("aggiungiRecensione",'<div class="comment-form" style="margin-top: 50px;">
                                                 <form method="POST" action="addReview.php">
                                                     <div class="row">
                                                         <div class="col-md-4">
-                                                            <label for="inputNome" style="color: white;">Voto:</label>
-                                                            <input type="number" step="0.1" min="0" max="10" value="0" id="inputNome" name="nome" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;">
+                                                            <label for="voto" style="color: white;">Voto:</label>
+                                                            <input type="number" step="0.1" min="0" max="10.0" value="0" id="voto" name="voto" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;">
                                                         </div>
                                                         <div class="col-md-4">
-                                                            <label for="inputEmail" style="color: white;">Titolo Recensione:</label>
-                                                            <input type="text" id="inputEmail" name="email" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;">
+                                                            <label for="titolo" style="color: white;">Titolo Recensione:</label>
+                                                            <input type="text" id="titolo" name="titolo" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;">
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-12" style="width: 750px;">
-                                                            <label for="inputRecensione" style="color: white;">Scrivi qui la tua recensione:</label>
-                                                            <textarea type="text" id="inputRecensione" name="recensione" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;"></textarea>
+                                                            <label for="testo" style="color: white;">Scrivi qui la tua recensione:</label>
+                                                            <textarea type="text" id="testo" name="testo" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;"></textarea>
                                                         </div>
                                                     </div>
-                                                    <input type="hidden" name="articolo" value="<[idImg]>">
-                                                    <input type="submit" name="aggiungiCommento" value="Aggiungi Recensione" class="btn btn-success float-right" style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;">
+                                                    <input type="hidden" name="articolo_id" value='.$_GET['id'].'>
+                                                    <input type="submit" name="aggiungiRecensione" value="Aggiungi Recensione" class="redbtn recensioneBtn" style="border-radius: 30px;" >
                                                 </form>
                                             </div>');
     }

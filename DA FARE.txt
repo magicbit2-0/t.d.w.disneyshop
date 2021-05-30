@@ -1,14 +1,8 @@
-PAGINA MOVIESINGLE2/MOVIESINGLE:
-1) Aggiungi ai preferiti
-2) Vota questo film
-3) Scrivi recensione
-
-PAGINA BLOGDETAIL:
-1) Commenti
-
-PROSSIMAMENTE:
-1) Mettere i giorni, le ore, i minuti e i secondi bene
+DATABASE:
+1) TABELLA -> COMMENTO -> TOGLIERE UTENTE_ID
+2) TABELLA -> ARTICOLO -> METTERE A VOTAZIONE IL VALORE MASSIMO 10
+3) TABELLA -> SERVIZI -> AGGIUNGERE TUTTE LE PAGINE A CUI SOLO UN UTENTE LOGGATO PUO' ACCEDERE! =>
+=> QUINDI DI CONSEGUENZA CAMBIARE GRUPPO_UTENTE, GRUPPO, SERVIZI_GRUPPO
 
 UTENTE AMMINISTRATORE LOGGATO:
 1) Autorizzazioni per gli utenti: un cliente non può avere accesso alle funzioni dell'amministratore e viceversa (ultime lezioni del prof)
-2) TUTTE le pagine mancanti dell'amministratore (html e php)
