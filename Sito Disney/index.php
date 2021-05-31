@@ -20,6 +20,9 @@
 $body = new Template("dtml/homepage.html");
 if(isset($_REQUEST['signedup']))
     $body -> setContent("allerta","<body onload=\"window.alert(' Registrazione effettuata! ') \" > ");
+if ($_REQUEST['accesso'] == 'AccessDenied') {
+    $body->setContent("allerta", "<body onload=\"window.alert(' Accesso Negato! ') \" > ");
+}
     if (isset($mysqli)) {
         /*if($_SESSION['idUtente']!= null){
             $main = new Template("dtml/index2.html");

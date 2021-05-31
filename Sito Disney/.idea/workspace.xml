@@ -3,19 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aggiungiProdottiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/aggiungiProdottiAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/invoice_utenti.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizie.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/personaggi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/regia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eliminaOggetto.php" beforeDir="false" afterPath="$PROJECT_DIR$/eliminaOggetto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bottonChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/bottonChange.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/index2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/adminFunctions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/adminFunctions.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/projects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/auth.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/auth.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/auth2.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/auth2.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infoAttoreAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/infoAttoreAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moviesingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/moviesingle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moviesingle2.php" beforeDir="false" afterPath="$PROJECT_DIR$/moviesingle2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppage.php" beforeDir="false" afterPath="$PROJECT_DIR$/shoppage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/sfondo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userfavoritegrid.php" beforeDir="false" afterPath="$PROJECT_DIR$/userfavoritegrid.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,12 +100,24 @@
       <workItem from="1622110899020" duration="9236000" />
       <workItem from="1622136752721" duration="6527000" />
       <workItem from="1622208894570" duration="9837000" />
-      <workItem from="1622280692458" duration="9881000" />
+      <workItem from="1622280692458" duration="11865000" />
+      <workItem from="1622452460293" duration="16028000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

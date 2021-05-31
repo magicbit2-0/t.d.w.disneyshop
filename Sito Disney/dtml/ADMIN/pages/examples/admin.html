@@ -220,6 +220,74 @@
         <!-- /.Left col -->
         <!-- right col (We are only adding the ID to make the widgets sortable)-->
         <section class="col-lg-5 connectedSortable">
+          <div class="row">
+            <div class="col-md-6" style="flex: none;max-width: none;">
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Personalizza sito</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <form method="post" action="admin.php" enctype="multipart/form-data">
+                      <div class="form-group">
+                        <label>Trailer homepage:
+                        <small> (max 6) </small>
+                        </label>
+                        <div class="select2-purple">
+                          <select class="select2 select2-hidden-accessible" id="userRequest_activity" name="inputTrailerHomepage[]" multiple="" data-placeholder="Seleziona i cartoni relativi a questo elemento" data-dropdown-css-class="select2-purple" style="width: 100%;" data-select2-id="2" tabindex="-1" aria-hidden="true">
+                            <[foreach]>
+                            <[trailer]>
+                            <[/foreach]>
+                          </select>
+                        </div>
+                      </div>
+                    <input type="submit" name="submit" value="Modifica sito" class="btn btn-success float-right">
+
+                    <!-- <div class="form-group">
+                       <label for="customFile">Immagine di sfondo</label>
+                       <div class="custom-file" style="display: inline-flex;">
+                         <input type="file" class="custom-file-input" name="customFile" id="customFile">
+                         <label class="custom-file-label" for="customFile" style="width: 95%;"><[customFile]></label>
+                         <div class="text-right py-0 align-middle">
+                           <div class="btn-group btn-group-sm">
+                             <a href="#popupImg" class="btn btn-info" style="height: 2.4rem;width: 37px;padding: 8px;"><i class="fas fa-eye"></i></a>
+                           </div>
+                           <div id="popupImg" class="sopra" style="z-index: 10;">
+                             <div class="popup">
+                               <h4 style="display: inline-flex;float: left;margin-top: 4px;">Immagine di sfondo corrente</h4>
+                               <a class="chiudi" style="position: unset;top: 0px;right: 0px;" href="#">&times;</a>
+                               <div class="contenuto" >
+                                 <img src="sfondo.php?id=<[id]>" height="550px">
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="form-group">
+                       <label>Lista Parole chiave</label>
+                       <div class="select2-red">
+                         <select class="select2 select2-hidden-accessible" name="inputParoleChiave[]" data-select2-id="1" multiple="" data-placeholder="Seleziona le parole chiave relative a questo elemento" data-dropdown-css-class="select2-purple" style="width: 100%;"  tabindex="-1" aria-hidden="true">
+                           <[foreach]>
+                           <[paroleChiave]>
+                           <[/foreach]>
+                         </select>
+                       </div>
+                     </div> -->
+                  </form>
+                </div>
+
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+
           <!-- /.card -->
         </section>
         <!-- right col -->
@@ -229,3 +297,61 @@
   </section>
   <!-- /.content -->
 </div>
+<style>
+  .sopra{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .sopra:target{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .popup{
+    margin: 90px auto auto auto;
+    padding: 0px 10px 10px 10px;
+    background: #fff;
+    border-radius: 5px;
+    width: fit-content;
+    position: relative;
+    transition: all 1s ease-in-out;
+  }
+
+  .popup .chiudi{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .popup .chiudi:hover{
+    color: red;
+  }
+
+  .popup .contenuto{
+    max-height: 30%;
+    overflow: auto;
+  }
+
+  @media screen and (max-width: 700px) {
+    .popup{
+      width: 70%;
+    }
+  }
+  .alert {
+    opacity: 1;
+    transition: opacity 0.6s; /* 600ms to fade out */
+  }
+</style>

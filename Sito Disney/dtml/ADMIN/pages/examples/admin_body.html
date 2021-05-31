@@ -387,6 +387,22 @@
   $(function () {
     bsCustomFileInput.init();
   });
+
+  $(document).ready(function() {
+
+    var last_valid_selection = null;
+
+    $('#userRequest_activity').change(function(event) {
+
+      if ($(this).val().length > 6) {
+
+        $(this).val(last_valid_selection);
+      } else {
+        last_valid_selection = $(this).val();
+      }
+    });
+  });
+
   $(function () {
     //Initialize Select2 Elements
     $('.select2').select2()

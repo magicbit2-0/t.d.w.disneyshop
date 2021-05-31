@@ -61,7 +61,7 @@ if (isset($mysqli)) {
             }
             $body->setContent("no_preferiti", '<div class="movie-item-style-2 movie-item-style-1 style-3">
                         <img src="img.php?id=' . $data['idArticolo'] . '" alt="">
-                        <div class="hvr-inner">
+                        <div class="hvr-inner" style="padding: 10px;margin-left: 25px;margin-right: 5px;">
                             <a href="' . $categoria_film . '">Leggi di più <i class="ion-android-arrow-dropright"></i> </a>
                         </div>
                         <div class="mv-item-infor">

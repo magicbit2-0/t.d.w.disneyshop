@@ -159,7 +159,7 @@ if (isset($mysqli)) {
         $data = $result->fetch_assoc();
         $body->setContent("bottoneTrailer",'<div><a href=\'#\' class=\'item item-1 redbtn\'> <i class=\'ion-play\'></i>Guarda trailer</a></div>
                                             <div><a href=\'https://www.youtube.com/embed'.$data['trailer'] .'\' class=\'item item-2 redbtn fancybox-media hvr-grow\'><i class=\'ion-play\'></i></a></div>');
-    } //trailer.php?id={$_GET['id']}  RYAp1GuzTrE
+    } //sfondo.php?id={$_GET['id']}  RYAp1GuzTrE
 
     $result = $mysqli->query("select votazione from articolo where id = {$_GET['id']}");
     $data = $result->fetch_assoc();
