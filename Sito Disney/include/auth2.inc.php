@@ -1,8 +1,24 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE);
 
 class Auth{
 
-    function doLogin(){
+    function doLoginAdmin(){
+        global $mysqli;
+        if(isset($_SESSION['idUtente'])) {
+            $result = $mysqli->query("(select g.`tipologia utente` as tipo_utente from gruppo g join gruppo_utente gu on gu.gruppo_id = g.id
+                                    join utente u on u.id = gu.utente_id where u.id = '{$_SESSION['idUtente']}' order by tipo_utente)");
+            $data = $result->fetch_assoc();
+            if ($data['tipo_utente'] <> 'amministratore') {
+                header("Location: index.php?accesso=AccessDenied");
+                exit;
+            }
+        } else {
+            header("Location: index.php?accesso=noLogin");
+        }
+    }
+
+    /*function doLogin(){
         global $mysqli;
 
         //if(isset($_POST['username']) and isset($_POST['password'])) {
@@ -16,7 +32,7 @@ class Auth{
                                 and password = MD5('{$_POST['password']}'); ");
             */
 
-            $result = $mysqli->query("SELECT servizi.nome 
+           /* $result = $mysqli->query("SELECT servizi.nome
                                                     FROM utente 
                                                     LEFT JOIN gruppo_utente ON gruppo_utente.utente_id = utente.id 
                                                     LEFT JOIN servizi_gruppo ON servizi_gruppo.id_gruppo = gruppo_utente.gruppo_id 
@@ -44,7 +60,7 @@ class Auth{
             echo 'sessione2: ';
             print_r($_SESSION);
             if(!isset($_SESSION['auth'])){
-                Header("Location: index.php?error2");
+                Header("Location: index.php?errorLogin");
                 exit;
             }
         }
@@ -58,8 +74,7 @@ class Auth{
         echo 'sessione 3: ';
         print_r($_SESSION);
 
-    }
+    }*/
 }
-
-Auth::doLogin();
+(new Auth)->doLoginAdmin();
 ?>

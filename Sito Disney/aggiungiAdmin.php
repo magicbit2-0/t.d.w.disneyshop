@@ -1,18 +1,21 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
+session_start();
 require "include/dbms.inc.php";
 require "include/template2.inc.php";
+require "include/auth2.inc.php";
 require "include/adminFunctions.inc.php";
-$var = array();
+
 $body=new Template("dtml/ADMIN/pages/examples/aggiungi-admin.html");
 if (isset($mysqli)) {
+
     $result = $mysqli->query("SELECT *
                                     FROM utente where id = {$_GET['id']}");
     $data = $result->fetch_assoc();
     foreach ($data as $key => $value) {
         $body->setContent($key, $value);
     }
-
+    $var = array();
     $result = $mysqli->query("select g.id as id_gruppo, g.`tipologia utente` as tipo_utente from gruppo g
                                          join gruppo_utente gu on g.id=gu.gruppo_id
                                          join utente u on u.id=gu.utente_id where u.id={$_GET['id']} and g.`tipologia utente`='amministratore'");

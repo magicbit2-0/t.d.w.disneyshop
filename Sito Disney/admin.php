@@ -5,7 +5,6 @@ require "include/dbms.inc.php";
 require "include/template2.inc.php";
 require "include/auth2.inc.php";
 require "include/adminFunctions.inc.php";
-//$main=new Template("dtml/ADMIN/pages/examples/admin_body.html");
 
 $body=new Template("dtml/ADMIN/pages/examples/admin.html");
 if (isset($mysqli)) {

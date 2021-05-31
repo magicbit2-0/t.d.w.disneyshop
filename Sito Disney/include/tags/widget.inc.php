@@ -43,30 +43,30 @@ class widget extends taglibrary
         switch ($data) {
             case "errorLogin":
                 $buffer = "<p class=\"ion-alert-circled alert-warning\" 
-                style=\"background-color: darksalmon;color: unset;font-weight: bold;text-transform: initial;\"
+                style=\"background-color: darksalmon;color: unset;border-radius: 1px;font-weight: bold;text-transform: initial;\"
                 ><i class=\"icon-remove\"></i> Username/Password errati. Riprova!</p>";
                 break;
             case "noLogin":
                 $buffer = "<p class=\"ion-alert-circled alert-warning\" 
-                style=\"background-color: darksalmon;color: unset;font-weight: bold;text-transform: initial;\"
-                ><i class=\"icon-warning\"></i> Non puoi accedere a questa pagina! Effettua prima il login</p>";
+                style=\"border-radius: 1px;font-weight: bold;text-transform: initial;\"
+                ><i class=\"warning\"></i> Non puoi accedere a questa pagina! Effettua il login</p>";
                 break;
             case "error":
                 $buffer = "<p class=\"warnbox red\"><i class=\"icon-remove\"></i> There was an error!</p>";
                 break;
             case "invalidEmail":
                 $buffer = "<p class=\"ion-alert-circled alert-warning\" 
-                style=\"background-color: darksalmon;color: unset;font-weight: bold;text-transform: initial;\"
+                style=\"border-radius: 1px;background-color: darksalmon;color: unset;font-weight: bold;text-transform: initial;\"
                 ><i class=\"icon-remove\"></i> Email non valida. Riprova!</p>";
                 break;
             case "pwdMatch":
                 $buffer = "<p class=\"ion-alert-circled alert-warning\" 
-                style=\"background-color: darksalmon;color: unset;font-weight: bold;text-transform: initial;\"
+                style=\"border-radius: 1px;background-color: darksalmon;color: unset;font-weight: bold;text-transform: initial;\"
                 ><i class=\"icon-remove\"></i> Le password inserite non sono uguali. Riprova!</p>";
                 break;
             case "usernameExists":
                 $buffer = "<p class=\"ion-alert-circled alert-warning\" 
-                style=\"background-color: darksalmon;color: unset;font-weight: bold;text-transform: initial;\"
+                style=\"border-radius: 1px; background-color: darksalmon;color: unset;font-weight: bold;text-transform: initial;\"
                 ><i class=\"icon-remove\"></i> Username già esistente. Prova con un altro!</p>";
                 break;
             case "questo elemento già esiste!":

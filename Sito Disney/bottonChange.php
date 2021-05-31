@@ -16,13 +16,19 @@ if($_SESSION['idUtente']!= null) {
                                                          <li><a href="shoppage.php">Carrello</a></li>');
         }
     }
-
+}
     if (isset($_REQUEST['accesso'])) {
         if ($_REQUEST['accesso'] == 'LoginError') {
             $body2 = new Template("dtml/login.html"); //ritenta accesso
             $body2->setContent("message", "errorLogin");
             $main->setContent("body2", $body2->get());
         }
+        else if($_REQUEST['accesso'] == 'noLogin'){
+            $body2 = new Template("dtml/login.html"); //ritenta accesso
+            $body2->setContent("message", "noLogin");
+            $main->setContent("body2", $body2->get());
+        }
+
         /*else if($_REQUEST['accesso'] == 'LoginOk'){
             $main = new Template("dtml/index2.html"); //accesso effettuato
             $main->setContent("tipo_utente", '<li><a href="userfavoritegrid.php">Preferiti</a></li>
@@ -31,5 +37,4 @@ if($_SESSION['idUtente']!= null) {
         exit;
         }*/
     }
-}
 ?>
