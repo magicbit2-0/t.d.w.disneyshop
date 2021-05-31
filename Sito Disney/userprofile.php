@@ -81,14 +81,12 @@ if (isset($mysqli)){
         $body->setContent("avatar_disponibili",'<a><img src="imgAvatar.php?id='.$data['id'] .'" alt="" style="background-color:'.$backgroundcolor.';
                                                 border-radius: 50%;width: 120px;height: 120px; margin-bottom: 10px;"><br>
                                                 <input type="radio" name="radioAvatar" value="'.$data['id'].'"> Scegli Questo Avatar</a>');
-
     }
     $result = $mysqli->query("select g.`tipologia utente` as tipo_utente from utente u 
         join gruppo_utente gu on(u.id = gu.utente_id) join gruppo g on(gu.gruppo_id = g.id) where u.id = {$_SESSION['idUtente']};");
     while($data = $result->fetch_assoc()){
         if($data['tipo_utente'] == "cliente"){
-            $body->setContent("serviziUtente","<li><a href='userfavoritegrid.php'>Film Preferiti</a></li>
-                                                    <li><a href='userrate.php'>Votazioni Film</a></li>'");
+            $body->setContent("serviziUtente","");
         }
     }
     

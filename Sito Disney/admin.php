@@ -26,8 +26,6 @@ if (isset($mysqli)) {
     $body -> setContent("utenti_registrati", $number_of_results);
 
 
-
-
     $var = array();
     $result = $mysqli->query("select a.id as id_correlato, a.trailer from trailer_home t join articolo a where t.id_articolo = a.id limit 6");
     $count = mysqli_num_rows($result);

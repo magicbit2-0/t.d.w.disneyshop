@@ -172,6 +172,23 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
 
         }
 
+        $result = $mysqli->query("select a.id, a.titolo, year(a.data_uscita) as anno, a.trailer from trailer_home t join articolo a where t.id_articolo = a.id;");
+        while ($data = $result->fetch_assoc()) {
+            $body->setContent("trailer",'<div>
+                                                    <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/'.$data['trailer'].'"></iframe>
+                                                    </div>');
+            $body->setContent("trailer_info",'<div class="item">
+                                                        <div class="trailer-img">
+                                                            <img src="img.php?id='.$data['id'].'"  alt="trailer photo" width="4096" height="2737">
+                                                        </div>
+                                                        <div class="trailer-infor">
+                                                            <h4 class="desc">'.$data['titolo'] .' ('.$data['anno'].')'.'</h4>
+                                                        </div>
+                                                    </div>');
+
+
+        }
+
         $result6 = $mysqli->query("select id, titolo, data_pubblicazione from notizia where (data_pubblicazione > now() - interval 2 YEAR 
         and data_pubblicazione < now() - interval 6 MONTH) order by data_pubblicazione desc limit 2;"); //query per notizie
 
