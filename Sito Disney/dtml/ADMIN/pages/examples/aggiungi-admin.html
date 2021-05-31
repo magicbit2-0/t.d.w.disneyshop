@@ -64,9 +64,9 @@
                 <input type="text" id="inputEmail" name="inputEmail" class="form-control" value="<[email]>" required readonly>
               </div>
               <div class="form-group">
-                <label>Rendi amministratore</label>
+                <label>Tipologia dell'utente <small><br>NB: Un amministratore ha i privilegi di un cliente. Per rimuovere i privilegi è necessario rimuovere la parola chiave dal campo sottostante e salvare le modifiche </small></label>
                 <div class="select2-purple">
-                  <select class="select2 select2-hidden-accessible" name="inputTipologia[]" data-select2-id="1" required multiple="" data-placeholder="Seleziona la tipologia di utente che si vuole assegnare" data-dropdown-css-class="select2-purple" style="width: 100%;"  tabindex="-1" aria-hidden="true">
+                  <select class="select2 select2-hidden-accessible" name="inputTipologia[]" data-select2-id="1" multiple="" data-placeholder="Seleziona la tipologia di utente che si vuole assegnare" data-dropdown-css-class="select2-purple" style="width: 100%;"  tabindex="-1" aria-hidden="true">
                     <[foreach]>
                       <[gruppi]>
                     <[/foreach]>

@@ -75,11 +75,15 @@ if (isset($mysqli)) {
                                             where id = {$_GET['id']}");
         }
         if (isset($_POST['inputTipologia'])){
+            $result = $mysqli->query("update gruppo_utente set gruppo_id = 2 where utente_id = {$_GET['id']}");
+            /*
             $result = $mysqli->query("delete from gruppo_utente where utente_id = {$_GET['id']}");
             foreach ($_POST['inputTipologia'] as $idTipologia) {
                 $result = $mysqli->query("insert into gruppo_utente (utente_id , gruppo_id)
-                                                       values ('{$_GET['id']}','$idTipologia')");
-            }
+                                                       values ('{$_GET['id']}',2)");
+            }*/
+        } else {
+            $result = $mysqli->query("update gruppo_utente set gruppo_id = 1 where utente_id = {$_GET['id']}");
         }
         header("location: profileUtente.php?id={$_GET['id']}");
     }

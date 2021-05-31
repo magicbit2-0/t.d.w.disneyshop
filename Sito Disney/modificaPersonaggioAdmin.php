@@ -1,7 +1,9 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
+session_start();
 require "include/dbms.inc.php";
 require "include/template2.inc.php";
+require "include/auth2.inc.php";
 require "include/adminFunctions.inc.php";
 
 $var = array();
