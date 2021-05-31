@@ -1,7 +1,9 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
+session_start();
 require "include/dbms.inc.php";
 require "include/template2.inc.php";
+require "include/auth2.inc.php";
 require "include/adminFunctions.inc.php";
 
 $body=new Template("dtml/ADMIN/pages/examples/profileUtente.html");
@@ -10,6 +12,11 @@ if (isset($mysqli)) {
     $result0 = $mysqli->query("select a.id from articolo_preferito a join utente u on a.utente_id=u.id where u.id={$_GET['id']}");
     $number_of_results = mysqli_num_rows($result0);
     $body -> setContent("n_preferiti", $number_of_results);
+
+    $result0 = $mysqli->query("(select g.`tipologia utente` as tipo_utente from gruppo g join gruppo_utente gu on gu.gruppo_id = g.id
+                                    join utente u on u.id = gu.utente_id where u.id = '{$_GET['id']}' order by tipo_utente)");
+    $data=$result0->fetch_assoc();
+    $body -> setContent("tipo_utente", $data['tipo_utente']);
 
     $result1 = $mysqli->query("select o.id from ordine o 
                                      join utente u 
