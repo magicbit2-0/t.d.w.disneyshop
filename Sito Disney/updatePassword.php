@@ -3,6 +3,7 @@ session_start();
 error_reporting(E_ALL & ~E_NOTICE);
 require "include/dbms.inc.php";
 require "include/template2.inc.php";
+require "include/auth.inc.php";
 
 $result = $mysqli->query("select password from utente where id = {$_SESSION['idUtente']};");
 while ($data = $result->fetch_assoc()){

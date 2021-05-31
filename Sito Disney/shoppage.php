@@ -6,6 +6,7 @@ require "include/template2.inc.php";
 require "include/auth.inc.php";
 require "bottonChange.php";
 
+
 $body=new Template("dtml/shop_page.html");
 // if (sei loggato){} else {header: location: login.php?faiilLogin}
 if (isset($mysqli)) {

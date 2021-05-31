@@ -1,6 +1,8 @@
 <?php
 session_start();
 require "include/dbms.inc.php";
+require "include/auth.inc.php";
+
 echo "qui " .$_GET['id'];
 
     for ($i=0;$i<count($_SESSION['articoli']);$i++){
