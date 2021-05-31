@@ -81,7 +81,6 @@ if (isset($mysqli)){
         $body->setContent("avatar_disponibili",'<a><img src="imgAvatar.php?id='.$data['id'] .'" alt="" style="background-color:'.$backgroundcolor.';
                                                 border-radius: 50%;width: 120px;height: 120px; margin-bottom: 10px;"><br>
                                                 <input type="radio" name="radioAvatar" value="'.$data['id'].'"> Scegli Questo Avatar</a>');
-        $body->setContent("idAvatar",$data['id']);
 
         $result = $mysqli->query("select g.`tipologia utente` as tipo_utente from utente u 
         join gruppo_utente gu on(u.id = gu.utente_id) join gruppo g on(gu.gruppo_id = g.id) where u.id = {$_SESSION['idUtente']};");

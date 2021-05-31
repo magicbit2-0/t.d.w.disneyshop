@@ -62,6 +62,8 @@
         }
     }
 
+    print_r($_SESSION);
+
     $main->setContent("body", $body->get());
     $main->close();
 ?>

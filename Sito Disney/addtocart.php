@@ -7,5 +7,5 @@ require "include/auth.inc.php";
 
     $_SESSION['articoli'][]=$_GET['id'];
 
-    header('Location: http://localhost/t.d.w.disneyshop/Sito%20Disney/shoppage.php')
+    header('Location: http://localhost/t.d.w.disneyshop/Sito%20Disney/shoppage.php');
 ?>
