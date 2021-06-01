@@ -21,13 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DA FARE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DA FARE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/addReview.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/addReview.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/coming_soon.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/coming_soon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +142,9 @@
       <workItem from="1621784916434" duration="1761000" />
       <workItem from="1621950627090" duration="21000" />
       <workItem from="1622020254727" duration="754000" />
-      <workItem from="1622298082176" duration="21365000" />
+      <workItem from="1622298082176" duration="21436000" />
+      <workItem from="1622456950021" duration="672000" />
+      <workItem from="1622459800425" duration="15000" />
     </task>
     <servers />
   </component>
@@ -169,10 +164,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1622361088489">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1622459813879">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1622361088489" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1622459813879" />
     <state x="444" y="86" key="NewPhpClassDialog" timestamp="1622302128834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
