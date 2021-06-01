@@ -97,7 +97,19 @@ class widget extends taglibrary
                 $buffer = '<div class="alert" style="padding: 20px;background-color: #DBAB41FF; /* Red */color: white;margin-bottom: 15px;">
                             <span class="closebtn" onclick="this.parentElement.style.display=\'none\';" style="margin-left: 15px;
                             color: white;font-weight: bold;float: right;font-size: 22px;line-height: 20px;cursor: pointer;transition: 0.3s;">&times;
-                            </span>L\'Url del trailer inserito non è valido!</div>';
+                            </span>L\'Url inserito non è valido!</div>';
+                break;
+            case "inserimento non valido":
+                $buffer = '<div class="alert" style="padding: 20px;background-color: #DBAB41FF; /* Red */color: white;margin-bottom: 15px;">
+                            <span class="closebtn" onclick="this.parentElement.style.display=\'none\';" style="margin-left: 15px;
+                            color: white;font-weight: bold;float: right;font-size: 22px;line-height: 20px;cursor: pointer;transition: 0.3s;">&times;
+                            </span>Errore nell\'impostazione del colore.Ritenta!</div>';
+                break;
+            case "inserimento valido":
+                $buffer = '<div class="alert" style="padding: 20px;background-color: green; /* Red */color: white;margin-bottom: 15px;">
+                            <span class="closebtn" onclick="this.parentElement.style.display=\'none\';" style="margin-left: 15px;
+                            color: white;font-weight: bold;float: right;font-size: 22px;line-height: 20px;cursor: pointer;transition: 0.3s;">&times;
+                            </span>Modifiche effettuate correttamente!</div>';
                 break;
             case "deletedKeyWord":
                     $buffer = '<div class="alert" style="padding: 20px;background-color: #f44336; /* Red */color: white;margin-bottom: 15px;">

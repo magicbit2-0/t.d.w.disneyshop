@@ -9,6 +9,17 @@ $ricerca = "%{$_POST['parolaCercata']}%";
 $ricerca2 = "%{$_POST['parolaCercata2']}%";
 
 if (isset($mysqli)) {
+    $result = $mysqli->query("select sfondo,background_color from personalizzasito order by id desc limit 1");
+    $data = $result ->fetch_assoc();
+    if(mysqli_num_rows($result) != 0){
+        if($data['sfondo'] != null){
+            $body->setContent("common-hero", '<div class="hero common-hero" style="background: url(' . $data['sfondo'] . '); background-position: center">');
+        } else {
+            $body->setContent("common-hero", '<div class="hero common-hero" style="background:' . $data['background_color'] . ';">');
+        }
+    } else {
+        $body->setContent("common-hero",'<div class="hero common-hero">');
+    }
 
     if(isset($_POST['categorie'])){
         $result = $mysqli->query("(SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita

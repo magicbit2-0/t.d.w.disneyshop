@@ -7,6 +7,19 @@
     $body=new Template("dtml/blog_detail.html");
 
     if (isset($mysqli)) {
+
+        $result = $mysqli->query("select sfondo,background_color from personalizzasito order by id desc limit 1");
+        $data = $result ->fetch_assoc();
+        if(mysqli_num_rows($result) != 0){
+            if($data['sfondo'] != null){
+                $body->setContent("common-hero", '<div class="hero common-hero" style="background: url(' . $data['sfondo'] . '); background-position: center">');
+            } else {
+                $body->setContent("common-hero", '<div class="hero common-hero" style="background:' . $data['background_color'] . ';">');
+            }
+        } else {
+            $body->setContent("common-hero",'<div class="hero common-hero">');
+        }
+
         if(!empty($_GET['id'])){   
             $result = $mysqli->query("SELECT id, titolo, data_pubblicazione, descrizione, fonte FROM notizia WHERE id={$_GET['id']}");
 

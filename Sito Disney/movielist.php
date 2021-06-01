@@ -7,7 +7,17 @@ require "bottonChange.php";
 $body=new Template("dtml/movie_list.html");
 
 if (isset($mysqli)) {
-
+    $result = $mysqli->query("select sfondo,background_color from personalizzasito order by id desc limit 1");
+    $data = $result ->fetch_assoc();
+    if(mysqli_num_rows($result) != 0){
+        if($data['sfondo'] != null){
+            $body->setContent("common-hero", '<div class="hero common-hero" style="background: url(' . $data['sfondo'] . '); background-position: center">');
+        } else {
+            $body->setContent("common-hero", '<div class="hero common-hero" style="background:' . $data['background_color'] . ';">');
+        }
+    } else {
+        $body->setContent("common-hero",'<div class="hero common-hero">');
+    }
     $results_per_page = 10;
     if (!isset($_GET['page'])) {
         $page = 1;

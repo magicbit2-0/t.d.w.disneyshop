@@ -17,7 +17,7 @@ if (isset($mysqli)) {
     $number_of_results = mysqli_num_rows($result1);
     $body -> setContent("film", $number_of_results);
 
-    $result2 = $mysqli->query("select a.id from articolo_preferito a");
+    $result2 = $mysqli->query("select p.id from personaggio p ");
     $number_of_results = mysqli_num_rows($result2);
     $body -> setContent("preferiti", $number_of_results);
 
@@ -25,6 +25,11 @@ if (isset($mysqli)) {
     $number_of_results = mysqli_num_rows($result3);
     $body -> setContent("utenti_registrati", $number_of_results);
 
+    $result = $mysqli->query("select sfondo, background_color from personalizzasito order by id desc");
+    while($data = $result -> fetch_assoc()){
+    $body->setContent("sfondo", $data['sfondo']);
+    $body->setContent("color", $data['background_color']);
+    }
 
     $var = array();
     $result = $mysqli->query("select a.id as id_correlato, a.trailer from trailer_home t join articolo a where t.id_articolo = a.id limit 6");
@@ -43,9 +48,8 @@ if (isset($mysqli)) {
             }
         }
     }
-
     if (isset($_POST['submit'])) {
-        if (isset($_POST['inputTrailerHomepage'])){
+        if (isset($_POST['inputTrailerHomepage'])) {
             $result = $mysqli->query("delete from trailer_home");
             foreach ($_POST['inputTrailerHomepage'] as $idTrailerHome) {
                 $result = $mysqli->query("insert into trailer_home (id_articolo)
@@ -53,30 +57,30 @@ if (isset($mysqli)) {
             }
             header("location: admin.php");
         }
-        //$inputBackgroundcolor = addslashes($_POST['inputBackgroundcolor']);
-        /*if (isset($_FILES) and $_FILES['customFile']['error'] != 4) {
-            $imgName = $_FILES["customFile"]["name"];
-            $imgType = $_FILES["customFile"]["type"];
-            $img_size = $_FILES["customFile"]["size"];
-            $imgData = addslashes(file_get_contents($_FILES["customFile"]["tmp_name"]));
-            $error = $_FILES["customFile"]["error"];
-            if ($error === 0) {
-                if ($img_size > 1250000) {
-                    $em = "Il file è troppo grande";
-                } else {
-                    $img_ex = pathinfo($imgName, PATHINFO_EXTENSION);
-                    $img_ex_lc = strtolower($img_ex);
-
-                    $allowed_exs = array("jpg", "jpeg", "png", "jfif");
-                    if (in_array($img_ex_lc, $allowed_exs)) {
-                        $result = $mysqli->query("update personalizzasito set
-                                                        sfondo = '$imgData'");
-                                                        //backgroundcolor
-                    }
-                }
+    }
+    if (isset($_POST['submitSfondo'])) {
+        if (isset($_POST['customSfondo'])) {
+            $url = addslashes($_POST['customSfondo']);
+            if (filter_var($url, FILTER_VALIDATE_URL) or $url == '') {
+                $mysqli->query("delete from personalizzasito where sfondo is not null");
+                $mysqli->query("insert into personalizzasito (sfondo) values ('$url')");
+                header("Location: admin.php");
+            } else {
+                $em = "url non valido";
             }
-        }*/
-
+        }
+    } else if (isset($_POST['submitColor'])) {
+        if (isset($_POST['customColor'])) {
+            $color = addslashes($_POST['customColor']);
+            $mysqli->query("delete from personalizzasito where background_color is not null");
+            $mysqli->query("insert into personalizzasito (background_color) values ('$color')");
+            header("Location: admin.php");
+        } else {
+            $em = "inserimento non valido";
+        }
+    }
+    if ($em != null) {
+        $body->setContent("alert", $em);
     }
 
 }

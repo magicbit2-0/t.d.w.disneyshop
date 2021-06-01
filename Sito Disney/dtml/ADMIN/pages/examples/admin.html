@@ -6,6 +6,7 @@
       <div class="row mb-2">
         <div class="col-sm-6">
           <h1 class="m-0">Dashboard</h1>
+          <[alert::notification library="widget"]>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -61,18 +62,17 @@
           <div class="small-box bg-danger">
             <div class="inner">
               <h3>n° <[preferiti]></h3>
-
-              <p>Film Preferiti????????</p>
+              <p>Personaggi diversi</p>
             </div>
             <div class="icon">
-              <i  class="fas fa-heart"></i>
+              <i class="fas fa-theater-masks"></i>
             </div>
           </div>
           </a>
         </div>
 
         <div class="col-lg-3 col-6">
-          <a href="listaUtentiAdmin.php" >
+          <a href="listaPersonaggiAdmin.php" >
           <!-- small box -->
           <div class="small-box bg-warning">
             <div class="inner">
@@ -95,137 +95,50 @@
         <!-- Left col -->
         <section class="col-lg-7 connectedSortable">
           <!-- Custom tabs (Charts with tabs)-->
+          <div class="row">
+            <div class="col-md-6" style="flex: none;max-width: none;">
+              <div class="card card-primary">
+                <div class="card-header" style="background-color: darkblue">
+                  <h3 class="card-title">Personalizza sfondo del sito</h3>
 
-          <!-- TO DO List -->
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">
-                <i class="ion ion-clipboard mr-1"></i>
-                TO DO List
-              </h3>
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <form method="post" action="admin.php" id="formColor" enctype="multipart/form-data">
+                    <div class="form-group">
+                      <label for="customSfondo">Sfondo<small> - Opzione consigliata</small></label>
+                      <div class="custom-file">
+                        <input type="text" class="form-control" name="customSfondo" id="customSfondo" value="<[sfondo]>" placeholder="Inserisci l'url dell'immagine per cambiare lo sfondo">
+                      </div>
+                    </div>
+                    <input type="submit" name="submitSfondo" value="Applica sfondo" class="btn btn-success float-right">
+                    <div class="form-group" style="margin-top: 75px;border-top: 1px solid lightgrey;padding-top: 10px;">
+                      <label for="customColor">Colore<small> - E' possibile scegliere un colore monocromatico al posto di una immagine di sfondo</small></label>
 
-              <div class="card-tools">
-                <ul class="pagination pagination-sm">
-                  <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
-                  <li class="page-item"><a href="#" class="page-link">1</a></li>
-                  <li class="page-item"><a href="#" class="page-link">2</a></li>
-                  <li class="page-item"><a href="#" class="page-link">3</a></li>
-                  <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
-                </ul>
+                      <div class="input-group my-colorpicker2 colorpicker-element" data-colorpicker-id="2">
+                        <input type="text" class="form-control" name="customColor" id="customColor" placeholder="Inserisci il codice del colore scelto"
+                               value="<[color]>" data-original-title="" title="">
+                        <br>
+                        <div class="input-group-append">
+                          <span class="input-group-text"><i class="fas fa-square"></i>
+                            </span>
+                        </div>
+                      </div>
+                      <!-- /.input group -->
+                    </div>
+                    <input form="formColor" type="submit" name="submitColor" value="Applica colore" class="btn btn-success float-right">
+                  </form>
+                </div>
+
               </div>
+              <!-- /.card-body -->
             </div>
-            <!-- /.card-header -->
-            <div class="card-body">
-              <ul class="todo-list" data-widget="todo-list">
-                <li>
-                  <!-- drag handle -->
-                  <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                  <!-- checkbox -->
-                  <div  class="icheck-primary d-inline ml-2">
-                    <input type="checkbox" value="" name="todo1" id="todoCheck1">
-                    <label for="todoCheck1"></label>
-                  </div>
-                  <!-- todo text -->
-                  <span class="text">Aggiungere film e cartoni</span>
-                  <!-- Emphasis label -->
-                  <small class="badge badge-danger"><i class="far fa-clock"></i> 2 minuti fa</small>
-                  <!-- General tools such as edit or delete-->
-                  <div class="tools">
-                    <i class="fas fa-edit"></i>
-                    <i class="fas fa-trash-o"></i>
-                  </div>
-                </li>
-                <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                  <div  class="icheck-primary d-inline ml-2">
-                    <input type="checkbox" value="" name="todo2" id="todoCheck2" checked>
-                    <label for="todoCheck2"></label>
-                  </div>
-                  <span class="text">Aggiugnere attori e registi</span>
-                  <small class="badge badge-info"><i class="far fa-clock"></i> 10 minuti fa</small>
-                  <div class="tools">
-                    <i class="fas fa-edit"></i>
-                    <i class="fas fa-trash-o"></i>
-                  </div>
-                </li>
-                <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                  <div  class="icheck-primary d-inline ml-2">
-                    <input type="checkbox" value="" name="todo3" id="todoCheck3">
-                    <label for="todoCheck3"></label>
-                  </div>
-                  <span class="text">Controllare ordini utenti</span>
-                  <small class="badge badge-warning"><i class="far fa-clock"></i> 3 ore fa</small>
-                  <div class="tools">
-                    <i class="fas fa-edit"></i>
-                    <i class="fas fa-trash-o"></i>
-                  </div>
-                </li>
-                <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                  <div  class="icheck-primary d-inline ml-2">
-                    <input type="checkbox" value="" name="todo4" id="todoCheck4">
-                    <label for="todoCheck4"></label>
-                  </div>
-                  <span class="text">Controllare nuovi utenti registrati</span>
-                  <small class="badge badge-success"><i class="far fa-clock"></i> 1 giorno fa</small>
-                  <div class="tools">
-                    <i class="fas fa-edit"></i>
-                    <i class="fas fa-trash-o"></i>
-                  </div>
-                </li>
-                <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                  <div  class="icheck-primary d-inline ml-2">
-                    <input type="checkbox" value="" name="todo5" id="todoCheck5">
-                    <label for="todoCheck5"></label>
-                  </div>
-                  <span class="text">Aggiungere personaggi</span>
-                  <small class="badge badge-primary"><i class="far fa-clock"></i>1 giorno fa</small>
-                  <div class="tools">
-                    <i class="fas fa-edit"></i>
-                    <i class="fas fa-trash-o"></i>
-                  </div>
-                </li>
-                <li>
-                    <span class="handle">
-                      <i class="fas fa-ellipsis-v"></i>
-                      <i class="fas fa-ellipsis-v"></i>
-                    </span>
-                  <div  class="icheck-primary d-inline ml-2">
-                    <input type="checkbox" value="" name="todo6" id="todoCheck6">
-                    <label for="todoCheck6"></label>
-                  </div>
-                  <span class="text">Controllare i prodotti più votati</span>
-                  <small class="badge badge-secondary"><i class="far fa-clock"></i> 3 giorni fa</small>
-                  <div class="tools">
-                    <i class="fas fa-edit"></i>
-                    <i class="fas fa-trash-o"></i>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- /.card-body -->
-            <div class="card-footer clearfix">
-              <button type="button" class="btn btn-info float-right"><i class="fas fa-plus"></i> Aggiungi alla lista</button>
-            </div>
+            <!-- /.card -->
           </div>
-          <!-- /.card -->
         </section>
         <!-- /.Left col -->
         <!-- right col (We are only adding the ID to make the widgets sortable)-->
@@ -233,7 +146,7 @@
           <div class="row">
             <div class="col-md-6" style="flex: none;max-width: none;">
               <div class="card card-primary">
-                <div class="card-header">
+                <div class="card-header" style="background-color: black">
                   <h3 class="card-title">Personalizza sito</h3>
 
                   <div class="card-tools">
@@ -257,38 +170,6 @@
                         </div>
                       </div>
                     <input type="submit" name="submit" value="Modifica sito" class="btn btn-success float-right">
-
-                    <!-- <div class="form-group">
-                       <label for="customFile">Immagine di sfondo</label>
-                       <div class="custom-file" style="display: inline-flex;">
-                         <input type="file" class="custom-file-input" name="customFile" id="customFile">
-                         <label class="custom-file-label" for="customFile" style="width: 95%;"><[customFile]></label>
-                         <div class="text-right py-0 align-middle">
-                           <div class="btn-group btn-group-sm">
-                             <a href="#popupImg" class="btn btn-info" style="height: 2.4rem;width: 37px;padding: 8px;"><i class="fas fa-eye"></i></a>
-                           </div>
-                           <div id="popupImg" class="sopra" style="z-index: 10;">
-                             <div class="popup">
-                               <h4 style="display: inline-flex;float: left;margin-top: 4px;">Immagine di sfondo corrente</h4>
-                               <a class="chiudi" style="position: unset;top: 0px;right: 0px;" href="#">&times;</a>
-                               <div class="contenuto" >
-                                 <img src="sfondo.php?id=<[id]>" height="550px">
-                               </div>
-                             </div>
-                           </div>
-                         </div>
-                       </div>
-                     </div>
-                     <div class="form-group">
-                       <label>Lista Parole chiave</label>
-                       <div class="select2-red">
-                         <select class="select2 select2-hidden-accessible" name="inputParoleChiave[]" data-select2-id="1" multiple="" data-placeholder="Seleziona le parole chiave relative a questo elemento" data-dropdown-css-class="select2-purple" style="width: 100%;"  tabindex="-1" aria-hidden="true">
-                           <[foreach]>
-                           <[paroleChiave]>
-                           <[/foreach]>
-                         </select>
-                       </div>
-                     </div> -->
                   </form>
                 </div>
 
@@ -297,7 +178,6 @@
             </div>
             <!-- /.card -->
           </div>
-
           <!-- /.card -->
         </section>
         <!-- right col -->
