@@ -32,15 +32,24 @@ if (isset($mysqli)) {
             }
         $result1 = $mysqli->query("select r.id as id_attore, concat(r.nome,' ', r.cognome) as nome_attore from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id 
                                         join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'attore' and a.id = {$_GET['id']}");
-
-        while ($data1 = $result1->fetch_assoc()){
-            $body->setContent("id_attore", $data1['id_attore']);
-            $body->setContent("nome_attore", $data1['nome_attore']);
-            $body->setContent("id_attore1", $data1['id_attore']);
-            $body->setContent("id_attore2", $data1['id_attore']);
-            $body->setContent("nome_attore1", $data1['nome_attore']);
-            $body->setContent("nome_attore2", $data1['nome_attore']);
-        }
+            if(mysqli_num_rows($result1) > 0) {
+                while ($data1 = $result1->fetch_assoc()) {
+                    $body->setContent("attore_correlato", '<div class="cast-it">
+                                                                        <div class="cast-left">
+                                                                            <img src=\'imgActor.php?id='.$data1['id_attore'].'\' style="width:100px" alt="">
+                                                                                <a href="celebritysingle.php?id='.$data1['id_attore'].'">'.$data1['nome_attore'].'</a>
+                                                                        </div>
+                                                                        </div>');
+                    $body->setContent("id_attore", $data1['id_attore']);
+                    $body->setContent("nome_attore", $data1['nome_attore']);
+                    $body->setContent("id_attore1", $data1['id_attore']);
+                    $body->setContent("id_attore2", $data1['id_attore']);
+                    $body->setContent("nome_attore1", $data1['nome_attore']);
+                    $body->setContent("nome_attore2", $data1['nome_attore']);
+                }
+            } else {
+                $body->setContent("attore_correlato","<div><h2 style='color:#d36b6b'> Non ci sono attori correlati a questo film </h2></div>");
+            }
         $result1 = $mysqli->query("SELECT p.id as p_id, p.nome as p_nome FROM personaggio_articolo pa join personaggio p on p.id = pa.personaggio_id join articolo a on a.id = pa.articolo_id where a.id = {$_GET['id']}");
 
         while ($data1 = $result1->fetch_assoc()){
