@@ -20,14 +20,6 @@
             <div class="col-md-8 col-sm-12 col-xs-12">
                 <div class="topbar-filter">
                     <p>Trovati <span><[number_of_films]> Film</span> in totale</p>
-                    <!-- professore-->
-                    <!--<label>Ordina per:</label>
-                    <select>
-                        <option value="popularity">Più popolari</option>
-                        <option value="rating">Più votati</option>
-                        <option value="date">Più Recenti</option>
-                        <option value="date">Meno Recenti</option>
-                    </select>-->
                     <a href="<[categoria_lista]>" class="list"><i class="ion-ios-list-outline active"></i></a>
                     <a href="<[categoria_griglia]>" class="grid"><i class="ion-grid"></i></a>
                 </div>
@@ -44,16 +36,12 @@
                 </div>
                 <[/foreach]>
                 <div class="topbar-filter">
-                    <!-- professore-->
                     <label>Film per pagina: 10 film </label>
                     <div class="pagination2">
                         <span>Pagina <[actual_page]> di <[number_of_pages]>:</span>
                         <[foreach]>
                             <[tagpagina]>
                         <[/foreach]>
-                        <!--<a class="active" href="movielist.php">1</a>
-                        <a href="#">2</a>
-                        <a href="#"><i class="ion-arrow-right-b"></i></a> -->
                     </div>
                 </div>
             </div>
