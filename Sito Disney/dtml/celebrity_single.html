@@ -47,18 +47,8 @@
 											</div>
 											<!-- movie cast -->
 											<[foreach]>
-											<div class="mvcast-item">											
-												<div class="cast-it">
-													<div class="cast-left cebleb-film">
-														<img src='img.php?id=<[idfilm]>' alt="immagine film non trovata" width="200px">
-														<div>
-															<a href='moviesingle.php?id=<[idfilm]>'><[titolofilm]></a>
-															<p class="time"><[nome_protagonista]></p>
-															<p style="width: auto;"><[datafilm]></p>
-														</div>
-													</div>
-													
-												</div>
+											<div class="mvcast-item">
+												<[film_correlato]>
 											</div>
 											<[/foreach]>
 						            	</div>
@@ -129,17 +119,7 @@
 										<!-- movie cast -->
 										<div class="mvcast-item">											
 											<[foreach]>
-											<div class="cast-it">
-												<div class="cast-left cebleb-film">
-													<img src='img.php?id=<[idfilm1]>' alt="immagine film non trovata" style="width:150px;">
-													<div>
-														<a href='moviesingle.php?id=<[idfilm1]>'><[titolofilm1]></a>
-														<p class="time" style="width: auto;"><[categoria_film]></p>
-													</div>
-													
-												</div>
-												<p><[datafilm1]></p>
-											</div>
+											<[film_correlati2]>
 											<[/foreach]>
 										</div>
 						            </div>
