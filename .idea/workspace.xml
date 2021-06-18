@@ -54,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EventsApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -148,6 +148,7 @@
       <workItem from="1622564305009" duration="1950000" />
       <workItem from="1622650641227" duration="78000" />
       <workItem from="1622651868622" duration="79000" />
+      <workItem from="1624021658117" duration="1629000" />
     </task>
     <servers />
   </component>
