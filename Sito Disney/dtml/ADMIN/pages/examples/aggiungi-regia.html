@@ -55,10 +55,13 @@
                 <label for="inputPeseNascita">Paese Nascita</label>
                 <input type="text" id="inputPeseNascita" name="inputPeseNascita" class="form-control" value="<[inputPeseNascita]>" required>
               </div>
-              <div class="form-group">
-                <label for="inputDescription">Biografia</label>
-                <textarea id="inputDescription" name="inputDescription" class="form-control" rows="4" required></textarea>
-              </div>
+                <div class="form-group">
+                  <label for="summernote">Biografia</label>
+                  <!-- /.card-header -->
+                  <textarea id="summernote" name="inputDescription" class="form-control" rows="4" required>
+                    <[biografia]>
+                  </textarea>
+                </div>
               <div class="form-group">
                 <label>Lista Parole chiave</label>
                 <div class="select2-purple">

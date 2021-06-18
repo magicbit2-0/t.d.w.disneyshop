@@ -4,11 +4,14 @@
     <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/notizia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/movie_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/movie_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moviesingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/moviesingle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-notizia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-notizia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-personaggi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-regia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-notizia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-notizia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-personaggi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-regia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-edit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ADMIN/pages/forms/editors.html" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -98,7 +101,9 @@
       <workItem from="1622564395870" duration="7000" />
       <workItem from="1622644354180" duration="164000" />
       <workItem from="1622725054278" duration="2458000" />
-      <workItem from="1622727557629" duration="4165000" />
+      <workItem from="1622727557629" duration="4822000" />
+      <workItem from="1622811407044" duration="13000" />
+      <workItem from="1624023989219" duration="3908000" />
     </task>
     <servers />
   </component>
