@@ -64,15 +64,8 @@ if($number_of_results > 0) {
                                                         </td>');
     }
 } else {
-        $body->setContent("correlati_text", 'Non ci sono film correlati a ' . $titolo);
+    $body->setContent("correlati_text", 'Non ci sono film correlati a ' . $titolo);
 }
-
-
-
-
-
-    //
-
 }
 $main->setContent("body_admin", $body->get());
 $main->close();
