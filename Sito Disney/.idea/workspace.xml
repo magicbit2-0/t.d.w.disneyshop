@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-notizia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-notizia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-personaggi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungi-regia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-notizia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-notizia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-personaggi.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-personaggi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-regia.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modifica-regia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-edit.html" afterDir="false" />
-    </list>
+    <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +92,7 @@
       <workItem from="1622725054278" duration="2458000" />
       <workItem from="1622727557629" duration="4822000" />
       <workItem from="1622811407044" duration="13000" />
-      <workItem from="1624023989219" duration="3908000" />
+      <workItem from="1624023989219" duration="4026000" />
     </task>
     <servers />
   </component>
