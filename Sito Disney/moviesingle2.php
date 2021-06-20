@@ -199,17 +199,17 @@ if (isset($mysqli)) {
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <label for="voto" style="color: white;">Voto:</label>
-                                                                <input type="number" step="0.1" min="0" max="10.0" value="0" id="voto" name="voto" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;">
+                                                                <input type="number" step="0.1" min="0" max="10.0" value="0" id="voto" name="voto" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background-color: rgb(28, 28, 44); margin-bottom: 10px;">
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <label for="titolo" style="color: white;">Titolo Recensione:</label>
-                                                                <input type="text" id="titolo" name="titolo" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;">
+                                                                <input type="text" id="titolo" name="titolo" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background-color: rgb(28, 28, 44); margin-bottom: 10px;">
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-12" style="width: 750px;">
                                                                 <label for="testo" style="color: white;">Scrivi qui la tua recensione:</label>
-                                                                <textarea type="text" id="testo" name="testo" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; color: #abb7c4; font-weight: 300; text-transform: none; border: 1px solid #405266; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; height: 42px; background: none; margin-bottom: 10px;"></textarea>
+                                                                <textarea type="text" id="testo" name="testo" class="form-control" required style="font-family: Nunito, sans-serif; font-size: 14px; background-color: rgb(28, 28, 44); color: rgb(171, 183, 196); font-weight: 300; text-transform: none; border: 1px solid rgb(64, 82, 102); border-radius: 3px; height: 94px; margin: 0px 240px 10px 0px; width: 480px;"></textarea>
                                                             </div>
                                                         </div>
                                                         <input type="hidden" name="articolo_id" value='.$_GET['id'].'>
