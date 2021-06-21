@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aggiungiProdottiAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/aggiungiProdottiAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/e-commerce.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/e-commerce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infoArticoloAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/infoArticoloAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modificaProdotto.php" beforeDir="false" afterPath="$PROJECT_DIR$/modificaProdotto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/projects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +96,7 @@
       <workItem from="1622727557629" duration="4822000" />
       <workItem from="1622811407044" duration="13000" />
       <workItem from="1624023989219" duration="4026000" />
-      <workItem from="1624266978663" duration="11683000" />
+      <workItem from="1624266978663" duration="14035000" />
     </task>
     <servers />
   </component>
