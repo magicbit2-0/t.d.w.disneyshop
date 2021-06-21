@@ -42,4 +42,11 @@ if($_SESSION['idUtente']!= null) {
         exit;
         }*/
     }
+$result = $mysqli->query("select distinct categoria from articolo where categoria <> 'Cartone'");
+$buffer = '<li><a href="moviegrid.php">Tutti i Film</a></li>
+           <li><a href="moviegrid.php?categoria=\'Cartone\'">Tutti i Cartoni</a></li>';
+while ($data = $result->fetch_assoc()) {
+    $buffer .= '<li><a href="moviegrid.php?categoria=\''.$data['categoria'].'\'">'.$data['categoria'].'</a></li>';
+}
+$main -> setContent('menuCategorie',$buffer);
 ?>

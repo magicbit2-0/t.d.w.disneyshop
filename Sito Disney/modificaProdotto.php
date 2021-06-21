@@ -14,13 +14,31 @@ if (isset($mysqli)) {
                                     FROM articolo where id = {$_GET['id']}");
     $data = $result->fetch_assoc();
     $foto = $data['locandina'];
+    $trailer = $data['trailer'];
     //echo $foto;
     //exit;
     foreach ($data as $key => $value) {
         $body->setContent($key, $value);
     }
-    if ($data['categoria'] <> 'Film Disney') {
-        $body->setContent("categorie", '<option value="' . $data['categoria'] . '" selected>' . $data['categoria'] . '</option>');
+    $result = $mysqli->query("SELECT c.id as cid,c.categoria_articolo as categoria, b.id as bid, b.nome as brand
+                                    from categoria c join articolo a on c.id = a.categoria join brand b on b.id=a.id_brand 
+                                    where a.id = {$_GET['id']}");
+    $data = $result->fetch_assoc();
+    $body->setContent("categoria1", '<option value="' . $data['cid'] . '" selected>' . $data['categoria'] . '</option>');
+    $body->setContent("brand1", '<option value="' . $data['bid'] . '" selected>' . $data['brand'] . '</option>');
+    $result = $mysqli->query("select distinct c.id as cid, c.categoria_articolo as categoria from categoria c where c.id not in (
+                                    SELECT distinct c.id from articolo a join categoria c on a.categoria=c.id
+                                    where a.id = {$_GET['id']})");
+    while($data = $result->fetch_assoc()){
+        $body->setContent("categorie", '<option value="'. $data['cid'] .'">'. $data['categoria'] .'</option>');
+    }
+    $result = $mysqli->query("select distinct b.id as bid, b.nome as brand from brand b where b.id not in (
+                                    SELECT distinct b.id from articolo a join brand b on a.id_brand=b.id
+                                    where a.id = {$_GET['id']})");
+    while($data = $result->fetch_assoc()){
+        $body->setContent("brands", '<option value="' . $data['bid'] . '">' . $data['brand'] . '</option>');
+    }
+    if ($data['categoria'] <> 'Film') {
         $result = $mysqli->query("select p.id as id_personaggio from personaggio_articolo pa
                                                  join articolo a on a.id = pa.articolo_id
                                                  join personaggio p on p.id = pa.personaggio_id
@@ -171,7 +189,6 @@ if (isset($mysqli)) {
             $imgType = $_FILES["customFile"]["type"];
             $img_size = $_FILES["customFile"]["size"];
             $imgData = addslashes(file_get_contents($_FILES["customFile"]["tmp_name"]));
-
 
             $error = $_FILES["customFile"]["error"];
             if ($error === 0) {

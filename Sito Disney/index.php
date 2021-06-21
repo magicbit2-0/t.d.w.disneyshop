@@ -24,31 +24,6 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
     $body->setContent("allerta", "<body onload=\"window.alert(' Accesso Negato! ') \" > ");
 }
     if (isset($mysqli)) {
-        /*if($_SESSION['idUtente']!= null){
-            $main = new Template("dtml/index2.html");
-        }*/
-        /*
-        if(isset($_POST['username']) and isset($_POST['password'])) {
-            $result = $mysqli->query("(SELECT * FROM utente 
-                                        WHERE username = '{$_POST['username']}'
-                                        and password = md5('{$_POST['password']}')) 
-                                        ");
-            if (mysqli_num_rows($result) == 1) {
-                $main = new Template("dtml/index2.html"); //esci
-                $body = new Template("dtml/homepage.html");
-            } else {
-                $main = new Template("dtml/index.html"); //accedi
-                $body2 = new Template("dtml/login.html");
-                $body2->setContent("message", "errorLogin");
-                $main->setContent("body2", $body2->get());
-            }
-        }*/
-        /*if (mysqli_num_rows($result) == 1){
-            $main = new Template("dtml/index2.html");
-        } else {
-            //errore: messaggio di errore nel pop-up
-            $main = new Template("dtml/index.html");
-        }*/
 
         $result = $mysqli->query("(SELECT id as idImg,titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' and votazione <> 0.0 order by data_uscita desc limit 1) union
         (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' and votazione <> 0.0 order by data_uscita desc limit 1) union
@@ -185,8 +160,6 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
                                                             <h4 class="desc">'.$data['titolo'] .' ('.$data['anno'].')'.'</h4>
                                                         </div>
                                                     </div>');
-
-
         }
 
         $result6 = $mysqli->query("select id, titolo, data_pubblicazione from notizia where (data_pubblicazione > now() - interval 2 YEAR 
