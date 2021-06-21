@@ -4,11 +4,11 @@ require "include/dbms.inc.php";
 require "include/template2.inc.php";
 require "bottonChange.php";
 
-$body=new Template("dtml/disney.html");
+$body=new Template("dtml/brandSito.html");
 
 if (isset($mysqli)) {
 
-    $result = $mysqli->query("select id, nome, descrizione from brand where nome = 'Disney'");
+    $result = $mysqli->query("select id, nome, descrizione from brand where id={$_GET['id']} ");
     $data = $result->fetch_assoc();
     foreach($data as $key => $value){
         $body->setContent($key,$value);
