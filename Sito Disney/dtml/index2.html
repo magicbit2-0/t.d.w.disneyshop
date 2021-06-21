@@ -154,7 +154,7 @@
                     <li class="dropdown first">
                         <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
                             FILM<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                        <ul class="dropdown-menu level1" style="height: 130px;overflow: auto;border-radius: 10px">
+                        <ul class="dropdown-menu level1 scrollbar force-overflow" id="style-8" style="height: 130px;overflow: auto;border-radius: 10px" >
                         <[menuCategorie]>
                         </ul>
                     </li>
@@ -269,3 +269,25 @@
 <script src="dtml/js/custom.js"></script>
 </body>
 </html>
+<style>
+    #style-8::-webkit-scrollbar-track
+    {
+        border: 1px solid rgb(12 12 12);
+        background-color: #233a50;
+        border-radius: 15px;
+    }
+
+    #style-8::-webkit-scrollbar
+    {
+        width: 10px;
+        background-color: #233a50;
+        border-radius: 10px;
+    }
+
+    #style-8::-webkit-scrollbar-thumb
+    {
+        background-color: #012c4e;
+        border-radius: 15px;
+    }
+
+</style>
