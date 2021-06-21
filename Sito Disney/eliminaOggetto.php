@@ -7,9 +7,19 @@ if(isset($_GET['table'])){
     $table=$_GET['table'];
 if ($table == 'parola_chiave_add'){
     $_SESSION['delete'] = "add";
-    header("location: aggiungiParolaChiaveAdmin.php ");
+    header("location: aggiungiParolaChiaveAdmin.php");
     exit;
 }
+if ($table == 'categoria_add'){
+    $_SESSION['delete'] = "add";
+    header("location: aggiungiCategoriaAdmin.php");
+    exit;
+}
+    if ($table == 'brand_add'){
+        $_SESSION['delete'] = "add";
+        header("location: aggiungiBrand.php");
+        exit;
+    }
 }
 
 if (isset($mysqli)){
@@ -36,6 +46,12 @@ if (isset($mysqli)){
                 break;
             case 'parola_chiave':
                 header("location: aggiungiParolaChiaveAdmin.php ");
+                break;
+            case 'categoria':
+                header("location: aggiungiCategoriaAdmin.php");
+                break;
+            case 'brand':
+                header("location: brands.php");
                 break;
         }
     } else {

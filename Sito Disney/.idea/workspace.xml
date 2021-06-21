@@ -2,61 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bdc7465-6a75-46e8-8fac-6c90c49c23a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/t.d.w.disneyshop.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/aggiungiBrand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brands.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/aggiungiBrand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/brand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/brands.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/modificaBrand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modificaBrand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bottonChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/bottonChange.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/project-edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/blogdetail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/bloggrid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/celebritygrid01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/celebritylist.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/celebritysingle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/celebritysingle2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/comingsoon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/infouser.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/moviegrid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/movielist.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/moviesingle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/moviesingle2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/blogdetail_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/bloggrid_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/bloglist.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/bloglist_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/celebritygrid01_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/celebritygrid02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/celebritygrid02_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/celebritylist_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/celebritysingle_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/homev2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/homev2_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/homev3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/homev3_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/index_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/landing.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/moviegrid_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/moviegridfw.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/moviegridfw_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/movielist_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/moviesingle_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/seriessingle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/seriessingle_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/userfavoritegrid_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/userfavoritelist_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/userprofile_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/non utilizzate/userrate_light.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/shoppage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/userfavoritegrid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/userfavoritelist.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/userprofile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtml/userrate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modificaProdotto.php" beforeDir="false" afterPath="$PROJECT_DIR$/modificaProdotto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/dtml/ADMIN/pages/examples/admin_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eliminaOggetto.php" beforeDir="false" afterPath="$PROJECT_DIR$/eliminaOggetto.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,8 +64,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\t.d.w.disneyshop\Sito Disney" />
+      <recent name="C:\wamp64\www\t.d.w.disneyshop\Sito Disney\dtml\ADMIN\pages\examples" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\t.d.w.disneyshop\Sito Disney" />
+      <recent name="C:\wamp64\www\t.d.w.disneyshop\Sito Disney\dtml\ADMIN\pages\examples" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -150,6 +112,7 @@
       <workItem from="1622811407044" duration="13000" />
       <workItem from="1624023989219" duration="4026000" />
       <workItem from="1624266978663" duration="6445000" />
+      <workItem from="1624279421360" duration="8195000" />
     </task>
     <servers />
   </component>
