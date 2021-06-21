@@ -8,16 +8,33 @@ require "include/adminFunctions.inc.php";
 
 $body=new Template("dtml/ADMIN/pages/examples/project-add.html");
 if (isset($mysqli)) {
+    $result = $mysqli->query("select distinct c.id as cid, c.categoria_articolo as categoria from categoria c");
+    while($data = $result->fetch_assoc()) {
+        if ($data['categoria'] == 'Cartone' or $data['categoria'] =='Cortometraggio') {
+            $body->setContent("categoriaCartone", '<option value="' . $data['cid'] . '">' . $data['categoria'] . '</option>');
+        } else if($data['categoria'] == 'Film'){
+            $body->setContent("categoriaFilm", '<option value="' . $data['cid'] . '">' . $data['categoria'] . '</option>');
+        } else {
+        $body->setContent("categoriaFilm", '<option value="' . $data['cid'] . '">' . $data['categoria'] . '</option>');
+        $body->setContent("categoriaCartone", '<option value="' . $data['cid'] . '">' . $data['categoria'] . '</option>');
+        }
+    }
+    $result = $mysqli->query("select distinct b.id as bid, b.nome as brand from brand b");
+    while($data = $result->fetch_assoc()){
+        $body->setContent("brands", '<option value="' . $data['bid'] . '">' . $data['brand'] . '</option>');
+        $body->setContent("brandsCartone", '<option value="' . $data['bid'] . '">' . $data['brand'] . '</option>');
+    }
 
     $result = $mysqli->query("select * from parola_chiave");
     while ($data = $result->fetch_assoc()){
         $body->setContent("paroleChiave", '<option value="'.$data['id'].'">'.$data['testo'].'</option>');
         $body->setContent("paroleChiave1", '<option value="'.$data['id'].'">'.$data['testo'].'</option>');
     }
-    $result = $mysqli->query("select a.id,a.titolo,a.categoria from articolo a where a.categoria like '%%'");
+    $result = $mysqli->query("select a.id,a.titolo,c.categoria_articolo as categoria, b.nome as brand from articolo a join categoria c on c.id=a.categoria 
+                                    join brand b on b.id=a.id_brand where c.categoria_articolo like '%%'");
     while ($data = $result->fetch_assoc()){
-        $body->setContent("filmCorrelati", '<option value="'.$data['id'].'">'.$data['titolo'].' - '.$data['categoria'].'</option>');
-        $body->setContent("filmCorrelati1", '<option value="'.$data['id'].'">'.$data['titolo'].' - '.$data['categoria'].'</option>');
+        $body->setContent("filmCorrelati", '<option value="'.$data['id'].'">'.$data['titolo'].' - '.$data['categoria'].' ' . $data['brand'] .'</option>');
+        $body->setContent("filmCorrelati1", '<option value="'.$data['id'].'">'.$data['titolo'].' - '.$data['categoria'].' ' . $data['brand'] .'</option>');
     }
     $result = $mysqli->query("select id, nome from personaggio");
     while ($data = $result->fetch_assoc()){
@@ -41,11 +58,12 @@ if (isset($mysqli)) {
     if(isset($_POST['aggiungiProdotto'])){
         $result = $mysqli->query("select id from articolo 
                                         where titolo like '{$_POST['inputName']}' and 
-                                        categoria like '{$_POST['inputCategoria']}' and 
+                                        categoria = {$_POST['inputCategoria']} and 
                                         data_uscita = '{$_POST['inputData']}' ");
         if(mysqli_num_rows($result) === 0 ) {
             $inputName = addslashes($_POST['inputName']);
             $inputCategoria = addslashes($_POST['inputCategoria']);
+            $inputBrand = addslashes($_POST['inputBrand']);
             $inputTrama = addslashes($_POST['inputTrama']);
             $inputDurata = addslashes($_POST['inputDurata']);
             $inputPrezzo = addslashes($_POST['inputPrezzo']);
@@ -71,11 +89,11 @@ if (isset($mysqli)) {
 
                     $allowed_exs = array("jpg", "jpeg", "png","jfif");
                     if (in_array($img_ex_lc, $allowed_exs)) {
-                        $result = $mysqli->query("insert into articolo (titolo, data_uscita, durata, trama, votazione, prezzo, locandina, trailer,  categoria)
+                        $result = $mysqli->query("insert into articolo (titolo, data_uscita, durata, trama, votazione, prezzo, locandina, trailer,  categoria, id_brand)
                                                     values ('$inputName','{$_POST['inputData']}',
                                                     '$inputDurata','$inputTrama', 0 ,
                                                     '$inputPrezzo','$imgData',
-                                                    '$inputTrailer','$inputCategoria')");
+                                                    '$inputTrailer','$inputCategoria','$inputBrand')");
                         /*echo "insert into articolo (titolo, data_uscita, durata, trama, votazione, prezzo, locandina, trailer,  categoria)
                                                     values ('$inputName','{$_POST['inputData']}',
                                                     '$inputDurata','$inputTrama', 0 ,

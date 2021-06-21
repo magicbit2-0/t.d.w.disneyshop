@@ -8,8 +8,10 @@ require "include/adminFunctions.inc.php";
 
 $body=new Template("dtml/ADMIN/pages/examples/e-commerce.html");
 if (isset($mysqli)) {
-    $result = $mysqli->query("SELECT id as idImg, titolo, trama, durata, data_uscita, votazione, prezzo, categoria 
-                                    FROM articolo where id= {$_GET['id']}");
+    $result = $mysqli->query("SELECT a.id as idImg, a.titolo, a.trama, a.durata, a.data_uscita, a.votazione, a.prezzo,c.categoria_articolo as categoria, 
+                                    b.nome as brand
+                                    FROM articolo a join categoria c on a.categoria=c.id
+                                    join brand b on b.id=a.id_brand where a.id= {$_GET['id']}");
     $data = $result->fetch_assoc();
     $table = 'articolo';
     $body->setContent("table", $table);

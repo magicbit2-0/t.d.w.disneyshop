@@ -44,9 +44,20 @@
               <label for="inputFilmCategoria">Categoria</label>
               <br>
               <select name="inputCategoria" id="inputFilmCategoria" class="form-control">
-                <option value="Film Disney" selected>Film Disney</option>
+                <[foreach]>
+                <[categoriaFilm]>
+                <[/foreach]>
               </select>
             </div>
+              <div class="form-group">
+                <label for="inputFilmBrand">Brand</label>
+                <br>
+                <select name="inputFilmBrand" id="inputFilmBrand" class="form-control">
+                  <[foreach]>
+                    <[brands]>
+                  <[/foreach]>
+                </select>
+              </div>
               <div class="form-group">
                 <label for="summernote">Trama</label>
                     <!-- /.card-header -->
@@ -150,11 +161,20 @@
               <label for="inputCategoria">Categoria</label>
               <br>
               <select name="inputCategoria" id="inputCategoria" class="form-control">
-                <option value="Cortometraggi Pixar">Cortometraggi Pixar</option>
-                <option value="Cartone Disney" selected>Cartone Disney</option>
-                <option value="Cartone Pixar">Cartone Pixar</option>
+                <[foreach]>
+                <[categoriaCartone]>
+                <[/foreach]>
               </select>
             </div>
+              <div class="form-group">
+                <label for="inputFilmBrand">Brand</label>
+                <br>
+                <select name="inputBrand" id="inputBrand" class="form-control">
+                  <[foreach]>
+                  <[brandsCartone]>
+                  <[/foreach]>
+                </select>
+              </div>
               <div class="form-group">
                 <label for="summernote1">Trama</label>
                 <!-- /.card-header -->

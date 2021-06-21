@@ -14,8 +14,8 @@ if(isset($_SESSION['delete'])){
 }
 if (isset($mysqli)) {
     $table = 'articolo';
-    $result = $mysqli->query("SELECT id as idImg, titolo, data_uscita, votazione, categoria 
-                                    FROM articolo");
+    $result = $mysqli->query("SELECT articolo.id as idImg, titolo, data_uscita, votazione, categoria_articolo as categoria
+                                    FROM articolo join categoria on categoria.id=articolo.categoria");
     while($data = $result->fetch_assoc()) {
         foreach ($data as $key => $value) {
             $body->setContent($key, $value);
@@ -23,10 +23,10 @@ if (isset($mysqli)) {
         $body->setContent("cont", $cont++);
         $body->setContent("votazione1", '<div class="progress-bar bg-green" role="progressbar" aria-valuenow="'.$data['votazione'].'" 
                                                         aria-valuemin="0" aria-valuemax="10" style="width: '. $data['votazione']*10 .'%"></div>');
-    $body->setContent("elimina", '<button class="btn btn-danger btn-sm" style="width: -webkit-fill-available;" onclick="document.getElementById(\'idA01'.$data['idImg'].'\').style.display=\'block\'">
+        $body->setContent("elimina", '<button class="btn btn-danger btn-sm" style="width: -webkit-fill-available;" onclick="document.getElementById(\'idA01'.$data['idImg'].'\').style.display=\'block\'">
                                                   <i class="fas fa-trash">
                                                   </i>Elimina</button>
-                                                <div id="idA01' . $data['idImg'] . '" class="modal1" style="width: 800px;height: 300px;margin-top: 130px;margin-left: 450px;overflow: hidden;border-radius: 20px;">
+                                                 <div id="idA01' . $data['idImg'] . '" class="modal1" style="width: 800px;height: 300px;margin-top: 130px;margin-left: 450px;overflow: hidden;border-radius: 20px;">
                                                   <span onclick="document.getElementById(\'idA01'.$data['idImg'].'\').style.display=\'none\'" class="close1" title="Close Modal">&times;</span>
                                                   <div class="modal-content1"
                                                        style="width: auto;height: 300px;margin-top: -50px;padding:75px;border-radius: 20px;">
@@ -39,7 +39,7 @@ if (isset($mysqli)) {
                                                       </div>
                                                     </div>
                                                   </div>
-                                                </div>');
+                                                 </div>');
     }
 }
 $main->setContent("body_admin", $body->get());

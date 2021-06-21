@@ -25,14 +25,14 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
 }
     if (isset($mysqli)) {
 
-        $result = $mysqli->query("(SELECT id as idImg,titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' and votazione <> 0.0 order by data_uscita desc limit 1) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' and votazione <> 0.0 order by data_uscita desc limit 1) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' and votazione <> 0.0 order by data_uscita desc limit 1) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cortometraggi Pixar' and votazione <> 0.0 order by data_uscita desc limit 1) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Film Disney' and votazione <> 0.0 order by data_uscita desc limit 2) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Pixar' and votazione <> 0.0 order by data_uscita desc limit 2) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cartone Disney' and votazione <> 0.0 order by data_uscita desc limit 2) union
-        (SELECT id as idImg, titolo, categoria, votazione FROM articolo where categoria = 'Cortometraggi Pixar' and votazione <> 0.0 order by data_uscita desc limit 2);");
+        $result = $mysqli->query("(SELECT a.id as idImg,titolo, c.categoria_articolo as categoria,b.nome as brand, votazione FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where c.categoria_articolo='Film' and votazione <> 0.0 and b.nome='Disney' order by data_uscita desc limit 1) union
+                                        (SELECT a.id as idImg,titolo, c.categoria_articolo as categoria,b.nome as brand, votazione FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where c.categoria_articolo='Cartone' and votazione <> 0.0 and b.nome='Pixar' order by data_uscita desc limit 1) union
+                                        (SELECT a.id as idImg,titolo, c.categoria_articolo as categoria,b.nome as brand, votazione FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where c.categoria_articolo='Cartone' and votazione <> 0.0 and b.nome='Disney' order by data_uscita desc limit 1) union
+                                        (SELECT a.id as idImg,titolo, c.categoria_articolo as categoria,b.nome as brand, votazione FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where c.categoria_articolo='Cortometraggio' and votazione <> 0.0 and b.nome='Pixar' order by data_uscita desc limit 1) union
+                                        (SELECT a.id as idImg,titolo, c.categoria_articolo as categoria,b.nome as brand, votazione FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where c.categoria_articolo='Film' and votazione <> 0.0 and b.nome='Disney' order by data_uscita desc limit 2) union
+                                        (SELECT a.id as idImg,titolo, c.categoria_articolo as categoria,b.nome as brand, votazione FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where c.categoria_articolo='Cartone' and votazione <> 0.0 and b.nome='Pixar' order by data_uscita desc limit 2) union
+                                        (SELECT a.id as idImg,titolo, c.categoria_articolo as categoria,b.nome as brand, votazione FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where c.categoria_articolo='Cartone' and votazione <> 0.0 and b.nome='Disney' order by data_uscita desc limit 2) union
+                                        (SELECT a.id as idImg,titolo, c.categoria_articolo as categoria,b.nome as brand, votazione FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where c.categoria_articolo='Cortometraggio' and votazione <> 0.0 and b.nome='Pixar' order by data_uscita desc limit 2);");
 
     while ($data = $result->fetch_assoc()) {
         if ($data['categoria'] == "Film Disney"){
@@ -42,17 +42,17 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
         $body -> setContent("pagina_articolo_categoria", 'moviesingle2.php?id=<[idImg]>');
         }
         $body->setContent("titolo_prodotto", $data['titolo']);
-        $body->setContent("categoria_prodotto", $data['categoria']);
+        $body->setContent("categoria_prodotto", $data['categoria'].' '.$data['brand']);
         $body->setContent("votazione_prodotto", $data['votazione']);
         $body->setContent("idImg", $data['idImg']);
 
-            if ($data['categoria'] == 'Cartone Disney')
+            if ($data['categoria'].' '.$data['brand'] == 'Cartone Disney')
                 $body->setContent("color", 'orange');
-            else if ($data['categoria'] == 'Cartone Pixar')
+            else if ($data['categoria'].' '.$data['brand'] == 'Cartone Pixar')
                 $body->setContent("color", 'blue');
-            else if ($data['categoria'] == 'Cortometraggi Pixar')
+            else if ($data['categoria'].' '.$data['brand'] == 'Cortometraggio Pixar')
                 $body->setContent("color", 'yell');
-            else if ($data['categoria'] == 'Film Disney')
+            else if ($data['categoria'].' '.$data['brand'] == 'Film Disney')
                 $body->setContent("color", 'green');
     }
 
@@ -63,7 +63,7 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
         $body->setContent("idImgAttore", $data1['id']);
     }
 
-    $result3a = $mysqli->query("select id, titolo, votazione, categoria from articolo where categoria <> 'Cortometraggi Pixar' order by prezzo asc limit 8");
+    $result3a = $mysqli->query("select articolo.id, titolo, votazione, categoria_articolo as categoria from articolo join categoria on articolo.categoria=categoria.id where categoria_articolo <> 'Cortometraggio' order by prezzo asc limit 8");
         while ($data3a = $result3a->fetch_assoc()) {
             if ($data3a['categoria'] == "Film Disney"){
                 $body -> setContent("pagina_articolo_categoria1", 'moviesingle.php?id=<[idImg3a]>');
@@ -75,7 +75,7 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
             $body->setContent("voto_prod", $data3a['votazione']);
             $body->setContent("idImg3a", $data3a['id']);
         }
-        $result3b = $mysqli->query("select id, titolo, categoria from articolo where data_uscita > now()");
+        $result3b = $mysqli->query("select articolo.id, titolo, categoria_articolo as categoria from articolo join categoria on articolo.categoria=categoria.id where data_uscita > now()");
 
         while ($data3b = $result3b->fetch_assoc()) {
             if ($data3b['categoria'] == "Film Disney"){
@@ -88,7 +88,7 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
             $body->setContent("voto_prod2", $data3b['categoria']);
             $body->setContent("idImg3b", $data3b['id']);
         }
-        $result3c = $mysqli->query("select id, titolo, votazione from articolo order by votazione desc limit 8");
+        $result3c = $mysqli->query("select articolo.id, titolo, votazione from articolo join categoria on articolo.categoria=categoria.id order by votazione desc limit 8");
 
         while ($data3c = $result3c->fetch_assoc()) {
             if ($data3c['categoria'] == "Film Disney"){
@@ -112,7 +112,7 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
         $result4b = $mysqli->query("select personaggio.id, personaggio.nome from personaggio join parola_chiave_personaggio
                                             on (personaggio.id = parola_chiave_personaggio.personaggio_id) join parola_chiave
                                             on (parola_chiave.id = parola_chiave_personaggio.parola_chiave_id)
-                                            where parola_chiave.id=12 limit 3;");
+                                            where parola_chiave.testo='eroe' limit 3;");
 
         while ($data4b = $result4b->fetch_assoc()) {
             $body->setContent("nome_personaggioEroe", $data4b['nome']);
@@ -121,7 +121,7 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
         $result4c = $mysqli->query("select personaggio.id, personaggio.nome from personaggio join parola_chiave_personaggio
                                             on (personaggio.id = parola_chiave_personaggio.personaggio_id) join parola_chiave
                                             on (parola_chiave.id = parola_chiave_personaggio.parola_chiave_id)
-                                            where parola_chiave.id=13 order by rand() limit 3;");
+                                            where parola_chiave.testo='principessa' order by rand() limit 3;");
 
         while ($data4c = $result4c->fetch_assoc()) {
             $body->setContent("nome_personaggioPrinc", $data4c['nome']);
