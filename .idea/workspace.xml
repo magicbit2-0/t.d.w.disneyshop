@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/disney.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/disney.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_single2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/celebrity_single2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/disney.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/disney.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/movie_single2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/movie_single2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/pixar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/pixar.php" afterDir="false" />
-    </list>
+    <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,7 +160,7 @@
       <workItem from="1624021658117" duration="1859000" />
       <workItem from="1624103131167" duration="1100000" />
       <workItem from="1624122041998" duration="4143000" />
-      <workItem from="1624266790114" duration="3123000" />
+      <workItem from="1624266790114" duration="3687000" />
     </task>
     <servers />
   </component>
