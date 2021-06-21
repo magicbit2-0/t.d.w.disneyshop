@@ -28,12 +28,13 @@ if (isset($mysqli)) {
     }
     $this_page_first_result = ($page - 1) * $results_per_page;
 
-    if (!isset($_GET['categoria'])) {
-        $result = $mysqli->query("SELECT id as idImg, trama, durata, titolo, data_uscita, votazione, categoria 
-                                    FROM articolo ORDER BY votazione desc, data_uscita desc 
-                                    LIMIT " . $this_page_first_result . ',' . $results_per_page);
-                $body -> setContent("categoria_lista",'movielist.php');
-                $body -> setContent("categoria_griglia",'moviegrid.php');
+    if (!isset($_GET['categoria']) and !isset($_GET['brand'])) {
+        $result = $mysqli->query("SELECT a.id as idImgProd,trama, titolo,durata, votazione, concat(c.categoria_articolo,' ',b.nome) as categoria 
+                                    FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand
+                                    ORDER BY votazione desc, data_uscita desc LIMIT " . $this_page_first_result . ',' . $results_per_page);
+
+        $body -> setContent("categoria_lista",'movielist.php');
+        $body -> setContent("categoria_griglia",'moviegrid.php');
 
         $result0 = $mysqli->query("SELECT id FROM articolo");
         $number_of_results = mysqli_num_rows($result0); //conta il numero delle righe ottenute
@@ -43,23 +44,56 @@ if (isset($mysqli)) {
         for ($page = 1; $page <= $number_of_pages; $page++) {
             $body->setContent("tagpagina",'<a href="movielist.php?page=' . $page . '">' . $page . '</a> ');
         }
-    } else {
-            $result = $mysqli->query("SELECT id as idImg, trama, durata, titolo, data_uscita, votazione, categoria FROM articolo
-                                        where categoria = {$_GET['categoria']} ORDER BY votazione desc, data_uscita desc
+    } else if(isset($_GET['categoria']) and !isset($_GET['brand'])){
+        $result = $mysqli->query("SELECT a.id as idImgProd,trama, titolo,durata, votazione, concat(c.categoria_articolo,' ',b.nome) as categoria FROM articolo a join categoria c on c.id=a.categoria
+                                        join brand b on b.id=a.id_brand
+                                        where c.categoria_articolo = {$_GET['categoria']} ORDER BY votazione desc, data_uscita desc
                                         LIMIT " . $this_page_first_result . ',' . $results_per_page);
-                  $body -> setContent("categoria_lista",'movielist.php?categoria='. $_GET['categoria']);
-                  $body -> setContent("categoria_griglia",'moviegrid.php?categoria='. $_GET['categoria']);
 
-            $result0 = $mysqli->query("SELECT id FROM articolo WHERE CATEGORIA = {$_GET['categoria']}");
-            $number_of_results = mysqli_num_rows($result0); //conta il numero delle righe ottenute
-            $body -> setContent("number_of_films", $number_of_results);
-            $number_of_pages = ceil($number_of_results / $results_per_page);
-            $body -> setContent("number_of_pages", $number_of_pages);
-            for ($page = 1; $page <= $number_of_pages; $page++) {
+        $body -> setContent("categoria_lista",'movielist.php?categoria='. $_GET['categoria']);
+        $body -> setContent("categoria_griglia",'moviegrid.php?categoria='. $_GET['categoria']);
+
+        $result0 = $mysqli->query("SELECT a.id FROM articolo a join categoria c on c.id = a.categoria join brand b on b.id=a.id_brand WHERE c.categoria_articolo = {$_GET['categoria']}");
+        $number_of_results = mysqli_num_rows($result0); //conta il numero delle righe ottenute
+        $body -> setContent("number_of_films", $number_of_results);
+        $number_of_pages = ceil($number_of_results / $results_per_page);
+        $body -> setContent("number_of_pages", $number_of_pages);
+        for ($page = 1; $page <= $number_of_pages; $page++) {
                 $body->setContent("tagpagina",'<a href="movielist.php?categoria='.$_GET['categoria'].'&page=' . $page . '">' . $page . '</a> ');
             }
-    }
+    } else if(!isset($_GET['categoria']) and isset($_GET['brand'])) {
+        $result = $mysqli->query("SELECT a.id as idImgProd,trama, titolo,durata, votazione, concat(c.categoria_articolo,' ',b.nome) as categoria FROM articolo a join categoria c on c.id=a.categoria
+                                        join brand b on b.id=a.id_brand
+                                        where b.nome = {$_GET['brand']} ORDER BY votazione desc, data_uscita desc
+                                        LIMIT " . $this_page_first_result . ',' . $results_per_page);
 
+                $body->setContent("categoria_lista", 'movielist.php?brand=' . $_GET['brand']);
+                $body->setContent("categoria_griglia", 'moviegrid.php?brand=' . $_GET['brand']);
+        $result0 = $mysqli->query("SELECT a.id FROM articolo a join categoria c on c.id = a.categoria join brand b on b.id=a.id_brand WHERE b.nome = {$_GET['brand']}");
+        $number_of_results = mysqli_num_rows($result0); //conta il numero delle righe ottenute
+        $body->setContent("number_of_films", $number_of_results);
+        $number_of_pages = ceil($number_of_results / $results_per_page);
+        $body->setContent("number_of_pages", $number_of_pages);
+        for ($page = 1; $page <= $number_of_pages; $page++) {
+            $body->setContent("tagpagina",'<a href="movielist.php?brand='.$_GET['brand'].'&page=' . $page . '">' . $page . '</a> ');
+        }
+    } else if(isset($_GET['categoria']) and isset($_GET['brand'])){
+        $result = $mysqli->query("SELECT a.id as idImgProd,trama, titolo,durata, votazione, concat(c.categoria_articolo,' ',b.nome) as categoria FROM articolo a join categoria c on c.id=a.categoria
+                                        join brand b on b.id=a.id_brand
+                                        where b.nome = {$_GET['brand']} and c.categoria_articolo = {$_GET['categoria']} ORDER BY votazione desc, data_uscita desc
+                                        LIMIT " . $this_page_first_result . ',' . $results_per_page);
+
+                $body -> setContent("categoria_lista",'movielist.php?categoria='.$_GET['categoria'].'&brand='. $_GET['brand']);
+                $body -> setContent("categoria_griglia",'moviegrid.php?categoria='.$_GET['categoria'].'&brand='. $_GET['brand']);
+        $result0 = $mysqli->query("SELECT a.id FROM articolo a join categoria c on c.id = a.categoria join brand b on b.id=a.id_brand WHERE b.nome = {$_GET['brand']} and c.categoria_articolo = {$_GET['categoria']}");
+        $number_of_results = mysqli_num_rows($result0); //conta il numero delle righe ottenute
+        $body -> setContent("number_of_films", $number_of_results);
+        $number_of_pages = ceil($number_of_results / $results_per_page);
+        $body -> setContent("number_of_pages", $number_of_pages);
+        for ($page = 1; $page <= $number_of_pages; $page++) {
+            $body->setContent("tagpagina",'<a href="movielist.php?categoria='.$_GET['categoria'].'&brand='.$_GET['brand'].'&page=' . $page . '">' . $page . '</a> ');
+        }
+    }
     while ($data = $result->fetch_assoc()) {
         if ($data['categoria'] == "Film Disney"){
             $body -> setContent("pagina_articolo_categoria", 'moviesingle.php?id=<[idImg]>');
@@ -74,7 +108,7 @@ if (isset($mysqli)) {
         $body->setContent("trama_prod", substr($data['trama'], 0, 300) . " [...]");
         $body->setContent("durata_prod", $data['durata']);
         $body->setContent("categoria_prod", $data['categoria']);
-        $body->setContent("idImg", $data['idImg']);
+        $body->setContent("idImg", $data['idImgProd']);
     }
 }
 

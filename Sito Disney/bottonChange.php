@@ -42,11 +42,13 @@ if($_SESSION['idUtente']!= null) {
         exit;
         }*/
     }
-$result = $mysqli->query("select distinct categoria from articolo where categoria <> 'Cartone'");
-$buffer = '<li><a href="moviegrid.php">Tutti i Film</a></li>
-           <li><a href="moviegrid.php?categoria=\'Cartone\'">Tutti i Cartoni</a></li>';
+$result = $mysqli->query("select distinct c.id,c.categoria_articolo as categoria, b.nome as brand from articolo a join categoria c on c.id=a.categoria 
+                                    join brand b on b.id=a.id_brand");
+$buffer = '<li><a href="moviegrid.php">Tutti gli Articoli</a></li>
+           <li><a href="moviegrid.php?categoria=\'Cartone\'">Tutti i Cartoni</a></li>
+           <li><a href="moviegrid.php?categoria=\'Film\'">Tutti i Film</a></li>';
 while ($data = $result->fetch_assoc()) {
-    $buffer .= '<li><a href="moviegrid.php?categoria=\''.$data['categoria'].'\'">'.$data['categoria'].'</a></li>';
+    $buffer .= '<li><a href="moviegrid.php?categoria=\''.$data['categoria'].'\'&brand=\''. $data['brand'].'\'">'.$data['categoria'].' ' . $data['brand'].'</a></li>';
 }
 $main -> setContent('menuCategorie',$buffer);
 ?>
