@@ -44,25 +44,26 @@ if (isset($mysqli)) {
 
     }
     else {
-        $result = $mysqli->query("(select distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
-                                    FROM articolo a where (a.titolo like '$ricerca' or a.categoria like '$ricerca') union 
-                                    (SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
-                                    FROM articolo a join personaggio_articolo pa on pa.articolo_id = a.id 
+        $result = $mysqli->query("(select distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, c.categoria_articolo as categoria ,b.nome as brand, a.data_uscita as data_nascita
+                                    FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where (a.titolo like '$ricerca' or c.categoria_articolo like '$ricerca') union 
+                                    (SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, c.categoria_articolo as categoria ,b.nome as brand, a.data_uscita as data_nascita
+                                    FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand
+                                    join personaggio_articolo pa on pa.articolo_id = a.id 
                                     join personaggio p on p.id = pa.personaggio_id
 									left join backstage_articolo ba on ba.articolo_id = a.id
 									left join regia r on r.id = ba.regia_id
                                     join articolo_parola_chiave apk on apk.articolo_id = a.id
                                     join parola_chiave k on k.id = apk.parola_chiave_id
                                     where (a.titolo like '$ricerca' or k.testo like '$ricerca' 
-                                    or a.categoria like '$ricerca' or p.nome like '$ricerca') 
+                                    or c.categoria_articolo like '$ricerca' or p.nome like '$ricerca') 
                                     ORDER BY votazione desc, data_uscita desc) union
-                                    (select distinct p.id as idCercato, p.nome as nome, p.nome as votazione, p.nome as categoria, p.data_nascita
+                                    (select distinct p.id as idCercato, p.nome as nome, p.nome as votazione, k.testo as categoria,p.nome as brand, p.data_nascita
 									from personaggio p join personaggio_articolo pa on pa.personaggio_id = p.id
                                     join articolo a on a.id = pa.articolo_id
                                     join parola_chiave_personaggio pkp on pkp.personaggio_id = p.id
                                     join parola_chiave k on k.id=pkp.parola_chiave_id
-                                    where (p.nome like '$ricerca' or k.testo like '$ricerca' or a.titolo like '$ricerca' or p.data_nascita like '$ricerca')) union 
-                                    (select distinct r.id as idCercato, concat (r.nome,' ',r.cognome) as nomeEntita, r.anno_nascita as data_nascita, k.testo as categoria, r.nome as votazione
+                                    where (p.nome like '$ricerca' or k.testo like '$ricerca' or a.titolo like '$ricerca' or p.data_nascita like '$ricerca') group by p.id) union 
+                                    (select distinct r.id as idCercato, concat (r.nome,' ',r.cognome) as nomeEntita, r.anno_nascita as data_nascita, k.testo as categoria, k.testo as brand, r.nome as votazione
 									from regia r join backstage_articolo ba on ba.regia_id= r.id
                                     join articolo a on a.id = ba.articolo_id
                                     join parola_chiave_regia pkr on pkr.regia_id = r.id
@@ -75,30 +76,28 @@ if (isset($mysqli)) {
     $body -> setContent("number_of_films", $number_of_results);
 
     while ($data = $result->fetch_assoc()) {
-        if ($data['categoria'] == "Film Disney"){
+        if ($data['categoria'].' '.$data['brand'] == "Film Disney"){
             $body->setContent("pagina_articolo_categoria", 'moviesingle.php?id='.$data['idCercato']);
             $body->setContent("idCercato", $data['idCercato']); //moviesingle.php?id=<[idImgProd]>
             $body->setContent("titolo", $data['nomeEntita']);
             $body->setContent("votazione", "<i class=\"ion-android-star\"></i>".$data['votazione']." /10");
             $body->setContent("categoria", $data['categoria']);
             $body->setContent("immagineCercata", 'img.php?id='.$data['idCercato']);
-        }
-        else if ($data['categoria'] == "Cartone Pixar" or $data['categoria'] == "Cartone Disney" or $data['categoria'] == "Cortometraggi Pixar"){
+        } else if ($data['categoria'].' '.$data['brand'] == "Cartone Pixar" or $data['categoria'].' '.$data['brand'] == "Cartone Disney" or $data['categoria'] == "Cortometraggi Pixar"){
             $body->setContent("pagina_articolo_categoria", 'moviesingle2.php?id='.$data['idCercato']);
             $body->setContent("idCercato", $data['idCercato']); //moviesingle.php?id=<[idImgProd]>
             $body->setContent("titolo", $data['nomeEntita']);
             $body->setContent("votazione", "<i class=\"ion-android-star\"></i>".$data['votazione']." /10");
             $body->setContent("categoria", $data['categoria']);
-            $body->setContent("immagineCercata", 'img.php?id='.$data['idCercato']);}
-
-        else if ($data['categoria'] == "attore" or $data['categoria'] == "regia"){
+            $body->setContent("immagineCercata", 'img.php?id='.$data['idCercato']);
+        } else if ($data['categoria'] == "attore" or $data['categoria'] == "regia"){
             $body->setContent("pagina_articolo_categoria", 'celebritysingle.php?id='.$data['idCercato']);
             $body->setContent("idCercato", $data['idCercato']); //moviesingle.php?id=<[idImgProd]>
             $body->setContent("titolo", $data['nomeEntita']);
             $body->setContent("votazione", $data['data_nascita']);
             $body->setContent("categoria", $data['categoria']);
-            $body->setContent("immagineCercata", 'imgActor.php?id='.$data['idCercato']);}
-        else {
+            $body->setContent("immagineCercata", 'imgActor.php?id='.$data['idCercato']);
+        } else if ($data['categoria'] == "personaggio"){
             $body->setContent("pagina_articolo_categoria", 'celebritysingle2.php?id='.$data['idCercato']);
             $body->setContent("idCercato", $data['idCercato']);
             $body->setContent("titolo", $data['nomeEntita']);
