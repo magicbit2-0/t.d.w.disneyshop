@@ -15,7 +15,7 @@ if (isset($mysqli)) {
     while ($data = $result->fetch_assoc()){
         $body->setContent("paroleChiave", '<option value="'.$data['id'].'">'.$data['testo'].'</option>');
     }
-    $result = $mysqli->query("select a.id,a.titolo from articolo a where a.categoria like '%Film%'");
+    $result = $mysqli->query("select a.id, a.titolo from articolo a join categoria c on c.id = a.categoria join brand b on b.id = a.id_brand where c.categoria_articolo like '%Film%'");
     while ($data = $result->fetch_assoc()){
         $body->setContent("filmCorrelati", '<option value="'.$data['id'].'">'.$data['titolo'].'</option>');
     }

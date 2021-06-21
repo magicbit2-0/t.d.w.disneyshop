@@ -6,14 +6,14 @@ require "bottonChange.php";
 
 $body=new Template("dtml/disney.html");
 
-/*if (isset($mysqli)) {
+if (isset($mysqli)) {
 
-    $result = $mysqli->query("select id, nome, descrizione from brand where id = {$_GET['id']}");
+    $result = $mysqli->query("select id, nome, descrizione from brand where nome = 'Disney'");
     $data = $result->fetch_assoc();
     foreach($data as $key => $value){
         $body->setContent($key,$value);
     }
-}*/
+}
 
 $main->setContent("body", $body->get());
 $main->close();

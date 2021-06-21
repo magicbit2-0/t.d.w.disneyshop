@@ -40,12 +40,15 @@ if (isset($mysqli)) {
     $var = array();
     $result = $mysqli->query("select distinct a.id as id_correlato, a.titolo as titolo_correlato, a.categoria,  year(a.data_uscita) as data_uscita_correlato
                                     from articolo a join personaggio_articolo pa on pa.articolo_id = a.id
-                                    join personaggio p on p.id=pa.personaggio_id where p.id={$_GET['id']} order by a.id");
+                                    join personaggio p on p.id=pa.personaggio_id 
+                                    join categoria c on c.id = a.categoria
+                                    join brand b on b.id = a.id_brand
+                                    where p.id={$_GET['id']} order by a.id");
     $count = mysqli_num_rows($result);
     while ($data = $result->fetch_assoc()) {
         $var['id'][] = $data['id_correlato'];
     }
-    $result = $mysqli->query("select distinct id, titolo, categoria from articolo");
+    $result = $mysqli->query("select distinct a.id, a.titolo from articolo a join categoria c on c.id = a.categoria join brand b on b.id = a.id_brand");
     for ($i = 0; $i <= $count; $i++) {
         while ($data = $result->fetch_assoc()) {
             if ($var['id'][$i] == $data['id']) {

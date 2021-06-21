@@ -50,13 +50,15 @@ if (isset($mysqli)) {
 	                                r.titolo as titolo_recensione, r.voto as votazione, a.titolo as titolo, YEAR(a.data_uscita) as data_uscita
                                     from utente u join recensione r on r.utente_id = u.id
                                     join articolo a on a.id = r. articolo_id
+                                    join categoria c on a.categoria=c.id
+                                    join brand b on b.id=a.id_brand
                                     where u.id = {$_SESSION['idUtente']})");
 
     $number_of_results = mysqli_num_rows($result);
     if ($number_of_results > 0) {
         while ($data = $result->fetch_assoc()) {
             $body->setContent("number_of_results","<p> Trovati <span>  $number_of_results  film </span> in totale </p>");
-            if ($data['categoria'] <> 'Film Disney') {
+            if ($data['categoria'] <> 'Film') {
                 $categoria_film = 'moviesingle2.php?id=' . $data['idArticolo'];
             } else {
                 $categoria_film = 'moviesingle.php?id=' . $data['idArticolo'];

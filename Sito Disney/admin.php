@@ -37,7 +37,7 @@ if (isset($mysqli)) {
     while ($data = $result->fetch_assoc()) {
         $var['id'][] = $data['id_correlato'];
     }
-    $result = $mysqli->query("select distinct id, titolo, categoria from articolo where trailer is not null");
+    $result = $mysqli->query("select distinct a.id, a.titolo from articolo a join categoria c on c.id = a.categoria join brand b on b.id = a.id_brand where a.trailer is not null");
     for ($i = 0; $i <= $count; $i++) {
         while ($data = $result->fetch_assoc()) {
             if ($var['id'][$i] == $data['id']) {

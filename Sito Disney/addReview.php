@@ -17,11 +17,11 @@ if (isset($mysqli)){
 
     $mysqli->query("update articolo set votazione = {$data['avg(voto)']} where id='{$_POST['articolo_id']}'");
 
-    $articolo = $mysqli->query("select categoria from articolo where id = '{$_POST['articolo_id']}'");
+    $articolo = $mysqli->query("select c.categoria_articolo from categoria c join articolo a on c.id = a.categoria join brand b on b.id = a.id_brand where a.id = '{$_POST['articolo_id']}'");
 
     $data= $articolo->fetch_assoc();
 
-    if($data['categoria'] == "Film Disney") {
+    if($data['categoria'] == "Film") {
         header('Location: http://localhost/t.d.w.disneyshop/Sito%20Disney/moviesingle.php?id='.$_POST['articolo_id']);
 
     }else{

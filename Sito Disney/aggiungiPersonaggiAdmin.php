@@ -14,7 +14,7 @@ if (isset($mysqli)) {
     while ($data = $result->fetch_assoc()){
         $body->setContent("paroleChiave", '<option value="'.$data['id'].'">'.$data['testo'].'</option>');
     }
-    $result = $mysqli->query("select a.id, a.titolo, a.categoria from articolo a ");
+    $result = $mysqli->query("select a.id, a.titolo from articolo a join categoria c on c.id = a.categoria join brand b on b.id = a.id_brand");
     while ($data = $result->fetch_assoc()){
         $body->setContent("cartoniCorrelati", '<option value="'.$data['id'].'">'.$data['titolo'].' - '. $data['categoria'] .'</option>');
     }
