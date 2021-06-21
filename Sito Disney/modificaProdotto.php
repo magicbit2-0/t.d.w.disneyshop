@@ -20,12 +20,6 @@ if (isset($mysqli)) {
     foreach ($data as $key => $value) {
         $body->setContent($key, $value);
     }
-    $result = $mysqli->query("SELECT c.id as cid,c.categoria_articolo as categoria, b.id as bid, b.nome as brand
-                                    from categoria c join articolo a on c.id = a.categoria join brand b on b.id=a.id_brand 
-                                    where a.id = {$_GET['id']}");
-    $data = $result->fetch_assoc();
-    $body->setContent("categoria1", '<option value="' . $data['cid'] . '" selected>' . $data['categoria'] . '</option>');
-    $body->setContent("brand1", '<option value="' . $data['bid'] . '" selected>' . $data['brand'] . '</option>');
     $result = $mysqli->query("select distinct c.id as cid, c.categoria_articolo as categoria from categoria c where c.id not in (
                                     SELECT distinct c.id from articolo a join categoria c on a.categoria=c.id
                                     where a.id = {$_GET['id']})");
@@ -38,6 +32,12 @@ if (isset($mysqli)) {
     while($data = $result->fetch_assoc()){
         $body->setContent("brands", '<option value="' . $data['bid'] . '">' . $data['brand'] . '</option>');
     }
+    $result = $mysqli->query("SELECT c.id as cid,c.categoria_articolo as categoria, b.id as bid, b.nome as brand
+                                    from categoria c join articolo a on c.id = a.categoria join brand b on b.id=a.id_brand 
+                                    where a.id = {$_GET['id']}");
+    $data = $result->fetch_assoc();
+    $body->setContent("categoria1", '<option value="' . $data['cid'] . '" selected>' . $data['categoria'] . '</option>');
+    $body->setContent("brand1", '<option value="' . $data['bid'] . '" selected>' . $data['brand'] . '</option>');
     if ($data['categoria'] <> 'Film') {
         $result = $mysqli->query("select p.id as id_personaggio from personaggio_articolo pa
                                                  join articolo a on a.id = pa.articolo_id
@@ -67,7 +67,6 @@ if (isset($mysqli)) {
 
     } else {
 
-        $body->setContent("categorie", '<option value="Film Disney" selected>Film Disney</option>');
         $result = $mysqli->query("select r.id as id_regista from backstage_articolo ba
                                                  join articolo a on a.id = ba.articolo_id
                                                  join regia r on r.id = ba.regia_id
@@ -160,20 +159,21 @@ if (isset($mysqli)) {
     while ($data = $result->fetch_assoc()) {
         $var['id'][] = $data['id_correlato'];
     }
-    $result = $mysqli->query("select distinct id,titolo, categoria from articolo where id <> {$_GET['id']}");
+    $result = $mysqli->query("select distinct articolo.id,titolo,categoria.categoria_articolo as categoria, brand.nome as brand from articolo join categoria on categoria.id=articolo.categoria join brand on brand.id=articolo.id_brand where articolo.id <> {$_GET['id']}");
     for ($i = 0; $i <= $count; $i++) {
         while ($data = $result->fetch_assoc()) {
             if ($var['id'][$i] == $data['id']) {
-                $body->setContent("film_correlati", '<option selected value="' . $data['id'] . '">' . $data['titolo'] . ' - ' . $data['categoria'] . '</option>');
+                $body->setContent("film_correlati", '<option selected value="' . $data['id'] . '">' . $data['titolo'] . ' - ' . $data['categoria'].' ' . $data['brand'] . '</option>');
                 break;
             } else {
-                $body->setContent("film_correlati", '<option value="' . $data['id'] . '">' . $data['titolo'] . ' - ' . $data['categoria'] . '</option>');
+                $body->setContent("film_correlati", '<option value="' . $data['id'] . '">' . $data['titolo'] . ' - ' . $data['categoria'].' ' . $data['brand']  . '</option>');
             }
         }
     }
     if (isset($_POST['submit'])) {
         $inputName = addslashes($_POST['inputName']);
         $inputCategoria = addslashes($_POST['inputCategoria']);
+        $inputBrand = addslashes($_POST['inputBrand']);
         $inputTrama = addslashes($_POST['inputTrama']);
         $inputDurata = addslashes($_POST['inputDurata']);
         $inputPrezzo = addslashes($_POST['inputPrezzo']);
@@ -212,7 +212,8 @@ if (isset($mysqli)) {
                                                                 prezzo = '$inputPrezzo',
                                                                 locandina = '$imgData',
                                                                 trailer = '$inputTrailer',
-                                                                categoria = '$inputCategoria' where id = {$_GET['id']}");
+                                                                categoria = '$inputCategoria',
+                                                                id_brand = '$inputBrand' where id = {$_GET['id']}");
                     }
                 }
             }
@@ -224,7 +225,8 @@ if (isset($mysqli)) {
                                                     trama = '$inputTrama',
                                                     prezzo = '$inputPrezzo',
                                                     trailer = '$inputTrailer',
-                                                    categoria = '$inputCategoria' where id = {$_GET['id']}");
+                                                    categoria = '$inputCategoria',
+                                                    id_brand = '$inputBrand' where id = {$_GET['id']}");
         }
             /*echo 'update articolo set titolo = '.$inputName.',data_uscita = '.$_POST['inputData'].',durata = '.$inputDurata.',
                                                         trama = '.$inputTrama.',prezzo = '.$inputPrezzo.',trailer = '.$inputTrailer.',
