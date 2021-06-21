@@ -48,22 +48,10 @@
                 $body->setContent("commenti", "<div><h2 style='color:#d36b6b; margin-top: 10px;'>Non ci sono commenti per questa notizia</h2></div>");
             }
 
-            $result = $mysqli->query("SELECT id as idNotizia1, titolo FROM notizia WHERE categoria='Cartone Disney' limit 1");
+            $result = $mysqli->query("SELECT id as idNotizia1, titolo FROM notizia order by data_pubblicazione limit 3");
             while ($data2 = $result->fetch_assoc()) {
                 $body->setContent("notizia1", $data2['titolo']);
                 $body->setContent("pagina_notizia1", 'blogdetail.php?id='.$data2['idNotizia1']);
-            }
-
-            $result = $mysqli->query("SELECT id as idNotizia2, titolo FROM notizia WHERE categoria='Film Disney' limit 1");
-            while ($data3 = $result->fetch_assoc()) {
-                $body->setContent("notizia2", $data3['titolo']);
-                $body->setContent("pagina_notizia2", 'blogdetail.php?id='.$data3['idNotizia2']);
-            }
-
-            $result = $mysqli->query("SELECT id as idNotizia3, titolo FROM notizia order by data_pubblicazione desc limit 1");
-            while ($data4 = $result->fetch_assoc()) {
-                $body->setContent("notizia3", $data4['titolo']);
-                $body->setContent("pagina_notizia3", 'blogdetail.php?id='.$data4['idNotizia3']);
             }
 
             if(isset($_SESSION['idUtente'])){
