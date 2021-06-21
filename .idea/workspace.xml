@@ -20,12 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f909b85-1678-4f0f-9c0e-529b5889f172" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/disney.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/dtml/disney.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/dtml/images/img/disney.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/dtml/images/img/disney2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/dtml/pixar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito Disney/pixar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/blog_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/dtml/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/dtml/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito Disney/moviesingle2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +64,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sito Disney" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,6 +81,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\t.d.w.disneyshop\Sito Disney" />
+      <recent name="C:\wamp64\www\t.d.w.disneyshop\Sito Disney\dtml" />
       <recent name="C:\wamp64\www\t.d.w.disneyshop\Sito Disney\dtml\ADMIN\pages\examples" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -164,6 +168,7 @@
       <workItem from="1624021658117" duration="1859000" />
       <workItem from="1624103131167" duration="1100000" />
       <workItem from="1624122041998" duration="4143000" />
+      <workItem from="1624266790114" duration="2144000" />
     </task>
     <servers />
   </component>
@@ -181,5 +186,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
