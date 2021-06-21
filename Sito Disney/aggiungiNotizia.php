@@ -28,9 +28,9 @@ if (isset($mysqli)) {
 
                     $allowed_exs = array("jpg", "jpeg", "png","jfif");
                     if (in_array($img_ex_lc, $allowed_exs)) {
-                        $result = $mysqli->query("insert into notizia (titolo, fonte, data_pubblicazione, descrizione, categoria, immagine)
+                        $result = $mysqli->query("insert into notizia (titolo, fonte, data_pubblicazione, descrizione, immagine)
                                                     values ('{$_POST['inputName']}','{$_POST['inputFonte']}','{$_POST['inputData']}',
-                                                    '{$_POST['inputDescription']}','{$_POST['categoria']}','$imgData')");
+                                                    '{$_POST['inputDescription']}','$imgData')");
                         $body->setContent("alert",'addedItem');
                         if (!$result) {
                             echo "Error!";

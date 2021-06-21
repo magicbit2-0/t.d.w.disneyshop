@@ -13,7 +13,7 @@ if(isset($_SESSION['delete'])){
 }
 if (isset($mysqli)) {
     $table = 'notizia';
-    $result = $mysqli->query("SELECT id as idNotizia, titolo, fonte, data_pubblicazione, categoria FROM notizia");
+    $result = $mysqli->query("SELECT id as idNotizia, titolo, fonte, data_pubblicazione FROM notizia");
     while($data = $result->fetch_assoc()) {
         foreach ($data as $key => $value) {
             $body->setContent($key, $value);
