@@ -20,7 +20,13 @@ if(isset($mysqli)){
         $body->setContent("parola_chiave", $data['parola_chiave']);
     }
 
-    $result = $mysqli->query("select a.id, a.titolo, a.data_uscita, a.categoria from personaggio_articolo pa join articolo a on a.id = pa.articolo_id join personaggio p on p.id = pa.personaggio_id where p.id = {$_GET['id']}");
+    $result = $mysqli->query("select a.id, a.titolo, a.data_uscita, a.categoria 
+    from personaggio_articolo pa 
+    join articolo a on a.id = pa.articolo_id 
+    join personaggio p on p.id = pa.personaggio_id 
+    join categoria c on a.categoria=c.id
+    where p.id = {$_GET['id']}");
+
     while ($data = $result->fetch_assoc()){
         $body->setContent("idcartone", $data['id']);
         $body->setContent("titolo_film", $data['titolo']);

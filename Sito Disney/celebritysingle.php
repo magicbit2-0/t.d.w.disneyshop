@@ -17,10 +17,12 @@ if (isset($mysqli)) {
     }
 
 
-    $result = $mysqli->query("select distinct a.id as idfilm, a.titolo as titolofilm, a.data_uscita as datafilm, a.categoria from regia r 
+    $result = $mysqli->query("select distinct a.id as idfilm, a.titolo as titolofilm, a.data_uscita as datafilm, c.categoria_articolo from regia r 
                                         join backstage_articolo b on r.id = b.regia_id 
                                         join articolo a on b.articolo_id = a.id 
+                                        join categoria c on a.categoria=c.id
                                         where r.id = {$_GET['id']} limit 3");
+    
     if(mysqli_num_rows($result) > 0) {
         while ($data1 = $result->fetch_assoc()) {
             $body->setContent("film_correlato", '<div class="cast-it">
@@ -47,9 +49,10 @@ if (isset($mysqli)) {
         $body->setContent("film_correlati2", "<div><h2 style='color:#d36b6b'> Non sono ancora stati trovati film correlati a questo vip </h2></div>");
     }
 
-    $result1 = $mysqli->query("select distinct a.id as idfilm, a.titolo as titolofilm, a.data_uscita as datafilm, a.categoria from regia r 
+    $result1 = $mysqli->query("select distinct a.id as idfilm, a.titolo as titolofilm, a.data_uscita as datafilm, c.categoria_articolo from regia r 
                                         join backstage_articolo b on r.id = b.regia_id 
                                         join articolo a on b.articolo_id = a.id 
+                                        join categoria c on c.id=a.categoria
                                         where r.id = {$_GET['id']}");
     while ($data1 = $result1->fetch_assoc()){
         $body->setContent("film_correlati2", '<div class="cast-it">
