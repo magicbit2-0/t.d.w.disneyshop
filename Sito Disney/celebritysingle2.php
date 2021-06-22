@@ -36,7 +36,7 @@ if(isset($mysqli)){
         if ($data['categoria'] <> 'Film Disney'){
             $body->setContent("collegamento","moviesingle2.php?id=".$data['id']);
         } else {
-            $body->setContent("collegamento","moviesingle.php?id=".$data['id']);
+            $body->setContent("collegamento","moviesingle2.php?id=".$data['id']);
         }
     }
 
@@ -51,7 +51,7 @@ if(isset($mysqli)){
         if ($data['categoriafilm'] <> 'Film Disney'){
             $body->setContent("collegamento1","moviesingle2.php?id=".$data['idfilm']);
         } else {
-            $body->setContent("collegamento1","moviesingle.php?id=".$data['idfilm']);
+            $body->setContent("collegamento1","moviesingle2.php?id=".$data['idfilm']);
         }
     }
 

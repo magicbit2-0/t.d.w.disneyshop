@@ -35,12 +35,7 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
                                         (SELECT a.id as idImg,titolo, c.categoria_articolo as categoria,b.nome as brand, votazione FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where c.categoria_articolo='Cortometraggio' and votazione <> 0.0 and b.nome='Pixar' order by data_uscita desc limit 2);");
 
     while ($data = $result->fetch_assoc()) {
-        if ($data['categoria'] == "Film Disney"){
-        $body -> setContent("pagina_articolo_categoria", 'moviesingle.php?id=<[idImg]>');
-        }
-       else if ($data['categoria'] <> "Film Disney"){
         $body -> setContent("pagina_articolo_categoria", 'moviesingle2.php?id=<[idImg]>');
-        }
         $body->setContent("titolo_prodotto", $data['titolo']);
         $body->setContent("categoria_prodotto", $data['categoria'].' '.$data['brand']);
         $body->setContent("votazione_prodotto", $data['votazione']);
@@ -64,13 +59,7 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
     }
 
     $result3a = $mysqli->query("select articolo.id, titolo, votazione, categoria_articolo as categoria from articolo join categoria on articolo.categoria=categoria.id where categoria_articolo <> 'Cortometraggio' order by prezzo asc limit 8");
-        while ($data3a = $result3a->fetch_assoc()) {
-            if ($data3a['categoria'] == "Film Disney"){
-                $body -> setContent("pagina_articolo_categoria1", 'moviesingle.php?id=<[idImg3a]>');
-            }
-            else if ($data3a['categoria'] <> "Film Disney"){
-                $body -> setContent("pagina_articolo_categoria1", 'moviesingle2.php?id=<[idImg3a]>');
-            }
+            $body -> setContent("pagina_articolo_categoria1", 'moviesingle2.php?id=<[idImg3a]>');
             $body->setContent("nome_prod", $data3a['titolo']);
             $body->setContent("voto_prod", $data3a['votazione']);
             $body->setContent("idImg3a", $data3a['id']);
@@ -78,12 +67,7 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
         $result3b = $mysqli->query("select articolo.id, titolo, categoria_articolo as categoria from articolo join categoria on articolo.categoria=categoria.id where data_uscita > now()");
 
         while ($data3b = $result3b->fetch_assoc()) {
-            if ($data3b['categoria'] == "Film Disney"){
-                $body -> setContent("pagina_articolo_categoria2", 'moviesingle.php?id=<[idImg3b]>');
-            }
-            else if ($data3b['categoria'] <> "Film Disney"){
-                $body -> setContent("pagina_articolo_categoria2", 'moviesingle2.php?id=<[idImg3b]>');
-            }
+            $body -> setContent("pagina_articolo_categoria2", 'moviesingle2.php?id=<[idImg3b]>');
             $body->setContent("nome_prod2", $data3b['titolo']);
             $body->setContent("voto_prod2", $data3b['categoria']);
             $body->setContent("idImg3b", $data3b['id']);
@@ -91,12 +75,7 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
         $result3c = $mysqli->query("select articolo.id, titolo, votazione from articolo join categoria on articolo.categoria=categoria.id order by votazione desc limit 8");
 
         while ($data3c = $result3c->fetch_assoc()) {
-            if ($data3c['categoria'] == "Film Disney"){
-                $body -> setContent("pagina_articolo_categoria3", 'moviesingle.php?id=<[idImg3c]>');
-            }
-            else if ($data3c['categoria'] <> "Film Disney"){
-                $body -> setContent("pagina_articolo_categoria3", 'moviesingle2.php?id=<[idImg3c]>');
-            }
+            $body -> setContent("pagina_articolo_categoria3", 'moviesingle2.php?id=<[idImg3c]>');
             $body->setContent("nome_prod3", $data3c['titolo']);
             $body->setContent("voto_prod3", $data3c['votazione']);
             $body->setContent("idImg3c", $data3c['id']);
@@ -145,7 +124,6 @@ if ($_REQUEST['accesso'] == 'AccessDenied') {
 
         $body->setContent("data_notizia", $data5['data_pubblicazione']);
 
-        }
 
         $result = $mysqli->query("select a.id, a.titolo, year(a.data_uscita) as anno, a.trailer from trailer_home t join articolo a where t.id_articolo = a.id;");
         while ($data = $result->fetch_assoc()) {

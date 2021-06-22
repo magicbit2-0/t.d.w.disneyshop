@@ -12,7 +12,7 @@ if (isset($mysqli)) {
 
     while ($data = $result->fetch_assoc()) {
         if($data['categoria'] == 'Film'){
-            $body->setContent("pagina_articolo", "moviesingle.php?id=".$data['idImg']);
+            $body->setContent("pagina_articolo", "moviesingle2.php?id=".$data['idImg']);
         } else {
             $body->setContent("pagina_articolo", "moviesingle2.php?id=".$data['idImg']);
         }

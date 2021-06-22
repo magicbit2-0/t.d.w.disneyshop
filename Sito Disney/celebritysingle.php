@@ -29,7 +29,7 @@ if (isset($mysqli)) {
                                                             <div class="cast-left cebleb-film">
                                                                 <img src=\'img.php?id='.$data1['idfilm'].'\' alt="immagine film non trovata" width="200px">
                                                                 <div>
-                                                                    <a href=\'moviesingle.php?id='.$data1['idfilm'].'\'>'.$data1['titolofilm'].'</a>
+                                                                    <a href=\'moviesingle2.php?id='.$data1['idfilm'].'\'>'.$data1['titolofilm'].'</a>
                                                                     <p style="width: auto;">'.$data1['datafilm'].'</p>
                                                                 </div>
                                                             </div>
@@ -59,7 +59,7 @@ if (isset($mysqli)) {
 												<div class="cast-left cebleb-film">
 													<img src=\'img.php?id='.$data1['idfilm'].'\' alt="immagine film non trovata" style="width:150px;">
 													<div>
-														<a href=\'moviesingle.php?'.$data1['idfilm'].'\'>'.$data1['titolofilm'].'</a>
+														<a href=\'moviesingle2.php?'.$data1['idfilm'].'\'>'.$data1['titolofilm'].'</a>
 														<p class="time" style="width: auto;">'.$data1['categoria'].'</p>
 													</div>
 												</div>

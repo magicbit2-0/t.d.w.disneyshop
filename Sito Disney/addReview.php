@@ -22,7 +22,7 @@ if (isset($mysqli)){
     $data= $articolo->fetch_assoc();
 
     if($data['categoria'] == "Film") {
-        header('Location: http://localhost/t.d.w.disneyshop/Sito%20Disney/moviesingle.php?id='.$_POST['articolo_id']);
+        header('Location: http://localhost/t.d.w.disneyshop/Sito%20Disney/moviesingle2.php?id='.$_POST['articolo_id']);
 
     }else{
         header('Location: http://localhost/t.d.w.disneyshop/Sito%20Disney/moviesingle2.php?id='.$_POST['articolo_id']);
