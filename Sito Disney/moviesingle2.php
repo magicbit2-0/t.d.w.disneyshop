@@ -6,66 +6,166 @@ require "bottonChange.php";
 
 $body=new Template("dtml/movie_single2.html");
 
-
 if (isset($mysqli)) {
     if(!empty($_GET['id'])){
-        $result = $mysqli->query("select id as idImg, titolo, data_uscita, durata, trama, votazione, prezzo, categoria from articolo where id = {$_GET['id']}");
+        $result = $mysqli->query("select a.id as idImg, titolo, data_uscita, durata, trama, votazione, prezzo, c.categoria_articolo as categoria,b.nome as brand from articolo a join categoria c on c.id=a.categoria 
+                                        join brand b on b.id=a.id_brand where a.id = {$_GET['id']}");
         $data = $result->fetch_assoc();
-
+        $titolo = $data['titolo'];
         foreach ($data as $key => $value) {
             $body->setContent($key, $value);
             //se non sei loggato non puoi aggiungere articoli al carrello
             if(isset($_SESSION['idUtente'])){
                 $body->setContent("bottoneCompra",'<div class="btn-transform transform-vertical">
-                                                    <div><a href="addtocart.php?id='.$data['idImg'].'" class="item item-1 yellowbtn" style="text-transform: none;"> <i class="ion-card"></i>Aggiungi al carrello '.$data['prezzo'].'€</a></div>
-                                                    <div><a href="addtocart.php?id='.$data['idImg'].'" class="item item-2 yellowbtn"><i class="ion-card"></i></a></div>
-                                                </div>');
+                                                                 <div><a href="addtocart.php?id='.$data['idImg'].'" class="item item-1 yellowbtn" style="text-transform: none;"> <i class="ion-card"></i>Aggiungi al carrello '.$data['prezzo'].'€</a></div>
+                                                                 <div><a href="addtocart.php?id='.$data['idImg'].'" class="item item-2 yellowbtn"><i class="ion-card"></i></a></div>
+                                                              </div>');
             }
         }
+        //REGISTA PER FILM
+        $result = $mysqli->query("select r.id as idRegista, concat(r.nome,' ', r.cognome) as nome_regista from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id
+                                        join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'regia' and a.id = {$_GET['id']}");
+        $n_regia = mysqli_num_rows($result);
+        if(mysqli_num_rows($result) > 0) {
+            $body->setContent('tipoMenu','Cast');
+            $bufferCartone = '<h3>Cast di</h3>
+                                        <h2>'.$titolo.'</h2>
+                                        <div class="title-hd-sm">
+                                            <h4>Regista</h4>
+                                        </div>';
+            $bufferx = '<div class="title-hd-sm"><h4>Cast</h4></div><!-- movie cast -->
+                                            <div class="mvcast-item">';
+            /*$data = $result->fetch_assoc();
+            foreach ($data as $key => $value) {
+                $body->setContent($key, $value);}*/
+            while ($data = $result->fetch_assoc()){
+                $bufferCartone .= '<div class="mvcast-item">
+                                         <div class="cast-it">
+                                            <div class="cast-left">
+                                                    <img src="imgActor.php?id='.$data['idRegista'].'" style="width:100px" alt="">
+                                                    <a href="celebritysingle.php?id='.$data['idRegista'].'">Clicca qui per saperne di più</a>
+                                            </div>
+                                                <p>'.$data['nome_regista'].'</p>
+                                         </div>
+                                    </div> <hr style="background-color: #232a50;">';
+               $bufferx .= '<div class="cast-it">
+                            <div class="cast-left">
+                                <img src=\'imgActor.php?id='.$data['idRegista'].'\' style="width:80px" alt="">
+                                <a href="celebritysingle.php?id='.$data['idRegista'].'">'.$data['nome_regista'].'</a>
+                            </div>
+                           </div>';
+               $buffer2 = '<div class="sb-it">
+                                                <h6>Regista: </h6>
+                                                <p><a href="celebritysingle.php?id='.$data['idRegista'].'">'.$data['nome_regista'].'</a></p>
+                                            </div>';
 
-        $result1 = $mysqli->query("(select r.id as id_attore, concat(r.nome,' ', r.cognome) as nome_attore from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id 
-                                        join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'attore' and a.id = {$_GET['id']})");
-
-        while ($data1 = $result1->fetch_assoc()) {
-            $body->setContent("id_attore", $data1['id_attore']);
-            $body->setContent("nome_attore", $data1['nome_attore']);
-            $body->setContent("id_attore1", $data1['id_attore']);
-            $body->setContent("nome_attore1", $data1['nome_attore']);
-            $body->setContent("nome_attore2", $data1['nome_attore']);
+                //$body->setContent("id_regista1", $data['idRegista']);
+                //$body->setContent("nome_regista1", $data['nome_regista']);
+            }
+            $body->setContent('registiTrue',$buffer2);
         }
 
+        // ATTORI PER FILM
+        $result1 = $mysqli->query("select r.id as id_attore, concat(r.nome,' ', r.cognome) as nome_attore from backstage_articolo b join articolo a on b.articolo_id = a.id join regia r on b.regia_id = r.id 
+                                        join parola_chiave_regia p on p.regia_id = r.id join parola_chiave k on k.id=p.parola_chiave_id where k.testo = 'attore' and a.id = {$_GET['id']}");
+        if(mysqli_num_rows($result1) > 0) {
+            $body->setContent('tipoMenu','Cast');
+            if ($bufferx == null) $bufferx = '<div class="title-hd-sm"><h4>Cast</h4></div><!-- movie cast --><div class="mvcast-item">';
+            $buffer2 = '<div class="sb-it"><h6>Attori: </h6>';
+            $bufferCartone .= '<div class="title-hd-sm">
+                                            <h4>Attori</h4>
+                                        </div>
+                                        <div class="mvcast-item">';
+            while ($data1 = $result1->fetch_assoc()) {
+                $bufferCartone .= '<div class="cast-it">
+                                    <div class="cast-left">
+                                        <img src=\'imgActor.php?id='.$data1['id_attore'].'\' style="width:100px" alt="">
+                                        <a href="celebritysingle.php?id='.$data1['id_attore'].'">'.$data1['nome_attore'].'</a>
+                                    </div>
+                                   </div>';
+                $bufferx .= '<div class="cast-it">
+                                <div class="cast-left">
+                                     <img src=\'imgActor.php?id='.$data1['id_attore'].'\' style="width:80px" alt="">
+                                     <a href="celebritysingle.php?id='.$data1['id_attore'].'">'.$data1['nome_attore'].'</a>
+                                </div>
+                            </div>';
+                $buffer2 = '<p><a href="celebritysingle.php?id='.$data1['id_attore'].'">'.$data1['nome_attore'].'</a></p>';
+                $body->setContent("id_attore", $data1['id_attore']);
+                $body->setContent("nome_attore", $data1['nome_attore']);
+                /*$body->setContent("id_attore1", $data1['id_attore']);//
+                $body->setContent("id_attore2", $data1['id_attore']);//
+                $body->setContent("nome_attore1", $data1['nome_attore']);//
+                $body->setContent("nome_attore2", $data1['nome_attore']);//*/
+            }
+            $body -> setContent('attoriTrue',$buffer2.'</div>');
+            $bufferCartone .= '</div>';
+        } else {
+            $bufferCartone .= "<div><h2 style='color:#d36b6b;text-align-last: center;'> Non ci sono attori correlati a questo articolo </h2></div>";
+        }
+        if(!empty($bufferx))
+        $body->setContent('CastTrue',$bufferx.'</div>');
+
+        //PERSONAGGI
         $result1 = $mysqli->query("(SELECT p.id as p_id, p.nome as p_nome FROM personaggio_articolo pa 
                                         join personaggio p on p.id = pa.personaggio_id 
                                         join articolo a on a.id = pa.articolo_id where a.id = {$_GET['id']})");
 
+            $body->setContent('tipoMenu','Personaggi');
+        $bufferPersonaggi = '<h3>Scopri i personaggi di</h3>
+                                        <h2>'.$titolo.'</h2>
+                                        <div class="title-hd-sm">
+                                            <h4>Protagonisti</h4>
+                                        </div>
+                                        <div class="mvsingle-item ov-item celebrity-items" style="align-items: flex-end;">';
         while ($data1 = $result1->fetch_assoc()) {
+            $bufferPersonaggi .= ' <div class="ceb-item">
+                                                <img src=\'imgPersonaggio.php?id='.$data1['p_id'].'\' alt="">
+                                                <p><a class="img-lightbox"  data-fancybox-group="gallery" href="celebritysingle2.php?id='.$data1['p_id'].'">'.$data1['p_nome'].' </a></p>
+                                            </div>';
             $body->setContent("id_personaggio", $data1['p_id']);
             $body->setContent("id_personaggio1", $data1['p_id']);
             $body->setContent("idProtagonista", $data1['p_id']);
             $body->setContent("nome_personaggio1", $data1['p_nome']);
             $body->setContent("nome_personaggio", $data1['p_nome']);
-            $body->setContent("nome_protagonista1", $data1['p_nome']);
+            //$body->setContent("nome_protagonista1", $data1['p_nome']);
             $body->setContent("nome_protagonista", $data1['p_nome']);
         }
+        if(!empty($bufferCartone)){
+            if ($n_regia < 1) {
+                $bufferCartone = '';
+                $body->setContent('CasoCartone',$bufferCartone); }
+            else $body->setContent('CasoCartone',$bufferCartone);}
+        $body->setContent('CasoCartone',$bufferPersonaggi.'</div>');
 
-        /*$result1 = $mysqli->query("select p.nome as p_nome from personaggio p
+        //PAROLE CHIAVE PER ATTORI E PERSONAGGI
+        $result1 = $mysqli->query("select p.nome as p_nome, r.nome as r_nome, r.cognome as r_cog from personaggio p 
+                                        join personaggio_articolo pa on pa.personaggio_id = p.id 
+                                        join articolo a on a.id = pa.articolo_id 
+                                        join backstage_articolo ba on ba.articolo_id = a.id
+                                        join regia r on r.id = ba.regia_id where a.id = {$_GET['id']}");
+        if(mysqli_num_rows($result1) > 0){
+            while ($data1 = $result1->fetch_assoc()){
+                $body->setContent("regia1",'<span class="time"><a href="celebritygrid01.php">'.$data1['r_nome'].'</a></span>');
+                $body->setContent("regia1",'<span class="time"><a href="celebritygrid01.php">'.$data1['r_cog'].'</a></span>');
+            }
+        }
+        $result1 = $mysqli->query("select p.nome as p_nome from personaggio p 
                                         join personaggio_articolo pa on pa.personaggio_id = p.id 
                                         join articolo a on a.id = pa.articolo_id where a.id = {$_GET['id']}");
+        if(mysqli_num_rows($result1)) {
+            while ($data1 = $result1->fetch_assoc()) {
+                $body->setContent("nome_protagonista1", $data1['p_nome']);
+            }
+        }
 
-        while ($data1 = $result1->fetch_assoc()){
-            $body->setContent("nome_protagonista1", $data1['p_nome']);
-            $body->setContent("nome_protagonista", $data1['p_nome']);
-        }*/
-
-        $result = $mysqli->query("(select a1.id , a2.id as id_correlato, a2.titolo as titolo_correlato, a2.categoria as categoria_correlato, a2.votazione as votazione_correlato, 
+        $result = $mysqli->query("(select a1.id , a2.id as id_correlato, a2.titolo as titolo_correlato, c2.categoria_articolo as categoria_correlato, a2.votazione as votazione_correlato, b2.nome as brand, 
                                         a2.durata as durata_correlato, a2.trama as trama_correlato, a2.data_uscita as data_uscita_correlato 
-                                        from articolo_correlato tab join articolo a1 on a1.id = tab.articolo_id join articolo a2 on a2.id = tab.articolo_correlato_id 
-                                        where a1.id = {$_GET['id']} ) union
-                                        (select a1.id , a2.id as id_correlato, a2.titolo as titolo_correlato, a2.categoria as categoria_correlato, a2.votazione as votazione_correlato, 
+                                        from articolo_correlato tab join articolo a1 on a1.id = tab.articolo_id join articolo a2 on a2.id = tab.articolo_correlato_id join categoria c2 on c2.id=a2.categoria join brand b2 on b2.id=a2.id_brand
+                                        where a1.id = {$_GET['id']}) union
+                                        (select a1.id , a2.id as id_correlato, a2.titolo as titolo_correlato, c2.categoria_articolo as categoria_correlato, a2.votazione as votazione_correlato, b2.nome as brand,
                                         a2.durata as durata_correlato, a2.trama as trama_correlato, a2.data_uscita as data_uscita_correlato 
-                                        from articolo_correlato tab join articolo a1 on a1.id = tab.articolo_correlato_id join articolo a2 on a2.id = tab.articolo_id 
-                                        where a1.id = {$_GET['id']} )");
-
+                                        from articolo_correlato tab join articolo a1 on a1.id = tab.articolo_correlato_id join articolo a2 on a2.id = tab.articolo_id join categoria c2 on c2.id=a2.categoria join brand b2 on b2.id=a2.id_brand
+                                        where a1.id = {$_GET['id']})");
         $number_of_results = mysqli_num_rows($result);
         if ($number_of_results > 0) {
             $body->setContent("number_of_results", $number_of_results);
@@ -84,6 +184,7 @@ if (isset($mysqli)) {
                                                     <p class="describe">' . substr($data['trama_correlato'], 0, 300) . " [...]" . '</p>
                                                     <p class="run-time"> Durata: ' . $data['durata_correlato'] . '<span>Data Rilascio: ' . $data['data_uscita_correlato'] . '</span></p>
                                                     <p>Categoria:' . $data['categoria_correlato'] . '</p>
+                                                    <p>Brand:'.$data['brand'].'</p>
                                                 </div>
                                             </div>');
             }
@@ -91,8 +192,6 @@ if (isset($mysqli)) {
             $body->setContent("no_correlati", "<div><h2 style='color:#d36b6b'> Non sono stati trovati film correlati a " . $data['titolo'] . "</h2></div>");
             $body->setContent("number_of_results", "Nessun film trovato");
         }
-
-
         $result = $mysqli->query("(SELECT r.titolo as titolo_recensione, r.data as data_recensione, r.testo as testo_recensione,
                                         concat(u.nome,' ', u.cognome) as nome_utente, r.voto as votazione_recensione , u.avatar_id as idAvatar
                                         FROM disneydb.recensione r 

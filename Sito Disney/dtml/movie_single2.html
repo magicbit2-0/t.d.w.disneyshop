@@ -46,7 +46,7 @@
                             <ul class="tab-links tabs-mv">
                                 <li class="active"><a href="#overview">Trama</a></li>
                                 <li><a href="#reviews">recensioni</a></li>
-                                <li><a href="#cast">personaggi</a></li>
+                                <li><a href="#cast"><[tipoMenu]></a></li>
                                 <li><a href="#moviesrelated">correlati</a></li>
                             </ul>
                             <div class="tab-content">
@@ -55,7 +55,7 @@
                                         <div class="col-md-8 col-sm-12 col-xs-12">
                                             <p><[trama]></p>
                                             <div class="title-hd-sm">
-                                                <h4>Personaggi</h4>
+                                                <h4>Personaggi principali</h4>
                                             </div>
                                             <!-- movie cast -->
                                             <div class="mvsingle-item ov-item celebrity-items" style="align-items: flex-end;">
@@ -66,8 +66,11 @@
                                                 </div>
                                                 <[/foreach]>
                                             </div>
+                                            <[CastTrue]>
                                         </div>
                                         <div class="col-md-4 col-xs-12 col-sm-12">
+                                            <[registiTrue]>
+                                            <[attoriTrue]>
                                             <div class="sb-it">
                                                 <h6>Protagonisti: </h6>
                                                 <[foreach]>
@@ -78,10 +81,11 @@
                                                 <h6>Categoria: </h6>
                                                 <p><a href="moviegrid.php?categoria='<[categoria]>'"><[categoria]></a></p>
                                             </div>
-                                            <!--<div class="sb-it">
-                                                <h6>Brand: </h6>
-                                                <p><a href="moviegrid.php?brand='<[brand]>'"><[brand]></a></p>
-                                            </div>-->
+                                            <div class="sb-it">
+                                                <h6>Brand:</h6>
+                                                <p style="text-transform: uppercase"><a href="moviegrid.php?brand='<[brand]>'"><[brand]></a></p>
+                                                <a href="brandSito.php">Link al sito: <[brand]></a>
+                                            </div>
                                             <div class="sb-it">
                                                 <h6>Data rilascio: </h6>
                                                 <p><[data_uscita]></p>
@@ -98,6 +102,10 @@
                                                     <span class="time"><a href="moviegrid.php"><[data_uscita]></a></span>
                                                     <[foreach]>
                                                     <span class="time"><a href="celebritygrid01.php"><[nome_protagonista1]></a></span>
+                                                    <[/foreach]>
+                                                    <[foreach]>
+                                                        <[regia1]>
+                                                        <[regia2]>
                                                     <[/foreach]>
                                                 </p>
                                             </div>
@@ -125,19 +133,9 @@
                                 </div>
                                 <div id="cast" class="tab">
                                     <div class="row">
-                                        <h3>Scopri i personaggi di</h3>
-                                        <h2><[titolo]></h2>
-                                        <div class="title-hd-sm">
-                                            <h4>Protagonisti</h4>
-                                        </div>
-                                        <div class="mvsingle-item ov-item celebrity-items" style="align-items: flex-end;">
-                                            <[foreach]>
-                                            <div class="ceb-item">
-                                                <img src='imgPersonaggio.php?id=<[id_personaggio]>' alt="">
-                                                <p><a class="img-lightbox"  data-fancybox-group="gallery" href="celebritysingle2.php?id=<[id_personaggio]>"><[nome_personaggio]> </a></p>
-                                            </div>
-                                            <[/foreach]>
-                                        </div>
+                                        <[foreach]>
+                                            <[CasoCartone]>
+                                        <[/foreach]>
                                     </div>
                                 </div>
                                 <div id="moviesrelated" class="tab">
