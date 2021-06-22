@@ -7,8 +7,11 @@ require "include/auth.inc.php";
 
 if (isset($mysqli)){
     
+    $titolo=addslashes($_POST['titolo']);
+    $testo=addslashes($_POST['testo']);
+
     $mysqli->query("insert into recensione (voto, titolo, testo, data, utente_id, articolo_id) 
-                          values ('{$_POST['voto']}', '{$_POST['titolo']}', '{$_POST['testo']}', 
+                          values ('{$_POST['voto']}', '$titolo', '$testo', 
                           date(now()), '{$_SESSION['idUtente']}', '{$_POST['articolo_id']}')");
 
     $media_votazione = $mysqli->query("select avg(voto) from recensione where articolo_id = '{$_POST['articolo_id']}'");
@@ -21,11 +24,6 @@ if (isset($mysqli)){
 
     $data= $articolo->fetch_assoc();
 
-    if($data['categoria'] == "Film") {
-        header('Location: http://localhost/t.d.w.disneyshop/Sito%20Disney/moviesingle2.php?id='.$_POST['articolo_id']);
-
-    }else{
-        header('Location: http://localhost/t.d.w.disneyshop/Sito%20Disney/moviesingle2.php?id='.$_POST['articolo_id']);
-    }
+    header('Location: http://localhost/t.d.w.disneyshop/Sito%20Disney/moviesingle2.php?id='.$_POST['articolo_id']);
 }
 ?>
