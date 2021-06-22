@@ -8,7 +8,7 @@ $body=new Template("dtml/movie_single2.html");
 
 if (isset($mysqli)) {
     if(!empty($_GET['id'])){
-        $result = $mysqli->query("select a.id as idImg, titolo, data_uscita, durata, trama, votazione, prezzo, c.categoria_articolo as categoria,b.nome as brand from articolo a join categoria c on c.id=a.categoria 
+        $result = $mysqli->query("select a.id as idImg, titolo, data_uscita, durata, trama, votazione, prezzo, c.categoria_articolo as categoria,b.id as idBrand, b.nome as brand from articolo a join categoria c on c.id=a.categoria 
                                         join brand b on b.id=a.id_brand where a.id = {$_GET['id']}");
         $data = $result->fetch_assoc();
         $titolo = $data['titolo'];
