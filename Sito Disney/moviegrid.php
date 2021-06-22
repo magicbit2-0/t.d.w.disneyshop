@@ -107,12 +107,7 @@ if (isset($mysqli)) {
         }
     }
     while ($data = $result->fetch_assoc()) {
-        if ($data['categoria'] == "Film Disney"){
-            $body -> setContent("pagina_articolo_categoria", 'moviesingle.php?id=<[idImgProd]>');
-        }
-        else if ($data['categoria'] <> "Film Disney"){
-            $body -> setContent("pagina_articolo_categoria", 'moviesingle2.php?id=<[idImgProd]>');
-        }
+        $body -> setContent("pagina_articolo_categoria", 'moviesingle2.php?id=<[idImgProd]>');
         $body->setContent("titolo_prodotto", $data['titolo']);
         $body->setContent("votazione_prodotto", $data['votazione']);
         $body->setContent("idImgProd", $data['idImgProd']);

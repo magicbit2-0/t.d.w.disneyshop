@@ -91,11 +91,7 @@ if (isset($mysqli)) {
         if($number_of_results > 0) {
             while ($data = $result->fetch_assoc()) {
                 $body->setContent("number_of_results", $number_of_results);
-                if ($data['categoria_correlato'] <> 'Film Disney') {
                     $categoria_film = 'moviesingle2.php?id=' . $data['id_correlato'];
-                } else {
-                    $categoria_film = 'moviesingle.php?id=' . $data['id_correlato'];
-                }
             $body->setContent("no_correlati", '
                                             <div class="movie-item-style-2">
                                                 <img src="img.php?id=' . $data['id_correlato'] . '" alt="">

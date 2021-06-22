@@ -58,11 +58,7 @@ if (isset($mysqli)) {
     if ($number_of_results > 0) {
         while ($data = $result->fetch_assoc()) {
             $body->setContent("number_of_results", "<p style=\"padding-right: 0px\"> Trovati <span> $number_of_results film </span> in totale </p>");
-            if ($data['categoriaArticolo'] == "Film") {
-                $categoria_film = 'moviesingle.php?id=' . $data['idArticolo'];
-            } else {
                 $categoria_film = 'moviesingle2.php?id=' . $data['idArticolo'];
-            }
             $body->setContent("no_preferiti", '<div class="movie-item-style-2 movie-item-style-1 style-3">
                         <img src="img.php?id=' . $data['idArticolo'] . '" alt="">
                         <div class="hvr-inner" style="padding: 10px;margin-left: 25px;margin-right: 5px;">

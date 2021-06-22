@@ -58,11 +58,7 @@ if (isset($mysqli)) {
     if ($number_of_results > 0) {
         while ($data = $result->fetch_assoc()) {
             $body->setContent("number_of_results","<p> Trovati <span>  $number_of_results  film </span> in totale </p>");
-            if ($data['categoria'] <> 'Film') {
-                $categoria_film = 'moviesingle2.php?id=' . $data['idArticolo'];
-            } else {
-                $categoria_film = 'moviesingle.php?id=' . $data['idArticolo'];
-            }
+            $categoria_film = 'moviesingle2.php?id=' . $data['idArticolo'];
             $body->setContent("recensione", '
             <div class="movie-item-style-2 userrate">
                <img src="img.php?id='.$data['idArticolo'].'" alt="">

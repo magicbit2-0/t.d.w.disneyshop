@@ -20,11 +20,12 @@ if(isset($mysqli)){
         $body->setContent("parola_chiave", $data['parola_chiave']);
     }
 
-    $result = $mysqli->query("select a.id, a.titolo, a.data_uscita, a.categoria 
+    $result = $mysqli->query("select a.id, a.titolo, a.data_uscita, c.categoria_articolo as categoria, b.nome as brand 
     from personaggio_articolo pa 
     join articolo a on a.id = pa.articolo_id 
     join personaggio p on p.id = pa.personaggio_id 
     join categoria c on a.categoria=c.id
+    join brand b on b.id=a.id_brand
     where p.id = {$_GET['id']}");
 
     while ($data = $result->fetch_assoc()){
@@ -32,27 +33,18 @@ if(isset($mysqli)){
         $body->setContent("titolo_film", $data['titolo']);
         $body->setContent("titolo_cartone", $data['titolo']);
         $body->setContent("data_cartone", $data['data_uscita']);
-
-        if ($data['categoria'] <> 'Film Disney'){
-            $body->setContent("collegamento","moviesingle2.php?id=".$data['id']);
-        } else {
-            $body->setContent("collegamento","moviesingle2.php?id=".$data['id']);
-        }
+        $body->setContent("collegamento","moviesingle2.php?id=".$data['id']);
     }
 
-    $result = $mysqli->query("select a.id as idfilm, a.titolo as titolofilm, a.categoria as categoriafilm, a.data_uscita as data from personaggio as p join personaggio_articolo as pa on (p.id = pa.personaggio_id) join articolo as a on (pa.articolo_id = a.id) where p.id = {$_GET['id']}");   
+    $result = $mysqli->query("select a.id as idfilm, a.titolo as titolofilm, c.categoria_articolo as categoriafilm, a.data_uscita as data, b.nome as brand from personaggio as p join personaggio_articolo as pa on (p.id = pa.personaggio_id) join articolo as a on (pa.articolo_id = a.id) 
+                                    join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where p.id = {$_GET['id']}");
     while($data = $result->fetch_assoc()){
         $numero++;
         $body->setContent("idfilm1",$data['idfilm']);
         $body->setContent("titolofilm1",$data['titolofilm']);
-        $body->setContent("categoria_film",$data['categoria']);
+        $body->setContent("categoria_film",$data['categoria'].' '.$data['brand']);
         $body->setContent("datafilm1",$data['data']);
-        
-        if ($data['categoriafilm'] <> 'Film Disney'){
             $body->setContent("collegamento1","moviesingle2.php?id=".$data['idfilm']);
-        } else {
-            $body->setContent("collegamento1","moviesingle2.php?id=".$data['idfilm']);
-        }
     }
 
     $body->setContent("numero",$numero);

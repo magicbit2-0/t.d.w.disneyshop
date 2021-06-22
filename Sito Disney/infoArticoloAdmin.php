@@ -19,7 +19,7 @@ if (isset($mysqli)) {
         foreach ($data as $key => $value) {
             $body->setContent($key, $value);
         }
-    if($data['categoria'] <> 'Film Disney'){
+    if($data['categoria'] <> 'Film'){
         $result = $mysqli->query("(SELECT p.id as p_id, p.nome as p_nome FROM personaggio_articolo pa 
                                     join personaggio p on p.id = pa.personaggio_id 
                                     join articolo a on a.id = pa.articolo_id where a.id = {$_GET['id']})");
