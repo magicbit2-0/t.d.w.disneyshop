@@ -55,9 +55,9 @@ if (isset($mysqli)) {
                             </div>
                            </div>';
                $buffer2 = '<div class="sb-it">
-                                                <h6>Regista: </h6>
-                                                <p><a href="celebritysingle.php?id='.$data['idRegista'].'">'.$data['nome_regista'].'</a></p>
-                                            </div>';
+                            <h6>Regista: </h6>
+                            <p><a href="celebritysingle.php?id='.$data['idRegista'].'">'.$data['nome_regista'].'</a></p>
+                           </div>';
 
                 //$body->setContent("id_regista1", $data['idRegista']);
                 //$body->setContent("nome_regista1", $data['nome_regista']);
@@ -89,7 +89,7 @@ if (isset($mysqli)) {
                                      <a href="celebritysingle.php?id='.$data1['id_attore'].'">'.$data1['nome_attore'].'</a>
                                 </div>
                             </div>';
-                $buffer2 = '<p><a href="celebritysingle.php?id='.$data1['id_attore'].'">'.$data1['nome_attore'].'</a></p>';
+                $buffer2 .= '<p><a href="celebritysingle.php?id='.$data1['id_attore'].'">'.$data1['nome_attore'].'</a></p>';
                 $body->setContent("id_attore", $data1['id_attore']);
                 $body->setContent("nome_attore", $data1['nome_attore']);
                 /*$body->setContent("id_attore1", $data1['id_attore']);//
@@ -170,11 +170,7 @@ if (isset($mysqli)) {
         if ($number_of_results > 0) {
             $body->setContent("number_of_results", $number_of_results);
             while ($data = $result->fetch_assoc()) {
-                if ($data['categoria_correlato'] <> 'Film Disney') {
-                    $categoria_film = 'moviesingle2.php?id=' . $data['id_correlato'];
-                } else {
-                    $categoria_film = 'moviesingle.php?id=' . $data['id_correlato'];
-                }
+                $categoria_film = 'moviesingle2.php?id=' . $data['id_correlato'];
                 $body->setContent("no_correlati", '
                                             <div class="movie-item-style-2">
                                                 <img src="img.php?id=' . $data['id_correlato'] . '" alt="">

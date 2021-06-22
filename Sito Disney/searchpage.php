@@ -76,21 +76,23 @@ if (isset($mysqli)) {
     $body -> setContent("number_of_films", $number_of_results);
 
     while ($data = $result->fetch_assoc()) {
-        if ($data['categoria'].' '.$data['brand'] == "Film Disney"){
+        /*if ($data['categoria'].' '.$data['brand'] == "Film Disney"){
             $body->setContent("pagina_articolo_categoria", 'moviesingle.php?id='.$data['idCercato']);
             $body->setContent("idCercato", $data['idCercato']); //moviesingle.php?id=<[idImgProd]>
             $body->setContent("titolo", $data['nomeEntita']);
             $body->setContent("votazione", "<i class=\"ion-android-star\"></i>".$data['votazione']." /10");
             $body->setContent("categoria", $data['categoria']);
             $body->setContent("immagineCercata", 'img.php?id='.$data['idCercato']);
-        } else if ($data['categoria'].' '.$data['brand'] == "Cartone Pixar" or $data['categoria'].' '.$data['brand'] == "Cartone Disney" or $data['categoria'] == "Cortometraggi Pixar"){
+            } else
+        if ($data['categoria'].' '.$data['brand'] == "Cartone Pixar" or $data['categoria'].' '.$data['brand'] == "Cartone Disney" or $data['categoria'] == "Cortometraggi Pixar"){
             $body->setContent("pagina_articolo_categoria", 'moviesingle2.php?id='.$data['idCercato']);
             $body->setContent("idCercato", $data['idCercato']); //moviesingle.php?id=<[idImgProd]>
             $body->setContent("titolo", $data['nomeEntita']);
             $body->setContent("votazione", "<i class=\"ion-android-star\"></i>".$data['votazione']." /10");
-            $body->setContent("categoria", $data['categoria']);
+            $body->setContent("categoria", $data['categoria'].' '.$data['brand']);
             $body->setContent("immagineCercata", 'img.php?id='.$data['idCercato']);
-        } else if ($data['categoria'] == "attore" or $data['categoria'] == "regia"){
+        } else*/
+        if ($data['categoria'] == "attore" or $data['categoria'] == "regia"){
             $body->setContent("pagina_articolo_categoria", 'celebritysingle.php?id='.$data['idCercato']);
             $body->setContent("idCercato", $data['idCercato']); //moviesingle.php?id=<[idImgProd]>
             $body->setContent("titolo", $data['nomeEntita']);
@@ -104,6 +106,13 @@ if (isset($mysqli)) {
             $body->setContent("votazione", $data['data_nascita']);
             $body->setContent("categoria", "Personaggio");
             $body->setContent("immagineCercata", 'imgPersonaggio.php?id='.$data['idCercato']);
+        } else {
+            $body->setContent("pagina_articolo_categoria", 'moviesingle2.php?id='.$data['idCercato']);
+            $body->setContent("idCercato", $data['idCercato']); //moviesingle.php?id=<[idImgProd]>
+            $body->setContent("titolo", $data['nomeEntita']);
+            $body->setContent("votazione", "<i class=\"ion-android-star\"></i>".$data['votazione']." /10");
+            $body->setContent("categoria", $data['categoria'].' '.$data['brand']);
+            $body->setContent("immagineCercata", 'img.php?id='.$data['idCercato']);
         }
     }
 }
