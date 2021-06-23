@@ -12,7 +12,7 @@ if(isset($_POST['eliminaParola'])){
 }
 if(isset($_SESSION['delete'])){
     if($_SESSION['delete'] == 'el'){
-    $body->setContent("alert", "deletedKeyWord");
+    $body->setContent("alert", "deletedCategoria");
     }
     elseif($_SESSION['delete'] == 'add'){
         $body->setContent("alert",'addedItem');
