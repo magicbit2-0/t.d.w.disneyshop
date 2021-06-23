@@ -97,11 +97,11 @@ if (isset($mysqli)) {
         $body->setContent("idImgProd", $data['idImgProd']);
     }
     $body -> setContent("actual_page", $_GET['page']);
-    $result = $mysqli->query("SELECT distinct c.id as cid, c.categoria_articolo as categoria from articolo a join categoria c on a.categoria=c.id");
+    $result = $mysqli->query("SELECT distinct c.id as cid, c.categoria_articolo as categoria from articolo a join categoria c on a.categoria=c.id where c.id > 0");
     while($data = $result->fetch_assoc()){
         $body->setContent("categorieCerca", '<option value="'. $data['categoria'] .'">'. $data['categoria'] .'</option>');
     }
-    $result = $mysqli->query("SELECT distinct b.id as bid, b.nome as brand from articolo a join brand b on a.id_brand=b.id");
+    $result = $mysqli->query("SELECT distinct b.id as bid, b.nome as brand from articolo a join brand b on a.id_brand=b.id where b.id > 0");
     while($data = $result->fetch_assoc()){
         $body->setContent("brandsCerca", '<option value="' . $data['brand'] . '">' . $data['brand'] . '</option>');
     }

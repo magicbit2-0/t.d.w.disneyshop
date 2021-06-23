@@ -26,6 +26,12 @@ if (isset($mysqli)){
     if(isset($_GET['id']) and isset($_GET['table'])){
         $id=$_GET['id'];
         $table=$_GET['table'];
+        if($table == 'categoria'){
+            $result = $mysqli->query("update articolo set categoria = 0 where categoria = '$id'");
+        }
+        if($table == 'brand'){
+            $result = $mysqli->query("update articolo set id_brand = 0 where id_brand = '$id'");
+        }
         $result = $mysqli->query("delete from {$table} where id = {$id} ");
         $_SESSION['delete'] = "el";
         switch ($table){

@@ -38,7 +38,7 @@ if (isset($mysqli)) {
     $data = $result->fetch_assoc();
     $body->setContent("categoria1", '<option value="' . $data['cid'] . '" selected>' . $data['categoria'] . '</option>');
     $body->setContent("brand1", '<option value="' . $data['bid'] . '" selected>' . $data['brand'] . '</option>');
-    if ($data['categoria'] <> 'Film') {
+    //if ($data['categoria'] <> 'Film') {
         $result = $mysqli->query("select p.id as id_personaggio from personaggio_articolo pa
                                                  join articolo a on a.id = pa.articolo_id
                                                  join personaggio p on p.id = pa.personaggio_id
@@ -65,7 +65,7 @@ if (isset($mysqli)) {
         $buffer .= '</select></div><!-- /.form-group --></div>';
         $body->setContent("personaggi", $buffer);
 
-    } else {
+    //} else {
 
         $result = $mysqli->query("select r.id as id_regista from backstage_articolo ba
                                                  join articolo a on a.id = ba.articolo_id
@@ -81,7 +81,8 @@ if (isset($mysqli)) {
         $count = mysqli_num_rows($result);
         $buffer = '<div class="form-group">
                   <label for="inputRegista">Regista</label>
-                  <select name="inputRegista" id="inputRegista" class="form-control">';
+                  <select name="inputRegista" id="inputRegista" class="form-control">
+                  <option value="No">Nessun regista</option>';
         for ($i = 0; $i <= $count; $i++) {
             while ($data = $result->fetch_assoc()) {
                 if ($var['id'][$i] == $data['id']) {
@@ -126,7 +127,7 @@ if (isset($mysqli)) {
         $buffer .= '</select></div><!-- /.form-group --></div>';
         $body->setContent("personaggi", $buffer);
 
-    }
+    //}
     $var = array();
     $result = $mysqli->query("select k.id as id_parola,k.testo from parola_chiave k
                                          join articolo_parola_chiave pr on pr.parola_chiave_id=k.id
@@ -257,18 +258,21 @@ if (isset($mysqli)) {
                     $result = $mysqli->query("insert into personaggio_articolo (articolo_id , personaggio_id)
                                                        values ('{$_GET['id']}','$idPersonaggiCorrelati')");
                 }
-            } else if (isset($_POST['inputAttoriCorrelati'])) {
+            } //else
+                if (isset($_POST['inputAttoriCorrelati']) or isset($_POST['inputRegista'])) {
                 $result = $mysqli->query("delete from backstage_articolo where articolo_id = {$_GET['id']}");
-                if (isset($_POST['inputRegista'])) {
+                if (isset($_POST['inputRegista']) and $_POST['inputRegista'] <> 'No') {
                     //echo 'REGISTA: ' . $_POST['inputRegista'] . '<br>';
                     $result = $mysqli->query("insert into backstage_articolo (articolo_id , regia_id)
                                                            values ('{$_GET['id']}','{$_POST['inputRegista']}')");
                 }
                 //echo "ATTORI: <br>";
-                foreach ($_POST['inputAttoriCorrelati'] as $idAttoriCorrelati) {
-                    //echo "$idAttoriCorrelati <br>";
-                    $result = $mysqli->query("insert into backstage_articolo (articolo_id , regia_id)
+                    if (isset($_POST['inputRegista'])) {
+                        foreach ($_POST['inputAttoriCorrelati'] as $idAttoriCorrelati) {
+                            //echo "$idAttoriCorrelati <br>";
+                            $result = $mysqli->query("insert into backstage_articolo (articolo_id , regia_id)
                                                        values ('{$_GET['id']}','$idAttoriCorrelati')");
+                        }
                 }
             }
             header("location: infoArticoloAdmin.php?id={$_GET['id']}");

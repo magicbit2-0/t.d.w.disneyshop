@@ -15,7 +15,7 @@ if(isset($_SESSION['delete'])){
 
 if (isset($mysqli)) {
     $table = 'brand';
-    $result = $mysqli->query("SELECT id as idBrand1, nome, descrizione FROM brand");
+    $result = $mysqli->query("SELECT id as idBrand1, nome, descrizione FROM brand where id > 0");
     while($data = $result->fetch_assoc()) {
         $body->setContent("nome", $data['nome']);
         $body->setContent("idBrand1", $data['idBrand1']);

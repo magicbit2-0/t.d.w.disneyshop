@@ -21,7 +21,7 @@ if(isset($_SESSION['delete'])){
 }
 if (isset($mysqli)) {
 
-    $result = $mysqli->query("select * from categoria order by categoria_articolo");
+    $result = $mysqli->query("select * from categoria where id > 0 order by categoria_articolo");
     while ($data = $result->fetch_assoc()){
         $body->setContent("categorie", '<option selected value="'.$data['id'].'">'.$data['categoria_articolo'].'</option>');
         $body->setContent("categoria", '<option value="'.$data['id'].'">'.$data['categoria_articolo'].'</option>');
