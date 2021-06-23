@@ -19,11 +19,35 @@ if (isset($mysqli)) {
     if (isset($_POST['modificaBrand'])) {
         $inputName = addslashes($_POST['inputName']);
         $inputDescription = addslashes($_POST['inputDescription']);
+        if (isset($_FILES) and $_FILES['customFile']['error'] != 4) {
+            $imgName = $_FILES["customFile"]["name"];
+            $imgType = $_FILES["customFile"]["type"];
+            $img_size = $_FILES["customFile"]["size"];
+            $imgData = addslashes(file_get_contents($_FILES["customFile"]["tmp_name"]));
+            $error = $_FILES["customFile"]["error"];
+            if ($error === 0) {
+                if ($img_size > 1250000) {
+                    $em = "Il file è troppo grande";
+                } else {
+                    $img_ex = pathinfo($imgName, PATHINFO_EXTENSION);
+                    $img_ex_lc = strtolower($img_ex);
 
+                    $allowed_exs = array("jpg", "jpeg", "png", "jfif");
+                    if (in_array($img_ex_lc, $allowed_exs)) {
         $result = $mysqli->query("update brand set
                                         nome = '$inputName',
-                                        descrizione = '$inputDescription'
+                                        descrizione = '$inputDescription',
+                                        foto = '$imgData'
                                         where id = {$_GET['id']}");
+                    }
+                }
+            }
+        }else {
+            $result = $mysqli->query("update brand set
+                                            nome = '$inputName',
+                                            descrizione = '$inputDescription'
+                                            where id = {$_GET['id']}");
+        }
 
         header("location: brand.php?id={$_GET['id']}");
     }

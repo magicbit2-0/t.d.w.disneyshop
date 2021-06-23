@@ -8,7 +8,7 @@ $body=new Template("dtml/brandSito.html");
 
 if (isset($mysqli)) {
 
-    $result = $mysqli->query("select id, nome, descrizione from brand where id={$_GET['id']} ");
+    $result = $mysqli->query("select * from brand where id={$_GET['id']} ");
     $data = $result->fetch_assoc();
     foreach($data as $key => $value){
         $body->setContent($key,$value);
