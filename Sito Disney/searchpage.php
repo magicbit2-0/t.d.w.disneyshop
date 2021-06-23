@@ -20,12 +20,26 @@ if (isset($mysqli)) {
     } else {
         $body->setContent("common-hero",'<div class="hero common-hero">');
     }
-
+    $result = $mysqli->query("SELECT distinct c.id as cid, c.categoria_articolo as categoria from articolo a join categoria c on a.categoria=c.id");
+    while($data = $result->fetch_assoc()){
+        $body->setContent("categorieCerca", '<option value="'. $data['categoria'] .'">'. $data['categoria'] .'</option>');
+    }
+    $result = $mysqli->query("SELECT distinct b.id as bid, b.nome as brand from articolo a join brand b on a.id_brand=b.id");
+    while($data = $result->fetch_assoc()){
+        $body->setContent("brandsCerca", '<option value="' . $data['brand'] . '">' . $data['brand'] . '</option>');
+    }
     if(isset($_POST['categorie'])){
-        $result = $mysqli->query("(SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, a.categoria as categoria , a.data_uscita as data_nascita
+        if (isset($_POST['brands'])){
+            $brand = "and b.nome like \"".$_POST['brands']."\" ";
+        } else {
+            $brand = '';
+        }
+        $result = $mysqli->query("(SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, c.categoria_articolo as categoria , a.data_uscita as data_nascita, b.nome as brand
                                     FROM articolo a join articolo_parola_chiave apk on apk.articolo_id = a.id
                                     join parola_chiave k on k.id = apk.parola_chiave_id
-                                    where a.titolo like '$ricerca2' and a.categoria like \"{$_POST['categorie']}\"
+                                    join categoria c on c.id=a.categoria
+                                    join brand b on b.id=a.id_brand
+                                    where a.titolo like '$ricerca2' and c.categoria_articolo like \"{$_POST['categorie']}\"".$brand."
                                     and year(a.data_uscita) >= {$_POST['da']} and year(a.data_uscita) <= {$_POST['a']} 
                                     ORDER BY votazione desc, data_uscita desc)");
     } else
@@ -45,7 +59,7 @@ if (isset($mysqli)) {
     }
     else {
         $result = $mysqli->query("(select distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, c.categoria_articolo as categoria ,b.nome as brand, a.data_uscita as data_nascita
-                                    FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where (a.titolo like '$ricerca' or c.categoria_articolo like '$ricerca') union 
+                                    FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand where (a.titolo like '$ricerca' or c.categoria_articolo like '$ricerca' or b.nome like '$ricerca') union 
                                     (SELECT distinct a.id as idCercato, a.titolo as nomeEntita, a.votazione as votazione, c.categoria_articolo as categoria ,b.nome as brand, a.data_uscita as data_nascita
                                     FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand
                                     join personaggio_articolo pa on pa.articolo_id = a.id 
@@ -55,7 +69,7 @@ if (isset($mysqli)) {
                                     join articolo_parola_chiave apk on apk.articolo_id = a.id
                                     join parola_chiave k on k.id = apk.parola_chiave_id
                                     where (a.titolo like '$ricerca' or k.testo like '$ricerca' 
-                                    or c.categoria_articolo like '$ricerca' or p.nome like '$ricerca') 
+                                    or c.categoria_articolo like '$ricerca' or p.nome like '$ricerca' or b.nome like '$ricerca') 
                                     ORDER BY votazione desc, data_uscita desc) union
                                     (select distinct p.id as idCercato, p.nome as nome, p.nome as votazione, k.testo as categoria,p.nome as brand, p.data_nascita
 									from personaggio p join personaggio_articolo pa on pa.personaggio_id = p.id
@@ -71,7 +85,6 @@ if (isset($mysqli)) {
                                     where (concat(r.nome,' ',r.cognome) like '$ricerca' or r.nome like '$ricerca' or r.cognome like '$ricerca' or k.testo like 
                                     '$ricerca' or a.titolo like '$ricerca' or r.anno_nascita like '$ricerca') and k.testo='attore' or 'regia'))");
     }
-
     $number_of_results = mysqli_num_rows($result);
     $body -> setContent("number_of_films", $number_of_results);
 

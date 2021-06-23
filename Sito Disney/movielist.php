@@ -104,6 +104,14 @@ if (isset($mysqli)) {
         $body->setContent("categoria_prod", $data['categoria']);
         $body->setContent("idImg", $data['idImgProd']);
     }
+    $result = $mysqli->query("SELECT distinct c.id, c.categoria_articolo as categoria from articolo a join categoria c on a.categoria=c.id");
+    while($data = $result->fetch_assoc()){
+        $body->setContent("categorieCerca", '<option value="'. $data['categoria'] .'">'. $data['categoria'] .'</option>');
+    }
+    $result = $mysqli->query("SELECT distinct b.id as bid, b.nome as brand from articolo a join brand b on a.id_brand=b.id");
+    while($data = $result->fetch_assoc()){
+        $body->setContent("brandsCerca", '<option value="' . $data['brand'] . '">' . $data['brand'] . '</option>');
+    }
 }
 
 $main->setContent("body", $body->get());

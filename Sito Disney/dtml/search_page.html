@@ -52,10 +52,20 @@
                                     <div class="group-ip">
                                         <select name="categorie">
                                             <option value="%%">Inserisci la categoria</option>
-                                            <option value="Cartone Disney">Cartoni Disney</option>
-                                            <option value="Cartone Pixar">Cartoni Pixar</option>
-                                            <option value="Film Disney">Film Disney</option>
-                                            <option value="Cortometraggi Pixar">Cortometraggi Pixar</option>
+                                            <[foreach]>
+                                            <[categorieCerca]>
+                                            <[/foreach]>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-it">
+                                    <label>Brand principale</label>
+                                    <div class="group-ip">
+                                        <select name="brands">
+                                            <option value="%%">Inserisci il brand</option>
+                                            <[foreach]>
+                                            <[brandsCerca]>
+                                            <[/foreach]>
                                         </select>
                                     </div>
                                 </div>

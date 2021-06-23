@@ -32,10 +32,6 @@ if (isset($mysqli)) {
         $result = $mysqli->query("SELECT a.id as idImgProd, titolo, votazione, concat(c.categoria_articolo,' ',b.nome) as categoria 
                                     FROM articolo a join categoria c on c.id=a.categoria join brand b on b.id=a.id_brand ORDER BY votazione desc, data_uscita desc 
                                     LIMIT " . $this_page_first_result . ',' . $results_per_page);
-        if(!$result){
-            echo "1: ".$_GET['categoria']." ".$_GET['brand'];
-            exit;
-        }
                 $body -> setContent("categoria_lista",'movielist.php');
                 $body -> setContent("categoria_griglia",'moviegrid.php');
 
@@ -52,10 +48,6 @@ if (isset($mysqli)) {
                                         join brand b on b.id=a.id_brand
                                         where c.categoria_articolo = {$_GET['categoria']} ORDER BY votazione desc, data_uscita desc
                                         LIMIT " . $this_page_first_result . ',' . $results_per_page);
-        if(!$result){
-            echo "2: ".$_GET['categoria']." ".$_GET['brand'];
-            exit;
-        }
                 $body -> setContent("categoria_lista",'movielist.php?categoria='. $_GET['categoria']);
                 $body -> setContent("categoria_griglia",'moviegrid.php?categoria='. $_GET['categoria']);
 
@@ -72,10 +64,6 @@ if (isset($mysqli)) {
                                         join brand b on b.id=a.id_brand
                                         where b.nome = {$_GET['brand']} ORDER BY votazione desc, data_uscita desc
                                         LIMIT " . $this_page_first_result . ',' . $results_per_page);
-        if(!$result){
-            echo "3: ".$_GET['categoria']." ".$_GET['brand'];
-            exit;
-        }
                 $body -> setContent("categoria_lista",'movielist.php?brand='. $_GET['brand']);
                 $body -> setContent("categoria_griglia",'moviegrid.php?brand='. $_GET['brand']);
         $result0 = $mysqli->query("SELECT a.id FROM articolo a join categoria c on c.id = a.categoria join brand b on b.id=a.id_brand WHERE b.nome = {$_GET['brand']}");
@@ -91,10 +79,6 @@ if (isset($mysqli)) {
                                         join brand b on b.id=a.id_brand
                                         where b.nome = {$_GET['brand']} and c.categoria_articolo = {$_GET['categoria']} ORDER BY votazione desc, data_uscita desc
                                         LIMIT " . $this_page_first_result . ',' . $results_per_page);
-        if(!$result){
-            echo "4: ".$_GET['categoria']." ".$_GET['brand'];
-            exit;
-        }
                 $body -> setContent("categoria_lista",'movielist.php?categoria='.$_GET['categoria'].'&brand='. $_GET['brand']);
                 $body -> setContent("categoria_griglia",'moviegrid.php?categoria='.$_GET['categoria'].'&brand='. $_GET['brand']);
         $result0 = $mysqli->query("SELECT a.id FROM articolo a join categoria c on c.id = a.categoria join brand b on b.id=a.id_brand WHERE b.nome = {$_GET['brand']} and c.categoria_articolo = {$_GET['categoria']}");
@@ -113,6 +97,14 @@ if (isset($mysqli)) {
         $body->setContent("idImgProd", $data['idImgProd']);
     }
     $body -> setContent("actual_page", $_GET['page']);
+    $result = $mysqli->query("SELECT distinct c.id as cid, c.categoria_articolo as categoria from articolo a join categoria c on a.categoria=c.id");
+    while($data = $result->fetch_assoc()){
+        $body->setContent("categorieCerca", '<option value="'. $data['categoria'] .'">'. $data['categoria'] .'</option>');
+    }
+    $result = $mysqli->query("SELECT distinct b.id as bid, b.nome as brand from articolo a join brand b on a.id_brand=b.id");
+    while($data = $result->fetch_assoc()){
+        $body->setContent("brandsCerca", '<option value="' . $data['brand'] . '">' . $data['brand'] . '</option>');
+    }
 }
 $main->setContent("body", $body->get());
 $main->close();
