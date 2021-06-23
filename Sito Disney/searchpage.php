@@ -112,7 +112,7 @@ if (isset($mysqli)) {
             $body->setContent("votazione", $data['data_nascita']);
             $body->setContent("categoria", $data['categoria']);
             $body->setContent("immagineCercata", 'imgActor.php?id='.$data['idCercato']);
-        } else if ($data['categoria'] == "personaggio"){
+        } else if (($data['categoria'] == "personaggio") or isset($_POST['categoriaCelebrità'])){
             $body->setContent("pagina_articolo_categoria", 'celebritysingle2.php?id='.$data['idCercato']);
             $body->setContent("idCercato", $data['idCercato']);
             $body->setContent("titolo", $data['nomeEntita']);
